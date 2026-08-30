@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sign In | The Tape</title>
+<meta name="description" content="Sign in or join The Tape with an invite code.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .auth-card { max-width: 420px; margin: 0 auto; }
+  .form-field { margin-bottom: 16px; }
+  .form-field label { display: block; font-size: 13.5px; font-weight: 600; margin-bottom: 6px; }
+  .form-field input {
+    width: 100%; background: var(--surface-raised); border: 1px solid var(--border); color: var(--text);
+    border-radius: 8px; padding: 10px 12px; font-family: var(--font-body); font-size: 14.5px;
+  }
+  .mode-toggle { display: flex; gap: 8px; margin-bottom: 22px; }
+  .mode-btn { flex: 1; font-family: var(--font-mono); font-size: 12.5px; font-weight: 600; padding: 9px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text-muted); cursor: pointer; }
+  .mode-btn.active { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .form-msg { font-size: 13.5px; margin-top: 12px; min-height: 18px; }
+  .form-msg.error { color: var(--loss); }
+  .form-msg.success { color: var(--gain); }
+</style>
+</head>
+<body>
+<div class="disclosure-bar">
+  This site contains affiliate links and reflects real trading activity — not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a>
+</div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/episodes/index.html">Episodes</a></li>
+        <li><a href="/tape/index.html" class="active">The Tape</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+  <div class="container section-tight">
+    <div class="auth-card">
+      <div class="eyebrow">The Tape</div>
+      <h1 class="mt-0" style="font-size:30px;">Sign In or Join</h1>
+
+      <div class="mode-toggle">
+        <button class="mode-btn active" id="btnSignin" type="button">Sign In</button>
+        <button class="mode-btn" id="btnSignup" type="button">Join (Invite Only)</button>
+      </div>
+
+      <form id="authForm">
+        <div class="form-field" id="fieldInvite" style="display:none;">
+          <label for="invite">Invite Code</label>
+          <input type="text" id="invite" autocomplete="off">
+        </div>
+        <div class="form-field" id="fieldUsername" style="display:none;">
+          <label for="username">Username</label>
+          <input type="text" id="username" autocomplete="off">
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" autocomplete="current-password" required minlength="6">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn" style="width:100%;">Sign In</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span><a href="/index.html" style="color:var(--text-muted);">&larr; Back to MarketsOnDeck</a></span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="/assets/tape.js"></script>
+<script>
+(function () {
+  var client = window.MarketsOnDeckTape.getClient();
+  var mode = 'signin';
+
+  var btnSignin = document.getElementById('btnSignin');
+  var btnSignup = document.getElementById('btnSignup');
+  var fieldInvite = document.getElementById('fieldInvite');
+  var fieldUsername = document.getElementById('fieldUsername');
+  var submitBtn = document.getElementById('submitBtn');
+  var formMsg = document.getElementById('formMsg');
+  var form = document.getElementById('authForm');
+
+  function setMode(m) {
+    mode = m;
+    var isSignup = mode === 'signup';
+    btnSignin.classList.toggle('active', !isSignup);
+    btnSignup.classList.toggle('active', isSignup);
+    fieldInvite.style.display = isSignup ? '' : 'none';
+    fieldUsername.style.display = isSignup ? '' : 'none';
+    document.getElementById('invite').required = isSignup;
+    document.getElementById('username').required = isSignup;
+    submitBtn.textContent = isSignup ? 'Create Account' : 'Sign In';
+    formMsg.textContent = '';
+    formMsg.className = 'form-msg';
+  }
+
+  btnSignin.addEventListener('click', function () { setMode('signin'); });
+  btnSignup.addEventListener('click', function () { setMode('signup'); });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var email = document.getElementById('email').value.trim();
+    var password = document.getElementById('password').value;
+    formMsg.textContent = '';
+    formMsg.className = 'form-msg';
+    submitBtn.disabled = true;
+
+    if (mode === 'signin') {
+      client.auth.signInWithPassword({ email: email, password: password }).then(function (res) {
+        submitBtn.disabled = false;
+        if (res.error) {
+          formMsg.textContent = res.error.message;
+          formMsg.className = 'form-msg error';
+          return;
+        }
+        window.location.href = '/tape/index.html';
+      });
+      return;
+    }
+
+    // Signup flow: validate + consume the invite code FIRST, before creating the account.
+    var invite = document.getElementById('invite').value.trim();
+    var username = document.getElementById('username').value.trim();
+
+    if (!invite || !username) {
+      formMsg.textContent = 'Invite code and username are required to join.';
+      formMsg.className = 'form-msg error';
+      submitBtn.disabled = false;
+      return;
+    }
+
+    client.rpc('validate_and_consume_invite', { invite_code: invite }).then(function (res) {
+      if (res.error || res.data !== true) {
+        formMsg.textContent = 'That invite code is invalid or already used.';
+        formMsg.className = 'form-msg error';
+        submitBtn.disabled = false;
+        return;
+      }
+      client.auth.signUp({
+        email: email,
+        password: password,
+        options: { data: { username: username, display_name: username } }
+      }).then(function (res2) {
+        submitBtn.disabled = false;
+        if (res2.error) {
+          formMsg.textContent = res2.error.message;
+          formMsg.className = 'form-msg error';
+          return;
+        }
+        setMode('signin');
+        formMsg.textContent = 'Account created — check your email to confirm, then sign in.';
+        formMsg.className = 'form-msg success';
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

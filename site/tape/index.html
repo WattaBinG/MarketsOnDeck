@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Tape | MarketsOnDeck</title>
+<meta name="description" content="The tape doesn't lie. Real price-target predictions, logged before the outcome is known, graded automatically against real market data.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<style>
+  .tape-table { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  .tape-table th { text-align: left; padding: 10px 12px; font-family: var(--font-mono); font-size: 11.5px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); border-bottom: 1px solid var(--border); }
+  .tape-table td { padding: 12px; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+  .tape-table tr:last-child td { border-bottom: none; }
+  .rank-num { font-family: var(--font-mono); font-weight: 600; color: var(--text-muted); }
+  .empty-state { padding: 40px 20px; text-align: center; color: var(--text-muted); }
+  .auth-status { font-size: 13.5px; color: var(--text-muted); }
+</style>
+</head>
+<body>
+<div class="disclosure-bar">
+  This site contains affiliate links and reflects real trading activity — not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a>
+</div>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/episodes/index.html">Episodes</a></li>
+        <li><a href="/tape/index.html" class="active">The Tape</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<main>
+  <div class="container section-tight">
+    <div class="eyebrow">Real Calls, Real Verification</div>
+    <h1 class="mt-0">The Tape</h1>
+    <p class="hero-sub">The tape doesn't lie. Every prediction here is logged before the outcome is known — ticker, price target, timeframe — and graded automatically against real market data when it comes due. Nobody edits a call after the fact, including the person who made it.</p>
+    <div class="row gap-sm" style="flex-wrap:wrap; margin-bottom:8px;">
+      <a class="btn btn-primary" id="submitBtn" href="/tape/submit.html">Post a Call</a>
+      <span class="auth-status" id="authStatus"></span>
+    </div>
+    <p class="text-muted" style="font-size:13px; margin-top:16px;"><strong>Invite-only for now</strong> — this is a small, early group while the format gets proven out. <a href="/tape/login.html">Have an invite code? Sign in or join.</a></p>
+  </div>
+
+  <div class="container section-tight">
+    <div class="card" style="padding:0; overflow:hidden;">
+      <div style="padding:20px 22px; border-bottom:1px solid var(--border);">
+        <h3 style="margin:0;">Leaderboard</h3>
+        <p class="text-muted" style="font-size:13.5px; margin:6px 0 0;">Ranked by win rate among resolved calls. Pending calls don't count until they resolve.</p>
+      </div>
+      <div class="table-scroll">
+        <table class="tape-table" id="leaderboardTable">
+          <thead>
+            <tr><th>Rank</th><th>Trader</th><th>Win Rate</th><th>Record</th><th>Total Calls</th><th>Pending</th></tr>
+          </thead>
+          <tbody id="leaderboardBody">
+            <tr><td colspan="6" class="empty-state">Loading the tape...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades, graded in public, before the outcome is known. Wins and losses both.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/episodes/01-the-baseline.html">Episode 1: The Baseline</a></li>
+          <li><a href="/episodes/02-the-august-swing.html">Episode 2: The August Swing</a></li>
+          <li><a href="/tape/index.html">The Tape</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:hello@marketsondeck.net">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+  </div>
+</footer>
+<script src="/assets/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="/assets/tape.js"></script>
+<script>
+(function () {
+  var client = window.MarketsOnDeckTape.getClient();
+  var tbody = document.getElementById('leaderboardBody');
+  var authStatus = document.getElementById('authStatus');
+
+  client.auth.getUser().then(function (res) {
+    if (res.data && res.data.user) {
+      authStatus.textContent = 'Signed in';
+    } else {
+      authStatus.innerHTML = 'Not signed in — <a href="/tape/login.html">sign in to post</a>';
+    }
+  });
+
+  client.from('leaderboard')
+    .select('*')
+    .order('win_rate_pct', { ascending: false, nullsFirst: false })
+    .then(function (res) {
+      if (res.error) {
+        tbody.innerHTML = '<tr><td colspan="6" class="empty-state">Could not load the leaderboard right now.</td></tr>';
+        return;
+      }
+      var rows = (res.data || []).filter(function (r) { return r.total_predictions > 0; });
+      if (!rows.length) {
+        tbody.innerHTML = '<tr><td colspan="6" class="empty-state">No calls posted yet — be the first.</td></tr>';
+        return;
+      }
+      tbody.innerHTML = rows.map(function (r, i) {
+        var winRate = r.win_rate_pct === null ? '—' : r.win_rate_pct + '%';
+        var name = r.display_name || r.username;
+        return '<tr>' +
+          '<td class="rank-num">' + (i + 1) + '</td>' +
+          '<td>' + name + '</td>' +
+          '<td class="num">' + winRate + '</td>' +
+          '<td class="num">' + r.wins + 'W / ' + r.losses + 'L</td>' +
+          '<td class="num">' + r.total_predictions + '</td>' +
+          '<td class="num">' + r.pending_predictions + '</td>' +
+          '</tr>';
+      }).join('');
+    });
+})();
+</script>
+</body>
+</html>
