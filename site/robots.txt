@@ -1,49 +1,64 @@
 # MarketsOnDeck — robots.txt
 User-agent: *
 Allow: /
+Disallow: /tape/
 Crawl-delay: 1
 
 # AI assistant / AI search crawlers — explicitly allowed
 User-agent: GPTBot
 Allow: /
+Disallow: /tape/
 
 User-agent: ChatGPT-User
 Allow: /
+Disallow: /tape/
 
 User-agent: OAI-SearchBot
 Allow: /
+Disallow: /tape/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /tape/
 
 User-agent: anthropic-ai
 Allow: /
+Disallow: /tape/
 
 User-agent: Claude-Web
 Allow: /
+Disallow: /tape/
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /tape/
 
 User-agent: Perplexity-User
 Allow: /
+Disallow: /tape/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /tape/
 
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /tape/
 
 User-agent: Amazonbot
 Allow: /
+Disallow: /tape/
 
 User-agent: Meta-ExternalAgent
 Allow: /
+Disallow: /tape/
 
 User-agent: cohere-ai
 Allow: /
+Disallow: /tape/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /tape/
 
 Sitemap: https://marketsondeck.net/sitemap.xml
