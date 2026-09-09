@@ -1,11 +1,79 @@
 // MarketsOnDeck — shared site JS. No frameworks, no build step.
+
+// Theme toggle — light by default, dark is an explicit opt-in choice
+// remembered in localStorage. Never driven by OS prefers-color-scheme.
+// Runs immediately (not on DOMContentLoaded) so the dark preference applies
+// before first paint and there's no flash of the wrong theme.
 (function () {
-  var toggle = document.getElementById('navToggle');
+  var STORAGE_KEY = 'mod-theme';
+  try {
+    if (localStorage.getItem(STORAGE_KEY) === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  } catch (e) {}
+})();
+
+document.addEventListener('DOMContentLoaded', function () {
+  var navToggleBtn = document.getElementById('navToggle');
   var nav = document.getElementById('primaryNav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', function () {
+  if (navToggleBtn && nav) {
+    navToggleBtn.addEventListener('click', function () {
       var open = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      navToggleBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
-})();
+
+  var themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', function () {
+      var root = document.documentElement;
+      var isDark = root.getAttribute('data-theme') === 'dark';
+      if (isDark) {
+        root.removeAttribute('data-theme');
+      } else {
+        root.setAttribute('data-theme', 'dark');
+      }
+      try { localStorage.setItem('mod-theme', isDark ? 'light' : 'dark'); } catch (e) {}
+    });
+  }
+
+  initTicker();
+});
+
+// Rolling ticker strip — reads /assets/ticker.json (refreshed by a scheduled
+// job a few times a day) and renders a duplicated, seamlessly-looping row.
+function initTicker() {
+  var strip = document.getElementById('tickerStrip');
+  if (!strip) return;
+  var track = strip.querySelector('.ticker-track');
+  if (!track) return;
+
+  fetch('/assets/ticker.json', { cache: 'no-store' })
+    .then(function (res) { return res.ok ? res.json() : null; })
+    .then(function (data) {
+      if (!data || !data.items || !data.items.length) { strip.hidden = true; return; }
+      var asOfHtml = '<div class="ticker-asof">' + escapeHtml(data.asOfLabel || 'Updated') + '</div>';
+      var itemsHtml = data.items.map(renderTickerItem).join('');
+      // duplicate the row once so the CSS animation (-50%) loops seamlessly
+      track.innerHTML = asOfHtml + itemsHtml + asOfHtml + itemsHtml;
+    })
+    .catch(function () { strip.hidden = true; });
+}
+
+function renderTickerItem(item) {
+  var dir = item.change > 0 ? 'gain' : (item.change < 0 ? 'loss' : '');
+  var sign = item.change > 0 ? '+' : '';
+  var price = typeof item.price === 'number' ? item.price.toFixed(2) : item.price;
+  var pct = typeof item.changePercent === 'number' ? item.changePercent.toFixed(2) : item.changePercent;
+  return '<div class="ticker-item">' +
+    '<span class="ticker-symbol">' + escapeHtml(item.symbol) + '</span>' +
+    '<span class="ticker-price num">' + price + '</span>' +
+    '<span class="ticker-change num ' + dir + '">' + sign + pct + '%</span>' +
+    '</div>';
+}
+
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, function (c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+  });
+}

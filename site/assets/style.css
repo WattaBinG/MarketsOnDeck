@@ -40,26 +40,26 @@
    Not driven by prefers-color-scheme, so the site never looks "too dark"
    just because a visitor's OS happens to be in dark mode. */
 :root[data-theme="dark"] {
-  --bg: #0B0E14;
-  --bg-tint: #0F1319;
-  --surface: #12161F;
-  --surface-raised: #171C27;
-  --border: #232938;
-  --border-strong: #2D3346;
-  --text: #E4E7EE;
-  --text-muted: #8A93A6;
-  --accent: #5B8CFF;
-  --accent-2: #F0954B;
-  --accent-tint: #182236;
-  --accent-ink: #0B0E14;
-  --gain: #2ECC71;
-  --gain-bg: #12261C;
-  --loss: #EB5757;
-  --loss-bg: #2A1517;
-  --focus: #5B8CFF;
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-  --shadow-md: 0 10px 24px -12px rgba(0, 0, 0, 0.5);
-  --shadow-lg: 0 24px 48px -20px rgba(0, 0, 0, 0.6);
+  --bg: #12161F;
+  --bg-tint: #161B25;
+  --surface: #1A202C;
+  --surface-raised: #212837;
+  --border: #2C3345;
+  --border-strong: #3A4258;
+  --text: #ECEEF3;
+  --text-muted: #9AA3B7;
+  --accent: #6E96FF;
+  --accent-2: #FFA45C;
+  --accent-tint: #212B42;
+  --accent-ink: #12161F;
+  --gain: #34D07A;
+  --gain-bg: #16291F;
+  --loss: #F16A6A;
+  --loss-bg: #301C1F;
+  --focus: #6E96FF;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 24px -12px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 48px -20px rgba(0, 0, 0, 0.55);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -244,6 +244,54 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .article-meta { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; color: var(--text-muted); font-size: 13.5px; margin-bottom: 28px; }
 .article-header { max-width: 74ch; margin: 0 auto 8px; }
 .article-body { max-width: 74ch; margin: 0 auto; }
+
+.theme-toggle {
+  width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--border);
+  background: var(--surface); display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--text); margin-left: 6px; transition: border-color .15s ease, transform .15s ease;
+  flex-shrink: 0;
+}
+.theme-toggle:hover { border-color: var(--accent); transform: translateY(-1px); }
+.theme-toggle svg { width: 18px; height: 18px; }
+.theme-toggle .icon-sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+
+/* Rolling ticker strip — real prices, refreshed by a scheduled job into ticker.json */
+.ticker-strip {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-raised);
+  overflow: hidden;
+  position: relative;
+}
+.ticker-strip::before, .ticker-strip::after {
+  content: ""; position: absolute; top: 0; bottom: 0; width: 36px; z-index: 2; pointer-events: none;
+}
+.ticker-strip::before { left: 0; background: linear-gradient(90deg, var(--surface-raised), transparent); }
+.ticker-strip::after { right: 0; background: linear-gradient(270deg, var(--surface-raised), transparent); }
+.ticker-track {
+  display: flex; width: max-content;
+  animation: ticker-scroll 55s linear infinite;
+}
+.ticker-strip:hover .ticker-track { animation-play-state: paused; }
+.ticker-item {
+  display: flex; align-items: baseline; gap: 8px;
+  padding: 9px 22px; font-family: var(--font-mono); font-size: 12.5px; white-space: nowrap;
+  border-right: 1px solid var(--border);
+}
+.ticker-symbol { font-weight: 700; color: var(--text); }
+.ticker-price { color: var(--text-muted); }
+.ticker-change.gain { color: var(--gain); }
+.ticker-change.loss { color: var(--loss); }
+.ticker-asof {
+  display: flex; align-items: center; padding: 9px 16px; font-family: var(--font-mono); font-size: 11px;
+  color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; flex-shrink: 0;
+  border-right: 1px solid var(--border);
+}
+@keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track { animation: none; overflow-x: auto; }
+}
 
 /* Featured card — used to visually lead with the daily Morning Brief on the homepage */
 .card-featured {
