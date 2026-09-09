@@ -35,6 +35,19 @@ not oversights):**
   highest-frequency content on the site, and therefore the highest-frequency compliance surface. This doesn't
   change with the format.
 
+5. **Selective week-ahead awareness (added 2026-09-09, per Keith).** Kramer routinely names specific upcoming
+   scheduled events that are genuinely likely to move markets — a CPI/PPI print, a Fed or ECB meeting, a jobs
+   report — usually in the opening or closing paragraph, with the actual date. Every brief should do the same,
+   **but selectively**: only flag events that are (a) actually scheduled within roughly the next week and (b) the
+   kind that realistically moves markets (CPI/PPI, FOMC/ECB rate decisions, NFP/jobs reports, and major earnings
+   from mega-cap names the reader would recognize). This is explicitly NOT a full economic-calendar dump — skip
+   minor/routine releases (housing starts, consumer sentiment revisions, regional Fed surveys, etc.) unless one of
+   them is unusually relevant that week. Source real dates via WebSearch (search something like "US economic
+   calendar this week" or the specific event + date) since Alpha Vantage's economic-indicator tools return
+   historical time series, not a forward release calendar — never invent a date or figure; if a real date can't be
+   confirmed, leave the event out rather than guess. One or two sentences is enough — this is a mention, not its
+   own section.
+
 **Honest tradeoff to watch, not yet resolved:** this format is denser and takes real analytical work per entry —
 it's no longer the ~30-second bullet read the original design leaned on ("a daily habit read, not an article").
 That may be exactly what Keith wants now (it's what he's asking to emulate), but it's a real shift in the size of
