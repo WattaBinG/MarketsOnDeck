@@ -24,7 +24,11 @@ Tone: direct, receipts-first, zero hype — losses get exactly as much airtime a
   headlines. This repo's sandboxed environment currently blocks `investing.com` outbound and WSJ/Bloomberg are
   paywalled; fall back to Alpha Vantage `NEWS_SENTIMENT` or ask Keith to paste article text/links directly. Pull
   holdings from **both** Robinhood accounts (`5RY58840` "Trading" and `778321117` "Agentic") when gathering
-  portfolio context, not just one.
+  portfolio context, not just one. For every held ticker in both accounts, actually check for company-specific
+  news that day (earnings, guidance, management changes, analyst actions, filings) — don't rely on gainers/losers
+  or most-active screens alone, since a real story on a smaller-volume name can miss those. Also verify every
+  date/day-of-week claim against real data before publishing (a Labor Day framing error shipped in the
+  2026-09-08 brief and had to be fixed post-review — don't repeat that class of mistake).
 - Never place, modify, or cancel a trade without Keith's explicit authorization, even when trading-account tools
   are available to you.
 
