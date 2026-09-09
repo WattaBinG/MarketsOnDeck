@@ -48,6 +48,36 @@ not oversights):**
    confirmed, leave the event out rather than guess. One or two sentences is enough — this is a mention, not its
    own section.
 
+---
+
+## The Market Tape — End-of-Day Wrap (added 2026-09-09, per Keith)
+
+A second daily piece, published after the close (~4:15pm ET, once the day's real closing prints are in) —
+**not a rename of the Morning Brief**, a companion to it. Morning Brief still opens the day; The Market Tape closes
+it. "Tape" here is plain market slang ("reading the tape") — this is unrelated to the buried predictions-ledger
+feature that also used the name "The Tape" internally (`site/tape/`, still hidden from nav/robots.txt, still
+parked). Two different things sharing a name on purpose; don't confuse them.
+
+**Format — same narrative-thread discipline as the Morning Brief (see the numbered rules above), applied to the
+close instead of the open:**
+1. Open with the actual close, given meaning by a real comparison point (yesterday's close, a recent high/low,
+   etc.) — same rule as the Morning Brief's rule 1.
+2. One connected analytical thread through the day's real action — what actually moved, and why, in flowing
+   paragraphs, not bullets.
+3. Tie to a real held position when genuinely relevant, same as the Morning Brief.
+4. Process language only, never directive.
+5. Same selective week-ahead awareness as the Morning Brief — if something material is now one day closer (e.g. a
+   CPI print landing the next morning), that's worth a closing-paragraph mention.
+6. Close with the same "why this matters" plain-language beat.
+7. Same disclosure block at the top, every time, no exceptions.
+
+**Publishing:** same archive page (`site/brief/index.html`) and same jump-list, not a separate URL — each entry's
+`.card` gets a small type badge ("Morning Brief" vs "Market Tape") so the two are visually distinct in one feed
+rather than splitting into two separate archives. Keeps the "one project, keep it simple" discipline Keith set
+back on 2026-09-02 rather than standing up a whole parallel page structure for a second daily post.
+
+---
+
 **Honest tradeoff to watch, not yet resolved:** this format is denser and takes real analytical work per entry —
 it's no longer the ~30-second bullet read the original design leaned on ("a daily habit read, not an article").
 That may be exactly what Keith wants now (it's what he's asking to emulate), but it's a real shift in the size of
