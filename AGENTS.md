@@ -18,6 +18,13 @@ Tone: direct, receipts-first, zero hype — losses get exactly as much airtime a
   Supabase (project `markets-on-deck`, id `akagletqrbljvwbagrkt`).
 - Ground every trading number in real data (the Robinhood MCP connector or the verified `Trade Journal.xlsx`) —
   never invent a price, P&L figure, or trade detail.
+- Morning Brief research pass (per Keith, 2026-09-09): before writing, check Michael Kramer's Investing.com
+  contributor page (`https://www.investing.com/members/contributors/204989407/opinion`) for structural/thematic
+  ideas only — never copy or closely paraphrase his sentences — plus WSJ and Bloomberg for the day's real
+  headlines. This repo's sandboxed environment currently blocks `investing.com` outbound and WSJ/Bloomberg are
+  paywalled; fall back to Alpha Vantage `NEWS_SENTIMENT` or ask Keith to paste article text/links directly. Pull
+  holdings from **both** Robinhood accounts (`5RY58840` "Trading" and `778321117` "Agentic") when gathering
+  portfolio context, not just one.
 - Never place, modify, or cancel a trade without Keith's explicit authorization, even when trading-account tools
   are available to you.
 
