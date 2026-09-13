@@ -27,8 +27,8 @@
     <nav aria-label="Primary">
       <ul class="nav-links" id="primaryNav">
         <li><a href="/index.html" class="active">Home</a></li>
-        <li><a href="/episodes/index.html">Episodes</a></li>
         <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
         <li><a href="/about.html">About</a></li>
       </ul>
     </nav>
@@ -49,24 +49,24 @@
   <section class="hero">
     <div class="container">
       <div class="eyebrow">Real Trades, Real Account</div>
-      <h1>The record includes<br>what happened.</h1>
+      <h1><a href="/record/index.html" style="color:inherit; text-decoration:none;">The record includes<br>what happened.</a></h1>
       <p class="hero-sub">Every trade posted from my own account, wins and losses both — no cherry-picked screenshots, no deleted losers. This is a real trading journal, not a signals service.</p>
       <div class="row gap-sm" style="flex-wrap:wrap;">
         <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
-        <a class="btn" href="/about.html">How the Record Works</a>
+        <a class="btn" href="/record/index.html">Browse The Record</a>
       </div>
-      <div class="stat-row">
+      <div class="stat-row" id="homeStats">
         <div class="stat-card">
-          <div class="stat-num num gain">+$8,649.02</div>
-          <div class="stat-label">Net, Jul 14 – Aug 20</div>
+          <div class="stat-num num" id="homeStatPnl">—</div>
+          <div class="stat-label">Net Realized, 2026 YTD</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num num">59.46%</div>
-          <div class="stat-label">August Win Rate</div>
+          <div class="stat-num num" id="homeStatWinRate">—</div>
+          <div class="stat-label">2026 Win Rate</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num num">100%</div>
-          <div class="stat-label">Trades Shown, Win or Lose</div>
+          <div class="stat-num num" id="homeStatTrades">—</div>
+          <div class="stat-label">Trades in The Record</div>
         </div>
       </div>
     </div>
@@ -78,24 +78,18 @@
     <div class="container">
       <div class="eyebrow">Start Here</div>
       <h2 class="mt-0">Today's Read, Plus the Full Record</h2>
-      <div class="grid grid-3" style="margin-top:24px;">
+      <div class="grid grid-2" style="margin-top:24px;">
         <a class="card card-featured" href="/brief/index.html" style="text-decoration:none;">
           <span class="badge badge-gain">Daily</span>
           <h3>Morning Brief</h3>
           <p>What's actually worth watching today — the broad market plus my own real positions, written fresh most trading days, not a wire-service headline dump.</p>
           <span class="card-link">Read today's brief →</span>
         </a>
-        <a class="card" href="/episodes/02-the-august-swing.html" style="text-decoration:none;">
-          <span class="badge badge-accent">Aug 1 – 20</span>
-          <h3>Episode 2: The August Swing</h3>
-          <p>Same ticker, same day: a $1,930 win and a $1,492 loss, hours apart — turned out to be two legs of the same spread.</p>
-          <span class="card-link num gain">+$5,688.52 →</span>
-        </a>
-        <a class="card" href="/episodes/01-the-baseline.html" style="text-decoration:none;">
-          <span class="badge badge-accent">Jul 14 – 31</span>
-          <h3>Episode 1: The Baseline</h3>
-          <p>Eighteen days, every closed trade — including the day the highlight-reel version of this channel would never show.</p>
-          <span class="card-link num gain">+$2,960.50 →</span>
+        <a class="card card-featured" href="/record/index.html" style="text-decoration:none;">
+          <span class="badge badge-accent">2026 YTD</span>
+          <h3>The Record</h3>
+          <p>Every closed trade this year, sortable and filterable, sourced live from the real account — not a curated highlight reel.</p>
+          <span class="card-link">Browse every trade →</span>
         </a>
       </div>
     </div>
@@ -142,8 +136,6 @@
       <div class="footer-col">
         <h4>Content</h4>
         <ul>
-          <li><a href="/episodes/01-the-baseline.html">Episode 1: The Baseline</a></li>
-          <li><a href="/episodes/02-the-august-swing.html">Episode 2: The August Swing</a></li>
           <li><a href="/brief/index.html">Morning Brief</a></li>
         </ul>
       </div>

@@ -1,0 +1,2846 @@
+{
+  "summary": {
+    "asOf": "2026-09-12",
+    "scope": "Realized trades, January 1 - September 12, 2026 (both accounts)",
+    "totalTrades": 282,
+    "totalRealizedGain": 19494.82,
+    "wins": 188,
+    "losses": 93,
+    "flat": 1,
+    "winRate": 66.9,
+    "biggestWin": {
+      "symbol": "META",
+      "date": "2026-07-01",
+      "gain": 5155.0,
+      "account": "Trading"
+    },
+    "biggestLoss": {
+      "symbol": "META",
+      "date": "2026-06-12",
+      "gain": -1690.0,
+      "account": "Trading"
+    }
+  },
+  "trades": [
+    {
+      "date": "2026-09-11",
+      "timestamp": "2026-09-11T15:54:59Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -535.0
+    },
+    {
+      "date": "2026-09-11",
+      "timestamp": "2026-09-11T15:52:46Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -708.0
+    },
+    {
+      "date": "2026-09-11",
+      "timestamp": "2026-09-11T15:52:25Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": -1558.0
+    },
+    {
+      "date": "2026-09-03",
+      "timestamp": "2026-09-03T18:28:48Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 220.0
+    },
+    {
+      "date": "2026-09-03",
+      "timestamp": "2026-09-03T13:52:12Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 390.0
+    },
+    {
+      "date": "2026-09-03",
+      "timestamp": "2026-09-03T13:51:17Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 594.0
+    },
+    {
+      "date": "2026-09-03",
+      "timestamp": "2026-09-03T13:46:38Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 997.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T15:49:15Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -36.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T14:26:33Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -79.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T14:26:05Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 88.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T14:23:45Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 68.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T14:10:29Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 73.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T14:07:53Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -88.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T14:07:50Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": 31.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T14:01:16Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -348.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T13:59:48Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 261.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T13:59:18Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 201.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T13:49:32Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 146.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T13:47:21Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": -782.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T13:41:48Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 332.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T13:39:49Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": 649.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T13:30:51Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 9.0,
+      "price": null,
+      "realizedGain": 242.0
+    },
+    {
+      "date": "2026-09-02",
+      "timestamp": "2026-09-02T13:30:04Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": -428.0
+    },
+    {
+      "date": "2026-08-30",
+      "timestamp": "2026-08-30T16:24:49Z",
+      "account": "Trading",
+      "symbol": "ETH",
+      "assetType": "crypto",
+      "quantity": 2.0,
+      "price": 2492.62,
+      "realizedGain": 57.76
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T19:59:28Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 130.0
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T19:56:36Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -15.0
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T16:21:59Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 145.0
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T15:52:45Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 220.0
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T15:13:32Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 210.0
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T15:13:13Z",
+      "account": "Trading",
+      "symbol": "GGLL",
+      "assetType": "equity",
+      "quantity": 200.0,
+      "price": 103.275,
+      "realizedGain": 647.35
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T15:04:01Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 86.0
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T15:03:47Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 58.0
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T14:21:04Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "equity",
+      "quantity": 10.0,
+      "price": 224.285,
+      "realizedGain": 22.75
+    },
+    {
+      "date": "2026-08-28",
+      "timestamp": "2026-08-28T13:52:35Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -89.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T19:55:33Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 74.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T19:51:43Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 128.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T19:42:14Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 127.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T19:27:27Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": 147.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T18:26:48Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 185.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T15:01:14Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 72.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T14:59:40Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 18.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T13:51:45Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 49.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T13:44:33Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 175.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T13:36:29Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 31.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T13:36:08Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": 71.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T13:31:30Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -290.0
+    },
+    {
+      "date": "2026-08-27",
+      "timestamp": "2026-08-27T13:30:00Z",
+      "account": "Agentic",
+      "symbol": "SPCH",
+      "assetType": "equity",
+      "quantity": 20.0,
+      "price": 8.92,
+      "realizedGain": 59.85
+    },
+    {
+      "date": "2026-08-26",
+      "timestamp": "2026-08-26T18:07:53Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "equity",
+      "quantity": 50.0,
+      "price": 138.08,
+      "realizedGain": 1137.9
+    },
+    {
+      "date": "2026-08-26",
+      "timestamp": "2026-08-26T18:07:35Z",
+      "account": "Trading",
+      "symbol": "SPCH",
+      "assetType": "equity",
+      "quantity": 200.0,
+      "price": 8.69,
+      "realizedGain": 78.13
+    },
+    {
+      "date": "2026-08-24",
+      "timestamp": "2026-08-24T13:46:24Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 140.0
+    },
+    {
+      "date": "2026-08-21",
+      "timestamp": "2026-08-21T19:54:20Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 235.0
+    },
+    {
+      "date": "2026-08-21",
+      "timestamp": "2026-08-21T14:55:53Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 125.0
+    },
+    {
+      "date": "2026-08-21",
+      "timestamp": "2026-08-21T14:52:20Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 245.0
+    },
+    {
+      "date": "2026-08-21",
+      "timestamp": "2026-08-21T14:51:08Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": 225.0
+    },
+    {
+      "date": "2026-08-20",
+      "timestamp": "2026-08-20T19:52:38Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -315.0
+    },
+    {
+      "date": "2026-08-20",
+      "timestamp": "2026-08-20T19:52:20Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -606.0
+    },
+    {
+      "date": "2026-08-20",
+      "timestamp": "2026-08-20T16:55:47Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -1170.0
+    },
+    {
+      "date": "2026-08-20",
+      "timestamp": "2026-08-20T16:55:33Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -130.0
+    },
+    {
+      "date": "2026-08-17",
+      "timestamp": "2026-08-17T19:58:20Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 176.0
+    },
+    {
+      "date": "2026-08-17",
+      "timestamp": "2026-08-17T16:50:58Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 552.0
+    },
+    {
+      "date": "2026-08-17",
+      "timestamp": "2026-08-17T13:33:41Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": 455.0
+    },
+    {
+      "date": "2026-08-17",
+      "timestamp": "2026-08-17T13:33:40Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 20.0,
+      "price": null,
+      "realizedGain": 1494.0
+    },
+    {
+      "date": "2026-08-17",
+      "timestamp": "2026-08-17T13:33:35Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 25.0,
+      "price": null,
+      "realizedGain": 860.0
+    },
+    {
+      "date": "2026-08-17",
+      "timestamp": "2026-08-17T13:32:54Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 9.0,
+      "price": null,
+      "realizedGain": -639.0
+    },
+    {
+      "date": "2026-08-12",
+      "timestamp": "2026-08-12T19:39:58Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "equity",
+      "quantity": 25.0,
+      "price": 147.2152,
+      "realizedGain": 774.14
+    },
+    {
+      "date": "2026-08-12",
+      "timestamp": "2026-08-12T19:22:10Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 1055.0
+    },
+    {
+      "date": "2026-08-12",
+      "timestamp": "2026-08-12T13:31:15Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -257.0
+    },
+    {
+      "date": "2026-08-11",
+      "timestamp": "2026-08-11T19:45:07Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -34.0
+    },
+    {
+      "date": "2026-08-10",
+      "timestamp": "2026-08-10T19:08:24Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": -530.0
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T20:00:00Z",
+      "account": "Trading",
+      "symbol": "SOXL",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -1492.0
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T20:00:00Z",
+      "account": "Trading",
+      "symbol": "SOXL",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 1930.0
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T17:49:36Z",
+      "account": "Agentic",
+      "symbol": "SPCH",
+      "assetType": "equity",
+      "quantity": 7.0,
+      "price": 7.73,
+      "realizedGain": 14.35
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T16:24:00Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "equity",
+      "quantity": 50.0,
+      "price": 129.7,
+      "realizedGain": 447.06
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T14:40:52Z",
+      "account": "Agentic",
+      "symbol": "SPCH",
+      "assetType": "equity",
+      "quantity": 12.0,
+      "price": 7.7,
+      "realizedGain": 24.24
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T14:36:49Z",
+      "account": "Trading",
+      "symbol": "SPCH",
+      "assetType": "equity",
+      "quantity": 100.0,
+      "price": 7.5004,
+      "realizedGain": 81.89
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T14:35:11Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 905.0
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T14:21:25Z",
+      "account": "Trading",
+      "symbol": "SPCH",
+      "assetType": "equity",
+      "quantity": 50.0,
+      "price": 7.385,
+      "realizedGain": -2.64
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T14:21:08Z",
+      "account": "Trading",
+      "symbol": "SPCH",
+      "assetType": "equity",
+      "quantity": 30.0,
+      "price": 7.32,
+      "realizedGain": -14.67
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T14:20:51Z",
+      "account": "Trading",
+      "symbol": "SPCH",
+      "assetType": "equity",
+      "quantity": 50.0,
+      "price": 7.32,
+      "realizedGain": -12.9
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T13:36:50Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 355.0
+    },
+    {
+      "date": "2026-08-07",
+      "timestamp": "2026-08-07T13:36:08Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "equity",
+      "quantity": 27.0,
+      "price": 119.5352,
+      "realizedGain": -108.65
+    },
+    {
+      "date": "2026-08-05",
+      "timestamp": "2026-08-05T20:00:05Z",
+      "account": "Agentic",
+      "symbol": "FIG",
+      "assetType": "equity",
+      "quantity": 1.0,
+      "price": 28.13,
+      "realizedGain": 8.09
+    },
+    {
+      "date": "2026-08-05",
+      "timestamp": "2026-08-05T19:57:47Z",
+      "account": "Agentic",
+      "symbol": "SOXL",
+      "assetType": "equity",
+      "quantity": 0.831601,
+      "price": 132.8642,
+      "realizedGain": 30.49
+    },
+    {
+      "date": "2026-08-05",
+      "timestamp": "2026-08-05T18:37:09Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 190.0
+    },
+    {
+      "date": "2026-08-05",
+      "timestamp": "2026-08-05T14:23:38Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 1365.0
+    },
+    {
+      "date": "2026-08-04",
+      "timestamp": "2026-08-04T17:53:20Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -410.0
+    },
+    {
+      "date": "2026-08-04",
+      "timestamp": "2026-08-04T13:30:02Z",
+      "account": "Agentic",
+      "symbol": "CLOV",
+      "assetType": "equity",
+      "quantity": 50.0,
+      "price": 4.33,
+      "realizedGain": -17.0
+    },
+    {
+      "date": "2026-08-03",
+      "timestamp": "2026-08-03T15:43:48Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 409.0
+    },
+    {
+      "date": "2026-08-03",
+      "timestamp": "2026-08-03T14:10:14Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 250.0
+    },
+    {
+      "date": "2026-08-03",
+      "timestamp": "2026-08-03T10:21:40Z",
+      "account": "Agentic",
+      "symbol": "FIG",
+      "assetType": "equity",
+      "quantity": 4.0,
+      "price": 24.92,
+      "realizedGain": 19.52
+    },
+    {
+      "date": "2026-08-03",
+      "timestamp": "2026-08-03T09:31:57Z",
+      "account": "Agentic",
+      "symbol": "FIG",
+      "assetType": "equity",
+      "quantity": 5.0,
+      "price": 24.7,
+      "realizedGain": 23.3
+    },
+    {
+      "date": "2026-07-31",
+      "timestamp": "2026-07-31T20:00:00Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -1060.0
+    },
+    {
+      "date": "2026-07-31",
+      "timestamp": "2026-07-31T20:00:00Z",
+      "account": "Trading",
+      "symbol": "TSLA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -800.0
+    },
+    {
+      "date": "2026-07-31",
+      "timestamp": "2026-07-31T20:00:00Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -504.0
+    },
+    {
+      "date": "2026-07-24",
+      "timestamp": "2026-07-24T19:30:38Z",
+      "account": "Trading",
+      "symbol": "TSLA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 29.0
+    },
+    {
+      "date": "2026-07-24",
+      "timestamp": "2026-07-24T19:30:38Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -47.0
+    },
+    {
+      "date": "2026-07-24",
+      "timestamp": "2026-07-24T18:23:29Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -84.0
+    },
+    {
+      "date": "2026-07-23",
+      "timestamp": "2026-07-23T18:22:57Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "equity",
+      "quantity": 24.0,
+      "price": 116.69,
+      "realizedGain": -191.64
+    },
+    {
+      "date": "2026-07-22",
+      "timestamp": "2026-07-22T16:41:43Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 551.0
+    },
+    {
+      "date": "2026-07-22",
+      "timestamp": "2026-07-22T16:19:30Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 591.0
+    },
+    {
+      "date": "2026-07-21",
+      "timestamp": "2026-07-21T18:46:25Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 282.0
+    },
+    {
+      "date": "2026-07-21",
+      "timestamp": "2026-07-21T14:44:12Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 320.0
+    },
+    {
+      "date": "2026-07-21",
+      "timestamp": "2026-07-21T13:59:15Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 163.0
+    },
+    {
+      "date": "2026-07-21",
+      "timestamp": "2026-07-21T13:58:38Z",
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 188.0
+    },
+    {
+      "date": "2026-07-21",
+      "timestamp": "2026-07-21T13:37:55Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": 390.0
+    },
+    {
+      "date": "2026-07-21",
+      "timestamp": "2026-07-21T13:36:01Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 8.0,
+      "price": null,
+      "realizedGain": 953.0
+    },
+    {
+      "date": "2026-07-21",
+      "timestamp": "2026-07-21T13:32:25Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": 434.0
+    },
+    {
+      "date": "2026-07-21",
+      "timestamp": "2026-07-21T13:31:05Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 10.0,
+      "price": null,
+      "realizedGain": 443.0
+    },
+    {
+      "date": "2026-07-20",
+      "timestamp": "2026-07-20T18:12:28Z",
+      "account": "Agentic",
+      "symbol": "PATH",
+      "assetType": "equity",
+      "quantity": 22.0,
+      "price": 12.485,
+      "realizedGain": 15.07
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T19:46:33Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -369.0
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T19:42:39Z",
+      "account": "Trading",
+      "symbol": "CLOV",
+      "assetType": "equity",
+      "quantity": 100.0,
+      "price": 4.555,
+      "realizedGain": 14.0
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T19:28:03Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 60.0
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T19:28:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 23.0
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T19:19:40Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 10.0,
+      "price": null,
+      "realizedGain": 83.0
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T19:19:08Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": -267.0
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T16:15:09Z",
+      "account": "Trading",
+      "symbol": "MUU",
+      "assetType": "equity",
+      "quantity": 50.0,
+      "price": 29.735,
+      "realizedGain": 153.75
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T16:14:32Z",
+      "account": "Trading",
+      "symbol": "MU",
+      "assetType": "equity",
+      "quantity": 3.0,
+      "price": 888.0,
+      "realizedGain": 153.86
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T16:13:40Z",
+      "account": "Trading",
+      "symbol": "MUU",
+      "assetType": "equity",
+      "quantity": 50.0,
+      "price": 29.68,
+      "realizedGain": 143.0
+    },
+    {
+      "date": "2026-07-17",
+      "timestamp": "2026-07-17T16:02:00Z",
+      "account": "Trading",
+      "symbol": "MUU",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 150.0
+    },
+    {
+      "date": "2026-07-16",
+      "timestamp": "2026-07-16T20:00:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 25.0
+    },
+    {
+      "date": "2026-07-16",
+      "timestamp": "2026-07-16T20:00:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 20.0
+    },
+    {
+      "date": "2026-07-16",
+      "timestamp": "2026-07-16T19:48:15Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -155.0
+    },
+    {
+      "date": "2026-07-15",
+      "timestamp": "2026-07-15T19:35:54Z",
+      "account": "Trading",
+      "symbol": "PATH",
+      "assetType": "equity",
+      "quantity": 100.0,
+      "price": 12.015,
+      "realizedGain": 43.5
+    },
+    {
+      "date": "2026-07-15",
+      "timestamp": "2026-07-15T19:30:36Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 245.0
+    },
+    {
+      "date": "2026-07-14",
+      "timestamp": "2026-07-14T15:06:27Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 190.0
+    },
+    {
+      "date": "2026-07-14",
+      "timestamp": "2026-07-14T14:59:08Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 175.0
+    },
+    {
+      "date": "2026-07-14",
+      "timestamp": "2026-07-14T14:50:53Z",
+      "account": "Trading",
+      "symbol": "FRCB",
+      "assetType": "equity",
+      "quantity": 4.0,
+      "price": 0.0025,
+      "realizedGain": -33.83
+    },
+    {
+      "date": "2026-07-14",
+      "timestamp": "2026-07-14T14:36:02Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 240.0
+    },
+    {
+      "date": "2026-07-14",
+      "timestamp": "2026-07-14T14:26:53Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": 290.0
+    },
+    {
+      "date": "2026-07-14",
+      "timestamp": "2026-07-14T14:20:04Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 55.0
+    },
+    {
+      "date": "2026-07-14",
+      "timestamp": "2026-07-14T13:51:37Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 85.0
+    },
+    {
+      "date": "2026-07-10",
+      "timestamp": "2026-07-10T19:22:36Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 24.0
+    },
+    {
+      "date": "2026-07-10",
+      "timestamp": "2026-07-10T17:31:41Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 496.0
+    },
+    {
+      "date": "2026-07-10",
+      "timestamp": "2026-07-10T17:03:22Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 83.0
+    },
+    {
+      "date": "2026-07-10",
+      "timestamp": "2026-07-10T13:42:29Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 47.0
+    },
+    {
+      "date": "2026-07-10",
+      "timestamp": "2026-07-10T13:34:12Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 42.0
+    },
+    {
+      "date": "2026-07-10",
+      "timestamp": "2026-07-10T13:32:51Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": 103.0
+    },
+    {
+      "date": "2026-07-08",
+      "timestamp": "2026-07-08T17:35:21Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 435.0
+    },
+    {
+      "date": "2026-07-08",
+      "timestamp": "2026-07-08T17:16:51Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 160.0
+    },
+    {
+      "date": "2026-07-08",
+      "timestamp": "2026-07-08T16:17:54Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 265.0
+    },
+    {
+      "date": "2026-07-08",
+      "timestamp": "2026-07-08T13:49:34Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 221.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T17:42:58Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -70.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T17:28:30Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 33.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T17:07:24Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 131.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T17:03:40Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 73.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T17:01:10Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 105.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T16:47:41Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -84.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T16:44:16Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 147.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T16:36:32Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": -225.0
+    },
+    {
+      "date": "2026-07-07",
+      "timestamp": "2026-07-07T16:34:29Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": 455.0
+    },
+    {
+      "date": "2026-07-06",
+      "timestamp": "2026-07-06T19:40:22Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 800.0
+    },
+    {
+      "date": "2026-07-06",
+      "timestamp": "2026-07-06T16:02:36Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 66.0
+    },
+    {
+      "date": "2026-07-06",
+      "timestamp": "2026-07-06T13:31:24Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 505.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T19:59:01Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 81.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T19:58:46Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -29.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T19:51:08Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": -665.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T19:50:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 39.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T19:50:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 44.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T18:29:14Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 31.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T18:29:08Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 30.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T18:13:11Z",
+      "account": "Trading",
+      "symbol": "BITX",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 70.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T17:55:08Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 40.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T17:45:06Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 26.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T17:42:52Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 22.0
+    },
+    {
+      "date": "2026-07-02",
+      "timestamp": "2026-07-02T17:42:16Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": 36.0
+    },
+    {
+      "date": "2026-07-01",
+      "timestamp": "2026-07-01T14:51:08Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 5155.0
+    },
+    {
+      "date": "2026-06-30",
+      "timestamp": "2026-06-30T19:58:02Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 139.0
+    },
+    {
+      "date": "2026-06-30",
+      "timestamp": "2026-06-30T19:53:45Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 91.0
+    },
+    {
+      "date": "2026-06-30",
+      "timestamp": "2026-06-30T17:27:34Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 73.0
+    },
+    {
+      "date": "2026-06-30",
+      "timestamp": "2026-06-30T17:26:28Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 93.0
+    },
+    {
+      "date": "2026-06-30",
+      "timestamp": "2026-06-30T17:22:22Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -173.0
+    },
+    {
+      "date": "2026-06-30",
+      "timestamp": "2026-06-30T14:34:07Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 54.0
+    },
+    {
+      "date": "2026-06-30",
+      "timestamp": "2026-06-30T13:33:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": 5.0
+    },
+    {
+      "date": "2026-06-29",
+      "timestamp": "2026-06-29T19:58:36Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 67.0
+    },
+    {
+      "date": "2026-06-29",
+      "timestamp": "2026-06-29T19:38:25Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 35.0
+    },
+    {
+      "date": "2026-06-29",
+      "timestamp": "2026-06-29T19:37:13Z",
+      "account": "Trading",
+      "symbol": "METU",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 55.0
+    },
+    {
+      "date": "2026-06-29",
+      "timestamp": "2026-06-29T14:59:54Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 71.0
+    },
+    {
+      "date": "2026-06-29",
+      "timestamp": "2026-06-29T13:53:03Z",
+      "account": "Trading",
+      "symbol": "METU",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 60.0
+    },
+    {
+      "date": "2026-06-29",
+      "timestamp": "2026-06-29T13:48:43Z",
+      "account": "Trading",
+      "symbol": "METU",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 45.0
+    },
+    {
+      "date": "2026-06-29",
+      "timestamp": "2026-06-29T13:47:17Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -33.0
+    },
+    {
+      "date": "2026-06-26",
+      "timestamp": "2026-06-26T15:54:44Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 290.0
+    },
+    {
+      "date": "2026-06-25",
+      "timestamp": "2026-06-25T15:35:52Z",
+      "account": "Trading",
+      "symbol": "QUBT",
+      "assetType": "equity",
+      "quantity": 20.0,
+      "price": 9.44,
+      "realizedGain": 3.15
+    },
+    {
+      "date": "2026-06-25",
+      "timestamp": "2026-06-25T14:52:41Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 345.0
+    },
+    {
+      "date": "2026-06-24",
+      "timestamp": "2026-06-24T20:00:00Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -265.0
+    },
+    {
+      "date": "2026-06-22",
+      "timestamp": "2026-06-22T13:50:49Z",
+      "account": "Trading",
+      "symbol": "QUBT",
+      "assetType": "equity",
+      "quantity": 10.0,
+      "price": 11.075,
+      "realizedGain": 20.38
+    },
+    {
+      "date": "2026-06-22",
+      "timestamp": "2026-06-22T13:49:35Z",
+      "account": "Trading",
+      "symbol": "BITX",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 20.0
+    },
+    {
+      "date": "2026-06-18",
+      "timestamp": "2026-06-18T19:52:01Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -561.0
+    },
+    {
+      "date": "2026-06-18",
+      "timestamp": "2026-06-18T16:52:31Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -378.0
+    },
+    {
+      "date": "2026-06-17",
+      "timestamp": "2026-06-17T15:22:45Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -831.0
+    },
+    {
+      "date": "2026-06-12",
+      "timestamp": "2026-06-12T20:00:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -181.0
+    },
+    {
+      "date": "2026-06-12",
+      "timestamp": "2026-06-12T20:00:00Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -1690.0
+    },
+    {
+      "date": "2026-06-09",
+      "timestamp": "2026-06-09T14:58:20Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 75.0
+    },
+    {
+      "date": "2026-06-09",
+      "timestamp": "2026-06-09T14:53:28Z",
+      "account": "Trading",
+      "symbol": "ETH",
+      "assetType": "crypto",
+      "quantity": 0.037097,
+      "price": 1622.23,
+      "realizedGain": 0.46
+    },
+    {
+      "date": "2026-06-09",
+      "timestamp": "2026-06-09T12:03:45Z",
+      "account": "Trading",
+      "symbol": "ETH",
+      "assetType": "crypto",
+      "quantity": 0.0629,
+      "price": 1665.34,
+      "realizedGain": 3.49
+    },
+    {
+      "date": "2026-06-08",
+      "timestamp": "2026-06-08T17:55:25Z",
+      "account": "Trading",
+      "symbol": "ETH",
+      "assetType": "crypto",
+      "quantity": 0.4,
+      "price": 1667.37,
+      "realizedGain": 23.02
+    },
+    {
+      "date": "2026-06-08",
+      "timestamp": "2026-06-08T13:11:58Z",
+      "account": "Trading",
+      "symbol": "SOL",
+      "assetType": "crypto",
+      "quantity": 11.91087,
+      "price": 66.23,
+      "realizedGain": -52.68
+    },
+    {
+      "date": "2026-06-08",
+      "timestamp": "2026-06-08T04:02:52Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -1.39
+    },
+    {
+      "date": "2026-06-08",
+      "timestamp": "2026-06-08T04:02:35Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": 2.61
+    },
+    {
+      "date": "2026-06-08",
+      "timestamp": "2026-06-08T03:59:19Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 1.04
+    },
+    {
+      "date": "2026-06-08",
+      "timestamp": "2026-06-08T03:59:04Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": -1.31
+    },
+    {
+      "date": "2026-06-08",
+      "timestamp": "2026-06-08T03:51:32Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 8.0,
+      "price": null,
+      "realizedGain": -4.32
+    },
+    {
+      "date": "2026-06-08",
+      "timestamp": "2026-06-08T01:01:19Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": -1.9
+    },
+    {
+      "date": "2026-06-07",
+      "timestamp": "2026-06-07T04:34:27Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 9.0,
+      "price": null,
+      "realizedGain": 4.5
+    },
+    {
+      "date": "2026-06-06",
+      "timestamp": "2026-06-06T23:29:51Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 8.0,
+      "price": null,
+      "realizedGain": -4.4
+    },
+    {
+      "date": "2026-06-06",
+      "timestamp": "2026-06-06T23:28:07Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 8.0,
+      "price": null,
+      "realizedGain": 3.6
+    },
+    {
+      "date": "2026-06-06",
+      "timestamp": "2026-06-06T23:10:44Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 8.0,
+      "price": null,
+      "realizedGain": -4.48
+    },
+    {
+      "date": "2026-06-06",
+      "timestamp": "2026-06-06T23:05:01Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 9.0,
+      "price": null,
+      "realizedGain": 4.41
+    },
+    {
+      "date": "2026-06-06",
+      "timestamp": "2026-06-06T22:47:29Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 8.0,
+      "price": null,
+      "realizedGain": -4.72
+    },
+    {
+      "date": "2026-06-06",
+      "timestamp": "2026-06-06T22:03:14Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 10.0,
+      "price": null,
+      "realizedGain": 5.5
+    },
+    {
+      "date": "2026-06-06",
+      "timestamp": "2026-06-06T21:12:06Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": 1.23
+    },
+    {
+      "date": "2026-06-05",
+      "timestamp": "2026-06-05T20:00:00Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -230.0
+    },
+    {
+      "date": "2026-06-05",
+      "timestamp": "2026-06-05T14:10:34Z",
+      "account": "Trading",
+      "symbol": "SOL",
+      "assetType": "crypto",
+      "quantity": 1.5,
+      "price": 64.44,
+      "realizedGain": -9.95
+    },
+    {
+      "date": "2026-06-05",
+      "timestamp": "2026-06-05T14:09:19Z",
+      "account": "Trading",
+      "symbol": "TON",
+      "assetType": "crypto",
+      "quantity": 98.609,
+      "price": 1.512,
+      "realizedGain": -32.64
+    },
+    {
+      "date": "2026-06-04",
+      "timestamp": "2026-06-04T19:39:11Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 43.0
+    },
+    {
+      "date": "2026-06-04",
+      "timestamp": "2026-06-04T18:49:34Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 104.0
+    },
+    {
+      "date": "2026-06-03",
+      "timestamp": "2026-06-03T18:12:31Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 565.0
+    },
+    {
+      "date": "2026-06-03",
+      "timestamp": "2026-06-03T15:44:24Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 705.0
+    },
+    {
+      "date": "2026-06-02",
+      "timestamp": "2026-06-02T15:56:22Z",
+      "account": "Trading",
+      "symbol": "SOXS",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -279.0
+    },
+    {
+      "date": "2026-06-02",
+      "timestamp": "2026-06-02T14:45:52Z",
+      "account": "Trading",
+      "symbol": "NVDL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -278.0
+    },
+    {
+      "date": "2026-06-01",
+      "timestamp": "2026-06-01T20:00:00Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 5.0,
+      "price": null,
+      "realizedGain": -722.0
+    },
+    {
+      "date": "2026-06-01",
+      "timestamp": "2026-06-01T19:30:54Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -116.0
+    },
+    {
+      "date": "2026-06-01",
+      "timestamp": "2026-06-01T17:56:00Z",
+      "account": "Trading",
+      "symbol": "TON",
+      "assetType": "crypto",
+      "quantity": 25.0,
+      "price": 2.163,
+      "realizedGain": 20.65
+    },
+    {
+      "date": "2026-06-01",
+      "timestamp": "2026-06-01T14:01:38Z",
+      "account": "Trading",
+      "symbol": "XRP",
+      "assetType": "crypto",
+      "quantity": 1.0,
+      "price": 1.27,
+      "realizedGain": -0.14
+    },
+    {
+      "date": "2026-06-01",
+      "timestamp": "2026-06-01T14:01:21Z",
+      "account": "Trading",
+      "symbol": "ADA",
+      "assetType": "crypto",
+      "quantity": 1000.0,
+      "price": 0.2263,
+      "realizedGain": -27.73
+    },
+    {
+      "date": "2026-06-01",
+      "timestamp": "2026-06-01T14:01:09Z",
+      "account": "Trading",
+      "symbol": "SOL",
+      "assetType": "crypto",
+      "quantity": 5.39492,
+      "price": 78.93,
+      "realizedGain": -17.04
+    },
+    {
+      "date": "2026-05-31",
+      "timestamp": "2026-05-31T22:03:30Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": 2.4
+    },
+    {
+      "date": "2026-05-29",
+      "timestamp": "2026-05-29T13:58:51Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 87.0
+    },
+    {
+      "date": "2026-05-28",
+      "timestamp": "2026-05-28T17:56:56Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -100.0
+    },
+    {
+      "date": "2026-05-27",
+      "timestamp": "2026-05-27T19:59:02Z",
+      "account": "Trading",
+      "symbol": "TON",
+      "assetType": "crypto",
+      "quantity": 15.842,
+      "price": 1.879,
+      "realizedGain": 8.59
+    },
+    {
+      "date": "2026-05-26",
+      "timestamp": "2026-05-26T15:13:33Z",
+      "account": "Trading",
+      "symbol": "SOXS",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -68.0
+    },
+    {
+      "date": "2026-05-26",
+      "timestamp": "2026-05-26T15:13:15Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -395.0
+    },
+    {
+      "date": "2026-05-22",
+      "timestamp": "2026-05-22T19:50:18Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -215.0
+    },
+    {
+      "date": "2026-05-18",
+      "timestamp": "2026-05-18T19:29:14Z",
+      "account": "Trading",
+      "symbol": "QQQ",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 131.0
+    },
+    {
+      "date": "2026-05-15",
+      "timestamp": "2026-05-15T18:15:34Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 115.0
+    },
+    {
+      "date": "2026-05-13",
+      "timestamp": "2026-05-13T17:26:25Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 545.0
+    },
+    {
+      "date": "2026-05-13",
+      "timestamp": "2026-05-13T17:25:12Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -478.0
+    },
+    {
+      "date": "2026-05-13",
+      "timestamp": "2026-05-13T17:23:42Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 425.0
+    },
+    {
+      "date": "2026-05-11",
+      "timestamp": "2026-05-11T06:07:24Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 15.0,
+      "price": null,
+      "realizedGain": -4.65
+    },
+    {
+      "date": "2026-05-07",
+      "timestamp": "2026-05-07T04:14:14Z",
+      "account": "Trading",
+      "symbol": "TON",
+      "assetType": "crypto",
+      "quantity": 30.0,
+      "price": 2.736,
+      "realizedGain": 41.96
+    },
+    {
+      "date": "2026-05-06",
+      "timestamp": "2026-05-06T19:58:49Z",
+      "account": "Trading",
+      "symbol": "SOL",
+      "assetType": "crypto",
+      "quantity": 12.0,
+      "price": 88.49,
+      "realizedGain": 29.7
+    },
+    {
+      "date": "2026-05-06",
+      "timestamp": "2026-05-06T19:55:17Z",
+      "account": "Trading",
+      "symbol": "SOL",
+      "assetType": "crypto",
+      "quantity": 3.0,
+      "price": 88.46,
+      "realizedGain": 7.34
+    },
+    {
+      "date": "2026-05-06",
+      "timestamp": "2026-05-06T19:54:43Z",
+      "account": "Trading",
+      "symbol": "TON",
+      "assetType": "crypto",
+      "quantity": 50.0,
+      "price": 2.36,
+      "realizedGain": 51.17
+    },
+    {
+      "date": "2026-05-06",
+      "timestamp": "2026-05-06T19:53:26Z",
+      "account": "Trading",
+      "symbol": "HOOD",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 390.0
+    },
+    {
+      "date": "2026-05-06",
+      "timestamp": "2026-05-06T19:51:28Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 280.0
+    },
+    {
+      "date": "2026-05-06",
+      "timestamp": "2026-05-06T15:05:24Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -99.0
+    },
+    {
+      "date": "2026-05-05",
+      "timestamp": "2026-05-05T17:18:50Z",
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -1307.0
+    },
+    {
+      "date": "2026-04-29",
+      "timestamp": "2026-04-29T19:57:39Z",
+      "account": "Trading",
+      "symbol": "SOL",
+      "assetType": "crypto",
+      "quantity": 5.0,
+      "price": 81.54,
+      "realizedGain": -22.4
+    },
+    {
+      "date": "2026-04-26",
+      "timestamp": "2026-04-26T08:21:18Z",
+      "account": "Trading",
+      "symbol": "(unresolved)",
+      "assetType": "other",
+      "quantity": 10.0,
+      "price": null,
+      "realizedGain": -0.3
+    },
+    {
+      "date": "2026-04-22",
+      "timestamp": "2026-04-22T19:31:43Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 33.0
+    },
+    {
+      "date": "2026-04-22",
+      "timestamp": "2026-04-22T13:31:50Z",
+      "account": "Trading",
+      "symbol": "TQQQ",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 48.0
+    },
+    {
+      "date": "2026-04-21",
+      "timestamp": "2026-04-21T16:22:54Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -137.0
+    },
+    {
+      "date": "2026-04-20",
+      "timestamp": "2026-04-20T18:44:59Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -137.0
+    },
+    {
+      "date": "2026-04-14",
+      "timestamp": "2026-04-14T15:36:13Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 615.0
+    },
+    {
+      "date": "2026-04-14",
+      "timestamp": "2026-04-14T15:36:01Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 946.0
+    },
+    {
+      "date": "2026-04-10",
+      "timestamp": "2026-04-10T19:16:40Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 269.0
+    },
+    {
+      "date": "2026-04-10",
+      "timestamp": "2026-04-10T17:39:06Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 185.0
+    },
+    {
+      "date": "2026-04-09",
+      "timestamp": "2026-04-09T19:53:30Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 101.0
+    },
+    {
+      "date": "2026-04-09",
+      "timestamp": "2026-04-09T17:22:36Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 135.0
+    },
+    {
+      "date": "2026-04-09",
+      "timestamp": "2026-04-09T16:09:46Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -64.0
+    },
+    {
+      "date": "2026-04-08",
+      "timestamp": "2026-04-08T18:41:13Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 180.0
+    },
+    {
+      "date": "2026-04-08",
+      "timestamp": "2026-04-08T16:13:40Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 461.0
+    },
+    {
+      "date": "2026-04-08",
+      "timestamp": "2026-04-08T16:13:11Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": 478.0
+    },
+    {
+      "date": "2026-04-01",
+      "timestamp": "2026-04-01T17:30:41Z",
+      "account": "Trading",
+      "symbol": "XOM",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -94.0
+    },
+    {
+      "date": "2026-03-20",
+      "timestamp": "2026-03-20T20:00:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -390.0
+    },
+    {
+      "date": "2026-03-13",
+      "timestamp": "2026-03-13T20:00:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -435.0
+    },
+    {
+      "date": "2026-03-10",
+      "timestamp": "2026-03-10T18:31:27Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 0.0
+    },
+    {
+      "date": "2026-03-10",
+      "timestamp": "2026-03-10T18:24:12Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -60.0
+    },
+    {
+      "date": "2026-03-09",
+      "timestamp": "2026-03-09T20:00:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -232.0
+    },
+    {
+      "date": "2026-03-05",
+      "timestamp": "2026-03-05T20:58:57Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 118.0
+    },
+    {
+      "date": "2026-02-23",
+      "timestamp": "2026-02-23T21:00:00Z",
+      "account": "Trading",
+      "symbol": "TSLA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -251.0
+    },
+    {
+      "date": "2026-02-23",
+      "timestamp": "2026-02-23T21:00:00Z",
+      "account": "Trading",
+      "symbol": "SPY",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -101.0
+    },
+    {
+      "date": "2026-01-21",
+      "timestamp": "2026-01-21T20:56:42Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -273.0
+    },
+    {
+      "date": "2026-01-21",
+      "timestamp": "2026-01-21T18:14:51Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -305.0
+    },
+    {
+      "date": "2026-01-16",
+      "timestamp": "2026-01-16T14:42:32Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 287.0
+    },
+    {
+      "date": "2026-01-16",
+      "timestamp": "2026-01-16T14:32:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 188.0
+    },
+    {
+      "date": "2026-01-16",
+      "timestamp": "2026-01-16T14:31:47Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 17.0
+    },
+    {
+      "date": "2026-01-09",
+      "timestamp": "2026-01-09T21:00:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": -227.0
+    },
+    {
+      "date": "2026-01-09",
+      "timestamp": "2026-01-09T21:00:00Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -304.0
+    },
+    {
+      "date": "2026-01-07",
+      "timestamp": "2026-01-07T15:30:03Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": -322.0
+    },
+    {
+      "date": "2026-01-06",
+      "timestamp": "2026-01-06T19:18:03Z",
+      "account": "Trading",
+      "symbol": "XOM",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 214.0
+    },
+    {
+      "date": "2026-01-02",
+      "timestamp": "2026-01-02T14:58:39Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 285.0
+    },
+    {
+      "date": "2026-01-02",
+      "timestamp": "2026-01-02T14:31:55Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 108.0
+    }
+  ]
+}
