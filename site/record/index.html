@@ -53,8 +53,8 @@
       <div class="stat-card"><div class="stat-num num" id="statTotalPnl">—</div><div class="stat-label">Net Realized, 2026 YTD</div></div>
       <div class="stat-card"><div class="stat-num num" id="statWinRate">—</div><div class="stat-label">Win Rate</div></div>
       <div class="stat-card"><div class="stat-num num" id="statTotalTrades">—</div><div class="stat-label">Closed Trades</div></div>
-      <div class="stat-card"><div class="stat-num num gain" id="statBiggestWin">—</div><div class="stat-label">Biggest Win</div></div>
-      <div class="stat-card"><div class="stat-num num loss" id="statBiggestLoss">—</div><div class="stat-label">Biggest Loss</div></div>
+      <div class="stat-card stat-card-clickable" id="statBiggestWinCard" tabindex="0" role="button"><div class="stat-num num gain" id="statBiggestWin">—</div><div class="stat-label">Biggest Win &rarr;</div></div>
+      <div class="stat-card stat-card-clickable" id="statBiggestLossCard" tabindex="0" role="button"><div class="stat-num num loss" id="statBiggestLoss">—</div><div class="stat-label">Biggest Loss &rarr;</div></div>
     </div>
 
     <div class="card" style="margin-top:28px; padding:20px 24px;">
@@ -89,12 +89,12 @@
         <thead>
           <tr>
             <th data-sort="date" data-dir="desc">Date <span class="sort-arrow">&#9660;</span></th>
-            <th data-sort="symbol">Symbol</th>
-            <th data-sort="account">Account</th>
-            <th data-sort="assetType">Type</th>
-            <th data-sort="quantity">Qty</th>
-            <th data-sort="price">Price</th>
-            <th data-sort="realizedGain">Realized P&amp;L</th>
+            <th data-sort="symbol">Symbol <span class="sort-arrow">&#9660;</span></th>
+            <th data-sort="account">Account <span class="sort-arrow">&#9660;</span></th>
+            <th data-sort="assetType">Type <span class="sort-arrow">&#9660;</span></th>
+            <th data-sort="quantity">Qty <span class="sort-arrow">&#9660;</span></th>
+            <th data-sort="price">Price <span class="sort-arrow">&#9660;</span></th>
+            <th data-sort="realizedGain">Realized P&amp;L <span class="sort-arrow">&#9660;</span></th>
           </tr>
         </thead>
         <tbody id="recordTbody">

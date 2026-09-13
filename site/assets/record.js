@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var tbody = document.getElementById('recordTbody');
   if (!tbody) return;
 
-  var state = { trades: [], sortKey: 'date', sortDir: 'desc' };
+  var state = { trades: [], summary: null, sortKey: 'date', sortDir: 'desc' };
 
   fetch('/assets/trades.json', { cache: 'no-store' })
     .then(function (res) { return res.ok ? res.json() : null; })
@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
       state.trades = data.trades;
+      state.summary = data.summary;
       renderSummary(data.summary);
       renderChart(data.trades);
       wireControls();
@@ -55,10 +56,60 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         document.querySelectorAll('#recordTable thead th').forEach(function (h) { h.classList.remove('sort-active'); });
         th.classList.add('sort-active');
-        th.querySelector('.sort-arrow').innerHTML = state.sortDir === 'asc' ? '&#9650;' : '&#9660;';
+        var arrow = th.querySelector('.sort-arrow');
+        if (arrow) arrow.innerHTML = state.sortDir === 'asc' ? '&#9650;' : '&#9660;';
         render();
       });
     });
+
+    var winCard = document.getElementById('statBiggestWinCard');
+    var lossCard = document.getElementById('statBiggestLossCard');
+    if (winCard) wireJumpCard(winCard, function () { return state.summary && state.summary.biggestWin; });
+    if (lossCard) wireJumpCard(lossCard, function () { return state.summary && state.summary.biggestLoss; });
+  }
+
+  function wireJumpCard(card, getTarget) {
+    function activate() {
+      var t = getTarget();
+      if (t) jumpToTrade(t);
+    }
+    card.addEventListener('click', activate);
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); activate(); }
+    });
+  }
+
+  // Resets filters/search so the target trade is guaranteed visible, sorts by
+  // date so the jump is deterministic, then scrolls to and briefly highlights
+  // the matching row (matched on symbol+date+gain, which is unique enough for
+  // this dataset's actual size — no stable row id exists to key off instead).
+  function jumpToTrade(target) {
+    document.getElementById('recordSearch').value = '';
+    document.getElementById('recordAccount').value = 'all';
+    document.getElementById('recordType').value = 'all';
+    document.getElementById('recordOutcome').value = 'all';
+    state.sortKey = 'date';
+    state.sortDir = 'desc';
+    document.querySelectorAll('#recordTable thead th').forEach(function (h) { h.classList.remove('sort-active'); });
+    var dateTh = document.querySelector('#recordTable thead th[data-sort="date"]');
+    if (dateTh) {
+      dateTh.classList.add('sort-active');
+      var arrow = dateTh.querySelector('.sort-arrow');
+      if (arrow) arrow.innerHTML = '&#9660;';
+    }
+    render();
+
+    var row = document.querySelector(
+      '#recordTbody tr[data-symbol="' + cssEscape(target.symbol) + '"][data-date="' + target.date + '"][data-gain="' + target.gain + '"]'
+    );
+    if (!row) return;
+    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    row.classList.add('row-flash');
+    setTimeout(function () { row.classList.remove('row-flash'); }, 2200);
+  }
+
+  function cssEscape(s) {
+    return String(s).replace(/["\\]/g, '\\$&');
   }
 
   function render() {
@@ -93,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tbody.innerHTML = rows.map(function (t) {
       var dir = t.realizedGain > 0 ? 'gain' : (t.realizedGain < 0 ? 'loss' : '');
-      return '<tr>' +
+      return '<tr data-symbol="' + escapeHtml(t.symbol) + '" data-date="' + t.date + '" data-gain="' + t.realizedGain + '">' +
         '<td class="num">' + t.date + '</td>' +
         '<td><strong>' + escapeHtml(t.symbol) + '</strong></td>' +
         '<td>' + escapeHtml(t.account) + '</td>' +

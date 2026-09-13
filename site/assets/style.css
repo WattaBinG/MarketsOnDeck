@@ -319,6 +319,13 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .record-table thead th .sort-arrow { opacity: 0.35; font-size: 9px; margin-left: 3px; }
 .record-table thead th.sort-active .sort-arrow { opacity: 1; color: var(--accent); }
 .record-table tbody tr:hover { background: var(--surface-raised); }
+.record-table tbody tr.row-flash { animation: row-flash-anim 2.2s ease-out; }
+@keyframes row-flash-anim {
+  0% { background: var(--accent-tint); }
+  100% { background: transparent; }
+}
+.stat-card-clickable { cursor: pointer; transition: transform .15s ease, box-shadow .15s ease; }
+.stat-card-clickable:hover, .stat-card-clickable:focus-visible { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 .record-table .badge-type {
   font-family: var(--font-mono); font-size: 10px; text-transform: uppercase; letter-spacing: 0.04em;
   padding: 2px 7px; border-radius: 999px; border: 1px solid var(--border); color: var(--text-muted);
