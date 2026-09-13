@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   initTicker();
+  initCrypto();
   initHomeStats();
 });
 
@@ -80,6 +81,22 @@ function initTicker() {
       track.innerHTML = asOfHtml + itemsHtml + asOfHtml + itemsHtml;
     })
     .catch(function () { strip.hidden = true; });
+}
+
+// Static crypto corner box — reads /assets/crypto.json (refreshed every 30
+// minutes, 7 days a week, separate from the stock ticker's market-hours-only
+// schedule since crypto never closes). Deliberately does not scroll.
+function initCrypto() {
+  var box = document.getElementById('tickerCrypto');
+  if (!box) return;
+
+  fetch('/assets/crypto.json', { cache: 'no-store' })
+    .then(function (res) { return res.ok ? res.json() : null; })
+    .then(function (data) {
+      if (!data || !data.items || !data.items.length) { box.hidden = true; return; }
+      box.innerHTML = data.items.map(renderTickerItem).join('');
+    })
+    .catch(function () { box.hidden = true; });
 }
 
 function renderTickerItem(item) {

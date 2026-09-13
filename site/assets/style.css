@@ -16,15 +16,15 @@
   --border-strong: #CBD2E1;
   --text: #12151C;
   --text-muted: #5C6475;
-  --accent: #2557E8;
-  --accent-2: #E2711D;
-  --accent-tint: #EAF0FF;
+  --accent: #1E2A6B;
+  --accent-2: #F2A93B;
+  --accent-tint: #E8EAF4;
   --accent-ink: #FFFFFF;
   --gain: #0F9D58;
   --gain-bg: #E7F7EE;
   --loss: #D93B3B;
   --loss-bg: #FCEAEA;
-  --focus: #2557E8;
+  --focus: #1E2A6B;
   --font-display: "Oswald", ui-sans-serif, sans-serif;
   --font-body: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -48,15 +48,15 @@
   --border-strong: #3A4258;
   --text: #ECEEF3;
   --text-muted: #9AA3B7;
-  --accent: #6E96FF;
-  --accent-2: #FFA45C;
-  --accent-tint: #212B42;
+  --accent: #7C8BE0;
+  --accent-2: #F2B75C;
+  --accent-tint: #262B4A;
   --accent-ink: #12161F;
   --gain: #34D07A;
   --gain-bg: #16291F;
   --loss: #F16A6A;
   --loss-bg: #301C1F;
-  --focus: #6E96FF;
+  --focus: #7C8BE0;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 10px 24px -12px rgba(0, 0, 0, 0.45);
   --shadow-lg: 0 24px 48px -20px rgba(0, 0, 0, 0.55);
@@ -263,14 +263,18 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .ticker-strip {
   border-bottom: 1px solid var(--border);
   background: var(--surface-raised);
-  overflow: hidden;
   position: relative;
+  display: flex;
+  align-items: stretch;
 }
-.ticker-strip::before, .ticker-strip::after {
+.ticker-scroll {
+  flex: 1 1 auto; min-width: 0; overflow: hidden; position: relative;
+}
+.ticker-scroll::before, .ticker-scroll::after {
   content: ""; position: absolute; top: 0; bottom: 0; width: 36px; z-index: 2; pointer-events: none;
 }
-.ticker-strip::before { left: 0; background: linear-gradient(90deg, var(--surface-raised), transparent); }
-.ticker-strip::after { right: 0; background: linear-gradient(270deg, var(--surface-raised), transparent); }
+.ticker-scroll::before { left: 0; background: linear-gradient(90deg, var(--surface-raised), transparent); }
+.ticker-scroll::after { right: 0; background: linear-gradient(270deg, var(--surface-raised), transparent); }
 .ticker-track {
   display: flex; width: max-content;
   animation: ticker-scroll 55s linear infinite;
@@ -290,9 +294,22 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; flex-shrink: 0;
   border-right: 1px solid var(--border);
 }
+/* Static (non-scrolling) crypto box, pinned to the right of the ticker —
+   crypto trades 24/7 so it's refreshed on its own schedule, separate from
+   the market-hours-only stock ticker, and deliberately doesn't scroll. */
+.ticker-crypto {
+  flex: 0 0 auto; display: flex; align-items: stretch;
+  border-left: 1px solid var(--border-strong); background: var(--surface);
+}
+.ticker-crypto .ticker-item { border-right: none; border-left: 1px solid var(--border); }
+.ticker-crypto .ticker-item:first-child { border-left: none; }
 @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) {
-  .ticker-track { animation: none; overflow-x: auto; }
+  .ticker-track { animation: none; }
+  .ticker-scroll { overflow-x: auto; }
+}
+@media (max-width: 700px) {
+  .ticker-crypto { display: none; }
 }
 
 /* The Record — sortable/filterable trade log */
