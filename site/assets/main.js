@@ -39,29 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   initTicker();
   initCrypto();
-  initHomeStats();
 });
 
-// Homepage hero stat row — reads /assets/trades.json's summary block (the
-// same data source The Record page browses in full) so the headline numbers
-// never drift out of sync with what a visitor finds when they click through.
-function initHomeStats() {
-  var pnlEl = document.getElementById('homeStatPnl');
-  if (!pnlEl) return;
-
-  fetch('/assets/trades.json', { cache: 'no-store' })
-    .then(function (res) { return res.ok ? res.json() : null; })
-    .then(function (data) {
-      if (!data || !data.summary) return;
-      var s = data.summary;
-      var sign = s.totalRealizedGain >= 0 ? '+' : '-';
-      pnlEl.textContent = sign + '$' + Math.abs(s.totalRealizedGain).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-      pnlEl.classList.add(s.totalRealizedGain >= 0 ? 'gain' : 'loss');
-      document.getElementById('homeStatWinRate').textContent = s.winRate.toFixed(1) + '%';
-      document.getElementById('homeStatTrades').textContent = String(s.totalTrades);
-    })
-    .catch(function () {});
-}
+// Note: the homepage hero stats and "Most Recent Closed Trades" cards used to
+// be filled in by client-side JS reading trades.json. Moved to static HTML,
+// baked in once daily by the Record Refresh routine (see the
+// RECORD_STATS_START/RECENT_TRADES_START markers in index.html) instead —
+// that removes the blank "—" flash on first paint and means link-preview
+// bots and crawlers (which don't run JS) actually see the real numbers too.
 
 // Rolling ticker strip — reads /assets/ticker.json (refreshed by a scheduled
 // job a few times a day) and renders a duplicated, seamlessly-looping row.

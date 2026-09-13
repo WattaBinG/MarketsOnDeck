@@ -11,11 +11,11 @@
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
-<meta property="og:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+<meta property="og:image" content="https://marketsondeck.wattabing.workers.dev/assets/brand/badge-1200.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+<meta name="twitter:image" content="https://marketsondeck.wattabing.workers.dev/assets/brand/badge-1200.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"MarketsOnDeck","url":"https://marketsondeck.net/","description":"Real trades from my own brokerage account, wins and losses both — posted as they happen.","publisher":{"@type":"Organization","name":"MarketsOnDeck"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"MarketsOnDeck","url":"https://marketsondeck.wattabing.workers.dev/","description":"Real trades from my own brokerage account, wins and losses both — posted as they happen.","publisher":{"@type":"Organization","name":"MarketsOnDeck"}}
 </script>
 </head>
 <body>
@@ -63,20 +63,50 @@
         <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
         <a class="btn" href="/record/index.html">Browse The Record</a>
       </div>
+      <!-- RECORD_STATS_START — updated once daily by the Record Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
       <div class="stat-row" id="homeStats">
         <div class="stat-card">
-          <div class="stat-num num" id="homeStatPnl">—</div>
+          <div class="stat-num num gain" id="homeStatPnl">+$19,494.82</div>
           <div class="stat-label">Net Realized, 2026 YTD</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num num" id="homeStatWinRate">—</div>
+          <div class="stat-num num" id="homeStatWinRate">66.9%</div>
           <div class="stat-label">2026 Win Rate</div>
         </div>
         <div class="stat-card">
-          <div class="stat-num num" id="homeStatTrades">—</div>
+          <div class="stat-num num" id="homeStatTrades">282</div>
           <div class="stat-label">Trades in The Record</div>
         </div>
       </div>
+      <!-- RECORD_STATS_END -->
+      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, updated daily after the close.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="eyebrow">Proof, Not a Promise</div>
+      <h2 class="mt-0">Most Recent Closed Trades</h2>
+      <!-- RECENT_TRADES_START — updated once daily by the Record Refresh routine; always the 3 most recent trades from trades.json, unfiltered (wins or losses, whichever actually happened) — keep this exact card structure so the automated edit stays a clean find/replace -->
+      <div class="grid grid-3" style="margin-top:20px;">
+        <div class="card">
+          <span class="badge badge-loss">LOSS &middot; Sep 11</span>
+          <h3 class="num" style="text-transform:none;">GOOGL <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Trading</span></h3>
+          <span class="card-link num loss">-$1,558.00</span>
+        </div>
+        <div class="card">
+          <span class="badge badge-loss">LOSS &middot; Sep 11</span>
+          <h3 class="num" style="text-transform:none;">GOOGL <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Trading</span></h3>
+          <span class="card-link num loss">-$708.00</span>
+        </div>
+        <div class="card">
+          <span class="badge badge-loss">LOSS &middot; Sep 11</span>
+          <h3 class="num" style="text-transform:none;">GOOGL <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Trading</span></h3>
+          <span class="card-link num loss">-$535.00</span>
+        </div>
+      </div>
+      <!-- RECENT_TRADES_END -->
+      <p class="text-muted" style="font-size:13px; margin-top:14px;">Unfiltered — the 3 most recent trades exactly as they closed, win or lose. <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">See all 282 →</a></p>
     </div>
   </section>
 
