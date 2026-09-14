@@ -1,13 +1,13 @@
 {
   "summary": {
-    "asOf": "2026-09-12",
-    "scope": "Realized trades, January 1 - September 12, 2026 (both accounts)",
-    "totalTrades": 282,
-    "totalRealizedGain": 19494.82,
-    "wins": 188,
-    "losses": 93,
+    "asOf": "2026-09-14",
+    "scope": "Realized trades, January 1 - September 14, 2026 (both accounts)",
+    "totalTrades": 289,
+    "totalRealizedGain": 22758.23,
+    "wins": 193,
+    "losses": 95,
     "flat": 1,
-    "winRate": 66.9,
+    "winRate": 67.01,
     "biggestWin": {
       "symbol": "META",
       "date": "2026-07-01",
@@ -21,17 +21,95 @@
       "account": "Trading"
     },
     "perAccount": {
-      "Trading": { "realizedGain": 19316.91, "trades": 273, "winRate": 66.2 },
-      "Agentic": { "realizedGain": 177.91, "trades": 9, "winRate": 88.9 }
+      "Trading": {
+        "realizedGain": 22580.32,
+        "trades": 280,
+        "winRate": 66.31
+      },
+      "Agentic": {
+        "realizedGain": 177.91,
+        "trades": 9,
+        "winRate": 88.89
+      }
     },
     "benchmark": {
       "spyBaselineDate": "2026-01-02",
       "spyBaselinePrice": 683.17,
-      "spyCurrentPrice": 764.35,
-      "spyYtdPercent": 11.88
+      "spyCurrentPrice": 760.65,
+      "spyYtdPercent": 11.34
     }
   },
   "trades": [
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14T15:44:12Z",
+      "account": "Trading",
+      "symbol": "LULU",
+      "assetType": "option",
+      "quantity": 3.0,
+      "price": null,
+      "realizedGain": -66.0
+    },
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14T15:31:01Z",
+      "account": "Trading",
+      "symbol": "LULU",
+      "assetType": "option",
+      "quantity": 4.0,
+      "price": null,
+      "realizedGain": -598.0
+    },
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14T15:30:05Z",
+      "account": "Trading",
+      "symbol": "LULU",
+      "assetType": "equity",
+      "quantity": 100.0,
+      "price": 100.7051,
+      "realizedGain": 142.41
+    },
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14T15:26:10Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 910.0
+    },
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14T15:15:11Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 925.0
+    },
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14T15:14:47Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 975.0
+    },
+    {
+      "date": "2026-09-14",
+      "timestamp": "2026-09-14T15:13:27Z",
+      "account": "Trading",
+      "symbol": "GOOGL",
+      "assetType": "option",
+      "quantity": 1.0,
+      "price": null,
+      "realizedGain": 975.0
+    },
     {
       "date": "2026-09-11",
       "timestamp": "2026-09-11T15:54:59Z",
@@ -2269,7 +2347,7 @@
       "symbol": "ADA",
       "assetType": "crypto",
       "quantity": 1000.0,
-      "price": 0.2263,
+      "price": 0.2264,
       "realizedGain": -27.73
     },
     {
