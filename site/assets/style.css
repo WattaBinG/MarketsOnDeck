@@ -257,7 +257,24 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 :root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
 
-/* Rolling ticker strip — real prices, refreshed by a scheduled job into ticker.json */
+/* Ticker system — two rows. Row 1 (.ticker-pinned) is the standing set —
+   SPY/QQQ/DIA + BTC/ETH/SOL — always visible, never hidden, on every
+   screen size (it horizontally swipe-scrolls on narrow viewports rather
+   than disappearing — that's the fix for it going missing on mobile).
+   Row 2 (.ticker-strip) is the animated scrolling strip: today's top
+   movers plus Keith's own held positions, refreshed by the same
+   scheduled job that writes ticker.json. */
+.ticker-pinned {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+  display: flex; align-items: stretch;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.ticker-pinned::-webkit-scrollbar { display: none; }
+.ticker-pinned .ticker-item { border-right: 1px solid var(--border); flex-shrink: 0; }
+.ticker-pinned .ticker-item:first-child { border-left: none; }
+
 .ticker-strip {
   border-bottom: 1px solid var(--border);
   background: var(--surface-raised);
@@ -275,7 +292,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .ticker-scroll::after { right: 0; background: linear-gradient(270deg, var(--surface-raised), transparent); }
 .ticker-track {
   display: flex; width: max-content;
-  animation: ticker-scroll 55s linear infinite;
+  animation: ticker-scroll 65s linear infinite;
 }
 .ticker-strip:hover .ticker-track { animation-play-state: paused; }
 .ticker-item {
@@ -284,6 +301,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   border-right: 1px solid var(--border);
 }
 .ticker-symbol { font-weight: 700; color: var(--text); }
+.ticker-symbol.ticker-held::after { content: "\25CF"; font-size: 6px; color: var(--accent-2); margin-left: 5px; vertical-align: middle; }
 .ticker-price { color: var(--text-muted); }
 .ticker-change.gain { color: var(--gain); }
 .ticker-change.loss { color: var(--loss); }
@@ -292,22 +310,10 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.06em; white-space: nowrap; flex-shrink: 0;
   border-right: 1px solid var(--border);
 }
-/* Static (non-scrolling) crypto box, pinned to the right of the ticker —
-   crypto trades 24/7 so it's refreshed on its own schedule, separate from
-   the market-hours-only stock ticker, and deliberately doesn't scroll. */
-.ticker-crypto {
-  flex: 0 0 auto; display: flex; align-items: stretch;
-  border-left: 1px solid var(--border-strong); background: var(--surface);
-}
-.ticker-crypto .ticker-item { border-right: none; border-left: 1px solid var(--border); }
-.ticker-crypto .ticker-item:first-child { border-left: none; }
 @keyframes ticker-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) {
   .ticker-track { animation: none; }
   .ticker-scroll { overflow-x: auto; }
-}
-@media (max-width: 700px) {
-  .ticker-crypto { display: none; }
 }
 
 /* The Record — sortable/filterable trade log */

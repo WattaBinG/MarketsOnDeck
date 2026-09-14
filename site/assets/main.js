@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  initPinned();
   initTicker();
-  initCrypto();
 });
 
 // Note: the homepage hero stats and "Most Recent Closed Trades" cards used to
@@ -48,8 +48,36 @@ document.addEventListener('DOMContentLoaded', function () {
 // that removes the blank "—" flash on first paint and means link-preview
 // bots and crawlers (which don't run JS) actually see the real numbers too.
 
+// Pinned bar — the standing set (SPY/QQQ/DIA from ticker.json's "pinned"
+// list, plus BTC/ETH/SOL from crypto.json, which trades 24/7 on its own
+// refresh schedule). Always visible on every screen size — CSS makes this
+// row horizontally swipe-scrollable on narrow viewports instead of hiding
+// it, which is what caused it to go missing on mobile before.
+function initPinned() {
+  var bar = document.getElementById('tickerPinned');
+  if (!bar) return;
+
+  Promise.all([
+    fetch('/assets/ticker.json', { cache: 'no-store' }).then(function (res) { return res.ok ? res.json() : null; }).catch(function () { return null; }),
+    fetch('/assets/crypto.json', { cache: 'no-store' }).then(function (res) { return res.ok ? res.json() : null; }).catch(function () { return null; })
+  ]).then(function (results) {
+    var tickerData = results[0], cryptoData = results[1];
+    var pinnedSymbols = (tickerData && tickerData.pinned) || [];
+    var pinnedItems = (tickerData && tickerData.items || []).filter(function (item) {
+      return pinnedSymbols.indexOf(item.symbol) !== -1;
+    });
+    var cryptoItems = (cryptoData && cryptoData.items) || [];
+    var allItems = pinnedItems.concat(cryptoItems);
+    if (!allItems.length) { bar.hidden = true; return; }
+    bar.innerHTML = allItems.map(renderTickerItem).join('');
+  }).catch(function () { bar.hidden = true; });
+}
+
 // Rolling ticker strip — reads /assets/ticker.json (refreshed by a scheduled
-// job a few times a day) and renders a duplicated, seamlessly-looping row.
+// job) and renders a duplicated, seamlessly-looping row of today's top
+// movers plus Keith's own held positions (flagged item.held, shown with a
+// small dot). Excludes whatever's already in the pinned bar, so nothing
+// shows up twice.
 function initTicker() {
   var strip = document.getElementById('tickerStrip');
   if (!strip) return;
@@ -60,28 +88,15 @@ function initTicker() {
     .then(function (res) { return res.ok ? res.json() : null; })
     .then(function (data) {
       if (!data || !data.items || !data.items.length) { strip.hidden = true; return; }
+      var pinnedSymbols = data.pinned || [];
+      var scrollItems = data.items.filter(function (item) { return pinnedSymbols.indexOf(item.symbol) === -1; });
+      if (!scrollItems.length) { strip.hidden = true; return; }
       var asOfHtml = '<div class="ticker-asof">' + escapeHtml(data.asOfLabel || 'Updated') + '</div>';
-      var itemsHtml = data.items.map(renderTickerItem).join('');
+      var itemsHtml = scrollItems.map(renderTickerItem).join('');
       // duplicate the row once so the CSS animation (-50%) loops seamlessly
       track.innerHTML = asOfHtml + itemsHtml + asOfHtml + itemsHtml;
     })
     .catch(function () { strip.hidden = true; });
-}
-
-// Static crypto corner box — reads /assets/crypto.json (refreshed every 30
-// minutes, 7 days a week, separate from the stock ticker's market-hours-only
-// schedule since crypto never closes). Deliberately does not scroll.
-function initCrypto() {
-  var box = document.getElementById('tickerCrypto');
-  if (!box) return;
-
-  fetch('/assets/crypto.json', { cache: 'no-store' })
-    .then(function (res) { return res.ok ? res.json() : null; })
-    .then(function (data) {
-      if (!data || !data.items || !data.items.length) { box.hidden = true; return; }
-      box.innerHTML = data.items.map(renderTickerItem).join('');
-    })
-    .catch(function () { box.hidden = true; });
 }
 
 function renderTickerItem(item) {
@@ -89,8 +104,9 @@ function renderTickerItem(item) {
   var sign = item.change > 0 ? '+' : '';
   var price = typeof item.price === 'number' ? item.price.toFixed(2) : item.price;
   var pct = typeof item.changePercent === 'number' ? item.changePercent.toFixed(2) : item.changePercent;
+  var symbolClass = 'ticker-symbol' + (item.held ? ' ticker-held' : '');
   return '<div class="ticker-item">' +
-    '<span class="ticker-symbol">' + escapeHtml(item.symbol) + '</span>' +
+    '<span class="' + symbolClass + '">' + escapeHtml(item.symbol) + '</span>' +
     '<span class="ticker-price num">' + price + '</span>' +
     '<span class="ticker-change num ' + dir + '">' + sign + pct + '%</span>' +
     '</div>';
