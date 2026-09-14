@@ -86,6 +86,28 @@ check on the daily commitment" note below.
 
 ---
 
+## Full Coverage Requirement (added 2026-09-14, per Keith)
+
+Both daily pieces (Morning Brief and Market Tape) must cover, every time, not just when convenient:
+
+1. **All four benchmarks, not just SPY** — SPY, QQQ, DIA (Dow proxy), and crypto (BTC/ETH/SOL). Pull benchmark
+   levels from `site/assets/ticker.json` (refreshed at/near market open and close) rather than a fresh Alpha
+   Vantage quote where possible — it's the site's own canonical figure and re-querying risks a stale-quote
+   mismatch against numbers already published elsewhere on the site (this happened once, 2026-09-14, caught by
+   a PR review bot). Pull crypto from `site/assets/crypto.json` (refreshed hourly, 24/7) the same way. Not every
+   benchmark needs its own paragraph — weave them into the thread, but don't silently drop QQQ/DIA/crypto just
+   because SPY is carrying the day's story.
+2. **Both accounts, not just Trading** — pull positions from BOTH the Trading account (account_number 5RY58840,
+   mask to •••8840) AND the Agentic account (account_number 778321117, mask to •••1117) via
+   `get_accounts` → `get_equity_positions` for each. Same rule as before on when to mention a position: weave it
+   in only if genuinely relevant to the day's real action; don't force an irrelevant holding into the thread just
+   to cover both accounts. But both accounts must actually be checked every time — silently checking only Trading
+   is the bug that prompted this note.
+3. Everything else in this doc (narrative-thread format, process language, week-ahead awareness, disclosure block,
+   "why this matters" close) still applies unchanged — this section adds required data coverage, not a new format.
+
+---
+
 ## Real Sample — Rewritten in the New Style (same underlying facts as the original Aug 29, 2026 sample)
 
 *Built from the same real data as the original bullet-format sample below — restyled to show the difference, not a
