@@ -85,6 +85,35 @@
 
   <section class="section-tight">
     <div class="container">
+      <div class="eyebrow">Two Real Accounts, One Real Benchmark</div>
+      <h2 class="mt-0">Trading vs. Agentic vs. The Market</h2>
+      <!-- SCOREBOARD_START — updated once daily by the Record Refresh routine; Trading/Agentic are realized-gain totals from trades.json's per-account summary, SPY is price return from a fixed Jan 2, 2026 close baseline — keep this exact card structure so the automated edit stays a clean find/replace -->
+      <div class="grid grid-3" style="margin-top:20px;">
+        <div class="card">
+          <span class="badge badge-accent">Trading Account</span>
+          <div class="stat-num num gain" style="font-size:24px;">+$19,316.91</div>
+          <p class="mb-0" style="font-size:13.5px;">273 trades &middot; 66.2% win rate, 2026 YTD</p>
+        </div>
+        <div class="card">
+          <span class="badge badge-accent">Agentic Account</span>
+          <div class="stat-num num gain" style="font-size:24px;">+$177.91</div>
+          <p class="mb-0" style="font-size:13.5px;">9 trades &middot; 88.9% win rate, 2026 YTD</p>
+        </div>
+        <div class="card">
+          <span class="badge">S&amp;P 500 (SPY)</span>
+          <div class="stat-num num gain" style="font-size:24px;">+11.88%</div>
+          <p class="mb-0" style="font-size:13.5px;">Price return, Jan 2 &ndash; today, 2026 YTD</p>
+        </div>
+      </div>
+      <!-- SCOREBOARD_END -->
+      <p class="text-muted" style="font-size:13px; margin-top:14px;">Trading and Agentic figures are realized dollar gains from closed trades in each real account; SPY is the index's own price return &mdash; different metrics shown side by side for context, not a strict apples-to-apples comparison.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section-tight">
+    <div class="container">
       <div class="eyebrow">Proof, Not a Promise</div>
       <h2 class="mt-0">Most Recent Closed Trades</h2>
       <!-- RECENT_TRADES_START — updated once daily by the Record Refresh routine; always the 3 most recent trades from trades.json, unfiltered (wins or losses, whichever actually happened) — keep this exact card structure so the automated edit stays a clean find/replace -->

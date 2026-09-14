@@ -19,6 +19,16 @@
       "date": "2026-06-12",
       "gain": -1690.0,
       "account": "Trading"
+    },
+    "perAccount": {
+      "Trading": { "realizedGain": 19316.91, "trades": 273, "winRate": 66.2 },
+      "Agentic": { "realizedGain": 177.91, "trades": 9, "winRate": 88.9 }
+    },
+    "benchmark": {
+      "spyBaselineDate": "2026-01-02",
+      "spyBaselinePrice": 683.17,
+      "spyCurrentPrice": 764.35,
+      "spyYtdPercent": 11.88
     }
   },
   "trades": [
