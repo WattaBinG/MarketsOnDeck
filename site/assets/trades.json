@@ -1,9 +1,9 @@
 {
   "summary": {
-    "asOf": "2026-09-14",
-    "scope": "Realized trades, January 1 - September 14, 2026 (both accounts)",
+    "asOf": "2026-09-15",
+    "scope": "Realized trades, January 1 - September 15, 2026 (both accounts)",
     "totalTrades": 289,
-    "totalRealizedGain": 22758.23,
+    "totalRealizedGain": 22758.22,
     "wins": 193,
     "losses": 95,
     "flat": 1,
@@ -22,7 +22,7 @@
     },
     "perAccount": {
       "Trading": {
-        "realizedGain": 22580.32,
+        "realizedGain": 22580.31,
         "trades": 280,
         "winRate": 66.31
       },
@@ -35,8 +35,8 @@
     "benchmark": {
       "spyBaselineDate": "2026-01-02",
       "spyBaselinePrice": 683.17,
-      "spyCurrentPrice": 760.65,
-      "spyYtdPercent": 11.34
+      "spyCurrentPrice": 757.86,
+      "spyYtdPercent": 10.93
     }
   },
   "trades": [
@@ -67,8 +67,8 @@
       "symbol": "LULU",
       "assetType": "equity",
       "quantity": 100.0,
-      "price": 100.7051,
-      "realizedGain": 142.41
+      "price": 100.705,
+      "realizedGain": 142.4
     },
     {
       "date": "2026-09-14",
@@ -2347,7 +2347,7 @@
       "symbol": "ADA",
       "assetType": "crypto",
       "quantity": 1000.0,
-      "price": 0.2264,
+      "price": 0.2263,
       "realizedGain": -27.73
     },
     {
