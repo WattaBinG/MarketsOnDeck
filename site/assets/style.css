@@ -181,11 +181,13 @@ p { margin: 0 0 1em; max-width: 68ch; }
   .nav-toggle { display: flex; }
 }
 
-.disclosure-bar {
-  background: var(--surface-raised); border-bottom: 1px solid var(--border);
-  font-size: 12.5px; color: var(--text-muted); text-align: center; padding: 8px 16px;
+/* Footer disclosure — kept minimal by design (small site, per Keith 2026-09-16):
+   present on every page, legible, but quiet rather than a loud top banner. */
+.footer-disclosure {
+  font-size: 11px; color: var(--text-muted); text-align: center;
+  margin: 14px 0 0; padding-top: 14px; border-top: 1px solid var(--border);
 }
-.disclosure-bar a { color: var(--text-muted); text-decoration: underline; }
+.footer-disclosure a { color: var(--text-muted); text-decoration: underline; }
 
 .hero {
   padding: 76px 0 56px;
