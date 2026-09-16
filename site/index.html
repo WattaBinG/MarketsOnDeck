@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>MarketsOnDeck — Real Trades, No Cherry-Picking</title>
-<meta name="description" content="Real trades from my own brokerage account — wins and losses both, posted as they happen. No cherry-picked screenshots, no deleted losers.">
+<title>MarketsOnDeck — The Wire</title>
+<meta name="description" content="Finance and market-moving headlines, refreshed hourly, every headline linked to its real source — markets, macro, and the geopolitics that move them.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +15,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://marketsondeck.wattabing.workers.dev/assets/brand/badge-1200.jpg">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"MarketsOnDeck","url":"https://marketsondeck.wattabing.workers.dev/","description":"Real trades from my own brokerage account, wins and losses both — posted as they happen.","publisher":{"@type":"Organization","name":"MarketsOnDeck"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"MarketsOnDeck","url":"https://marketsondeck.wattabing.workers.dev/","description":"Finance and market-moving headlines, refreshed hourly, every headline linked to its real source.","publisher":{"@type":"Organization","name":"MarketsOnDeck"}}
 </script>
 </head>
 <body>
-
 <header class="site-header">
   <div class="container nav">
     <a class="brand" href="/index.html">
@@ -29,6 +28,7 @@
     <nav aria-label="Primary">
       <ul class="nav-links" id="primaryNav">
         <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/overview/index.html">Overview</a></li>
         <li><a href="/brief/index.html">Morning Brief</a></li>
         <li><a href="/record/index.html">The Record</a></li>
         <li><a href="/about.html">About</a></li>
@@ -51,140 +51,36 @@
 </div>
 
 <main>
-  <section class="hero">
-    <div class="container">
-      <div class="eyebrow">Real Trades, Real Account</div>
-      <h1><a href="/record/index.html" style="color:inherit; text-decoration:none;">The record includes<br>what happened.</a></h1>
-      <p class="hero-sub">Every trade posted from my own account, wins and losses both — no cherry-picked screenshots, no deleted losers. This is a real trading journal, not a signals service.</p>
-      <div class="row gap-sm" style="flex-wrap:wrap;">
-        <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
-        <a class="btn" href="/record/index.html">Browse The Record</a>
-      </div>
-      <!-- RECORD_STATS_START — updated once daily by the Record Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
-      <div class="stat-row" id="homeStats">
-        <div class="stat-card">
-          <div class="stat-num num gain" id="homeStatPnl">+$22,758.22</div>
-          <div class="stat-label">Net Realized, 2026 YTD</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num num" id="homeStatWinRate">67.01%</div>
-          <div class="stat-label">2026 Win Rate</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num num" id="homeStatTrades">289</div>
-          <div class="stat-label">Trades in The Record</div>
-        </div>
-      </div>
-      <!-- RECORD_STATS_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, updated daily after the close.</p>
+  <div class="container section-tight">
+    <div class="article-header" style="max-width:none; text-align:left;">
+      <div class="eyebrow">Refreshed Hourly &middot; Every Headline Links to Its Real Source</div>
+      <h1 style="font-size:clamp(28px,4.4vw,42px);">The Wire</h1>
+      <p class="hero-sub" style="max-width:70ch;">Finance headlines, and anything that moves finance — wars, the Fed, geopolitics, the stuff that actually matters. No summaries, no spin, just the headline and a real link to where it came from. Click through and read it yourself. <a href="/overview/index.html" style="color:var(--accent); text-decoration:underline;">See the real trading journal &rarr;</a></p>
     </div>
-  </section>
+  </div>
 
-  <section class="section-tight">
-    <div class="container">
-      <div class="eyebrow">Two Real Accounts, One Real Benchmark</div>
-      <h2 class="mt-0">Trading vs. Agentic vs. The Market</h2>
-      <!-- SCOREBOARD_START — updated once daily by the Record Refresh routine; Trading/Agentic lead with win rate (a real % from trades.json's per-account summary) with realized dollar gain as the subtext, SPY leads with its own price return from a fixed Jan 2, 2026 close baseline — all three cards lead with a percentage so they read consistently at a glance. Keep this exact card structure so the automated edit stays a clean find/replace -->
-      <div class="grid grid-3" style="margin-top:20px;">
-        <a class="card" href="/record/index.html?account=Trading" style="text-decoration:none;">
-          <span class="badge badge-accent">Trading Account</span>
-          <div class="stat-num num" style="font-size:24px;">66.31%</div>
-          <p class="mb-0" style="font-size:13.5px;">Win rate &middot; +$22,580.31 realized, 280 trades, 2026 YTD</p>
-        </a>
-        <a class="card" href="/record/index.html?account=Agentic" style="text-decoration:none;">
-          <span class="badge badge-accent">Agentic Account</span>
-          <div class="stat-num num" style="font-size:24px;">88.89%</div>
-          <p class="mb-0" style="font-size:13.5px;">Win rate &middot; +$177.91 realized, 9 trades, 2026 YTD</p>
-        </a>
-        <a class="card" href="/record/index.html" style="text-decoration:none;">
-          <span class="badge">S&amp;P 500 (SPY)</span>
-          <div class="stat-num num gain" style="font-size:24px;">+10.93%</div>
-          <p class="mb-0" style="font-size:13.5px;">Price return, Jan 2 &ndash; today, 2026 YTD</p>
-        </a>
-      </div>
-      <!-- SCOREBOARD_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:14px;">Trading and Agentic show win rate on closed trades (with realized dollar gain alongside); SPY shows its own price return &mdash; different measures of performance, put in a consistent percentage format for easy comparison, not a strict apples-to-apples return comparison. A win-rate percentage on an actively-traded margin account isn't the same thing as a return on invested capital, which isn't cleanly computable here.</p>
-    </div>
-  </section>
+  <div class="container">
+    <!-- WIRE_TOP_START — updated hourly by the Wire Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
+    <a class="wire-top" href="https://www.koreaherald.com/article/10875971" target="_blank" rel="noopener">
+      <span class="wire-top-label">Top Story</span>
+      <span class="wire-top-headline">SK Hynix in Talks With Intel to Make Memory Chips in the US for the First Time</span>
+      <span class="wire-top-source">Korea Herald / Reuters</span>
+    </a>
+    <!-- WIRE_TOP_END -->
 
-  <hr class="divider">
+    <!-- WIRE_LIST_START — updated hourly by the Wire Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
+    <ul class="wire-list">
+      <li><span class="wire-tag">Macro</span> <a href="https://www.cnbc.com/2026/09/16/10-year-treasury-yeilds-rise-impact-markets.html" target="_blank" rel="noopener">Fed Rate Decision Today at 2pm ET — Markets Pricing a 94%+ Chance of a 25bp Hike</a> <span class="wire-source">CNBC</span></li>
+      <li><span class="wire-tag">Macro</span> <a href="https://www.cnbc.com/2026/09/15/10-year-treasury-yield-rises-to-highest-since-2007.html" target="_blank" rel="noopener">10-Year Treasury Yield Hits 5.04%, Highest Since 2007, on Oil Surge and Fed Bets</a> <span class="wire-source">CNBC</span></li>
+      <li><span class="wire-tag">Geopolitics</span> <a href="https://x.com/DeItaone/status/2099985811869434182" target="_blank" rel="noopener">Several Explosions Heard on Iran's Qeshm Island, Local Sources Say</a> <span class="wire-source">IRNA via Walter Bloomberg</span></li>
+      <li><span class="wire-tag">Markets</span> <a href="https://www.cnbc.com/2026/09/15/nvidia-jensen-huang-trump-xi.html" target="_blank" rel="noopener">Nvidia CEO Jensen Huang Expected to Attend Trump-Xi State Dinner Sept. 24</a> <span class="wire-source">CNBC</span></li>
+      <li><span class="wire-tag">Geopolitics</span> <a href="https://en.people.cn/n3/2026/0910/c90000-20497875.html" target="_blank" rel="noopener">China's People's Daily Accuses US of 'Naked Double Standards' on AI Chip Distillation</a> <span class="wire-source">People's Daily</span></li>
+      <li><span class="wire-tag">Markets</span> <a href="https://www.benzinga.com/markets/tech/26/09/61807324/mark-zuckerberg-meta-muse-ai-safety-delayed-months-ai-labs-responsibility" target="_blank" rel="noopener">Zuckerberg Says Meta Delayed Muse AI Agent for Months Over Safety Concerns</a> <span class="wire-source">Benzinga</span></li>
+    </ul>
+    <!-- WIRE_LIST_END -->
 
-  <section class="section-tight">
-    <div class="container">
-      <div class="eyebrow">Proof, Not a Promise</div>
-      <h2 class="mt-0">Most Recent Closed Trades</h2>
-      <!-- RECENT_TRADES_START — updated once daily by the Record Refresh routine; always the 3 most recent trades from trades.json, unfiltered (wins or losses, whichever actually happened) — keep this exact card structure so the automated edit stays a clean find/replace -->
-      <div class="grid grid-3" style="margin-top:20px;">
-        <div class="card">
-          <span class="badge badge-loss">LOSS &middot; Sep 14</span>
-          <h3 class="num" style="text-transform:none;">LULU <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Trading</span></h3>
-          <span class="card-link num loss">-$66.00</span>
-        </div>
-        <div class="card">
-          <span class="badge badge-loss">LOSS &middot; Sep 14</span>
-          <h3 class="num" style="text-transform:none;">LULU <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Trading</span></h3>
-          <span class="card-link num loss">-$598.00</span>
-        </div>
-        <div class="card">
-          <span class="badge badge-gain">WIN &middot; Sep 14</span>
-          <h3 class="num" style="text-transform:none;">LULU <span class="text-muted" style="font-size:13px; font-weight:400;">Stock &middot; Trading</span></h3>
-          <span class="card-link num gain">+$142.40</span>
-        </div>
-      </div>
-      <!-- RECENT_TRADES_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:14px;">Unfiltered — the 3 most recent trades exactly as they closed, win or lose. <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">See all 282 →</a></p>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <section class="section-tight">
-    <div class="container">
-      <div class="eyebrow">Start Here</div>
-      <h2 class="mt-0">Today's Read, Plus the Full Record</h2>
-      <div class="grid grid-2" style="margin-top:24px;">
-        <a class="card card-featured" href="/brief/index.html" style="text-decoration:none;">
-          <span class="badge badge-gain">Daily</span>
-          <h3>Morning Brief</h3>
-          <p>What's actually worth watching today — the broad market plus my own real positions, written fresh most trading days, not a wire-service headline dump.</p>
-          <span class="card-link">Read today's brief →</span>
-        </a>
-        <a class="card card-featured" href="/record/index.html" style="text-decoration:none;">
-          <span class="badge badge-accent">2026 YTD</span>
-          <h3>The Record</h3>
-          <p>Every closed trade this year, sortable and filterable, sourced live from the real account — not a curated highlight reel.</p>
-          <span class="card-link">Browse every trade →</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="grid grid-2" style="align-items:center;">
-        <div>
-          <div class="eyebrow">Why This Is Different</div>
-          <h2>A Trading Journal You Can Actually Check</h2>
-          <p class="hero-sub">This isn't a predictions ledger. When I buy or sell something in my own account, it gets posted here with the real price and date — not reconstructed afterward to look smarter, and nothing quietly deleted if it goes wrong.</p>
-          <a class="btn" href="/about.html">Read the full methodology</a>
-        </div>
-        <div class="grid" style="gap:14px;">
-          <div class="card" style="flex-direction:row; align-items:center; gap:16px; padding:18px;">
-            <span class="badge badge-gain">01</span>
-            <p class="mb-0" style="max-width:none;">Trades are posted from the real account as they happen — not reconstructed afterward to look smarter.</p>
-          </div>
-          <div class="card" style="flex-direction:row; align-items:center; gap:16px; padding:18px;">
-            <span class="badge badge-loss">02</span>
-            <p class="mb-0" style="max-width:none;">Losses get exactly as much airtime as wins — this isn't a highlight reel.</p>
-          </div>
-          <div class="card" style="flex-direction:row; align-items:center; gap:16px; padding:18px;">
-            <span class="badge badge-accent">03</span>
-            <p class="mb-0" style="max-width:none;">Nothing here is investment advice — this is documentation of one real account, not a recommendation for yours.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    <p class="footer-disclosure" style="margin-top:32px; padding-top:16px; border-top:1px solid var(--border);">Headlines are aggregated from real published sources and real-time market data feeds and link out to the original reporting &mdash; MarketsOnDeck doesn't write or verify the underlying reporting itself. Nothing here is investment advice or a recommendation to buy or sell any security.</p>
+  </div>
 </main>
 
 <footer class="site-footer">
@@ -200,7 +96,9 @@
       <div class="footer-col">
         <h4>Content</h4>
         <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
           <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
         </ul>
       </div>
       <div class="footer-col">

@@ -395,3 +395,40 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   position: absolute; top: 0; left: 0; right: 0; height: 4px;
   background: linear-gradient(90deg, var(--accent), var(--accent-2));
 }
+
+/* The Wire — deliberately plain and dense (Drudge-style), a different register
+   from the rest of the site on purpose: no cards, no shadows, just headlines
+   that link straight out to their real source. Refreshed hourly. */
+.wire-top {
+  display: block; text-decoration: none; color: var(--text);
+  padding: 22px 0; margin-bottom: 8px; border-bottom: 3px double var(--border-strong);
+}
+.wire-top-label {
+  display: block; font-family: var(--font-mono); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--loss); margin-bottom: 8px;
+}
+.wire-top-headline {
+  display: block; font-family: var(--font-display); font-weight: 700; text-transform: uppercase;
+  font-size: clamp(24px, 4.2vw, 40px); line-height: 1.08; letter-spacing: 0.005em;
+}
+.wire-top:hover .wire-top-headline { color: var(--accent); }
+.wire-top-source {
+  display: block; margin-top: 10px; font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted);
+}
+.wire-list { list-style: none; margin: 0; padding: 0; }
+.wire-list li {
+  padding: 12px 0; border-bottom: 1px solid var(--border);
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px;
+}
+.wire-tag {
+  flex-shrink: 0; font-family: var(--font-mono); font-size: 10px; font-weight: 600;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent);
+  border: 1px solid var(--border-strong); border-radius: 4px; padding: 2px 6px;
+}
+.wire-list a {
+  font-size: 17px; font-weight: 600; color: var(--text); text-decoration: none; line-height: 1.35;
+}
+.wire-list a:hover { color: var(--accent); text-decoration: underline; }
+.wire-source {
+  font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); white-space: nowrap;
+}

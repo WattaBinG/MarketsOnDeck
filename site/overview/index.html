@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Overview | MarketsOnDeck — Real Trades, No Cherry-Picking</title>
+<meta name="description" content="Real trades from my own brokerage account — wins and losses both, posted as they happen. No cherry-picked screenshots, no deleted losers.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
+<meta property="og:image" content="https://marketsondeck.wattabing.workers.dev/assets/brand/badge-1200.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marketsondeck.wattabing.workers.dev/assets/brand/badge-1200.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"MarketsOnDeck","url":"https://marketsondeck.wattabing.workers.dev/","description":"Real trades from my own brokerage account, wins and losses both — posted as they happen.","publisher":{"@type":"Organization","name":"MarketsOnDeck"}}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/overview/index.html" class="active">Overview</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Real Trades, Real Account</div>
+      <h1><a href="/record/index.html" style="color:inherit; text-decoration:none;">The record includes<br>what happened.</a></h1>
+      <p class="hero-sub">Every trade posted from my own account, wins and losses both — no cherry-picked screenshots, no deleted losers. This is a real trading journal, not a signals service.</p>
+      <div class="row gap-sm" style="flex-wrap:wrap;">
+        <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
+        <a class="btn" href="/record/index.html">Browse The Record</a>
+      </div>
+      <!-- RECORD_STATS_START — updated once daily by the Record Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
+      <div class="stat-row" id="homeStats">
+        <div class="stat-card">
+          <div class="stat-num num gain" id="homeStatPnl">+$22,758.22</div>
+          <div class="stat-label">Net Realized, 2026 YTD</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num" id="homeStatWinRate">67.01%</div>
+          <div class="stat-label">2026 Win Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num" id="homeStatTrades">289</div>
+          <div class="stat-label">Trades in The Record</div>
+        </div>
+      </div>
+      <!-- RECORD_STATS_END -->
+      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, updated daily after the close.</p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="eyebrow">Two Real Accounts, One Real Benchmark</div>
+      <h2 class="mt-0">Trading vs. Agentic vs. The Market</h2>
+      <!-- SCOREBOARD_START — updated once daily by the Record Refresh routine; Trading/Agentic lead with win rate (a real % from trades.json's per-account summary) with realized dollar gain as the subtext, SPY leads with its own price return from a fixed Jan 2, 2026 close baseline — all three cards lead with a percentage so they read consistently at a glance. Keep this exact card structure so the automated edit stays a clean find/replace -->
+      <div class="grid grid-3" style="margin-top:20px;">
+        <a class="card" href="/record/index.html?account=Trading" style="text-decoration:none;">
+          <span class="badge badge-accent">Trading Account</span>
+          <div class="stat-num num" style="font-size:24px;">66.31%</div>
+          <p class="mb-0" style="font-size:13.5px;">Win rate &middot; +$22,580.31 realized, 280 trades, 2026 YTD</p>
+        </a>
+        <a class="card" href="/record/index.html?account=Agentic" style="text-decoration:none;">
+          <span class="badge badge-accent">Agentic Account</span>
+          <div class="stat-num num" style="font-size:24px;">88.89%</div>
+          <p class="mb-0" style="font-size:13.5px;">Win rate &middot; +$177.91 realized, 9 trades, 2026 YTD</p>
+        </a>
+        <a class="card" href="/record/index.html" style="text-decoration:none;">
+          <span class="badge">S&amp;P 500 (SPY)</span>
+          <div class="stat-num num gain" style="font-size:24px;">+10.93%</div>
+          <p class="mb-0" style="font-size:13.5px;">Price return, Jan 2 &ndash; today, 2026 YTD</p>
+        </a>
+      </div>
+      <!-- SCOREBOARD_END -->
+      <p class="text-muted" style="font-size:13px; margin-top:14px;">Trading and Agentic show win rate on closed trades (with realized dollar gain alongside); SPY shows its own price return &mdash; different measures of performance, put in a consistent percentage format for easy comparison, not a strict apples-to-apples return comparison. A win-rate percentage on an actively-traded margin account isn't the same thing as a return on invested capital, which isn't cleanly computable here.</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="eyebrow">Proof, Not a Promise</div>
+      <h2 class="mt-0">Most Recent Closed Trades</h2>
+      <!-- RECENT_TRADES_START — updated once daily by the Record Refresh routine; always the 3 most recent trades from trades.json, unfiltered (wins or losses, whichever actually happened) — keep this exact card structure so the automated edit stays a clean find/replace -->
+      <div class="grid grid-3" style="margin-top:20px;">
+        <div class="card">
+          <span class="badge badge-loss">LOSS &middot; Sep 14</span>
+          <h3 class="num" style="text-transform:none;">LULU <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Trading</span></h3>
+          <span class="card-link num loss">-$66.00</span>
+        </div>
+        <div class="card">
+          <span class="badge badge-loss">LOSS &middot; Sep 14</span>
+          <h3 class="num" style="text-transform:none;">LULU <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Trading</span></h3>
+          <span class="card-link num loss">-$598.00</span>
+        </div>
+        <div class="card">
+          <span class="badge badge-gain">WIN &middot; Sep 14</span>
+          <h3 class="num" style="text-transform:none;">LULU <span class="text-muted" style="font-size:13px; font-weight:400;">Stock &middot; Trading</span></h3>
+          <span class="card-link num gain">+$142.40</span>
+        </div>
+      </div>
+      <!-- RECENT_TRADES_END -->
+      <p class="text-muted" style="font-size:13px; margin-top:14px;">Unfiltered — the 3 most recent trades exactly as they closed, win or lose. <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">See all 289 →</a></p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section class="section-tight">
+    <div class="container">
+      <div class="eyebrow">Start Here</div>
+      <h2 class="mt-0">Today's Read, Plus the Full Record</h2>
+      <div class="grid grid-2" style="margin-top:24px;">
+        <a class="card card-featured" href="/brief/index.html" style="text-decoration:none;">
+          <span class="badge badge-gain">Daily</span>
+          <h3>Morning Brief</h3>
+          <p>What's actually worth watching today — the broad market plus my own real positions, written fresh most trading days, not a wire-service headline dump.</p>
+          <span class="card-link">Read today's brief →</span>
+        </a>
+        <a class="card card-featured" href="/record/index.html" style="text-decoration:none;">
+          <span class="badge badge-accent">2026 YTD</span>
+          <h3>The Record</h3>
+          <p>Every closed trade this year, sortable and filterable, sourced live from the real account — not a curated highlight reel.</p>
+          <span class="card-link">Browse every trade →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2" style="align-items:center;">
+        <div>
+          <div class="eyebrow">Why This Is Different</div>
+          <h2>A Trading Journal You Can Actually Check</h2>
+          <p class="hero-sub">This isn't a predictions ledger. When I buy or sell something in my own account, it gets posted here with the real price and date — not reconstructed afterward to look smarter, and nothing quietly deleted if it goes wrong.</p>
+          <a class="btn" href="/about.html">Read the full methodology</a>
+        </div>
+        <div class="grid" style="gap:14px;">
+          <div class="card" style="flex-direction:row; align-items:center; gap:16px; padding:18px;">
+            <span class="badge badge-gain">01</span>
+            <p class="mb-0" style="max-width:none;">Trades are posted from the real account as they happen — not reconstructed afterward to look smarter.</p>
+          </div>
+          <div class="card" style="flex-direction:row; align-items:center; gap:16px; padding:18px;">
+            <span class="badge badge-loss">02</span>
+            <p class="mb-0" style="max-width:none;">Losses get exactly as much airtime as wins — this isn't a highlight reel.</p>
+          </div>
+          <div class="card" style="flex-direction:row; align-items:center; gap:16px; padding:18px;">
+            <span class="badge badge-accent">03</span>
+            <p class="mb-0" style="max-width:none;">Nothing here is investment advice — this is documentation of one real account, not a recommendation for yours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:hello@marketsondeck.net">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+    <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js"></script>
+</body>
+</html>
