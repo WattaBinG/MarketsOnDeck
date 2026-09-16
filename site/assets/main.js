@@ -41,7 +41,68 @@ document.addEventListener('DOMContentLoaded', function () {
   initTicker();
   initShareBars();
   initScrollableTables();
+  initHomeStats();
 });
+
+// Overview page's YTD/Month/Week stat row — computed live client-side from
+// trades.json (the same source The Record itself reads), instead of numbers
+// baked into the HTML once a day. Keeps the two pages' math identical by
+// construction instead of duplicating a second copy of the summary logic.
+function initHomeStats() {
+  var row = document.getElementById('homeStats');
+  if (!row) return;
+  var tabs = document.getElementById('homeRangeTabs');
+  var range = 'ytd';
+  var trades = [];
+
+  function cutoffDate(r) {
+    if (!trades.length) return null;
+    var newest = trades.reduce(function (max, t) { return t.date > max ? t.date : max; }, trades[0].date);
+    var d = new Date(newest + 'T12:00:00Z');
+    if (r === 'week') d.setUTCDate(d.getUTCDate() - 7);
+    else if (r === 'month') d.setUTCDate(d.getUTCDate() - 30);
+    else return null;
+    return d.toISOString().slice(0, 10);
+  }
+
+  function render() {
+    var cutoff = cutoffDate(range);
+    var scoped = cutoff ? trades.filter(function (t) { return t.date >= cutoff; }) : trades;
+    var totalGain = scoped.reduce(function (sum, t) { return sum + t.realizedGain; }, 0);
+    var wins = scoped.filter(function (t) { return t.realizedGain > 0; }).length;
+    var losses = scoped.filter(function (t) { return t.realizedGain < 0; }).length;
+    var winRate = (wins + losses) ? (100 * wins / (wins + losses)) : 0;
+
+    var pnlEl = document.getElementById('homeStatPnl');
+    var sign = totalGain > 0 ? '+' : (totalGain < 0 ? '-' : '');
+    pnlEl.textContent = sign + '$' + Math.abs(totalGain).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    pnlEl.classList.remove('gain', 'loss');
+    pnlEl.classList.add(totalGain >= 0 ? 'gain' : 'loss');
+    document.getElementById('homeStatWinRate').textContent = winRate.toFixed(1) + '%';
+    document.getElementById('homeStatTrades').textContent = String(scoped.length);
+    row.setAttribute('href', range === 'ytd' ? '/record/index.html' : '/record/index.html?range=' + range);
+  }
+
+  if (tabs) {
+    tabs.querySelectorAll('.range-tab').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        range = btn.getAttribute('data-range');
+        tabs.querySelectorAll('.range-tab').forEach(function (b) { b.classList.toggle('active', b === btn); });
+        render();
+      });
+    });
+  }
+
+  fetch('/assets/trades.json', { cache: 'no-store' })
+    .then(function (res) { return res.ok ? res.json() : null; })
+    .then(function (data) {
+      if (!data || !data.trades) return;
+      trades = data.trades;
+      render();
+    })
+    .catch(function () {});
+}
 
 // Data tables (record table, episode stat tables) sit in a .table-scroll
 // wrapper with overflow-x:auto but no visual cue that there's more to see —

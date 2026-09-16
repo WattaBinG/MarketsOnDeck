@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var tbody = document.getElementById('recordTbody');
   if (!tbody) return;
 
-  var state = { trades: [], summary: null, sortKey: 'date', sortDir: 'desc' };
+  var state = { trades: [], summary: null, sortKey: 'date', sortDir: 'desc', range: 'ytd' };
 
   fetch('/assets/trades.json', { cache: 'no-store' })
     .then(function (res) { return res.ok ? res.json() : null; })
@@ -15,50 +15,111 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       state.trades = data.trades;
       state.summary = data.summary;
-      renderSummary(data.summary);
       renderChart(data.trades);
       wireControls();
+      wireRangeTabs();
       applyUrlFilter();
+      renderSummary();
       render();
     })
     .catch(function () {
       tbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">Trade data unavailable right now.</td></tr>';
     });
 
-  // Lets a link like /record/index.html?account=Trading land pre-filtered —
-  // used by the homepage scoreboard cards so "click to see all the trades"
-  // actually takes you to the right filtered view, not just the page.
+  // Lets a link like /record/index.html?account=Trading or ?range=week land
+  // pre-filtered — used by the homepage scoreboard cards and the range tabs
+  // so "click to see all the trades" takes you to the right filtered view.
   function applyUrlFilter() {
     var params = new URLSearchParams(window.location.search);
     var account = params.get('account');
-    if (!account) return;
-    var select = document.getElementById('recordAccount');
-    if (!select) return;
-    var hasOption = Array.prototype.some.call(select.options, function (opt) { return opt.value === account; });
-    if (hasOption) select.value = account;
+    if (account) {
+      var select = document.getElementById('recordAccount');
+      if (select) {
+        var hasOption = Array.prototype.some.call(select.options, function (opt) { return opt.value === account; });
+        if (hasOption) select.value = account;
+      }
+    }
+    var range = params.get('range');
+    if (range && (range === 'week' || range === 'month' || range === 'ytd')) {
+      setRange(range);
+    }
   }
 
-  function renderSummary(s) {
-    if (!s) return;
-    setText('statTotalPnl', money(s.totalRealizedGain), s.totalRealizedGain >= 0 ? 'gain' : 'loss');
-    setText('statWinRate', s.winRate.toFixed(1) + '%');
-    setText('statTotalTrades', String(s.totalTrades));
-    setText('statBiggestWin', money(s.biggestWin.gain) + ' ' + s.biggestWin.symbol);
-    setText('statBiggestLoss', money(s.biggestLoss.gain) + ' ' + s.biggestLoss.symbol);
+  // Range cutoffs are computed from the newest trade date in the dataset
+  // (not the browser's local "today"), so the tabs stay correct even if
+  // trades.json hasn't refreshed since midnight.
+  function rangeCutoffDate(range) {
+    if (!state.trades.length) return null;
+    var newest = state.trades.reduce(function (max, t) { return t.date > max ? t.date : max; }, state.trades[0].date);
+    var d = new Date(newest + 'T12:00:00Z');
+    if (range === 'week') d.setUTCDate(d.getUTCDate() - 7);
+    else if (range === 'month') d.setUTCDate(d.getUTCDate() - 30);
+    else return null; // ytd — no cutoff beyond what's already in the dataset
+    return d.toISOString().slice(0, 10);
+  }
+
+  function setRange(range) {
+    state.range = range;
+    document.querySelectorAll('.range-tab').forEach(function (btn) {
+      btn.classList.toggle('active', btn.getAttribute('data-range') === range);
+    });
+  }
+
+  function wireRangeTabs() {
+    document.querySelectorAll('.range-tab').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setRange(btn.getAttribute('data-range'));
+        renderSummary();
+        render();
+      });
+    });
+  }
+
+  // Recomputes the stat row from whatever's currently in scope: the active
+  // range tab plus the account filter (type/outcome/search stay table-only —
+  // mixing "win rate for options only" into the headline stat would be more
+  // confusing than useful). Real numbers, computed live from trades.json,
+  // not baked in once a day.
+  function renderSummary() {
+    var account = document.getElementById('recordAccount').value;
+    var cutoff = rangeCutoffDate(state.range);
+    var scoped = state.trades.filter(function (t) {
+      if (account !== 'all' && t.account !== account) return false;
+      if (cutoff && t.date < cutoff) return false;
+      return true;
+    });
+
+    var totalGain = scoped.reduce(function (sum, t) { return sum + t.realizedGain; }, 0);
+    var wins = scoped.filter(function (t) { return t.realizedGain > 0; }).length;
+    var losses = scoped.filter(function (t) { return t.realizedGain < 0; }).length;
+    var winRate = (wins + losses) ? (100 * wins / (wins + losses)) : 0;
+    var biggestWin = scoped.reduce(function (m, t) { return (!m || t.realizedGain > m.realizedGain) ? t : m; }, null);
+    var biggestLoss = scoped.reduce(function (m, t) { return (!m || t.realizedGain < m.realizedGain) ? t : m; }, null);
+
+    setText('statTotalPnl', money(totalGain), totalGain >= 0 ? 'gain' : 'loss');
+    setText('statWinRate', winRate.toFixed(1) + '%');
+    setText('statTotalTrades', String(scoped.length));
+    if (biggestWin) setText('statBiggestWin', money(biggestWin.realizedGain) + ' ' + biggestWin.symbol);
+    if (biggestLoss) setText('statBiggestLoss', money(biggestLoss.realizedGain) + ' ' + biggestLoss.symbol);
+    state.scopedBiggestWin = biggestWin;
+    state.scopedBiggestLoss = biggestLoss;
   }
 
   function setText(id, text, extraClass) {
     var el = document.getElementById(id);
     if (!el) return;
     el.textContent = text;
+    el.classList.remove('gain', 'loss');
     if (extraClass) el.classList.add(extraClass);
   }
 
   function wireControls() {
-    ['recordSearch', 'recordAccount', 'recordType', 'recordOutcome'].forEach(function (id) {
+    ['recordSearch', 'recordType', 'recordOutcome'].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) el.addEventListener('input', render);
     });
+    var accountEl = document.getElementById('recordAccount');
+    if (accountEl) accountEl.addEventListener('input', function () { renderSummary(); render(); });
     document.querySelectorAll('#recordTable thead th[data-sort]').forEach(function (th) {
       th.addEventListener('click', function () {
         var key = th.getAttribute('data-sort');
@@ -78,8 +139,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var winCard = document.getElementById('statBiggestWinCard');
     var lossCard = document.getElementById('statBiggestLossCard');
-    if (winCard) wireJumpCard(winCard, function () { return state.summary && state.summary.biggestWin; });
-    if (lossCard) wireJumpCard(lossCard, function () { return state.summary && state.summary.biggestLoss; });
+    if (winCard) wireJumpCard(winCard, function () { return toJumpTarget(state.scopedBiggestWin); });
+    if (lossCard) wireJumpCard(lossCard, function () { return toJumpTarget(state.scopedBiggestLoss); });
+  }
+
+  function toJumpTarget(trade) {
+    if (!trade) return null;
+    return { symbol: trade.symbol, date: trade.date, gain: trade.realizedGain };
   }
 
   function wireJumpCard(card, getTarget) {
@@ -102,6 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('recordAccount').value = 'all';
     document.getElementById('recordType').value = 'all';
     document.getElementById('recordOutcome').value = 'all';
+    setRange('ytd');
     state.sortKey = 'date';
     state.sortDir = 'desc';
     document.querySelectorAll('#recordTable thead th').forEach(function (h) { h.classList.remove('sort-active'); });
@@ -111,6 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var arrow = dateTh.querySelector('.sort-arrow');
       if (arrow) arrow.innerHTML = '&#9660;';
     }
+    renderSummary();
     render();
 
     var row = document.querySelector(
@@ -132,12 +200,14 @@ document.addEventListener('DOMContentLoaded', function () {
     var type = document.getElementById('recordType').value;
     var outcome = document.getElementById('recordOutcome').value;
 
+    var cutoff = rangeCutoffDate(state.range);
     var rows = state.trades.filter(function (t) {
       if (search && t.symbol.toUpperCase().indexOf(search) === -1) return false;
       if (account !== 'all' && t.account !== account) return false;
       if (type !== 'all' && t.assetType !== type) return false;
       if (outcome === 'win' && t.realizedGain <= 0) return false;
       if (outcome === 'loss' && t.realizedGain >= 0) return false;
+      if (cutoff && t.date < cutoff) return false;
       return true;
     });
 

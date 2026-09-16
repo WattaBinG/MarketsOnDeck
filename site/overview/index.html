@@ -62,23 +62,26 @@
         <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
         <a class="btn" href="/record/index.html">Browse The Record</a>
       </div>
-      <!-- RECORD_STATS_START — updated once daily by the Record Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
-      <div class="stat-row" id="homeStats">
-        <div class="stat-card">
-          <div class="stat-num num gain" id="homeStatPnl">+$22,758.22</div>
-          <div class="stat-label">Net Realized, 2026 YTD</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num num" id="homeStatWinRate">67.01%</div>
-          <div class="stat-label">2026 Win Rate</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num num" id="homeStatTrades">289</div>
-          <div class="stat-label">Trades in The Record</div>
-        </div>
+      <div class="range-tabs" role="tablist" aria-label="Time range" id="homeRangeTabs">
+        <button class="range-tab" data-range="week" type="button" role="tab">Past Week</button>
+        <button class="range-tab" data-range="month" type="button" role="tab">Past Month</button>
+        <button class="range-tab active" data-range="ytd" type="button" role="tab">2026 YTD</button>
       </div>
-      <!-- RECORD_STATS_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, updated daily after the close.</p>
+      <a class="stat-row stat-row-link" id="homeStats" href="/record/index.html" style="margin-top:12px;">
+        <div class="stat-card">
+          <div class="stat-num num gain" id="homeStatPnl">—</div>
+          <div class="stat-label">Net Realized</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num" id="homeStatWinRate">—</div>
+          <div class="stat-label">Win Rate</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num num" id="homeStatTrades">—</div>
+          <div class="stat-label">Closed Trades</div>
+        </div>
+      </a>
+      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, computed straight from the real account's own trade history — click a number to see the trades behind it.</p>
     </div>
   </section>
 
