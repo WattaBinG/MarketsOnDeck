@@ -51,32 +51,37 @@
 </div>
 
 <main>
-  <section class="hero">
-    <div class="container">
-      <div class="eyebrow">Real Trades, Real Account</div>
-      <h1><a href="/record/index.html" style="color:inherit; text-decoration:none;">The record includes<br>what happened.</a></h1>
-      <p class="hero-sub">Every trade posted from my own account, wins and losses both — no cherry-picked screenshots, no deleted losers. This is a real trading journal, not a signals service.</p>
-      <div class="row gap-sm" style="flex-wrap:wrap;">
-        <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
-        <a class="btn" href="/record/index.html">Browse The Record</a>
+  <section class="hero hero-home">
+    <div class="container hero-home-grid">
+      <div>
+        <div class="eyebrow">Real Trades, Real Account</div>
+        <h1><a href="/record/index.html" style="color:inherit; text-decoration:none;">The record includes<br>what happened.</a></h1>
+        <p class="hero-sub">Every trade posted from my own account, wins and losses both — no cherry-picked screenshots, no deleted losers. This is a real trading journal, not a signals service.</p>
+        <div class="row gap-sm" style="flex-wrap:wrap;">
+          <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
+          <a class="btn" href="/record/index.html">Browse The Record</a>
+        </div>
+        <!-- RECORD_STATS_START — updated once daily by the Record Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
+        <div class="stat-row" id="homeStats">
+          <div class="stat-card">
+            <div class="stat-num num gain" id="homeStatPnl">+$22,758.22</div>
+            <div class="stat-label">Net Realized, 2026 YTD</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num num" id="homeStatWinRate">67.01%</div>
+            <div class="stat-label">2026 Win Rate</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num num" id="homeStatTrades">289</div>
+            <div class="stat-label">Trades in The Record</div>
+          </div>
+        </div>
+        <!-- RECORD_STATS_END -->
+        <p class="hero-home-note" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html">The Record</a>, updated daily after the close.</p>
       </div>
-      <!-- RECORD_STATS_START — updated once daily by the Record Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
-      <div class="stat-row" id="homeStats">
-        <div class="stat-card">
-          <div class="stat-num num gain" id="homeStatPnl">+$22,758.22</div>
-          <div class="stat-label">Net Realized, 2026 YTD</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num num" id="homeStatWinRate">67.01%</div>
-          <div class="stat-label">2026 Win Rate</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num num" id="homeStatTrades">289</div>
-          <div class="stat-label">Trades in The Record</div>
-        </div>
+      <div class="hero-home-badge">
+        <img src="/assets/brand/badge-1200.jpg" alt="MarketsOnDeck — bull vs. bear medallion, Discipline Drives Freedom" width="340" height="340">
       </div>
-      <!-- RECORD_STATS_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, updated daily after the close.</p>
     </div>
   </section>
 

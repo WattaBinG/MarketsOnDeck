@@ -197,6 +197,51 @@ p { margin: 0 0 1em; max-width: 68ch; }
 }
 .hero-sub { font-size: 18px; color: var(--text-muted); max-width: 56ch; margin-bottom: 26px; }
 
+/* Homepage masthead — a deliberate, committed dark band regardless of site
+   theme (a real "financial media" moment up top), distinct from the lighter
+   .hero used elsewhere. REDESIGN DRAFT (2026-09-16) — homepage only so far. */
+.hero-home {
+  background: radial-gradient(1400px 700px at 15% -20%, color-mix(in srgb, var(--accent-2) 16%, transparent), transparent 60%), linear-gradient(160deg, #12173a, #060812 78%);
+  color: #F4F5FA;
+  padding: 72px 0 64px;
+  position: relative; overflow: hidden;
+}
+.hero-home::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+  background: linear-gradient(90deg, var(--accent-2), transparent 70%);
+}
+.hero-home-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
+.hero-home .eyebrow { color: var(--accent-2); }
+.hero-home .eyebrow::before { background: var(--accent-2); }
+.hero-home h1 { color: #FFFFFF; font-size: clamp(38px, 6vw, 64px); }
+.hero-home .hero-sub { color: #B7BCD6; font-size: 18px; }
+.hero-home .btn { border-color: rgba(255,255,255,0.22); color: #F4F5FA; background: rgba(255,255,255,0.06); }
+.hero-home .btn:hover { border-color: var(--accent-2); }
+.hero-home .btn-primary {
+  background: linear-gradient(135deg, var(--accent-2), color-mix(in srgb, var(--accent-2) 70%, #FFFFFF));
+  color: #1A1400; border-color: transparent;
+}
+.hero-home .stat-row { margin-top: 34px; }
+.hero-home .stat-card {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(4px);
+}
+.hero-home .stat-card .stat-num { color: #FFFFFF; }
+.hero-home .stat-card .stat-num.gain { color: #4FE39A; }
+.hero-home .stat-label { color: #9AA0C3; }
+.hero-home-note { color: #9AA0C3 !important; }
+.hero-home-note a { color: #C9CCE6 !important; }
+.hero-home-badge { display: flex; justify-content: center; }
+.hero-home-badge img {
+  width: 100%; max-width: 340px; border-radius: 50%;
+  box-shadow: 0 30px 70px -20px rgba(0,0,0,0.65), 0 0 0 1px rgba(255,255,255,0.08);
+}
+@media (max-width: 860px) {
+  .hero-home-grid { grid-template-columns: 1fr; }
+  .hero-home-badge { order: -1; margin-bottom: 8px; }
+  .hero-home-badge img { max-width: 200px; }
+}
+
 .card {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
   padding: 24px; display: flex; flex-direction: column; gap: 12px;
