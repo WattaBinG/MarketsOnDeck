@@ -84,26 +84,26 @@
     <div class="container">
       <div class="eyebrow">Two Real Accounts, One Real Benchmark</div>
       <h2 class="mt-0">Trading vs. Agentic vs. The Market</h2>
-      <!-- SCOREBOARD_START — updated once daily by the Record Refresh routine; Trading/Agentic are realized-gain totals from trades.json's per-account summary, SPY is price return from a fixed Jan 2, 2026 close baseline — keep this exact card structure so the automated edit stays a clean find/replace -->
+      <!-- SCOREBOARD_START — updated once daily by the Record Refresh routine; Trading/Agentic lead with win rate (a real % from trades.json's per-account summary) with realized dollar gain as the subtext, SPY leads with its own price return from a fixed Jan 2, 2026 close baseline — all three cards lead with a percentage so they read consistently at a glance. Keep this exact card structure so the automated edit stays a clean find/replace -->
       <div class="grid grid-3" style="margin-top:20px;">
-        <div class="card">
+        <a class="card" href="/record/index.html?account=Trading" style="text-decoration:none;">
           <span class="badge badge-accent">Trading Account</span>
-          <div class="stat-num num gain" style="font-size:24px;">+$22,580.31</div>
-          <p class="mb-0" style="font-size:13.5px;">280 trades &middot; 66.31% win rate, 2026 YTD</p>
-        </div>
-        <div class="card">
+          <div class="stat-num num" style="font-size:24px;">66.31%</div>
+          <p class="mb-0" style="font-size:13.5px;">Win rate &middot; +$22,580.31 realized, 280 trades, 2026 YTD</p>
+        </a>
+        <a class="card" href="/record/index.html?account=Agentic" style="text-decoration:none;">
           <span class="badge badge-accent">Agentic Account</span>
-          <div class="stat-num num gain" style="font-size:24px;">+$177.91</div>
-          <p class="mb-0" style="font-size:13.5px;">9 trades &middot; 88.89% win rate, 2026 YTD</p>
-        </div>
-        <div class="card">
+          <div class="stat-num num" style="font-size:24px;">88.89%</div>
+          <p class="mb-0" style="font-size:13.5px;">Win rate &middot; +$177.91 realized, 9 trades, 2026 YTD</p>
+        </a>
+        <a class="card" href="/record/index.html" style="text-decoration:none;">
           <span class="badge">S&amp;P 500 (SPY)</span>
           <div class="stat-num num gain" style="font-size:24px;">+10.93%</div>
           <p class="mb-0" style="font-size:13.5px;">Price return, Jan 2 &ndash; today, 2026 YTD</p>
-        </div>
+        </a>
       </div>
       <!-- SCOREBOARD_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:14px;">Trading and Agentic figures are realized dollar gains from closed trades in each real account; SPY is the index's own price return &mdash; different metrics shown side by side for context, not a strict apples-to-apples comparison.</p>
+      <p class="text-muted" style="font-size:13px; margin-top:14px;">Trading and Agentic show win rate on closed trades (with realized dollar gain alongside); SPY shows its own price return &mdash; different measures of performance, put in a consistent percentage format for easy comparison, not a strict apples-to-apples return comparison. A win-rate percentage on an actively-traded margin account isn't the same thing as a return on invested capital, which isn't cleanly computable here.</p>
     </div>
   </section>
 

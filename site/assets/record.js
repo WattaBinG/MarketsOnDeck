@@ -18,11 +18,25 @@ document.addEventListener('DOMContentLoaded', function () {
       renderSummary(data.summary);
       renderChart(data.trades);
       wireControls();
+      applyUrlFilter();
       render();
     })
     .catch(function () {
       tbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">Trade data unavailable right now.</td></tr>';
     });
+
+  // Lets a link like /record/index.html?account=Trading land pre-filtered —
+  // used by the homepage scoreboard cards so "click to see all the trades"
+  // actually takes you to the right filtered view, not just the page.
+  function applyUrlFilter() {
+    var params = new URLSearchParams(window.location.search);
+    var account = params.get('account');
+    if (!account) return;
+    var select = document.getElementById('recordAccount');
+    if (!select) return;
+    var hasOption = Array.prototype.some.call(select.options, function (opt) { return opt.value === account; });
+    if (hasOption) select.value = account;
+  }
 
   function renderSummary(s) {
     if (!s) return;
