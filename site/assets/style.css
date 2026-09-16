@@ -415,11 +415,17 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .wire-top-source {
   display: block; margin-top: 10px; font-family: var(--font-mono); font-size: 12.5px; color: var(--text-muted);
 }
-.wire-list { list-style: none; margin: 0; padding: 0; }
+.wire-list {
+  list-style: none; margin: 0; padding: 0;
+  column-count: 3; column-gap: 40px;
+}
 .wire-list li {
   padding: 12px 0; border-bottom: 1px solid var(--border);
   display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px;
+  break-inside: avoid; -webkit-column-break-inside: avoid;
 }
+@media (max-width: 980px) { .wire-list { column-count: 2; } }
+@media (max-width: 640px) { .wire-list { column-count: 1; } }
 .wire-tag {
   flex-shrink: 0; font-family: var(--font-mono); font-size: 10px; font-weight: 600;
   letter-spacing: 0.06em; text-transform: uppercase; color: var(--accent);
