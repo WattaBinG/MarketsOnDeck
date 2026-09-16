@@ -1,25 +1,152 @@
 {
-  "asOf": "2026-09-16T12:30:00Z",
-  "asOfLabel": "8:30 AM ET",
-  "topStory": { "headline": "Trump Wants Lower Rates. His New Fed Chairman Is Poised to Raise Them", "url": "https://www.cnn.com/2026/09/16/economy/fed-rate-decision-september", "source": "CNN", "category": "Macro" },
+  "asOf": "2026-09-16T13:25:00Z",
+  "asOfLabel": "9:25 AM ET",
+  "topStory": {
+    "headline": "Stock market today: Dow, S&P 500, Nasdaq rise ahead of crucial Fed interest rate decision",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-16-dow-sp-500-nasdaq-fed-meeting-decision-080356525.html",
+    "source": "Yahoo Finance",
+    "category": "Markets"
+  },
   "items": [
-    { "headline": "Fed Rate Hike 93% Priced In: 3 Things to Watch Wednesday", "url": "https://www.benzinga.com/markets/economic-data/26/09/61788155/fed-rate-hike-september-2026-dot-plot-projections-what-to-watch", "source": "Benzinga", "category": "Macro", "timestamp": "2026-09-16T09:00:00Z" },
-    { "headline": "Kevin Warsh Under Pressure Ahead of Fed Rate Decision", "url": "https://www.irishtimes.com/business/2026/09/15/kevin-warsh-under-pressure-ahead-of-fed-rate-decision/", "source": "Irish Times", "category": "Macro", "timestamp": "2026-09-15T18:00:00Z" },
-    { "headline": "Trump and the Federal Reserve Are on a Collision Course Over Interest Rates", "url": "https://www.nbcnews.com/business/economy/trump-federal-reserve-warsh-interest-rates-rcna597896", "source": "NBC News", "category": "Macro", "timestamp": "2026-09-15T14:00:00Z" },
-    { "headline": "What a Fed Rate Hike Could Mean for Gold and Silver Prices", "url": "https://www.cbsnews.com/news/what-fed-rate-hike-means-for-gold-silver-prices-september-2026/", "source": "CBS News", "category": "Macro", "timestamp": "2026-09-16T11:00:00Z" },
-    { "headline": "European Stocks Advance With Banks Strong, Oil Calm Ahead of Fed", "url": "https://www.bloomberg.com/news/articles/2026-09-16/european-stocks-advance-as-bond-selloff-eases-ahead-of-fed", "source": "Bloomberg", "category": "Macro", "timestamp": "2026-09-16T06:30:00Z" },
-    { "headline": "Intel, SK Hynix Shares Jump on Report They're Discussing US Memory Chip Manufacturing", "url": "https://www.cnbc.com/2026/09/16/intel-sk-hynix-us-memory-chips.html", "source": "CNBC", "category": "Markets", "timestamp": "2026-09-16T10:00:00Z" },
-    { "headline": "Nvidia, Broadcom Just Helped Break a 90-Year Earnings Trend — Now Comes the Hard Part", "url": "https://www.tradingview.com/news/benzinga:76b7ee57c094b:0-nvidia-broadcom-just-helped-break-a-90-year-earnings-trend-now-comes-the-hard-part/", "source": "Benzinga", "category": "Markets", "timestamp": "2026-09-15T17:53:00Z" },
-    { "headline": "Nvidia CEO Jensen Huang Expected to Attend Trump-Xi State Dinner Sept. 24", "url": "https://www.cnbc.com/2026/09/15/nvidia-jensen-huang-trump-xi.html", "source": "CNBC", "category": "Markets", "timestamp": "2026-09-15T23:11:00Z" },
-    { "headline": "Qualcomm Hits Two-Month High As Amazon AI Chip Deal Reshapes Growth Outlook", "url": "https://www.foreignpolicyjournal.com/2026/09/16/qualcomm-nasdaq-qcom-hits-two-month-high-as-amazon-ai-chip-deal-reshapes-growth-outlook/", "source": "Foreign Policy Journal", "category": "Movers", "timestamp": "2026-09-16T09:56:00Z" },
-    { "headline": "JB Hunt Shares Drop 9% on Rare Profit Warning", "url": "https://www.investing.com/news/stock-market-news/jb-hunt-shares-drop-9-on-rare-profit-warning-93CH-4903226", "source": "Investing.com", "category": "Movers", "timestamp": "2026-09-16T09:48:00Z" },
-    { "headline": "Why Is Union Pacific Stock Rallying Today?", "url": "https://ca.investing.com/news/stock-market-news/why-is-union-pacific-stock-rallying-today-93CH-4841319", "source": "Investing.com", "category": "Movers", "timestamp": "2026-09-16T10:04:00Z" },
-    { "headline": "SpaceX Will Try to Put Starship in Orbit for the First Time on September 22", "url": "https://techcrunch.com/2026/09/15/spacex-will-try-to-put-starship-in-orbit-for-the-first-time-on-september-22/", "source": "TechCrunch", "category": "Movers", "timestamp": "2026-09-16T05:50:00Z" },
-    { "headline": "Cathie Wood Sees $1 Billion Revenue Potential From 'Each Starship Launch' — Musk Says 'It's Not Impossible'", "url": "https://www.benzinga.com/news/26/09/61808679/cathie-wood-sees-1-billion-revenue-potential-from-each-starship-launch-and-10-trillion-annually-by-2030-elon-musk-says-its-not-impossible", "source": "Benzinga", "category": "Movers", "timestamp": "2026-09-16T07:57:00Z" },
-    { "headline": "US, Vietnam Firms to Sign Agreements as To Lam Travels to New York", "url": "https://www.investing.com/news/stock-market-news/us-vietnam-firms-to-sign-agreements-as-to-lam-travels-to-new-york-documents-show-4902944", "source": "Investing.com", "category": "Geopolitics", "timestamp": "2026-09-16T08:22:00Z" },
-    { "headline": "US Confirms It Deployed Weapons in Space for First Time; China and Russia Respond", "url": "https://www.cbsnews.com/news/us-confirms-weapons-in-space-china-russia-respond/", "source": "CBS News", "category": "Geopolitics", "timestamp": "2026-09-15T20:00:00Z" },
-    { "headline": "CBO Finds Iran War Has Already Cost US Nearly $40 Billion, Fueled Inflation", "url": "https://time.com/article/2026/09/15/iran-war-cost-inflation-cbo-report/", "source": "Time", "category": "Geopolitics", "timestamp": "2026-09-15T18:00:00Z" },
-    { "headline": "China and US Discuss Cutting Tariffs on Agriculture and Energy Ahead of Xi Summit", "url": "https://www.bloomberg.com/news/articles/2026-09-15/china-and-us-discuss-cutting-tariffs-on-agriculture-and-energy", "source": "Bloomberg", "category": "Geopolitics", "timestamp": "2026-09-15T14:00:00Z" },
-    { "headline": "EU's Von der Leyen Backs AI Slowdown, to Invite Frontier Labs for Talks on AI Risks", "url": "https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models", "source": "Euronews", "category": "Geopolitics", "timestamp": "2026-09-16T09:00:00Z" }
+    {
+      "headline": "Stock Market Today: S&P 500, Dow Jones Futures Gain Ahead of FOMC's Interest Rate Decision \u2014 INTC, SKHY, LEN, TCOM in Focus",
+      "url": "https://www.benzinga.com/markets/equities/26/09/61809430/stock-market-today-sp-500-dow-jones-futures-gain-ahead-of-fomcs-interest-rate-decision-intc-skhy-len-tcom-in-focus",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-16T09:35:00Z"
+    },
+    {
+      "headline": "Fed Rate Hike 93% Priced In: 3 Things to Watch Wednesday",
+      "url": "https://www.benzinga.com/markets/economic-data/26/09/61788155/fed-rate-hike-september-2026-dot-plot-projections-what-to-watch",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-16T09:00:00Z"
+    },
+    {
+      "headline": "Wall Street Slides as Oil Surge Pushes 10-Year Treasury Yield Above 5%",
+      "url": "https://yournews.com/2026/09/15/7195927/wall-street-slides-as-oil-surge-pushes-10-year-treasury-yield/",
+      "source": "yournews.com",
+      "category": "Macro",
+      "timestamp": "2026-09-15T20:00:00Z"
+    },
+    {
+      "headline": "What a Fed Rate Hike Could Mean for Gold and Silver Prices",
+      "url": "https://www.cbsnews.com/news/what-fed-rate-hike-means-for-gold-silver-prices-september-2026/",
+      "source": "CBS News",
+      "category": "Macro",
+      "timestamp": "2026-09-16T11:00:00Z"
+    },
+    {
+      "headline": "Trump and the Federal Reserve Are on a Collision Course Over Interest Rates",
+      "url": "https://www.nbcnews.com/business/economy/trump-federal-reserve-warsh-interest-rates-rcna597896",
+      "source": "NBC News",
+      "category": "Macro",
+      "timestamp": "2026-09-15T14:00:00Z"
+    },
+    {
+      "headline": "Kevin Warsh Under Pressure Ahead of Fed Rate Decision",
+      "url": "https://www.irishtimes.com/business/2026/09/15/kevin-warsh-under-pressure-ahead-of-fed-rate-decision/",
+      "source": "Irish Times",
+      "category": "Macro",
+      "timestamp": "2026-09-15T18:00:00Z"
+    },
+    {
+      "headline": "Intel, SK Hynix Shares Jump on Report They're Discussing US Memory Chip Manufacturing",
+      "url": "https://www.cnbc.com/2026/09/16/intel-sk-hynix-us-memory-chips.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-16T10:00:00Z"
+    },
+    {
+      "headline": "Nvidia CEO Jensen Huang Expected to Attend Trump-Xi State Dinner Sept. 24",
+      "url": "https://www.cnbc.com/2026/09/15/nvidia-jensen-huang-trump-xi.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-15T23:11:00Z"
+    },
+    {
+      "headline": "Nvidia, Broadcom Just Helped Break a 90-Year Earnings Trend \u2014 Now Comes the Hard Part",
+      "url": "https://www.tradingview.com/news/benzinga:76b7ee57c094b:0-nvidia-broadcom-just-helped-break-a-90-year-earnings-trend-now-comes-the-hard-part/",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-15T17:53:00Z"
+    },
+    {
+      "headline": "JPMorgan Chase & Co. (NYSE:JPM) Lowered to Hold Rating by Zacks Research",
+      "url": "https://www.marketbeat.com/instant-alerts/analyst-jpmorgan-chase-co-nyse-jpm-lowered-to-hold-rating-by-zacks-research-2026-09-16/",
+      "source": "MarketBeat",
+      "category": "Markets",
+      "timestamp": "2026-09-16T14:38:00Z"
+    },
+    {
+      "headline": "JB Hunt Shares Drop 9% on Rare Profit Warning",
+      "url": "https://www.investing.com/news/stock-market-news/jb-hunt-shares-drop-9-on-rare-profit-warning-93CH-4903226",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-09-16T09:48:00Z"
+    },
+    {
+      "headline": "Why Is Union Pacific Stock Rallying Today?",
+      "url": "https://ca.investing.com/news/stock-market-news/why-is-union-pacific-stock-rallying-today-93CH-4841319",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-09-16T10:04:00Z"
+    },
+    {
+      "headline": "Barclays Upgrades Alvotech (NASDAQ: ALVO) Stock As FDA Inspection Clears Path To U.S. Approvals",
+      "url": "https://www.foreignpolicyjournal.com/2026/09/16/barclays-upgrades-alvotech-nasdaq-alvo-stock-as-fda-inspection-clears-path-to-u-s-approvals/",
+      "source": "Foreign Policy Journal",
+      "category": "Movers",
+      "timestamp": "2026-09-16T11:57:00Z"
+    },
+    {
+      "headline": "SpaceX Will Try to Put Starship in Orbit for the First Time on September 22",
+      "url": "https://techcrunch.com/2026/09/15/spacex-will-try-to-put-starship-in-orbit-for-the-first-time-on-september-22/",
+      "source": "TechCrunch",
+      "category": "Movers",
+      "timestamp": "2026-09-16T05:50:00Z"
+    },
+    {
+      "headline": "Cathie Wood Sees $1 Billion Revenue Potential From 'Each Starship Launch' \u2014 Musk Says 'It's Not Impossible'",
+      "url": "https://www.benzinga.com/news/26/09/61808679/cathie-wood-sees-1-billion-revenue-potential-from-each-starship-launch-and-10-trillion-annually-by-2030-elon-musk-says-its-not-impossible",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-16T07:57:00Z"
+    },
+    {
+      "headline": "EU's Von der Leyen Backs AI Slowdown, to Invite Frontier Labs for Talks on AI Risks",
+      "url": "https://www.euronews.com/my-europe/2026/09/16/eus-von-der-leyen-calls-for-pacing-frontier-ai-models",
+      "source": "Euronews",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-16T09:00:00Z"
+    },
+    {
+      "headline": "US Confirms It Deployed Weapons in Space for First Time; China and Russia Respond",
+      "url": "https://www.cbsnews.com/news/us-confirms-weapons-in-space-china-russia-respond/",
+      "source": "CBS News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-15T20:00:00Z"
+    },
+    {
+      "headline": "CBO Finds Iran War Has Already Cost US Nearly $40 Billion, Fueled Inflation",
+      "url": "https://time.com/article/2026/09/15/iran-war-cost-inflation-cbo-report/",
+      "source": "Time",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-15T18:00:00Z"
+    },
+    {
+      "headline": "China and US Discuss Cutting Tariffs on Agriculture and Energy Ahead of Xi Summit",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-15/china-and-us-discuss-cutting-tariffs-on-agriculture-and-energy",
+      "source": "Bloomberg",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-15T14:00:00Z"
+    },
+    {
+      "headline": "US, Vietnam Firms to Sign Agreements as To Lam Travels to New York",
+      "url": "https://www.investing.com/news/stock-market-news/us-vietnam-firms-to-sign-agreements-as-to-lam-travels-to-new-york-documents-show-4902944",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-16T08:22:00Z"
+    }
   ]
 }
