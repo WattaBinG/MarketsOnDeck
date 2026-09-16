@@ -186,6 +186,23 @@ function initShareBars() {
 // that removes the blank "—" flash on first paint and means link-preview
 // bots and crawlers (which don't run JS) actually see the real numbers too.
 
+// Fetches JSON with a couple of retries before giving up — mobile networks
+// (cell tower handoffs, backgrounded-tab reconnects) throw a lot of one-off
+// fetch failures that have nothing to do with the data actually being gone,
+// and the ticker/pinned bar used to hide itself permanently on the very
+// first blip. Retries a couple times with a short backoff before returning
+// null, which is the only thing that should actually hide the bar.
+function fetchJsonRetry(url, attempts) {
+  attempts = attempts || 3;
+  return fetch(url, { cache: 'no-store' })
+    .then(function (res) { return res.ok ? res.json() : Promise.reject(new Error('bad status')); })
+    .catch(function (err) {
+      if (attempts <= 1) return null;
+      return new Promise(function (resolve) { setTimeout(resolve, 1200); })
+        .then(function () { return fetchJsonRetry(url, attempts - 1); });
+    });
+}
+
 // Pinned bar — the standing set (SPY/QQQ/DIA from ticker.json's "pinned"
 // list, plus BTC/ETH/SOL from crypto.json, which trades 24/7 on its own
 // refresh schedule). Always visible on every screen size — CSS makes this
@@ -196,8 +213,8 @@ function initPinned() {
   if (!bar) return;
 
   Promise.all([
-    fetch('/assets/ticker.json', { cache: 'no-store' }).then(function (res) { return res.ok ? res.json() : null; }).catch(function () { return null; }),
-    fetch('/assets/crypto.json', { cache: 'no-store' }).then(function (res) { return res.ok ? res.json() : null; }).catch(function () { return null; })
+    fetchJsonRetry('/assets/ticker.json'),
+    fetchJsonRetry('/assets/crypto.json')
   ]).then(function (results) {
     var tickerData = results[0], cryptoData = results[1];
     var pinnedSymbols = (tickerData && tickerData.pinned) || [];
@@ -207,6 +224,7 @@ function initPinned() {
     var cryptoItems = (cryptoData && cryptoData.items) || [];
     var allItems = pinnedItems.concat(cryptoItems);
     if (!allItems.length) { bar.hidden = true; return; }
+    bar.hidden = false;
     bar.innerHTML = allItems.map(renderTickerItem).join('');
   }).catch(function () { bar.hidden = true; });
 }
@@ -222,13 +240,13 @@ function initTicker() {
   var track = strip.querySelector('.ticker-track');
   if (!track) return;
 
-  fetch('/assets/ticker.json', { cache: 'no-store' })
-    .then(function (res) { return res.ok ? res.json() : null; })
+  fetchJsonRetry('/assets/ticker.json')
     .then(function (data) {
       if (!data || !data.items || !data.items.length) { strip.hidden = true; return; }
       var pinnedSymbols = data.pinned || [];
       var scrollItems = data.items.filter(function (item) { return pinnedSymbols.indexOf(item.symbol) === -1; });
       if (!scrollItems.length) { strip.hidden = true; return; }
+      strip.hidden = false;
       var asOfHtml = '<div class="ticker-asof">' + escapeHtml(data.asOfLabel || 'Updated') + '</div>';
       var itemsHtml = scrollItems.map(renderTickerItem).join('');
       // duplicate the row once so the CSS animation (-50%) loops seamlessly
