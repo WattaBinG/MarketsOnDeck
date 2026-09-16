@@ -438,3 +438,43 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .wire-source {
   font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); white-space: nowrap;
 }
+.wire-archive-link {
+  display: inline-block; margin-top: 18px; font-family: var(--font-mono); font-size: 13px;
+  color: var(--text-muted); text-decoration: underline;
+}
+.wire-archive-link:hover { color: var(--accent); }
+
+/* Share bar — on original content pages (Brief, Episodes, Record). Plain
+   text-pill buttons to match the site's spare typographic style, not icon
+   fonts. Links are populated by initShareBars() in main.js so each page only
+   needs a data-title attribute, not hand-encoded URLs. */
+.share-bar {
+  display: flex; align-items: center; flex-wrap: wrap; gap: 8px;
+  margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border);
+}
+.share-label {
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-muted); margin-right: 2px;
+}
+.share-btn {
+  font: inherit; font-family: var(--font-mono); font-size: 12.5px; font-weight: 600;
+  padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border-strong);
+  background: var(--surface); color: var(--text); text-decoration: none; cursor: pointer;
+  transition: border-color .15s ease, color .15s ease;
+}
+.share-btn:hover { border-color: var(--accent); color: var(--accent); }
+.share-btn.copied { border-color: var(--gain); color: var(--gain); }
+
+/* Wire Archive page — same dense register as The Wire itself */
+.archive-day { margin-top: 30px; }
+.archive-day:first-of-type { margin-top: 8px; }
+.archive-day-label {
+  font-family: var(--font-mono); font-size: 12.5px; font-weight: 600; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--text-muted); padding-bottom: 8px; margin-bottom: 4px;
+  border-bottom: 2px solid var(--border-strong);
+}
+.archive-search {
+  font: inherit; font-size: 15px; padding: 10px 14px; border-radius: 8px; width: 100%; max-width: 420px;
+  border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); margin: 18px 0 6px;
+}
+.archive-empty { color: var(--text-muted); padding: 24px 0; }

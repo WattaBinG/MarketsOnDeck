@@ -39,7 +39,57 @@ document.addEventListener('DOMContentLoaded', function () {
 
   initPinned();
   initTicker();
+  initShareBars();
 });
+
+// Share bar — populates the X/Facebook/LinkedIn intent links with the
+// current page URL and a data-title attribute (so each page only needs to
+// declare a title, not hand-encode share URLs), and wires the Copy Link
+// button to the clipboard.
+function initShareBars() {
+  var bars = document.querySelectorAll('.share-bar');
+  if (!bars.length) return;
+  var url = encodeURIComponent(location.href);
+  bars.forEach(function (bar) {
+    var title = encodeURIComponent(bar.getAttribute('data-title') || document.title);
+    var xLink = bar.querySelector('.share-x');
+    var fbLink = bar.querySelector('.share-fb');
+    var liLink = bar.querySelector('.share-li');
+    if (xLink) xLink.href = 'https://twitter.com/intent/tweet?text=' + title + '&url=' + url;
+    if (fbLink) fbLink.href = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+    if (liLink) liLink.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
+    var copyBtn = bar.querySelector('.share-copy');
+    if (copyBtn) {
+      var defaultLabel = copyBtn.textContent;
+      copyBtn.addEventListener('click', function () {
+        var reset = function () {
+          copyBtn.textContent = defaultLabel;
+          copyBtn.classList.remove('copied');
+        };
+        var showCopied = function () {
+          copyBtn.textContent = 'Copied!';
+          copyBtn.classList.add('copied');
+          setTimeout(reset, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(location.href).then(showCopied, function () {});
+        } else {
+          try {
+            var tmp = document.createElement('textarea');
+            tmp.value = location.href;
+            tmp.style.position = 'fixed';
+            tmp.style.opacity = '0';
+            document.body.appendChild(tmp);
+            tmp.select();
+            document.execCommand('copy');
+            document.body.removeChild(tmp);
+            showCopied();
+          } catch (e) {}
+        }
+      });
+    }
+  });
+}
 
 // Note: the homepage hero stats and "Most Recent Closed Trades" cards used to
 // be filled in by client-side JS reading trades.json. Moved to static HTML,
