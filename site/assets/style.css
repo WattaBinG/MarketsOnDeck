@@ -319,11 +319,17 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   display: flex; width: max-content;
   animation: ticker-scroll 65s linear infinite;
 }
-.ticker-strip:hover .ticker-track { animation-play-state: paused; }
+/* Only pause-on-hover on devices that actually have hover (mouse/trackpad).
+   Touch browsers fake a "hover" on tap with no matching un-hover event, which
+   was freezing the scroll permanently after the first touch on mobile. */
+@media (hover: hover) {
+  .ticker-strip:hover .ticker-track { animation-play-state: paused; }
+}
 .ticker-item {
   display: flex; align-items: baseline; gap: 8px;
   padding: 9px 22px; font-family: var(--font-mono); font-size: 12.5px; white-space: nowrap;
   border-right: 1px solid var(--border);
+  text-decoration: none; color: inherit;
 }
 .ticker-symbol { font-weight: 700; color: var(--text); }
 .ticker-symbol.ticker-held::after { content: "\25CF"; font-size: 6px; color: var(--accent-2); margin-left: 5px; vertical-align: middle; }
