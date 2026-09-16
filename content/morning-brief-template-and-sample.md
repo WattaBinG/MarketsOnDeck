@@ -77,10 +77,14 @@ close instead of the open:**
 7. Same disclosure handling as the Morning Brief (see above, updated 2026-09-16) — no per-entry disclosure
    paragraph; the page-bottom notice on `site/brief/index.html` already covers Market Tape entries too.
 
-**Publishing:** same archive page (`site/brief/index.html`) and same jump-list, not a separate URL — each entry's
-`.card` gets a small type badge ("Morning Brief" vs "Market Tape") so the two are visually distinct in one feed
-rather than splitting into two separate archives. Keeps the "one project, keep it simple" discipline Keith set
-back on 2026-09-02 rather than standing up a whole parallel page structure for a second daily post.
+**Publishing (changed 2026-09-16, per Keith):** Morning Brief and Market Tape now each get their own page —
+`site/brief/index.html` (Morning Brief only) and `site/market-tape/index.html` (Market Tape only, unrelated to
+`site/tape/`, the separate parked predictions feature). Each page has its own jump-list and its own set of `.card`
+entries with ids `brief-YYYY-MM-DD` / `tape-YYYY-MM-DD` respectively. This reverses the 2026-09-02 "one shared page"
+decision — Keith wants the two treated as genuinely separate daily pieces, each with real depth (account moves,
+market news, and how it's affecting his specific holdings), not a shared feed. Still keep the type badge on each
+card for now (harmless, and every existing entry already has one) even though it's no longer load-bearing for
+telling entries apart on a page that's now single-type.
 
 ---
 
