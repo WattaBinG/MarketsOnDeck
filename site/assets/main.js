@@ -40,7 +40,34 @@ document.addEventListener('DOMContentLoaded', function () {
   initPinned();
   initTicker();
   initShareBars();
+  initScrollableTables();
 });
+
+// Data tables (record table, episode stat tables) sit in a .table-scroll
+// wrapper with overflow-x:auto but no visual cue that there's more to see —
+// on a phone that meant the most important column (Realized P&L) was
+// invisible off-screen with no hint it existed. Add a fade edge + a
+// "swipe to see more" hint, but only when the table actually overflows.
+function initScrollableTables() {
+  document.querySelectorAll('.table-scroll').forEach(function (wrapper) {
+    var table = wrapper.querySelector('table');
+    if (!table) return;
+    var check = function () {
+      var overflowing = table.scrollWidth > wrapper.clientWidth + 1;
+      wrapper.classList.toggle('has-overflow', overflowing);
+      if (overflowing && !wrapper.previousElementSibling?.classList.contains('table-scroll-hint')) {
+        var hint = document.createElement('div');
+        hint.className = 'table-scroll-hint';
+        hint.textContent = 'Swipe to see more →';
+        wrapper.parentNode.insertBefore(hint, wrapper);
+      } else if (!overflowing && wrapper.previousElementSibling?.classList.contains('table-scroll-hint')) {
+        wrapper.previousElementSibling.remove();
+      }
+    };
+    check();
+    window.addEventListener('resize', check);
+  });
+}
 
 // Share bar — populates the X/Facebook/LinkedIn intent links with the
 // current page URL and a data-title attribute (so each page only needs to
