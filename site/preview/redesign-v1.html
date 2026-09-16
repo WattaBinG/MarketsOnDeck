@@ -2,23 +2,69 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>MarketsOnDeck — Real Trades, No Cherry-Picking</title>
-<meta name="description" content="Real trades from my own brokerage account — wins and losses both, posted as they happen. No cherry-picked screenshots, no deleted losers.">
+<title>MarketsOnDeck — Redesign Preview v1</title>
+<meta name="description" content="Redesign preview — not linked from the live site's navigation. Compare against the real homepage.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
-<meta property="og:image" content="https://marketsondeck.wattabing.workers.dev/assets/brand/badge-1200.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://marketsondeck.wattabing.workers.dev/assets/brand/badge-1200.jpg">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"MarketsOnDeck","url":"https://marketsondeck.wattabing.workers.dev/","description":"Real trades from my own brokerage account, wins and losses both — posted as they happen.","publisher":{"@type":"Organization","name":"MarketsOnDeck"}}
-</script>
+<style>
+/* Redesign-only styles — scoped to this preview page, never touches the
+   shared /assets/style.css that the live site uses. */
+.hero-home {
+  background: radial-gradient(1400px 700px at 15% -20%, color-mix(in srgb, var(--accent-2) 16%, transparent), transparent 60%), linear-gradient(160deg, #12173a, #060812 78%);
+  color: #F4F5FA;
+  padding: 72px 0 64px;
+  position: relative; overflow: hidden;
+}
+.hero-home::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 3px;
+  background: linear-gradient(90deg, var(--accent-2), transparent 70%);
+}
+.hero-home-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
+.hero-home .eyebrow { color: var(--accent-2); }
+.hero-home .eyebrow::before { background: var(--accent-2); }
+.hero-home h1 { color: #FFFFFF; font-size: clamp(38px, 6vw, 64px); }
+.hero-home .hero-sub { color: #B7BCD6; font-size: 18px; }
+.hero-home .btn { border-color: rgba(255,255,255,0.22); color: #F4F5FA; background: rgba(255,255,255,0.06); }
+.hero-home .btn:hover { border-color: var(--accent-2); }
+.hero-home .btn-primary {
+  background: linear-gradient(135deg, var(--accent-2), color-mix(in srgb, var(--accent-2) 70%, #FFFFFF));
+  color: #1A1400; border-color: transparent;
+}
+.hero-home .stat-row { margin-top: 34px; }
+.hero-home .stat-card {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12);
+  backdrop-filter: blur(4px);
+}
+.hero-home .stat-card .stat-num { color: #FFFFFF; }
+.hero-home .stat-card .stat-num.gain { color: #4FE39A; }
+.hero-home .stat-label { color: #9AA0C3; }
+.hero-home-note { color: #9AA0C3 !important; }
+.hero-home-note a { color: #C9CCE6 !important; }
+.hero-home-badge { display: flex; justify-content: center; }
+.hero-home-badge img {
+  width: 100%; max-width: 340px; border-radius: 50%;
+  box-shadow: 0 30px 70px -20px rgba(0,0,0,0.65), 0 0 0 1px rgba(255,255,255,0.08);
+}
+@media (max-width: 860px) {
+  .hero-home-grid { grid-template-columns: 1fr; }
+  .hero-home-badge { order: -1; margin-bottom: 8px; }
+  .hero-home-badge img { max-width: 200px; }
+}
+.preview-banner {
+  background: #1A1400; color: #F2A93B; text-align: center; font-family: var(--font-mono);
+  font-size: 12.5px; padding: 8px 16px; letter-spacing: 0.04em;
+}
+.preview-banner a { color: #FFFFFF; text-decoration: underline; }
+</style>
 </head>
 <body>
+
+<div class="preview-banner">REDESIGN PREVIEW — not the live site. <a href="/index.html">See the real homepage →</a></div>
 
 <header class="site-header">
   <div class="container nav">
@@ -28,7 +74,7 @@
     </a>
     <nav aria-label="Primary">
       <ul class="nav-links" id="primaryNav">
-        <li><a href="/index.html" class="active">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
         <li><a href="/brief/index.html">Morning Brief</a></li>
         <li><a href="/record/index.html">The Record</a></li>
         <li><a href="/about.html">About</a></li>
@@ -51,32 +97,35 @@
 </div>
 
 <main>
-  <section class="hero">
-    <div class="container">
-      <div class="eyebrow">Real Trades, Real Account</div>
-      <h1><a href="/record/index.html" style="color:inherit; text-decoration:none;">The record includes<br>what happened.</a></h1>
-      <p class="hero-sub">Every trade posted from my own account, wins and losses both — no cherry-picked screenshots, no deleted losers. This is a real trading journal, not a signals service.</p>
-      <div class="row gap-sm" style="flex-wrap:wrap;">
-        <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
-        <a class="btn" href="/record/index.html">Browse The Record</a>
+  <section class="hero hero-home">
+    <div class="container hero-home-grid">
+      <div>
+        <div class="eyebrow">Real Trades, Real Account</div>
+        <h1><a href="/record/index.html" style="color:inherit; text-decoration:none;">The record includes<br>what happened.</a></h1>
+        <p class="hero-sub">Every trade posted from my own account, wins and losses both — no cherry-picked screenshots, no deleted losers. This is a real trading journal, not a signals service.</p>
+        <div class="row gap-sm" style="flex-wrap:wrap;">
+          <a class="btn btn-primary" href="/brief/index.html">Read Today's Morning Brief</a>
+          <a class="btn" href="/record/index.html">Browse The Record</a>
+        </div>
+        <div class="stat-row" id="homeStats">
+          <div class="stat-card">
+            <div class="stat-num num gain" id="homeStatPnl">+$22,758.22</div>
+            <div class="stat-label">Net Realized, 2026 YTD</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num num" id="homeStatWinRate">67.01%</div>
+            <div class="stat-label">2026 Win Rate</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num num" id="homeStatTrades">289</div>
+            <div class="stat-label">Trades in The Record</div>
+          </div>
+        </div>
+        <p class="hero-home-note" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html">The Record</a>, updated daily after the close.</p>
       </div>
-      <!-- RECORD_STATS_START — updated once daily by the Record Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
-      <div class="stat-row" id="homeStats">
-        <div class="stat-card">
-          <div class="stat-num num gain" id="homeStatPnl">+$22,758.22</div>
-          <div class="stat-label">Net Realized, 2026 YTD</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num num" id="homeStatWinRate">67.01%</div>
-          <div class="stat-label">2026 Win Rate</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-num num" id="homeStatTrades">289</div>
-          <div class="stat-label">Trades in The Record</div>
-        </div>
+      <div class="hero-home-badge">
+        <img src="/assets/brand/badge-1200.jpg" alt="MarketsOnDeck — bull vs. bear medallion, Discipline Drives Freedom" width="340" height="340">
       </div>
-      <!-- RECORD_STATS_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, updated daily after the close.</p>
     </div>
   </section>
 
@@ -84,7 +133,6 @@
     <div class="container">
       <div class="eyebrow">Two Real Accounts, One Real Benchmark</div>
       <h2 class="mt-0">Trading vs. Agentic vs. The Market</h2>
-      <!-- SCOREBOARD_START — updated once daily by the Record Refresh routine; Trading/Agentic lead with win rate (a real % from trades.json's per-account summary) with realized dollar gain as the subtext, SPY leads with its own price return from a fixed Jan 2, 2026 close baseline — all three cards lead with a percentage so they read consistently at a glance. Keep this exact card structure so the automated edit stays a clean find/replace -->
       <div class="grid grid-3" style="margin-top:20px;">
         <a class="card" href="/record/index.html?account=Trading" style="text-decoration:none;">
           <span class="badge badge-accent">Trading Account</span>
@@ -102,8 +150,7 @@
           <p class="mb-0" style="font-size:13.5px;">Price return, Jan 2 &ndash; today, 2026 YTD</p>
         </a>
       </div>
-      <!-- SCOREBOARD_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:14px;">Trading and Agentic show win rate on closed trades (with realized dollar gain alongside); SPY shows its own price return &mdash; different measures of performance, put in a consistent percentage format for easy comparison, not a strict apples-to-apples return comparison. A win-rate percentage on an actively-traded margin account isn't the same thing as a return on invested capital, which isn't cleanly computable here.</p>
+      <p class="text-muted" style="font-size:13px; margin-top:14px;">Trading and Agentic show win rate on closed trades (with realized dollar gain alongside); SPY shows its own price return &mdash; different measures of performance, put in a consistent percentage format for easy comparison, not a strict apples-to-apples return comparison.</p>
     </div>
   </section>
 
@@ -113,7 +160,6 @@
     <div class="container">
       <div class="eyebrow">Proof, Not a Promise</div>
       <h2 class="mt-0">Most Recent Closed Trades</h2>
-      <!-- RECENT_TRADES_START — updated once daily by the Record Refresh routine; always the 3 most recent trades from trades.json, unfiltered (wins or losses, whichever actually happened) — keep this exact card structure so the automated edit stays a clean find/replace -->
       <div class="grid grid-3" style="margin-top:20px;">
         <div class="card">
           <span class="badge badge-loss">LOSS &middot; Sep 14</span>
@@ -131,8 +177,7 @@
           <span class="card-link num gain">+$142.40</span>
         </div>
       </div>
-      <!-- RECENT_TRADES_END -->
-      <p class="text-muted" style="font-size:13px; margin-top:14px;">Unfiltered — the 3 most recent trades exactly as they closed, win or lose. <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">See all 282 →</a></p>
+      <p class="text-muted" style="font-size:13px; margin-top:14px;">Unfiltered — the 3 most recent trades exactly as they closed, win or lose. <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">See all 289 →</a></p>
     </div>
   </section>
 
