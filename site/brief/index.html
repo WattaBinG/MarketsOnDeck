@@ -39,6 +39,12 @@
     </button>
   </div>
 </header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
 <main>
   <div class="container section-tight">
     <div class="article-header">
@@ -48,11 +54,10 @@
     </div>
   </div>
   <div class="container">
-    <div class="article-body prose">
-
-      <nav aria-label="Previous briefs" class="card" style="padding:18px 26px; margin-top:8px;">
-        <div class="card-eyebrow" style="margin-bottom:8px;">Jump To</div>
-        <ul style="margin:0; padding-left:1.1em; line-height:1.9;">
+    <div class="brief-layout">
+      <details class="brief-sidebar" open>
+        <summary class="card-eyebrow">Jump To</summary>
+        <ul style="margin:10px 0 0; padding-left:1.1em; line-height:1.7;">
           <li><a href="#tape-2026-09-15">September 15, 2026 &mdash; Market Tape</a> &mdash; oil tops $105 on a Saudi supply shock, the 10-year yield nears 5%, and the CLARITY Act fails in the Senate</li>
           <li><a href="#brief-2026-09-15">September 15, 2026 &mdash; Morning Brief</a> &mdash; FOMC begins, Fed-hike odds hit 95%, SpaceX merger chatter resurfaces</li>
           <li><a href="#tape-2026-09-14">September 14, 2026 &mdash; Market Tape</a> &mdash; AI-infra selloff deepens into the close as software and cybersecurity catch a bid, KLAC hit by a lagging Third Point exit, LULU position closed out</li>
@@ -67,14 +72,13 @@
           <li><a href="#brief-2026-09-04">September 4, 2026</a> &mdash; LULU's premarket guidance-cut drop, called before the open</li>
           <li><a href="#brief-2026-08-29">August 29, 2026</a> &mdash; NVDA's 8.74% volume day</li>
         </ul>
-      </nav>
+      </details>
+
+      <div class="brief-main article-body prose">
 
       <div class="card" id="tape-2026-09-15" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 15, 2026</span><span class="badge badge-accent">Market Tape</span></div>
         <h3 style="margin-bottom:12px; margin-top:4px;">The Market Tape &mdash; End-of-Day Wrap</h3>
-
-        <p style="margin-top:0;"><em>This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones.</em></p>
-
         <p>SPY closed today at $757.86, down 0.40% from Monday's $760.65 &mdash; a second straight loss, and now roughly 2.6% below the $777.88 closing high the index set August 13. But today's decline had almost nothing to do with the AI-safety story that drove Monday's session; it was a different set of mechanics entirely.</p>
 
         <p style="margin-top:16px;">The real driver was energy. WTI crude jumped 3.7% to $105.12 a barrel and Brent rose 2.4% to $108.20, after Saudi Aramco reportedly canceled or delayed cargoes to European refiners, per Benzinga's midday wrap. U.S. diesel prices climbed to a record average of $6.26 a gallon, above the previous high set in 2022, with heating oil futures up 5.5% and gasoline up 3.2%. President Trump wrote on Truth Social that "the world's diesel price rise is mostly caused by the Russia/Ukraine War, not Iran." It showed up unevenly across the three benchmarks: DIA, the most industrial-heavy of the three, fell 0.60% to $521.36, a shade worse than QQQ's 0.56% drop to $705.18 and SPY's 0.40% decline, with the Energy sector the only one of the eleven S&amp;P sector SPDRs posting a real gain on the day, per Benzinga.</p>
@@ -92,7 +96,7 @@
 
       <div class="card" id="brief-2026-09-15" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 15, 2026</span><span class="badge">Morning Brief</span></div>
-        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones. Drafted premarket Tuesday, September 15, before the opening bell.</p>
+        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">Drafted premarket Tuesday, September 15, before the opening bell.</p>
 
         <p>SPY closed Monday at $760.65, down 0.48% from Friday's $764.35 and now about 2.2% below the $777.88 closing high the index set August 13 &mdash; the market's second session digesting the weekend's AI-safety essay, though this morning's premarket tape is far calmer than Monday's own reaction. As of about 7:30 a.m. ET, SPY was down just 0.17% to $759.39, QQQ off 0.19% to $708.03, and DIA down 0.20% to $523.18 &mdash; a rare morning where all three benchmarks are moving in a tight, quiet band together, instead of the sharp AI-hardware-versus-everything-else split that defined Monday's session.</p>
 
@@ -112,9 +116,6 @@
       <div class="card" id="tape-2026-09-14" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 14, 2026</span><span class="badge badge-accent">Market Tape</span></div>
         <h3 style="margin-bottom:12px; margin-top:4px;">The Market Tape &mdash; End-of-Day Wrap</h3>
-
-        <p style="margin-top:0;"><em>This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones.</em></p>
-
         <p>SPY closed today at $760.65, down 0.48% from Friday's $764.35 &mdash; a second straight loss that picked up almost exactly where this morning's brief left off, on the same weekend AI-safety story that hit futures before the open.</p>
 
         <p style="margin-top:16px;">The session turned into a real capital rotation, not just a broad risk-off day. AI-infrastructure hardware kept bleeding: Nvidia fell 3.57% to $210.50, AMD dropped 4.45% to $493.17, and Intel slid 5.59% to $97.19. Chip-equipment names took it further &mdash; Applied Materials and Lam Research each fell roughly 6% and ASML sank about 5%, per 24/7 Wall St.'s Monday coverage of what it called the "AI pacing call reaching fab spending." Hewlett Packard Enterprise dropped 9% (on a downgrade after a big recent run, a company-specific reason layered on top of the sector weakness), with Dell off 5% and Super Micro down 8% in the same AI-server complex. On the other side of the rotation, megacap platform names actually gained: Alphabet rose 2.97% to $348.56, Meta added 2.56% to $664.61, and Microsoft climbed 1.97% to $505.40. Enterprise software did even better &mdash; ServiceNow, Adobe and Salesforce all gained, with coverage from 24/7 Wall St. and Yahoo Finance framing it as capital "sidestepping" the AI-infrastructure selloff. Cybersecurity names jumped hardest of all: CrowdStrike and Zscaler each rose roughly 12% and Palo Alto Networks about 11%, after Microsoft published a new "Humanist AI Code of Conduct" framework that investors read, per Benzinga's reporting, as a reason to own the security layer sitting on top of increasingly autonomous AI systems.</p>
@@ -134,7 +135,7 @@
 
       <div class="card" id="brief-2026-09-14" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 14, 2026</span><span class="badge">Morning Brief</span></div>
-        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones. Drafted premarket Monday, September 14, before the opening bell.</p>
+        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">Drafted premarket Monday, September 14, before the opening bell.</p>
 
         <p>SPY closed Friday at $764.35, up 0.86% from Thursday's $757.83 and about 1.74% below the $777.88 closing high the index set August 13 &mdash; a solid, unremarkable Friday that premarket trading this morning has already given back and then some, on a story that has nothing to do with Friday's own tape.</p>
 
@@ -158,9 +159,6 @@
       <div class="card" id="tape-2026-09-11" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 11, 2026</span><span class="badge badge-accent">Market Tape</span></div>
         <h3 style="margin-bottom:12px; margin-top:4px;">The Market Tape &mdash; End-of-Day Wrap</h3>
-
-        <p style="margin-top:0;"><em>This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones.</em></p>
-
         <p>SPY closed at $764.35, up 0.86% from Thursday's $757.83 close and about 1.7% below the $777.88 high the index set August 13 &mdash; a session almost entirely explained by one data point released before the opening bell.</p>
 
         <p style="margin-top:16px;">That data point was August's CPI report, which held at 3.4% year-over-year, unchanged from July and in line with what the market had already priced in. The reaction was immediate: by 10:38 a.m. ET, the Dow was up more than 1%, the Nasdaq up 1.20%, and the S&amp;P up 1.08% on the in-line print, with oil trading lower and gold catching a bid &mdash; the shape of a fairly standard "no surprise, no reason to reprice" relief rally. By the close, SPY's gain had narrowed to 0.86%, a less exuberant number than the mid-morning read but still a solidly green session, not a fade back to flat.</p>
@@ -176,7 +174,7 @@
 
       <div class="card" id="brief-2026-09-11" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 11, 2026</span><span class="badge">Morning Brief</span></div>
-        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones. Drafted premarket, before the 8:30 a.m. ET CPI release.</p>
+        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">Drafted premarket, before the 8:30 a.m. ET CPI release.</p>
 
         <p>SPY, the S&amp;P 500 ETF, closed Thursday at $757.83, down 0.60% from Wednesday's $762.40 and now about 2.6% below the $777.88 closing high it set August 13 &mdash; ground that looked reachable two weeks ago is slipping further away as the week winds down.</p>
 
@@ -197,8 +195,6 @@
 
       <div class="card" id="tape-2026-09-10" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 10, 2026</span><span class="badge badge-accent">Market Tape</span></div>
-        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">This post contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones.</p>
-
         <p>SPY, the S&amp;P 500 ETF, closed Thursday at $758.04, down 0.57% &mdash; down from Wednesday's $762.40 and now about 2.6% below the $777.88 high it set on August 13. It was the fourth straight losing session for the major averages, and the story underneath today's tape was less about any single company and more about what's happening in the energy market.</p>
 
         <p style="margin-top:16px;">WTI crude settled at $102.48 a barrel, up 6.7% on the day, with Brent finishing at $107.63, up 5.9% &mdash; both benchmarks back above $100 for the first time in months. The move tracks reporting of intensified attacks on tankers near the Strait of Hormuz following a reported U.S. strike on Iranian oil vessels earlier in the week. I'm not in a position to verify the underlying military reporting beyond what's been published by wire services, and it's genuinely still developing &mdash; but the market reaction to it is the relevant part here: a sudden jump in energy costs is itself an inflation input, and it landed on a day that already had inflation data on the calendar.</p>
@@ -216,8 +212,6 @@
 
       <div class="card" id="brief-2026-09-10" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 10, 2026</span><span class="badge">Morning Brief</span></div>
-        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones.</p>
-
         <p>SPY closed Wednesday at $762.40, down 0.46% from Tuesday's $765.96 and now about 2% below the $777.88 closing high it set on August 13 &mdash; its second straight lower close after Tuesday's own retreat from Friday's $770.19. Nothing in that headline number looks dramatic on its own, but the real action Wednesday was one layer down, in a name I actually hold outright.</p>
 
         <p style="margin-top:16px;">SpaceX (SPCX) fell 3.86% to $147.55 on 119.9 million shares &mdash; the second-most actively traded stock in the entire market that session, per Alpha Vantage's most-active list. The move wasn't news-driven in the usual sense: per Benzinga's reporting, it tracked the release of roughly 319 million previously locked-up shares becoming eligible for sale, the latest stage of SpaceX's staggered post-IPO lockup schedule. That's the same mechanism, and almost the same magnitude, as an August 20 unlock that also knocked the stock down about 4% before it recovered the very next session. A mechanical share-supply event like this reads differently than a fundamentals-driven selloff &mdash; the float grows, some early holders take profit, and the stock tends to find its level again once the initial supply gets absorbed.</p>
@@ -231,8 +225,6 @@
 
       <div class="card" id="tape-2026-09-09" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 9, 2026</span><span class="badge badge-accent">Market Tape</span></div>
-        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones.</p>
-
         <p>SPY closed Wednesday at $762.44, down $3.52 (-0.46%) from Tuesday's $765.96 and now sitting about 2% below the $777.88 high the index set August 13 &mdash; a slide that started well before the opening bell, once oil began moving on renewed fighting between the U.S. and Iran.</p>
 
         <p style="margin-top:16px;">Brent crude topped $99 a barrel Wednesday, its highest level in close to seven weeks, after the U.S. military said it struck several Iranian oil tankers near the Kharg Island export hub and Iran claimed retaliatory strikes on U.S. vessels and tankers in the Gulf. That combination &mdash; a real supply threat layered on an already-tight oil market &mdash; is what was moving equities today more than any single U.S. economic data point; Goldman Sachs flagged that continued shipping attacks raise the odds of Brent clearing $120.</p>
@@ -250,8 +242,6 @@
 
       <div class="card" id="brief-2026-09-09" style="padding:26px; margin-top:24px; scroll-margin-top:24px;">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 9, 2026</span><span class="badge">Morning Brief</span></div>
-        <p style="margin-top:0; font-size:13px; font-style:italic; color:var(--text-muted);">This entry contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones.</p>
-
         <p>SPY closed Tuesday at $765.96, down 0.55% from Friday's $770.19 close (Monday was Labor Day, markets closed) &mdash; a quiet number on its own. What's actually setting up today's tape is oil: Brent crude cleared $100 a barrel for the first time in about six weeks early this morning, up from Tuesday's $97.89 settle, after another wave of Middle East attacks &mdash; Iran-backed Houthi forces claiming responsibility for hitting Saudi Arabia's Jazan refinery, and U.S. strikes on Iranian oil tankers after talks over passage through the Strait of Hormuz broke down. Both Brent and U.S. crude are up more than 60% for the year. Morgan Stanley's read this morning, via a note picked up in Alpha Vantage's news feed, is that the wars in Iran and Ukraine together are pushing oil traders out of long-term positions entirely and into shorter-dated, more selective derivatives &mdash; a market bracing for more volatility, not pricing in a resolution.</p>
 
         <p style="margin-top:16px;">Futures this morning are down modestly across the board on that &mdash; Dow futures off roughly 0.3%, S&amp;P 500 futures down about 0.2%, Nasdaq-100 futures down around 0.4%. Chip names are doing more than their share of that damage: NVDA slipped about 0.6% premarket, enough to drag the VanEck Semiconductor ETF down close to 0.9%. That's notable because NVDA was already the session's laggard Tuesday, closing down 2.01% to $225.73 even as the rest of chips ran the other way.</p>
@@ -319,6 +309,9 @@
 
       <p class="text-muted" style="margin-top:24px; font-size:14px;">Newest entries appear first — nothing gets deleted or quietly edited after the fact, same discipline as the episode recaps. Each entry keeps its own original publish date regardless of position on the page.</p>
 
+      <p class="footer-disclosure" style="margin-top:24px; padding-top:14px; border-top:1px solid var(--border);">Every Morning Brief and Market Tape entry on this page contains affiliate links and reflects my own opinions and positions. Nothing here is investment advice or a recommendation to buy or sell any security, and past results don't predict future ones.</p>
+
+      </div>
     </div>
   </div>
 </main>

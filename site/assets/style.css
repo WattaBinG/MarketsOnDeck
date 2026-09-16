@@ -247,6 +247,23 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .article-header { max-width: 74ch; margin: 0 auto 8px; }
 .article-body { max-width: 74ch; margin: 0 auto; }
 
+/* Brief archive — sticky side jump-list instead of an inline card, so it
+   doesn't keep eating vertical space above the content as entries pile up. */
+.brief-layout { display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 36px; align-items: start; }
+.brief-sidebar {
+  position: sticky; top: 84px;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 16px 18px; box-shadow: var(--shadow-sm);
+}
+.brief-sidebar summary { cursor: pointer; list-style: none; }
+.brief-sidebar summary::-webkit-details-marker { display: none; }
+.brief-sidebar ul { font-size: 13.5px; }
+.brief-sidebar li { margin-bottom: 4px; }
+@media (max-width: 860px) {
+  .brief-layout { grid-template-columns: 1fr; }
+  .brief-sidebar { position: static; }
+}
+
 .theme-toggle {
   width: 38px; height: 38px; border-radius: 999px; border: 1px solid var(--border);
   background: var(--surface); display: flex; align-items: center; justify-content: center;
@@ -266,16 +283,22 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
    Row 2 (.ticker-strip) is the animated scrolling strip: today's top
    movers plus Keith's own held positions, refreshed by the same
    scheduled job that writes ticker.json. */
-.ticker-pinned {
+.ticker-pinned-wrap {
   border-bottom: 1px solid var(--border);
   background: var(--surface);
-  display: flex; align-items: stretch;
+}
+.ticker-pinned {
+  max-width: var(--container); margin: 0 auto;
+  display: flex; align-items: stretch; justify-content: center;
   overflow-x: auto; -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
 .ticker-pinned::-webkit-scrollbar { display: none; }
 .ticker-pinned .ticker-item { border-right: 1px solid var(--border); flex-shrink: 0; }
 .ticker-pinned .ticker-item:first-child { border-left: none; }
+@media (max-width: 700px) {
+  .ticker-pinned { justify-content: flex-start; }
+}
 
 .ticker-strip {
   border-bottom: 1px solid var(--border);

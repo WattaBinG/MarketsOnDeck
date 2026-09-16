@@ -99,17 +99,27 @@ function initTicker() {
     .catch(function () { strip.hidden = true; });
 }
 
+var TICKER_CRYPTO_SYMBOLS = ['BTC', 'ETH', 'SOL'];
+
+// Every ticker item (pinned bar and scrolling strip both) links out to a real
+// quote page — Yahoo Finance's own symbol format needs "-USD" for crypto
+// (BTC -> BTC-USD) but plain tickers work as-is for stocks/ETFs.
+function tickerQuoteUrl(symbol) {
+  var yahooSymbol = TICKER_CRYPTO_SYMBOLS.indexOf(symbol) !== -1 ? symbol + '-USD' : symbol;
+  return 'https://finance.yahoo.com/quote/' + encodeURIComponent(yahooSymbol);
+}
+
 function renderTickerItem(item) {
   var dir = item.change > 0 ? 'gain' : (item.change < 0 ? 'loss' : '');
   var sign = item.change > 0 ? '+' : '';
   var price = typeof item.price === 'number' ? item.price.toFixed(2) : item.price;
   var pct = typeof item.changePercent === 'number' ? item.changePercent.toFixed(2) : item.changePercent;
   var symbolClass = 'ticker-symbol' + (item.held ? ' ticker-held' : '');
-  return '<div class="ticker-item">' +
+  return '<a class="ticker-item" href="' + tickerQuoteUrl(item.symbol) + '" target="_blank" rel="noopener">' +
     '<span class="' + symbolClass + '">' + escapeHtml(item.symbol) + '</span>' +
     '<span class="ticker-price num">' + price + '</span>' +
     '<span class="ticker-change num ' + dir + '">' + sign + pct + '%</span>' +
-    '</div>';
+    '</a>';
 }
 
 function escapeHtml(s) {

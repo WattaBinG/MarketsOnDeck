@@ -31,9 +31,14 @@ not oversights):**
   traders/investors, not exclusively options/vol specialists) — so every brief still needs one closing sentence or
   short paragraph that translates the thread into "why a normal trader should care," even if the body itself gets
   more technical than the old bullet format did.
-- **FTC + investment-advice disclaimer still goes at the top of every brief, no exceptions** — this is the
-  highest-frequency content on the site, and therefore the highest-frequency compliance surface. This doesn't
-  change with the format.
+- **FTC + investment-advice disclaimer: covered once, at the bottom of the brief archive page, not per-entry
+  (changed 2026-09-16, per Keith).** Previously every entry opened with its own disclosure paragraph; Keith wants
+  that gone from individual entries — it's a small, early-stage site and the per-entry banner was too loud/repeated.
+  `site/brief/index.html` now carries ONE disclosure notice near the bottom of the page (`.footer-disclosure` style,
+  small/muted) covering every entry on it, plus the site-wide footer disclosure present on every page. **Do NOT add
+  a disclosure paragraph to a new entry's card** — that page-bottom notice already covers it. If an entry needs a
+  short factual note (e.g. "Drafted premarket, before the CPI release"), that's fine to keep as its own small italic
+  line, just without the disclosure sentence itself.
 
 5. **Selective week-ahead awareness (added 2026-09-09, per Keith).** Kramer routinely names specific upcoming
    scheduled events that are genuinely likely to move markets — a CPI/PPI print, a Fed or ECB meeting, a jobs
@@ -69,7 +74,8 @@ close instead of the open:**
 5. Same selective week-ahead awareness as the Morning Brief — if something material is now one day closer (e.g. a
    CPI print landing the next morning), that's worth a closing-paragraph mention.
 6. Close with the same "why this matters" plain-language beat.
-7. Same disclosure block at the top, every time, no exceptions.
+7. Same disclosure handling as the Morning Brief (see above, updated 2026-09-16) — no per-entry disclosure
+   paragraph; the page-bottom notice on `site/brief/index.html` already covers Market Tape entries too.
 
 **Publishing:** same archive page (`site/brief/index.html`) and same jump-list, not a separate URL — each entry's
 `.card` gets a small type badge ("Morning Brief" vs "Market Tape") so the two are visually distinct in one feed
