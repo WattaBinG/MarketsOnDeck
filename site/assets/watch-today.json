@@ -1,12 +1,11 @@
 {
-  "date": "2026-09-17",
-  "dateLabel": "Thursday, September 17",
+  "date": "2026-09-18",
+  "dateLabel": "Friday, September 18",
   "events": [
-    { "time": "8:30 AM ET", "event": "Initial Jobless Claims" },
-    { "time": "8:30 AM ET", "event": "Housing Starts" },
-    { "time": "8:30 AM ET", "event": "Philly Fed Manufacturing" },
-    { "time": "10:00 AM ET", "event": "Pending Home Sales" },
-    { "time": "11:30 AM ET", "event": "Weekly Economic Index" }
+    { "time": "9:15 AM ET", "event": "Industrial Production" },
+    { "time": "1:00 PM ET", "event": "Baker Hughes Rig Count" },
+    { "time": "3:00 PM ET", "event": "Quad Witching Expiration" },
+    { "time": "3:30 PM ET", "event": "CFTC Commitments of Traders" }
   ],
   "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
