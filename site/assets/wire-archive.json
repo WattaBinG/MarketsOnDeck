@@ -1,11 +1,53 @@
 {
   "items": [
     {
+      "headline": "BOJ Faces Higher Bar to Support Yen After Fed's Hawkish Hike",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/boj-faces-higher-bar-to-support-yen-after-fed-s-hawkish-hike",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-09-17T11:30:00Z"
+    },
+    {
+      "headline": "Forex Today: All Eyes on BOE Rate Decision as Dollar Holds Near Seven-Week High",
+      "url": "https://www.fxstreet.com/news/forex-today-all-eyes-on-boe-rate-decision-202609170652",
+      "source": "FXStreet",
+      "category": "Macro",
+      "timestamp": "2026-09-17T10:52:00Z"
+    },
+    {
       "headline": "Futures Rally as Traders Applaud Fed Chair Warsh's Inflation Fight; 10-Year Yield Slips Back Below 5%",
       "url": "https://www.bloomberg.com/news/newsletters/2026-09-17/traders-applaud-warsh-s-fight-against-inflation",
       "source": "Bloomberg",
       "category": "Macro",
       "timestamp": "2026-09-17T10:26:00Z"
+    },
+    {
+      "headline": "Tesla and SpaceX Sue Nanotech Firm Over 'Terafab' Name for $16.8 Billion Texas AI Chip Factory",
+      "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L6N4580ZI:0-tesla-spacex-sue-nanotech-company-over-terafab-name/",
+      "source": "Reuters",
+      "category": "Movers",
+      "timestamp": "2026-09-17T10:26:00Z"
+    },
+    {
+      "headline": "Apollo Global Weighs Boosting SoftBank Loan to $9 Billion to Fund More OpenAI Bets",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/apollo-mulls-raising-softbank-loan-to-9-billion-for-openai-bets",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-09-17T10:00:00Z"
+    },
+    {
+      "headline": "What's Going On With Micron Technology Stock Thursday?",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61835259/whats-going-on-with-micron-technology-stock-thursday-5",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-17T10:00:00Z"
+    },
+    {
+      "headline": "Huawei Unveils Two Advanced AI Chips Slated for 2027, Escalating Race With Nvidia",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvda-stock-focus-huawei-announces-074449005.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-09-17T09:44:00Z"
     },
     {
       "headline": "Oil Prices Ease as Saudi Arabia Reroutes Cargoes Through Oman's Sohar Port After Pipeline Attack",
@@ -15,10 +57,24 @@
       "timestamp": "2026-09-17T09:30:00Z"
     },
     {
+      "headline": "AirAsia Shares Plunge to Four-Year Low on Report Malaysia Asked Rivals to Absorb Its Routes",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/airasia-plunges-to-four-year-low-on-route-absorption-report",
+      "source": "Bloomberg",
+      "category": "Movers",
+      "timestamp": "2026-09-17T09:15:00Z"
+    },
+    {
       "headline": "Global Bonds Recover as Warsh's Inflation Fight Calms Market Ahead of BOJ Decision",
       "url": "https://www.bloomberg.com/news/articles/2026-09-17/global-bonds-recover-as-warsh-s-inflation-fight-calms-market",
       "source": "Bloomberg",
       "category": "Macro",
+      "timestamp": "2026-09-17T09:00:00Z"
+    },
+    {
+      "headline": "Copper Steadies as Traders Shrug Off Fed's Hawkish Rate Signals",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/copper-steadies-as-traders-shrug-off-fed-s-hawkish-rate-signals",
+      "source": "Bloomberg",
+      "category": "Markets",
       "timestamp": "2026-09-17T09:00:00Z"
     },
     {
@@ -34,6 +90,13 @@
       "source": "NewsBreak",
       "category": "Movers",
       "timestamp": "2026-09-17T07:44:00Z"
+    },
+    {
+      "headline": "China's Shanghai Clearing House Expands Central Clearing to More Currencies in Yuan's Global Push",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/china-adds-currencies-to-central-clearing-in-yuan-s-global-push",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-09-17T07:30:00Z"
     },
     {
       "headline": "Bank of England's QT Plans May Eclipse Today's Rate Decision as the Bond Market's Key Focus",
@@ -57,6 +120,13 @@
       "timestamp": "2026-09-17T06:00:00Z"
     },
     {
+      "headline": "Russian Strikes Kill at Least 10, Injure 71 Across Ukraine as Kyiv, Zaporizhzhia, Odesa Bear Brunt of Attacks",
+      "url": "https://kyivindependent.com/russian-attacks-across-ukraine-kill-at-least-10-injure-71-as-large-scale-russian-attacks-on-ukrainian-cities-continue/",
+      "source": "Kyiv Independent",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-17T06:00:00Z"
+    },
+    {
       "headline": "Elon Musk Says SpaceX's Starship Could Deliver Up to 10 Million Tons to Orbit Every Year",
       "url": "https://www.newsbreak.com/benzinga-520061/4891021633468-elon-musk-says-spcx-s-starship-could-deliver-up-to-10-million-tons-to-orbit-every-year",
       "source": "NewsBreak",
@@ -71,7 +141,7 @@
       "timestamp": "2026-09-17T05:00:00Z"
     },
     {
-      "headline": "Iran Intelligence Operatives Signaled Openness to CIA Talks to End the War, NYT Reports — Trump Says It's 'Too Late'",
+      "headline": "Iran Intelligence Operatives Signaled Openness to CIA Talks to End the War, NYT Reports \u2014 Trump Says It's 'Too Late'",
       "url": "https://www.jpost.com/middle-east/iran-news/article-888816",
       "source": "Jerusalem Post",
       "category": "Geopolitics",
@@ -123,6 +193,13 @@
       "headline": "Snap Jumps After Salesforce, AWS, Nvidia Team Up on AR Glasses for Enterprise",
       "url": "https://www.benzinga.com/markets/tech/26/09/61833876/snap-partners-with-salesforce-aws-and-nvidia-for-specs-ar-glasses",
       "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-16T20:00:00Z"
+    },
+    {
+      "headline": "Generac Holdings Jumps 40% After Amazon Secures Warrants Tied to $8 Billion Data-Center Generator Deal",
+      "url": "https://www.cnbc.com/2026/09/16/amazon-obtains-right-to-buy-up-to-340m-of-generac-boosting-stock-.html",
+      "source": "CNBC",
       "category": "Movers",
       "timestamp": "2026-09-16T20:00:00Z"
     },
@@ -183,6 +260,13 @@
       "timestamp": "2026-09-16T18:00:00Z"
     },
     {
+      "headline": "CATL Bulls Defend Battery Giant's Outlook After $100 Billion Stock Rout",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-16/catl-bulls-reject-de-catlization-fear-after-100-billion-rout",
+      "source": "Bloomberg",
+      "category": "Movers",
+      "timestamp": "2026-09-16T18:00:00Z"
+    },
+    {
       "headline": "Billionaire Investor Ron Baron Says 'The Time to Buy Tesla Stock Is Now' on Predicted Rapid FSD Growth",
       "url": "https://247wallst.com/investing/2026/09/16/billionaire-investor-ron-baron-says-the-time-to-buy-tesla-stock-is-now-on-predicted-rapid-fsd-growth/",
       "source": "24/7 Wall St.",
@@ -232,7 +316,7 @@
       "timestamp": "2026-09-16T16:30:00Z"
     },
     {
-      "headline": "Cathie Wood Says SpaceX Didn't Need an IPO—Until Data Centers in Space Came Along",
+      "headline": "Cathie Wood Says SpaceX Didn't Need an IPO\u2014Until Data Centers in Space Came Along",
       "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-says-spacex-didnt-162709450.html",
       "source": "Yahoo Finance",
       "category": "Movers",
@@ -596,7 +680,7 @@
       "timestamp": "2026-09-16T09:56:00Z"
     },
     {
-      "headline": "Fed Rate Decision Today at 2pm ET — Markets Pricing a 93%+ Chance of a 25bp Hike",
+      "headline": "Fed Rate Decision Today at 2pm ET \u2014 Markets Pricing a 93%+ Chance of a 25bp Hike",
       "url": "https://www.bloomberg.com/news/articles/2026-09-16/gold-steadies-below-4-300-as-markets-await-fed-rate-decision",
       "source": "Bloomberg",
       "category": "Macro",
@@ -610,7 +694,7 @@
       "timestamp": "2026-09-16T09:48:00Z"
     },
     {
-      "headline": "Stock Market Today: S&P 500, Dow Jones Futures Gain Ahead of FOMC's Rate Decision — INTC, SKHY, LEN, TCOM in Focus",
+      "headline": "Stock Market Today: S&P 500, Dow Jones Futures Gain Ahead of FOMC's Rate Decision \u2014 INTC, SKHY, LEN, TCOM in Focus",
       "url": "https://www.benzinga.com/markets/equities/26/09/61809430/stock-market-today-sp-500-dow-jones-futures-gain-ahead-of-fomcs-interest-rate-decision-intc-skhy-len-tcom-in-focus",
       "source": "Benzinga",
       "category": "Markets",
@@ -771,7 +855,7 @@
       "timestamp": "2026-09-16T04:00:00Z"
     },
     {
-      "headline": "Cathie Wood Sees $1 Billion Revenue Potential From Each Starship Launch — Musk Says 'It's Not Impossible'",
+      "headline": "Cathie Wood Sees $1 Billion Revenue Potential From Each Starship Launch \u2014 Musk Says 'It's Not Impossible'",
       "url": "https://www.benzinga.com/news/26/09/61808679/cathie-wood-sees-1-billion-revenue-potential-from-each-starship-launch-and-10-trillion-annually-by-2030-elon-musk-says-its-not-impossible",
       "source": "Benzinga",
       "category": "Movers",
@@ -939,7 +1023,7 @@
       "timestamp": "2026-09-15T18:00:00Z"
     },
     {
-      "headline": "Nvidia, Broadcom Just Helped Break a 90-Year Earnings Trend — Now Comes the Hard Part",
+      "headline": "Nvidia, Broadcom Just Helped Break a 90-Year Earnings Trend \u2014 Now Comes the Hard Part",
       "url": "https://www.tradingview.com/news/benzinga:76b7ee57c094b:0-nvidia-broadcom-just-helped-break-a-90-year-earnings-trend-now-comes-the-hard-part/",
       "source": "Benzinga",
       "category": "Markets",
