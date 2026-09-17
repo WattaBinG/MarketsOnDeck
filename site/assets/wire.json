@@ -1,55 +1,62 @@
 {
-  "asOf": "2026-09-17T00:35:00Z",
-  "asOfLabel": "8:35 PM ET",
+  "asOf": "2026-09-17T02:24:00Z",
+  "asOfLabel": "10:24 PM ET",
   "topStory": {
-    "headline": "Dow Sinks 631 Points as Fed Chair Warsh's Hawkish Press Conference Wipes Out the Day's Gains",
-    "url": "https://www.benzinga.com/news/politics/26/09/61827936/stocks-sink-10-year-yield-reclaims-5-percent-warsh-hawkish-press-conference",
-    "source": "Benzinga",
-    "category": "Markets",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "Iran Intelligence Operatives Signaled Openness to CIA Talks to End the War, NYT Reports — Trump Says It's 'Too Late'",
+    "url": "https://www.jpost.com/middle-east/iran-news/article-888816",
+    "source": "Jerusalem Post",
+    "category": "Geopolitics",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
     {
-      "headline": "Dow Closes at 51,461.90, S&P 500 Falls 0.45% After Fed's First Rate Hike Since 2023",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-16-dow-sp-500-nasdaq-fed-meeting-decision-080356525.html",
+      "headline": "Generac Stock Soars Up to 45% After-Hours on $8 Billion Amazon Data Center Power Deal",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61831070/generac-stock-soars-on-8-billion-amazon-data-center-deal",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-16T21:00:00Z"
+    },
+    {
+      "headline": "Crypto Stocks Rise Despite Failed Clarity Act Vote: Coinbase, Strategy, and Robinhood Tick Up",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/crypto-stocks-rise-despite-failed-125326526.html",
       "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-16T20:00:00Z"
+      "category": "Movers",
+      "timestamp": "2026-09-16T12:53:00Z"
     },
     {
-      "headline": "Dollar Rises as Fed Hikes Rates, Signals Possible Further Increase This Year",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-16/dollar-jumps-after-fed-raises-rates-sends-hawkish-signal",
-      "source": "Bloomberg",
-      "category": "Markets",
-      "timestamp": "2026-09-16T19:15:00Z"
-    },
-    {
-      "headline": "FOMC Dot Plot Signals One More Rate Hike in 2026, Another in 2027",
-      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm",
-      "source": "Federal Reserve",
-      "category": "Markets",
-      "timestamp": "2026-09-16T18:05:00Z"
-    },
-    {
-      "headline": "Coinbase, Strategy Shares Fall After Senate Blocks Digital Asset CLARITY Act, 50-49",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-strategy-shares-fall-senate-103930803.html",
+      "headline": "Stock Market Today, Sept. 16: Intel Jumps on SK Hynix Memory-Chip Manufacturing Talks",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-16-212959692.html",
       "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-16T14:39:00Z"
+      "category": "Movers",
+      "timestamp": "2026-09-16T21:29:00Z"
     },
     {
-      "headline": "Bank of Japan Set to Hike Rates to 1.25% at Sept. 17-18 Meeting, First Increase in Three Months",
-      "url": "https://www.nippon.com/en/news/yjj2026090400739/",
-      "source": "Nippon.com",
-      "category": "Macro",
-      "timestamp": "2026-09-16T08:00:00Z"
+      "headline": "Elon Musk Flags Taiwan as AI's Weak Link; Semiconductor ETFs Like KLA-Heavy SOXX Seen as a Hedge",
+      "url": "https://www.benzinga.com/etfs/sector-etfs/26/09/61804104/elon-musk-flags-taiwan-as-ais-weak-link-these-semiconductor-etfs-could-offer-a-hedge",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-15T20:17:00Z"
     },
     {
-      "headline": "Saudi Arabia Seeks to Resume Half of Key Oil Pipeline's Capacity Within Days After Drone Attack",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-16/saudis-seek-to-resume-half-of-key-oil-pipeline-within-days",
-      "source": "Bloomberg",
+      "headline": "CNBC Daily Open: The Fed Rate Hikes Might Not Be 'One-and-Done'",
+      "url": "https://www.cnbc.com/2026/09/17/cnbc-daily-open-fed-rate-hike-oil-eu-canada.html",
+      "source": "CNBC",
       "category": "Macro",
-      "timestamp": "2026-09-16T13:00:00Z"
+      "timestamp": "2026-09-17T01:00:00Z"
+    },
+    {
+      "headline": "BOJ Set to Lift Rates Next Week but Offer Few Clues on Terminal Rate, Sources Say",
+      "url": "https://finance.yahoo.com/economy/policy/articles/boj-set-lift-rates-next-025616689.html",
+      "source": "Yahoo Finance",
+      "category": "Macro",
+      "timestamp": "2026-09-16T02:56:00Z"
+    },
+    {
+      "headline": "Oil Holds Near $108 a Barrel on Brent as Saudi Pipeline Outage and Houthi Attacks Persist",
+      "url": "https://finance.yahoo.com/energy/articles/current-price-oil-september-16-111500173.html",
+      "source": "Yahoo Finance",
+      "category": "Macro",
+      "timestamp": "2026-09-16T11:15:00Z"
     },
     {
       "headline": "US Retail Sales Rose 1.2% MoM in August, Well Above Forecasts, Hours Ahead of Fed Decision",
@@ -59,11 +66,25 @@
       "timestamp": "2026-09-16T12:58:00Z"
     },
     {
-      "headline": "Oil Rallies Deeper Into $100 Zone as Houthi Attacks Threaten Saudi Exports",
-      "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/09/15/oil-rallies-deeper-100-zone-amid",
-      "source": "DTN",
+      "headline": "FOMC Dot Plot Signals One More Rate Hike in 2026, Another in 2027",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20260916.htm",
+      "source": "Federal Reserve",
       "category": "Macro",
-      "timestamp": "2026-09-15T20:00:00Z"
+      "timestamp": "2026-09-16T18:05:00Z"
+    },
+    {
+      "headline": "Kalshi Overtakes Polymarket as Weekly Trading Volume Hits a Record $2.3 Billion",
+      "url": "https://www.cointribune.com/en/kalshi-overtakes-polymarket-as-weekly-trading-volume-hits-a-record-2-3-billion/",
+      "source": "Cointribune",
+      "category": "Markets",
+      "timestamp": "2026-09-16T10:00:00Z"
+    },
+    {
+      "headline": "Stock Market Today (Sept. 16, 2026): Dow, S&P 500 Plummet After Fed Hikes, Forecasts Further Hikes",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-16-133949098.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-16T13:39:00Z"
     },
     {
       "headline": "Houthis Seize Perim Island, Cementing Control of the Bab el-Mandeb Strait",
@@ -71,6 +92,13 @@
       "source": "Al Jazeera",
       "category": "Geopolitics",
       "timestamp": "2026-09-13T12:00:00Z"
+    },
+    {
+      "headline": "Saudi Arabia Seeks to Resume Half of Key Oil Pipeline's Capacity Within Days After Drone Attack",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-16/saudis-seek-to-resume-half-of-key-oil-pipeline-within-days",
+      "source": "Bloomberg",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-16T13:00:00Z"
     },
     {
       "headline": "U.S. Strikes Iranian Boats Trying to Seize Navy Drone in Strait of Hormuz",
@@ -94,13 +122,6 @@
       "timestamp": "2026-09-16T14:00:00Z"
     },
     {
-      "headline": "Russian Drone Strike on a Passenger Bus in Ukraine Kills 5 People and Wounds at Least 7 Others",
-      "url": "https://www.washingtontimes.com/news/2026/sep/16/russian-drone-strike-passenger-bus-ukraine-kills-5-wounds-least-7/",
-      "source": "Washington Times",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-16T09:00:00Z"
-    },
-    {
       "headline": "Ukraine 'Successfully Tested' New Interceptor Against Russian Jet-Powered Drones, Zelensky Says",
       "url": "https://kyivindependent.com/ukraine-tests-new-interceptor-against-russias-jet-powered-shahed-drones-zelensky-says/",
       "source": "Kyiv Independent",
@@ -113,34 +134,6 @@
       "source": "CNBC",
       "category": "Geopolitics",
       "timestamp": "2026-09-16T10:00:00Z"
-    },
-    {
-      "headline": "Intel Price Target Raised to $145 by Tigress Financial on Terafab Partnership, AI Turnaround",
-      "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/61820775/intel-analyst-raises-price-target-on-terafab-ai-driven-turnaround",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-16T15:52:00Z"
-    },
-    {
-      "headline": "SpaceX Shares Rise 5.3% as Ron Baron Backs Elon Musk on Potential Tesla Merger",
-      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61826877/spacex-tesla-merger-ron-baron-told-elon-musk-whatever-you-decide-is-what-im-going-to-support",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-16T19:02:00Z"
-    },
-    {
-      "headline": "Elon Musk Flags Taiwan as AI's Weak Link; Semiconductor ETFs Like KLA-Heavy SOXX Seen as a Hedge",
-      "url": "https://www.benzinga.com/etfs/sector-etfs/26/09/61804104/elon-musk-flags-taiwan-as-ais-weak-link-these-semiconductor-etfs-could-offer-a-hedge",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-15T20:17:00Z"
-    },
-    {
-      "headline": "Marvell Stock Up 180% in 2026: BofA Sees 54% Upside on $300 Billion AI Chip Market",
-      "url": "https://www.benzinga.com/markets/tech/26/09/61748720/marvell-bofa-vivek-arya-price-target-180-percent-rally-300-billion-ai-market",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-16T13:00:00Z"
     }
   ]
 }
