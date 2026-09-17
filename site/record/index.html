@@ -67,6 +67,7 @@
 
   <div class="container">
     <div class="range-tabs" role="tablist" aria-label="Time range">
+      <button class="range-tab" data-range="day" type="button" role="tab">1D</button>
       <button class="range-tab" data-range="week" type="button" role="tab">Past Week</button>
       <button class="range-tab" data-range="month" type="button" role="tab">Past Month</button>
       <button class="range-tab active" data-range="ytd" type="button" role="tab">2026 YTD</button>
@@ -126,6 +127,36 @@
     </div>
 
     <p class="text-muted" style="margin-top:20px; font-size:13px;">Data pulled directly from the brokerage account's own realized profit &amp; loss history, refreshed automatically. Options rows omit a per-share price where the platform's own figure doesn't scale cleanly against the contract's real premium — the realized P&amp;L figure itself is accurate regardless. Trades with no resolvable symbol are shown as "(unresolved)" rather than guessed at.</p>
+
+    <div class="article-header" style="max-width:none; text-align:left; margin-top:48px;">
+      <div class="eyebrow">Still Open</div>
+      <h2 style="margin-bottom:6px;">Open Positions (Unrealized)</h2>
+      <p class="text-muted" style="font-size:14px; max-width:70ch;">Everything currently held and not yet sold — a real journal has to show both sides. These gains/losses are marked to the current price, not locked in; they'll show up above, in Realized P&amp;L, once actually closed.</p>
+    </div>
+    <div class="stat-row" id="positionsStats" style="margin-top:12px;">
+      <div class="stat-card"><div class="stat-num num" id="statUnrealizedPnl">—</div><div class="stat-label">Net Unrealized</div></div>
+      <div class="stat-card"><div class="stat-num num" id="statPositionCount">—</div><div class="stat-label">Open Positions</div></div>
+      <div class="stat-card"><div class="stat-num num" id="statPositionsAsOf">—</div><div class="stat-label">Priced As Of</div></div>
+    </div>
+    <div class="table-scroll" style="margin-top:16px;">
+      <table class="record-table" id="positionsTable">
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Account</th>
+            <th>Type</th>
+            <th>Qty</th>
+            <th>Avg Cost</th>
+            <th>Current</th>
+            <th>Unrealized P&amp;L</th>
+          </tr>
+        </thead>
+        <tbody id="positionsTbody">
+          <tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">Loading positions&hellip;</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="text-muted" style="margin-top:20px; font-size:13px;">Options show strike, call/put, and expiration where available. Uses the account filter above. Priced from the brokerage account's own live/last-close quotes — not a guarantee of what you'd actually realize on exit (bid/ask spread, fees, and slippage aren't reflected).</p>
   </div>
 </main>
 

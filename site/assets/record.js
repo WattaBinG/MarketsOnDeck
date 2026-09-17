@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var tbody = document.getElementById('recordTbody');
   if (!tbody) return;
 
-  var state = { trades: [], summary: null, sortKey: 'date', sortDir: 'desc', range: 'ytd' };
+  var state = { trades: [], summary: null, sortKey: 'date', sortDir: 'desc', range: 'ytd', positions: [] };
 
   fetch('/assets/trades.json', { cache: 'no-store' })
     .then(function (res) { return res.ok ? res.json() : null; })
@@ -26,6 +26,68 @@ document.addEventListener('DOMContentLoaded', function () {
       tbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">Trade data unavailable right now.</td></tr>';
     });
 
+  // Open positions (unrealized) — separate feed from the realized trade log,
+  // refreshed by the same Record Refresh routine. Optional section: pages
+  // without a #positionsTbody (none currently) just skip this silently.
+  var positionsTbody = document.getElementById('positionsTbody');
+  if (positionsTbody) {
+    fetch('/assets/positions.json', { cache: 'no-store' })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) {
+        if (!data || !data.positions) {
+          positionsTbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">Position data unavailable right now.</td></tr>';
+          return;
+        }
+        state.positions = data.positions;
+        setText('statPositionsAsOf', data.asOfLabel || '—');
+        var accountEl = document.getElementById('recordAccount');
+        if (accountEl) accountEl.addEventListener('input', renderPositions);
+        renderPositions();
+      })
+      .catch(function () {
+        positionsTbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">Position data unavailable right now.</td></tr>';
+      });
+  }
+
+  function renderPositions() {
+    var accountEl = document.getElementById('recordAccount');
+    var account = accountEl ? accountEl.value : 'all';
+    var rows = state.positions.filter(function (p) { return account === 'all' || p.account === account; });
+
+    var totalUnrealized = rows.reduce(function (sum, p) { return sum + p.unrealizedGain; }, 0);
+    setText('statUnrealizedPnl', money(totalUnrealized), totalUnrealized >= 0 ? 'gain' : 'loss');
+    setText('statPositionCount', String(rows.length));
+
+    if (!rows.length) {
+      positionsTbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">No open positions match this filter.</td></tr>';
+      return;
+    }
+
+    positionsTbody.innerHTML = rows.map(function (p) {
+      var dir = p.unrealizedGain > 0 ? 'gain' : (p.unrealizedGain < 0 ? 'loss' : '');
+      var symbolCell = escapeHtml(p.symbol);
+      if (p.assetType === 'option') {
+        symbolCell += ' <span class="text-muted" style="font-size:12px;">$' + p.strike + (p.optionType === 'put' ? 'P' : 'C') + ' ' + shortDate(p.expiration) + '</span>';
+      }
+      return '<tr>' +
+        '<td><strong>' + symbolCell + '</strong></td>' +
+        '<td>' + escapeHtml(p.account) + '</td>' +
+        '<td><span class="badge-type">' + typeLabel(p.assetType) + '</span></td>' +
+        '<td class="num">' + trimQty(p.quantity) + '</td>' +
+        '<td class="num">$' + p.avgCost.toFixed(2) + '</td>' +
+        '<td class="num">$' + p.currentPrice.toFixed(2) + '</td>' +
+        '<td class="num ' + dir + '">' + money(p.unrealizedGain) + '</td>' +
+        '</tr>';
+    }).join('');
+  }
+
+  function shortDate(iso) {
+    if (!iso) return '';
+    var parts = iso.split('-');
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    return months[parseInt(parts[1], 10) - 1] + ' ' + parseInt(parts[2], 10);
+  }
+
   // Lets a link like /record/index.html?account=Trading or ?range=week land
   // pre-filtered — used by the homepage scoreboard cards and the range tabs
   // so "click to see all the trades" takes you to the right filtered view.
@@ -40,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
     var range = params.get('range');
-    if (range && (range === 'week' || range === 'month' || range === 'ytd')) {
+    if (range && (range === 'day' || range === 'week' || range === 'month' || range === 'ytd')) {
       setRange(range);
     }
   }
@@ -51,6 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function rangeCutoffDate(range) {
     if (!state.trades.length) return null;
     var newest = state.trades.reduce(function (max, t) { return t.date > max ? t.date : max; }, state.trades[0].date);
+    if (range === 'day') return newest; // 1D — just the most recent trading day in the dataset
     var d = new Date(newest + 'T12:00:00Z');
     if (range === 'week') d.setUTCDate(d.getUTCDate() - 7);
     else if (range === 'month') d.setUTCDate(d.getUTCDate() - 30);

@@ -58,6 +58,7 @@ function initHomeStats() {
   function cutoffDate(r) {
     if (!trades.length) return null;
     var newest = trades.reduce(function (max, t) { return t.date > max ? t.date : max; }, trades[0].date);
+    if (r === 'day') return newest;
     var d = new Date(newest + 'T12:00:00Z');
     if (r === 'week') d.setUTCDate(d.getUTCDate() - 7);
     else if (r === 'month') d.setUTCDate(d.getUTCDate() - 30);
