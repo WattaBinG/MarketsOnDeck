@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-17T18:20:00Z",
-  "asOfLabel": "2:20 PM ET",
+  "asOf": "2026-09-17T19:20:00Z",
+  "asOfLabel": "3:20 PM ET",
   "topStory": {
     "headline": "Stocks Rally as Wall Street Rebounds a Day After Fed's First Rate Hike Since 2023",
     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-17-134502255.html",
@@ -10,32 +10,25 @@
   },
   "items": [
     {
-      "headline": "Fed Raises Interest Rates for First Time Since 2023 as Warsh Says Inflation 'Too High and Has Been for Too Long'",
-      "url": "https://www.npr.org/2026/09/16/nx-s1-5968724/federal-reserve-interest-rates-inflation-economy",
-      "source": "NPR",
+      "headline": "Warsh Defies Trump's Calls for Rate Cut as War Stokes Inflation",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/trump-denied-rate-cut-as-federal-reserve-targets-war-stoked-inflation",
+      "source": "Bloomberg",
       "category": "Macro",
-      "timestamp": "2026-09-16T20:00:00Z"
+      "timestamp": "2026-09-17T16:30:00Z"
     },
     {
-      "headline": "Fed Hikes Rates a Quarter Point, Signals at Least One More Increase This Year",
-      "url": "https://www.cnn.com/2026/09/16/business/live-news/federal-reserve-interest-rate-september",
-      "source": "CNN",
+      "headline": "Bank of England Holds Rates at 3.75% in 6-3 Split Vote as UK Inflation Hits Five-Month High",
+      "url": "https://www.euronews.com/business/2026/09/17/bank-of-england-holds-rates-at-375-in-6-3-split-vote-as-inflation-hits-five-month-high",
+      "source": "Euronews",
       "category": "Macro",
-      "timestamp": "2026-09-16T21:00:00Z"
+      "timestamp": "2026-09-17T11:30:00Z"
     },
     {
-      "headline": "Oil Prices Fall as Saudi Arabia Reportedly Offers More Crude via Hormuz After Pipeline Attack",
-      "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
-      "source": "CNBC",
-      "category": "Markets",
+      "headline": "US Housing Starts Fall 2.6% in August as Multifamily Construction Drops Sharply",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/us-housing-starts-unexpectedly-decline-on-multifamily-projects",
+      "source": "Bloomberg",
+      "category": "Macro",
       "timestamp": "2026-09-17T14:00:00Z"
-    },
-    {
-      "headline": "Stock Market Today: Nasdaq Climbs After Fed Rate Hike Decision",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-17-2026",
-      "source": "TheStreet",
-      "category": "Markets",
-      "timestamp": "2026-09-17T15:00:00Z"
     },
     {
       "headline": "Gold Prices Hold Near $4,370 an Ounce as Traders Digest Fed Rate Hike",
@@ -52,18 +45,11 @@
       "timestamp": "2026-09-17T10:00:00Z"
     },
     {
-      "headline": "Bitcoin, Ethereum ETFs Shed $1.11 Billion in Two Days as Clarity Act Fails and Fed Hikes Rates",
-      "url": "https://u.today/sec-rejects-19th-xrp-short-etf-while-bitcoin-and-ethereum-drop-111-billion-main-crypto-news-this",
-      "source": "U.Today",
-      "category": "Macro",
-      "timestamp": "2026-09-17T12:00:00Z"
-    },
-    {
-      "headline": "Ed Yardeni Slashes S&P 500 Target to 7,900, Says 'Proceed With Caution' as Rates Rise",
-      "url": "https://www.cnbc.com/2026/09/16/yardeni-trims-sp-500-target-says-proceed-with-caution-as-rates-rise.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-16T20:00:00Z"
+      "headline": "Von der Leyen Opens Door for Canada to Become EU's First 'Associate Member' in State of the Union Address",
+      "url": "https://www.euronews.com/my-europe/2026/09/16/ursula-von-der-leyen-delivers-state-of-the-union-speech",
+      "source": "Euronews",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-16T09:00:00Z"
     },
     {
       "headline": "War-Damaged Gaza Building Collapses, Killing at Least 20 People Sheltering Inside",
@@ -101,6 +87,27 @@
       "timestamp": "2026-09-16T20:00:00Z"
     },
     {
+      "headline": "Oil Prices Fall as Saudi Arabia Reportedly Offers More Crude via Hormuz After Pipeline Attack",
+      "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-17T14:00:00Z"
+    },
+    {
+      "headline": "Ed Yardeni Slashes S&P 500 Target to 7,900, Says 'Proceed With Caution' as Rates Rise",
+      "url": "https://www.cnbc.com/2026/09/16/yardeni-trims-sp-500-target-says-proceed-with-caution-as-rates-rise.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-16T20:00:00Z"
+    },
+    {
+      "headline": "SpaceX Discusses Buying Data for AI Models From Failed Startups",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/spacex-discusses-buying-data-for-ai-models-from-failed-startups",
+      "source": "Bloomberg",
+      "category": "Movers",
+      "timestamp": "2026-09-17T18:03:00Z"
+    },
+    {
       "headline": "Vicor, Arm Holdings, Micron and Other Big Stocks Moving Higher Thursday",
       "url": "https://www.benzinga.com/news/26/09/61849074/vicor-arm-holdings-micron-technology-and-other-big-stocks-moving-higher-on-thursday",
       "source": "Benzinga",
@@ -115,18 +122,18 @@
       "timestamp": "2026-09-17T13:00:00Z"
     },
     {
-      "headline": "SpaceX Rises 5% as Starship's First Orbital Attempt Gets Sept. 22 Launch Date",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-rises-5-starship-first-143618850.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-17T09:00:00Z"
-    },
-    {
       "headline": "Generac Shares Surge on Big Amazon Deal; Wall Street Thinks It Has More to Go",
       "url": "https://www.cnbc.com/2026/09/17/generac-shares-surge-on-amazon-deal-wall-street-thinks-it-has-more-to-go-.html",
       "source": "CNBC",
       "category": "Movers",
       "timestamp": "2026-09-17T13:20:00Z"
+    },
+    {
+      "headline": "Apple Stock Trades Near 52-Week High as Analyst Tracks iPhone 18 Demand Signals",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61769496/apple-stock-trades-near-52-week-high-as-analyst-tracks-iphone-18-demand-signals",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-17T18:00:00Z"
     },
     {
       "headline": "Fluence Energy Stock Tumbles 22% on Slashed Fiscal 2026 Guidance",
