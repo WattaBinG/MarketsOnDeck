@@ -1,41 +1,104 @@
 {
-  "asOf": "2026-09-17T14:35:00Z",
-  "asOfLabel": "10:35 AM ET",
+  "asOf": "2026-09-17T15:25:00Z",
+  "asOfLabel": "11:25 AM ET",
   "topStory": {
-    "headline": "Trump Says U.S. 'Hopefully' Nearing End of Iran War as Saudi Arabia, Houthis Trade Strikes",
-    "url": "https://www.cnbc.com/2026/09/17/us-iran-war-trump-hormuz.html",
+    "headline": "Fed Raises Rates 25 Basis Points to 3.75%-4%, Warsh Says Inflation 'Too High and Has Been for Too Long'",
+    "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html",
     "source": "CNBC",
-    "category": "Geopolitics",
-    "image": "/assets/images/wire-geopolitics.jpg"
+    "category": "Macro",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "Iran-Backed Houthis Capture Yemen's Red Sea Coastline Near Bab-el-Mandeb Strait, Threatening Key Oil Chokepoint",
-      "url": "https://www.nbcnews.com/world/middle-east/houthis-control-bab-el-mandeb-yemen-red-sea-saudi-iran-war-oil-rcna597186",
-      "source": "NBC News",
+      "headline": "Fed's Unanimous 25-Basis-Point Hike Puts Trump and Warsh on Collision Course",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-16/the-fed-s-unanimous-25-basis-point-hike-puts-trump-and-warsh-on-collision-course",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-09-16T20:00:00Z"
+    },
+    {
+      "headline": "Saudis Seek Allies' Help as Missile Defenses Run Low in Fight With Houthis",
+      "url": "https://www.koreaherald.com/article/10876919",
+      "source": "Korea Herald",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-17T06:00:00Z"
+    },
+    {
+      "headline": "US House Votes for a Third Time to End the Iran War, 220-204, as Conflict Drags On",
+      "url": "https://www.aljazeera.com/news/2026/9/16/us-house-votes-to-end-iran-war-7-republicans-join-in-favour",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-16T22:00:00Z"
+    },
+    {
+      "headline": "Polish Prosecutors Confirm Russian Drone Found Off Baltic Coast Was Carrying Live Warhead",
+      "url": "https://www.yahoo.com/news/world/articles/poland-russian-drone-found-off-124844635.html",
+      "source": "Yahoo News (AP)",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-16T12:48:00Z"
+    },
+    {
+      "headline": "Trump Says Iran Reached Out Directly, 'Hopefully We Are Toward the End' of the War",
+      "url": "https://www.cnbc.com/2026/09/17/us-iran-war-trump-hormuz.html",
+      "source": "CNBC",
       "category": "Geopolitics",
       "timestamp": "2026-09-17T13:00:00Z"
     },
     {
-      "headline": "Trump to Host Xi Jinping at White House Sept. 24 as Tariffs, Rare Earths and Iran Loom Over Summit",
-      "url": "https://www.malaymail.com/news/world/2026/09/17/tariffs-rare-earths-and-iran-what-could-make-or-break-the-trump-xi-summit-on-sept-24/235500",
-      "source": "Malay Mail",
-      "category": "Geopolitics",
+      "headline": "Ed Yardeni Slashes S&P 500 Target to 7,900, Says 'Proceed With Caution' as Rates Rise",
+      "url": "https://www.cnbc.com/2026/09/16/yardeni-trims-sp-500-target-says-proceed-with-caution-as-rates-rise.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-16T20:00:00Z"
+    },
+    {
+      "headline": "Bitcoin, Ethereum ETFs Shed $1.11 Billion Over Two Days as Clarity Act Fails and Fed Hikes",
+      "url": "https://u.today/sec-rejects-19th-xrp-short-etf-while-bitcoin-and-ethereum-drop-111-billion-main-crypto-news-this",
+      "source": "U.Today",
+      "category": "Macro",
       "timestamp": "2026-09-17T12:00:00Z"
     },
     {
-      "headline": "Bitcoin Rises, Oil Sinks on Report of China Intervention on Iran",
-      "url": "https://www.coindesk.com/tech/2026/09/17/live-updates-zcash-jumps-17-as-usd345-million-of-liquidations-hit-crypto-traders",
-      "source": "CoinDesk",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-17T11:30:00Z"
+      "headline": "Amazon Takes $340 Million Warrant Stake in Generac Under $8 Billion Data-Center Generator Deal",
+      "url": "https://www.cnbc.com/2026/09/16/amazon-obtains-right-to-buy-up-to-340m-of-generac-boosting-stock-.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-09-16T21:00:00Z"
     },
     {
-      "headline": "Oil Prices Fall as Saudi Arabia Reroutes Crude Through Strait of Hormuz to Offset Pipeline Outage",
-      "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-09-17T13:15:00Z"
+      "headline": "Nokia Jumps as Expanded Microsoft Partnership Deepens AI Network Push",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61840411/nokia-stock-jumps-as-microsoft-deal-deepens-its-ai-network-push",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-17T12:30:00Z"
+    },
+    {
+      "headline": "Affirm Launches Transformer-Based AI Underwriting Model Live at US Checkout",
+      "url": "https://www.stocktitan.net/news/AFRM/affirm-launches-transformer-based-machine-learning-model-for-real-2474cjet0opq.html",
+      "source": "StockTitan",
+      "category": "Movers",
+      "timestamp": "2026-09-17T13:10:00Z"
+    },
+    {
+      "headline": "SpaceX Stock Extends Rally Ahead of Next Week's High-Profile Starship Flight",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61820633/spacex-stock-surges-whats-going-on",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-17T14:58:00Z"
+    },
+    {
+      "headline": "Intel Stock Could Nearly Double to $200 in 2 Years on Apple, Tesla, AI Chip Deals, Analyst Says",
+      "url": "https://www.benzinga.com/markets/equities/26/09/61839701/intel-stock-could-nearly-double-to-200-in-2-years-analyst-says-potential-apple-tesla-and-ai-chip-deals-could-fuel-the-rally",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-17T12:30:00Z"
+    },
+    {
+      "headline": "S&P 500 Could Deliver Another 6% by Year-End as JPMorgan Calls Bears an 'Extinct Species'",
+      "url": "https://www.benzinga.com/markets/market-summary/26/09/61837505/sp-500-could-deliver-another-6-by-year-end-as-jpmorgan-calls-bears-an-extinct-species-polymarket-bettors-price-35-odds",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-17T07:20:00Z"
     },
     {
       "headline": "US Jobless Claims Fall to 196,000, Continuing Claims Drop to Two-Year Low",
@@ -52,53 +115,25 @@
       "timestamp": "2026-09-17T14:00:00Z"
     },
     {
-      "headline": "Struggling US Home Buyers Face New Hurdles as Mortgage Rates Near 7%",
-      "url": "https://abcnews.com/Lifestyle/wireStory/struggling-us-home-buyers-market-face-new-hurdles-136522424",
-      "source": "AP via ABC News",
+      "headline": "Bank of Japan Set to Raise Policy Rate to 1.25% at Friday Meeting, Highest in 31 Years",
+      "url": "https://asia.nikkei.com/economy/bank-of-japan/bank-of-japan-set-to-raise-policy-rate-to-1.25-next-week",
+      "source": "Nikkei Asia",
       "category": "Macro",
-      "timestamp": "2026-09-17T10:00:00Z"
+      "timestamp": "2026-09-17T05:00:00Z"
     },
     {
-      "headline": "Ed Yardeni Slashes S&P 500 Target to 7,900, Says 'Proceed With Caution' as Rates Rise",
-      "url": "https://www.cnbc.com/2026/09/16/yardeni-trims-sp-500-target-says-proceed-with-caution-as-rates-rise.html",
+      "headline": "Oil Prices Fall as Saudi Arabia Reroutes Crude Through Strait of Hormuz to Offset Pipeline Outage",
+      "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
       "source": "CNBC",
       "category": "Macro",
-      "timestamp": "2026-09-16T20:00:00Z"
+      "timestamp": "2026-09-17T13:15:00Z"
     },
     {
-      "headline": "Spot Bitcoin ETFs See $746 Million Outflow as CLARITY Act Fails, Fed Hikes Rates",
-      "url": "https://www.cryptotimes.io/2026/09/17/spot-bitcoin-etfs-see-746m-outflow-during-clarity-act-and-fomc-pressure/",
-      "source": "CryptoTimes",
-      "category": "Macro",
-      "timestamp": "2026-09-17T08:00:00Z"
-    },
-    {
-      "headline": "S&P 500 Could Deliver Another 6% by Year-End as JPMorgan Calls Bears an 'Extinct Species'",
-      "url": "https://www.benzinga.com/markets/market-summary/26/09/61837505/sp-500-could-deliver-another-6-by-year-end-as-jpmorgan-calls-bears-an-extinct-species-polymarket-bettors-price-35-odds",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-17T07:20:00Z"
-    },
-    {
-      "headline": "Salesforce Sets $63 Billion Fiscal 2030 Revenue Target at Dreamforce",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/salesforce-sets-63-billion-fiscal-111846987.html",
-      "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-17T11:19:00Z"
-    },
-    {
-      "headline": "ON Semiconductor Rises After Saying AI Data-Center Business Will More Than Double in 2026",
-      "url": "https://www.benzinga.com/markets/large-cap/26/09/61838105/on-semiconductor-says-ai-data-center-business-will-more-than-double-in-2026",
-      "source": "Benzinga",
+      "headline": "Fluence Energy Slides 22% After Cutting Fiscal 2026 Revenue Guidance for the Second Time in Six Weeks",
+      "url": "https://ca.investing.com/news/stock-market-news/fluence-energy-stock-tumbles-22-on-slashed-fiscal-2026-guidance-93CH-4842416",
+      "source": "Investing.com",
       "category": "Movers",
-      "timestamp": "2026-09-17T11:43:00Z"
-    },
-    {
-      "headline": "Generac Gets $100 Price-Target Hike From Canaccord as Amazon Deal Could Unlock Up to $8B in Orders",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/generac-gets-100-target-hike-112625738.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-17T11:52:00Z"
+      "timestamp": "2026-09-17T13:00:00Z"
     },
     {
       "headline": "Vicor Shares Jump More Than 10% After Licensing Vertical Power Delivery Tech to New AI OEM",
@@ -106,27 +141,6 @@
       "source": "GlobeNewswire",
       "category": "Movers",
       "timestamp": "2026-09-16T20:00:00Z"
-    },
-    {
-      "headline": "Nike Adds LVMH's Alexandre Arnault to Board of Directors",
-      "url": "https://www.investing.com/news/company-news/nike-appoints-alexandre-arnault-to-board-of-directors-93CH-4904477",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-09-16T21:00:00Z"
-    },
-    {
-      "headline": "IDEXX Expands Faecal Dx Antigen Testing Platform in the UK With Taeniid Tapeworm Detection",
-      "url": "https://www.stocktitan.net/news/IDXX/idexx-expands-faecal-dx-antigen-testing-platform-in-the-united-lzcmx13v6qis.html",
-      "source": "StockTitan",
-      "category": "Movers",
-      "timestamp": "2026-09-17T09:00:00Z"
-    },
-    {
-      "headline": "GameStop's $4.9 Billion eBay Stake Is Still in Focus",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61836791/gamestops-4-9-billion-ebay-stake-is-still-in-focus-heres-this-months-full-story",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-17T10:58:00Z"
     }
   ]
 }
