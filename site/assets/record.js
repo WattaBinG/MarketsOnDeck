@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var totalUnrealized = rows.reduce(function (sum, p) { return sum + p.unrealizedGain; }, 0);
     setText('statUnrealizedPnl', money(totalUnrealized), totalUnrealized >= 0 ? 'gain' : 'loss');
     setText('statPositionCount', String(rows.length));
+    renderTodayTotal();
 
     if (!rows.length) {
       positionsTbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">No open positions match this filter.</td></tr>';
@@ -134,8 +135,40 @@ document.addEventListener('DOMContentLoaded', function () {
         setRange(btn.getAttribute('data-range'));
         renderSummary();
         render();
+        renderTodayTotal();
       });
     });
+  }
+
+  // "Today, Total" — only meaningful on the 1D tab. Robinhood's own headline
+  // "Today" figure on the account screen is realized-today + the day's mark-
+  // to-market move on whatever's still open, not realized-only — this stat
+  // reconstructs that so the two match, instead of leaving Keith looking at
+  // a much smaller "Net Realized" number on a day where most of the move is
+  // still sitting in open positions (confirmed 2026-09-17: on a day with $0
+  // realized so far, Robinhood's app showed +$424.79 "Today", 100% from
+  // unrealized moves on positions still held).
+  function renderTodayTotal() {
+    var card = document.getElementById('statTodayTotalCard');
+    if (!card) return;
+    if (state.range !== 'day' || !state.positions.length) { card.hidden = true; return; }
+    card.hidden = false;
+
+    var account = document.getElementById('recordAccount').value;
+    var cutoff = rangeCutoffDate('day');
+    var todayRealized = state.trades
+      .filter(function (t) { return (account === 'all' || t.account === account) && t.date === cutoff; })
+      .reduce(function (sum, t) { return sum + t.realizedGain; }, 0);
+
+    var todayUnrealized = state.positions
+      .filter(function (p) { return account === 'all' || p.account === account; })
+      .reduce(function (sum, p) {
+        var prior = (typeof p.priorClose === 'number') ? p.priorClose : p.currentPrice;
+        return sum + (p.currentPrice - prior) * p.quantity;
+      }, 0);
+
+    var total = todayRealized + todayUnrealized;
+    setText('statTodayTotal', money(total), total >= 0 ? 'gain' : 'loss');
   }
 
   // Recomputes the stat row from whatever's currently in scope: the active
