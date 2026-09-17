@@ -1,14 +1,42 @@
 {
-  "asOf": "2026-09-17T22:30:00Z",
-  "asOfLabel": "6:30 PM ET",
+  "asOf": "2026-09-17T23:23:00Z",
+  "asOfLabel": "7:23 PM ET",
   "topStory": {
-    "headline": "Stocks Rebound From Post-Fed Selloff at Midday as Generac Soars 20%",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-sept-17-171030258.html",
-    "source": "Yahoo Finance",
+    "headline": "Stocks Close Higher, Nasdaq Jumps 1.4% as Wall Street Completes Rebound From Post-Fed Selloff",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-17-2026",
+    "source": "TheStreet",
     "category": "Markets",
     "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "Trump Says Iran Reached Out 'Directly,' Hopeful War Is 'Towards End'",
+      "url": "https://www.aljazeera.com/news/2026/9/17/trump-claims-direct-talks-with-iran-is-diplomacy-picking-up-again",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-17T21:30:00Z"
+    },
+    {
+      "headline": "Fluence Energy Shares Plunge Over 20% After Second FY2026 Guidance Cut in Six Weeks",
+      "url": "https://stocktwits.com/news-articles/markets/equity/fluence-energy-flnc-stock-guidance-cut-baird-downgrade/cZtrmwURB5N",
+      "source": "Stocktwits",
+      "category": "Movers",
+      "timestamp": "2026-09-17T14:00:00Z"
+    },
+    {
+      "headline": "US Housing Starts Fall 2.6% in August as Multifamily Construction Drops Sharply",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-17/us-housing-starts-unexpectedly-decline-on-multifamily-projects",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-09-17T12:30:00Z"
+    },
+    {
+      "headline": "Generac Shares Surge on Amazon Deal; Wall Street Thinks the Generator Stock Has More to Go",
+      "url": "https://www.cnbc.com/2026/09/17/generac-shares-surge-on-amazon-deal-wall-street-thinks-it-has-more-to-go-.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-09-17T14:30:00Z"
+    },
     {
       "headline": "Oil Slides as Saudi Arabia Reroutes Crude Around Damaged Hormuz-Area Pipeline",
       "url": "https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html",
@@ -36,13 +64,6 @@
       "source": "Fortune",
       "category": "Macro",
       "timestamp": "2026-09-17T18:00:00Z"
-    },
-    {
-      "headline": "OpenAI Discloses Six New Instances of 'Concerning' AI Model Behavior",
-      "url": "https://www.cnbc.com/2026/09/16/openai-6-new-instances-of-concerning-model-behavior-since-march.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-09-16T20:00:00Z"
     },
     {
       "headline": "Vance Says Iran War Will Enter 'Different Phase' Within Two Months",
@@ -73,28 +94,7 @@
       "timestamp": "2026-09-17T11:00:00Z"
     },
     {
-      "headline": "5 Things to Know Before the Stock Market Opens Thursday",
-      "url": "https://www.cnbc.com/2026/09/17/5-things-to-know-before-the-stock-market-opens.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-17T12:15:00Z"
-    },
-    {
-      "headline": "SpaceX Selected by NASA to Launch StarBurst Gamma-Ray Satellite",
-      "url": "https://www.nasa.gov/news-release/nasa-awards-launch-services-for-starburst-gamma-ray-detector/",
-      "source": "NASA",
-      "category": "Movers",
-      "timestamp": "2026-09-17T21:43:00Z"
-    },
-    {
-      "headline": "Amazon Takes Warrant Stake in Generac in Up-to-$8 Billion Data Center Power Deal",
-      "url": "https://www.cnbc.com/2026/09/16/amazon-obtains-right-to-buy-up-to-340m-of-generac-boosting-stock-.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-09-16T21:00:00Z"
-    },
-    {
-      "headline": "Intel Jumps 8%, SK Hynix Climbs 5% as Ohio Memory Talks Reignite; Micron Rises 6%",
+      "headline": "Intel Jumps, SK Hynix Climbs 5% as Ohio Memory Talks Reignite; Micron Rises 6%",
       "url": "https://247wallst.com/investing/2026/09/17/intel-jumps-8-sk-hynix-climbs-5-as-ohio-memory-talks-reignite-micron-rises-6/",
       "source": "24/7 Wall St.",
       "category": "Movers",
@@ -113,6 +113,13 @@
       "source": "GuruFocus",
       "category": "Movers",
       "timestamp": "2026-09-17T13:00:00Z"
+    },
+    {
+      "headline": "SpaceX Selected by NASA to Launch StarBurst Gamma-Ray Satellite",
+      "url": "https://www.nasa.gov/news-release/nasa-awards-launch-services-for-starburst-gamma-ray-detector/",
+      "source": "NASA",
+      "category": "Movers",
+      "timestamp": "2026-09-17T21:43:00Z"
     },
     {
       "headline": "Physical Gold Rebounds to $4,311 as Buyers Absorb Fed's First Hike Since 2023; Silver Up 2.9%",
