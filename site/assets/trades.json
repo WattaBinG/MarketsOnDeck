@@ -1,13 +1,13 @@
 {
   "summary": {
-    "asOf": "2026-09-16",
-    "scope": "Realized trades, January 1 - September 16, 2026 (both accounts)",
-    "totalTrades": 316,
-    "totalRealizedGain": 24013.22,
-    "wins": 215,
+    "asOf": "2026-09-17",
+    "scope": "Realized trades, January 1 - September 17, 2026 (both accounts)",
+    "totalTrades": 318,
+    "totalRealizedGain": 26214.22,
+    "wins": 217,
     "losses": 100,
     "flat": 1,
-    "winRate": 68.25,
+    "winRate": 68.45,
     "biggestWin": {
       "symbol": "META",
       "date": "2026-07-01",
@@ -22,9 +22,9 @@
     },
     "perAccount": {
       "Trading": {
-        "realizedGain": 23835.31,
-        "trades": 307,
-        "winRate": 67.65
+        "realizedGain": 26036.31,
+        "trades": 309,
+        "winRate": 67.86
       },
       "Agentic": {
         "realizedGain": 177.91,
@@ -35,11 +35,31 @@
     "benchmark": {
       "spyBaselineDate": "2026-01-02",
       "spyBaselinePrice": 683.17,
-      "spyCurrentPrice": 757.86,
-      "spyYtdPercent": 10.93
+      "spyCurrentPrice": 761.91,
+      "spyYtdPercent": 11.53
     }
   },
   "trades": [
+    {
+      "date": "2026-09-17",
+      "timestamp": "2026-09-17T14:25:09Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 2.0,
+      "price": null,
+      "realizedGain": 650.0
+    },
+    {
+      "date": "2026-09-17",
+      "timestamp": "2026-09-17T14:12:59Z",
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "quantity": 6.0,
+      "price": null,
+      "realizedGain": 1551.0
+    },
     {
       "date": "2026-09-16",
       "timestamp": "2026-09-16T19:23:50Z",
@@ -2617,7 +2637,7 @@
       "symbol": "ADA",
       "assetType": "crypto",
       "quantity": 1000.0,
-      "price": 0.2263,
+      "price": 0.2264,
       "realizedGain": -27.73
     },
     {
