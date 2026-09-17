@@ -1,13 +1,12 @@
 {
-  "date": "2026-09-16",
-  "dateLabel": "Wednesday, September 16",
+  "date": "2026-09-17",
+  "dateLabel": "Thursday, September 17",
   "events": [
-    { "time": "8:30 AM ET", "event": "Retail Sales" },
-    { "time": "8:30 AM ET", "event": "Import & Export Prices" },
-    { "time": "10:30 AM ET", "event": "EIA Oil Inventories" },
-    { "time": "1:00 PM ET", "event": "Treasury Auction" },
-    { "time": "2:00 PM ET", "event": "FOMC Rate Decision + Dot Plot" },
-    { "time": "2:30 PM ET", "event": "Fed Chair Press Conference" }
+    { "time": "8:30 AM ET", "event": "Initial Jobless Claims" },
+    { "time": "8:30 AM ET", "event": "Housing Starts" },
+    { "time": "8:30 AM ET", "event": "Philly Fed Manufacturing" },
+    { "time": "10:00 AM ET", "event": "Pending Home Sales" },
+    { "time": "11:30 AM ET", "event": "Weekly Economic Index" }
   ],
   "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
