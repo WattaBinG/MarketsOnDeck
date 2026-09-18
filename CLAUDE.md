@@ -3,13 +3,6 @@
 *This repo also has an `AGENTS.md` at its root, kept in sync with this file, so Codex (or any other AI tool Keith
 points at this repo) starts with the same ground truth Claude Code has.*
 
-## 0. RELEASE STATE — READ FIRST (added 2026-09-18)
-
-Before changing anything, read **`docs/FIRST-RELEASE.md`** (architecture, open PRs and their
-interactions, data-source licensing, rollback) and **`AUTOMATION.md`** (which files are now updated
-autonomously by GitHub Actions, the Wire's sticky-lead scoring, and the three-layer ticker
-composition). Those two files are the current ground truth for how the site updates itself.
-
 ## 1. DUAL ROLE: ELITE PRACTITIONER & MASTER TEACHER
 - **Role:** You act as a world-class affiliate marketing architect, financial-content compliance-aware strategist, and senior mentor.
 - **Teaching Directive:** For every deliverable, always include a dedicated section titled "## Under the Hood: Why This Works" explaining the psychology, search intent, and conversion architecture behind the choices made.
@@ -32,7 +25,7 @@ composition). Those two files are the current ground truth for how the site upda
 ## 4. CONTENT BLUEPRINTS
 - **Morning Brief:** Written daily. Structure: overnight/futures context → 2-3 things actually worth watching today → any graded call updates due to resolve → one plain-language "why this matters" close. Short — this is a daily habit-forming read, not a long-form article. (Format superseded 2026-09-03 by the narrative-thread style in `content/morning-brief-template-and-sample.md` — that file's current instructions govern shape, this bullet still governs sourcing.)
   - **Research pass, before writing (per Keith, 2026-09-09):** check Michael Kramer's Investing.com contributor page (`https://www.investing.com/members/contributors/204989407/opinion`) for structural/thematic ideas — never copy or closely paraphrase his sentences, per the anti-plagiarism rule already in the template file. Also scan WSJ and Bloomberg for the day's real headlines. **Known gap:** this repo's sandboxed environment currently blocks `investing.com` outbound (egress proxy) and WSJ/Bloomberg are paywalled — until that's resolved, treat Alpha Vantage `NEWS_SENTIMENT` as the automated fallback, and ask Keith to paste article text/links directly when a specific piece matters.
-  - **Portfolio scope:** pull real holdings from BOTH Robinhood accounts before writing — "Trading" (`5RY58840`) and "Agentic" (`778321117`) — not just one. Tie the day's real news to whatever's actually held in either account; never force an irrelevant holding into the narrative just for a personal-tie-in day.
+  - **Portfolio scope:** pull real holdings from BOTH Robinhood accounts before writing — the "Trading" account and the "Agentic" account — not just one. (Account numbers are deliberately kept out of this repo; see docs/SECURITY.md. The MCP connector resolves them.) Tie the day's real news to whatever's actually held in either account; never force an irrelevant holding into the narrative just for a personal-tie-in day.
   - **Per-ticker news check (per Keith, 2026-09-09):** for every held position in both accounts, actually check for company-specific news that day (earnings, guidance, management changes, analyst actions, SEC filings) before deciding nothing's relevant — don't rely on TOP_GAINERS_LOSERS/most-active lists alone to catch it, since a real story on a smaller-volume name can miss those screens. Missing a real story on a held ticker because it wasn't screened for is the failure mode this guards against.
   - **Quality bar (per Keith, 2026-09-09):** "write better briefs" was the explicit ask — read as: verify every date/day-of-week claim against real data (the Labor Day framing error on the 2026-09-08 entry is the cautionary example — don't repeat that class of mistake), go deeper on the "why" behind a move rather than just reporting the number, and don't treat a light research pass as sufficient when a genuinely relevant per-ticker story might be sitting one search away.
 - **Graded Call Recap:** Original call (pulled verbatim from the immutable log, timestamp included) → what actually happened → win/loss/still-open status → the affiliate/tool tie-in only if it's genuinely relevant to how the call was made (e.g., "placed via Robinhood" is fine; forcing an unrelated affiliate link in is not).
