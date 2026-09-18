@@ -72,10 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       return '<tr>' +
         '<td><strong>' + symbolCell + '</strong></td>' +
-        '<td>' + escapeHtml(p.account) + '</td>' +
-        '<td><span class="badge-type">' + typeLabel(p.assetType) + '</span></td>' +
-        '<td class="num">' + trimQty(p.quantity) + '</td>' +
-        '<td class="num">$' + p.avgCost.toFixed(2) + '</td>' +
+        '<td class="col-optional">' + escapeHtml(p.account) + '</td>' +
+        '<td class="col-optional"><span class="badge-type">' + typeLabel(p.assetType) + '</span></td>' +
+        '<td class="num col-optional">' + trimQty(p.quantity) + '</td>' +
+        '<td class="num col-optional">$' + p.avgCost.toFixed(2) + '</td>' +
         '<td class="num">$' + p.currentPrice.toFixed(2) + '</td>' +
         '<td class="num ' + dir + '">' + money(p.unrealizedGain) + '</td>' +
         '</tr>';
@@ -327,10 +327,10 @@ document.addEventListener('DOMContentLoaded', function () {
       return '<tr data-symbol="' + escapeHtml(t.symbol) + '" data-date="' + t.date + '" data-gain="' + t.realizedGain + '">' +
         '<td class="num">' + t.date + '</td>' +
         '<td><strong>' + escapeHtml(t.symbol) + '</strong></td>' +
-        '<td>' + escapeHtml(t.account) + '</td>' +
-        '<td><span class="badge-type">' + typeLabel(t.assetType) + '</span></td>' +
-        '<td class="num">' + trimQty(t.quantity) + '</td>' +
-        '<td class="num">' + (t.price != null ? '$' + t.price.toFixed(2) : '&mdash;') + '</td>' +
+        '<td class="col-optional">' + escapeHtml(t.account) + '</td>' +
+        '<td class="col-optional"><span class="badge-type">' + typeLabel(t.assetType) + '</span></td>' +
+        '<td class="num col-optional">' + trimQty(t.quantity) + '</td>' +
+        '<td class="num col-optional">' + (t.price != null ? '$' + t.price.toFixed(2) : '&mdash;') + '</td>' +
         '<td class="num ' + dir + '">' + money(t.realizedGain) + '</td>' +
         '</tr>';
     }).join('');
