@@ -1,7 +1,17 @@
 {
   "name": "marketsondeck",
+  "main": "src/worker.mjs",
   "compatibility_date": "2026-08-24",
   "assets": {
-    "directory": "./site"
+    "directory": "./site",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "triggers": {
+    "crons": ["*/15 * * * *"]
+  },
+  "vars": {
+    "WEBULL_API_HOST": "api.webull.com",
+    "PUBLIC_ORIGIN": "https://marketsondeck.wattabing.workers.dev"
   }
 }
