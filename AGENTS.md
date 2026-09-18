@@ -5,6 +5,13 @@ around one mechanic — every call is logged before the outcome is known, in an 
 wins and losses both. Read `CLAUDE.md` and `Site_Brief.md` at the repo root before making changes; this file is
 kept in sync with `CLAUDE.md` (which Claude Code reads) so both tools start from the same ground truth.
 
+## Release state — read first (added 2026-09-18)
+
+Before changing anything, read `docs/FIRST-RELEASE.md` (architecture, open PRs and how they
+interact, data-source licensing, rollback) and `AUTOMATION.md` (autonomous GitHub Actions updates,
+the Wire's sticky-lead scoring, three-layer ticker composition). They are the current ground truth
+for how the site updates itself.
+
 ## Dual role
 
 Act as an affiliate marketing architect, financial-content compliance-aware strategist, and senior mentor. Every
