@@ -5,13 +5,6 @@ around one mechanic — every call is logged before the outcome is known, in an 
 wins and losses both. Read `CLAUDE.md` and `Site_Brief.md` at the repo root before making changes; this file is
 kept in sync with `CLAUDE.md` (which Claude Code reads) so both tools start from the same ground truth.
 
-## Release state — read first (added 2026-09-18)
-
-Before changing anything, read `docs/FIRST-RELEASE.md` (architecture, open PRs and how they
-interact, data-source licensing, rollback) and `AUTOMATION.md` (autonomous GitHub Actions updates,
-the Wire's sticky-lead scoring, three-layer ticker composition). They are the current ground truth
-for how the site updates itself.
-
 ## Dual role
 
 Act as an affiliate marketing architect, financial-content compliance-aware strategist, and senior mentor. Every
@@ -30,7 +23,7 @@ Tone: direct, receipts-first, zero hype — losses get exactly as much airtime a
   ideas only — never copy or closely paraphrase his sentences — plus WSJ and Bloomberg for the day's real
   headlines. This repo's sandboxed environment currently blocks `investing.com` outbound and WSJ/Bloomberg are
   paywalled; fall back to Alpha Vantage `NEWS_SENTIMENT` or ask Keith to paste article text/links directly. Pull
-  holdings from **both** Robinhood accounts (`5RY58840` "Trading" and `778321117` "Agentic") when gathering
+  holdings from **both** Robinhood accounts ("Trading" and "Agentic") when gathering
   portfolio context, not just one. For every held ticker in both accounts, actually check for company-specific
   news that day (earnings, guidance, management changes, analyst actions, filings) — don't rely on gainers/losers
   or most-active screens alone, since a real story on a smaller-volume name can miss those. Also verify every
@@ -61,18 +54,19 @@ Tone: direct, receipts-first, zero hype — losses get exactly as much airtime a
   Cloudflare dashboard until that's fixed.
 - Site has: `episodes/` (Episode 1 "The Baseline," Episode 2 "The August Swing"), `brief/` (Morning Brief,
   archive-style — new entries append below existing ones, nothing is deleted/edited after the fact), `tape/`
-  ("The Tape" — Supabase-backed prediction leaderboard, invite-only, `TAPE-FOUNDER` invite code), `about.html`,
+  ("The Tape" — Supabase-backed prediction leaderboard, invite-only; the invite code is shared privately, never committed — see docs/SECURITY.md), `about.html`,
   `legal/`.
 - **The decision-ledger Episode/Shorts scripts are CANCELLED** — Keith pivoted away from that format on 2026-08-30.
   Do not resume writing in that format unless he explicitly asks again.
-- **Current direction:** (1) a video documenting Keith's "Agentic" Robinhood account (account ending 7117 — small,
+- **Current direction:** (1) a video documenting Keith's "Agentic" Robinhood account (small,
   AI-assisted, real trades, real screenshots he narrates over) publishing under the **MarketsOnDeck** brand, not
   Cryptodamus (a separate Phemex-based persona Keith is deliberately not featuring right now since that book is
   down); (2) a daily Morning Brief, automated via a claude.ai cloud routine (`trig_017Ph8RYYJqrhMYgHUDCG53W`) that
   drafts a new brief every weekday morning and opens a GitHub PR for Keith's review — it never pushes to main or
   merges on its own.
-- Two Robinhood accounts exist: `5RY58840` ("Trading," main/margin — the one with the real trading story and
-  8-week P&L) and `778321117` ("Agentic," cash, small — the one the video project documents). Don't conflate them.
+- Two Robinhood accounts exist: "Trading" (main/margin — the one with the real trading story and 8-week
+  P&L) and "Agentic" (cash, small — the one the video project documents). Account numbers are deliberately
+  kept out of this repo (see docs/SECURITY.md); the MCP connector resolves them. Don't conflate them.
 
 ## Working style and safety
 
