@@ -446,4 +446,4 @@ function initWireEnhance() {
       }
     });
   }).catch(function () {});
-                                                  }
+}
