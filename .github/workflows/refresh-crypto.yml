@@ -1,0 +1,35 @@
+name: Refresh crypto ticker
+# Autonomous replacement for the old local Claude routine's crypto leg.
+# Deterministic: Coinbase Exchange public market data only (see AUTOMATION.md).
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-crypto
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh crypto.json
+        run: python3 scripts/refresh_crypto.py | tee /tmp/out.txt
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- site/assets/crypto.json; then
+            echo "no changes"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/crypto.json
+          git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Refresh crypto ticker')"
+          git push

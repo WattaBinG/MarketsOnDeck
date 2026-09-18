@@ -1,0 +1,37 @@
+name: Refresh The Wire
+# Autonomous replacement for the old local Claude routine's Wire leg.
+# Aggregates publishers' own RSS headlines with source attribution and
+# outbound links only — no article text, no AI-written prose (AUTOMATION.md).
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-wire
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install feedparser
+      - name: Refresh wire
+        run: python3 scripts/refresh_wire.py | tee /tmp/out.txt
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- site/assets/wire.json site/assets/wire-archive.json site/index.html; then
+            echo "no changes"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/wire.json site/assets/wire-archive.json site/index.html
+          git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Refresh The Wire')"
+          git push

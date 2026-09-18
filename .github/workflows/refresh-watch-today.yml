@@ -1,0 +1,36 @@
+name: Refresh What to Watch Today
+# Fills the next trading day's economic-calendar sidebar from official
+# sources only (BEA ICS feed, Fed/NYSE published calendars, fixed weekly
+# releases). No AI. Evenings Sun-Thu so the next trading day is covered.
+on:
+  schedule:
+    - cron: '30 21 * * 0-4'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-watch-today
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh watch-today.json
+        run: python3 scripts/refresh_watch_today.py | tee /tmp/out.txt
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- site/assets/watch-today.json; then
+            echo "no changes"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/watch-today.json
+          git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Refresh What to Watch Today')"
+          git push
