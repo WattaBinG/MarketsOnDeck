@@ -42,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function () {
   initShareBars();
   initScrollableTables();
   initHomeStats();
+  initRecordBand();
+  initOverviewCurve();
+  initWireEnhance();
 });
 
 // Overview page's YTD/Month/Week stat row — computed live client-side from
@@ -226,7 +229,10 @@ function initPinned() {
     var allItems = pinnedItems.concat(cryptoItems);
     if (!allItems.length) { bar.hidden = true; return; }
     bar.hidden = false;
-    bar.innerHTML = allItems.map(renderTickerItem).join('');
+    var asOfChip = (tickerData && tickerData.asOfLabel)
+      ? '<span class="ticker-asof ticker-asof-pinned" title="Stock and ETF prices as of this time; crypto refreshes on its own schedule. Changes are versus the prior regular-session close. Periodic snapshots, not a live feed.">Stocks as of ' + escapeHtml(tickerData.asOfLabel) + '</span>'
+      : '';
+    bar.innerHTML = allItems.map(renderTickerItem).join('') + asOfChip;
   }).catch(function () { bar.hidden = true; });
 }
 
@@ -248,7 +254,7 @@ function initTicker() {
       var scrollItems = data.items.filter(function (item) { return pinnedSymbols.indexOf(item.symbol) === -1; });
       if (!scrollItems.length) { strip.hidden = true; return; }
       strip.hidden = false;
-      var asOfHtml = '<div class="ticker-asof">' + escapeHtml(data.asOfLabel || 'Updated') + '</div>';
+      var asOfHtml = '<div class="ticker-asof" title="Change and % are versus the prior regular-session close. Periodic snapshots, not a live feed.">' + escapeHtml(data.asOfLabel || 'Updated') + '</div>';
       var itemsHtml = scrollItems.map(renderTickerItem).join('');
       // duplicate the row once so the CSS animation (-50%) loops seamlessly
       track.innerHTML = asOfHtml + itemsHtml + asOfHtml + itemsHtml;
@@ -284,3 +290,160 @@ function escapeHtml(s) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
   });
 }
+
+// ---- First-release pass (2026-09-18) ----
+
+// "2h ago"-style label from an ISO timestamp, for Wire freshness stamps.
+function timeAgoLabel(iso) {
+  var t = Date.parse(iso);
+  if (isNaN(t)) return '';
+  var diffMin = Math.floor((Date.now() - t) / 60000);
+  if (diffMin < 1) return 'just now';
+  if (diffMin < 60) return diffMin + 'm ago';
+  var h = Math.floor(diffMin / 60);
+  if (h < 24) return h + 'h ago';
+  return Math.floor(h / 24) + 'd ago';
+}
+
+// Cumulative realized P&L series, oldest first — the same math The Record's
+// chart uses, shared here so the homepage band and the Overview curve can
+// never disagree with The Record.
+function buildEquitySeries(trades) {
+  var asc = trades.slice().sort(function (a, b) { return a.timestamp < b.timestamp ? -1 : 1; });
+  var running = 0;
+  return asc.map(function (t) { running += t.realizedGain; return { date: t.date, value: running }; });
+}
+
+// Compact self-contained SVG equity curve (no library). Zero line dashed;
+// line and area tint follow the ending value, green above zero / red below.
+function renderEquityCurve(el, trades, opts) {
+  if (!el) return;
+  opts = opts || {};
+  var points = buildEquitySeries(trades);
+  if (!points.length) return;
+  var w = 640, h = opts.height || 150, padX = 8, padTop = 10, padBottom = 18;
+  var values = points.map(function (p) { return p.value; });
+  var minV = Math.min(0, Math.min.apply(null, values));
+  var maxV = Math.max(0, Math.max.apply(null, values));
+  var range = (maxV - minV) || 1;
+  function x(i) { return padX + (i / (points.length - 1 || 1)) * (w - padX * 2); }
+  function y(v) { return h - padBottom - ((v - minV) / range) * (h - padTop - padBottom); }
+  var path = points.map(function (p, i) { return (i ? 'L' : 'M') + x(i).toFixed(1) + ',' + y(p.value).toFixed(1); }).join(' ');
+  var zeroY = y(0).toFixed(1);
+  var area = path + ' L' + x(points.length - 1).toFixed(1) + ',' + zeroY + ' L' + x(0).toFixed(1) + ',' + zeroY + ' Z';
+  var last = points[points.length - 1].value;
+  var color = last >= 0 ? 'var(--gain)' : 'var(--loss)';
+  el.innerHTML =
+    '<svg viewBox="0 0 ' + w + ' ' + h + '" width="100%" style="display:block; height:auto;">' +
+    '<line x1="' + padX + '" y1="' + zeroY + '" x2="' + (w - padX) + '" y2="' + zeroY + '" stroke="var(--border-strong)" stroke-width="1" stroke-dasharray="4 4"/>' +
+    '<path d="' + area + '" fill="' + color + '" opacity="0.12" stroke="none"/>' +
+    '<path d="' + path + '" fill="none" stroke="' + color + '" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>' +
+    '<text x="' + padX + '" y="' + (h - 4) + '" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--text-muted)">' + points[0].date + '</text>' +
+    '<text x="' + (w - padX) + '" y="' + (h - 4) + '" font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--text-muted)" text-anchor="end">' + points[points.length - 1].date + '</text>' +
+    '</svg>';
+}
+
+// Homepage record band: the public scoreboard (net realized, win rate, trade
+// count, S&P 500 over the same span) plus the equity curve, all computed
+// live from trades.json. Stays hidden if the data can't load — the band is
+// an enhancement, never a broken promise.
+function initRecordBand() {
+  var band = document.getElementById('recordBand');
+  if (!band) return;
+  fetchJsonRetry('/assets/trades.json').then(function (data) {
+    if (!data || !data.trades || !data.trades.length) return;
+    var trades = data.trades;
+    var totalGain = 0, wins = 0, losses = 0;
+    trades.forEach(function (t) {
+      totalGain += t.realizedGain;
+      if (t.realizedGain > 0) wins++;
+      else if (t.realizedGain < 0) losses++;
+    });
+    var winRate = (wins + losses) ? (100 * wins / (wins + losses)) : 0;
+    var pnlEl = document.getElementById('rbPnl');
+    pnlEl.textContent = (totalGain >= 0 ? '+' : '-') + '$' + Math.abs(totalGain).toLocaleString(undefined, { maximumFractionDigits: 0 });
+    pnlEl.classList.add(totalGain >= 0 ? 'gain' : 'loss');
+    document.getElementById('rbWinRate').textContent = winRate.toFixed(1) + '%';
+    document.getElementById('rbTrades').textContent = String(trades.length);
+    var spy = (data.summary && data.summary.benchmark && typeof data.summary.benchmark.spyYtdPercent === 'number')
+      ? data.summary.benchmark.spyYtdPercent : null;
+    var spyEl = document.getElementById('rbSpy');
+    if (spy !== null) {
+      spyEl.textContent = (spy >= 0 ? '+' : '') + spy.toFixed(1) + '%';
+      spyEl.classList.add(spy >= 0 ? 'gain' : 'loss');
+    } else if (spyEl.parentNode) {
+      spyEl.parentNode.style.display = 'none';
+    }
+    var asOf = document.getElementById('recordBandAsOf');
+    if (asOf && data.summary && data.summary.asOf) asOf.textContent = 'Journal through ' + data.summary.asOf;
+    renderEquityCurve(document.getElementById('recordBandChart'), trades, { height: 150 });
+    band.hidden = false;
+  }).catch(function () {});
+}
+
+// Overview page equity curve card — same renderer, larger canvas.
+function initOverviewCurve() {
+  var el = document.getElementById('overviewEquityCurve');
+  if (!el) return;
+  fetchJsonRetry('/assets/trades.json').then(function (data) {
+    if (!data || !data.trades || !data.trades.length) return;
+    renderEquityCurve(el, data.trades, { height: 220 });
+  }).catch(function () {});
+}
+
+// The Wire, tightened: category filter buttons built from the tags actually
+// on the page, per-headline freshness stamps and an "Updated" label matched
+// from wire.json by URL (so the static, routine-managed list markup stays
+// byte-for-byte compatible with the hourly Wire Refresh routine — this only
+// enhances it in the browser).
+function initWireEnhance() {
+  var list = document.querySelector('.wire-list');
+  var filters = document.getElementById('wireFilters');
+  if (list && filters) {
+    var cats = [];
+    list.querySelectorAll('.wire-tag').forEach(function (tag) {
+      var c = tag.textContent.trim();
+      if (c && cats.indexOf(c) === -1) cats.push(c);
+    });
+    var buttons = [];
+    function makeBtn(label) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'wire-filter-btn' + (label === 'All' ? ' active' : '');
+      b.textContent = label;
+      b.addEventListener('click', function () {
+        buttons.forEach(function (x) { x.classList.toggle('active', x === b); });
+        list.querySelectorAll('li').forEach(function (li) {
+          var tag = li.querySelector('.wire-tag');
+          li.style.display = (label === 'All' || (tag && tag.textContent.trim() === label)) ? '' : 'none';
+        });
+      });
+      filters.appendChild(b);
+      buttons.push(b);
+    }
+    makeBtn('All');
+    cats.forEach(makeBtn);
+  }
+
+  fetchJsonRetry('/assets/wire.json').then(function (data) {
+    if (!data) return;
+    var updated = document.getElementById('wireUpdated');
+    if (updated && data.asOfLabel) updated.textContent = 'Updated ' + data.asOfLabel;
+    if (!list) return;
+    var byUrl = {};
+    (data.items || []).forEach(function (it) { if (it && it.url) byUrl[it.url] = it; });
+    if (data.topStory && data.topStory.url) byUrl[data.topStory.url] = data.topStory;
+    list.querySelectorAll('li').forEach(function (li) {
+      var a = li.querySelector('a[href]');
+      if (!a) return;
+      var it = byUrl[a.href];
+      if (it && it.timestamp) {
+        var s = document.createElement('span');
+        s.className = 'wire-time';
+        s.textContent = timeAgoLabel(it.timestamp);
+        s.title = it.timestamp.replace('T', ' ').replace('Z', ' UTC');
+        li.appendChild(s);
+      }
+    });
+  }).catch(function () {});
+          }
