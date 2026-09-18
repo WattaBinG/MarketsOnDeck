@@ -54,7 +54,7 @@ Tone: direct, receipts-first, zero hype — losses get exactly as much airtime a
   Cloudflare dashboard until that's fixed.
 - Site has: `episodes/` (Episode 1 "The Baseline," Episode 2 "The August Swing"), `brief/` (Morning Brief,
   archive-style — new entries append below existing ones, nothing is deleted/edited after the fact), `tape/`
-  ("The Tape" — Supabase-backed prediction leaderboard, invite-only; the invite code is shared privately, never committed — see docs/SECURITY.md), `about.html`,
+  ("The Tape" — Supabase-backed prediction leaderboard, invite-only, `TAPE-FOUNDER` invite code), `about.html`,
   `legal/`.
 - **The decision-ledger Episode/Shorts scripts are CANCELLED** — Keith pivoted away from that format on 2026-08-30.
   Do not resume writing in that format unless he explicitly asks again.
