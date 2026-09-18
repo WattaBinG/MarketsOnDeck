@@ -10,6 +10,14 @@ link aggregation the site already does); no article text is copied.
 Runs on GitHub Actions hourly. Safe to run any time: if every feed fails,
 exits non-zero and writes nothing, so the site keeps the last good snapshot
 (whose own as-of label shows its age).
+
+LEAD STORY (sticky lead): every run scores each story cluster with a fixed,
+explainable formula (see AUTOMATION.md): source weight x recency decay,
+boosted for cross-source corroboration and market relevance. The incumbent
+lead keeps its slot until a challenger story outscores it by more than
+~1.4x (STICKY_FACTOR) or its newest item ages past MAX_LEAD_AGE_HOURS — so
+the top of the page only changes when the day's story actually changes.
+The full score table and the lead decision are printed to the workflow log.
 """
 import json
 import re
@@ -31,6 +39,12 @@ MAX_ITEMS = 17          # list length on the homepage (matches current layout)
 MAX_AGE_HOURS = 36      # older items fall off the list into the archive
 ARCHIVE_CAP = 200
 
+# Sticky-lead tuning (see AUTOMATION.md for the rationale):
+STICKY_FACTOR = 0.70      # incumbent keeps the lead while its cluster scores >= 70% of the challenger's
+MAX_LEAD_AGE_HOURS = 30   # a lead whose newest item is older than this cannot hold the slot
+CLUSTER_JACCARD = 0.34    # token overlap needed to call two headlines the same story
+UNKNOWN_AGE_HOURS = 12    # feeds that omit a publish time score as if this old, never as brand-new
+
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
 
@@ -50,6 +64,10 @@ FEEDS = [
     ("https://www.federalreserve.gov/feeds/press_all.xml", "Federal Reserve", "Macro", False),
 ]
 
+# Source weights for lead scoring: official primary sources and the two
+# highest-volume market wires count a little more. Everything else is 1.0.
+SOURCE_W = {"Federal Reserve": 2.0, "CNBC": 1.5, "MarketWatch": 1.5}
+
 MACRO = re.compile(r"\b(fed|fomc|federal reserve|powell|interest rate|rate cut|rate hike|"
                    r"inflation|cpi|ppi|treasur|yield|bond|central bank|jobs report|payrolls|"
                    r"unemployment|gdp|recession|ecb|boj|bank of england)\b", re.I)
@@ -61,12 +79,17 @@ MOVE = re.compile(r"\b(soar|surge|jump|plunge|tumble|sink|rall|slide|slump|drop|
                   r"stock rises|stock falls|shares)\b", re.I)
 BROAD = re.compile(r"\b(s&p|nasdaq|dow jones|wall street|stock market|stocks|futures)\b", re.I)
 # Syndicated promo and bot-written filler we never want on the wire.
-BLOCK = re.compile(r"(motley fool|fool\.com|options flow shows|/news/company-news/|^\d+ (incredible|top|smart) |reasons? to buy)", re.I)
+BLOCK = re.compile(r"(motley fool|fool\.com|options flow|/news/company-news/|^\d+ (incredible|top|smart) |reasons? to buy)", re.I)
 
 MONEY = re.compile(r"\b(stock|share|market|invest|trade|trading|earn|profit|revenue|ipo|"
                    r"fed|rate|inflation|oil|gold|bitcoin|crypto|bank|economy|gdp|"
                    r"tariff|sanction|china|russia|iran|israel|opec|treasur|bond|"
                    r"wall street|nasdaq|s&p|dow)\b", re.I)
+
+STOP = set(("the a an and or of to in on for with at by from as is are was were be been it its "
+            "this that these those over after amid into your you how what why will would could "
+            "should says say said new vs not no more most than about out up down his her their "
+            "our us we i here are is to of in for on with at by").split())
 
 
 def classify(title, bias):
@@ -83,10 +106,41 @@ def norm(title):
     return re.sub(r"[^a-z0-9]+", " ", title.lower()).strip()
 
 
+def tokens(title):
+    """Significant tokens used for same-story matching."""
+    return {t for t in norm(title).split() if t not in STOP and len(t) > 2}
+
+
+def jaccard(a, b):
+    u = a | b
+    return len(a & b) / len(u) if u else 0.0
+
+
 def fetch(url):
     req = Request(url, headers={"User-Agent": UA})
     with urlopen(req, timeout=20) as r:
         return r.read()
+
+
+def recency_factor(ts_epoch, now_epoch):
+    age_h = max(0.0, (now_epoch - ts_epoch) / 3600.0)
+    return max(0.25, 1.0 - age_h / MAX_AGE_HOURS)
+
+
+def cluster_score(cluster, now_epoch):
+    """Deterministic, explainable: sum(source weight x recency), boosted
+    for cross-source corroboration and market relevance."""
+    # Items without a real publish time score at UNKNOWN_AGE_HOURS old so
+    # evergreen filler cannot win the lead on a fabricated "just now".
+    base = sum(SOURCE_W.get(it["source"], 1.0) *
+               recency_factor(it["_ts"] if it["_known_ts"] else now_epoch - UNKNOWN_AGE_HOURS * 3600,
+                              now_epoch)
+               for it in cluster["items"])
+    n_sources = len({it["source"] for it in cluster["items"]})
+    heads = " ".join(it["headline"] for it in cluster["items"])
+    corroboration = 1.0 + 0.35 * (n_sources - 1)
+    relevance = 1.25 if (MACRO.search(heads) or BROAD.search(heads) or MOVE.search(heads)) else 1.0
+    return base * corroboration * relevance, base, n_sources, relevance
 
 
 def main():
@@ -123,6 +177,7 @@ def main():
                 if t:
                     ts = datetime(*t[:6], tzinfo=timezone.utc)
                     break
+            known_ts = ts is not None
             if ts is None:
                 ts = datetime.now(timezone.utc)
             items.append({
@@ -132,6 +187,7 @@ def main():
                 "category": classify(title, bias),
                 "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "_ts": ts.timestamp(),
+                "_known_ts": known_ts,
             })
     if ok_feeds == 0:
         print("all feeds failed; leaving last good wire in place", file=sys.stderr)
@@ -139,26 +195,92 @@ def main():
 
     items.sort(key=lambda x: x["_ts"], reverse=True)
     now = datetime.now(timezone.utc)
-    cutoff = now.timestamp() - MAX_AGE_HOURS * 3600
+    now_epoch = now.timestamp()
+    cutoff = now_epoch - MAX_AGE_HOURS * 3600
 
     fresh = [it for it in items if it["_ts"] >= cutoff]
-    keep, aged = fresh[:MAX_ITEMS + 1], fresh[MAX_ITEMS + 1:]
+    keep, aged = fresh[:MAX_ITEMS + 4], fresh[MAX_ITEMS + 4:]
 
-    # Top story: prefer a company mover, then a markets/macro headline with
-    # broad market relevance; never lead with a non-financial politics item
-    # unless it is the only thing on the wire.
-    def top_score(it):
-        if it["category"] == "Movers":
-            return 0
-        if it["category"] in ("Markets", "Macro") and (BROAD.search(it["headline"]) or MACRO.search(it["headline"]) or MOVE.search(it["headline"])):
-            return 1
-        if MONEY.search(it["headline"]):
-            return 2
-        return 3
-    top = min(keep, key=top_score) if keep else None
-    rest = [it for it in keep if it is not top]
-    rest = rest[:MAX_ITEMS]
-    overflow = keep[len(rest) + (1 if top else 0):]
+    # Cluster same-story headlines (deterministic greedy pass, recency order).
+    clusters = []
+    for it in keep:
+        tok = tokens(it["headline"])
+        best, best_j = None, 0.0
+        for c in clusters:
+            j = jaccard(c["tokens"], tok)
+            if j > best_j:
+                best, best_j = c, j
+        if best is not None and best_j >= CLUSTER_JACCARD:
+            best["items"].append(it)
+            best["tokens"] |= tok
+        else:
+            clusters.append({"tokens": set(tok), "items": [it]})
+
+    scored = []
+    for c in clusters:
+        score, base, n_src, rel = cluster_score(c, now_epoch)
+        c["score"] = score
+        scored.append((score, base, n_src, rel, c))
+    scored.sort(key=lambda s: (-s[0], -max(it["_ts"] for it in s[4]["items"])))
+
+    print("story scores (score | base x corroboration x relevance | sources | headline):")
+    for score, base, n_src, rel, c in scored[:8]:
+        rep = max(c["items"], key=lambda i: i["_ts"])
+        print(f"  {score:5.2f} | {base:5.2f} x {1 + .35*(n_src-1):.2f} x {rel:.2f} | "
+              f"{n_src} src | {rep['headline'][:80]}")
+
+    # Incumbent lead from the current wire.json.
+    incumbent = None
+    try:
+        prior = json.loads((ASSETS / "wire.json").read_text())
+        incumbent = prior.get("topStory") or None
+    except Exception:
+        incumbent = None
+
+    challenger = scored[0][4] if scored else None
+    lead_cluster, held = challenger, False
+    if incumbent and challenger:
+        inc_cluster = None
+        for c in clusters:
+            if any(it["url"] == incumbent.get("url") for it in c["items"]):
+                inc_cluster = c
+                break
+        if inc_cluster is None:  # URL gone from feeds; match by headline tokens
+            inc_tok = tokens(incumbent.get("headline", ""))
+            for c in clusters:
+                if jaccard(c["tokens"], inc_tok) >= CLUSTER_JACCARD:
+                    inc_cluster = c
+                    break
+        if inc_cluster is challenger:
+            # The incumbent's story is still the top-scoring story: lead held.
+            held = True
+        elif inc_cluster is not None:
+            newest = max(it["_ts"] for it in inc_cluster["items"])
+            young = (now_epoch - newest) <= MAX_LEAD_AGE_HOURS * 3600
+            strong = inc_cluster["score"] >= challenger["score"] * STICKY_FACTOR
+            print(f"incumbent: score {inc_cluster['score']:.2f} vs challenger {challenger['score']:.2f} "
+                  f"(need >= {challenger['score'] * STICKY_FACTOR:.2f}), young={young}")
+            if young and strong:
+                lead_cluster, held = inc_cluster, True
+
+    # Lead item: keep the exact incumbent item when held (headline continuity);
+    # otherwise the freshest item from the highest-weighted source in the cluster.
+    top = None
+    lead_since = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    if lead_cluster:
+        if held and incumbent and any(it["url"] == incumbent.get("url") for it in lead_cluster["items"]):
+            top = next(it for it in lead_cluster["items"] if it["url"] == incumbent.get("url"))
+            lead_since = incumbent.get("leadSince") or incumbent.get("timestamp") or lead_since
+        else:
+            top = max(lead_cluster["items"],
+                      key=lambda i: (SOURCE_W.get(i["source"], 1.0), i["_ts"]))
+
+    # List: freshest first, excluding the lead item and duplicate versions of
+    # the lead story from other sources.
+    lead_dupes = {id(it) for it in lead_cluster["items"]} if lead_cluster else set()
+    rest = [it for it in keep if id(it) not in lead_dupes][:MAX_ITEMS]
+    listed = {id(it) for it in rest} | lead_dupes
+    overflow = [it for it in keep if id(it) not in listed]
 
     # Archive: aged-out and overflow items, prepended, deduped by URL, capped.
     try:
@@ -182,6 +304,8 @@ def main():
             "url": top["url"],
             "source": top["source"],
             "category": top["category"],
+            "timestamp": top["timestamp"],
+            "leadSince": lead_since,
             "image": f"/assets/images/wire-{top['category'].lower()}.jpg",
         }
     wire["items"] = [{k: it[k] for k in ("headline", "url", "source", "category", "timestamp")}
@@ -217,8 +341,9 @@ def main():
     (ASSETS / "wire.json").write_text(json.dumps(wire, indent=2, ensure_ascii=False) + "\n")
     (ASSETS / "wire-archive.json").write_text(json.dumps(archive, indent=2, ensure_ascii=False) + "\n")
     INDEX.write_text(doc)
-    print(f"OK: {ok_feeds}/{len(FEEDS)} feeds, {len(rest)} items, top={top['category'] if top else '-'}")
-    print(f"COMMIT_MSG=Refresh The Wire: {label}")
+    decision = "lead held" if held else ("new lead" if top else "no lead")
+    print(f"OK: {ok_feeds}/{len(FEEDS)} feeds, {len(rest)} items, top={top['category'] if top else '-'} ({decision})")
+    print(f"COMMIT_MSG=Refresh The Wire: {label} ({decision})")
 
 
 if __name__ == "__main__":
