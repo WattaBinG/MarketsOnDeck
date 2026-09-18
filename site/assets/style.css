@@ -565,3 +565,52 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); margin: 18px 0 6px;
 }
 .archive-empty { color: var(--text-muted); padding: 24px 0; }
+
+/* ---- First-release pass (2026-09-18) ---- */
+
+/* Homepage record band: scoreboard + equity curve from trades.json */
+.record-band {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 18px 22px; margin: 0 0 28px; box-shadow: var(--shadow-sm);
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+.record-band[hidden] { display: none; }
+.record-band:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+.record-band-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.record-band-asof { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+.record-band-main { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 26px; align-items: center; margin-top: 14px; }
+.record-band-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 18px; }
+.record-band-stat .stat-num { display: block; font-size: 26px; }
+.record-band-stat .stat-label { display: block; }
+.record-band-chart svg { width: 100%; height: auto; display: block; }
+.record-band-cta { display: inline-block; margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--accent); }
+.record-band:hover .record-band-cta { text-decoration: underline; }
+@media (max-width: 780px) {
+  .record-band-main { grid-template-columns: 1fr; gap: 18px; }
+  .record-band-stat .stat-num { font-size: 22px; }
+}
+
+/* Wire toolbar: category filters + freshness label */
+.wire-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px 18px; flex-wrap: wrap; margin: 0 0 18px; }
+.wire-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.wire-filter-btn {
+  font-family: var(--font-body); font-size: 13px; font-weight: 600; line-height: 1;
+  padding: 8px 14px; border-radius: 999px; border: 1px solid var(--border-strong);
+  background: transparent; color: var(--text-muted); cursor: pointer;
+  transition: border-color .12s ease, color .12s ease, background .12s ease;
+}
+.wire-filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.wire-filter-btn.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.wire-updated { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+.wire-time { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); white-space: nowrap; margin-left: auto; }
+@media (max-width: 640px) { .wire-time { font-size: 10px; } }
+
+/* Pinned ticker as-of chip sits at the end of the pinned row */
+.ticker-asof-pinned { border-right: none; border-left: 1px solid var(--border); margin-left: auto; text-transform: none; }
+
+/* The Record on phones: keep Date / Symbol / Realized P&L visible without
+   sideways scrolling by dropping the lower-priority columns under 700px. */
+@media (max-width: 700px) {
+  .record-table .col-optional { display: none; }
+}
