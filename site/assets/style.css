@@ -614,3 +614,10 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 @media (max-width: 700px) {
   .record-table .col-optional { display: none; }
 }
+
+/* The top story goes text-led: the generic AI category art (rocket/globe
+   stock image) undercut the receipts-first brand. The hourly Wire routine's
+   markup is untouched — the image is simply not displayed. Revert this one
+   rule to bring the art back. */
+.wire-top-image { display: none; }
+.wire-top { padding-top: 8px; }
