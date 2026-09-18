@@ -214,7 +214,7 @@ function initPinned() {
   if (!bar) return;
 
   Promise.all([
-    fetchJsonRetry('/assets/ticker.json'),
+    fetchJsonRetry('/api/ticker'),
     fetchJsonRetry('/assets/crypto.json')
   ]).then(function (results) {
     var tickerData = results[0], cryptoData = results[1];
@@ -230,8 +230,8 @@ function initPinned() {
   }).catch(function () { bar.hidden = true; });
 }
 
-// Rolling ticker strip — reads /assets/ticker.json (refreshed by a scheduled
-// job) and renders a duplicated, seamlessly-looping row of today's top
+// Rolling ticker strip — reads /api/ticker (refreshed at most every 15 minutes by the
+// Worker, with the checked-in ticker.json retained as a failure fallback) and renders a duplicated, seamlessly-looping row of today's top
 // movers plus Keith's own held positions (flagged item.held, shown with a
 // small dot). Excludes whatever's already in the pinned bar, so nothing
 // shows up twice.
@@ -241,7 +241,7 @@ function initTicker() {
   var track = strip.querySelector('.ticker-track');
   if (!track) return;
 
-  fetchJsonRetry('/assets/ticker.json')
+  fetchJsonRetry('/api/ticker')
     .then(function (data) {
       if (!data || !data.items || !data.items.length) { strip.hidden = true; return; }
       var pinnedSymbols = data.pinned || [];
