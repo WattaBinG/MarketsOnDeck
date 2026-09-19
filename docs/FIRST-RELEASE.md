@@ -9,7 +9,7 @@ production by these branches on their own.
 
 - The site is plain static HTML/CSS/JS in `site/`, deployed as Cloudflare
   Workers static assets (`wrangler.jsonc`, no build step).
-- Cloudflare auto-deploys `main` within a minute or two of any commit.
+- Cloudflare does not auto-deploy a git push. The three refresh workflows deploy their own successful commits with Wrangler using repository secrets; other pushes still require a manual Cloudflare deployment.
   Non-`main` branches get automatic preview URLs of the form
   `https://<branch-name>-marketsondeck.wattabing.workers.dev` — that is how
   the review previews work; they are separate from production and go away
@@ -28,8 +28,7 @@ production by these branches on their own.
 | `trades.json`, `positions.json`, The Record | Keith's brokerage-backed routines | unchanged |
 | Morning Brief / Market Tape | authored (claude.ai routine opens draft PRs when credits exist) | unchanged — authored analysis, never scripted |
 
-The GitHub Actions run in GitHub's cloud, free on a public repo, and commit
-straight to `main` exactly like the old routine did. They do not need
+The GitHub Actions run in GitHub's cloud, commit straight to `main`, then deploy the committed snapshot with Wrangler. They do not need
 Claude Desktop, Keith's Windows PC to be on, or any Claude credits.
 
 ## The pull requests, and how they interact
@@ -63,7 +62,7 @@ Verified 2026-09-18:
 |---|---|---|
 | Publishers' own RSS (CNBC, MarketWatch, Yahoo Finance, Benzinga, Investing.com, NBC News, France 24, Federal Reserve) | The Wire | Headline + link aggregation only — publisher's own headline, named source, outbound link. No article text copied. Same Fark/Drudge-style aggregation the site has always done. |
 | Coinbase Exchange public market-data API | crypto.json | Public market data, no key; `source` field carried in-file. |
-| BEA ICS calendar, Fed 2026 FOMC calendar, NYSE 2026 holidays, fixed weekly releases | watch-today.json | Official published schedules. |
+| BEA/BLS official calendars, Census economic-indicators calendar, Fed 2026 FOMC calendar, NYSE 2026 holidays, fixed weekly releases | watch-today.json | Official published schedules. |
 | Twelve Data free tier | — | **Not licensed for public display** (internal non-display only; display starts at ~$149/mo Venture plan). https://support.twelvedata.com/en/articles/5332349-commercial-and-personal-usage |
 | Robinhood / Alpaca / Webull / Massive / Alpha Vantage free tiers | — | Personal/internal-use only; **do not** pipe their quotes into the public site on a schedule without verified display rights. |
 
@@ -78,9 +77,7 @@ this repo, and their data is not republished autonomously.
   licensed for public display. The ticker shows its last verified snapshot
   with a visible as-of label and basis tooltip instead of pretending to be
   live. This is a deliberate choice, not a bug.
-- **BLS-dated releases (CPI, jobs report) are not in What to Watch.** BLS
-  blocks automated access (403s); the calendar covers BEA, the Fed, NYSE,
-  and fixed weekly releases only.
+- **The calendar fails closed if an official BEA, BLS, or Census source is unavailable.** The prior verified snapshot stays published and the workflow reports red rather than silently dropping a major release. Trading holidays and FOMC dates are explicitly supported for 2026; a later year is rejected until its official calendars are loaded.
 - **RSS quality varies.** Free feeds sometimes surface evergreen/opinion
   pieces with fresh timestamps. The corroboration scoring keeps genuinely
   big stories on top; the promo/filler blocklist (`BLOCK` in

@@ -9,10 +9,9 @@ headlines, or commentary.
 |---|---|---|---|
 | Crypto ticker (`assets/crypto.json`) | `refresh-crypto.yml` | every 15 min | Coinbase Exchange public market-data API |
 | The Wire (`assets/wire.json`, `wire-archive.json`, homepage blocks) | `refresh-wire.yml` | hourly, with a sticky lead story | publishers' own public RSS feeds |
-| What to Watch Today (`assets/watch-today.json`) | `refresh-watch-today.yml` | Sun-Thu evenings | BEA official calendar (ICS), Fed + NYSE published calendars, fixed weekly releases |
+| What to Watch Today (`assets/watch-today.json`) | `refresh-watch-today.yml` | Sun-Thu evenings | BEA and BLS official calendars, Census economic-indicators calendar, Fed + NYSE published calendars, fixed weekly releases |
 
-Cloudflare deploys `main` automatically, so each workflow commit is live
-within a minute or two. Each workflow also has a **Run workflow** button in
+Each refresh workflow serializes its commit/push with the other publishers and then runs Wrangler to deploy that exact committed snapshot. Deployment requires the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; if either commit, push, or deploy fails, the workflow stays red and the previous production snapshot remains live. Each workflow also has a **Run workflow** button in
 GitHub → Actions for a manual kick.
 
 ## Sources and why they are OK to publish

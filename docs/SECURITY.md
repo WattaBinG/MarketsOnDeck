@@ -15,8 +15,8 @@ could use to steal his data?
 - **No passwords, API keys, or brokerage session tokens are in the repo or
   on the deployed site.** Full-history scan of every branch (317 commits),
   the workflows, and the live site assets on 2026-09-18 found none.
-- **Two real exposures did turn up** — both private *identifiers*, not
-  passwords, and both fixable. See below.
+- **One real exposure did turn up** — private brokerage identifiers, not a
+  password. The current tree is scrubbed; history still needs an owner-approved purge. The public Tape founder code and referral codes are intentionally public marketing codes, not private identifiers.
 
 ## What the audit covered
 
@@ -33,18 +33,15 @@ could use to steal his data?
 
 ## Findings
 
-1. **Robinhood account numbers in the public repo** (`CLAUDE.md`,
-   `AGENTS.md` on `main`, plus all history). These are identifiers, not
-   credentials — nobody can log in with them — but they make targeted
-   phishing easier ("hi, this is your broker about account ...").
-   **Fix:** scrubbed in the review-only PR `security/scrub-account-ids`
-   (numbers replaced by the account nicknames). Note: scrubbing current
-   files does not erase git history; a full history purge
-   (`git filter-repo` + force push) is possible but destructive and is
-   Keith's call — not done here.
-2. **The Tape invite code (`TAPE-FOUNDER`) is in the public repo**, which
-   defeats invite-only. Same scrub PR removes it; rotate the code if the
-   invite gate matters.
+1. **Robinhood account numbers in the public repo history.** The current
+   tree has been scrubbed and a regression check rejects the known identifiers.
+   Git history still contains the old values; a full history purge
+   (`git filter-repo` + force push) is destructive and remains Keith's call.
+2. **Public invite and referral codes.** The Tape founder code and the five
+   referral URLs are intentionally public acquisition codes supplied for this
+   site. They are not brokerage identifiers or credentials and are preserved.
+   If the product later needs a private access code, use a different value kept
+   out of git and rotate it independently.
 3. **Supabase publishable key in `site/assets/tape.js`** — this one is OK
    by design. It is Supabase's browser-tier key, and the migration SQL
    enables Row Level Security on every table (public read, users write
@@ -84,7 +81,7 @@ could use to steal his data?
 
 ## Standing rules going forward
 
-- Anyone (human or AI) editing this repo: no account numbers, invite
+- Anyone (human or AI) editing this repo: no private account numbers, private invite
   codes, tokens, or keys in any file. Refer to accounts by nickname
   ("Trading", "Agentic").
 - New data source → check its license *and* where its credential will

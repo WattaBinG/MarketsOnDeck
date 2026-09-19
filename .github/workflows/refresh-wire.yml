@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: refresh-wire
+  group: refresh-publish-main
   cancel-in-progress: true
 
 jobs:
@@ -34,4 +34,14 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/assets/wire.json site/assets/wire-archive.json site/index.html
           git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Refresh The Wire')"
-          git push
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            test "$attempt" -lt 3 || exit 1
+            sleep $((attempt * 5))
+          done
+      - name: Deploy committed snapshot to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy

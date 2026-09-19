@@ -229,10 +229,13 @@ function initPinned() {
     var allItems = pinnedItems.concat(cryptoItems);
     if (!allItems.length) { bar.hidden = true; return; }
     bar.hidden = false;
-    var asOfChip = (tickerData && tickerData.asOfLabel)
-      ? '<span class="ticker-asof ticker-asof-pinned" title="Stock and ETF prices as of this time; crypto refreshes on its own schedule. Changes are versus the prior regular-session close. Periodic snapshots, not a live feed.">Stocks as of ' + escapeHtml(tickerData.asOfLabel) + '</span>'
+    var stockAsOfChip = (tickerData && tickerData.asOfLabel)
+      ? '<span class="ticker-asof ticker-asof-pinned" title="Stock and ETF prices as of this time. Changes are versus the prior regular-session close. Periodic snapshots, not a live feed.">Stocks as of ' + escapeHtml(tickerData.asOfLabel) + '</span>'
       : '';
-    bar.innerHTML = allItems.map(renderTickerItem).join('') + asOfChip;
+    var cryptoAsOfChip = (cryptoData && cryptoData.asOf)
+      ? '<span class="ticker-asof ticker-asof-pinned" title="Crypto snapshot timestamp from its separate refresh job. Periodic snapshot, not a live feed.">Crypto as of ' + escapeHtml(timeAgoLabel(cryptoData.asOf)) + '</span>'
+      : '<span class="ticker-asof ticker-asof-pinned">Crypto as-of unavailable</span>';
+    bar.innerHTML = allItems.map(renderTickerItem).join('') + stockAsOfChip + cryptoAsOfChip;
   }).catch(function () { bar.hidden = true; });
 }
 

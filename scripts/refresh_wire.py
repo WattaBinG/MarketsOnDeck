@@ -37,6 +37,7 @@ INDEX = SITE / "index.html"
 
 MAX_ITEMS = 17          # list length on the homepage (matches current layout)
 MAX_AGE_HOURS = 36      # older items fall off the list into the archive
+MIN_FEED_SUCCESS_RATIO = 0.60  # preserve the last good snapshot during broad provider outages
 ARCHIVE_CAP = 200
 
 # Sticky-lead tuning (see AUTOMATION.md for the rationale):
@@ -189,8 +190,9 @@ def main():
                 "_ts": ts.timestamp(),
                 "_known_ts": known_ts,
             })
-    if ok_feeds == 0:
-        print("all feeds failed; leaving last good wire in place", file=sys.stderr)
+    minimum_ok = max(1, int(len(FEEDS) * MIN_FEED_SUCCESS_RATIO + 0.999))
+    if ok_feeds < minimum_ok:
+        print(f"only {ok_feeds}/{len(FEEDS)} feeds succeeded (need {minimum_ok}); leaving last good wire in place", file=sys.stderr)
         sys.exit(1)
 
     items.sort(key=lambda x: x["_ts"], reverse=True)
@@ -199,7 +201,8 @@ def main():
     cutoff = now_epoch - MAX_AGE_HOURS * 3600
 
     fresh = [it for it in items if it["_ts"] >= cutoff]
-    keep, aged = fresh[:MAX_ITEMS + 4], fresh[MAX_ITEMS + 4:]
+    fetched_aged = [it for it in items if it["_ts"] < cutoff]
+    keep, aged = fresh[:MAX_ITEMS + 4], fetched_aged + fresh[MAX_ITEMS + 4:]
 
     # Cluster same-story headlines (deterministic greedy pass, recency order).
     clusters = []
@@ -251,6 +254,20 @@ def main():
                 if jaccard(c["tokens"], inc_tok) >= CLUSTER_JACCARD:
                     inc_cluster = c
                     break
+        if inc_cluster is None:
+            # Persist a young incumbent even after it falls below a feed's short
+            # window. Score its saved item with the same deterministic decay so
+            # it still must clear the documented 70% challenger threshold.
+            try:
+                inc_ts = datetime.fromisoformat(incumbent["timestamp"].replace("Z", "+00:00")).timestamp()
+            except Exception:
+                inc_ts = 0
+            if inc_ts and now_epoch - inc_ts <= MAX_LEAD_AGE_HOURS * 3600:
+                saved = dict(incumbent)
+                saved["_ts"] = inc_ts
+                saved["_known_ts"] = True
+                inc_cluster = {"tokens": tokens(saved.get("headline", "")), "items": [saved]}
+                inc_cluster["score"], _, _, _ = cluster_score(inc_cluster, now_epoch)
         if inc_cluster is challenger:
             # The incumbent's story is still the top-scoring story: lead held.
             held = True
@@ -289,6 +306,20 @@ def main():
         archive = {"items": []}
     have = {a.get("url") for a in archive.get("items", [])}
     new_arch = []
+    current_urls = {it["url"] for it in items}
+    prior_visible = []
+    if incumbent:
+        prior_visible.append(incumbent)
+    prior_visible.extend(prior.get("items", []) if isinstance(prior, dict) else [])
+    for old in prior_visible:
+        if old.get("url") and old.get("url") not in current_urls and old.get("url") not in have:
+            try:
+                old_ts = datetime.fromisoformat(old.get("timestamp", "").replace("Z", "+00:00")).timestamp()
+            except Exception:
+                old_ts = now_epoch
+            if old_ts < cutoff:
+                have.add(old["url"])
+                new_arch.append({k: old.get(k, "") for k in ("headline", "url", "source", "category", "timestamp")})
     for it in aged + overflow:
         if it["url"] not in have:
             have.add(it["url"])
