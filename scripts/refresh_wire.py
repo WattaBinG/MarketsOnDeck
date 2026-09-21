@@ -174,6 +174,11 @@ WB_SOURCE = "Walter Bloomberg (unofficial mirror)"
 WB_MAX_ITEMS = 8
 DISCORD_SOURCE = "MarketsOnDeck Discord"
 DISCORD_MAX_ITEMS = 10
+# Keith's news channel also carries sports bots (TweetShift homer/goal posts).
+# Those never belong on a finance wire: skip known sports-bot authors and
+# require every Discord item to mention markets, same rule the general RSS
+# feeds already follow.
+DISCORD_IGNORE_AUTHORS = ("tweetshift",)
 
 
 def load_state():
@@ -248,8 +253,25 @@ def fetch_discord(state):
     if not token or not channel:
         print("discord: DISCORD_BOT_TOKEN / DISCORD_NEWS_CHANNEL_ID not set; skipping (wire unaffected)")
         return []
+    # TEMP DIAGNOSTIC (revert before merge): who is the bot and can it see the channel?
+    for label, url in (("bot", "https://discord.com/api/v10/users/@me"),
+                       ("channel", f"https://discord.com/api/v10/channels/{channel}")):
+        try:
+            req = Request(url, headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
+            with urlopen(req, timeout=20) as r:
+                d = json.loads(r.read().decode("utf-8", "replace"))
+            if label == "bot":
+                print(f"discord diag: bot username={d.get('username')} bot_id={d.get('id')}")
+            else:
+                print(f"discord diag: channel name={d.get('name')!r} type={d.get('type')} guild_id={d.get('guild_id')}")
+        except HTTPError as e:
+            print(f"discord diag: {label} HTTP {e.code}")
+        except Exception as e:
+            print(f"discord diag: {label} error {e}")
     items = []
     newest = None
+    skipped_author = 0
+    skipped_offtopic = 0
     after = str(state.get("discord_last_message_id") or "")
     pages = 0
     while pages < 3:  # at most 300 messages per run
@@ -282,6 +304,10 @@ def fetch_discord(state):
             if not mid:
                 continue
             newest = mid if newest is None else max(newest, mid, key=int)
+            author = str((msg.get("author") or {}).get("username") or "").lower()
+            if any(ig in author for ig in DISCORD_IGNORE_AUTHORS):
+                skipped_author += 1
+                continue
             content = (msg.get("content") or "").strip()
             urls = re.findall(r"https?://[^\s<>()]+", content)
             text = re.sub(r"\s+", " ", re.sub(r"https?://[^\s<>()]+", "", content)).strip(" -|")
@@ -292,6 +318,9 @@ def fetch_discord(state):
                     urls = [emb["url"]]
             if not text or not urls:
                 continue  # a wire item needs both a headline and an outbound link
+            if not MONEY.search(text):
+                skipped_offtopic += 1
+                continue  # sports and other non-market chatter stays off the wire
             try:
                 ts = datetime.fromisoformat(str(msg.get("timestamp")).replace("Z", "+00:00"))
             except (ValueError, TypeError):
@@ -314,7 +343,10 @@ def fetch_discord(state):
         prev = str(state.get("discord_last_message_id") or "0")
         state["discord_last_message_id"] = max(prev, newest, key=int)
     items.sort(key=lambda i: i["_ts"], reverse=True)
-    return items[:DISCORD_MAX_ITEMS]
+    kept = items[:DISCORD_MAX_ITEMS]
+    print(f"discord: {len(kept)} market items kept, {skipped_author} sports-bot posts skipped, "
+          f"{skipped_offtopic} non-market posts skipped")
+    return kept
 
 
 def main():
