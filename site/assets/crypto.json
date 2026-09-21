@@ -1,24 +1,9 @@
 {
-  "asOf": "2026-09-18T16:51:17Z",
-  "source": "Coinbase Exchange (public market data)",
+  "asOf": "2026-09-21T18:42:19Z",
+  "source": "Robinhood MCP (live quotes) — bridged from the prior automation until this run's own Coinbase-sourced refresh takes over post-merge",
   "items": [
-    {
-      "symbol": "BTC",
-      "price": 80791.39,
-      "change": 4103.36,
-      "changePercent": 5.35
-    },
-    {
-      "symbol": "ETH",
-      "price": 2588.5,
-      "change": 120.23,
-      "changePercent": 4.87
-    },
-    {
-      "symbol": "SOL",
-      "price": 111.3,
-      "change": 9.98,
-      "changePercent": 9.85
-    }
+    { "symbol": "BTC", "price": 85952.98, "change": 4534.30, "changePercent": 5.57 },
+    { "symbol": "ETH", "price": 2748.80, "change": 83.41, "changePercent": 3.13 },
+    { "symbol": "SOL", "price": 117.34, "change": 5.80, "changePercent": 5.20 }
   ]
 }

@@ -1,134 +1,155 @@
 {
-  "asOf": "2026-09-18T18:23:20Z",
-  "asOfLabel": "2:23 PM ET",
+  "asOf": "2026-09-21T19:25:00Z",
+  "asOfLabel": "3:25 PM ET",
   "topStory": {
-    "headline": "As Warren Buffett’s reign ends, fans should sell Berkshire — and buy these stocks instead",
-    "url": "https://www.marketwatch.com/story/as-warren-buffetts-reign-ends-fans-should-sell-berkshire-and-buy-these-stocks-instead-bff5ba32?mod=mw_rss_topstories",
-    "source": "MarketWatch",
-    "category": "Markets",
-    "timestamp": "2026-09-18T17:41:00Z",
-    "leadSince": "2026-09-18T18:23:15Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "AMD Hits $1 Trillion Market Cap for First Time as Chip Rally Sends Nasdaq to Three-Month High",
+    "url": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html",
+    "source": "CNBC",
+    "category": "Movers",
+    "timestamp": "2026-09-21T19:25:00Z",
+    "leadSince": "2026-09-21T19:25:00Z",
+    "image": "/assets/images/wire-movers.jpg"
   },
   "items": [
     {
-      "headline": "Wendy’s shares slip after US franchisee files for bankruptcy",
-      "url": "https://www.investing.com/news/stock-market-news/wendys-shares-slip-after-us-franchisee-files-for-bankruptcy-93CH-4907773",
-      "source": "Investing.com",
+      "headline": "Nasdaq 100 Jumps to Three-Month High as Chip Rally Extends Winning Streak to Third Session, Intel Soars 14%",
+      "url": "https://www.benzinga.com/news/26/09/61904615/nasdaq-100-rallies-intel-soars-14-stock-market-today",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-21T17:51:00Z"
+    },
+    {
+      "headline": "Markets Can Handle a Hawkish Fed, Not Uncertainty: Taking Stock",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/markets-can-handle-a-hawkish-fed-not-uncertainty-taking-stock",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-09-21T13:15:00Z"
+    },
+    {
+      "headline": "Emerging-Market Stocks, Currencies Gain After US-China Talks",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/emerging-market-stocks-currencies-gain-after-us-china-talks",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-09-21T14:30:00Z"
+    },
+    {
+      "headline": "Diesel Hits Record $6.51 a Gallon as Fuel Crisis Deepens: Strategist Warns of a Deficit 'No Handshake' Can Refill",
+      "url": "https://www.benzinga.com/markets/commodities/26/09/61890221/diesel-hits-historic-6-51-gal-commodity-strategist-warns-we-are-facing-a-deficit-that-no-handshake-can-refill",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-21T10:59:00Z"
+    },
+    {
+      "headline": "Russia Set to Extend Diesel Export Ban Beyond End of September",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/russia-set-to-extend-diesel-export-ban-beyond-end-of-september",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-09-21T09:00:00Z"
+    },
+    {
+      "headline": "Fed's Goolsbee: Strong Demand May Be Adding to US Inflation, 'No Ambiguity' How Fed Would React",
+      "url": "https://www.fultonsun.com/news/2026/sep/21/feds-goolsbee-strong-demand-may-be-adding-to-us-inflation-no-ambiguity-how-fed-would-react/",
+      "source": "Reuters via Fulton Sun",
+      "category": "Macro",
+      "timestamp": "2026-09-21T14:00:00Z"
+    },
+    {
+      "headline": "UBS's Zhao Says He Will Sell Yen If Japan Intervenes to Support Currency Again",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/ubs-am-s-zhao-is-ready-to-sell-yen-if-japan-intervenes-again",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-09-21T05:00:00Z"
+    },
+    {
+      "headline": "Trump Presses Zelenskiy to Stop Hitting Russian Refineries",
+      "url": "https://www.irishtimes.com/world/europe/2026/09/21/trump-presses-zelenskiy-to-stop-hitting-russian-refineries/",
+      "source": "The Irish Times",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-21T16:00:00Z"
+    },
+    {
+      "headline": "Trump Signs Lindsey O. Graham Sanctioning Russia and Iran Act Into Law",
+      "url": "https://www.cbsnews.com/news/trump-signs-russia-sanctions-bill-lindsey-graham/",
+      "source": "CBS News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-19T20:00:00Z"
+    },
+    {
+      "headline": "China Threatens to Upend Trump-Xi Summit Over $14 Billion Taiwan Arms Package",
+      "url": "https://www.thenationalnews.com/news/us/2026/09/21/trump-set-for-washington-summit-with-xi-focused-on-trade-taiwan-and-ai/",
+      "source": "The National",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-21T16:00:00Z"
+    },
+    {
+      "headline": "Trump Warns Iran of Economic Destruction or Elimination of Its Leadership Without a Deal",
+      "url": "https://www.cnbc.com/2026/09/21/us-iran-war-trump-hormuz.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-21T06:00:00Z"
+    },
+    {
+      "headline": "Iran's Military Says US Preparing to Resume Strikes, Threatens 'Painful' Attacks on US Bases",
+      "url": "https://www.aljazeera.com/news/2026/9/21/irans-military-says-us-preparing-to-resume-strikes",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-21T07:00:00Z"
+    },
+    {
+      "headline": "Meta Surges as Muse AI Agent Tops App Store, Sparks Chip-Demand Bets",
+      "url": "https://finance.yahoo.com/markets/stocks/article/meta-stock-surges-with-wall-street-bullish-on-new-ai-agent-140959204.html",
+      "source": "Yahoo Finance",
       "category": "Movers",
-      "timestamp": "2026-09-18T18:15:17Z"
+      "timestamp": "2026-09-21T18:00:00Z"
     },
     {
-      "headline": "McDonald's is the new 'Value Meal,' says trader Mike Khouw",
-      "url": "https://www.cnbc.com/2026/09/18/mcdonalds-is-the-new-value-meal-says-trader-mike-khouw.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-18T18:11:47Z"
-    },
-    {
-      "headline": "Lam Research and MicroStrategy among market cap stock movers on Friday",
-      "url": "https://www.investing.com/news/stock-market-news/lam-research-and-microstrategy-among-market-cap-stock-movers-on-friday-93CH-4907768",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-18T18:06:10Z"
-    },
-    {
-      "headline": "Orion180 Insurance valued at $1.14 billion as shares fall in debut",
-      "url": "https://www.investing.com/news/stock-market-news/orion180-insurance-valued-at-114-billion-as-shares-fall-in-debut-4907725",
-      "source": "Investing.com",
+      "headline": "Accenture Rebounds After Friday Selloff as Anthropic Partnership Draws Attention",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61889286/accenture-rebounds-after-friday-selloff-as-anthropic-partnership-draws-attention",
+      "source": "Benzinga",
       "category": "Movers",
-      "timestamp": "2026-09-18T18:01:21Z"
+      "timestamp": "2026-09-21T13:00:00Z"
     },
     {
-      "headline": "Explainer-Why France’s budget problems have driven its bond risk premium to 2012 highs",
-      "url": "https://www.investing.com/news/economy-news/explainerwhy-frances-budget-problems-have-driven-its-bond-risk-premium-to-2012-highs-4907752",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-18T18:00:58Z"
+      "headline": "Coinbase Launches IPO Access for US Traders as Part of its 'Complete Global Financial Platform'",
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/09/61905572/coinbase-launches-ipo-access-for-us-traders-as-part-of-its-complete-global-financial-platform",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-21T18:30:00Z"
     },
     {
-      "headline": "Economic data releases and Fed speech highlight Monday’s calendar",
-      "url": "https://www.investing.com/news/stock-market-news/economic-data-releases-and-fed-speech-highlight-mondays-calendar-93CH-4907762",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-18T18:00:28Z"
+      "headline": "MicroStrategy, Coinbase Shares Surge as Bitcoin Tops $85,000 and Short Sellers Get Squeezed",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61894513/top-6-crypto-stocks-climbing-with-bitcoin-right-now",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-21T15:30:00Z"
     },
     {
-      "headline": "Hackers breached OpenAI, adding to fever pitch of security and safety concerns",
-      "url": "https://www.nbcnews.com/tech/security/hackers-breach-openai-rcna598518",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-09-18T18:00:13Z"
+      "headline": "SpaceX Defies Gravity With a Nasdaq-100 Double-Weighting Boost",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-defies-gravity-nasdaq-100-135500318.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-09-21T13:55:00Z"
     },
     {
-      "headline": "Constellation Brands options positioning signals near-term bearish bias",
-      "url": "https://www.investing.com/news/stock-market-news/constellation-brands-options-positioning-signals-nearterm-bearish-bias-93CH-4907759",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-18T17:59:55Z"
-    },
-    {
-      "headline": "SpaceX scores another $950 million from NASA for 3 more crewed flights to ISS",
-      "url": "https://www.cnbc.com/2026/09/18/spacex-scores-950-million-from-nasa-for-3-more-crewed-flights-to-iss-.html",
+      "headline": "Critical Metals, Greenland-Linked Stocks Surge as Much as 165% After US-Denmark Security Pact",
+      "url": "https://www.cnbc.com/2026/09/21/greenland-trump-denmark-deal-stocks-mining.html",
       "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-18T17:41:45Z"
+      "category": "Movers",
+      "timestamp": "2026-09-21T13:00:00Z"
     },
     {
-      "headline": "JPMorgan, Citigroup CEOs attending Trump's state dinner for China's Xi: Sources",
-      "url": "https://www.cnbc.com/2026/09/18/trump-xi-state-dinner-jpmorgan-jamie-dimon.html",
+      "headline": "Paramount and Warner Bros. Discovery Rally on Word of Antitrust Settlement Progress",
+      "url": "https://www.tradingpedia.com/2026/09/21/paramount-and-warner-bros-rally-on-merger-settlement-word/",
+      "source": "TradingPedia",
+      "category": "Movers",
+      "timestamp": "2026-09-21T15:00:00Z"
+    },
+    {
+      "headline": "Novo Shares Slide as Drugmaker Lays Out Post-Wegovy Growth Strategy",
+      "url": "https://www.cnbc.com/2026/09/21/novo-nordisk-stock-sales-target-obesity-drugs.html",
       "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-18T17:34:49Z"
-    },
-    {
-      "headline": "Auto industry urges Trump to bar Chinese automakers in U.S. ahead of Xi visit",
-      "url": "https://www.cnbc.com/2026/09/18/xi-visit-automakers-urge-trump-to-bar-chinese-automakers-in-us.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-18T17:11:39Z"
-    },
-    {
-      "headline": "Anthropic and OpenAI need truly independent safety evaluators, experts say in public letter",
-      "url": "https://www.cnbc.com/2026/09/18/ai-safety-evaluators-anthropic-openai-models-security.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-18T17:02:32Z"
-    },
-    {
-      "headline": "Two signs investors don’t have to fear an AI slowdown",
-      "url": "https://www.marketwatch.com/story/two-signs-investors-dont-have-to-fear-an-ai-slowdown-5ec40948?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-18T17:02:00Z"
-    },
-    {
-      "headline": "War in Iran 'jeopardises the Trump presidency', ex-Obama National Security Council member says",
-      "url": "https://www.france24.com/en/tv-shows/t%C3%AAte-%C3%A0-t%C3%AAte/20260918-war-in-iran-jeopardises-the-trump-presidency-ex-obama-national-security-council-member-says",
-      "source": "France 24",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-18T17:01:29Z"
-    },
-    {
-      "headline": "What’s really driving inflation and rising interest rates",
-      "url": "https://www.marketwatch.com/story/whats-really-driving-inflation-and-rising-interest-rates-59a9cd51?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-09-18T16:50:00Z"
-    },
-    {
-      "headline": "Trump's $403 million war chest is finally being spent on the midterms. Now comes the hard part",
-      "url": "https://www.cnbc.com/2026/09/18/trump-election-ad-spend-maga-inc.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-18T16:49:03Z"
-    },
-    {
-      "headline": "Nike parts ways with Kylian Mbappé, soccer superstar signs with On",
-      "url": "https://www.cnbc.com/2026/09/18/kylian-mbappe-signs-with-on-after-nike-parts-ways.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-18T16:42:14Z"
+      "category": "Movers",
+      "timestamp": "2026-09-21T13:30:00Z"
     }
   ]
 }
