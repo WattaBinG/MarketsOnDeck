@@ -268,6 +268,28 @@ def fetch_discord(state):
             print(f"discord diag: {label} HTTP {e.code}")
         except Exception as e:
             print(f"discord diag: {label} error {e}")
+    # TEMP DIAGNOSTIC 2: what guilds is the bot in, and which channels can it see?
+    try:
+        req = Request("https://discord.com/api/v10/users/@me/guilds",
+                      headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
+        with urlopen(req, timeout=20) as r:
+            guilds = json.loads(r.read().decode("utf-8", "replace"))
+        print(f"discord diag: bot is in {len(guilds)} guild(s)")
+        for g in guilds[:5]:
+            gid = g.get("id")
+            print(f"discord diag: guild {g.get('name')!r} id={gid}")
+            try:
+                req = Request(f"https://discord.com/api/v10/guilds/{gid}/channels",
+                              headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
+                with urlopen(req, timeout=20) as r:
+                    chans = json.loads(r.read().decode("utf-8", "replace"))
+                for c in chans:
+                    if c.get("type") in (0, 5):  # text + announcement channels
+                        print(f"discord diag:   channel {c.get('name')!r} id={c.get('id')}")
+            except HTTPError as e:
+                print(f"discord diag:   channels HTTP {e.code}")
+    except HTTPError as e:
+        print(f"discord diag: guilds HTTP {e.code}")
     items = []
     newest = None
     skipped_author = 0
