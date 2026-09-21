@@ -107,9 +107,10 @@ Both daily pieces (Morning Brief and Market Tape) must cover, every time, not ju
    a PR review bot). Pull crypto from `site/assets/crypto.json` (refreshed hourly, 24/7) the same way. Not every
    benchmark needs its own paragraph — weave them into the thread, but don't silently drop QQQ/DIA/crypto just
    because SPY is carrying the day's story.
-2. **Both accounts, not just Trading** — pull positions from BOTH the Trading account (account_number 5RY58840,
-   mask to •••8840) AND the Agentic account (account_number 778321117, mask to •••1117) via
-   `get_accounts` → `get_equity_positions` for each. Same rule as before on when to mention a position: weave it
+2. **Both accounts, not just Trading** — pull positions from BOTH the Trading account AND the Agentic account via
+   `get_accounts` → `get_equity_positions` for each (account numbers come from the live MCP call, never hardcode
+   one in this repo — if an account number ever needs to appear in published prose, mask it to the last 4 digits
+   only, e.g. •••8840). Same rule as before on when to mention a position: weave it
    in only if genuinely relevant to the day's real action; don't force an irrelevant holding into the thread just
    to cover both accounts. But both accounts must actually be checked every time — silently checking only Trading
    is the bug that prompted this note.
