@@ -34,25 +34,38 @@
     },
     {
       "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "optionType": "call",
+      "strike": 155,
+      "expiration": "2026-10-02",
+      "quantity": 2,
+      "avgCost": 478.0,
+      "currentPrice": 473.0,
+      "priorClose": 625.0,
+      "unrealizedGain": -10.0
+    },
+    {
+      "account": "Trading",
       "symbol": "HD",
       "assetType": "option",
       "optionType": "call",
       "strike": 300,
       "expiration": "2026-10-02",
-      "quantity": 3,
-      "avgCost": 441.67,
+      "quantity": 4,
+      "avgCost": 447.5,
       "currentPrice": 630.0,
       "priorClose": 840.0,
-      "unrealizedGain": 565.0
+      "unrealizedGain": 730.0
     },
     {
       "account": "Trading",
       "symbol": "ETH",
       "assetType": "crypto",
       "quantity": 1.6,
-      "avgCost": 2751.9,
-      "currentPrice": 2751.9,
-      "priorClose": 2751.9,
+      "avgCost": 2750.56,
+      "currentPrice": 2750.56,
+      "priorClose": 2750.56,
       "unrealizedGain": 0
     },
     {
