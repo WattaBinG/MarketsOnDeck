@@ -253,43 +253,6 @@ def fetch_discord(state):
     if not token or not channel:
         print("discord: DISCORD_BOT_TOKEN / DISCORD_NEWS_CHANNEL_ID not set; skipping (wire unaffected)")
         return []
-    # TEMP DIAGNOSTIC (revert before merge): who is the bot and can it see the channel?
-    for label, url in (("bot", "https://discord.com/api/v10/users/@me"),
-                       ("channel", f"https://discord.com/api/v10/channels/{channel}")):
-        try:
-            req = Request(url, headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
-            with urlopen(req, timeout=20) as r:
-                d = json.loads(r.read().decode("utf-8", "replace"))
-            if label == "bot":
-                print(f"discord diag: bot username={d.get('username')} bot_id={d.get('id')}")
-            else:
-                print(f"discord diag: channel name={d.get('name')!r} type={d.get('type')} guild_id={d.get('guild_id')}")
-        except HTTPError as e:
-            print(f"discord diag: {label} HTTP {e.code}")
-        except Exception as e:
-            print(f"discord diag: {label} error {e}")
-    # TEMP DIAGNOSTIC 2: what guilds is the bot in, and which channels can it see?
-    try:
-        req = Request("https://discord.com/api/v10/users/@me/guilds",
-                      headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
-        with urlopen(req, timeout=20) as r:
-            guilds = json.loads(r.read().decode("utf-8", "replace"))
-        print(f"discord diag: bot is in {len(guilds)} guild(s)")
-        for g in guilds[:5]:
-            gid = g.get("id")
-            print(f"discord diag: guild {g.get('name')!r} id={gid}")
-            try:
-                req = Request(f"https://discord.com/api/v10/guilds/{gid}/channels",
-                              headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
-                with urlopen(req, timeout=20) as r:
-                    chans = json.loads(r.read().decode("utf-8", "replace"))
-                for c in chans:
-                    if c.get("type") in (0, 5):  # text + announcement channels
-                        print(f"discord diag:   channel {c.get('name')!r} id={c.get('id')}")
-            except HTTPError as e:
-                print(f"discord diag:   channels HTTP {e.code}")
-    except HTTPError as e:
-        print(f"discord diag: guilds HTTP {e.code}")
     items = []
     newest = None
     skipped_author = 0
