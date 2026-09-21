@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20260916a">
+<link rel="stylesheet" href="/assets/style.css?v=20260918a">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
 <meta property="og:image" content="https://marketsondeck.wattabing.workers.dev/assets/brand/badge-1200.jpg">
@@ -67,9 +67,33 @@
     </div>
   </div>
 
+
+  <div class="container">
+    <a class="record-band" id="recordBand" href="/record/index.html" hidden>
+      <div class="record-band-top">
+        <span class="eyebrow">The Public Record &middot; Straight From the Real Account</span>
+        <span class="record-band-asof" id="recordBandAsOf"></span>
+      </div>
+      <div class="record-band-main">
+        <div class="record-band-stats">
+          <div class="record-band-stat"><span class="stat-num num" id="rbPnl">&mdash;</span><span class="stat-label">Net Realized, 2026</span></div>
+          <div class="record-band-stat"><span class="stat-num num" id="rbWinRate">&mdash;</span><span class="stat-label">Win Rate</span></div>
+          <div class="record-band-stat"><span class="stat-num num" id="rbTrades">&mdash;</span><span class="stat-label">Closed Trades</span></div>
+          <div class="record-band-stat"><span class="stat-num num" id="rbSpy">&mdash;</span><span class="stat-label">S&amp;P 500, Same Span</span></div>
+        </div>
+        <div class="record-band-chart" id="recordBandChart" role="img" aria-label="Cumulative realized profit and loss curve for 2026"></div>
+      </div>
+      <span class="record-band-cta">Every trade on the public record, losses included &rarr;</span>
+    </a>
+  </div>
+
   <div class="container">
     <div class="wire-layout">
     <div class="wire-main">
+    <div class="wire-toolbar">
+      <div class="wire-filters" id="wireFilters" role="group" aria-label="Filter headlines by category"></div>
+      <span class="wire-updated" id="wireUpdated"></span>
+    </div>
     <!-- WIRE_TOP_START — updated hourly by the Wire Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
     <a class="wire-top" href="https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html" target="_blank" rel="noopener">
       <img class="wire-top-image" src="/assets/images/wire-movers.jpg" alt="">
@@ -106,7 +130,7 @@
 
     <a class="wire-archive-link" href="/archive/index.html">Browse older headlines in the Wire Archive &rarr;</a>
 
-    <p class="footer-disclosure" style="margin-top:32px; padding-top:16px; border-top:1px solid var(--border);">Headlines are aggregated from real published sources and real-time market data feeds and link out to the original reporting &mdash; MarketsOnDeck doesn't write or verify the underlying reporting itself. Nothing here is investment advice or a recommendation to buy or sell any security.</p>
+    <p class="footer-disclosure" style="margin-top:32px; padding-top:16px; border-top:1px solid var(--border);">Headlines are aggregated from real published sources and link out to the original reporting &mdash; MarketsOnDeck doesn't write or verify the underlying reporting itself. Market prices shown on this page are periodic snapshots labeled with an as-of time, not a live feed. Nothing here is investment advice or a recommendation to buy or sell any security.</p>
     </div>
 
     <aside class="wire-sidebar">
@@ -166,6 +190,6 @@
     <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
   </div>
 </footer>
-<script src="/assets/main.js?v=20260916a"></script>
+<script src="/assets/main.js?v=20260918a"></script>
 </body>
 </html>

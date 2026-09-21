@@ -54,7 +54,7 @@ Tone: direct, receipts-first, zero hype — losses get exactly as much airtime a
   Cloudflare dashboard until that's fixed.
 - Site has: `episodes/` (Episode 1 "The Baseline," Episode 2 "The August Swing"), `brief/` (Morning Brief,
   archive-style — new entries append below existing ones, nothing is deleted/edited after the fact), `tape/`
-  ("The Tape" — Supabase-backed prediction leaderboard, invite-only, `TAPE-FOUNDER` invite code), `about.html`,
+  ("The Tape" — Supabase-backed prediction leaderboard, invite-only; the invite code is shared privately, never committed — see docs/SECURITY.md), `about.html`,
   `legal/`.
 - **The decision-ledger Episode/Shorts scripts are CANCELLED** — Keith pivoted away from that format on 2026-08-30.
   Do not resume writing in that format unless he explicitly asks again.
@@ -64,9 +64,9 @@ Tone: direct, receipts-first, zero hype — losses get exactly as much airtime a
   down); (2) a daily Morning Brief, automated via a claude.ai cloud routine that
   drafts a new brief every weekday morning and opens a GitHub PR for Keith's review — it never pushes to main or
   merges on its own.
-- Two Robinhood accounts exist: "Trading" (main/margin — the one with the real trading story and
-  8-week P&L) and "Agentic" (cash, small — the one the video project documents). Don't conflate them.
-  (Account numbers are deliberately kept out of this repo; see docs/SECURITY.md. The MCP connector resolves them.)
+- Two Robinhood accounts exist: "Trading" (main/margin — the one with the real trading story and 8-week
+  P&L) and "Agentic" (cash, small — the one the video project documents). Account numbers are deliberately
+  kept out of this repo (see docs/SECURITY.md); the MCP connector resolves them. Don't conflate them.
 
 ## Working style and safety
 

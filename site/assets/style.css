@@ -565,3 +565,85 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   border: 1px solid var(--border-strong); background: var(--surface); color: var(--text); margin: 18px 0 6px;
 }
 .archive-empty { color: var(--text-muted); padding: 24px 0; }
+
+/* ---- First-release pass (2026-09-18) ---- */
+
+/* Homepage record band: scoreboard + equity curve from trades.json */
+.record-band {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 18px 22px; margin: 0 0 28px; box-shadow: var(--shadow-sm);
+  transition: box-shadow .15s ease, border-color .15s ease;
+}
+.record-band[hidden] { display: none; }
+.record-band:hover { box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+.record-band-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.record-band-asof { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); }
+.record-band-main { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 26px; align-items: center; margin-top: 14px; }
+.record-band-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 18px; }
+.record-band-stat .stat-num { display: block; font-size: 26px; }
+.record-band-stat .stat-label { display: block; }
+.record-band-chart svg { width: 100%; height: auto; display: block; }
+.record-band-cta { display: inline-block; margin-top: 12px; font-size: 14px; font-weight: 600; color: var(--accent); }
+.record-band:hover .record-band-cta { text-decoration: underline; }
+@media (max-width: 780px) {
+  .record-band-main { grid-template-columns: 1fr; gap: 18px; }
+  .record-band-stat .stat-num { font-size: 22px; }
+}
+
+/* Wire toolbar: category filters + freshness label */
+.wire-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px 18px; flex-wrap: wrap; margin: 0 0 18px; }
+.wire-filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.wire-filter-btn {
+  font-family: var(--font-body); font-size: 13px; font-weight: 600; line-height: 1;
+  padding: 8px 14px; border-radius: 999px; border: 1px solid var(--border-strong);
+  background: transparent; color: var(--text-muted); cursor: pointer;
+  transition: border-color .12s ease, color .12s ease, background .12s ease;
+}
+.wire-filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.wire-filter-btn.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.wire-updated { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); white-space: nowrap; }
+.wire-time { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); white-space: nowrap; margin-left: auto; }
+@media (max-width: 640px) { .wire-time { font-size: 10px; } }
+
+/* Pinned ticker as-of chip sits at the end of the pinned row */
+.ticker-asof-pinned { border-right: none; border-left: 1px solid var(--border); margin-left: auto; text-transform: none; }
+
+/* The Record on phones: keep Date / Symbol / Realized P&L visible without
+   sideways scrolling by dropping the lower-priority columns under 700px. */
+@media (max-width: 700px) {
+  .record-table .col-optional { display: none; }
+}
+
+/* The top story goes text-led: the generic AI category art (rocket/globe
+   stock image) undercut the receipts-first brand. The hourly Wire routine's
+   markup is untouched — the image is simply not displayed. Revert this one
+   rule to bring the art back. */
+.wire-top-image { display: none; }
+.wire-top { padding-top: 8px; }
+
+/* Referral offer page */
+.referral-deck{max-width:720px;font-size:18px;color:var(--text-muted);margin:8px 0 14px}
+.referral-note{border:1px solid rgba(216,158,46,.45);background:rgba(216,158,46,.08);padding:18px 20px;margin:0 0 28px;line-height:1.6}
+.referral-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:0 0 34px}
+.referral-card{border:1px solid var(--border);background:var(--surface);padding:24px;display:flex;flex-direction:column;min-height:390px;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.referral-card--featured{border-top:4px solid var(--accent)}
+.referral-card__top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}
+.referral-label,.offer-status{font-family:"IBM Plex Mono",monospace;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+.referral-label{color:var(--text-muted)}
+.offer-status{padding:5px 8px;border-radius:999px;white-space:nowrap}
+.offer-status--verified{background:rgba(53,150,92,.13);color:#247345}
+.offer-status--check{background:rgba(216,158,46,.15);color:#8a5b00}
+.offer-status--pending{background:rgba(120,126,138,.14);color:var(--text-muted)}
+.referral-card h2{font-size:30px;margin:0 0 8px}
+.referral-fit{margin:0 0 22px;color:var(--text-muted);min-height:48px}
+.referral-benefit{border-left:3px solid var(--accent);padding:0 0 0 14px;margin-bottom:16px}
+.referral-benefit span{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-bottom:5px}
+.referral-benefit strong{font-size:16px;line-height:1.45}
+.referral-fine{font-size:13px;color:var(--text-muted);line-height:1.55;margin:0 0 22px}
+.referral-cta{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding:13px 15px;background:var(--accent);color:#111!important;text-decoration:none!important;font-weight:700}
+.referral-cta:hover{filter:brightness(1.06)}
+.referral-cta--secondary{background:transparent;color:var(--text)!important;border:1px solid var(--border)}
+.referral-review-box{border:1px dashed var(--border);padding:20px 22px;margin:0 0 34px;background:var(--surface)}
+.referral-review-box h2{font-size:22px;margin-top:0}.referral-review-box p{margin-bottom:0}
+@media(max-width:760px){.referral-grid{grid-template-columns:1fr}.referral-card{min-height:0;padding:20px}.referral-card__top{align-items:flex-start;flex-direction:column}.referral-fit{min-height:0}.referral-deck{font-size:16px}}
