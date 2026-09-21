@@ -24,15 +24,18 @@ jobs:
           python-version: '3.12'
       - run: pip install feedparser
       - name: Refresh wire
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_NEWS_CHANNEL_ID: ${{ vars.DISCORD_NEWS_CHANNEL_ID }}
         run: python3 scripts/refresh_wire.py | tee /tmp/out.txt
       - name: Commit if changed
         run: |
-          if git diff --quiet -- site/assets/wire.json site/assets/wire-archive.json site/index.html; then
+          if [ -z "$(git status --porcelain -- site/assets/wire.json site/assets/wire-archive.json site/index.html data/wire-state.json)" ]; then
             echo "no changes"; exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/assets/wire.json site/assets/wire-archive.json site/index.html
+          git add site/assets/wire.json site/assets/wire-archive.json site/index.html data/wire-state.json
           git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Refresh The Wire')"
           for attempt in 1 2 3; do
             git pull --rebase origin main && git push && break
