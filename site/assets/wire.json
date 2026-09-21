@@ -1,14 +1,28 @@
 {
-  "asOf": "2026-09-21T15:25:00Z",
-  "asOfLabel": "11:25 AM ET",
+  "asOf": "2026-09-21T16:30:00Z",
+  "asOfLabel": "12:30 PM ET",
   "topStory": {
-    "headline": "Bitcoin Tops $85,000 as Crypto Rally Extends, Short Sellers Get Squeezed",
-    "url": "https://www.cnbc.com/2026/09/21/bitcoin-price-crypto-rally.html",
+    "headline": "US, Denmark, Greenland Reach Security Pact; Greenland-Linked Stocks Surge as Much as 165%",
+    "url": "https://www.cnbc.com/2026/09/21/greenland-trump-denmark-deal-stocks-mining.html",
     "source": "CNBC",
-    "category": "Markets",
-    "image": "/assets/images/wire-markets.jpg"
+    "category": "Geopolitics",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
+    {
+      "headline": "Bitcoin Tops $85,000 as Crypto Rally Extends, Short Sellers Get Squeezed",
+      "url": "https://www.cnbc.com/2026/09/21/bitcoin-price-crypto-rally.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-21T14:13:00Z"
+    },
+    {
+      "headline": "Bessent Hails 'Very Successful' US-China Talks on AI, Trade as Stocks Rally Ahead of Trump-Xi Summit",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/bessent-hails-very-successful-china-talks-on-ai-threats-trade",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-09-21T13:22:00Z"
+    },
     {
       "headline": "Stock Market Today: Dow, S&P 500, Nasdaq Rise as Oil Falls, Anticipation Builds for Trump-Xi Summit",
       "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-21-dow-sp-500-nasdaq-080214605.html",
@@ -24,25 +38,32 @@
       "timestamp": "2026-09-21T13:15:00Z"
     },
     {
-      "headline": "Emerging-Market Stocks, Currencies Gain After US-China Talks",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-21/emerging-market-stocks-currencies-gain-after-us-china-talks",
-      "source": "Bloomberg",
-      "category": "Markets",
-      "timestamp": "2026-09-21T11:30:00Z"
-    },
-    {
-      "headline": "Tech Stocks Haven't Been This Cheap Since OpenAI Launched ChatGPT",
-      "url": "https://finance.yahoo.com/markets/article/tech-stocks-havent-been-this-cheap-since-openai-launched-chatgpt-132800172.html",
+      "headline": "Intel Leads Chip Stocks Rally as Qualcomm, AMD and Broadcom Jump",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-leads-chip-stocks-rally-204945385.html",
       "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-21T14:00:00Z"
+      "category": "Movers",
+      "timestamp": "2026-09-21T13:35:00Z"
     },
     {
-      "headline": "'Septemberphobia' Could Give Way to a Big October Rally Despite Trump Uncertainty, Says Market Strategist",
-      "url": "https://www.benzinga.com/markets/market-summary/26/09/61891053/septemberphobia-could-give-way-to-a-big-october-rally-despite-trump-uncertainty-market-strategist-points-to-sp-500s-best-midterm-month",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-21T11:35:00Z"
+      "headline": "SpaceX's Nasdaq 100 Weight Confirmed at 2.82% in Quarterly Rebalance",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-19/spacex-s-nasdaq-100-weight-is-confirmed-at-2-82-in-rebalance",
+      "source": "Bloomberg",
+      "category": "Movers",
+      "timestamp": "2026-09-19T09:00:00Z"
+    },
+    {
+      "headline": "Novo Shares Slide as Drugmaker Lays Out Post-Wegovy Growth Strategy",
+      "url": "https://www.cnbc.com/2026/09/21/novo-nordisk-stock-sales-target-obesity-drugs.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-09-21T13:30:00Z"
+    },
+    {
+      "headline": "HP Slides as It Says PC Industry Will Decline Mid-Single Digits in 2027",
+      "url": "https://seekingalpha.com/news/4644708-hp-slides-as-it-says-pc-industry-will-decline-mid-single-digits-in-2027",
+      "source": "Seeking Alpha",
+      "category": "Movers",
+      "timestamp": "2026-09-21T12:00:00Z"
     },
     {
       "headline": "Diesel Hits Record $6.51 a Gallon as Fuel Crisis Deepens: Strategist Warns of a Deficit 'No Handshake' Can Refill",
@@ -66,6 +87,13 @@
       "timestamp": "2026-09-21T05:00:00Z"
     },
     {
+      "headline": "AI Investment Boom Is 'Massive': Fed's Adam Shapiro Says US Spending Is Shifting From Homes to Data Centers",
+      "url": "https://www.benzinga.com/real-estate/26/09/61889508/ai-investment-boom-is-massive-top-economist-says-us-spending-is-moving-away-from-homes-and-toward-data-centers",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-21T10:17:00Z"
+    },
+    {
       "headline": "Bessent: China 'Very Engaged' on Iran Sanctions as All Iranian Airlines Face Global Shutdown Sept. 23",
       "url": "https://www.arabnews.com/middle-east/us-treasury-chief-says-iran-airlines-to-be-shut-down-sept-23-3002561",
       "source": "Arab News",
@@ -80,6 +108,13 @@
       "timestamp": "2026-09-21T06:00:00Z"
     },
     {
+      "headline": "Iran's Military Says US Preparing to Resume Strikes, Threatens 'Painful' Attacks on US Bases",
+      "url": "https://www.aljazeera.com/news/2026/9/21/irans-military-says-us-preparing-to-resume-strikes",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-21T07:00:00Z"
+    },
+    {
       "headline": "China Confirms Xi's First US Trip in Nearly Three Years, Setting Up Sept. 24 Trump Summit",
       "url": "https://www.bloomberg.com/news/articles/2026-09-21/china-confirms-xi-s-first-trip-to-the-us-in-nearly-three-years",
       "source": "Bloomberg",
@@ -92,55 +127,6 @@
       "source": "UPI",
       "category": "Geopolitics",
       "timestamp": "2026-09-20T22:00:00Z"
-    },
-    {
-      "headline": "Saudi Arabia Confirms Houthi Ballistic Missile Aimed at Riyadh Intercepted, Flights Disrupted",
-      "url": "https://www.aljazeera.com/news/2026/9/19/saudi-led-coalition-says-defences-intercept-houthi-missile-fired-at-riyadh",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-19T04:00:00Z"
-    },
-    {
-      "headline": "China Warns Pending Taiwan Arms Sale Remains a 'Red Line' Ahead of Trump-Xi Summit",
-      "url": "https://www.taipeitimes.com/News/taiwan/archives/2026/09/13/2003864183",
-      "source": "Taipei Times",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-13T10:00:00Z"
-    },
-    {
-      "headline": "SK Hynix, Intel Shares Jump on Reported Talks to Make Memory Chips at Intel's Ohio Site",
-      "url": "https://finance.yahoo.com/technology/articles/sk-hynix-intel-explore-us-114725470.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-16T12:00:00Z"
-    },
-    {
-      "headline": "What's Going On With Intel Stock Monday?",
-      "url": "https://www.benzinga.com/markets/tech/26/09/61891827/whats-going-on-with-intel-stock-monday-7",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-21T12:30:00Z"
-    },
-    {
-      "headline": "SpaceX's Nasdaq 100 Weight Confirmed at 2.82% in Quarterly Rebalance",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-19/spacex-s-nasdaq-100-weight-is-confirmed-at-2-82-in-rebalance",
-      "source": "Bloomberg",
-      "category": "Movers",
-      "timestamp": "2026-09-19T09:00:00Z"
-    },
-    {
-      "headline": "Novo Shares Slide as Drugmaker Lays Out Post-Wegovy Growth Strategy",
-      "url": "https://www.cnbc.com/2026/09/21/novo-nordisk-stock-sales-target-obesity-drugs.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-09-21T13:30:00Z"
-    },
-    {
-      "headline": "HP Slides as It Says PC Industry Will Decline Mid-Single Digits in 2027",
-      "url": "https://seekingalpha.com/news/4644708-hp-slides-as-it-says-pc-industry-will-decline-mid-single-digits-in-2027",
-      "source": "Seeking Alpha",
-      "category": "Movers",
-      "timestamp": "2026-09-21T12:00:00Z"
     }
   ]
 }
