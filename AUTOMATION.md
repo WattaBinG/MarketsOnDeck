@@ -8,7 +8,7 @@ headlines, or commentary.
 | What | Workflow | Cadence | Source |
 |---|---|---|---|
 | Crypto ticker (`assets/crypto.json`) | `refresh-crypto.yml` | every 15 min | Coinbase Exchange public market-data API |
-| The Wire (`assets/wire.json`, `wire-archive.json`, homepage blocks) | `refresh-wire.yml` | hourly, with a sticky lead story | publishers' own public RSS feeds |
+| The Wire (`assets/wire.json`, `wire-archive.json`, homepage blocks) | `refresh-wire.yml` | hourly, with a sticky lead story | publishers' own public RSS feeds, the public Walter Bloomberg Telegram mirror (labeled unofficial), and Keith's own Discord news channel (via his bot) |
 | What to Watch Today (`assets/watch-today.json`) | `refresh-watch-today.yml` | Sun-Thu evenings | BEA and BLS official calendars, Census economic-indicators calendar, Fed + NYSE published calendars, fixed weekly releases |
 
 Each refresh workflow serializes its commit/push with the other publishers and then runs Wrangler to deploy that exact committed snapshot. Deployment requires the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; if either commit, push, or deploy fails, the workflow stays red and the previous production snapshot remains live. Each workflow also has a **Run workflow** button in
@@ -42,11 +42,14 @@ does this deterministically, no AI-written headlines or summaries:
    story, not three items.
 2. Each cluster scores as: sum over its items of (source weight x recency
    decay), multiplied by a corroboration bonus (more distinct sources
-   covering it = more important) and a market-relevance bonus (macro /
-   broad-market / mover keywords). Source weights: Federal Reserve 2.0,
-   CNBC and MarketWatch 1.5, everything else 1.0. Items whose feed omits a
-   publish time score as if 12 hours old, so evergreen filler cannot win on
-   fabricated freshness.
+   covering it = more important), a market-relevance bonus (macro /
+   broad-market / mover keywords), and a magnitude bonus (record / crisis /
+   emergency / extreme-move language — Keith's Drudge rule: the biggest,
+   most attention-grabbing current story leads, not the freshest). Source
+   weights: Federal Reserve, EIA and SEC 2.0 (official/regulatory primary
+   sources), CNBC and MarketWatch 1.5, everything else 1.0. Items whose feed
+   omits a publish time score as if 12 hours old, so evergreen filler cannot
+   win on fabricated freshness.
 3. Sticky rule: the incumbent lead keeps its slot while its story's score
    is at least 70% of the best challenger's and its newest item is under 30
    hours old. A clearly bigger new story (more than ~1.4x the incumbent's
@@ -56,6 +59,36 @@ does this deterministically, no AI-written headlines or summaries:
    commit message carries the decision, and `wire.json`'s `topStory` has a
    `leadSince` timestamp. Other versions of the lead story are kept off the
    list so the same story never appears twice on the homepage.
+5. Walter Bloomberg items can join any story cluster, but a story carried
+   ONLY by the unofficial mirror can never occupy the lead slot — it can
+   appear in the list, clearly labeled, until a publisher confirms it.
+
+## The Wire's non-RSS sources (added 2026-09-21)
+
+- **Walter Bloomberg (unofficial mirror).** The public Telegram preview at
+  t.me/s/WalterBloomberg is parsed hourly. Every item keeps its exact post
+  timestamp, links to the Telegram post, and is labeled "Walter Bloomberg
+  (unofficial mirror)". The last message ID is cached in
+  `data/wire-state.json` as a high-water mark. Any HTML or rate-limit
+  breakage skips the source (fail open); it never counts toward the feed
+  success ratio, so the Wire never depends on it.
+- **Keith's Discord news channel.** His server aggregates headlines and
+  links from several sources; the whole channel is a wire source. His
+  existing "MarketsOnDeck Reader" bot reads it hourly over the REST API
+  (`after=` the cached last message ID, pagination capped at 300 messages,
+  429 `retry_after` honored). Only messages with both text and an outbound
+  link become items. Token comes from repo secret `DISCORD_BOT_TOKEN`,
+  channel from repo variable `DISCORD_NEWS_CHANNEL_ID`; when either is
+  missing the step prints a skip notice and the Wire is unaffected.
+- Both non-RSS sources get up to 4 guaranteed list slots so high-volume RSS
+  cannot crowd fresh mirror/Discord items off the page between hourly runs.
+
+## First-seen timestamps (Keith's freshness rule)
+
+Every Wire item carries `firstSeen`: the time the story first posted to the
+Wire, kept as ranking moves it up or down — never a last-refreshed time.
+The homepage shows it on each item and on the top story (falls back to the
+publisher timestamp on older snapshots).
 
 ## Ticker composition (three layers)
 

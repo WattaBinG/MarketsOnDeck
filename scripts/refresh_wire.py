@@ -13,7 +13,9 @@ exits non-zero and writes nothing, so the site keeps the last good snapshot
 
 LEAD STORY (sticky lead): every run scores each story cluster with a fixed,
 explainable formula (see AUTOMATION.md): source weight x recency decay,
-boosted for cross-source corroboration and market relevance. The incumbent
+boosted for cross-source corroboration, market relevance, and headline
+magnitude (record/crisis/emergency language - the Drudge instinct: biggest
+story leads, not freshest). The incumbent
 lead keeps its slot until a challenger story outscores it by more than
 ~1.4x (STICKY_FACTOR) or its newest item ages past MAX_LEAD_AGE_HOURS — so
 the top of the page only changes when the day's story actually changes.
@@ -92,6 +94,15 @@ MOVE = re.compile(r"\b(soar|surge|jump|plunge|tumble|sink|rall|slide|slump|drop|
                   r"beat|miss|earn|upgrade|downgrade|ipo|deal|acqui|merger|buyback|"
                   r"stock rises|stock falls|shares)\b", re.I)
 BROAD = re.compile(r"\b(s&p|nasdaq|dow jones|wall street|stock market|stocks|futures)\b", re.I)
+# Drudge instinct (Keith 2026-09-21): the headline slot goes to the biggest,
+# most attention-grabbing current story, not just the freshest. These words
+# mark magnitude - records, crises, emergencies, extremes.
+ATTENTION = re.compile(r"\b(record|all[- ]time (high|low)|crash|crisis|emergency|breaking|"
+                       r"historic|unprecedented|biggest|worst|largest|collapse|collapsing|"
+                       r"panic|bailout|default|bankrupt|indict|probe|resign|fired|ousted|"
+                       r"halted|suspended|blackout|meltdown|soars?|surges?|plunges?|craters?|"
+                       r"explodes?|skyrockets?|tumbles?|suffers|slams|warns|warning|alert)\b", re.I)
+ATTENTION_BOOST = 1.30  # score multiplier when a cluster's headlines carry magnitude words
 # Syndicated promo and bot-written filler we never want on the wire.
 BLOCK = re.compile(r"(motley fool|fool\.com|options flow|/news/company-news/|^\d+ (incredible|top|smart) |reasons? to buy)", re.I)
 
@@ -154,7 +165,8 @@ def cluster_score(cluster, now_epoch):
     heads = " ".join(it["headline"] for it in cluster["items"])
     corroboration = 1.0 + 0.35 * (n_sources - 1)
     relevance = 1.25 if (MACRO.search(heads) or BROAD.search(heads) or MOVE.search(heads)) else 1.0
-    return base * corroboration * relevance, base, n_sources, relevance
+    attention = ATTENTION_BOOST if ATTENTION.search(heads) else 1.0
+    return base * corroboration * relevance * attention, base, n_sources, relevance
 
 
 WB_URL = "https://t.me/s/WalterBloomberg"
@@ -383,7 +395,16 @@ def main():
 
     fresh = [it for it in items if it["_ts"] >= cutoff]
     fetched_aged = [it for it in items if it["_ts"] < cutoff]
-    keep, aged = fresh[:MAX_ITEMS + 4], fetched_aged + fresh[MAX_ITEMS + 4:]
+    keep = list(fresh[:MAX_ITEMS + 4])
+    # Guarantee the non-RSS sources a few slots each: with 17 feeds refreshing
+    # hourly, a pure freshest-first cap can crowd every mirror/Discord item
+    # off the list even when they carry fresh news.
+    for src, n in ((WB_SOURCE, 4), (DISCORD_SOURCE, 4)):
+        room = [it for it in fresh if it["source"] == src and it not in keep][:n]
+        for it in room:
+            it["_pinned"] = True
+        keep.extend(room)
+    aged = fetched_aged + [it for it in fresh if it not in keep]
 
     # Cluster same-story headlines (deterministic greedy pass, recency order).
     clusters = []
@@ -407,10 +428,11 @@ def main():
         scored.append((score, base, n_src, rel, c))
     scored.sort(key=lambda s: (-s[0], -max(it["_ts"] for it in s[4]["items"])))
 
-    print("story scores (score | base x corroboration x relevance | sources | headline):")
+    print("story scores (score | base x corroboration x relevance x attention | sources | headline):")
     for score, base, n_src, rel, c in scored[:8]:
         rep = max(c["items"], key=lambda i: i["_ts"])
-        print(f"  {score:5.2f} | {base:5.2f} x {1 + .35*(n_src-1):.2f} x {rel:.2f} | "
+        att = ATTENTION_BOOST if ATTENTION.search(" ".join(i["headline"] for i in c["items"])) else 1.0
+        print(f"  {score:5.2f} | {base:5.2f} x {1 + .35*(n_src-1):.2f} x {rel:.2f} x {att:.2f} | "
               f"{n_src} src | {rep['headline'][:80]}")
 
     # Incumbent lead from the current wire.json.
@@ -436,7 +458,14 @@ def main():
     for it in items:
         it["firstSeen"] = prior_first.get(it["url"], now_iso)
 
-    challenger = scored[0][4] if scored else None
+    challenger = None
+    for _, _, _, _, c in scored:
+        if any(it["source"] != WB_SOURCE for it in c["items"]):
+            challenger = c
+            break
+    if scored and challenger is not scored[0][4]:
+        print("top-scoring story is Walter-Bloomberg-only; mirror is never a sole lead source, "
+              "lead goes to the next eligible story")
     lead_cluster, held = challenger, False
     if incumbent and challenger:
         inc_cluster = None
@@ -491,7 +520,12 @@ def main():
     # List: freshest first, excluding the lead item and duplicate versions of
     # the lead story from other sources.
     lead_dupes = {id(it) for it in lead_cluster["items"]} if lead_cluster else set()
-    rest = [it for it in keep if id(it) not in lead_dupes][:MAX_ITEMS]
+    candidates = [it for it in keep if id(it) not in lead_dupes]
+    # Pinned non-RSS items keep their slots even past the freshness cap, then
+    # everything renders freshest-first.
+    pinned = [it for it in candidates if it.get("_pinned")]
+    unpinned = [it for it in candidates if not it.get("_pinned")]
+    rest = sorted((pinned + unpinned)[:MAX_ITEMS], key=lambda x: x["_ts"], reverse=True)
     listed = {id(it) for it in rest} | lead_dupes
     overflow = [it for it in keep if id(it) not in listed]
 
