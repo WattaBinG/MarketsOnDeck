@@ -39,20 +39,20 @@
       "optionType": "call",
       "strike": 300,
       "expiration": "2026-10-02",
-      "quantity": 2,
-      "avgCost": 425.0,
-      "currentPrice": 447.5,
-      "priorClose": 425.0,
-      "unrealizedGain": 45.0
+      "quantity": 3,
+      "avgCost": 441.67,
+      "currentPrice": 630.0,
+      "priorClose": 840.0,
+      "unrealizedGain": 565.0
     },
     {
       "account": "Trading",
       "symbol": "ETH",
       "assetType": "crypto",
       "quantity": 1.6,
-      "avgCost": 2745.76,
-      "currentPrice": 2745.76,
-      "priorClose": 2745.76,
+      "avgCost": 2751.9,
+      "currentPrice": 2751.9,
+      "priorClose": 2751.9,
       "unrealizedGain": 0
     },
     {
