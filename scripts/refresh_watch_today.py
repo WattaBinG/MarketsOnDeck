@@ -55,6 +55,7 @@ def parse_census(text,target):
  return out
 def render(out):
  lis='\n'.join(f'          <li><span class="watch-time">{html.escape(e["time"])}</span><span class="watch-event">{html.escape(e["event"])}</span></li>' for e in out['events'])
+ if not out['events'] and out.get('note'): lis=f'          <li><span class="watch-time">&mdash;</span><span class="watch-event">{html.escape(out["note"])}</span></li>'
  block=('<!-- WATCH_TODAY_START — updated once each morning by the Watch Today routine; keep this exact structure so the automated edit stays a clean find/replace -->\n'
  '      <div class="watch-box">\n        <div class="watch-box-header">What to Watch Today</div>\n'
  f'        <div class="watch-box-date">{html.escape(out["dateLabel"])}</div>\n        <ul class="watch-list">\n{lis}\n        </ul>\n'
@@ -79,8 +80,10 @@ def main():
  if target.weekday()==3: events += [('8:30 AM ET','Initial Jobless Claims'),('10:30 AM ET','EIA Weekly Natural Gas Storage Report')]
  if target.weekday()==4: events += [('1:00 PM ET','Baker Hughes Rig Count'),('3:30 PM ET','CFTC Commitments of Traders')]
  events=sorted(set(events),key=key)
- if not events: raise RuntimeError(f'no verified events for {target}; preserving last good snapshot')
- out={'date':target.isoformat(),'dateLabel':target.strftime('%A, %B ')+str(target.day),'events':[{'time':t,'event':e} for t,e in events],'calendarUrl':'https://www.census.gov/economic-indicators/','sources':list(SOURCES.values())}
+ # Sources verified fine but the day is genuinely quiet: publish the correct
+ # date with an honest empty state instead of leaving a stale date up.
+ note=None if events else 'No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).'
+ out={'date':target.isoformat(),'dateLabel':target.strftime('%A, %B ')+str(target.day),'events':[{'time':t,'event':e} for t,e in events],'note':note,'calendarUrl':'https://www.census.gov/economic-indicators/','sources':list(SOURCES.values())}
  OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n'); render(out)
  print('OK:',out['dateLabel'],len(events),'verified events'); print('COMMIT_MSG=Refresh What to Watch Today: '+out['dateLabel'])
 if __name__=='__main__':
