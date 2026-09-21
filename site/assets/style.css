@@ -635,13 +635,15 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .offer-status--verified{background:rgba(53,150,92,.13);color:#247345}
 .offer-status--check{background:rgba(216,158,46,.15);color:#8a5b00}
 .offer-status--pending{background:rgba(120,126,138,.14);color:var(--text-muted)}
+:root[data-theme="dark"] .offer-status--verified{background:rgba(53,150,92,.22);color:#5fd39a}
+:root[data-theme="dark"] .offer-status--check{background:rgba(216,158,46,.22);color:#f7d9a0}
 .referral-card h2{font-size:30px;margin:0 0 8px}
 .referral-fit{margin:0 0 22px;color:var(--text-muted);min-height:48px}
 .referral-benefit{border-left:3px solid var(--accent);padding:0 0 0 14px;margin-bottom:16px}
 .referral-benefit span{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-bottom:5px}
 .referral-benefit strong{font-size:16px;line-height:1.45}
 .referral-fine{font-size:13px;color:var(--text-muted);line-height:1.55;margin:0 0 22px}
-.referral-cta{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding:13px 15px;background:var(--accent);color:#111!important;text-decoration:none!important;font-weight:700}
+.referral-cta{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding:13px 15px;background:var(--accent);color:var(--accent-ink)!important;text-decoration:none!important;font-weight:700}
 .referral-cta:hover{filter:brightness(1.06)}
 .referral-cta--secondary{background:transparent;color:var(--text)!important;border:1px solid var(--border)}
 .referral-review-box{border:1px dashed var(--border);padding:20px 22px;margin:0 0 34px;background:var(--surface)}
