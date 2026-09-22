@@ -1,21 +1,28 @@
 {
-  "asOf": "2026-09-22T19:30:00Z",
-  "asOfLabel": "3:30 PM ET",
+  "asOf": "2026-09-22T20:23:00Z",
+  "asOfLabel": "4:23 PM ET",
   "topStory": {
-    "headline": "Iran reportedly offers to reopen Strait of Hormuz within 7 days if U.S. eases military pressure",
-    "url": "https://www.cnbc.com/2026/09/22/us-iran-war-trump-hormuz.html",
-    "source": "CNBC",
+    "headline": "Trump tells UN he faces a \"big decision\": cut a deal with Iran or \"annihilate\" the Islamic Republic",
+    "url": "https://www.axios.com/2026/09/22/trump-speech-un-general-assembly-iran-annihilate",
+    "source": "Axios",
     "category": "Geopolitics",
-    "timestamp": "2026-09-22T18:00:00Z",
+    "timestamp": "2026-09-22T15:30:00Z",
     "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
     {
-      "headline": "Oil erases losses after Trump tells UN Iran war could be settled after the midterms",
-      "url": "https://www.nbcnews.com/business/business-news/oil-prices-fall-saudi-pipeline-iran-hormuz-trump-talks-rcna599166",
-      "source": "NBC News",
+      "headline": "Iran reportedly offers to reopen Strait of Hormuz within 7 days if U.S. eases military pressure",
+      "url": "https://www.cnbc.com/2026/09/22/us-iran-war-trump-hormuz.html",
+      "source": "CNBC",
       "category": "Geopolitics",
-      "timestamp": "2026-09-22T19:00:00Z"
+      "timestamp": "2026-09-22T18:00:00Z"
+    },
+    {
+      "headline": "Treasury's Bessent says all Iranian airlines will be \"shut down\" worldwide by Wednesday, sanctions banks in Egypt, Turkey, Russia",
+      "url": "https://www.benzinga.com/news/politics/26/09/61911764/scott-bessent-says-all-iranian-airlines-will-be-shut-down-worldwide-by-wednesday-warns-foreign-firms-you-will-be-knocked-out-of-the-dollar-system",
+      "source": "Benzinga",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-22T13:00:00Z"
     },
     {
       "headline": "Xi Jinping heads to Washington for first US state visit since 2015 as trade truce nears expiration",
@@ -37,6 +44,27 @@
       "source": "Japan Times",
       "category": "Geopolitics",
       "timestamp": "2026-09-22T05:00:00Z"
+    },
+    {
+      "headline": "Nasdaq 100 hits intraday record as banks slide 1.9% and oil falls for a fifth straight session",
+      "url": "https://www.benzinga.com/markets/equities/26/09/61930818/nasdaq-record-banks-fall-oil-fifth-decline-whats-moving-markets-tuesday",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-22T18:15:00Z"
+    },
+    {
+      "headline": "AMD crosses $1 trillion market cap for the first time as chip rally accelerates on Meta's Muse AI agent",
+      "url": "https://www.cnbc.com/2026/09/21/amd-stock-1-trillion-value.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-21T20:00:00Z"
+    },
+    {
+      "headline": "Paramount settles antitrust suit with 12 states, clearing path for $110B Warner Bros. Discovery merger",
+      "url": "https://www.npr.org/2026/09/22/nx-s1-5977050/paramount-settles-lawsuit-with-12-states-over-warner-bros-discovery-merger",
+      "source": "NPR",
+      "category": "Markets",
+      "timestamp": "2026-09-22T16:00:00Z"
     },
     {
       "headline": "Trump says he's open to banning diesel exports as fuel prices surge to records",
@@ -67,18 +95,25 @@
       "timestamp": "2026-09-22T11:47:00Z"
     },
     {
-      "headline": "Paramount settles antitrust suit with 12 states, clearing path for $110B Warner Bros. Discovery merger",
-      "url": "https://www.npr.org/2026/09/22/nx-s1-5977050/paramount-settles-lawsuit-with-12-states-over-warner-bros-discovery-merger",
-      "source": "NPR",
-      "category": "Markets",
-      "timestamp": "2026-09-22T16:00:00Z"
+      "headline": "Viking Therapeutics surges up to 30% after VK2735 weight-loss maintenance data beats expectations",
+      "url": "https://finance.yahoo.com/healthcare/articles/viking-therapeutics-shares-surge-27-133915677.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-09-22T17:39:00Z"
     },
     {
-      "headline": "Nvidia exposure spreads from stock to tokenized equities as retail blurs ticker and crypto rail",
-      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/09/61931658/nvidia-stock-token-crypto",
+      "headline": "SpaceX winds down Falcon 9 as launch demand outpaces supply, opening a door for Rocket Lab's Neutron",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61933073/spacex-falcon-9-rocket-lab-neutron",
       "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-22T18:48:00Z"
+      "category": "Movers",
+      "timestamp": "2026-09-22T19:40:00Z"
+    },
+    {
+      "headline": "SoFi, Mastercard launch stablecoin settlement across SoFi's $25 billion debit and credit card program",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61930061/sofi-mastercard-launch-stablecoin-settlement-across-25-billion-card-program",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-22T17:50:00Z"
     },
     {
       "headline": "Cisco shares slide 6% after Piper Sandler cuts price target on growth concerns",
@@ -93,27 +128,6 @@
       "source": "GuruFocus",
       "category": "Movers",
       "timestamp": "2026-09-22T12:00:00Z"
-    },
-    {
-      "headline": "SpaceX's Grok Bot AI agent tops 400,000 weekly users a month after launch",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-22/spacexai-s-grok-bot-agent-tops-400-000-users-after-first-month",
-      "source": "Bloomberg",
-      "category": "Movers",
-      "timestamp": "2026-09-22T18:49:00Z"
-    },
-    {
-      "headline": "Intuit shares slide as investors weigh Meta's Muse AI threat to legacy software",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61931556/intuit-stock-slides-amid-metas-ai-collaboration-uncertainty",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-22T17:00:00Z"
-    },
-    {
-      "headline": "IREN gains on AI cloud infrastructure expansion and positive analyst sentiment",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61929618/whats-going-on-with-iren-stock-tuesday-3",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-22T16:30:00Z"
     }
   ]
 }
