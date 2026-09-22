@@ -1,24 +1,104 @@
 {
-  "asOf": "2026-09-22T10:25:03Z",
-  "asOfLabel": "6:25 AM ET",
+  "asOf": "2026-09-22T11:25:00Z",
+  "asOfLabel": "7:25 AM ET",
   "topStory": {
-    "headline": "All Iranian airlines to be 'shut down' from Wednesday, Bessent tells CNBC",
+    "headline": "Iran reportedly says it can reopen Strait of Hormuz within 7 days if U.S. eases military pressure",
     "url": "https://www.cnbc.com/2026/09/22/us-iran-war-trump-hormuz.html",
     "source": "CNBC",
     "category": "Geopolitics",
-    "timestamp": "2026-09-22T01:00:00Z",
-    "firstSeen": "2026-09-22T10:25:03Z",
-    "leadSince": "2026-09-22T10:25:03Z",
+    "timestamp": "2026-09-22T11:00:00Z",
+    "firstSeen": "2026-09-22T11:25:00Z",
+    "leadSince": "2026-09-22T11:25:00Z",
     "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
     {
-      "headline": "US threatens to ground Iranian airlines worldwide from Wednesday",
-      "url": "https://www.aljazeera.com/economy/2026/9/21/us-threatens-to-ground-iranian-airlines-worldwide-from-wednesday",
-      "source": "Al Jazeera",
+      "headline": "Trump to press Zelenskyy for energy truce, says Russia has 'lost control' of oil due to Ukraine war",
+      "url": "https://www.cnbc.com/2026/09/22/trump-zelenskyy-ukraine-russia-putin-diesel-oil.html",
+      "source": "CNBC",
       "category": "Geopolitics",
+      "timestamp": "2026-09-22T10:00:00Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "U.S. strikes Greenland deal for 'permanent control over security,' will send forces to Danish dog-sled outpost and reopen Cold War base",
+      "url": "https://www.cnbc.com/2026/09/22/trump-greenland-security-deal-military-bases-.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-22T09:00:00Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Iran ready to reopen Strait of Hormuz if US eases military pressure and lifts blockade",
+      "url": "https://www.investing.com/news/commodities-news/iran-ready-to-reopen-strait-of-hormuz-if-us-eases-military-pressure-and-lifts-blockade-4910286",
+      "source": "Reuters",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-22T10:15:00Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Stocks had a great day on the surface, but something alarming occurred not seen since 1999",
+      "url": "https://www.cnbc.com/2026/09/21/stocks-had-a-great-day-on-the-surface-but-something-alarming-occurred-not-seen-since-1999.html",
+      "source": "CNBC",
+      "category": "Markets",
       "timestamp": "2026-09-21T20:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Taiwan benchmark Taiex rises to record intraday high as tech stocks advance",
+      "url": "https://www.cnbc.com/2026/09/22/taiwans-taiex-hits-record-intraday-high-as-tech-stocks-advance.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-22T05:00:00Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Treasury yields ease as global borrowing costs tumble",
+      "url": "https://www.cnbc.com/2026/09/21/treasury-yields-government-bonds.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-21T18:00:00Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Gold muted as higher-for-longer rate outlook weighs",
+      "url": "https://www.cnbc.com/2026/09/22/gold-muted-as-higher-for-longer-rate-outlook-weighs.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-22T08:00:00Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Jamie Dimon says AI spending could hit $1 trillion in 2027 but warns it could add 'a little bit' to inflation",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61913386/jamie-dimon-says-ai-spending-could-hit-1-trillion-in-2027-but-jpmorgan-ceo-warns-it-could-add-little-bit-to-inflation-thats-like-1-increase-to-gdp",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-22T09:44:28Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Eli Lilly CEO says 700,000 new seniors have started GLP-1s after Medicare coverage, and 70% are on Lilly drugs",
+      "url": "https://www.cnbc.com/2026/09/21/eli-lilly-ceo-david-ricks-glp-1s-medicare-coverage.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-09-21T14:00:00Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Elon Musk's Grok 5 could be 'the most useful engineering tool in history,' says Gene Munster",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61913398/elon-musks-grok-5-could-be-the-most-useful-engineering-tool-in-history-says-gene-munster-will-be-a-game-changer",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-22T09:47:05Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
+    },
+    {
+      "headline": "Bitcoin hit $85,000 today — SoFi stock barely moved",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61897196/bitcoin-hit-85000-today-sofi-stock-barely-moved",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-21T14:13:20Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
     },
     {
       "headline": "AMD hits $1 trillion market cap for the first time as stock rides 5-day rally",
@@ -26,22 +106,6 @@
       "source": "CNBC",
       "category": "Movers",
       "timestamp": "2026-09-21T20:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Meta shares surge on Muse AI traction ahead of Connect",
-      "url": "https://ca.finance.yahoo.com/news/meta-shares-surge-muse-ai-183000254.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-22T08:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Korean chip stocks gain as Meta's Muse AI agent spurs enthusiasm",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-22/korean-chip-stocks-gain-as-meta-s-muse-ai-agent-spurs-enthusiasm",
-      "source": "Bloomberg",
-      "category": "Markets",
-      "timestamp": "2026-09-22T02:00:00Z",
       "firstSeen": "2026-09-22T10:25:03Z"
     },
     {
@@ -61,44 +125,20 @@
       "firstSeen": "2026-09-22T10:25:03Z"
     },
     {
-      "headline": "Cathie Wood's Ark Invest snaps up Kalshi shares across three funds, dumps Brera Holdings",
-      "url": "https://www.benzinga.com/markets/equities/26/09/61912780/cathie-wood-led-ark-invest-bets-big-on-prediction-markets-snaps-up-kalshi-shares-across-3-funds-dumps-brera-holdings",
-      "source": "Benzinga",
+      "headline": "Meta shares surge on Muse AI traction ahead of Connect",
+      "url": "https://ca.finance.yahoo.com/news/meta-shares-surge-muse-ai-183000254.html",
+      "source": "Yahoo Finance",
       "category": "Movers",
-      "timestamp": "2026-09-22T09:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Why Vicor shares are trading higher by over 11%",
-      "url": "https://www.benzinga.com/news/26/09/61913243/why-vicor-shares-are-trading-higher-by-over-11-here-are-20-stocks-moving-premarket",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-22T09:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Nasdaq surges to record amid easing oil and yields; Fear & Greed Index remains in fear zone",
-      "url": "https://www.benzinga.com/markets/market-summary/26/09/61913229/nasdaq-surges-to-record-amid-easing-oil-and-yields-investor-sentiment-improves-but-fear-greed-index-remains-in-fear-zone",
-      "source": "Benzinga",
-      "category": "Markets",
       "timestamp": "2026-09-22T08:00:00Z",
       "firstSeen": "2026-09-22T10:25:03Z"
     },
     {
-      "headline": "S&P 500 futures gain, Nasdaq 100 slips as Trump administration targets Iranian airlines",
-      "url": "https://www.benzinga.com/markets/equities/26/09/61913270/stock-market-today-sp-500-futures-gain-nasdaq-100-slips-as-trump-administration-targets-iranian-airlines-len-grml-acn-in-focus",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-22T09:36:56Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Markets can handle a hawkish Fed, not uncertainty: Taking Stock",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-21/markets-can-handle-a-hawkish-fed-not-uncertainty-taking-stock",
+      "headline": "Stock Market Today: Dow, S&P Live Updates for September 22",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/stock-market-today-dow-s-p-live-updates",
       "source": "Bloomberg",
-      "category": "Macro",
-      "timestamp": "2026-09-21T18:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
+      "category": "Markets",
+      "timestamp": "2026-09-21T21:00:00Z",
+      "firstSeen": "2026-09-22T11:25:00Z"
     },
     {
       "headline": "Latest oil market news and analysis for Sept. 22",
@@ -106,46 +146,6 @@
       "source": "Bloomberg",
       "category": "Markets",
       "timestamp": "2026-09-21T21:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Xi rolls into Trump summit with China's trade engine roaring",
-      "url": "https://www.usnews.com/news/world/articles/2026-09-20/xi-rolls-into-trump-summit-with-chinas-trade-engine-roaring",
-      "source": "U.S. News",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-20T12:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Trade, Taiwan and Iran cast shadows on Trump's China summit with Xi",
-      "url": "https://www.nbcnews.com/politics/donald-trump/trade-taiwan-iran-cast-shadows-trumps-china-summit-xi-rcna344049",
-      "source": "NBC News",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-21T12:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "S&P 500 nears record high but breadth flashes rare 1929, 1999 signal",
-      "url": "https://www.benzinga.com/markets/market-summary/26/09/61912560/sp-500-nears-record-high-but-breadth-flashes-rare-1929-1999-signal-analyst-says-weve-never-in-almost-100-years-seen-breadth-this-bad",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-22T07:36:17Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Factbox: Private equity, foreign investors fuel Aussie M&A activity in 2026",
-      "url": "https://www.investing.com/news/stock-market-news/factboxprivate-equity-foreign-investors-fuel-aussie-ma-activity-in-2026-4910093",
-      "source": "Reuters",
-      "category": "Markets",
-      "timestamp": "2026-09-22T04:00:00Z",
-      "firstSeen": "2026-09-22T10:25:03Z"
-    },
-    {
-      "headline": "Elon Musk's Grok 5 could be 'the most useful engineering tool in history,' says Gene Munster",
-      "url": "https://www.benzinga.com/markets/tech/26/09/61913398/elon-musks-grok-5-could-be-the-most-useful-engineering-tool-in-history-says-gene-munster-will-be-a-game-changer",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-22T09:00:00Z",
       "firstSeen": "2026-09-22T10:25:03Z"
     }
   ]
