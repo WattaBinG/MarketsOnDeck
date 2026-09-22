@@ -83,6 +83,29 @@ does this deterministically, no AI-written headlines or summaries:
 - Both non-RSS sources get up to 4 guaranteed list slots so high-volume RSS
   cannot crowd fresh mirror/Discord items off the page between hourly runs.
 
+## AI section (2026-09-22)
+
+Two pieces, both keyless and fail-closed:
+
+1. **AI wire category.** `scripts/refresh_wire.py` classifies AI-industry
+   headlines (OpenAI/ChatGPT, Anthropic/Claude, Gemini, Grok, DeepSeek,
+   Perplexity, LLM/generative-AI terms) into an "AI" category and pulls two
+   dedicated desks, TechCrunch AI and The Verge AI (both verified keyless
+   2026-09-22; VentureBeat's feed 429s bots and is not used). The filter
+   tabs build from whatever tags the wire contains, so the AI tab appears
+   on its own. Stock-action headlines stay in Movers even when they
+   mention AI.
+
+2. **Top AI Tools strip.** `scripts/build_ai_strip.py` (hourly in the wire
+   workflow) ranks the tools in `data/ai-tools.json` by Apple's public US
+   Top Free Apps chart (`rss.applemarketingtools.com`, keyless, official).
+   The chart is the whole ranking story: a tool that falls off the chart
+   falls off the strip, and a new entrant appears once it charts and has a
+   config line. Link precedence per tool: Keith's `referralUrl` (drop-in
+   slot, zero code changes) > `siteUrl` > the app's App Store page from
+   the chart feed. No URL is ever invented; any fetch failure keeps the
+   last published strip.
+
 ## First-seen timestamps (Keith's freshness rule)
 
 Every Wire item carries `firstSeen`: the time the story first posted to the

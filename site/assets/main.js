@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   initPinned();
   initTicker();
+  initAiStrip();
   initShareBars();
   initScrollableTables();
   initHomeStats();
@@ -290,6 +291,32 @@ function initTicker() {
 }
 
 var TICKER_CRYPTO_SYMBOLS = ['BTC', 'ETH', 'SOL'];
+
+// Top AI Tools strip - ranked by Apple's public US Top Free Apps chart
+// (scripts/build_ai_strip.py, hourly in the wire workflow). Keith's config
+// (data/ai-tools.json) picks the tracked tools and holds a referralUrl slot
+// per tool; the site shows whatever the chart is actually doing, and a tool
+// that drops off the chart drops off the strip. Outbound links only.
+function initAiStrip() {
+  var strip = document.getElementById('aiStrip');
+  if (!strip) return;
+  fetchJsonRetry('/assets/ai-tools.json')
+    .then(function (data) {
+      var items = (data && data.items) || [];
+      if (!items.length) { strip.hidden = true; return; }
+      var list = document.getElementById('aiStripList');
+      var src = document.getElementById('aiStripSource');
+      list.innerHTML = items.map(function (t) {
+        return '<li><a class="ai-tool" href="' + encodeURI(t.url) + '" target="_blank" rel="noopener">' +
+          '<span class="ai-tool-rank num">' + t.rank + '</span>' +
+          '<span class="ai-tool-name">' + escapeHtml(t.name) + '</span></a></li>';
+      }).join('');
+      src.textContent = 'Ranked by the Apple App Store US Top Free chart' +
+        (data.asOfLabel ? ' \u00b7 as of ' + data.asOfLabel : '') + ' \u00b7 snapshots, not a live feed';
+      strip.hidden = false;
+    })
+    .catch(function () { strip.hidden = true; });
+}
 
 // Every ticker item (pinned bar and scrolling strip both) links out to a real
 // quote page — Yahoo Finance's own symbol format needs "-USD" for crypto

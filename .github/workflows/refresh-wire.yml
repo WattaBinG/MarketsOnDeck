@@ -30,14 +30,16 @@ jobs:
         run: python3 scripts/refresh_wire.py | tee /tmp/out.txt
       - name: Reshape ticker strip
         run: python3 scripts/build_ticker.py
+      - name: Rank AI tools strip
+        run: python3 scripts/build_ai_strip.py
       - name: Commit if changed
         run: |
-          if [ -z "$(git status --porcelain -- site/assets/wire.json site/assets/wire-archive.json site/index.html data/wire-state.json site/assets/ticker.json)" ]; then
+          if [ -z "$(git status --porcelain -- site/assets/wire.json site/assets/wire-archive.json site/index.html data/wire-state.json site/assets/ticker.json site/assets/ai-tools.json)" ]; then
             echo "no changes"; exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/assets/wire.json site/assets/wire-archive.json site/index.html data/wire-state.json site/assets/ticker.json
+          git add site/assets/wire.json site/assets/wire-archive.json site/index.html data/wire-state.json site/assets/ticker.json site/assets/ai-tools.json
           git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Refresh The Wire')"
           for attempt in 1 2 3; do
             git pull --rebase origin main && git push && break

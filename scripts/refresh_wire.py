@@ -77,6 +77,10 @@ FEEDS = [
     ("https://www.aljazeera.com/xml/rss/all.xml", "Al Jazeera", "Geopolitics", True),
     ("https://www.eia.gov/rss/todayinenergy.xml", "EIA", "Macro", False),
     ("https://www.sec.gov/news/pressreleases.rss", "SEC", "Macro", False),
+    # AI category (Keith 2026-09-22): dedicated AI desks, both verified keyless
+    # that day. VentureBeat's feed 429s bots; not used.
+    ("https://techcrunch.com/category/artificial-intelligence/feed/", "TechCrunch", "AI", False),
+    ("https://www.theverge.com/rss/ai-artificial-intelligence/index.xml", "The Verge", "AI", False),
 ]
 
 # Source weights for lead scoring: official primary sources and the two
@@ -90,6 +94,9 @@ MACRO = re.compile(r"\b(fed|fomc|federal reserve|powell|interest rate|rate cut|r
 GEO = re.compile(r"\b(trump|white house|congress|senate|tariff|sanction|war|ceasefire|nato|"
                  r"russia|ukraine|china|taiwan|israel|iran|gaza|middle east|opec|venezuela|"
                  r"election|geopolitic|missile|military)\b", re.I)
+AI_RX = re.compile(r"\b(artificial intelligence|openai|chatgpt|anthropic|claude|gemini|"
+                    r"grok|deepseek|perplexity|large language model|llm\b|generative ai|"
+                    r"ai model|ai chatbot|ai chip|muse from meta)\b", re.I)
 MOVE = re.compile(r"\b(soar|surge|jump|plunge|tumble|sink|rall|slide|slump|drop|gain|"
                   r"beat|miss|earn|upgrade|downgrade|ipo|deal|acqui|merger|buyback|"
                   r"stock rises|stock falls|shares)\b", re.I)
@@ -124,6 +131,8 @@ def classify(title, bias):
         return "Geopolitics"
     if MOVE.search(title) and not BROAD.search(title):
         return "Movers"
+    if AI_RX.search(title):
+        return "AI"
     return bias
 
 
