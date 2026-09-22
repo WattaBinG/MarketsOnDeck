@@ -57,25 +57,12 @@
     },
     {
       "account": "Trading",
-      "symbol": "HD",
-      "assetType": "option",
-      "optionType": "call",
-      "strike": 300,
-      "expiration": "2026-10-02",
-      "quantity": 1,
-      "avgCost": 449.0,
-      "currentPrice": 433.0,
-      "priorClose": 449.0,
-      "unrealizedGain": -16.0
-    },
-    {
-      "account": "Trading",
       "symbol": "ETH",
       "assetType": "crypto",
       "quantity": 1.6,
-      "avgCost": 2748.46,
-      "currentPrice": 2748.46,
-      "priorClose": 2748.46,
+      "avgCost": 2753.65,
+      "currentPrice": 2753.65,
+      "priorClose": 2753.65,
       "unrealizedGain": 0.0
     },
     {
