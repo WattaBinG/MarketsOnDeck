@@ -18,9 +18,13 @@ GitHub → Actions for a manual kick.
 
 - **The Wire** aggregates the *headlines and links* from public RSS feeds
   (CNBC, MarketWatch, Yahoo Finance, Benzinga, Investing.com, NBC News,
-  France 24, Federal Reserve). It shows the publisher's own headline, names
+  France 24, Federal Reserve, and ARK Invest's official sitewide RSS, narrowed to market commentary). It shows the publisher's own headline, names
   the source, and links out — the same Fark/Drudge-style aggregation the site
-  has always done. No article text is copied or republished.
+  has always done. No article text is copied or republished. ARK's sitewide
+  feed is scanned in full because it is not newest-first; only entries whose
+  canonical link is under `/articles/market-commentary/` are eligible, and
+  one current ARK item can hold a list slot. Any ARK feed failure skips that
+  source and leaves the rest of The Wire unaffected.
 - **Crypto prices** come from Coinbase Exchange's public market-data API
   (no key). The file carries `source: "Coinbase Exchange (public market
   data)"`. Change/percent are versus the rolling 24-hour open reported by

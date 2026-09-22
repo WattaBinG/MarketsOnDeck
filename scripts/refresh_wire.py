@@ -183,6 +183,10 @@ WB_SOURCE = "Walter Bloomberg (unofficial mirror)"
 WB_MAX_ITEMS = 8
 DISCORD_SOURCE = "MarketsOnDeck Discord"
 DISCORD_MAX_ITEMS = 10
+ARK_FEED_URL = "https://www.ark-invest.com/feed"
+ARK_SOURCE = "ARK Invest"
+ARK_MAX_ITEMS = 3
+ARK_PATH = "/articles/market-commentary/"
 # Keith's news channel also carries sports posts (TweetShift homer/goal
 # alerts). TweetShift ALSO carries Walter Bloomberg tweets and other market
 # news, so authors are never skipped wholesale (Keith 2026-09-21). Two
@@ -201,6 +205,43 @@ DISCORD_MONEY = re.compile(r"(\$[A-Z]{1,6}\b|\b(stocks?|shares?|markets?|invest\
                            r"s&p|dow\b|futures|etf|cpi|ppi|payrolls|jobs report|recession|"
                            r"treasury|dollar|opec|chip\w*|semis?\w*))", re.I)
 
+
+
+def fetch_ark_commentary(cutoff):
+    """ARK's own sitewide RSS, narrowed to market commentary.
+
+    The feed is the publisher-provided syndication route. We publish only its
+    title, source name and canonical outbound link - never its description or
+    article text. The sitewide feed is not newest-first, so scan all entries
+    and sort the matching commentary by its real publisher timestamp. Any
+    feed/XML change skips ARK without affecting the rest of The Wire.
+    """
+    feed = feedparser.parse(fetch(ARK_FEED_URL))
+    if not feed.entries:
+        raise ValueError("official RSS feed empty")
+    items = []
+    for e in feed.entries:
+        title = html.unescape(getattr(e, "title", "")).strip()
+        link = getattr(e, "link", "").strip()
+        if not title or ARK_PATH not in link:
+            continue
+        t = getattr(e, "published_parsed", None) or getattr(e, "updated_parsed", None)
+        if not t:
+            continue
+        ts = datetime(*t[:6], tzinfo=timezone.utc)
+        if ts.timestamp() < cutoff:
+            continue
+        items.append({
+            "headline": title,
+            "url": link,
+            "source": ARK_SOURCE,
+            "category": classify(title, "Macro"),
+            "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "_ts": ts.timestamp(),
+            "_known_ts": True,
+        })
+    items.sort(key=lambda i: i["_ts"], reverse=True)
+    return items[:ARK_MAX_ITEMS]
 
 def load_state():
     try:
@@ -453,6 +494,16 @@ def main():
     now_epoch = now.timestamp()
     cutoff = now_epoch - MAX_AGE_HOURS * 3600
     try:
+        ark_items = fetch_ark_commentary(cutoff)
+        print(f"ark invest: {len(ark_items)} current market-commentary items")
+        for it in ark_items:
+            key = norm(it["headline"])
+            if key not in seen:
+                seen.add(key)
+                items.append(it)
+    except Exception as e:
+        print(f"ark invest RSS failed ({e}); skipping source", file=sys.stderr)
+    try:
         for it in fetch_walter_bloomberg(state, cutoff):
             key = norm(it["headline"])
             if key not in seen:
@@ -482,7 +533,7 @@ def main():
     # Guarantee the non-RSS sources a few slots each: with 17 feeds refreshing
     # hourly, a pure freshest-first cap can crowd every mirror/Discord item
     # off the list even when they carry fresh news.
-    for src, n in ((WB_SOURCE, 4), (DISCORD_SOURCE, 4)):
+    for src, n in ((ARK_SOURCE, 1), (WB_SOURCE, 4), (DISCORD_SOURCE, 4)):
         room = [it for it in fresh if it["source"] == src and it not in keep][:n]
         for it in room:
             it["_pinned"] = True
