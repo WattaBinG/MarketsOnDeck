@@ -604,6 +604,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .wire-filter-btn.active { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .wire-updated { font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); white-space: nowrap; }
 .wire-time { font-family: var(--font-mono); font-size: 11px; color: var(--text-muted); white-space: nowrap; margin-left: auto; }
+.wire-top-time { display: block; margin: 4px 0 0; }
 @media (max-width: 640px) { .wire-time { font-size: 10px; } }
 
 /* Pinned ticker as-of chip sits at the end of the pinned row */

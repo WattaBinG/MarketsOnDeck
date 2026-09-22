@@ -13,18 +13,23 @@ exits non-zero and writes nothing, so the site keeps the last good snapshot
 
 LEAD STORY (sticky lead): every run scores each story cluster with a fixed,
 explainable formula (see AUTOMATION.md): source weight x recency decay,
-boosted for cross-source corroboration and market relevance. The incumbent
+boosted for cross-source corroboration, market relevance, and headline
+magnitude (record/crisis/emergency language - the Drudge instinct: biggest
+story leads, not freshest). The incumbent
 lead keeps its slot until a challenger story outscores it by more than
 ~1.4x (STICKY_FACTOR) or its newest item ages past MAX_LEAD_AGE_HOURS — so
 the top of the page only changes when the day's story actually changes.
 The full score table and the lead decision are printed to the workflow log.
 """
 import json
+import os
 import re
 import sys
 import html
+import time as _time
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
 
@@ -34,6 +39,7 @@ ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 ASSETS = SITE / "assets"
 INDEX = SITE / "index.html"
+STATE = ROOT / "data" / "wire-state.json"  # high-water marks for the non-RSS sources
 
 MAX_ITEMS = 17          # list length on the homepage (matches current layout)
 MAX_AGE_HOURS = 36      # older items fall off the list into the archive
@@ -63,11 +69,20 @@ FEEDS = [
     ("https://feeds.nbcnews.com/nbcnews/public/business", "NBC News", "Markets", False),
     ("https://www.france24.com/en/rss", "France 24", "Geopolitics", True),
     ("https://www.federalreserve.gov/feeds/press_all.xml", "Federal Reserve", "Macro", False),
+    # Widened 2026-09-21 with Keith's approval (all verified live that day):
+    ("https://www.nasdaq.com/feed/rssoutbound?category=Markets", "Nasdaq", "Markets", False),
+    ("https://www.investing.com/rss/news_14.rss", "Investing.com", "Macro", False),
+    ("https://feeds.bbci.co.uk/news/world/rss.xml", "BBC", "Geopolitics", True),
+    ("https://feeds.bbci.co.uk/news/business/rss.xml", "BBC", "Markets", False),
+    ("https://www.aljazeera.com/xml/rss/all.xml", "Al Jazeera", "Geopolitics", True),
+    ("https://www.eia.gov/rss/todayinenergy.xml", "EIA", "Macro", False),
+    ("https://www.sec.gov/news/pressreleases.rss", "SEC", "Macro", False),
 ]
 
 # Source weights for lead scoring: official primary sources and the two
 # highest-volume market wires count a little more. Everything else is 1.0.
-SOURCE_W = {"Federal Reserve": 2.0, "CNBC": 1.5, "MarketWatch": 1.5}
+# Official/regulatory primary sources (second tier) get the same 2.0 bonus.
+SOURCE_W = {"Federal Reserve": 2.0, "EIA": 2.0, "SEC": 2.0, "CNBC": 1.5, "MarketWatch": 1.5}
 
 MACRO = re.compile(r"\b(fed|fomc|federal reserve|powell|interest rate|rate cut|rate hike|"
                    r"inflation|cpi|ppi|treasur|yield|bond|central bank|jobs report|payrolls|"
@@ -79,6 +94,15 @@ MOVE = re.compile(r"\b(soar|surge|jump|plunge|tumble|sink|rall|slide|slump|drop|
                   r"beat|miss|earn|upgrade|downgrade|ipo|deal|acqui|merger|buyback|"
                   r"stock rises|stock falls|shares)\b", re.I)
 BROAD = re.compile(r"\b(s&p|nasdaq|dow jones|wall street|stock market|stocks|futures)\b", re.I)
+# Drudge instinct (Keith 2026-09-21): the headline slot goes to the biggest,
+# most attention-grabbing current story, not just the freshest. These words
+# mark magnitude - records, crises, emergencies, extremes.
+ATTENTION = re.compile(r"\b(record|all[- ]time (high|low)|crash|crisis|emergency|breaking|"
+                       r"historic|unprecedented|biggest|worst|largest|collapse|collapsing|"
+                       r"panic|bailout|default|bankrupt|indict|probe|resign|fired|ousted|"
+                       r"halted|suspended|blackout|meltdown|soars?|surges?|plunges?|craters?|"
+                       r"explodes?|skyrockets?|tumbles?|suffers|slams|warns|warning|alert)\b", re.I)
+ATTENTION_BOOST = 1.30  # score multiplier when a cluster's headlines carry magnitude words
 # Syndicated promo and bot-written filler we never want on the wire.
 BLOCK = re.compile(r"(motley fool|fool\.com|options flow|/news/company-news/|^\d+ (incredible|top|smart) |reasons? to buy)", re.I)
 
@@ -141,7 +165,230 @@ def cluster_score(cluster, now_epoch):
     heads = " ".join(it["headline"] for it in cluster["items"])
     corroboration = 1.0 + 0.35 * (n_sources - 1)
     relevance = 1.25 if (MACRO.search(heads) or BROAD.search(heads) or MOVE.search(heads)) else 1.0
-    return base * corroboration * relevance, base, n_sources, relevance
+    attention = ATTENTION_BOOST if ATTENTION.search(heads) else 1.0
+    return base * corroboration * relevance * attention, base, n_sources, relevance
+
+
+WB_URL = "https://t.me/s/WalterBloomberg"
+WB_SOURCE = "Walter Bloomberg (unofficial mirror)"
+WB_MAX_ITEMS = 8
+DISCORD_SOURCE = "MarketsOnDeck Discord"
+DISCORD_MAX_ITEMS = 10
+# Keith's news channel also carries sports posts (TweetShift homer/goal
+# alerts). TweetShift ALSO carries Walter Bloomberg tweets and other market
+# news, so authors are never skipped wholesale (Keith 2026-09-21). Two
+# content rules instead: obvious sports patterns die, and every Discord item
+# must mention markets - the same rule the general RSS feeds already follow.
+SPORT = re.compile(r"\b(homers?|home runs?|[0-9]+-run|grand slam|touchdown|\bRBI\b|"
+                   r"\bMLB\b|\bNHL\b|\bNFL\b|\bNBA\b|power play|hat trick)\b", re.I)
+# Discord gets its own relevance rule: posts there are short flash headlines
+# (Walter Bloomberg style, often ALL-CAPS with $CASHTAGS), where the RSS
+# MONEY rule misses plurals like "SHARES" or "TARIFFS" (its word boundary
+# requires the exact singular). Cashtags alone are a strong market signal.
+DISCORD_MONEY = re.compile(r"(\$[A-Z]{1,6}\b|\b(stocks?|shares?|markets?|invest\w*|trad\w+|"
+                           r"earn\w+|profit\w*|revenue|ipos?|fed\b|fomc|rates?\b|inflation|"
+                           r"oil|gold|silver|bitcoin|ethereum|crypto\w*|bank\w*|econom\w+|gdp|"
+                           r"tariffs?|sanctions?|treasur\w+|bonds?|yields?|wall street|nasdaq|"
+                           r"s&p|dow\b|futures|etf|cpi|ppi|payrolls|jobs report|recession|"
+                           r"treasury|dollar|opec|chip\w*|semis?\w*))", re.I)
+
+
+def load_state():
+    try:
+        return json.loads(STATE.read_text())
+    except Exception:
+        return {}
+
+
+def save_state(state):
+    STATE.parent.mkdir(parents=True, exist_ok=True)
+    STATE.write_text(json.dumps(state, indent=2) + "\n")
+
+
+def fetch_walter_bloomberg(state, cutoff):
+    """Public Telegram mirror of Walter Bloomberg's X posts. Unofficial:
+    the source label says so on every item, it never counts toward the feed
+    success ratio, and any HTML/rate-limit breakage just skips the source
+    (fail open) so the Wire is never affected. The last message ID is cached
+    in wire-state.json as a high-water mark."""
+    items = []
+    newest = None
+    doc = fetch(WB_URL).decode("utf-8", "replace")
+    for chunk in doc.split('data-post="WalterBloomberg/')[1:]:
+        try:
+            mid = int(chunk.split('"', 1)[0])
+        except (ValueError, IndexError):
+            continue
+        seg = chunk[:8000]
+        tm = re.search(r'<time datetime="([^"]+)"', seg)
+        if not tm:
+            continue
+        try:
+            ts = datetime.fromisoformat(tm.group(1).replace("Z", "+00:00"))
+        except ValueError:
+            continue
+        newest = mid if newest is None else max(newest, mid)
+        if ts.timestamp() < cutoff:
+            continue
+        txtm = re.search(r'tgme_widget_message_text[^>]*>(.*?)</div>', seg, re.S)
+        if not txtm:
+            continue
+        text = re.sub(r"<br\s*/?>", " ", txtm.group(1))
+        text = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", text)).strip())
+        text = re.sub(r"\(\s*@WalterBloomberg\s*\)\s*$", "", text).strip()
+        if not text:
+            continue
+        if len(text) > 200:
+            text = text[:197].rstrip() + "..."
+        items.append({
+            "headline": text,
+            "url": f"https://t.me/WalterBloomberg/{mid}",
+            "source": WB_SOURCE,
+            "category": classify(text, "Markets"),
+            "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "_ts": ts.timestamp(),
+            "_known_ts": True,
+        })
+    if newest is not None:
+        state["walter_bloomberg_last_id"] = max(int(state.get("walter_bloomberg_last_id") or 0), newest)
+    items.sort(key=lambda i: i["_ts"], reverse=True)
+    return items[:WB_MAX_ITEMS]
+
+
+def fetch_discord(state):
+    """Keith's own Discord server, read hourly through his existing
+    'MarketsOnDeck Reader' bot. Skips cleanly when the repo secret/variable
+    are not configured yet, and any API error only skips this source
+    (fail open) - the Wire is never broken by Discord."""
+    token = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
+    channel = os.environ.get("DISCORD_NEWS_CHANNEL_ID", "").strip()
+    items = []
+    newest = None
+    skipped_sport = 0
+    skipped_offtopic = 0
+    after = str(state.get("discord_last_message_id") or "")
+    pages = 0
+    if not token or not channel:
+        # Discord edge-blocks datacenter IPs on channel reads (proven
+        # 2026-09-21: HTTP 403 "internal network error" from GitHub runners
+        # and cloud browsers; residential IPs pass). The REST path only runs
+        # where it can work; the local-reader file below is the real feed.
+        print("discord: REST credentials not set; relying on the local-reader posts file")
+    while (token and channel) and pages < 3:  # at most 300 messages per run
+        qs = "limit=100" + (f"&after={after}" if after else "")
+        req = Request(f"https://discord.com/api/v10/channels/{channel}/messages?{qs}",
+                      headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
+        try:
+            with urlopen(req, timeout=20) as r:
+                batch = json.loads(r.read().decode("utf-8", "replace"))
+        except HTTPError as e:
+            if e.code == 429:
+                try:
+                    retry = float(json.loads(e.read().decode("utf-8", "replace")).get("retry_after", 5.0))
+                except Exception:
+                    retry = 5.0
+                print(f"discord: rate limited, waiting {retry}s", file=sys.stderr)
+                _time.sleep(min(retry, 30.0))
+                continue  # same page again
+            print(f"discord: HTTP {e.code}; skipping source "
+                  "(check token, channel access, Message Content Intent)", file=sys.stderr)
+            break
+        except Exception as e:
+            print(f"discord: fetch failed ({e}); skipping source", file=sys.stderr)
+            break
+        pages += 1
+        if not isinstance(batch, list) or not batch:
+            break
+        for msg in batch:
+            mid = str(msg.get("id") or "")
+            if not mid:
+                continue
+            newest = mid if newest is None else max(newest, mid, key=int)
+            content = (msg.get("content") or "").strip()
+            urls = re.findall(r"https?://[^\s<>()]+", content)
+            text = re.sub(r"\s+", " ", re.sub(r"https?://[^\s<>()]+", "", content)).strip(" -|")
+            if not text and msg.get("embeds"):
+                emb = msg["embeds"][0] or {}
+                text = (emb.get("title") or "").strip()
+                if not urls and emb.get("url"):
+                    urls = [emb["url"]]
+            if not text or not urls:
+                continue  # a wire item needs both a headline and an outbound link
+            if SPORT.search(text):
+                skipped_sport += 1
+                continue  # homer/goal alerts never reach a finance wire
+            if not DISCORD_MONEY.search(text):
+                skipped_offtopic += 1
+                continue  # other non-market chatter stays off the wire
+            try:
+                ts = datetime.fromisoformat(str(msg.get("timestamp")).replace("Z", "+00:00"))
+            except (ValueError, TypeError):
+                continue
+            if len(text) > 200:
+                text = text[:197].rstrip() + "..."
+            items.append({
+                "headline": text,
+                "url": urls[0],
+                "source": DISCORD_SOURCE,
+                "category": classify(text, "Markets"),
+                "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "_ts": ts.timestamp(),
+                "_known_ts": True,
+            })
+        after = max((str(m.get("id")) for m in batch), key=int, default=after)
+        if len(batch) < 100:
+            break
+    if newest is not None:
+        prev = str(state.get("discord_last_message_id") or "0")
+        state["discord_last_message_id"] = max(prev, newest, key=int)
+
+    # Local reader merge (the trades.json pattern: Keith's PC writes, the
+    # cloud merges). scripts/discord_local_reader.py commits raw channel
+    # posts to data/discord-posts.json; the sports/market filtering lives
+    # ONLY here, so the local script stays a dumb fetcher.
+    try:
+        local = json.loads((ROOT / "data" / "discord-posts.json").read_text(encoding="utf-8"))
+    except Exception:
+        local = None
+    if isinstance(local, dict) and local.get("posts"):
+        have_urls = {it["url"] for it in items}
+        used = 0
+        for post in local["posts"]:
+            url = post.get("url")
+            text = (post.get("text") or "").strip()
+            if not url or not text or url in have_urls:
+                continue
+            try:
+                ts = datetime.fromisoformat(str(post.get("timestamp")).replace("Z", "+00:00"))
+            except (ValueError, TypeError):
+                continue
+            if SPORT.search(text):
+                skipped_sport += 1
+                continue
+            if not DISCORD_MONEY.search(text):
+                skipped_offtopic += 1
+                continue
+            if len(text) > 200:
+                text = text[:197].rstrip() + "..."
+            items.append({
+                "headline": text,
+                "url": url,
+                "source": DISCORD_SOURCE,
+                "category": classify(text, "Markets"),
+                "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "_ts": ts.timestamp(),
+                "_known_ts": True,
+            })
+            have_urls.add(url)
+            used += 1
+        print(f"discord: merged {used} posts from the local reader "
+              f"(fetched {local.get('fetchedAt', '?')})")
+
+    items.sort(key=lambda i: i["_ts"], reverse=True)
+    kept = items[:DISCORD_MAX_ITEMS]
+    print(f"discord: {len(kept)} market items kept, {skipped_sport} sports posts skipped, "
+          f"{skipped_offtopic} non-market posts skipped")
+    return kept
 
 
 def main():
@@ -190,19 +437,48 @@ def main():
                 "_ts": ts.timestamp(),
                 "_known_ts": known_ts,
             })
+    # Non-RSS sources. Neither counts toward the success ratio: the Wire must
+    # never survive on the unofficial mirror or Discord alone.
+    state = load_state()
+    now = datetime.now(timezone.utc)
+    now_epoch = now.timestamp()
+    cutoff = now_epoch - MAX_AGE_HOURS * 3600
+    try:
+        for it in fetch_walter_bloomberg(state, cutoff):
+            key = norm(it["headline"])
+            if key not in seen:
+                seen.add(key)
+                items.append(it)
+    except Exception as e:
+        print(f"walter bloomberg mirror failed ({e}); skipping source", file=sys.stderr)
+    try:
+        for it in fetch_discord(state):
+            key = norm(it["headline"])
+            if key not in seen:
+                seen.add(key)
+                items.append(it)
+    except Exception as e:
+        print(f"discord failed ({e}); skipping source", file=sys.stderr)
+
     minimum_ok = max(1, int(len(FEEDS) * MIN_FEED_SUCCESS_RATIO + 0.999))
     if ok_feeds < minimum_ok:
         print(f"only {ok_feeds}/{len(FEEDS)} feeds succeeded (need {minimum_ok}); leaving last good wire in place", file=sys.stderr)
         sys.exit(1)
 
     items.sort(key=lambda x: x["_ts"], reverse=True)
-    now = datetime.now(timezone.utc)
-    now_epoch = now.timestamp()
-    cutoff = now_epoch - MAX_AGE_HOURS * 3600
 
     fresh = [it for it in items if it["_ts"] >= cutoff]
     fetched_aged = [it for it in items if it["_ts"] < cutoff]
-    keep, aged = fresh[:MAX_ITEMS + 4], fetched_aged + fresh[MAX_ITEMS + 4:]
+    keep = list(fresh[:MAX_ITEMS + 4])
+    # Guarantee the non-RSS sources a few slots each: with 17 feeds refreshing
+    # hourly, a pure freshest-first cap can crowd every mirror/Discord item
+    # off the list even when they carry fresh news.
+    for src, n in ((WB_SOURCE, 4), (DISCORD_SOURCE, 4)):
+        room = [it for it in fresh if it["source"] == src and it not in keep][:n]
+        for it in room:
+            it["_pinned"] = True
+        keep.extend(room)
+    aged = fetched_aged + [it for it in fresh if it not in keep]
 
     # Cluster same-story headlines (deterministic greedy pass, recency order).
     clusters = []
@@ -226,21 +502,44 @@ def main():
         scored.append((score, base, n_src, rel, c))
     scored.sort(key=lambda s: (-s[0], -max(it["_ts"] for it in s[4]["items"])))
 
-    print("story scores (score | base x corroboration x relevance | sources | headline):")
+    print("story scores (score | base x corroboration x relevance x attention | sources | headline):")
     for score, base, n_src, rel, c in scored[:8]:
         rep = max(c["items"], key=lambda i: i["_ts"])
-        print(f"  {score:5.2f} | {base:5.2f} x {1 + .35*(n_src-1):.2f} x {rel:.2f} | "
+        att = ATTENTION_BOOST if ATTENTION.search(" ".join(i["headline"] for i in c["items"])) else 1.0
+        print(f"  {score:5.2f} | {base:5.2f} x {1 + .35*(n_src-1):.2f} x {rel:.2f} x {att:.2f} | "
               f"{n_src} src | {rep['headline'][:80]}")
 
     # Incumbent lead from the current wire.json.
-    incumbent = None
     try:
         prior = json.loads((ASSETS / "wire.json").read_text())
         incumbent = prior.get("topStory") or None
     except Exception:
+        prior = {}
         incumbent = None
 
-    challenger = scored[0][4] if scored else None
+    # First-seen stamps (Keith's spec): every item keeps the timestamp of the
+    # run that first carried it, and that stamp travels with the story as it
+    # rises or falls. It is never overwritten with a later refresh time.
+    prior_first = {}
+    if isinstance(prior, dict):
+        for old_it in (prior.get("items") or []):
+            if old_it.get("url"):
+                prior_first[old_it["url"]] = old_it.get("firstSeen") or old_it.get("timestamp")
+        old_top = prior.get("topStory") or {}
+        if old_top.get("url"):
+            prior_first[old_top["url"]] = old_top.get("firstSeen") or old_top.get("timestamp")
+    now_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    for it in items:
+        it["firstSeen"] = prior_first.get(it["url"], now_iso)
+
+    challenger = None
+    for _, _, _, _, c in scored:
+        if any(it["source"] != WB_SOURCE for it in c["items"]):
+            challenger = c
+            break
+    if scored and challenger is not scored[0][4]:
+        print("top-scoring story is Walter-Bloomberg-only; mirror is never a sole lead source, "
+              "lead goes to the next eligible story")
     lead_cluster, held = challenger, False
     if incumbent and challenger:
         inc_cluster = None
@@ -295,7 +594,12 @@ def main():
     # List: freshest first, excluding the lead item and duplicate versions of
     # the lead story from other sources.
     lead_dupes = {id(it) for it in lead_cluster["items"]} if lead_cluster else set()
-    rest = [it for it in keep if id(it) not in lead_dupes][:MAX_ITEMS]
+    candidates = [it for it in keep if id(it) not in lead_dupes]
+    # Pinned non-RSS items keep their slots even past the freshness cap, then
+    # everything renders freshest-first.
+    pinned = [it for it in candidates if it.get("_pinned")]
+    unpinned = [it for it in candidates if not it.get("_pinned")]
+    rest = sorted((pinned + unpinned)[:MAX_ITEMS], key=lambda x: x["_ts"], reverse=True)
     listed = {id(it) for it in rest} | lead_dupes
     overflow = [it for it in keep if id(it) not in listed]
 
@@ -336,10 +640,11 @@ def main():
             "source": top["source"],
             "category": top["category"],
             "timestamp": top["timestamp"],
+            "firstSeen": top.get("firstSeen") or top["timestamp"],
             "leadSince": lead_since,
             "image": f"/assets/images/wire-{top['category'].lower()}.jpg",
         }
-    wire["items"] = [{k: it[k] for k in ("headline", "url", "source", "category", "timestamp")}
+    wire["items"] = [{k: it[k] for k in ("headline", "url", "source", "category", "timestamp", "firstSeen")}
                      for it in rest]
 
     # Rewrite the marked blocks in index.html (exact structure, so this stays
@@ -369,6 +674,7 @@ def main():
         '    <!-- WIRE_LIST_END -->')
     doc = re.sub(r"<!-- WIRE_LIST_START.*?WIRE_LIST_END -->", lambda m: list_html, doc, flags=re.S)
 
+    save_state(state)
     (ASSETS / "wire.json").write_text(json.dumps(wire, indent=2, ensure_ascii=False) + "\n")
     (ASSETS / "wire-archive.json").write_text(json.dumps(archive, indent=2, ensure_ascii=False) + "\n")
     INDEX.write_text(doc)

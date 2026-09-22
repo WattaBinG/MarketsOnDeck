@@ -440,13 +440,26 @@ function initWireEnhance() {
       var a = li.querySelector('a[href]');
       if (!a) return;
       var it = byUrl[a.href];
-      if (it && it.timestamp) {
+      var stamp = it && (it.firstSeen || it.timestamp);
+      if (stamp) {
         var s = document.createElement('span');
         s.className = 'wire-time';
-        s.textContent = timeAgoLabel(it.timestamp);
-        s.title = it.timestamp.replace('T', ' ').replace('Z', ' UTC');
+        s.textContent = timeAgoLabel(stamp);
+        s.title = String(stamp).replace('T', ' ').replace('Z', ' UTC');
         li.appendChild(s);
       }
     });
+    // Top story gets the same first-seen stamp: it keeps the time it first
+    // posted to the Wire, even after holding the lead for hours.
+    var topA = document.querySelector('.wire-top[href]');
+    var topIt = topA && byUrl[topA.href];
+    var topStamp = topIt && (topIt.firstSeen || topIt.timestamp);
+    if (topStamp && !topA.querySelector('.wire-time')) {
+      var st = document.createElement('span');
+      st.className = 'wire-time wire-top-time';
+      st.textContent = timeAgoLabel(topStamp);
+      st.title = String(topStamp).replace('T', ' ').replace('Z', ' UTC');
+      topA.appendChild(st);
+    }
   }).catch(function () {});
 }
