@@ -63,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   initPinned();
   initTicker();
+  initAiStrip();
   initShareBars();
   initScrollableTables();
   initHomeStats();
@@ -291,6 +292,32 @@ function initTicker() {
 
 var TICKER_CRYPTO_SYMBOLS = ['BTC', 'ETH', 'SOL'];
 
+// Top AI Tools strip - ranked by Apple's public US Top Free Apps chart
+// (scripts/build_ai_strip.py, hourly in the wire workflow). Keith's config
+// (data/ai-tools.json) picks the tracked tools and holds a referralUrl slot
+// per tool; the site shows whatever the chart is actually doing, and a tool
+// that drops off the chart drops off the strip. Outbound links only.
+function initAiStrip() {
+  var strip = document.getElementById('aiStrip');
+  if (!strip) return;
+  fetchJsonRetry('/assets/ai-tools.json')
+    .then(function (data) {
+      var items = (data && data.items) || [];
+      if (!items.length) { strip.hidden = true; return; }
+      var list = document.getElementById('aiStripList');
+      var src = document.getElementById('aiStripSource');
+      list.innerHTML = items.map(function (t) {
+        return '<li><a class="ai-tool" href="' + encodeURI(t.url) + '" target="_blank" rel="noopener">' +
+          '<span class="ai-tool-rank num">' + t.rank + '</span>' +
+          '<span class="ai-tool-name">' + escapeHtml(t.name) + '</span></a></li>';
+      }).join('');
+      src.textContent = 'Ranked by the Apple App Store US Top Free chart' +
+        (data.asOfLabel ? ' \u00b7 as of ' + data.asOfLabel : '') + ' \u00b7 snapshots, not a live feed';
+      strip.hidden = false;
+    })
+    .catch(function () { strip.hidden = true; });
+}
+
 // Every ticker item (pinned bar and scrolling strip both) links out to a real
 // quote page — Yahoo Finance's own symbol format needs "-USD" for crypto
 // (BTC -> BTC-USD) but plain tickers work as-is for stocks/ETFs.
@@ -444,6 +471,7 @@ function initWireEnhance() {
           var tag = li.querySelector('.wire-tag');
           li.style.display = (label === 'All' || (tag && tag.textContent.trim() === label)) ? '' : 'none';
         });
+        swapTopStory(label);
       });
       filters.appendChild(b);
       buttons.push(b);
@@ -452,8 +480,49 @@ function initWireEnhance() {
     cats.forEach(makeBtn);
   }
 
+  var wireData = null;
+  var topA = document.querySelector('.wire-top[href]');
+
+  // Per Keith (2026-09-22): each filter tab is its own front page. Swapping
+  // tabs swaps the top story to that category's lead (the wire's scoring
+  // already ordered the items), not just the list below. The lead's own
+  // list entry hides so nothing shows twice.
+  function swapTopStory(label) {
+    if (!topA || !wireData) return;
+    var lead, imgCat;
+    if (label === 'All') {
+      lead = wireData.topStory;
+      imgCat = lead && lead.category;
+    } else {
+      lead = (wireData.topStory && wireData.topStory.category === label)
+        ? wireData.topStory
+        : (wireData.items || []).filter(function (it) { return it && it.category === label; })[0];
+      imgCat = label;
+    }
+    if (!lead || !lead.url) return;
+    topA.setAttribute('href', lead.url);
+    var img = topA.querySelector('.wire-top-image');
+    if (img && imgCat) img.setAttribute('src', '/assets/images/wire-' + imgCat.toLowerCase() + '.jpg');
+    var lab = topA.querySelector('.wire-top-label');
+    if (lab) lab.textContent = label === 'All' ? 'Top Story' : 'Top in ' + label;
+    var head = topA.querySelector('.wire-top-headline');
+    if (head) head.textContent = lead.headline || '';
+    var src = topA.querySelector('.wire-top-source');
+    if (src) src.textContent = lead.source || '';
+    var topTime = topA.querySelector('.wire-top-time');
+    if (topTime) {
+      var stamp = lead.firstSeen || lead.timestamp;
+      if (stamp) { topTime.textContent = timeAgoLabel(stamp); topTime.title = String(stamp).replace('T', ' ').replace('Z', ' UTC'); }
+    }
+    list.querySelectorAll('li').forEach(function (li) {
+      var a = li.querySelector('a[href]');
+      if (a && a.href === lead.url) li.style.display = 'none';
+    });
+  }
+
   fetchJsonRetry('/assets/wire.json').then(function (data) {
     if (!data) return;
+    wireData = data;
     var updated = document.getElementById('wireUpdated');
     if (updated && data.asOfLabel) updated.textContent = 'Updated ' + data.asOfLabel;
     if (!list) return;
