@@ -265,6 +265,36 @@ def fetch_discord(state):
     if not token or not channel:
         print("discord: DISCORD_BOT_TOKEN / DISCORD_NEWS_CHANNEL_ID not set; skipping (wire unaffected)")
         return []
+    # TEMP DIAGNOSTIC (revert before merge): list visible channels, find the
+    # news channel by name, read its 3 newest messages as an access proof.
+    H = {"User-Agent": UA, "Authorization": f"Bot {token}"}
+    try:
+        req = Request("https://discord.com/api/v10/users/@me/guilds", headers=H)
+        with urlopen(req, timeout=20) as r:
+            guilds = json.loads(r.read().decode("utf-8", "replace"))
+        for g in guilds[:5]:
+            gid = g.get("id")
+            try:
+                req = Request(f"https://discord.com/api/v10/guilds/{gid}/channels", headers=H)
+                with urlopen(req, timeout=20) as r:
+                    chans = json.loads(r.read().decode("utf-8", "replace"))
+                names = {c.get("name"): c.get("id") for c in chans if c.get("type") in (0, 5)}
+                print(f"discord diag: guild {g.get('name')!r} sees {len(names)} text channels: {names}")
+                target = next((cid for n, cid in names.items() if n and "market-updates" in n), None)
+                if target:
+                    req = Request(f"https://discord.com/api/v10/channels/{target}/messages?limit=3", headers=H)
+                    with urlopen(req, timeout=20) as r:
+                        msgs = json.loads(r.read().decode("utf-8", "replace"))
+                    print(f"discord diag: READ OK on channel id={target}, {len(msgs)} messages:")
+                    for m in msgs:
+                        who = (m.get("author") or {}).get("username")
+                        print(f"discord diag:   [{who}] {(m.get('content') or '')[:90]}")
+                else:
+                    print("discord diag: no channel named like 'market-updates' visible")
+            except HTTPError as e:
+                print(f"discord diag: channels in guild {gid} HTTP {e.code}")
+    except HTTPError as e:
+        print(f"discord diag: guilds HTTP {e.code}")
     items = []
     newest = None
     skipped_sport = 0
