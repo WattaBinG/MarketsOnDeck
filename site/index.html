@@ -131,6 +131,14 @@
     </div>
 
     <aside class="wire-sidebar">
+      <section class="sentiment-card" id="sentimentCard" hidden>
+        <div class="sentiment-head">
+          <h2 class="sentiment-title">Market Pulse</h2>
+        </div>
+        <div class="sentiment-dial" id="sentimentDial" role="img" aria-label="Market sentiment gauge"></div>
+        <div class="sentiment-readout"><span class="sentiment-score num" id="sentimentScore"></span><span class="sentiment-label" id="sentimentLabel"></span></div>
+        <div class="sentiment-note" id="sentimentNote"></div>
+      </section>
       <!-- WATCH_TODAY_START — updated once each morning by the Watch Today routine; keep this exact structure so the automated edit stays a clean find/replace -->
       <div class="watch-box" data-watch-date="2026-09-23">
         <div class="watch-box-header">What to Watch Today</div>
