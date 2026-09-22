@@ -682,3 +682,8 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .sentiment-note { font-size: 10.5px; color: var(--text-muted); margin-top: 6px; text-align: center; line-height: 1.45; }
 .sentiment-slider { width: 100%; margin: 8px 0 0; accent-color: var(--accent); }
 .sentiment-date { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 2px; }
+
+.sentiment-periods { display:grid; grid-template-columns:repeat(6,1fr); gap:3px; margin:8px 0 1px; }
+.sentiment-periods button { appearance:none; border:1px solid var(--border); background:transparent; color:var(--text-muted); border-radius:4px; padding:4px 0; font:600 9.5px/1 var(--font-sans); cursor:pointer; }
+.sentiment-periods button:hover { color:var(--text); border-color:var(--text-muted); }
+.sentiment-periods button.active { color:var(--bg); background:var(--text); border-color:var(--text); }

@@ -293,17 +293,25 @@ function initTicker() {
 
 var TICKER_CRYPTO_SYMBOLS = ['BTC', 'ETH', 'SOL'];
 
-// Market Pulse dial (Keith 2026-09-22, fear-and-greed style, design delegated).
-// One reading per day, logged by scripts/log_sentiment.py from the strip's own
-// benchmark snapshots (see that file for why this is self-sourced). The dial
-// renders from sentiment-history.json so it can never disagree with the log,
-// and the slider scrubs back through logged days. Fails closed: no history,
-// no dial.
+// Market Pulse: a daily dial plus 1W/1M/3M/6M/1Y trend views. Scores are
+// derived from the same weighted benchmark basket. The history file is built
+// fail-closed by scripts/log_sentiment.py from keyless daily benchmark closes.
 var SENTIMENT_ZONE_COLORS = { 'Extreme Fear': '#c0392b', 'Fear': '#e67e22', 'Neutral': '#b8a00b', 'Greed': '#6a9a23', 'Extreme Greed': '#1e8e3e' };
+var sentimentPeriod = '1D';
+var sentimentHistory = [];
+var sentimentIndex = 0;
+
+function sentimentValue(entry) {
+  if (entry.scores && entry.scores[sentimentPeriod]) return entry.scores[sentimentPeriod];
+  if (sentimentPeriod === '1D' && typeof entry.score === 'number') return entry;
+  return null;
+}
 
 function renderSentimentReading(entry) {
-  var zone = SENTIMENT_ZONE_COLORS[entry.label] || '#b8a00b';
-  var angle = -90 + (entry.score / 100) * 180;  // -90 = far left, +90 = far right
+  var reading = sentimentValue(entry);
+  if (!reading) return false;
+  var zone = SENTIMENT_ZONE_COLORS[reading.label] || '#b8a00b';
+  var angle = -90 + (reading.score / 100) * 180;
   var rad = angle * Math.PI / 180;
   var nx = 60 + 46 * Math.sin(rad), ny = 62 - 46 * Math.cos(rad);
   document.getElementById('sentimentDial').innerHTML =
@@ -315,13 +323,37 @@ function renderSentimentReading(entry) {
     '<line x1="60" y1="62" x2="' + nx.toFixed(1) + '" y2="' + ny.toFixed(1) + '" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>' +
     '<circle cx="60" cy="62" r="4" fill="currentColor"/></svg>';
   var scoreEl = document.getElementById('sentimentScore');
-  scoreEl.textContent = entry.score;
+  scoreEl.textContent = reading.score;
   scoreEl.style.color = zone;
   var labEl = document.getElementById('sentimentLabel');
-  labEl.textContent = entry.label;
+  labEl.textContent = reading.label;
   labEl.style.color = zone;
   var d = new Date(entry.date + 'T12:00:00');
-  document.getElementById('sentimentDate').textContent = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  document.getElementById('sentimentDate').textContent = sentimentPeriod + ' view \u00b7 ' + d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  document.getElementById('sentimentDial').setAttribute('aria-label', sentimentPeriod + ' Market Pulse: ' + reading.score + ', ' + reading.label);
+  return true;
+}
+
+function nearestSentimentIndex(index) {
+  for (var offset = 0; offset < sentimentHistory.length; offset++) {
+    var before = index - offset, after = index + offset;
+    if (before >= 0 && sentimentValue(sentimentHistory[before])) return before;
+    if (after < sentimentHistory.length && sentimentValue(sentimentHistory[after])) return after;
+  }
+  return -1;
+}
+
+function setSentimentPeriod(period) {
+  sentimentPeriod = period;
+  document.querySelectorAll('#sentimentPeriods button').forEach(function (button) {
+    button.classList.toggle('active', button.dataset.period === period);
+  });
+  var found = nearestSentimentIndex(sentimentIndex);
+  if (found >= 0) {
+    sentimentIndex = found;
+    document.getElementById('sentimentSlider').value = found;
+    renderSentimentReading(sentimentHistory[found]);
+  }
 }
 
 function initSentiment() {
@@ -329,18 +361,24 @@ function initSentiment() {
   if (!card) return;
   fetchJsonRetry('/assets/sentiment-history.json').then(function (history) {
     if (!Array.isArray(history) || !history.length) { card.hidden = true; return; }
-    renderSentimentReading(history[history.length - 1]);
+    sentimentHistory = history;
+    sentimentIndex = history.length - 1;
+    if (!renderSentimentReading(history[sentimentIndex])) { card.hidden = true; return; }
     var slider = document.getElementById('sentimentSlider');
     if (history.length > 1 && slider) {
       slider.max = history.length - 1;
-      slider.value = history.length - 1;
+      slider.value = sentimentIndex;
       slider.hidden = false;
       slider.addEventListener('input', function () {
-        renderSentimentReading(history[parseInt(slider.value, 10)]);
+        sentimentIndex = parseInt(slider.value, 10);
+        renderSentimentReading(history[sentimentIndex]);
       });
     }
+    document.querySelectorAll('#sentimentPeriods button').forEach(function (button) {
+      button.addEventListener('click', function () { setSentimentPeriod(button.dataset.period); });
+    });
     document.getElementById('sentimentNote').textContent =
-      'One reading a day from the daily moves of the strip\u2019s own benchmarks, weighted. Snapshot, not a live feed.';
+      'Weighted SPY, QQQ, DIA, IWM, USO, BTC, ETH and SOL trend. Daily snapshot; longer views use keyless historical closes.';
     card.hidden = false;
   }).catch(function () { card.hidden = true; });
 }
