@@ -471,6 +471,7 @@ function initWireEnhance() {
           var tag = li.querySelector('.wire-tag');
           li.style.display = (label === 'All' || (tag && tag.textContent.trim() === label)) ? '' : 'none';
         });
+        swapTopStory(label);
       });
       filters.appendChild(b);
       buttons.push(b);
@@ -479,8 +480,49 @@ function initWireEnhance() {
     cats.forEach(makeBtn);
   }
 
+  var wireData = null;
+  var topA = document.querySelector('.wire-top[href]');
+
+  // Per Keith (2026-09-22): each filter tab is its own front page. Swapping
+  // tabs swaps the top story to that category's lead (the wire's scoring
+  // already ordered the items), not just the list below. The lead's own
+  // list entry hides so nothing shows twice.
+  function swapTopStory(label) {
+    if (!topA || !wireData) return;
+    var lead, imgCat;
+    if (label === 'All') {
+      lead = wireData.topStory;
+      imgCat = lead && lead.category;
+    } else {
+      lead = (wireData.topStory && wireData.topStory.category === label)
+        ? wireData.topStory
+        : (wireData.items || []).filter(function (it) { return it && it.category === label; })[0];
+      imgCat = label;
+    }
+    if (!lead || !lead.url) return;
+    topA.setAttribute('href', lead.url);
+    var img = topA.querySelector('.wire-top-image');
+    if (img && imgCat) img.setAttribute('src', '/assets/images/wire-' + imgCat.toLowerCase() + '.jpg');
+    var lab = topA.querySelector('.wire-top-label');
+    if (lab) lab.textContent = label === 'All' ? 'Top Story' : 'Top in ' + label;
+    var head = topA.querySelector('.wire-top-headline');
+    if (head) head.textContent = lead.headline || '';
+    var src = topA.querySelector('.wire-top-source');
+    if (src) src.textContent = lead.source || '';
+    var topTime = topA.querySelector('.wire-top-time');
+    if (topTime) {
+      var stamp = lead.firstSeen || lead.timestamp;
+      if (stamp) { topTime.textContent = timeAgoLabel(stamp); topTime.title = String(stamp).replace('T', ' ').replace('Z', ' UTC'); }
+    }
+    list.querySelectorAll('li').forEach(function (li) {
+      var a = li.querySelector('a[href]');
+      if (a && a.href === lead.url) li.style.display = 'none';
+    });
+  }
+
   fetchJsonRetry('/assets/wire.json').then(function (data) {
     if (!data) return;
+    wireData = data;
     var updated = document.getElementById('wireUpdated');
     if (updated && data.asOfLabel) updated.textContent = 'Updated ' + data.asOfLabel;
     if (!list) return;
