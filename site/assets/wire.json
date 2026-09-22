@@ -1,71 +1,91 @@
 {
-  "asOf": "2026-09-21T23:56:46Z",
-  "asOfLabel": "7:56 PM ET",
+  "asOf": "2026-09-22T00:24:42Z",
+  "asOfLabel": "8:24 PM ET",
   "topStory": {
-    "headline": "Stocks had a great day on the surface. But something alarming occurred not seen since 1999",
-    "url": "https://www.cnbc.com/2026/09/21/stocks-had-a-great-day-on-the-surface-but-something-alarming-occurred-not-seen-since-1999.html",
+    "headline": "Greenland-linked U.S. stocks jump after Trump announces security deal with Denmark",
+    "url": "https://www.cnbc.com/2026/09/21/greenland-trump-denmark-deal-stocks-mining.html",
     "source": "CNBC",
-    "category": "Markets",
-    "timestamp": "2026-09-21T21:20:41Z",
-    "leadSince": "2026-09-21T23:16:23Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "category": "Geopolitics",
+    "timestamp": "2026-09-21T21:47:00Z",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
     {
-      "headline": "Telos chairman & CEO John Wood sells $389,411 in shares",
-      "url": "https://www.investing.com/news/insider-trading-news/telos-chairman--ceo-john-wood-sells-389411-in-shares-93CH-4909744",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-09-21T23:31:12Z"
-    },
-    {
-      "headline": "Nasdaq notches record-high close, AI optimism reignites and Treasury yields retreat",
-      "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-rise-as-ai-stocks-gain-oil-prices-slide-4908497",
-      "source": "Investing.com",
+      "headline": "AMD set to top $1 trillion in market value as chip stocks soar",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/amd-set-to-top-1-trillion-in-market-value-as-chip-stocks-soar",
+      "source": "Bloomberg",
       "category": "Markets",
-      "timestamp": "2026-09-21T23:19:04Z"
+      "timestamp": "2026-09-21T20:30:00Z"
     },
     {
-      "headline": "Texas Governor Abbott halts all state-issued permits for data centers until grid audit is complete",
-      "url": "https://www.investing.com/news/commodities-news/texas-gov-abbott-halts-all-stateissued-permits-for-data-centers-until-grid-audit-is-complete-4909646",
-      "source": "Investing.com",
+      "headline": "Volkswagen exits Euro Stoxx 50 as index removal compounds latest profit warning",
+      "url": "https://www.cnbc.com/2026/09/21/volkswagens-latest-profit-warning-compounds-exit-from-blue-chip-index.html",
+      "source": "CNBC",
       "category": "Markets",
-      "timestamp": "2026-09-21T23:18:33Z"
+      "timestamp": "2026-09-21T13:00:00Z"
     },
     {
-      "headline": "CNBC's The China Connection newsletter: Five things to watch for the Trump-Xi summit",
-      "url": "https://www.cnbc.com/2026/09/22/cnbcs-the-china-connection-newsletter-watch-this-at-trump-xi-summit.html",
+      "headline": "Trump signs Lindsey O. Graham Sanctioning Russia and Iran Act into law",
+      "url": "https://www.cbsnews.com/news/trump-signs-russia-sanctions-bill-lindsey-graham/",
+      "source": "CBS News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-19T12:00:00Z"
+    },
+    {
+      "headline": "Ukrainian drone attack hits Moscow oil refinery, halting crude processing",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-20/moscow-refinery-hit-as-russia-reports-largest-2026-drone-attack",
+      "source": "Bloomberg",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-20T06:00:00Z"
+    },
+    {
+      "headline": "Trump, Xi seek trade stability and deals, but AI, tariffs and Iran loom large. What to watch",
+      "url": "https://www.cnbc.com/2026/09/21/trump-xi-china-summit-trade-tariffs.html",
       "source": "CNBC",
       "category": "Geopolitics",
-      "timestamp": "2026-09-21T23:18:30Z"
+      "timestamp": "2026-09-21T22:25:33Z"
     },
     {
-      "headline": "PodcastOne director Merriman buys $15,812 in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/podcastone-director-merriman-buys-15812-in-stock-93CH-4909741",
-      "source": "Investing.com",
+      "headline": "Nasdaq 100 rallies to three-month high as Intel soars 14%, AMD crosses $1 trillion",
+      "url": "https://www.benzinga.com/news/26/09/61904615/nasdaq-100-rallies-intel-soars-14-stock-market-today",
+      "source": "Benzinga",
       "category": "Markets",
-      "timestamp": "2026-09-21T23:15:59Z"
+      "timestamp": "2026-09-21T17:51:25Z"
     },
     {
-      "headline": "Zscaler chief product officer Adam Geller sells $132,200 in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/zscaler-chief-product-officer-adam-geller-sells-132200-in-stock-93CH-4909740",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-21T23:15:52Z"
+      "headline": "US diesel tops record $6.50 a gallon as wars worsen global fuel crunch",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-21/us-diesel-tops-6-50-a-gallon-as-wars-worsen-global-fuels-crunch",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-09-21T15:00:00Z"
     },
     {
-      "headline": "Ambarella CFO John Young sells $127,562 in company stock",
-      "url": "https://www.investing.com/news/insider-trading-news/ambarella-cfo-john-young-sells-127562-in-company-stock-93CH-4909739",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-21T23:15:48Z"
+      "headline": "Bitcoin hit $85,000 today — SoFi stock barely moved",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61897196/bitcoin-hit-85000-today-sofi-stock-barely-moved",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-21T14:13:20Z"
     },
     {
-      "headline": "Silver Lake sues Carl Icahn and hedge funds over Endeavor buyout",
-      "url": "https://www.investing.com/news/stock-market-news/silver-lake-sues-carl-icahn-and-hedge-funds-over-endeavor-buyout-4909738",
-      "source": "Investing.com",
+      "headline": "SpaceX's Nasdaq-100 weighting more than doubles to 2.82% in quarterly rebalance",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61905931/whats-going-on-with-spacex-stock-today-3",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-21T14:34:28Z"
+    },
+    {
+      "headline": "Trump admin launches $215M Quantum Genesis competition; IonQ, D-Wave, Rigetti, Quantum Computing take notice",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61868217/trump-admin-launches-215m-quantum-competition-ionq-d-wave-rigetti-take-notice",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-18T13:39:51Z"
+    },
+    {
+      "headline": "Texas Gov. Abbott orders data center permit halt weeks after issuing moratorium",
+      "url": "https://www.cnbc.com/2026/09/21/texas-governor-abbott-ai-data-center-permits.html",
+      "source": "CNBC",
       "category": "Markets",
-      "timestamp": "2026-09-21T23:12:27Z"
+      "timestamp": "2026-09-21T22:46:26Z"
     },
     {
       "headline": "Meta's Muse AI agent downloads are surging. Here's how it compares to ChatGPT, Grok and Claude",
@@ -82,53 +102,32 @@
       "timestamp": "2026-09-21T23:03:04Z"
     },
     {
-      "headline": "Global GP LLC, general partner, buys $503,550 in Global Partners LP units",
-      "url": "https://www.investing.com/news/insider-trading-news/global-gp-llc-general-partner-buys-503550-in-global-partners-lp-units-93CH-4909737",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-21T23:01:12Z"
-    },
-    {
-      "headline": "Zscaler chief legal officer sells $1.08m in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/zscaler-chief-legal-officer-sells-108m-in-stock-93CH-4909736",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-21T23:01:05Z"
-    },
-    {
-      "headline": "Impinj CFO Cary Baker sells $1.65m in company stock",
-      "url": "https://www.investing.com/news/insider-trading-news/impinj-cfo-cary-baker-sells-165m-in-company-stock-93CH-4909735",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-21T23:00:52Z"
-    },
-    {
-      "headline": "Texas Gov. Abbott orders data center permit halt weeks after issuing moratorium",
-      "url": "https://www.cnbc.com/2026/09/21/texas-governor-abbott-ai-data-center-permits.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-21T22:46:26Z"
-    },
-    {
-      "headline": "Trump, Xi seek trade stability and deals, but AI, tariffs and Iran loom large. What to watch",
-      "url": "https://www.cnbc.com/2026/09/21/trump-xi-china-summit-trade-tariffs.html",
+      "headline": "CNBC's The China Connection newsletter: Five things to watch for the Trump-Xi summit",
+      "url": "https://www.cnbc.com/2026/09/22/cnbcs-the-china-connection-newsletter-watch-this-at-trump-xi-summit.html",
       "source": "CNBC",
       "category": "Geopolitics",
-      "timestamp": "2026-09-21T22:25:33Z"
+      "timestamp": "2026-09-21T23:18:30Z"
     },
     {
-      "headline": "Meta’s stock is enjoying its best month in 13 years thanks to the company’s hot new AI assistant",
-      "url": "https://www.marketwatch.com/story/metas-stock-is-enjoying-its-best-month-in-more-than-two-years-thanks-to-the-companys-hot-new-ai-assistant-bf106291?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-21T22:01:00Z"
-    },
-    {
-      "headline": "AT&T’s stock looks like the smartest bet in the wireless sector, analyst says",
+      "headline": "AT&T's stock looks like the smartest bet in the wireless sector, analyst says",
       "url": "https://www.marketwatch.com/story/at-ts-stock-looks-like-the-smartest-bet-in-the-wireless-sector-analyst-says-6e773d63?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "category": "Markets",
       "timestamp": "2026-09-21T21:57:00Z"
+    },
+    {
+      "headline": "Silver Lake sues Carl Icahn and hedge funds over Endeavor buyout",
+      "url": "https://www.investing.com/news/stock-market-news/silver-lake-sues-carl-icahn-and-hedge-funds-over-endeavor-buyout-4909738",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-21T23:12:27Z"
+    },
+    {
+      "headline": "Stock market today: Nasdaq surges 2% to record high, Dow and S&P 500 gain as chip stocks rally, oil falls",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-21-dow-sp-500-nasdaq-080214605.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-21T12:02:14Z"
     }
   ]
 }
