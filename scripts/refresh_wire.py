@@ -181,6 +181,16 @@ DISCORD_MAX_ITEMS = 10
 # must mention markets - the same rule the general RSS feeds already follow.
 SPORT = re.compile(r"\b(homers?|home runs?|[0-9]+-run|grand slam|touchdown|\bRBI\b|"
                    r"\bMLB\b|\bNHL\b|\bNFL\b|\bNBA\b|power play|hat trick)\b", re.I)
+# Discord gets its own relevance rule: posts there are short flash headlines
+# (Walter Bloomberg style, often ALL-CAPS with $CASHTAGS), where the RSS
+# MONEY rule misses plurals like "SHARES" or "TARIFFS" (its word boundary
+# requires the exact singular). Cashtags alone are a strong market signal.
+DISCORD_MONEY = re.compile(r"(\$[A-Z]{1,6}\b|\b(stocks?|shares?|markets?|invest\w*|trad\w+|"
+                           r"earn\w+|profit\w*|revenue|ipos?|fed\b|fomc|rates?\b|inflation|"
+                           r"oil|gold|silver|bitcoin|ethereum|crypto\w*|bank\w*|econom\w+|gdp|"
+                           r"tariffs?|sanctions?|treasur\w+|bonds?|yields?|wall street|nasdaq|"
+                           r"s&p|dow\b|futures|etf|cpi|ppi|payrolls|jobs report|recession|"
+                           r"treasury|dollar|opec|chip\w*|semis?\w*))", re.I)
 
 
 def load_state():
@@ -304,7 +314,7 @@ def fetch_discord(state):
             if SPORT.search(text):
                 skipped_sport += 1
                 continue  # homer/goal alerts never reach a finance wire
-            if not MONEY.search(text):
+            if not DISCORD_MONEY.search(text):
                 skipped_offtopic += 1
                 continue  # other non-market chatter stays off the wire
             try:
