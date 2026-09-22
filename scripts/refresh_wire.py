@@ -265,6 +265,34 @@ def fetch_discord(state):
     if not token or not channel:
         print("discord: DISCORD_BOT_TOKEN / DISCORD_NEWS_CHANNEL_ID not set; skipping (wire unaffected)")
         return []
+    # TEMP DIAGNOSTIC (revert): identity mismatch hunt. Print the token bot's
+    # full identity, whether IT is a guild member, and exact error bodies.
+    H = {"User-Agent": UA, "Authorization": f"Bot {token}"}
+    me = None
+    try:
+        req = Request("https://discord.com/api/v10/users/@me", headers=H)
+        with urlopen(req, timeout=20) as r:
+            me = json.loads(r.read().decode("utf-8", "replace"))
+        print(f"discord diag: @me username={me.get('username')} discrim={me.get('discriminator')} "
+              f"id={me.get('id')} bot={me.get('bot')}")
+    except HTTPError as e:
+        print(f"discord diag: @me HTTP {e.code} body={e.read().decode('utf-8','replace')[:200]}")
+    gid = "338736813126451201"
+    if me:
+        try:
+            req = Request(f"https://discord.com/api/v10/guilds/{gid}/members/{me['id']}", headers=H)
+            with urlopen(req, timeout=20) as r:
+                m = json.loads(r.read().decode("utf-8", "replace"))
+            print(f"discord diag: token bot IS a guild member, roles={m.get('roles')} nick={m.get('nick')}")
+        except HTTPError as e:
+            print(f"discord diag: member lookup HTTP {e.code} body={e.read().decode('utf-8','replace')[:200]}")
+    try:
+        req = Request(f"https://discord.com/api/v10/guilds/{gid}/channels", headers=H)
+        with urlopen(req, timeout=20) as r:
+            chans = json.loads(r.read().decode("utf-8", "replace"))
+        print(f"discord diag: channels OK, {len(chans)} visible")
+    except HTTPError as e:
+        print(f"discord diag: channels HTTP {e.code} body={e.read().decode('utf-8','replace')[:200]}")
     items = []
     newest = None
     skipped_sport = 0
