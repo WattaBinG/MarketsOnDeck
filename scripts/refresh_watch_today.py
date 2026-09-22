@@ -11,6 +11,11 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.request import Request, urlopen
 from zoneinfo import ZoneInfo
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    import econ_series as es
+except Exception:
+    es = None
 ROOT=Path(__file__).resolve().parent.parent; OUT=ROOT/'site/assets/watch-today.json'; INDEX=ROOT/'site/index.html'
 ET=ZoneInfo('America/New_York'); UA='MarketsOnDeck calendar bot (+https://marketsondeck.wattabing.workers.dev)'
 SUPPORTED_YEAR=2026
@@ -54,7 +59,14 @@ def parse_census(text,target):
   if d==target: out.append((t.upper().replace('.','')+' ET',label.strip()))
  return out
 def render(out):
- lis='\n'.join(f'          <li><span class="watch-time">{html.escape(e["time"])}</span><span class="watch-event">{html.escape(e["event"])}</span></li>' for e in out['events'])
+ def li(e):
+  nums=''
+  if e.get('prev'):
+   nums=(f'<span class="watch-numbers">Act: &mdash; &middot; Cons: &mdash; &middot; '
+         f'Prev: {html.escape(e["prev"])}</span>')
+  return (f'          <li><span class="watch-time">{html.escape(e["time"])}</span>'
+          f'<span class="watch-event">{html.escape(e["event"])}</span>{nums}</li>')
+ lis='\n'.join(li(e) for e in out['events'])
  if not out['events'] and out.get('note'): lis=f'          <li><span class="watch-time">&mdash;</span><span class="watch-event">{html.escape(out["note"])}</span></li>'
  block=('<!-- WATCH_TODAY_START — updated once each morning by the Watch Today routine; keep this exact structure so the automated edit stays a clean find/replace -->\n'
  f'      <div class="watch-box" data-watch-date="{out["date"]}">\n        <div class="watch-box-header">What to Watch Today</div>\n'
@@ -83,7 +95,25 @@ def main():
  # Sources verified fine but the day is genuinely quiet: publish the correct
  # date with an honest empty state instead of leaving a stale date up.
  note=None if events else 'No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).'
- out={'date':target.isoformat(),'dateLabel':target.strftime('%A, %B ')+str(target.day),'events':[{'time':t,'event':e} for t,e in events],'note':note,'calendarUrl':'https://www.census.gov/economic-indicators/','sources':list(SOURCES.values())}
+ # TradingView-style calendar (Keith 2026-09-22): mappable events get their
+ # last official print as 'Prev' at build time. Keyless BLS only; a BLS
+ # failure leaves prevs blank, never blocks the calendar. 'Cons' stays
+ # blank - consensus surveys are licensed data with no keyless source
+ # (TradingEconomics guest API discontinued, probed 2026-09-22).
+ event_objs=[{'time':t,'event':e} for t,e in events]
+ if es:
+  kinds=[(o, es.kind_for(o['event'])) for o in event_objs]
+  needed=sorted({sid for _,k in kinds if k for sid in es.SERIES_FOR[k]})
+  data={}
+  if needed:
+   try: data=es.bls(needed)
+   except Exception as e: print('note: prev values unavailable (%s); building without them' % e)
+  for o,k in kinds:
+   if not k or not data: continue
+   try:
+    o['kind']=k; o['prev']=es.fmt_prev(k,data)
+   except Exception as e: print('note: no prev for %s (%s)' % (o['event'], e))
+ out={'date':target.isoformat(),'dateLabel':target.strftime('%A, %B ')+str(target.day),'events':event_objs,'note':note,'calendarUrl':'https://www.census.gov/economic-indicators/','sources':list(SOURCES.values())}
  OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8'); render(out)
  print('OK:',out['dateLabel'],len(events),'verified events'); print('COMMIT_MSG=Refresh What to Watch Today: '+out['dateLabel'])
 if __name__=='__main__':
