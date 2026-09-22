@@ -1,10 +1,12 @@
 name: Refresh What to Watch Today
 # Fills the next trading day's economic-calendar sidebar from official
 # sources only (BEA ICS feed, Fed/NYSE published calendars, fixed weekly
-# releases). No AI. Evenings Sun-Thu so the next trading day is covered.
+# releases). No AI. 7 PM ET Sun-Thu (23:00 UTC during EDT; 6 PM ET once EST
+# returns - GitHub cron is UTC-only) so today's results stay up through the
+# afternoon and the box rolls to the next trading day in the evening.
 on:
   schedule:
-    - cron: '30 21 * * 0-4'
+    - cron: '0 23 * * 0-4'
   workflow_dispatch:
 
 permissions:
