@@ -22,6 +22,7 @@ POSITIONS = ROOT / "site" / "assets" / "positions.json"
 
 PINNED = ["SPY", "QQQ", "DIA", "IWM", "USO"]  # oil rides USO; BTC/ETH/SOL pin via crypto.json
 CRYPTO_PINNED = ["BTC", "ETH", "SOL"]        # never duplicated into this strip
+EXCLUDED = ["USDG"]                      # dollar-pegged stablecoin - price never moves, strip noise (Keith, 2026-09-22)
 MAX_ITEMS = 15
 
 
@@ -31,7 +32,7 @@ def main():
     held = []
     for pos in positions.get("positions", []):
         sym = str(pos.get("symbol") or "").strip().upper()
-        if sym and sym not in held:
+        if sym and sym not in held and sym not in EXCLUDED:
             held.append(sym)
 
     by_symbol = {str(i.get("symbol", "")).upper(): i for i in ticker.get("items", [])}
@@ -43,7 +44,7 @@ def main():
         if sym not in PINNED and sym not in CRYPTO_PINNED:
             ordered.append((sym, True))
     for sym in by_symbol:                    # layer 3: local routine's movers
-        if sym not in PINNED and sym not in CRYPTO_PINNED and sym not in held:
+        if sym not in PINNED and sym not in CRYPTO_PINNED and sym not in held and sym not in EXCLUDED:
             ordered.append((sym, False))
     ordered = ordered[:MAX_ITEMS]            # movers trim last
 

@@ -26,6 +26,9 @@ rights; this file owns the how.
    - No symbol appears twice anywhere (ETH shows once even though Keith
      holds it - it lives in the crypto pin). Total strip: 15 symbols max,
      trimmed from the movers end.
+   - USDG never appears in the strip (dollar-pegged, price never moves;
+     Keith, 2026-09-22). The cloud reshaper drops it even if a local run
+     adds it back.
 4. Write site/assets/ticker.json with fresh price / change /
    changePercent per symbol and update asOf + asOfLabel to the time the
    quotes were pulled. Prices are a snapshot - the label is the honesty.
