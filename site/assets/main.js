@@ -294,69 +294,53 @@ function initTicker() {
 var TICKER_CRYPTO_SYMBOLS = ['BTC', 'ETH', 'SOL'];
 
 // Market Pulse dial (Keith 2026-09-22, fear-and-greed style, design delegated).
-// Computed in the browser from the SAME benchmark snapshots the ticker strip
-// shows - no external feed, no licensed data, always as honest as the strip's
-// own as-of label. CNN's Fear & Greed endpoint blocks datacenter reads (418,
-// probed today) and Stooq's CSV is dead, which is why this is self-sourced.
-// Weighted daily moves across SPY/QQQ/DIA/IWM/USO + BTC/ETH/SOL, mapped to
-// 0-100. Components with no price yet are dropped and the weights
-// renormalized; fewer than three priced components hides the dial.
-var SENTIMENT_WEIGHTS = { SPY: 0.25, QQQ: 0.20, DIA: 0.15, IWM: 0.10, USO: 0.05, BTC: 0.10, ETH: 0.10, SOL: 0.05 };
+// One reading per day, logged by scripts/log_sentiment.py from the strip's own
+// benchmark snapshots (see that file for why this is self-sourced). The dial
+// renders from sentiment-history.json so it can never disagree with the log,
+// and the slider scrubs back through logged days. Fails closed: no history,
+// no dial.
+var SENTIMENT_ZONE_COLORS = { 'Extreme Fear': '#c0392b', 'Fear': '#e67e22', 'Neutral': '#b8a00b', 'Greed': '#6a9a23', 'Extreme Greed': '#1e8e3e' };
 
-function sentimentZone(score) {
-  if (score < 20) return ['Extreme Fear', '#c0392b'];
-  if (score < 40) return ['Fear', '#e67e22'];
-  if (score < 60) return ['Neutral', '#b8a00b'];
-  if (score < 80) return ['Greed', '#6a9a23'];
-  return ['Extreme Greed', '#1e8e3e'];
+function renderSentimentReading(entry) {
+  var zone = SENTIMENT_ZONE_COLORS[entry.label] || '#b8a00b';
+  var angle = -90 + (entry.score / 100) * 180;  // -90 = far left, +90 = far right
+  var rad = angle * Math.PI / 180;
+  var nx = 60 + 46 * Math.sin(rad), ny = 62 - 46 * Math.cos(rad);
+  document.getElementById('sentimentDial').innerHTML =
+    '<svg viewBox="0 0 120 68" width="100%" aria-hidden="true">' +
+    '<defs><linearGradient id="sgGrad" x1="0" y1="0" x2="1" y2="0">' +
+    '<stop offset="0%" stop-color="#c0392b"/><stop offset="50%" stop-color="#b8a00b"/><stop offset="100%" stop-color="#1e8e3e"/>' +
+    '</linearGradient></defs>' +
+    '<path d="M 10 62 A 50 50 0 0 1 110 62" fill="none" stroke="url(#sgGrad)" stroke-width="9" stroke-linecap="round" opacity="0.85"/>' +
+    '<line x1="60" y1="62" x2="' + nx.toFixed(1) + '" y2="' + ny.toFixed(1) + '" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>' +
+    '<circle cx="60" cy="62" r="4" fill="currentColor"/></svg>';
+  var scoreEl = document.getElementById('sentimentScore');
+  scoreEl.textContent = entry.score;
+  scoreEl.style.color = zone;
+  var labEl = document.getElementById('sentimentLabel');
+  labEl.textContent = entry.label;
+  labEl.style.color = zone;
+  var d = new Date(entry.date + 'T12:00:00');
+  document.getElementById('sentimentDate').textContent = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
 }
 
 function initSentiment() {
   var card = document.getElementById('sentimentCard');
   if (!card) return;
-  Promise.all([
-    fetchJsonRetry('/assets/ticker.json'),
-    fetchJsonRetry('/assets/crypto.json')
-  ]).then(function (results) {
-    var ticker = results[0] || {}, crypto = results[1] || {};
-    var bySym = {};
-    (ticker.items || []).forEach(function (i) { bySym[i.symbol] = i; });
-    (crypto.items || []).forEach(function (i) { bySym[i.symbol] = i; });
-    var num = 0, den = 0, used = 0;
-    Object.keys(SENTIMENT_WEIGHTS).forEach(function (sym) {
-      var it = bySym[sym];
-      if (it && typeof it.changePercent === 'number') {
-        num += SENTIMENT_WEIGHTS[sym] * it.changePercent;
-        den += SENTIMENT_WEIGHTS[sym];
-        used++;
-      }
-    });
-    if (used < 3 || !den) { card.hidden = true; return; }
-    var weighted = num / den;  // weighted average daily move, %
-    var score = Math.max(0, Math.min(100, Math.round(50 + weighted * 20)));
-    var zone = sentimentZone(score);
-    // semicircular dial: arc red->green, needle at score
-    var angle = -90 + (score / 100) * 180;  // -90 = far left, +90 = far right
-    var rad = angle * Math.PI / 180;
-    var nx = 60 + 46 * Math.sin(rad), ny = 62 - 46 * Math.cos(rad);
-    document.getElementById('sentimentDial').innerHTML =
-      '<svg viewBox="0 0 120 68" width="100%" aria-hidden="true">' +
-      '<defs><linearGradient id="sgGrad" x1="0" y1="0" x2="1" y2="0">' +
-      '<stop offset="0%" stop-color="#c0392b"/><stop offset="50%" stop-color="#b8a00b"/><stop offset="100%" stop-color="#1e8e3e"/>' +
-      '</linearGradient></defs>' +
-      '<path d="M 10 62 A 50 50 0 0 1 110 62" fill="none" stroke="url(#sgGrad)" stroke-width="9" stroke-linecap="round" opacity="0.85"/>' +
-      '<line x1="60" y1="62" x2="' + nx.toFixed(1) + '" y2="' + ny.toFixed(1) + '" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>' +
-      '<circle cx="60" cy="62" r="4" fill="currentColor"/></svg>';
-    var scoreEl = document.getElementById('sentimentScore');
-    scoreEl.textContent = score;
-    scoreEl.style.color = zone[1];
-    var labEl = document.getElementById('sentimentLabel');
-    labEl.textContent = zone[0];
-    labEl.style.color = zone[1];
-    var asof = ticker.asOfLabel ? 'Stocks as of ' + ticker.asOfLabel : '';
+  fetchJsonRetry('/assets/sentiment-history.json').then(function (history) {
+    if (!Array.isArray(history) || !history.length) { card.hidden = true; return; }
+    renderSentimentReading(history[history.length - 1]);
+    var slider = document.getElementById('sentimentSlider');
+    if (history.length > 1 && slider) {
+      slider.max = history.length - 1;
+      slider.value = history.length - 1;
+      slider.hidden = false;
+      slider.addEventListener('input', function () {
+        renderSentimentReading(history[parseInt(slider.value, 10)]);
+      });
+    }
     document.getElementById('sentimentNote').textContent =
-      'Built from the daily moves of the strip\u2019s own benchmarks, weighted. ' +
-      (asof ? asof + ' \u00b7 ' : '') + 'Snapshot, not a live feed.';
+      'One reading a day from the daily moves of the strip\u2019s own benchmarks, weighted. Snapshot, not a live feed.';
     card.hidden = false;
   }).catch(function () { card.hidden = true; });
 }

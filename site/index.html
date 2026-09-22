@@ -137,6 +137,8 @@
         </div>
         <div class="sentiment-dial" id="sentimentDial" role="img" aria-label="Market sentiment gauge"></div>
         <div class="sentiment-readout"><span class="sentiment-score num" id="sentimentScore"></span><span class="sentiment-label" id="sentimentLabel"></span></div>
+        <input type="range" class="sentiment-slider" id="sentimentSlider" min="0" max="0" value="0" step="1" aria-label="Slide to see previous days' readings" hidden>
+        <div class="sentiment-date" id="sentimentDate"></div>
         <div class="sentiment-note" id="sentimentNote"></div>
       </section>
       <!-- WATCH_TODAY_START — updated once each morning by the Watch Today routine; keep this exact structure so the automated edit stays a clean find/replace -->
