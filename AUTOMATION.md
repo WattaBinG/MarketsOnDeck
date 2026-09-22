@@ -93,30 +93,43 @@ publisher timestamp on older snapshots).
 ## Ticker composition (three layers)
 
 The ticker is deliberately *not* a fixed market strip. `ticker.json` and
-`crypto.json` express it in three layers, per Keith (2026-09-18):
+`crypto.json` express it in three layers, per Keith (2026-09-18, pinned
+set updated 2026-09-22):
 
 1. **Permanent benchmarks** — always present: BTC, ETH, SOL (the
-   `crypto.json` strip, automated every 15 min) and SPY, QQQ, DIA
-   (the `pinned` list in `ticker.json`, rendered in the pinned bar).
-2. **Keith's portfolio** — `ticker.json` items flagged `"held": true`.
-   These are supplied at authoring time by Keith's own routine using his
-   brokerage connection (Robinhood via MCP, or Webull level-2). The cloud
-   automation in this repo never touches brokerage credentials, never reads
-   holdings, and never runs the MCP connectors; portfolio symbols only
-   appear because Keith's authoring routine put them there, and only the
-   symbol is flagged — never sizes or account data.
-3. **Rotating daily set** — the remaining symbols, chosen at authoring
-   time from the day's high-volume names, major movers, market-important
-   stories, and what the audience is watching. This layer is expected to
-   churn daily; layers 1 and 2 are stable.
+   `crypto.json` strip, automated every 15 min) and SPY, QQQ, DIA, IWM,
+   USO for oil (the `pinned` list in `ticker.json`, rendered in the
+   pinned bar).
+2. **Keith's portfolio** — derived by the cloud from
+   `site/assets/positions.json` (equities, option underlyings, and
+   crypto), flagged `"held": true`. Only the symbol is flagged — never
+   sizes or account data. The cloud automation still never touches
+   brokerage credentials or runs the MCP connectors; it reads only the
+   positions snapshot Keith's own local routine committed.
+3. **Rotating daily set** — the remaining symbols, re-picked at every
+   local routine run from the day's high-volume names, major movers,
+   market-important stories, and what the audience is watching. Churning
+   is the point: never carry yesterday's pick forward (the LULU lesson).
+   The full routine lives in `docs/TICKER-LOCAL-ROUTINE.md`, including a
+   paste-ready prompt for any AI client.
+
+Mechanical enforcement: the hourly wire workflow runs
+`scripts/build_ticker.py`, which rebuilds the strip from layers 1 and 2
+plus the local routine's layer-3 pick, dedupes across layers (a symbol
+shows up exactly once — ETH stays in the crypto pin even though Keith
+holds it), and caps the strip at 15, trimming movers first. Prices are
+never invented in the cloud: they carry over from the last local
+snapshot, and symbols without a quote render "--" under the visible
+as-of label.
 
 Data-rights rule for the ticker: Robinhood, Alpaca, Yahoo Finance, and the
 other free sources verified on 2026-09-18 are licensed for personal/internal
 use only, so they may inform authoring but nothing here republishes their
 data on a schedule. Until a display-licensed feed exists, `ticker.json`
 keeps its last verified snapshot with a visible as-of label and basis
-tooltip (the honesty layer from PR #20). PR #19 (Webull OpenAPI worker) is
-the parked starting point if a licensed feed is ever added.
+tooltip (the honesty layer from PR #20). PR #19 (Webull OpenAPI worker) is the
+parked starting point if a licensed feed is ever added. The local
+routine that writes prices is documented in `docs/TICKER-LOCAL-ROUTINE.md`.
 
 ## Honesty and failure behavior
 

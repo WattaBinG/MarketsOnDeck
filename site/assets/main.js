@@ -278,13 +278,13 @@ function tickerQuoteUrl(symbol) {
 function renderTickerItem(item) {
   var dir = item.change > 0 ? 'gain' : (item.change < 0 ? 'loss' : '');
   var sign = item.change > 0 ? '+' : '';
-  var price = typeof item.price === 'number' ? item.price.toFixed(2) : item.price;
-  var pct = typeof item.changePercent === 'number' ? item.changePercent.toFixed(2) : item.changePercent;
+  var price = typeof item.price === 'number' ? item.price.toFixed(2) : (item.price || '--');
+  var pct = typeof item.changePercent === 'number' ? item.changePercent.toFixed(2) + '%' : '--';
   var symbolClass = 'ticker-symbol' + (item.held ? ' ticker-held' : '');
   return '<a class="ticker-item" href="' + tickerQuoteUrl(item.symbol) + '" target="_blank" rel="noopener">' +
     '<span class="' + symbolClass + '">' + escapeHtml(item.symbol) + '</span>' +
     '<span class="ticker-price num">' + price + '</span>' +
-    '<span class="ticker-change num ' + dir + '">' + sign + pct + '%</span>' +
+    '<span class="ticker-change num ' + dir + '">' + (pct === '--' ? pct : sign + pct) + '</span>' +
     '</a>';
 }
 
