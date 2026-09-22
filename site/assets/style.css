@@ -664,3 +664,21 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .referral-review-box{border:1px dashed var(--border);padding:20px 22px;margin:0 0 34px;background:var(--surface)}
 .referral-review-box h2{font-size:22px;margin-top:0}.referral-review-box p{margin-bottom:0}
 @media(max-width:760px){.referral-grid{grid-template-columns:1fr}.referral-card{min-height:0;padding:20px}.referral-card__top{align-items:flex-start;flex-direction:column}.referral-fit{min-height:0}.referral-deck{font-size:16px}}
+
+/* Market Pulse dial - sidebar top (2026-09-22, design delegated; colors fixed so fear/greed read the same in both themes) */
+.sentiment-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px 12px;
+  margin-bottom: 14px;
+}
+.sentiment-title { font-size: 13px; font-weight: 700; letter-spacing: 0.4px; text-transform: uppercase; margin: 0 0 2px; color: var(--text); }
+.sentiment-dial { color: var(--text); max-width: 190px; margin: 2px auto 0; }
+.sentiment-dial svg { display: block; }
+.sentiment-readout { display: flex; justify-content: center; align-items: baseline; gap: 8px; margin-top: -6px; }
+.sentiment-score { font-size: 24px; font-weight: 700; }
+.sentiment-label { font-size: 14px; font-weight: 600; }
+.sentiment-note { font-size: 10.5px; color: var(--text-muted); margin-top: 6px; text-align: center; line-height: 1.45; }
+.sentiment-slider { width: 100%; margin: 8px 0 0; accent-color: var(--accent); }
+.sentiment-date { font-size: 11px; color: var(--text-muted); text-align: center; margin-top: 2px; }
