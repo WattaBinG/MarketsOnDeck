@@ -2,16 +2,11 @@
   "date": "2026-09-23",
   "dateLabel": "Wednesday, September 23",
   "events": [
-    {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Petroleum Status Report"
-    }
+    { "time": "Before Open", "event": "Cintas Earnings (BMO)" },
+    { "time": "7:00 AM ET", "event": "MBA Mortgage Applications" },
+    { "time": "9:45 AM ET", "event": "S&P Global Flash PMI" },
+    { "time": "10:30 AM ET", "event": "EIA Crude Oil Inventories" },
+    { "time": "After Close", "event": "Dave & Buster's Earnings (AMC)" }
   ],
-  "note": null,
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
