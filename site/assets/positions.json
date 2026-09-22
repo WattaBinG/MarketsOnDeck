@@ -49,11 +49,11 @@
       "optionType": "call",
       "strike": 155,
       "expiration": "2026-10-02",
-      "quantity": 3,
+      "quantity": 2,
       "avgCost": 436.22,
       "currentPrice": 420.0,
       "priorClose": 436.22,
-      "unrealizedGain": -48.67
+      "unrealizedGain": -32.44
     },
     {
       "account": "Trading",
@@ -62,21 +62,21 @@
       "optionType": "call",
       "strike": 300,
       "expiration": "2026-10-02",
-      "quantity": 2,
+      "quantity": 1,
       "avgCost": 449.0,
       "currentPrice": 433.0,
       "priorClose": 449.0,
-      "unrealizedGain": -32.0
+      "unrealizedGain": -16.0
     },
     {
       "account": "Trading",
       "symbol": "ETH",
       "assetType": "crypto",
       "quantity": 1.6,
-      "avgCost": 2736.44,
-      "currentPrice": 2736.44,
-      "priorClose": 2736.44,
-      "unrealizedGain": 0
+      "avgCost": 2748.46,
+      "currentPrice": 2748.46,
+      "priorClose": 2748.46,
+      "unrealizedGain": 0.0
     },
     {
       "account": "Trading",
@@ -86,7 +86,7 @@
       "avgCost": 1.0,
       "currentPrice": 1.0,
       "priorClose": 1.0,
-      "unrealizedGain": 0
+      "unrealizedGain": 0.0
     },
     {
       "account": "Agentic",
