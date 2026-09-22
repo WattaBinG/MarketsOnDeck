@@ -13,7 +13,31 @@
   } catch (e) {}
 })();
 
+
+// What to Watch Today: strike through events whose ET time has passed.
+// Runs on the client clock against the box's data-watch-date, so the static
+// nightly build needs no intraday regeneration. Future-dated boxes (evening
+// build for tomorrow) show nothing passed; stale boxes are left untouched.
+function markPassedWatchEvents() {
+  var box = document.querySelector('.watch-box[data-watch-date]');
+  if (!box) return;
+  var et;
+  try { et = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })); }
+  catch (e) { return; }
+  var pad = function (n) { return String(n).padStart(2, '0'); };
+  var today = et.getFullYear() + '-' + pad(et.getMonth() + 1) + '-' + pad(et.getDate());
+  if (box.getAttribute('data-watch-date') !== today) return;
+  var nowMin = et.getHours() * 60 + et.getMinutes();
+  box.querySelectorAll('.watch-list li').forEach(function (li) {
+    var span = li.querySelector('.watch-time');
+    var m = span && span.textContent.trim().match(/^(\d{1,2}):(\d{2})\s*(AM|PM)/i);
+    if (!m) return;
+    var h = (+m[1]) % 12 + (/pm/i.test(m[3]) ? 12 : 0);
+    if (h * 60 + (+m[2]) <= nowMin) li.classList.add('watch-passed');
+  });
+}
 document.addEventListener('DOMContentLoaded', function () {
+  markPassedWatchEvents();
   var navToggleBtn = document.getElementById('navToggle');
   var nav = document.getElementById('primaryNav');
   if (navToggleBtn && nav) {
