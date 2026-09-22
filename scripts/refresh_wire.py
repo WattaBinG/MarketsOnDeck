@@ -262,16 +262,19 @@ def fetch_discord(state):
     (fail open) - the Wire is never broken by Discord."""
     token = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
     channel = os.environ.get("DISCORD_NEWS_CHANNEL_ID", "").strip()
-    if not token or not channel:
-        print("discord: DISCORD_BOT_TOKEN / DISCORD_NEWS_CHANNEL_ID not set; skipping (wire unaffected)")
-        return []
     items = []
     newest = None
     skipped_sport = 0
     skipped_offtopic = 0
     after = str(state.get("discord_last_message_id") or "")
     pages = 0
-    while pages < 3:  # at most 300 messages per run
+    if not token or not channel:
+        # Discord edge-blocks datacenter IPs on channel reads (proven
+        # 2026-09-21: HTTP 403 "internal network error" from GitHub runners
+        # and cloud browsers; residential IPs pass). The REST path only runs
+        # where it can work; the local-reader file below is the real feed.
+        print("discord: REST credentials not set; relying on the local-reader posts file")
+    while (token and channel) and pages < 3:  # at most 300 messages per run
         qs = "limit=100" + (f"&after={after}" if after else "")
         req = Request(f"https://discord.com/api/v10/channels/{channel}/messages?{qs}",
                       headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
@@ -338,6 +341,49 @@ def fetch_discord(state):
     if newest is not None:
         prev = str(state.get("discord_last_message_id") or "0")
         state["discord_last_message_id"] = max(prev, newest, key=int)
+
+    # Local reader merge (the trades.json pattern: Keith's PC writes, the
+    # cloud merges). scripts/discord_local_reader.py commits raw channel
+    # posts to data/discord-posts.json; the sports/market filtering lives
+    # ONLY here, so the local script stays a dumb fetcher.
+    try:
+        local = json.loads((ROOT / "data" / "discord-posts.json").read_text(encoding="utf-8"))
+    except Exception:
+        local = None
+    if isinstance(local, dict) and local.get("posts"):
+        have_urls = {it["url"] for it in items}
+        used = 0
+        for post in local["posts"]:
+            url = post.get("url")
+            text = (post.get("text") or "").strip()
+            if not url or not text or url in have_urls:
+                continue
+            try:
+                ts = datetime.fromisoformat(str(post.get("timestamp")).replace("Z", "+00:00"))
+            except (ValueError, TypeError):
+                continue
+            if SPORT.search(text):
+                skipped_sport += 1
+                continue
+            if not DISCORD_MONEY.search(text):
+                skipped_offtopic += 1
+                continue
+            if len(text) > 200:
+                text = text[:197].rstrip() + "..."
+            items.append({
+                "headline": text,
+                "url": url,
+                "source": DISCORD_SOURCE,
+                "category": classify(text, "Markets"),
+                "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                "_ts": ts.timestamp(),
+                "_known_ts": True,
+            })
+            have_urls.add(url)
+            used += 1
+        print(f"discord: merged {used} posts from the local reader "
+              f"(fetched {local.get('fetchedAt', '?')})")
+
     items.sort(key=lambda i: i["_ts"], reverse=True)
     kept = items[:DISCORD_MAX_ITEMS]
     print(f"discord: {len(kept)} market items kept, {skipped_sport} sports posts skipped, "
