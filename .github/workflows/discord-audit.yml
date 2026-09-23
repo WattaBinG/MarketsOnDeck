@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Read-only audit
+      - name: Read-only probe
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_NEWS_CHANNEL_ID: ${{ vars.DISCORD_NEWS_CHANNEL_ID }}
-        run: python3 audit/discord_audit.py
+        run: python3 audit/discord_probe.py
       - name: Encrypt report (logs and artifacts on public repos are public)
         if: always()
         run: |
