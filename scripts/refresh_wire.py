@@ -305,6 +305,11 @@ def fetch_walter_bloomberg(state, cutoff):
     return items[:WB_MAX_ITEMS]
 
 
+# Discord requires bot clients to identify as "DiscordBot (url, version)";
+# a browser User-Agent on a bot token gets 403 code 40333 from Cloudflare.
+DISCORD_UA = "DiscordBot (https://github.com/WattaBinG/MarketsOnDeck, 1.0)"
+
+
 def fetch_discord(state):
     """Keith's own Discord server, read hourly through his existing
     'MarketsOnDeck Reader' bot. Skips cleanly when the repo secret/variable
@@ -319,15 +324,15 @@ def fetch_discord(state):
     after = str(state.get("discord_last_message_id") or "")
     pages = 0
     if not token or not channel:
-        # Discord edge-blocks datacenter IPs on channel reads (proven
-        # 2026-09-21: HTTP 403 "internal network error" from GitHub runners
-        # and cloud browsers; residential IPs pass). The REST path only runs
-        # where it can work; the local-reader file below is the real feed.
+        # The 403 "internal network error" (code 40333) seen from GitHub
+        # runners on 2026-09-21 was the browser User-Agent, not the IP:
+        # Cloudflare blocks bot-token requests that claim to be Chrome.
+        # DISCORD_UA below fixes it (verified from a cloud host 2026-09-23).
         print("discord: REST credentials not set; relying on the local-reader posts file")
     while (token and channel) and pages < 3:  # at most 300 messages per run
         qs = "limit=100" + (f"&after={after}" if after else "")
         req = Request(f"https://discord.com/api/v10/channels/{channel}/messages?{qs}",
-                      headers={"User-Agent": UA, "Authorization": f"Bot {token}"})
+                      headers={"User-Agent": DISCORD_UA, "Authorization": f"Bot {token}"})
         try:
             with urlopen(req, timeout=20) as r:
                 batch = json.loads(r.read().decode("utf-8", "replace"))
