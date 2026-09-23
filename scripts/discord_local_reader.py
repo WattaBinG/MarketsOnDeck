@@ -34,8 +34,7 @@ CHANNEL = os.environ.get("DISCORD_NEWS_CHANNEL_ID", "338736813126451201").strip(
 MAX_PAGES = 3           # at most 300 messages per run
 MAX_POST_AGE_HOURS = 36 # same freshness window the Wire uses
 
-UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-      "(KHTML, like Gecko) Chrome/126.0 Safari/537.36")
+UA = "DiscordBot (https://github.com/WattaBinG/MarketsOnDeck, 1.0)"
 
 
 def load_token():
@@ -77,6 +76,7 @@ def main():
                 print(f"rate limited, waiting {retry:.0f}s")
                 time.sleep(min(retry, 30.0))
                 continue
+            print(e.read()[:300].decode("utf-8", "replace"), file=sys.stderr)
             print(f"Discord returned HTTP {e.code} - leaving everything as-is.", file=sys.stderr)
             sys.exit(1)
         except Exception as e:
