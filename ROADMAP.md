@@ -9,28 +9,29 @@ no-secrets-in-git rule apply to every item below without exception.
 Keith is intermittently out of Claude credits, so items here are meant to be
 independently pickable — each has enough context to start cold.
 
-## 1. Discord local reader — currently blocked, needs a clean test
+## 1. Discord local reader — FIXED 2026-09-23
 
-`docs/DISCORD-LOCAL-READER.md` assumes Keith's PC gives a residential IP
-Discord won't block. Tested 2026-09-22 from a Claude Code session running
-"locally" on Keith's machine — still got the same HTTP 403 "internal network
-error" (code 40333) that GitHub Actions gets. Two possibilities:
-- Claude Code's shell layer routes through non-residential infrastructure
-  even when it looks local (files are local, network egress might not be).
-- Discord's block is broader than "just datacenter IPs."
+Root cause was never IP location, permissions, or rate limiting (all three
+were investigated and ruled out first) — it was `scripts/discord_local_reader.py`
+sending a spoofed Chrome User-Agent string, which Cloudflare's bot
+management silently 403'd regardless of who ran it or from where. Fixed by
+switching to a proper `DiscordBot (URL, version)` User-Agent per Discord's
+own API docs, and the HTTPError handler now prints the response body on
+failure so a real cause shows up immediately next time instead of a blind
+403. First clean run pulled 77 posts. Script fix and first data commit are
+both on main as of 2026-09-23.
 
-**Next step:** Keith runs `python scripts\discord_local_reader.py` from a
-plain Command Prompt/PowerShell window he opens himself (Start menu, not
-through any AI tool). If that also 403s, the local-reader design itself
-needs rethinking (maybe a phone/browser-based fetch instead, or accepting
-Discord as a source is currently not viable and dropping it from the Wire's
-source list until Discord's policy changes). If it works, wire it into
-Windows Task Scheduler (the doc already has the steps) so it runs on its own
-without Keith or any AI needing to trigger it — matches Keith's general ask
-that things "run on their own" rather than needing a session to kick them.
+The bot token lives in `scripts/discord_token.local.txt` (gitignored) —
+already set, no need to ask Keith for it again unless it's rotated. The
+hourly `refresh-wire.yml` Action merges `data/discord-posts.json` into the
+Wire automatically and drops sports-score content there (the reader itself
+is intentionally unfiltered — see `docs/DISCORD-LOCAL-READER.md`).
 
-The bot token is already in `scripts/discord_token.local.txt` (gitignored)
-as of 2026-09-22 — no need to ask Keith for it again unless it's rotated.
+**Still open:** the reader needs to actually run periodically to stay
+useful (posts go stale after 36 hours). It only runs when a human or AI
+session executes it by hand right now — wiring it into Windows Task
+Scheduler (steps already in `docs/DISCORD-LOCAL-READER.md`) would make it
+self-sustaining the way Keith wants ("things run on their own").
 
 ## 2. What to Watch Today — make it intraday, not just a morning snapshot
 

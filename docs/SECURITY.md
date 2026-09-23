@@ -79,18 +79,18 @@ could use to steal his data?
   paper and live keys must never be mixed, and live-trading scope stays
   out of this repo's jobs regardless.
 
-6. **Discord bot token (added 2026-09-22).** Keith's "MarketsOnDeck Reader"
-   bot token follows the same pattern as everything else: it lives only in
-   `scripts/discord_token.local.txt` (gitignored, never committed) or the
-   `DISCORD_BOT_TOKEN` GitHub Actions secret, never in any tracked file, doc,
-   or commit message. Verified 2026-09-22: reading the news channel returns
-   Discord's HTTP 403 "internal network error" (code 40333) not just from
-   GitHub Actions but also from this Claude Code session's shell — meaning
-   the "runs on Keith's PC so it's a residential IP" assumption in
-   `docs/DISCORD-LOCAL-READER.md` needs re-verifying from a plain terminal
-   window Keith runs himself, not through an AI tool's shell layer (which may
-   route through infrastructure Discord still treats as non-residential).
-   Unresolved as of 2026-09-22 — see `ROADMAP.md`.
+6. **Discord bot token (added 2026-09-22, resolved 2026-09-23).** Keith's
+   "MarketsOnDeck Reader" bot token follows the same pattern as everything
+   else: it lives only in `scripts/discord_token.local.txt` (gitignored,
+   never committed) or the `DISCORD_BOT_TOKEN` GitHub Actions secret, never
+   in any tracked file, doc, or commit message. The HTTP 403 "internal
+   network error" seen 2026-09-22 (from GitHub Actions, from a Claude Code
+   session, and from Keith's own terminal alike) turned out to be
+   unrelated to IP, permissions, or rate limiting — `discord_local_reader.py`
+   was sending a spoofed Chrome User-Agent, which Cloudflare's bot
+   management blocks regardless of source. Fixed 2026-09-23 by using a
+   proper `DiscordBot (URL, version)` User-Agent per Discord's API docs.
+   See `ROADMAP.md` item 1.
 
 ## Standing rules going forward
 
