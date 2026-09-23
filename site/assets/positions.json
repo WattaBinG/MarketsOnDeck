@@ -36,11 +36,11 @@
       "account": "Trading",
       "symbol": "HD",
       "assetType": "equity",
-      "quantity": 50,
-      "avgCost": 301.26,
+      "quantity": 75,
+      "avgCost": 300.7,
       "currentPrice": 305.35,
       "priorClose": 297.2,
-      "unrealizedGain": 204.5
+      "unrealizedGain": 348.75
     },
     {
       "account": "Agentic",
@@ -82,11 +82,24 @@
       "optionType": "put",
       "strike": 742.5,
       "expiration": "2026-10-02",
-      "quantity": 1,
-      "avgCost": 1980.0,
+      "quantity": 2,
+      "avgCost": 1910.0,
       "currentPrice": 2600.0,
       "priorClose": 2613.0,
-      "unrealizedGain": 620.0
+      "unrealizedGain": 1380.0
+    },
+    {
+      "account": "Trading",
+      "symbol": "HD",
+      "assetType": "option",
+      "optionType": "call",
+      "strike": 300,
+      "expiration": "2026-10-02",
+      "quantity": 2,
+      "avgCost": 497.5,
+      "currentPrice": 930.0,
+      "priorClose": 433.0,
+      "unrealizedGain": 865.0
     },
     {
       "account": "Agentic",
@@ -106,9 +119,9 @@
       "symbol": "ETH",
       "assetType": "crypto",
       "quantity": 1.6,
-      "avgCost": 2662.5111,
-      "currentPrice": 2662.5111,
-      "priorClose": 2662.5111,
+      "avgCost": 2664.0483,
+      "currentPrice": 2664.0483,
+      "priorClose": 2664.0483,
       "unrealizedGain": 0.0
     },
     {
