@@ -1,28 +1,42 @@
 {
-  "asOf": "2026-09-23T17:25:38Z",
-  "asOfLabel": "1:25 PM ET",
+  "asOf": "2026-09-23T18:24:37Z",
+  "asOfLabel": "2:24 PM ET",
   "topStory": {
-    "headline": "10-year Treasury yield leaps to fresh 19-year high after hot economic readings",
-    "url": "https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html",
-    "source": "CNBC",
-    "category": "Macro",
-    "timestamp": "2026-09-23T16:30:00Z",
-    "image": "/assets/images/wire-macro.jpg"
+    "headline": "Trump-Xi summit: Leaders meet at White House amid tensions over Taiwan, trade and AI",
+    "url": "https://www.nbcnews.com/world/asia/trump-xi-summit-meet-white-house-tensions-taiwan-trade-ai-rcna598073",
+    "source": "NBC News",
+    "category": "Geopolitics",
+    "timestamp": "2026-09-23T18:00:00Z",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
+    {
+      "headline": "Nasdaq 100 slips, 10-year Treasury yield hits fresh 19-year high at 5.09% after hot PMI data",
+      "url": "https://www.benzinga.com/news/26/09/61953506/nasdaq-slips-10-year-yield-19-year-high-gold-sinks-markets-wednesday",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-23T17:08:51Z"
+    },
+    {
+      "headline": "US and Iran hold three-hour talks in New York; Trump says a settlement 'is going to be reached'",
+      "url": "https://www.axios.com/2026/09/22/unga-iran-us-trump-war",
+      "source": "Axios",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-22T21:00:00Z"
+    },
+    {
+      "headline": "Fed's Barr says further rate hikes will likely be needed after last week's move to 'recalibrate' costs",
+      "url": "https://www.933thedrive.com/2026/09/23/feds-barr-says-further-rate-hikes-will-likely-be-needed/",
+      "source": "93.3 The Drive",
+      "category": "Macro",
+      "timestamp": "2026-09-23T15:00:00Z"
+    },
     {
       "headline": "McDonald's falls as Investor Day sets $8.5 billion franchisee support plan through 2036",
       "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonald-falls-4-investor-day-142936117.html",
       "source": "Yahoo Finance",
       "category": "Markets",
       "timestamp": "2026-09-23T16:00:00Z"
-    },
-    {
-      "headline": "Nasdaq, Russell 2000 sink over 1% as oil, Treasury yields leap",
-      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026",
-      "source": "TheStreet",
-      "category": "Markets",
-      "timestamp": "2026-09-23T15:30:00Z"
     },
     {
       "headline": "Mortgage rates top 7%, highest since 2024; KB Home, Rocket, Lennar hit hardest",
@@ -32,11 +46,46 @@
       "timestamp": "2026-09-23T14:06:35Z"
     },
     {
-      "headline": "IonQ stock jumps after real-time quantum error decoder demonstration",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61934693/ionq-stock-jumps-after-real-time-quantum-error-decoder-demonstration",
+      "headline": "CoreWeave shares climb after UBS starts coverage with Buy rating, $120 price target",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61947004/coreweave-stock-trends-higher-today-whats-happening",
       "source": "Benzinga",
       "category": "Movers",
-      "timestamp": "2026-09-23T13:34:36Z"
+      "timestamp": "2026-09-23T13:00:00Z"
+    },
+    {
+      "headline": "Worthington Enterprises jumps 16% premarket after fiscal Q1 sales, earnings beat",
+      "url": "https://www.benzinga.com/news/26/09/61939028/why-worthington-enterprises-shares-are-trading-higher-by-around-16-here-are-20-stocks-moving-premarket",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-23T12:00:00Z"
+    },
+    {
+      "headline": "SoFi shares slip Wednesday, consolidating Tuesday's stablecoin-Mastercard rally",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61947385/whats-going-on-with-sofi-stock-wednesday-2",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-23T14:09:34Z"
+    },
+    {
+      "headline": "Disney set to elevate streaming prices, Bloomberg reports",
+      "url": "https://www.investing.com/news/stock-market-news/disney-set-to-elevate-streaming-prices-bloomberg-reports-4913602",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-23T11:00:00Z"
+    },
+    {
+      "headline": "Gold falls below $4,350 an ounce as hawkish Fed commentary outweighs oil pullback",
+      "url": "https://www.riotimesonline.com/gold-silver-precious-metals-wednesday-september-23-2026",
+      "source": "Rio Times Online",
+      "category": "Macro",
+      "timestamp": "2026-09-23T13:00:00Z"
+    },
+    {
+      "headline": "Beyond Nvidia: Jensen Investment's Allen Bond favors Broadcom, KLA, Amphenol as AI infrastructure plays",
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61953537/beyond-nvidia-broadcom-kla-amphenol",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-23T17:09:32Z"
     },
     {
       "headline": "Zelenskyy says Ukraine ready for 'energy ceasefire,' calls for trilateral meeting with Putin, Trump",
@@ -51,13 +100,6 @@
       "source": "Benzinga",
       "category": "Markets",
       "timestamp": "2026-09-23T07:50:16Z"
-    },
-    {
-      "headline": "Xi rolls into Trump summit with China's trade engine roaring",
-      "url": "https://www.investing.com/news/economic-indicators/xi-rolls-into-trump-summit-with-chinas-trade-engine-roaring-4908235",
-      "source": "Reuters",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T10:00:00Z"
     },
     {
       "headline": "Alibaba Cloud to open first cloud regions in Turkey, Finland and the Netherlands within a year",
@@ -81,39 +123,18 @@
       "timestamp": "2026-09-23T09:00:00Z"
     },
     {
-      "headline": "Iran reportedly says it can reopen Strait of Hormuz within 7 days if U.S. eases military pressure",
-      "url": "https://www.cnbc.com/2026/09/22/us-iran-war-trump-hormuz.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-22T20:00:00Z"
-    },
-    {
-      "headline": "SoFi, Mastercard launch stablecoin settlement across $25 billion card program",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61930061/sofi-mastercard-launch-stablecoin-settlement-across-25-billion-card-program",
+      "headline": "IonQ stock jumps after real-time quantum error decoder demonstration lifts quantum sector",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61934693/ionq-stock-jumps-after-real-time-quantum-error-decoder-demonstration",
       "source": "Benzinga",
       "category": "Movers",
-      "timestamp": "2026-09-22T17:50:01Z"
+      "timestamp": "2026-09-23T13:34:36Z"
     },
     {
-      "headline": "Richmond Fed's Barkin: supply shocks 'aren't proving short-lived,' leaves door open to more rate hikes",
-      "url": "https://finance.yahoo.com/economy/policy/article/richmond-feds-barkin-says-supply-shocks-arent-proving-short-lived-leaves-door-open-to-further-rate-hikes-173348390.html",
-      "source": "Yahoo Finance",
-      "category": "Macro",
-      "timestamp": "2026-09-22T17:33:48Z"
-    },
-    {
-      "headline": "PayPal joins Meta's Muse checkout ecosystem, shares jump",
-      "url": "https://finance.yahoo.com/technology/ai/articles/paypal-joins-meta-muse-checkout-162220957.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-22T16:22:20Z"
-    },
-    {
-      "headline": "Viking Therapeutics shares surge over 27% on weight-loss drug maintenance data",
-      "url": "https://finance.yahoo.com/healthcare/articles/viking-therapeutics-shares-surge-over-144000862.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-22T14:40:00Z"
+      "headline": "Nasdaq, Russell 2000 sink over 1% as oil, Treasury yields leap",
+      "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026",
+      "source": "TheStreet",
+      "category": "Markets",
+      "timestamp": "2026-09-23T15:30:00Z"
     }
   ]
 }
