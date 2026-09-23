@@ -1,17 +1,41 @@
 {
-  "asOf": "2026-09-23T20:24:01Z",
-  "asOfLabel": "4:24 PM ET",
+  "asOf": "2026-09-23T21:25:00Z",
+  "asOfLabel": "5:25 PM ET",
   "topStory": {
-    "headline": "Dow, S&P 500, Nasdaq tumble as 10-year Treasury yield surges to 2007 high",
-    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-23-dow-sp-500-nasdaq-080556640.html",
-    "source": "Yahoo Finance",
+    "headline": "10-year Treasury yield rockets to 19-year high. Here's what's driving the spike",
+    "url": "https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html",
+    "source": "CNBC",
     "category": "Macro",
-    "timestamp": "2026-09-23T20:00:00Z",
-    "firstSeen": "2026-09-23T20:24:01Z",
+    "timestamp": "2026-09-23T19:00:00Z",
+    "firstSeen": "2026-09-23T21:25:00Z",
     "leadSince": "2026-09-23T20:24:01Z",
     "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
+    {
+      "headline": "Fed's Barr says further rate hikes will likely be needed to bring inflation to target",
+      "url": "https://www.fxstreet.com/news/feds-barr-further-rate-hikes-needed-for-timely-return-to-2-inflation-202609231443",
+      "source": "FXStreet",
+      "category": "Macro",
+      "timestamp": "2026-09-23T14:43:00Z",
+      "firstSeen": "2026-09-23T21:25:00Z"
+    },
+    {
+      "headline": "US business activity expands at fastest pace since 2021 as S&P Global flash PMI hits 58.4",
+      "url": "https://www.investing.com/news/economy-news/us-business-activity-at-more-than-fiveyear-high-inflation-pressures-building-4913336",
+      "source": "Investing.com (Reuters)",
+      "category": "Macro",
+      "timestamp": "2026-09-23T13:45:00Z",
+      "firstSeen": "2026-09-23T21:25:00Z"
+    },
+    {
+      "headline": "US and Iran hold mediated UN talks on ending war, opening Strait of Hormuz",
+      "url": "https://www.aljazeera.com/news/2026/9/23/us-iran-hold-mediated-unga-talks-on-ending-war-opening-strait-of-hormuz",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T18:00:00Z",
+      "firstSeen": "2026-09-23T21:25:00Z"
+    },
     {
       "headline": "Trump and Xi meet at White House amid tensions over Taiwan, trade and AI",
       "url": "https://www.nbcnews.com/world/asia/trump-xi-summit-meet-white-house-tensions-taiwan-trade-ai-rcna598073",
@@ -21,20 +45,28 @@
       "firstSeen": "2026-09-23T20:24:01Z"
     },
     {
-      "headline": "US and Iran hold first direct-adjacent talks since June after Trump's 'annihilation' threat",
-      "url": "https://www.cbsnews.com/live-updates/iran-war-trump-un-speech-annihilate-threat-talks-resume/",
-      "source": "CBS News",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T19:30:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
       "headline": "Trump presses Venezuela's Rodríguez on elections, oil flows in first meeting since Maduro's capture",
       "url": "https://www.axios.com/2026/09/23/trump-venezuela-rodriguez-meeting-elections",
       "source": "Axios",
       "category": "Geopolitics",
       "timestamp": "2026-09-23T18:30:00Z",
       "firstSeen": "2026-09-23T20:24:01Z"
+    },
+    {
+      "headline": "Oil swings as traders eye Saudi pipeline restart, US-Iran talks",
+      "url": "https://www.spokesman.com/stories/2026/sep/23/oil-swings-as-traders-eye-saudi-pipeline-restart-u/",
+      "source": "The Spokesman-Review",
+      "category": "Markets",
+      "timestamp": "2026-09-23T12:00:00Z",
+      "firstSeen": "2026-09-23T21:25:00Z"
+    },
+    {
+      "headline": "SpaceX stock slides as Shotwell insider sale and share lockup expiration weigh on shares",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61958875/spacex-stock-slides-wednesday-what-happened",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-23T20:31:00Z",
+      "firstSeen": "2026-09-23T21:25:00Z"
     },
     {
       "headline": "30-year mortgage rates top 7% for first time since 2024, hitting homebuilder stocks",
@@ -50,14 +82,6 @@
       "source": "CNBC",
       "category": "Macro",
       "timestamp": "2026-09-23T15:30:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
-      "headline": "Oil prices rise after five-day losing streak as US-Iran talks continue",
-      "url": "https://www.cnbc.com/2026/09/23/iran-us-talks-crude-oil-un-wti.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-09-23T14:30:00Z",
       "firstSeen": "2026-09-23T20:24:01Z"
     },
     {
@@ -82,14 +106,6 @@
       "source": "CNBC",
       "category": "Movers",
       "timestamp": "2026-09-23T15:00:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
-      "headline": "Bitcoin falls below $84,000 as hot US PMI data sends Treasury yields higher",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/bitcoin-falls-below-84-000-145240094.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-23T18:52:00Z",
       "firstSeen": "2026-09-23T20:24:01Z"
     },
     {
@@ -131,14 +147,6 @@
       "category": "Geopolitics",
       "timestamp": "2026-09-23T19:56:26Z",
       "firstSeen": "2026-09-23T20:05:06Z"
-    },
-    {
-      "headline": "ShinyHunters hackers say they breached FBI, stole data on bureau employees",
-      "url": "https://www.cnbc.com/2026/09/22/shinyhunters-hack-fbi-stole-data.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-22T20:00:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
     }
   ]
 }
