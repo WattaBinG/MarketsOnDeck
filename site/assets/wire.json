@@ -1,152 +1,126 @@
 {
-  "asOf": "2026-09-23T21:25:00Z",
-  "asOfLabel": "5:25 PM ET",
+  "asOf": "2026-09-23T23:25:00Z",
+  "asOfLabel": "7:25 PM ET",
   "topStory": {
-    "headline": "10-year Treasury yield rockets to 19-year high. Here's what's driving the spike",
-    "url": "https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html",
-    "source": "CNBC",
+    "headline": "Treasury yields surge to near 20-year high as oil jumps back above $103 a barrel",
+    "url": "https://www.nbcnews.com/business/energy/treasury-yields-oil-stocks-rcna599398",
+    "source": "NBC News",
     "category": "Macro",
-    "timestamp": "2026-09-23T19:00:00Z",
-    "firstSeen": "2026-09-23T21:25:00Z",
-    "leadSince": "2026-09-23T20:24:01Z",
+    "timestamp": "2026-09-23T21:30:00Z",
     "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "Fed's Barr says further rate hikes will likely be needed to bring inflation to target",
-      "url": "https://www.fxstreet.com/news/feds-barr-further-rate-hikes-needed-for-timely-return-to-2-inflation-202609231443",
-      "source": "FXStreet",
-      "category": "Macro",
-      "timestamp": "2026-09-23T14:43:00Z",
-      "firstSeen": "2026-09-23T21:25:00Z"
-    },
-    {
-      "headline": "US business activity expands at fastest pace since 2021 as S&P Global flash PMI hits 58.4",
-      "url": "https://www.investing.com/news/economy-news/us-business-activity-at-more-than-fiveyear-high-inflation-pressures-building-4913336",
-      "source": "Investing.com (Reuters)",
-      "category": "Macro",
-      "timestamp": "2026-09-23T13:45:00Z",
-      "firstSeen": "2026-09-23T21:25:00Z"
-    },
-    {
-      "headline": "US and Iran hold mediated UN talks on ending war, opening Strait of Hormuz",
-      "url": "https://www.aljazeera.com/news/2026/9/23/us-iran-hold-mediated-unga-talks-on-ending-war-opening-strait-of-hormuz",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T18:00:00Z",
-      "firstSeen": "2026-09-23T21:25:00Z"
-    },
-    {
-      "headline": "Trump and Xi meet at White House amid tensions over Taiwan, trade and AI",
-      "url": "https://www.nbcnews.com/world/asia/trump-xi-summit-meet-white-house-tensions-taiwan-trade-ai-rcna598073",
-      "source": "NBC News",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T17:00:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
-      "headline": "Trump presses Venezuela's Rodríguez on elections, oil flows in first meeting since Maduro's capture",
-      "url": "https://www.axios.com/2026/09/23/trump-venezuela-rodriguez-meeting-elections",
-      "source": "Axios",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T18:30:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
-      "headline": "Oil swings as traders eye Saudi pipeline restart, US-Iran talks",
-      "url": "https://www.spokesman.com/stories/2026/sep/23/oil-swings-as-traders-eye-saudi-pipeline-restart-u/",
-      "source": "The Spokesman-Review",
-      "category": "Markets",
-      "timestamp": "2026-09-23T12:00:00Z",
-      "firstSeen": "2026-09-23T21:25:00Z"
-    },
-    {
-      "headline": "SpaceX stock slides as Shotwell insider sale and share lockup expiration weigh on shares",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61958875/spacex-stock-slides-wednesday-what-happened",
-      "source": "Benzinga",
+      "headline": "Barry Diller withdraws $18 billion bid for MGM Resorts, WSJ reports",
+      "url": "https://www.reuters.com/business/barry-diller-withdraws-bid-mgm-resorts-wsj-reports-2026-09-23/",
+      "source": "Reuters",
       "category": "Movers",
-      "timestamp": "2026-09-23T20:31:00Z",
-      "firstSeen": "2026-09-23T21:25:00Z"
+      "timestamp": "2026-09-23T22:14:35Z"
     },
     {
-      "headline": "30-year mortgage rates top 7% for first time since 2024, hitting homebuilder stocks",
-      "url": "https://www.benzinga.com/markets/economic-data/26/09/61947115/mortgage-rates-highest-since-2024-5-housing-stocks-kbh-rkt-len",
-      "source": "Benzinga",
+      "headline": "US stocks fall as bond yields jump on higher oil prices and a strong economic report",
+      "url": "https://www.washingtonpost.com/business/2026/09/23/stocks-markets-trump-iran-us/9d5024f2-b714-11f1-94cb-d3d8f22a8c8b_story.html",
+      "source": "The Washington Post",
       "category": "Macro",
-      "timestamp": "2026-09-23T14:06:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
+      "timestamp": "2026-09-23T20:30:00Z"
     },
     {
-      "headline": "Nearly 10% of borrowers opted for riskier adjustable-rate mortgages last week as rates soared over 7%",
-      "url": "https://www.cnbc.com/2026/09/23/nearly-10percent-of-borrowers-opted-for-riskier-mortgages-last-week.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-09-23T15:30:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
-      "headline": "IonQ stock jumps after real-time quantum error decoder demonstration lifts quantum sector",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61934693/ionq-stock-jumps-after-real-time-quantum-error-decoder-demonstration",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-23T13:34:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
-      "headline": "Home Depot co-founder Ken Langone says Eli Lilly could be a '$2,000 stock' in 3 to 4 years",
-      "url": "https://www.benzinga.com/markets/equities/26/09/61938783/eli-lilly-could-be-a-2000-stock-in-the-next-3-to-4-years-says-home-depot-co-founder-ken-langone",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-23T07:50:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
-      "headline": "McDonald's falls as investor day sets $8.5 billion franchisee support plan",
-      "url": "https://www.cnbc.com/2026/09/23/mcdonalds-investor-day-remodels-training-chicken-growth-plans.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-09-23T15:00:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
-    },
-    {
-      "headline": "Nokia shares fall on report of major mainland China retreat",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nokia-shares-fall-report-major-133859441.html",
+      "headline": "Nasdaq, Russell 2000 sink as 5-year Treasury hits 5% for first time since 2007",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-23-134802225.html",
       "source": "Yahoo Finance",
+      "category": "Macro",
+      "timestamp": "2026-09-23T17:48:00Z"
+    },
+    {
+      "headline": "Beyond Nvidia: 3 AI infrastructure stocks to watch — Broadcom, KLA, Amphenol",
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61953537/beyond-nvidia-broadcom-kla-amphenol",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-23T17:09:32Z"
+    },
+    {
+      "headline": "What's going on with SoFi stock Wednesday? Shares slip as $25B Mastercard stablecoin rollout digests",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61947385/whats-going-on-with-sofi-stock-wednesday-2",
+      "source": "Benzinga",
       "category": "Movers",
-      "timestamp": "2026-09-23T13:39:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
+      "timestamp": "2026-09-23T14:09:34Z"
     },
     {
-      "headline": "World's largest copper mine halts operations after worker death",
-      "url": "https://www.investing.com/news/stock-market-news/worlds-largest-copper-mine-halts-operations-after-worker-death-4913788",
-      "source": "Investing.com",
+      "headline": "Quantum stocks catch a bid after IonQ shows real-time error correction",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61945487/quantum-stocks-rally-ionq-real-time-error-correction",
+      "source": "Benzinga",
       "category": "Markets",
-      "timestamp": "2026-09-23T19:42:33Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
+      "timestamp": "2026-09-23T13:34:36Z"
     },
     {
-      "headline": "Record-breaking diesel prices look set to push grocery bills even higher — and Thanksgiving is getting closer",
-      "url": "https://www.marketwatch.com/story/record-breaking-diesel-prices-look-set-to-push-grocery-bills-even-higher-and-thanksgiving-is-getting-closer-178d3959?mod=mw_rss_topstories",
-      "source": "MarketWatch",
+      "headline": "Tesla vs. SpaceX: why Fitch favors Musk's rockets over his robots",
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61949735/tesla-vs-spacex-fitch-credit-rating",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-23T15:10:16Z"
+    },
+    {
+      "headline": "Meta Muse vs. Elon Musk's X: the battle for the 'everything app'",
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61955773/meta-muse-vs-elon-musk-x-everything-app",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-23T18:31:47Z"
+    },
+    {
+      "headline": "Iran's president blames U.S., Israel for global instability in defiant UN speech",
+      "url": "https://www.washingtonpost.com/world/2026/09/23/irans-president-address-un-general-assembly-after-trump-threatens-annihilation/",
+      "source": "The Washington Post",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T18:00:00Z"
+    },
+    {
+      "headline": "Venezuela's unelected leader Delcy Rodríguez seeks lost legitimacy at the UN. Will she get it?",
+      "url": "https://www.cnn.com/2026/09/23/americas/us-venezuela-rodriguez-un-trump-intl-hnk",
+      "source": "CNN",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T15:00:00Z"
+    },
+    {
+      "headline": "Global Intelligence Report for Wednesday, September 23, 2026",
+      "url": "https://www.thecipherbrief.com/report/global-intelligence-report-for-wednesday-september-23-2026",
+      "source": "The Cipher Brief",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T11:00:00Z"
+    },
+    {
+      "headline": "Worthington Enterprises shares jump 16% after first-quarter earnings, sales beat estimates",
+      "url": "https://www.benzinga.com/news/26/09/61939028/why-worthington-enterprises-shares-are-trading-higher-by-around-16-here-are-20-stocks-moving-premarket",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-23T12:00:00Z"
+    },
+    {
+      "headline": "AI trade is 'dead money' right now, says Fidelity's Jurrien Timmer",
+      "url": "https://www.benzinga.com/markets/equities/26/09/61939050/ai-is-dead-money-right-now-jurrien-timmer-says-could-a-productivity-miracle-still-be-coming",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-23T12:30:00Z"
+    },
+    {
+      "headline": "Latest oil market news and analysis for Sept. 24",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-23/latest-oil-market-news-and-analysis-for-sept-24",
+      "source": "Bloomberg",
       "category": "Markets",
-      "timestamp": "2026-09-23T19:49:00Z",
-      "firstSeen": "2026-09-23T20:24:01Z"
+      "timestamp": "2026-09-23T21:00:00Z"
     },
     {
-      "headline": "OpenAI and Anthropic CEOs push for AI cooperation at UN after Trump rebuffs 'globalist scheme' to control it",
-      "url": "https://www.cnbc.com/2026/09/23/altman-amodei-un-ai-safety.html",
+      "headline": "Stock market news for Sept. 23, 2026",
+      "url": "https://www.cnbc.com/2026/09/22/stock-market-today-live-updates.html",
       "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T19:55:31Z",
-      "firstSeen": "2026-09-23T20:05:06Z"
+      "category": "Markets",
+      "timestamp": "2026-09-23T21:15:00Z"
     },
     {
-      "headline": "As Trump and Xi meet, Chinese automakers could be a Pandora's box for U.S. auto industry",
-      "url": "https://www.cnbc.com/2026/09/23/trump-xi-chinese-automakers-us-access.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T19:56:26Z",
-      "firstSeen": "2026-09-23T20:05:06Z"
+      "headline": "Bitcoin and ethereum prices open near 8-month highs — is the crypto winter over?",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-september-23-2026-crypto-prices-open-near-8-month-highs-is-the-crypto-winter-over-113908671.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T11:39:08Z"
     }
   ]
 }
