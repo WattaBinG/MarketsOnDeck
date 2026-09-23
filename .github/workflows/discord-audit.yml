@@ -13,7 +13,7 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_NEWS_CHANNEL_ID: ${{ vars.DISCORD_NEWS_CHANNEL_ID }}
-        run: python3 audit/discord_makeover.py
+        run: python3 audit/discord_fix.py
       - name: Encrypt report (logs and artifacts on public repos are public)
         if: always()
         run: |
