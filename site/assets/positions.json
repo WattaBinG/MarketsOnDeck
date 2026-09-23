@@ -43,39 +43,6 @@
       "unrealizedGain": 204.5
     },
     {
-      "account": "Trading",
-      "symbol": "SPCX",
-      "assetType": "option",
-      "optionType": "call",
-      "strike": 155,
-      "expiration": "2026-10-02",
-      "quantity": 2,
-      "avgCost": 436.22,
-      "currentPrice": 507.5,
-      "priorClose": 420.0,
-      "unrealizedGain": 142.56
-    },
-    {
-      "account": "Trading",
-      "symbol": "ETH",
-      "assetType": "crypto",
-      "quantity": 1.6,
-      "avgCost": 2754.91,
-      "currentPrice": 2778.97,
-      "priorClose": 2754.91,
-      "unrealizedGain": 38.5
-    },
-    {
-      "account": "Trading",
-      "symbol": "USDG",
-      "assetType": "crypto",
-      "quantity": 1,
-      "avgCost": 1.0,
-      "currentPrice": 1.0,
-      "priorClose": 1.0,
-      "unrealizedGain": 0.0
-    },
-    {
       "account": "Agentic",
       "symbol": "KLAC",
       "assetType": "equity",
@@ -96,6 +63,32 @@
       "unrealizedGain": 19.84
     },
     {
+      "account": "Trading",
+      "symbol": "SPCX",
+      "assetType": "option",
+      "optionType": "call",
+      "strike": 155,
+      "expiration": "2026-10-02",
+      "quantity": 2,
+      "avgCost": 436.22,
+      "currentPrice": 508.0,
+      "priorClose": 420.0,
+      "unrealizedGain": 143.56
+    },
+    {
+      "account": "Trading",
+      "symbol": "META",
+      "assetType": "option",
+      "optionType": "put",
+      "strike": 742.5,
+      "expiration": "2026-10-02",
+      "quantity": 1,
+      "avgCost": 1980.0,
+      "currentPrice": 2600.0,
+      "priorClose": 2613.0,
+      "unrealizedGain": 620.0
+    },
+    {
       "account": "Agentic",
       "symbol": "CCL",
       "assetType": "option",
@@ -104,9 +97,29 @@
       "expiration": "2026-10-16",
       "quantity": 2,
       "avgCost": 60.5,
-      "currentPrice": 33.5,
+      "currentPrice": 34.0,
       "priorClose": 29.0,
-      "unrealizedGain": -54.0
+      "unrealizedGain": -53.0
+    },
+    {
+      "account": "Trading",
+      "symbol": "ETH",
+      "assetType": "crypto",
+      "quantity": 1.6,
+      "avgCost": 2670.9116,
+      "currentPrice": 2670.9116,
+      "priorClose": 2670.9116,
+      "unrealizedGain": 0.0
+    },
+    {
+      "account": "Trading",
+      "symbol": "USDG",
+      "assetType": "crypto",
+      "quantity": 1,
+      "avgCost": 1.0,
+      "currentPrice": 1.0,
+      "priorClose": 1.0,
+      "unrealizedGain": 0.0
     }
   ]
 }
