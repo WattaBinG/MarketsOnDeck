@@ -1,17 +1,12 @@
 {
-  "date": "2026-09-23",
-  "dateLabel": "Wednesday, September 23",
+  "date": "2026-09-24",
+  "dateLabel": "Thursday, September 24",
   "events": [
-    {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Petroleum Status Report"
-    }
+    { "time": "8:30 AM ET", "event": "Initial Jobless Claims" },
+    { "time": "8:30 AM ET", "event": "Darden Earnings (BMO)" },
+    { "time": "10:00 AM ET", "event": "New Home Sales" },
+    { "time": "1:00 PM ET", "event": "7-Year Note Auction" },
+    { "time": "4:15 PM ET", "event": "Costco Earnings (AMC)" }
   ],
-  "note": null,
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
