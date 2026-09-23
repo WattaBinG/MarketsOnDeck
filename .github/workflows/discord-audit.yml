@@ -1,0 +1,33 @@
+name: Discord audit (temporary, read-only)
+on:
+  push:
+    branches: [tmp/discord-audit]
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read-only audit
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_NEWS_CHANNEL_ID: ${{ vars.DISCORD_NEWS_CHANNEL_ID }}
+        run: python3 audit/discord_audit.py
+      - name: Encrypt report (logs and artifacts on public repos are public)
+        if: always()
+        run: |
+          [ -f audit/report.json ] || exit 0
+          openssl rand -hex 32 > k.txt
+          openssl enc -aes-256-cbc -pbkdf2 -salt -in audit/report.json -out report.enc -pass file:k.txt
+          openssl pkeyutl -encrypt -pubin -inkey audit/audit-pub.pem -in k.txt -out key.enc
+          rm -f k.txt audit/report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: audit-encrypted
+          path: |
+            report.enc
+            key.enc
+          if-no-files-found: ignore
+          retention-days: 1
