@@ -316,7 +316,12 @@ def fetch_discord(state):
     are not configured yet, and any API error only skips this source
     (fail open) - the Wire is never broken by Discord."""
     token = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
-    channel = os.environ.get("DISCORD_NEWS_CHANNEL_ID", "").strip()
+    # One or more channel IDs, comma-separated (e.g. wire-headlines plus
+    # earnings-and-ratings). The first keeps the legacy cursor key so the
+    # existing state carries over; extra channels get their own cursors.
+    channels = [c.strip() for c in os.environ.get("DISCORD_NEWS_CHANNEL_ID", "").split(",") if c.strip()]
+    channel = channels[0] if channels else ""
+    cursors = state.setdefault("discord_channel_cursors", {})
     items = []
     newest = None
     skipped_sport = 0
@@ -329,73 +334,80 @@ def fetch_discord(state):
         # Cloudflare blocks bot-token requests that claim to be Chrome.
         # DISCORD_UA below fixes it (verified from a cloud host 2026-09-23).
         print("discord: REST credentials not set; relying on the local-reader posts file")
-    while (token and channel) and pages < 3:  # at most 300 messages per run
-        qs = "limit=100" + (f"&after={after}" if after else "")
-        req = Request(f"https://discord.com/api/v10/channels/{channel}/messages?{qs}",
-                      headers={"User-Agent": DISCORD_UA, "Authorization": f"Bot {token}"})
-        try:
-            with urlopen(req, timeout=20) as r:
-                batch = json.loads(r.read().decode("utf-8", "replace"))
-        except HTTPError as e:
-            if e.code == 429:
-                try:
-                    retry = float(json.loads(e.read().decode("utf-8", "replace")).get("retry_after", 5.0))
-                except Exception:
-                    retry = 5.0
-                print(f"discord: rate limited, waiting {retry}s", file=sys.stderr)
-                _time.sleep(min(retry, 30.0))
-                continue  # same page again
-            print(f"discord: HTTP {e.code}; skipping source "
-                  "(check token, channel access, Message Content Intent)", file=sys.stderr)
-            break
-        except Exception as e:
-            print(f"discord: fetch failed ({e}); skipping source", file=sys.stderr)
-            break
-        pages += 1
-        if not isinstance(batch, list) or not batch:
-            break
-        for msg in batch:
-            mid = str(msg.get("id") or "")
-            if not mid:
-                continue
-            newest = mid if newest is None else max(newest, mid, key=int)
-            content = (msg.get("content") or "").strip()
-            urls = re.findall(r"https?://[^\s<>()]+", content)
-            text = re.sub(r"\s+", " ", re.sub(r"https?://[^\s<>()]+", "", content)).strip(" -|")
-            if not text and msg.get("embeds"):
-                emb = msg["embeds"][0] or {}
-                text = (emb.get("title") or "").strip()
-                if not urls and emb.get("url"):
-                    urls = [emb["url"]]
-            if not text or not urls:
-                continue  # a wire item needs both a headline and an outbound link
-            if SPORT.search(text):
-                skipped_sport += 1
-                continue  # homer/goal alerts never reach a finance wire
-            if not DISCORD_MONEY.search(text):
-                skipped_offtopic += 1
-                continue  # other non-market chatter stays off the wire
+    for ci, channel in enumerate(channels if token else []):
+        after = str((state.get("discord_last_message_id") if ci == 0 else cursors.get(channel)) or "")
+        newest = None
+        pages = 0
+        while pages < 3:  # at most 300 messages per channel per run
+            qs = "limit=100" + (f"&after={after}" if after else "")
+            req = Request(f"https://discord.com/api/v10/channels/{channel}/messages?{qs}",
+                          headers={"User-Agent": DISCORD_UA, "Authorization": f"Bot {token}"})
             try:
-                ts = datetime.fromisoformat(str(msg.get("timestamp")).replace("Z", "+00:00"))
-            except (ValueError, TypeError):
-                continue
-            if len(text) > 200:
-                text = text[:197].rstrip() + "..."
-            items.append({
-                "headline": text,
-                "url": urls[0],
-                "source": DISCORD_SOURCE,
-                "category": classify(text, "Markets"),
-                "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                "_ts": ts.timestamp(),
-                "_known_ts": True,
-            })
-        after = max((str(m.get("id")) for m in batch), key=int, default=after)
-        if len(batch) < 100:
-            break
-    if newest is not None:
-        prev = str(state.get("discord_last_message_id") or "0")
-        state["discord_last_message_id"] = max(prev, newest, key=int)
+                with urlopen(req, timeout=20) as r:
+                    batch = json.loads(r.read().decode("utf-8", "replace"))
+            except HTTPError as e:
+                if e.code == 429:
+                    try:
+                        retry = float(json.loads(e.read().decode("utf-8", "replace")).get("retry_after", 5.0))
+                    except Exception:
+                        retry = 5.0
+                    print(f"discord: rate limited, waiting {retry}s", file=sys.stderr)
+                    _time.sleep(min(retry, 30.0))
+                    continue  # same page again
+                print(f"discord: HTTP {e.code}; skipping source "
+                      "(check token, channel access, Message Content Intent)", file=sys.stderr)
+                break
+            except Exception as e:
+                print(f"discord: fetch failed ({e}); skipping source", file=sys.stderr)
+                break
+            pages += 1
+            if not isinstance(batch, list) or not batch:
+                break
+            for msg in batch:
+                mid = str(msg.get("id") or "")
+                if not mid:
+                    continue
+                newest = mid if newest is None else max(newest, mid, key=int)
+                content = (msg.get("content") or "").strip()
+                urls = re.findall(r"https?://[^\s<>()]+", content)
+                text = re.sub(r"\s+", " ", re.sub(r"https?://[^\s<>()]+", "", content)).strip(" -|")
+                if not text and msg.get("embeds"):
+                    emb = msg["embeds"][0] or {}
+                    text = (emb.get("title") or "").strip()
+                    if not urls and emb.get("url"):
+                        urls = [emb["url"]]
+                if not text or not urls:
+                    continue  # a wire item needs both a headline and an outbound link
+                if SPORT.search(text):
+                    skipped_sport += 1
+                    continue  # homer/goal alerts never reach a finance wire
+                if not DISCORD_MONEY.search(text):
+                    skipped_offtopic += 1
+                    continue  # other non-market chatter stays off the wire
+                try:
+                    ts = datetime.fromisoformat(str(msg.get("timestamp")).replace("Z", "+00:00"))
+                except (ValueError, TypeError):
+                    continue
+                if len(text) > 200:
+                    text = text[:197].rstrip() + "..."
+                items.append({
+                    "headline": text,
+                    "url": urls[0],
+                    "source": DISCORD_SOURCE,
+                    "category": classify(text, "Markets"),
+                    "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
+                    "_ts": ts.timestamp(),
+                    "_known_ts": True,
+                })
+            after = max((str(m.get("id")) for m in batch), key=int, default=after)
+            if len(batch) < 100:
+                break
+        if newest is not None:
+            if ci == 0:
+                prev = str(state.get("discord_last_message_id") or "0")
+                state["discord_last_message_id"] = max(prev, newest, key=int)
+            else:
+                cursors[channel] = max(str(cursors.get(channel) or "0"), newest, key=int)
 
     # Local reader merge (the trades.json pattern: Keith's PC writes, the
     # cloud merges). scripts/discord_local_reader.py commits raw channel
