@@ -1,21 +1,98 @@
 {
-  "asOf": "2026-09-24T17:23:53Z",
-  "asOfLabel": "1:23 PM ET",
+  "asOf": "2026-09-24T18:35:00Z",
+  "asOfLabel": "2:35 PM ET",
   "topStory": {
-    "headline": "US and Iran discuss phased deal to reopen Hormuz and end US blockade; S&P 500 erases early drop on the news",
-    "url": "https://www.usnews.com/news/world/articles/2026-09-24/us-and-iran-discuss-phased-deal-to-reopen-hormuz-and-end-us-blockade-sources-say",
-    "source": "Reuters",
-    "category": "Geopolitics",
-    "timestamp": "2026-09-24T16:17:00Z",
-    "image": "/assets/images/wire-geopolitics.jpg"
+    "headline": "10-year Treasury yield hits highest since 2007, 30-year highest since 2004, as bond rout pressures Wall Street for a third straight session",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-24-2026",
+    "source": "TheStreet",
+    "category": "Macro",
+    "timestamp": "2026-09-24T18:00:00Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
+    {
+      "headline": "Fears grow of renewed war in Ethiopia's Tigray region as rebel forces seize airports, form coalition against Abiy government",
+      "url": "https://www.houstonpublicmedia.org/npr/2026/09/24/nx-s1-5978861/fears-of-return-to-war-grow-in-ethiopias-tigray-region/",
+      "source": "NPR",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T10:00:00Z"
+    },
+    {
+      "headline": "Venezuela's acting president Delcy Rodríguez promises elections in first UN address since Maduro's ouster",
+      "url": "https://www.npr.org/2026/09/24/g-s1-144837/venezuela-leader-un-general-assembly",
+      "source": "NPR",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T09:00:00Z"
+    },
+    {
+      "headline": "Iranian security chief Rezaei says Strait of Hormuz 'will not reopen' unless US withdraws from the Gulf, complicating deal hopes",
+      "url": "https://www.yahoo.com/news/articles/iranian-official-threatens-strait-hormuz-173847232.html",
+      "source": "Yahoo News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T08:00:00Z"
+    },
+    {
+      "headline": "Trump and Xi extend US-China trade truce to Jan. 10, covering AI, rare earths and auto market access",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-09-24/us-and-china-extend-trade-truce-as-trump-and-xi-meet",
+      "source": "Bloomberg",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T15:30:00Z"
+    },
+    {
+      "headline": "Oil majors Chevron, ExxonMobil, Phillips 66 and Valero lobby against Trump's proposed 90-day diesel export ban",
+      "url": "https://www.cnbc.com/2026/09/23/trump-diesel-export-ban-gas-prices.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-23T20:00:00Z"
+    },
     {
       "headline": "Fed's Paulson says 'modest' further rate hikes may be needed as inflation stays elevated",
       "url": "https://www.cnbc.com/2026/09/24/philadelphia-feds-anna-paulson-says-modest-rate-moves-likely-ahead-to-tame-inflation.html",
       "source": "CNBC",
       "category": "Macro",
       "timestamp": "2026-09-24T14:47:00Z"
+    },
+    {
+      "headline": "Honda in final talks for $2.5 billion Ohio hybrid-vehicle plant, its first new North American factory in 20 years",
+      "url": "https://www.benzinga.com/news/travel/26/09/61972939/honda-motor-eyes-first-new-north-american-factory-in-nearly-20-years-with-2-5-billion-ohio-hybrid-plant-report",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-24T09:00:00Z"
+    },
+    {
+      "headline": "Vertiv to acquire Ireland's King Environmental Services, expanding its AI data-center cooling push",
+      "url": "https://www.benzinga.com/m-a/26/09/61979600/vertiv-expands-ai-data-center-cooling-push-with-new-acquisition",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-24T13:00:00Z"
+    },
+    {
+      "headline": "Brighthouse Financial jumps as Sixth Street revives takeover bid amid delays in rival Aquarian deal",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-22/sixth-street-revives-brighthouse-bid-as-rival-deal-hits-delays",
+      "source": "Bloomberg",
+      "category": "Movers",
+      "timestamp": "2026-09-22T00:00:00Z"
+    },
+    {
+      "headline": "Bitcoin holds above $83,000 even as gold, stocks and yields all point the other way",
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/09/61968595/bitcoin-broke-out-while-gold-stocks-struggled-it-feels-like-the-upside-down",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-24T12:31:29Z"
+    },
+    {
+      "headline": "SpaceX faces fresh insider-lockup share release as COO Shotwell files to sell $52 million in stock",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61970679/spacex-stock-faces-another-wave-of-insider-shares",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-24T13:34:28Z"
+    },
+    {
+      "headline": "Fire at SpaceX Starlink station in central Poland deemed 'sabotage' by digital affairs minister",
+      "url": "https://www.euronews.com/2026/09/24/fire-at-starlink-station-in-central-poland-was-sabotage-digital-affairs-minister-says",
+      "source": "Euronews",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T10:01:07Z"
     },
     {
       "headline": "US jobless claims fall to 197,000, beating forecasts as labor market holds firm",
@@ -25,87 +102,10 @@
       "timestamp": "2026-09-24T12:30:00Z"
     },
     {
-      "headline": "Senior IRGC commander killed in clash with gunmen near Iran-Pakistan border",
-      "url": "https://www.jpost.com/middle-east/iran-news/article-909499",
-      "source": "Jerusalem Post",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T20:00:00Z"
-    },
-    {
-      "headline": "Netanyahu heads to UN General Assembly, expected to lay out Iran regime-change timeline",
-      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-909521",
-      "source": "Jerusalem Post",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-24T13:00:00Z"
-    },
-    {
-      "headline": "Federal judge orders Trump administration to restore White House press access for CNN, MS NOW, Politico",
-      "url": "https://www.npr.org/2026/09/24/nx-s1-5979582/judge-order-trump-restore-access-white-house",
-      "source": "NPR",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-24T15:00:00Z"
-    },
-    {
-      "headline": "OpenAI says its AI agent hacked an Australian government Medicare portal without being told to",
-      "url": "https://www.cnbc.com/2026/09/24/openai-agent-hacked-australian-government-website-.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-09-24T10:00:00Z"
-    },
-    {
-      "headline": "SpaceX faces fresh wave of insider share unlocks as COO Shotwell plans $52 million sale",
-      "url": "https://www.benzinga.com/markets/tech/26/09/61970679/spacex-stock-faces-another-wave-of-insider-shares",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-24T13:34:28Z"
-    },
-    {
-      "headline": "Nebius surges 6%, CoreWeave treads water as JPMorgan upgrade flags rising AI compute pricing",
-      "url": "https://247wallst.com/investing/2026/09/24/nebius-surges-6-coreweave-treads-water-as-jpmorgan-upgrade-flags-rising-compute-pricing-iren-slides-4/",
-      "source": "24/7 Wall St.",
-      "category": "Movers",
-      "timestamp": "2026-09-24T14:00:00Z"
-    },
-    {
-      "headline": "Oracle cites 'force majeure' to shield itself on New Mexico data center project; stock sinks 5%",
+      "headline": "Oracle cites 'force majeure' to shield itself on New Mexico data center project; stock sinks",
       "url": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html",
       "source": "CNBC",
       "category": "Movers",
-      "timestamp": "2026-09-24T14:00:00Z"
-    },
-    {
-      "headline": "Trump welcomes Xi to White House summit with rare planeside greeting as trade truce extended to Jan. 10",
-      "url": "https://www.cnbc.com/2026/09/24/trump-xi-meeting-china-washington.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-24T15:30:00Z"
-    },
-    {
-      "headline": "Global bond rout brings highest US 30-year yield since 2004 as Iran war-widening threat lifts oil",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-30-year-yield-hits-highest-since-2004-as-bond-selloff-deepens",
-      "source": "Bloomberg",
-      "category": "Macro",
-      "timestamp": "2026-09-24T16:00:00Z"
-    },
-    {
-      "headline": "Gold holds drop as higher oil and hot US data fan rate-hike bets",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-24/gold-holds-drop-as-higher-oil-and-hot-us-data-fan-rate-hike-bets",
-      "source": "Bloomberg",
-      "category": "Macro",
-      "timestamp": "2026-09-24T11:00:00Z"
-    },
-    {
-      "headline": "Fire at Starlink station in central Poland was 'sabotage,' digital affairs minister says",
-      "url": "https://www.euronews.com/2026/09/24/fire-at-starlink-station-in-central-poland-was-sabotage-digital-affairs-minister-says",
-      "source": "Euronews",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-24T10:01:07Z"
-    },
-    {
-      "headline": "US new home sales jump to eight-month high in August, beating estimates",
-      "url": "https://money.usnews.com/investing/news/articles/2026-09-24/us-new-home-sales-jump-to-eight-month-high-in-august",
-      "source": "U.S. News",
-      "category": "Macro",
       "timestamp": "2026-09-24T14:00:00Z"
     },
     {
@@ -116,25 +116,11 @@
       "timestamp": "2026-09-24T15:34:32Z"
     },
     {
-      "headline": "MGM Resorts International sinks 10% as Barry Diller withdraws $48.30-a-share buyout offer",
-      "url": "https://247wallst.com/investing/2026/09/24/mgm-resorts-international-sinks-10-as-barry-diller-withdraws-48-30-a-share-buyout-offer-caesars-entertainment-barely-moves/",
-      "source": "24/7 Wall St.",
-      "category": "Movers",
-      "timestamp": "2026-09-24T13:50:00Z"
-    },
-    {
-      "headline": "Bitcoin breaks out while gold and stocks struggle: 'it feels like the upside down'",
-      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/09/61968595/bitcoin-broke-out-while-gold-stocks-struggled-it-feels-like-the-upside-down",
-      "source": "Benzinga",
-      "category": "Macro",
-      "timestamp": "2026-09-24T12:31:29Z"
-    },
-    {
-      "headline": "Acadia Pharmaceuticals slides after Phase 2 Alzheimer's psychosis trial misses primary endpoint",
-      "url": "https://www.investing.com/news/stock-market-news/acadia-pharmaceuticals-stock-tumbles-on-mixed-trial-results-93CH-4915049",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-09-24T09:00:00Z"
+      "headline": "Senior IRGC commander killed in clash with gunmen near Iran-Pakistan border",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-909499",
+      "source": "Jerusalem Post",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T20:00:00Z"
     }
   ]
 }
