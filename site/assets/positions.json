@@ -82,11 +82,11 @@
       "optionType": "put",
       "strike": 742.5,
       "expiration": "2026-10-02",
-      "quantity": 2,
-      "avgCost": 1910.0,
+      "quantity": 4,
+      "avgCost": 1367.5,
       "currentPrice": 2243.0,
-      "priorClose": 1910.0,
-      "unrealizedGain": 666.0
+      "priorClose": 1367.5,
+      "unrealizedGain": 3502.0
     },
     {
       "account": "Trading",
@@ -119,9 +119,9 @@
       "symbol": "ETH",
       "assetType": "crypto",
       "quantity": 1.6,
-      "avgCost": 2692.35,
-      "currentPrice": 2692.35,
-      "priorClose": 2692.35,
+      "avgCost": 2688.52,
+      "currentPrice": 2688.52,
+      "priorClose": 2688.52,
       "unrealizedGain": 0
     },
     {
