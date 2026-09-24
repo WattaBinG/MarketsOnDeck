@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-23T20:41:00Z",
+  "asOf": "2026-09-23T20:00:00Z",
   "asOfLabel": "Market Close, Sep 23",
   "positions": [
     {
@@ -8,9 +8,9 @@
       "assetType": "equity",
       "quantity": 200,
       "avgCost": 17.1,
-      "currentPrice": 17.16,
-      "priorClose": 16.97,
-      "unrealizedGain": 12.0
+      "currentPrice": 16.55,
+      "priorClose": 17.16,
+      "unrealizedGain": -110.0
     },
     {
       "account": "Trading",
@@ -18,9 +18,9 @@
       "assetType": "equity",
       "quantity": 500,
       "avgCost": 8.81,
-      "currentPrice": 9.08,
-      "priorClose": 8.96,
-      "unrealizedGain": 135.0
+      "currentPrice": 9.12,
+      "priorClose": 9.08,
+      "unrealizedGain": 155.0
     },
     {
       "account": "Trading",
@@ -28,9 +28,9 @@
       "assetType": "equity",
       "quantity": 153,
       "avgCost": 124.25,
-      "currentPrice": 154.72,
-      "priorClose": 151.85,
-      "unrealizedGain": 4661.91
+      "currentPrice": 148.36,
+      "priorClose": 154.72,
+      "unrealizedGain": 3688.83
     },
     {
       "account": "Trading",
@@ -38,9 +38,9 @@
       "assetType": "equity",
       "quantity": 75,
       "avgCost": 300.7,
-      "currentPrice": 305.35,
-      "priorClose": 297.2,
-      "unrealizedGain": 348.75
+      "currentPrice": 296.72,
+      "priorClose": 305.35,
+      "unrealizedGain": -298.5
     },
     {
       "account": "Agentic",
@@ -48,9 +48,9 @@
       "assetType": "equity",
       "quantity": 2.281702,
       "avgCost": 189.93,
-      "currentPrice": 188.32,
-      "priorClose": 183.97,
-      "unrealizedGain": -3.67
+      "currentPrice": 187.86,
+      "priorClose": 188.32,
+      "unrealizedGain": -4.72
     },
     {
       "account": "Agentic",
@@ -58,9 +58,9 @@
       "assetType": "equity",
       "quantity": 8,
       "avgCost": 8.16,
-      "currentPrice": 10.64,
-      "priorClose": 10.25,
-      "unrealizedGain": 19.84
+      "currentPrice": 9.77,
+      "priorClose": 10.64,
+      "unrealizedGain": 12.88
     },
     {
       "account": "Trading",
@@ -71,9 +71,9 @@
       "expiration": "2026-10-02",
       "quantity": 2,
       "avgCost": 436.22,
-      "currentPrice": 508.0,
-      "priorClose": 420.0,
-      "unrealizedGain": 143.56
+      "currentPrice": 222.0,
+      "priorClose": 508.0,
+      "unrealizedGain": -428.44
     },
     {
       "account": "Trading",
@@ -84,9 +84,9 @@
       "expiration": "2026-10-02",
       "quantity": 2,
       "avgCost": 1910.0,
-      "currentPrice": 2600.0,
-      "priorClose": 2613.0,
-      "unrealizedGain": 1380.0
+      "currentPrice": 2242.5,
+      "priorClose": 1910.0,
+      "unrealizedGain": 665.0
     },
     {
       "account": "Trading",
@@ -97,9 +97,9 @@
       "expiration": "2026-10-02",
       "quantity": 2,
       "avgCost": 497.5,
-      "currentPrice": 930.0,
-      "priorClose": 433.0,
-      "unrealizedGain": 865.0
+      "currentPrice": 360.0,
+      "priorClose": 497.5,
+      "unrealizedGain": -275.0
     },
     {
       "account": "Agentic",
@@ -110,9 +110,9 @@
       "expiration": "2026-10-16",
       "quantity": 2,
       "avgCost": 60.5,
-      "currentPrice": 34.0,
-      "priorClose": 29.0,
-      "unrealizedGain": -53.0
+      "currentPrice": 24.0,
+      "priorClose": 34.0,
+      "unrealizedGain": -73.0
     },
     {
       "account": "Trading",
@@ -120,9 +120,9 @@
       "assetType": "crypto",
       "quantity": 1.6,
       "avgCost": 2676.1643,
-      "currentPrice": 2676.1643,
+      "currentPrice": 2695.5515,
       "priorClose": 2676.1643,
-      "unrealizedGain": 0.0
+      "unrealizedGain": 31.02
     },
     {
       "account": "Trading",
