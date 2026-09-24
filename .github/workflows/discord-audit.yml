@@ -1,4 +1,4 @@
-name: Discord audit (temporary, read-only)
+name: Discord admin (temporary)
 on:
   push:
     branches: [tmp/discord-audit]
@@ -9,11 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Approved makeover
+      - name: Emoji pack + AutoMod rules
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_NEWS_CHANNEL_ID: ${{ vars.DISCORD_NEWS_CHANNEL_ID }}
-        run: python3 audit/discord_check_bots.py
+        run: python3 audit/discord_emoji.py
       - name: Encrypt report (logs and artifacts on public repos are public)
         if: always()
         run: |
