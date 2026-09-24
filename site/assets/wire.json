@@ -1,152 +1,144 @@
 {
-  "asOf": "2026-09-24T09:47:18Z",
-  "asOfLabel": "5:47 AM ET",
+  "asOf": "2026-09-24T11:25:00Z",
+  "asOfLabel": "7:25 AM ET",
   "topStory": {
-    "headline": "30-year Treasury yield hits highest level since 2004",
-    "url": "https://www.cnbc.com/2026/09/24/us-treasury-yields-bonds-fed-inflation.html",
+    "headline": "Trump welcomes Xi Jinping to Washington as US extends China trade truce to Jan. 10",
+    "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
     "source": "CNBC",
     "category": "Macro",
-    "timestamp": "2026-09-24T09:36:19Z",
-    "firstSeen": "2026-09-24T09:47:18Z",
-    "leadSince": "2026-09-24T09:47:18Z",
+    "timestamp": "2026-09-24T10:15:00Z",
+    "firstSeen": "2026-09-24T11:25:00Z",
+    "leadSince": "2026-09-24T11:25:00Z",
     "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "Bentley takes on Ferrari with its first EV priced at $230,000",
-      "url": "https://www.cnbc.com/2026/09/24/bentley-motors-torcal-ferrari-luce-autos-ev.html",
-      "source": "CNBC",
+      "headline": "30-year Treasury yield touches 5.44%, highest since 2004, as bond selloff deepens",
+      "url": "https://www.axios.com/2026/09/24/treasury-yields-inflation-bonds",
+      "source": "Axios",
+      "category": "Macro",
+      "timestamp": "2026-09-24T09:30:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "Iran's president tells UN Tehran \"will not bow down\" after Trump threatens \"annihilation\"",
+      "url": "https://www.washingtonpost.com/world/2026/09/23/irans-president-address-un-general-assembly-after-trump-threatens-annihilation/",
+      "source": "Washington Post",
       "category": "Geopolitics",
-      "timestamp": "2026-09-24T09:39:53Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
+      "timestamp": "2026-09-23T20:00:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
     },
     {
-      "headline": "The Easiest Way to Invest in the Anthropic IPO May Be Hidden in Plain Sight",
-      "url": "https://www.nasdaq.com/articles/easiest-way-invest-anthropic-ipo-may-be-hidden-plain-sight",
-      "source": "Nasdaq",
-      "category": "Movers",
-      "timestamp": "2026-09-24T09:38:00Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "SpaceX and Nvidia Just Deepened Their Compute Alliance. 1 Stock Offers Far Greater Upside Before 2028.",
-      "url": "https://www.nasdaq.com/articles/spacex-and-nvidia-just-deepened-their-compute-alliance-1-stock-offers-far-greater-upside",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-24T09:35:00Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "The Retail Investor Fleecing Marches On: Another 319 Million SpaceX Shares Unlock Today, Sept. 24",
-      "url": "https://www.nasdaq.com/articles/retail-investor-fleecing-marches-another-319-million-spacex-shares-unlock-today-sept-24",
-      "source": "Nasdaq",
-      "category": "Movers",
-      "timestamp": "2026-09-24T09:26:01Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "China Central Bank: To step up counter-cyclical adjustments",
-      "url": "https://x.com/financialjuice/status/2103052657523056650",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-09-24T09:23:47Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "Earnings call transcript: Oracle Japan posts strong Q1 2026 cloud growth",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-oracle-japan-posts-strong-q1-2026-cloud-growth-93CH-4914700",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-24T09:23:38Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "Earnings call transcript: Living REIT posts steady H1 2026 growth as shares slip",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-living-reit-posts-steady-h1-2026-growth-as-shares-slip-93CH-4914699",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-09-24T09:21:56Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "Citizens reiterates Booking Holdings stock rating amid Airbnb concerns",
-      "url": "https://www.investing.com/news/analyst-ratings/citizens-reiterates-booking-holdings-stock-rating-amid-airbnb-concerns-93CH-4914698",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-24T09:20:45Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "3 Key Metrics That Will Determine Whether the Stock Market Can Keep Moving Higher",
-      "url": "https://www.nasdaq.com/articles/3-key-metrics-will-determine-whether-stock-market-can-keep-moving-higher",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-24T09:20:00Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "Fed's Williams: I view AI boom as more of a traditional demand shock, question on how long chip supply challenges last.",
-      "url": "https://x.com/financialjuice/status/2103044355833389530",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-09-24T08:50:45Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "Fed's Williams: AI gains could boost us productivity like in 1996-2005, other gains reflect stronger business formation.",
-      "url": "https://x.com/financialjuice/status/2103042504815780191",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-09-24T08:43:46Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "Fed's Williams: I see a tug of war between higher trend growth pushing up US r-star and demographics pulling it down.",
-      "url": "https://x.com/financialjuice/status/2103040837667987524",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-09-24T08:36:48Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "Fed's Williams: None of us know if higher yields will last.",
-      "url": "https://x.com/financialjuice/status/2103040826050052317",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-09-24T08:36:47Z",
-      "firstSeen": "2026-09-24T09:47:18Z"
-    },
-    {
-      "headline": "AUSTRALIA PM ALBANESE: INCIDENT INVOLVED OPENAI AGENT GAINING UNAUTHORIZED ACCESS INTO THE PUBLIC-FACING MEDICARE STATISTICS REPORTING SERVICE PORTAL",
-      "url": "https://t.me/WalterBloomberg/35830",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "AI",
-      "timestamp": "2026-09-23T20:51:37Z",
-      "firstSeen": "2026-09-24T04:06:10Z"
-    },
-    {
-      "headline": "US JUDGE DECIDING CASE OVER MEDIA BAN AT THE WHITE HOUSE ENDS HEARING WITHOUT SAYING WHEN HE WOULD RULE",
-      "url": "https://t.me/WalterBloomberg/35829",
-      "source": "Walter Bloomberg (unofficial mirror)",
+      "headline": "Suspected Russian sabotage sets fire to Starlink ground station in Poland used for Ukraine connectivity",
+      "url": "https://www.euronews.com/2026/09/24/fire-at-starlink-station-in-central-poland-was-sabotage-digital-affairs-minister-says",
+      "source": "Euronews",
       "category": "Geopolitics",
-      "timestamp": "2026-09-23T20:25:44Z",
-      "firstSeen": "2026-09-24T04:06:10Z"
+      "timestamp": "2026-09-24T08:00:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
     },
     {
-      "headline": "HASSETT SAYS WARSH MANAGES UNUSUALLY PARTISAN FEDERAL RESERVE",
-      "url": "https://t.me/WalterBloomberg/35828",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-09-23T18:30:55Z",
-      "firstSeen": "2026-09-24T04:06:10Z"
+      "headline": "Trump welcomes Xi with B-1 bomber flyover and 100-foot red carpet as Taiwan, AI on the agenda",
+      "url": "https://www.benzinga.com/markets/economic-data/26/09/61962937/trump-xi-jinping-china-taiwan-ai-talks-b1-bomber-show-of-force",
+      "source": "Benzinga",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T22:00:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
     },
     {
-      "headline": "HASSETT QUESTIONS FED'S DECISION TO HIKE RATES",
-      "url": "https://t.me/WalterBloomberg/35827",
-      "source": "Walter Bloomberg (unofficial mirror)",
+      "headline": "S&P 500, Nasdaq futures slide as Wall Street weighs Trump-Xi summit and rising yields",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-24-dow-sp-500-nasdaq-080352893.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-24T10:03:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "30-year mortgage rate tops 7% for first time since 2024, hitting homebuilder stocks",
+      "url": "https://www.axios.com/2026/09/23/mortgage-interest-rates-7-percent",
+      "source": "Axios",
       "category": "Macro",
-      "timestamp": "2026-09-23T18:30:45Z",
-      "firstSeen": "2026-09-24T04:06:10Z"
+      "timestamp": "2026-09-23T14:00:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "Oil rally cools as Saudi Arabia restarts East-West pipeline, bypassing Strait of Hormuz",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-22/saudi-arabia-running-tests-to-resume-east-west-oil-pipeline",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-09-22T12:00:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "SpaceX slides as Shotwell files to sell $52M in stock ahead of 328M-share lockup expiration",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61958875/spacex-stock-slides-wednesday-what-happened",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-23T20:31:33Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "IonQ jumps after real-time quantum error-correction breakthrough; quantum stocks rally",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61934693/ionq-stock-jumps-after-real-time-quantum-error-decoder-demonstration",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-23T13:34:36Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "KLA, Broadcom, Amphenol named top AI-infrastructure picks as chip market seen reaching $3.2 trillion by 2030",
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61953537/beyond-nvidia-broadcom-kla-amphenol",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-23T17:09:32Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "Home Depot co-founder Ken Langone says Eli Lilly could hit $2,000 a share, challenging HD as his top holding",
+      "url": "https://www.benzinga.com/markets/equities/26/09/61938783/eli-lilly-could-be-a-2000-stock-in-the-next-3-to-4-years-says-home-depot-co-founder-ken-langone",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-23T07:50:16Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "SoFi consolidates after Mastercard stablecoin settlement goes live across $25B card program",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61947385/whats-going-on-with-sofi-stock-wednesday-2",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-23T14:09:34Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "Jobless claims, building permits and new home sales due Thursday as Fed's Barkin speaks",
+      "url": "https://www.investing.com/news/stock-market-news/jobless-claims-building-permits-and-new-home-sales-due-thursday-93CH-4913711",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-09-23T18:00:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "Costco set to report Q4 earnings Thursday as Wall Street watches tariff refunds and membership fees",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/gear-costco-cost-q4-earnings-131503375.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T13:15:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "Polymarket odds on a Trump-Xi handshake near 50% as summit gets underway",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/trump-xi-polymarket-odds-handshake-125246698.html",
+      "source": "Yahoo Finance",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T16:52:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
+    },
+    {
+      "headline": "Xi rolls into Trump summit with China's export engine still roaring, complicating trade talks",
+      "url": "https://www.investing.com/news/economic-indicators/xi-rolls-into-trump-summit-with-chinas-trade-engine-roaring-4908235",
+      "source": "Reuters (via Investing.com)",
+      "category": "Macro",
+      "timestamp": "2026-09-23T11:00:00Z",
+      "firstSeen": "2026-09-24T11:25:00Z"
     }
   ]
 }
