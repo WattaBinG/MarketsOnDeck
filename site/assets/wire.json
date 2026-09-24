@@ -1,15 +1,71 @@
 {
-  "asOf": "2026-09-24T16:23:17Z",
-  "asOfLabel": "12:23 PM ET",
+  "asOf": "2026-09-24T17:23:53Z",
+  "asOfLabel": "1:23 PM ET",
   "topStory": {
-    "headline": "Global bond rout brings highest US 30-year yield since 2004 as Iran war-widening threat lifts oil",
-    "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-30-year-yield-hits-highest-since-2004-as-bond-selloff-deepens",
-    "source": "Bloomberg",
-    "category": "Macro",
-    "timestamp": "2026-09-24T16:00:00Z",
-    "image": "/assets/images/wire-macro.jpg"
+    "headline": "US and Iran discuss phased deal to reopen Hormuz and end US blockade; S&P 500 erases early drop on the news",
+    "url": "https://www.usnews.com/news/world/articles/2026-09-24/us-and-iran-discuss-phased-deal-to-reopen-hormuz-and-end-us-blockade-sources-say",
+    "source": "Reuters",
+    "category": "Geopolitics",
+    "timestamp": "2026-09-24T16:17:00Z",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
+    {
+      "headline": "Fed's Paulson says 'modest' further rate hikes may be needed as inflation stays elevated",
+      "url": "https://www.cnbc.com/2026/09/24/philadelphia-feds-anna-paulson-says-modest-rate-moves-likely-ahead-to-tame-inflation.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-24T14:47:00Z"
+    },
+    {
+      "headline": "US jobless claims fall to 197,000, beating forecasts as labor market holds firm",
+      "url": "https://www.usnews.com/news/top-news/articles/2026-09-24/us-weekly-jobless-claims-decrease-as-labor-market-regains-footing",
+      "source": "U.S. News",
+      "category": "Macro",
+      "timestamp": "2026-09-24T12:30:00Z"
+    },
+    {
+      "headline": "Senior IRGC commander killed in clash with gunmen near Iran-Pakistan border",
+      "url": "https://www.jpost.com/middle-east/iran-news/article-909499",
+      "source": "Jerusalem Post",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T20:00:00Z"
+    },
+    {
+      "headline": "Netanyahu heads to UN General Assembly, expected to lay out Iran regime-change timeline",
+      "url": "https://www.jpost.com/israel-news/politics-and-diplomacy/article-909521",
+      "source": "Jerusalem Post",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T13:00:00Z"
+    },
+    {
+      "headline": "Federal judge orders Trump administration to restore White House press access for CNN, MS NOW, Politico",
+      "url": "https://www.npr.org/2026/09/24/nx-s1-5979582/judge-order-trump-restore-access-white-house",
+      "source": "NPR",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T15:00:00Z"
+    },
+    {
+      "headline": "OpenAI says its AI agent hacked an Australian government Medicare portal without being told to",
+      "url": "https://www.cnbc.com/2026/09/24/openai-agent-hacked-australian-government-website-.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-24T10:00:00Z"
+    },
+    {
+      "headline": "SpaceX faces fresh wave of insider share unlocks as COO Shotwell plans $52 million sale",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61970679/spacex-stock-faces-another-wave-of-insider-shares",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-24T13:34:28Z"
+    },
+    {
+      "headline": "Nebius surges 6%, CoreWeave treads water as JPMorgan upgrade flags rising AI compute pricing",
+      "url": "https://247wallst.com/investing/2026/09/24/nebius-surges-6-coreweave-treads-water-as-jpmorgan-upgrade-flags-rising-compute-pricing-iren-slides-4/",
+      "source": "24/7 Wall St.",
+      "category": "Movers",
+      "timestamp": "2026-09-24T14:00:00Z"
+    },
     {
       "headline": "Oracle cites 'force majeure' to shield itself on New Mexico data center project; stock sinks 5%",
       "url": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html",
@@ -25,32 +81,11 @@
       "timestamp": "2026-09-24T15:30:00Z"
     },
     {
-      "headline": "Xi says China and US 'stand to gain from cooperation' as Washington summit gets underway",
-      "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-xi-summit",
-      "source": "NPR",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-24T15:00:00Z"
-    },
-    {
-      "headline": "Iran adviser warns war could expand to the Indian Ocean if US attacks again",
-      "url": "https://www.al-monitor.com/originals/2026/09/iran-threatens-expand-war-indian-ocean-what-know",
-      "source": "Al-Monitor",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-24T13:00:00Z"
-    },
-    {
-      "headline": "Brent crude tops $106 as Iran threat to widen war dims hopes of a Strait of Hormuz deal",
-      "url": "https://www.businesstoday.in/latest/economy/story/oil-rises-as-iran-threat-to-widen-war-dims-hopes-of-strait-of-hormuz-deal-557670-2026-09-24",
-      "source": "Business Today",
-      "category": "Macro",
-      "timestamp": "2026-09-24T12:30:00Z"
-    },
-    {
-      "headline": "US stock futures drop as yields climb further, oil rises",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-stock-futures-drop-as-yields-climb-further-oil-rises",
+      "headline": "Global bond rout brings highest US 30-year yield since 2004 as Iran war-widening threat lifts oil",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-30-year-yield-hits-highest-since-2004-as-bond-selloff-deepens",
       "source": "Bloomberg",
-      "category": "Markets",
-      "timestamp": "2026-09-24T11:44:00Z"
+      "category": "Macro",
+      "timestamp": "2026-09-24T16:00:00Z"
     },
     {
       "headline": "Gold holds drop as higher oil and hot US data fan rate-hike bets",
@@ -58,55 +93,6 @@
       "source": "Bloomberg",
       "category": "Macro",
       "timestamp": "2026-09-24T11:00:00Z"
-    },
-    {
-      "headline": "Bond market alarm bells are ringing, but El-Erian says psychology may be fueling the fear more than fundamentals",
-      "url": "https://www.benzinga.com/markets/bonds/26/09/61968162/bond-market-alarm-bells-are-ringing-but-mohamed-el-erian-says-psychology-may-be-fueling-the-fear-more-than-fundamentals",
-      "source": "Benzinga",
-      "category": "Macro",
-      "timestamp": "2026-09-24T12:09:57Z"
-    },
-    {
-      "headline": "White House rules out diesel export ban as pump prices surge above $6.50",
-      "url": "https://www.newsweek.com/trumps-diesel-export-plan-dismissed-own-officials-12477261",
-      "source": "Newsweek",
-      "category": "Macro",
-      "timestamp": "2026-09-24T10:00:00Z"
-    },
-    {
-      "headline": "Google moves up space data center timeline: Project Suncatcher satellite launches Oct. 1 on a SpaceX Falcon 9",
-      "url": "https://www.benzinga.com/markets/tech/26/09/61976294/google-moves-up-its-space-data-center-timeline-project-suncatcher-launches-oct-1",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-24T15:34:32Z"
-    },
-    {
-      "headline": "Bitcoin breaks out while gold and stocks struggle: 'it feels like the upside down'",
-      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/09/61968595/bitcoin-broke-out-while-gold-stocks-struggled-it-feels-like-the-upside-down",
-      "source": "Benzinga",
-      "category": "Macro",
-      "timestamp": "2026-09-24T12:31:29Z"
-    },
-    {
-      "headline": "Acadia Pharmaceuticals slides after Phase 2 Alzheimer's psychosis trial misses primary endpoint",
-      "url": "https://www.investing.com/news/stock-market-news/acadia-pharmaceuticals-stock-tumbles-on-mixed-trial-results-93CH-4915049",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-09-24T09:00:00Z"
-    },
-    {
-      "headline": "Meta unveils $1,299 VR Glasses, camera-less smart glasses at Meta Connect",
-      "url": "https://finance.yahoo.com/technology/article/meta-unveils-1299-vr-glasses-camera-less-smart-glasses-at-meta-connect-235611909.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-24T08:00:00Z"
-    },
-    {
-      "headline": "MGM Resorts International sinks 10% as Barry Diller withdraws $48.30-a-share buyout offer",
-      "url": "https://247wallst.com/investing/2026/09/24/mgm-resorts-international-sinks-10-as-barry-diller-withdraws-48-30-a-share-buyout-offer-caesars-entertainment-barely-moves/",
-      "source": "24/7 Wall St.",
-      "category": "Movers",
-      "timestamp": "2026-09-24T13:50:00Z"
     },
     {
       "headline": "Fire at Starlink station in central Poland was 'sabotage,' digital affairs minister says",
@@ -121,6 +107,34 @@
       "source": "U.S. News",
       "category": "Macro",
       "timestamp": "2026-09-24T14:00:00Z"
+    },
+    {
+      "headline": "Google moves up space data center timeline: Project Suncatcher satellite launches Oct. 1 on a SpaceX Falcon 9",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61976294/google-moves-up-its-space-data-center-timeline-project-suncatcher-launches-oct-1",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-24T15:34:32Z"
+    },
+    {
+      "headline": "MGM Resorts International sinks 10% as Barry Diller withdraws $48.30-a-share buyout offer",
+      "url": "https://247wallst.com/investing/2026/09/24/mgm-resorts-international-sinks-10-as-barry-diller-withdraws-48-30-a-share-buyout-offer-caesars-entertainment-barely-moves/",
+      "source": "24/7 Wall St.",
+      "category": "Movers",
+      "timestamp": "2026-09-24T13:50:00Z"
+    },
+    {
+      "headline": "Bitcoin breaks out while gold and stocks struggle: 'it feels like the upside down'",
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/09/61968595/bitcoin-broke-out-while-gold-stocks-struggled-it-feels-like-the-upside-down",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-24T12:31:29Z"
+    },
+    {
+      "headline": "Acadia Pharmaceuticals slides after Phase 2 Alzheimer's psychosis trial misses primary endpoint",
+      "url": "https://www.investing.com/news/stock-market-news/acadia-pharmaceuticals-stock-tumbles-on-mixed-trial-results-93CH-4915049",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-09-24T09:00:00Z"
     }
   ]
 }
