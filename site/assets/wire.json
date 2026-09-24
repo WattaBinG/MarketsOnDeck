@@ -1,144 +1,119 @@
 {
-  "asOf": "2026-09-24T11:25:00Z",
-  "asOfLabel": "7:25 AM ET",
+  "asOf": "2026-09-24T12:35:00Z",
+  "asOfLabel": "8:35 AM ET",
   "topStory": {
-    "headline": "Trump welcomes Xi Jinping to Washington as US extends China trade truce to Jan. 10",
-    "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
-    "source": "CNBC",
+    "headline": "Global bond selloff sends 30-year Treasury yield to highest since 2004",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-30-year-yield-hits-highest-since-2004-as-bond-selloff-deepens",
+    "source": "Bloomberg",
     "category": "Macro",
-    "timestamp": "2026-09-24T10:15:00Z",
-    "firstSeen": "2026-09-24T11:25:00Z",
-    "leadSince": "2026-09-24T11:25:00Z",
+    "timestamp": "2026-09-24T11:00:00Z",
     "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "30-year Treasury yield touches 5.44%, highest since 2004, as bond selloff deepens",
-      "url": "https://www.axios.com/2026/09/24/treasury-yields-inflation-bonds",
-      "source": "Axios",
+      "headline": "Trump extends US-China trade truce to Jan. 10 as Xi visits White House",
+      "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
+      "source": "CNBC",
       "category": "Macro",
-      "timestamp": "2026-09-24T09:30:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
+      "timestamp": "2026-09-24T10:15:00Z"
     },
     {
-      "headline": "Iran's president tells UN Tehran \"will not bow down\" after Trump threatens \"annihilation\"",
-      "url": "https://www.washingtonpost.com/world/2026/09/23/irans-president-address-un-general-assembly-after-trump-threatens-annihilation/",
-      "source": "Washington Post",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T20:00:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
-    },
-    {
-      "headline": "Suspected Russian sabotage sets fire to Starlink ground station in Poland used for Ukraine connectivity",
-      "url": "https://www.euronews.com/2026/09/24/fire-at-starlink-station-in-central-poland-was-sabotage-digital-affairs-minister-says",
-      "source": "Euronews",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-24T08:00:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
-    },
-    {
-      "headline": "Trump welcomes Xi with B-1 bomber flyover and 100-foot red carpet as Taiwan, AI on the agenda",
-      "url": "https://www.benzinga.com/markets/economic-data/26/09/61962937/trump-xi-jinping-china-taiwan-ai-talks-b1-bomber-show-of-force",
+      "headline": "10-year Treasury yield hits 19-year high near 5.15% as Fed rate-hike odds climb to 71%",
+      "url": "https://www.benzinga.com/markets/equities/26/09/61964596/stock-market-today-sp-500-nasdaq-100-futures-drop-as-bessent-says-iranian-aviation-restrictions-are-working-abnb-orcl-cost-in-focus",
       "source": "Benzinga",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T22:00:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
-    },
-    {
-      "headline": "S&P 500, Nasdaq futures slide as Wall Street weighs Trump-Xi summit and rising yields",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-24-dow-sp-500-nasdaq-080352893.html",
-      "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-24T10:03:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
-    },
-    {
-      "headline": "30-year mortgage rate tops 7% for first time since 2024, hitting homebuilder stocks",
-      "url": "https://www.axios.com/2026/09/23/mortgage-interest-rates-7-percent",
-      "source": "Axios",
       "category": "Macro",
-      "timestamp": "2026-09-23T14:00:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
+      "timestamp": "2026-09-24T09:00:00Z"
     },
     {
-      "headline": "Oil rally cools as Saudi Arabia restarts East-West pipeline, bypassing Strait of Hormuz",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-22/saudi-arabia-running-tests-to-resume-east-west-oil-pipeline",
+      "headline": "El-Erian says bond-market 'psychological anchoring,' not fundamentals, is driving 2007-comparison fears",
+      "url": "https://www.benzinga.com/markets/bonds/26/09/61968162/bond-market-alarm-bells-are-ringing-but-mohamed-el-erian-says-psychology-may-be-fueling-the-fear-more-than-fundamentals",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-24T12:09:00Z"
+    },
+    {
+      "headline": "Wall Street leans bearish: Polymarket puts just 39% odds on a higher S&P 500 open Thursday",
+      "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61963266/stock-market-will-sp-500-open-up-or-down-today-44",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-24T05:45:00Z"
+    },
+    {
+      "headline": "Oil climbs as Iran tensions persist; WTI near $93, Brent above $103 ahead of Trump-Xi talks",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-stock-futures-drop-as-yields-climb-further-oil-rises",
       "source": "Bloomberg",
       "category": "Markets",
-      "timestamp": "2026-09-22T12:00:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
+      "timestamp": "2026-09-24T11:44:00Z"
     },
     {
-      "headline": "SpaceX slides as Shotwell files to sell $52M in stock ahead of 328M-share lockup expiration",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61958875/spacex-stock-slides-wednesday-what-happened",
+      "headline": "Lululemon's 53% collapse exposes a broader consumer spending squeeze across retail",
+      "url": "https://www.benzinga.com/markets/large-cap/26/09/61908710/lululemon-stock-collapse-broader-spending-squeeze",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-21T20:14:00Z"
+    },
+    {
+      "headline": "Costco set to report Q4 earnings today; Street eyes $6.55 EPS as tariff-refund reinvestment plans watched",
+      "url": "https://www.tipranks.com/news/costco-cost-reports-q4-earnings-on-sept-24-heres-what-analysts-expect",
+      "source": "TipRanks",
+      "category": "Markets",
+      "timestamp": "2026-09-24T08:00:00Z"
+    },
+    {
+      "headline": "Stitch Fix sinks 18% premarket on mixed Q4 results and weak FY27 sales guidance",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61967730/stitch-fix-posts-mixed-q4-results-joins-viking-therapeutics-and-other-big-stocks-moving-lower-in-thursdays-pre-market-session",
       "source": "Benzinga",
       "category": "Movers",
-      "timestamp": "2026-09-23T20:31:33Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
+      "timestamp": "2026-09-24T04:00:00Z"
     },
     {
-      "headline": "IonQ jumps after real-time quantum error-correction breakthrough; quantum stocks rally",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61934693/ionq-stock-jumps-after-real-time-quantum-error-decoder-demonstration",
+      "headline": "SpaceX gets rare access to classified Pentagon space-tracking data; rivals cry foul over Stargaze edge",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61964835/elon-musks-spacex-gets-rare-access-to-classified-us-space-tracking-data-for-internal-use-competitors-cry-foul-over-stargaze-advantage-report",
       "source": "Benzinga",
       "category": "Movers",
-      "timestamp": "2026-09-23T13:34:36Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
+      "timestamp": "2026-09-24T09:27:00Z"
     },
     {
-      "headline": "KLA, Broadcom, Amphenol named top AI-infrastructure picks as chip market seen reaching $3.2 trillion by 2030",
-      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61953537/beyond-nvidia-broadcom-kla-amphenol",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-23T17:09:32Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
-    },
-    {
-      "headline": "Home Depot co-founder Ken Langone says Eli Lilly could hit $2,000 a share, challenging HD as his top holding",
-      "url": "https://www.benzinga.com/markets/equities/26/09/61938783/eli-lilly-could-be-a-2000-stock-in-the-next-3-to-4-years-says-home-depot-co-founder-ken-langone",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-23T07:50:16Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
-    },
-    {
-      "headline": "SoFi consolidates after Mastercard stablecoin settlement goes live across $25B card program",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61947385/whats-going-on-with-sofi-stock-wednesday-2",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-23T14:09:34Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
-    },
-    {
-      "headline": "Jobless claims, building permits and new home sales due Thursday as Fed's Barkin speaks",
-      "url": "https://www.investing.com/news/stock-market-news/jobless-claims-building-permits-and-new-home-sales-due-thursday-93CH-4913711",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-23T18:00:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
-    },
-    {
-      "headline": "Costco set to report Q4 earnings Thursday as Wall Street watches tariff refunds and membership fees",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/gear-costco-cost-q4-earnings-131503375.html",
+      "headline": "Meta's Zuckerberg says Muse AI agent will stay free, monetized via a small transaction fee",
+      "url": "https://finance.yahoo.com/technology/article/metas-zuckerberg-says-muse-ai-agent-will-take-a-small-fee-from-transactions-234639802.html",
       "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-23T13:15:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
+      "category": "Movers",
+      "timestamp": "2026-09-23T23:46:00Z"
     },
     {
-      "headline": "Polymarket odds on a Trump-Xi handshake near 50% as summit gets underway",
-      "url": "https://finance.yahoo.com/markets/crypto/articles/trump-xi-polymarket-odds-handshake-125246698.html",
-      "source": "Yahoo Finance",
+      "headline": "Trump greets Xi with lavish fanfare, but expectations for summit outcomes remain low",
+      "url": "https://www.cnn.com/2026/09/24/politics/trump-xi-meeting-china-ai",
+      "source": "CNN",
       "category": "Geopolitics",
-      "timestamp": "2026-09-23T16:52:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
+      "timestamp": "2026-09-24T12:00:00Z"
     },
     {
-      "headline": "Xi rolls into Trump summit with China's export engine still roaring, complicating trade talks",
-      "url": "https://www.investing.com/news/economic-indicators/xi-rolls-into-trump-summit-with-chinas-trade-engine-roaring-4908235",
-      "source": "Reuters (via Investing.com)",
-      "category": "Macro",
-      "timestamp": "2026-09-23T11:00:00Z",
-      "firstSeen": "2026-09-24T11:25:00Z"
+      "headline": "Iran war liveblog: Tehran says ready for 'dialogue, diplomacy without force'",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/23/iran-war-live-trump-confirms-very-good-meeting-with-iran-at-un",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T18:00:00Z"
+    },
+    {
+      "headline": "Iraq PM pledges to disarm Iran-backed militias by June 2027",
+      "url": "https://www.jpost.com/middle-east/article-909358",
+      "source": "The Jerusalem Post",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T14:00:00Z"
+    },
+    {
+      "headline": "EU faces backlash for lifting sanctions on Russian billionaires Usmanov and Fridman",
+      "url": "https://www.usnews.com/news/world/articles/2026-09-23/eu-faces-backlash-after-lifting-sanctions-on-russian-billionaires",
+      "source": "U.S. News & World Report",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T16:00:00Z"
+    },
+    {
+      "headline": "Italy's Senate approves nuclear power comeback after four-decade ban",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-23/italy-approves-return-of-nuclear-power-after-four-decade-ban",
+      "source": "Bloomberg",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T14:00:00Z"
     }
   ]
 }
