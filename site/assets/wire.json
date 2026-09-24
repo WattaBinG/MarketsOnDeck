@@ -1,51 +1,28 @@
 {
-  "asOf": "2026-09-24T00:25:00Z",
-  "asOfLabel": "8:25 PM ET",
+  "asOf": "2026-09-24T01:35:00Z",
+  "asOfLabel": "9:35 PM ET",
   "topStory": {
-    "headline": "China's Xi kicks off state visit to Washington with a rare planeside welcome from Trump",
-    "url": "https://www.pbs.org/newshour/world/chinas-xi-kicks-off-state-visit-to-washington-with-a-rare-planeside-welcome-from-trump",
-    "source": "PBS NewsHour",
-    "category": "Geopolitics",
-    "timestamp": "2026-09-23T20:00:00Z",
-    "firstSeen": "2026-09-24T00:25:00Z",
-    "leadSince": "2026-09-24T00:25:00Z",
-    "image": "/assets/images/wire-geopolitics.jpg"
+    "headline": "5-year Treasury yield tops 5% for first time since 2007 as weak note auction fuels bond selloff",
+    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-23-2026",
+    "source": "TheStreet",
+    "category": "Macro",
+    "timestamp": "2026-09-23T21:00:00Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "Trump-Xi summit: leaders meet at White House amid tensions over Taiwan, trade and AI",
-      "url": "https://www.nbcnews.com/world/asia/trump-xi-summit-meet-white-house-tensions-taiwan-trade-ai-rcna598073",
-      "source": "NBC News",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T22:00:00Z"
-    },
-    {
-      "headline": "Trump and Xi meet at moment of global consequence",
-      "url": "https://www.npr.org/2026/09/23/nx-s1-5978733/trump-xi-meeting-china",
-      "source": "NPR",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T21:30:00Z"
-    },
-    {
-      "headline": "Trump threatens to 'annihilate' Iran at UN General Assembly if nuclear talks fail",
-      "url": "https://www.benzinga.com/markets/equities/26/09/61939487/stock-market-today-dow-jones-sp-500-futures-gain-as-trump-threatens-to-annihilate-iran-at-unga-kb-home-worthington-ionq-in-focus",
-      "source": "Benzinga",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T09:00:00Z"
-    },
-    {
-      "headline": "Nasdaq slips, 10-year Treasury yield hits 19-year high after blowout September PMI data",
-      "url": "https://www.benzinga.com/news/26/09/61953506/nasdaq-slips-10-year-yield-19-year-high-gold-sinks-markets-wednesday",
-      "source": "Benzinga",
-      "category": "Macro",
-      "timestamp": "2026-09-23T16:20:00Z"
-    },
-    {
-      "headline": "Bank of America says Brent crude could top $150 a barrel if Iran war disruptions persist",
-      "url": "https://www.cnbc.com/2026/09/22/bank-of-america-says-brent-crude-oil-could-top-150-a-barrel-if-iran-war-disruptions-persist-.html",
+      "headline": "10-year Treasury yield hits 19-year high near 5.1% after hot September PMI data, stocks slide",
+      "url": "https://www.cnbc.com/2026/09/23/stock-market-today-live-updates.html",
       "source": "CNBC",
       "category": "Macro",
-      "timestamp": "2026-09-22T14:00:00Z"
+      "timestamp": "2026-09-23T20:00:00Z"
+    },
+    {
+      "headline": "Trump backs diesel export ban as oil industry warns of higher fuel prices",
+      "url": "https://www.cnbc.com/2026/09/23/trump-diesel-export-ban-gas-prices.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-23T14:00:00Z"
     },
     {
       "headline": "30-year mortgage rates top 7% for first time since 2024, hitting homebuilder stocks",
@@ -55,11 +32,53 @@
       "timestamp": "2026-09-23T11:00:00Z"
     },
     {
+      "headline": "Bitcoin, ether open near 8-month highs as Trump hosts Xi in Washington",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-wednesday-september-23-2026-crypto-prices-open-near-8-month-highs-is-the-crypto-winter-over-113908671.html",
+      "source": "Yahoo Finance",
+      "category": "Macro",
+      "timestamp": "2026-09-23T07:26:00Z"
+    },
+    {
+      "headline": "Trump-Xi summit: leaders meet at White House amid tensions over Taiwan, trade and AI",
+      "url": "https://www.nbcnews.com/world/asia/trump-xi-summit-meet-white-house-tensions-taiwan-trade-ai-rcna598073",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T22:00:00Z"
+    },
+    {
+      "headline": "Trump threatens to 'annihilate' Iran at UN General Assembly if nuclear talks fail",
+      "url": "https://www.benzinga.com/markets/equities/26/09/61939487/stock-market-today-dow-jones-sp-500-futures-gain-as-trump-threatens-to-annihilate-iran-at-unga-kb-home-worthington-ionq-in-focus",
+      "source": "Benzinga",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T09:00:00Z"
+    },
+    {
+      "headline": "Iran signals it's ready for 'dialogue, diplomacy without force' amid UN General Assembly talks",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/9/23/iran-war-live-trump-confirms-very-good-meeting-with-iran-at-un",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T18:00:00Z"
+    },
+    {
       "headline": "CFTC says prediction markets' 'mentions' contracts carry higher manipulation risk",
       "url": "https://www.cnbc.com/2026/09/22/cftc-prediction-markets-mentions-contracts-have-manipulation-risk.html",
       "source": "CNBC",
       "category": "Macro",
       "timestamp": "2026-09-22T15:00:00Z"
+    },
+    {
+      "headline": "Royal Caribbean buys 50% stake in Sandals Resorts for $3 billion",
+      "url": "https://www.cnbc.com/2026/09/22/royal-caribbean-sandals.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-23T09:00:00Z"
+    },
+    {
+      "headline": "Six Flags shares rise as activist Jana Partners pushes theme-park operator toward a sale, WSJ reports",
+      "url": "https://www.investing.com/news/stock-market-news/activist-jana-partners-calls-for-six-flags-sale-wsj-4911865",
+      "source": "Investing.com (Reuters)",
+      "category": "Markets",
+      "timestamp": "2026-09-23T12:00:00Z"
     },
     {
       "headline": "IonQ shares rally after company says it made a major quantum computing breakthrough",
@@ -69,11 +88,25 @@
       "timestamp": "2026-09-23T09:34:00Z"
     },
     {
-      "headline": "Xanadu Quantum rebounds after Tuesday's lockup-driven selloff",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61945004/whats-going-on-with-xanadu-stock-wednesday",
+      "headline": "Gold holds near record highs above $4,500/oz as Chinese imports hit a record",
+      "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-tuesday-september-22-2026-gold-prices-holding-as-chinese-gold-imports-set-record-104326063.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-22T10:00:00Z"
+    },
+    {
+      "headline": "CoreWeave, Nebius signal surging AI-chip demand as neoclouds hike prices again",
+      "url": "https://www.investing.com/news/stock-market-news/nebius-hikes-ai-cloud-prices-again-as-demand-for-computing-power-soars-4906125",
+      "source": "Investing.com (Reuters)",
+      "category": "Markets",
+      "timestamp": "2026-09-23T07:00:00Z"
+    },
+    {
+      "headline": "Beyond Nvidia: Jensen Investment's Allen Bond favors Broadcom, KLA, Amphenol as AI infrastructure plays",
+      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61953537/beyond-nvidia-broadcom-kla-amphenol",
       "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-23T10:30:00Z"
+      "category": "Markets",
+      "timestamp": "2026-09-23T13:09:00Z"
     },
     {
       "headline": "SpaceX stock slides as Shotwell's $52M insider sale filing, lockup expiration loom",
@@ -81,13 +114,6 @@
       "source": "Benzinga",
       "category": "Movers",
       "timestamp": "2026-09-23T16:31:00Z"
-    },
-    {
-      "headline": "Immunovant halts lupus drug trial after missing primary endpoint, shares slide",
-      "url": "https://www.benzinga.com/markets/biotech/26/09/61944577/immunovant-ends-autoimmune-skin-disorder-program",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-23T08:00:00Z"
     },
     {
       "headline": "Worthington Enterprises jumps ~16% premarket after fiscal Q1 beat",
@@ -104,39 +130,11 @@
       "timestamp": "2026-09-22T22:00:00Z"
     },
     {
-      "headline": "CoreWeave, Nebius signal surging AI-chip demand as neoclouds hike prices again",
-      "url": "https://www.investing.com/news/stock-market-news/nebius-hikes-ai-cloud-prices-again-as-demand-for-computing-power-soars-4906125",
-      "source": "Investing.com (Reuters)",
-      "category": "Markets",
-      "timestamp": "2026-09-23T07:00:00Z"
-    },
-    {
-      "headline": "Berkshire Hathaway stock is trailing the S&P 500 by about 10 points this year",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/berkshire-hathaway-stock-trailing-p-223401074.html",
-      "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-22T18:00:00Z"
-    },
-    {
-      "headline": "Palantir stock flips $188 into support, eyes $200 next",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61951644/palantir-stock-flips-188-into-support-eyes-200-next",
+      "headline": "Xanadu Quantum rebounds after Tuesday's lockup-driven selloff",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61945004/whats-going-on-with-xanadu-stock-wednesday",
       "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-23T14:00:00Z"
-    },
-    {
-      "headline": "Beyond Nvidia: Jensen Investment's Allen Bond favors Broadcom, KLA, Amphenol as AI infrastructure plays",
-      "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61953537/beyond-nvidia-broadcom-kla-amphenol",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-23T13:09:00Z"
-    },
-    {
-      "headline": "SoFi, Mastercard launch stablecoin settlement across SoFi's $25 billion card program",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61930061/sofi-mastercard-launch-stablecoin-settlement-across-25-billion-card-program",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-22T09:09:00Z"
+      "category": "Movers",
+      "timestamp": "2026-09-23T10:30:00Z"
     }
   ]
 }
