@@ -1,25 +1,11 @@
 {
-  "date": "2026-09-24",
-  "dateLabel": "Thursday, September 24",
+  "date": "2026-09-25",
+  "dateLabel": "Friday, September 25",
   "events": [
-    {
-      "time": "8:30 AM ET",
-      "event": "Initial Jobless Claims"
-    },
-    {
-      "time": "8:30 AM ET",
-      "event": "U.S. International Transactions and Investment Position, 2nd Quarter 2026"
-    },
-    {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Natural Gas Storage Report"
-    }
+    { "time": "8:30 AM ET", "event": "Durable Goods Orders" },
+    { "time": "10:00 AM ET", "event": "Consumer Sentiment (Final)" },
+    { "time": "11:30 AM ET", "event": "Treasury 2Y FRN Auction" },
+    { "time": "1:00 PM ET", "event": "Baker Hughes Rig Count" }
   ],
-  "note": null,
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
