@@ -1,5 +1,5 @@
 {
-"summary":{"asOf":"2026-09-23","scope":"Realized trades, January 1 - September 23, 2026 (both accounts)","totalTrades":342,"totalRealizedGain":31674.22,"wins":240,"losses":101,"flat":1,"winRate":70.38,"biggestWin":{"symbol":"META","date":"2026-07-01","gain":5155.0,"account":"Trading"},"biggestLoss":{"symbol":"META","date":"2026-06-12","gain":-1690.0,"account":"Trading"},"perAccount":{"Trading":{"realizedGain":31496.31,"trades":333,"winRate":69.88},"Agentic":{"realizedGain":177.91,"trades":9,"winRate":88.89}},"benchmark":{"spyBaselineDate":"2026-01-02","spyBaselinePrice":683.17,"spyCurrentPrice":769.15,"spyYtdPercent":12.59}},
+"summary":{"asOf":"2026-09-24","scope":"Realized trades, January 1 - September 24, 2026 (both accounts)","totalTrades":342,"totalRealizedGain":31674.22,"wins":240,"losses":101,"flat":1,"winRate":70.38,"biggestWin":{"symbol":"META","date":"2026-07-01","gain":5155.0,"account":"Trading"},"biggestLoss":{"symbol":"META","date":"2026-06-12","gain":-1690.0,"account":"Trading"},"perAccount":{"Trading":{"realizedGain":31496.31,"trades":333,"winRate":69.88},"Agentic":{"realizedGain":177.91,"trades":9,"winRate":88.89}},"benchmark":{"spyBaselineDate":"2026-01-02","spyBaselinePrice":683.17,"spyCurrentPrice":763.84,"spyYtdPercent":11.81}},
 "trades":[
 {"date":"2026-09-22","timestamp":"2026-09-22T19:36:21Z","account":"Trading","symbol":"HD","assetType":"equity","quantity":1.0,"price":910.0,"realizedGain":455.0},
 {"date":"2026-09-22","timestamp":"2026-09-22T16:56:02Z","account":"Trading","symbol":"SPCX","assetType":"equity","quantity":1.0,"price":453.0,"realizedGain":33.0},
@@ -284,7 +284,7 @@
 {"date":"2026-06-01","timestamp":"2026-06-01T19:30:54Z","account":"Trading","symbol":"META","assetType":"equity","quantity":1.0,"price":21.0,"realizedGain":-116.0},
 {"date":"2026-06-01","timestamp":"2026-06-01T17:56:00Z","account":"Trading","symbol":"TON","assetType":"crypto","quantity":25.0,"price":2.163,"realizedGain":20.65},
 {"date":"2026-06-01","timestamp":"2026-06-01T14:01:38Z","account":"Trading","symbol":"XRP","assetType":"crypto","quantity":1.0,"price":1.27,"realizedGain":-0.14},
-{"date":"2026-06-01","timestamp":"2026-06-01T14:01:21Z","account":"Trading","symbol":"ADA","assetType":"crypto","quantity":1000.0,"price":0.2264,"realizedGain":-27.73},
+{"date":"2026-06-01","timestamp":"2026-06-01T14:01:21Z","account":"Trading","symbol":"ADA","assetType":"crypto","quantity":1000.0,"price":0.2263,"realizedGain":-27.73},
 {"date":"2026-06-01","timestamp":"2026-06-01T14:01:09Z","account":"Trading","symbol":"SOL","assetType":"crypto","quantity":5.39492,"price":78.93,"realizedGain":-17.04},
 {"date":"2026-05-31","timestamp":"2026-05-31T22:03:30Z","account":"Trading","symbol":"(unresolved)","assetType":"other","quantity":4.0,"price":null,"realizedGain":2.4},
 {"date":"2026-05-29","timestamp":"2026-05-29T13:58:51Z","account":"Trading","symbol":"NVDA","assetType":"equity","quantity":1.0,"price":235.0,"realizedGain":87.0},
