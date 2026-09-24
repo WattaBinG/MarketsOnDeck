@@ -1,28 +1,105 @@
 {
-  "asOf": "2026-09-24T15:20:59Z",
-  "asOfLabel": "11:20 AM ET",
+  "asOf": "2026-09-24T16:23:17Z",
+  "asOfLabel": "12:23 PM ET",
   "topStory": {
-    "headline": "10-year Treasury yield hits highest level since 2007 as market prices in another Fed rate hike",
-    "url": "https://finance.yahoo.com/markets/article/10-year-treasury-yield-hits-highest-level-since-2007-as-market-prices-in-another-fed-rate-hike-152744538.html",
-    "source": "Yahoo Finance",
+    "headline": "Global bond rout brings highest US 30-year yield since 2004 as Iran war-widening threat lifts oil",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-30-year-yield-hits-highest-since-2004-as-bond-selloff-deepens",
+    "source": "Bloomberg",
     "category": "Macro",
-    "timestamp": "2026-09-24T12:45:00Z",
+    "timestamp": "2026-09-24T16:00:00Z",
     "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "Gold price today: gold prices fall as inflation concerns steadily mount",
-      "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-thursday-september-24-2026-gold-prices-fall-as-inflation-concerns-steadily-mount-110659025.html",
-      "source": "Yahoo Finance",
-      "category": "Macro",
-      "timestamp": "2026-09-24T15:06:59Z"
+      "headline": "Oracle cites 'force majeure' to shield itself on New Mexico data center project; stock sinks 5%",
+      "url": "https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-09-24T14:00:00Z"
     },
     {
-      "headline": "Why is TD Synnex stock sliding today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-td-synnex-stock-sliding-today-93CH-4915138",
+      "headline": "Trump welcomes Xi to White House summit with rare planeside greeting as trade truce extended to Jan. 10",
+      "url": "https://www.cnbc.com/2026/09/24/trump-xi-meeting-china-washington.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T15:30:00Z"
+    },
+    {
+      "headline": "Xi says China and US 'stand to gain from cooperation' as Washington summit gets underway",
+      "url": "https://www.npr.org/2026/09/24/g-s1-144806/trump-xi-summit",
+      "source": "NPR",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T15:00:00Z"
+    },
+    {
+      "headline": "Iran adviser warns war could expand to the Indian Ocean if US attacks again",
+      "url": "https://www.al-monitor.com/originals/2026/09/iran-threatens-expand-war-indian-ocean-what-know",
+      "source": "Al-Monitor",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T13:00:00Z"
+    },
+    {
+      "headline": "Brent crude tops $106 as Iran threat to widen war dims hopes of a Strait of Hormuz deal",
+      "url": "https://www.businesstoday.in/latest/economy/story/oil-rises-as-iran-threat-to-widen-war-dims-hopes-of-strait-of-hormuz-deal-557670-2026-09-24",
+      "source": "Business Today",
+      "category": "Macro",
+      "timestamp": "2026-09-24T12:30:00Z"
+    },
+    {
+      "headline": "US stock futures drop as yields climb further, oil rises",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-stock-futures-drop-as-yields-climb-further-oil-rises",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-09-24T11:44:00Z"
+    },
+    {
+      "headline": "Gold holds drop as higher oil and hot US data fan rate-hike bets",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-24/gold-holds-drop-as-higher-oil-and-hot-us-data-fan-rate-hike-bets",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-09-24T11:00:00Z"
+    },
+    {
+      "headline": "Bond market alarm bells are ringing, but El-Erian says psychology may be fueling the fear more than fundamentals",
+      "url": "https://www.benzinga.com/markets/bonds/26/09/61968162/bond-market-alarm-bells-are-ringing-but-mohamed-el-erian-says-psychology-may-be-fueling-the-fear-more-than-fundamentals",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-24T12:09:57Z"
+    },
+    {
+      "headline": "White House rules out diesel export ban as pump prices surge above $6.50",
+      "url": "https://www.newsweek.com/trumps-diesel-export-plan-dismissed-own-officials-12477261",
+      "source": "Newsweek",
+      "category": "Macro",
+      "timestamp": "2026-09-24T10:00:00Z"
+    },
+    {
+      "headline": "Google moves up space data center timeline: Project Suncatcher satellite launches Oct. 1 on a SpaceX Falcon 9",
+      "url": "https://www.benzinga.com/markets/tech/26/09/61976294/google-moves-up-its-space-data-center-timeline-project-suncatcher-launches-oct-1",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-24T15:34:32Z"
+    },
+    {
+      "headline": "Bitcoin breaks out while gold and stocks struggle: 'it feels like the upside down'",
+      "url": "https://www.benzinga.com/crypto/cryptocurrency/26/09/61968595/bitcoin-broke-out-while-gold-stocks-struggled-it-feels-like-the-upside-down",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-24T12:31:29Z"
+    },
+    {
+      "headline": "Acadia Pharmaceuticals slides after Phase 2 Alzheimer's psychosis trial misses primary endpoint",
+      "url": "https://www.investing.com/news/stock-market-news/acadia-pharmaceuticals-stock-tumbles-on-mixed-trial-results-93CH-4915049",
       "source": "Investing.com",
       "category": "Movers",
-      "timestamp": "2026-09-24T14:20:00Z"
+      "timestamp": "2026-09-24T09:00:00Z"
+    },
+    {
+      "headline": "Meta unveils $1,299 VR Glasses, camera-less smart glasses at Meta Connect",
+      "url": "https://finance.yahoo.com/technology/article/meta-unveils-1299-vr-glasses-camera-less-smart-glasses-at-meta-connect-235611909.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-09-24T08:00:00Z"
     },
     {
       "headline": "MGM Resorts International sinks 10% as Barry Diller withdraws $48.30-a-share buyout offer",
@@ -32,34 +109,6 @@
       "timestamp": "2026-09-24T13:50:00Z"
     },
     {
-      "headline": "SpaceX stock faces another wave of insider shares as $52M Shotwell sale plan surfaces",
-      "url": "https://www.benzinga.com/markets/tech/26/09/61970679/spacex-stock-faces-another-wave-of-insider-shares",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-24T13:34:28Z"
-    },
-    {
-      "headline": "U.S.-China trade truce extended for two months, Bessent says, as Xi begins state visit",
-      "url": "https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-09-24T13:20:00Z"
-    },
-    {
-      "headline": "Stock market today: Dow, S&P 500, Nasdaq slide as bond sell-off troubles markets, China's Xi Jinping lands in US",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-24-dow-sp-500-nasdaq-080352893.html",
-      "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-24T12:03:52Z"
-    },
-    {
-      "headline": "The S&P 500 has never been this concentrated in just 2 stocks",
-      "url": "https://finance.yahoo.com/markets/article/the-sp-500-has-never-been-this-concentrated-in-just-2-stocks-122519280.html",
-      "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-09-24T11:00:00Z"
-    },
-    {
       "headline": "Fire at Starlink station in central Poland was 'sabotage,' digital affairs minister says",
       "url": "https://www.euronews.com/2026/09/24/fire-at-starlink-station-in-central-poland-was-sabotage-digital-affairs-minister-says",
       "source": "Euronews",
@@ -67,67 +116,11 @@
       "timestamp": "2026-09-24T10:01:07Z"
     },
     {
-      "headline": "US premarket movers for September 24, 2026: Darden, Dropbox, Everpure, MGM Resorts",
-      "url": "https://www.bloomberg.com/news/articles/2026-09-24/us-stock-futures-today-darden-dropbox-everpure-mgm-resorts",
-      "source": "Bloomberg",
-      "category": "Markets",
-      "timestamp": "2026-09-24T09:30:00Z"
-    },
-    {
-      "headline": "Trump wants to ban diesel exports; refiners are selling off",
-      "url": "https://247wallst.com/investing/2026/09/24/trump-wants-to-ban-diesel-exports-refiners-are-selling-off/",
-      "source": "24/7 Wall St.",
-      "category": "Movers",
-      "timestamp": "2026-09-24T09:20:00Z"
-    },
-    {
-      "headline": "Trump-Xi summit: here's what's on the agenda, and why it matters",
-      "url": "https://www.aljazeera.com/news/2026/9/24/trump-xi-summit-whats-on-the-agenda-why-it-matters",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-24T08:00:00Z"
-    },
-    {
-      "headline": "Earnings scheduled for September 24, 2026: Darden Restaurants, TD Synnex",
-      "url": "https://www.benzinga.com/news/earnings/26/09/61966741/earnings-scheduled-september-24-2026",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-24T07:30:00Z"
-    },
-    {
-      "headline": "Costco earnings preview: setup, technicals, and key trading scenarios",
-      "url": "https://www.investing.com/news/stock-market-news/costco-earnings-preview-setup-technicals-and-key-trading-scenarios-93CH-4913668",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-24T06:00:00Z"
-    },
-    {
-      "headline": "Travel booking stocks tumble as Muse threatens to bypass them: Expedia falls 7%, Airbnb drops 6%, Booking Holdings sinks 5%",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/travel-booking-stocks-tumble-muse-180858515.html",
-      "source": "Yahoo Finance",
-      "category": "Movers",
-      "timestamp": "2026-09-23T22:08:58Z"
-    },
-    {
-      "headline": "Oil industry warns a diesel export ban will raise fuel prices as Trump weighs restrictions",
-      "url": "https://www.cnbc.com/2026/09/23/trump-diesel-export-ban-gas-prices.html",
-      "source": "CNBC",
+      "headline": "US new home sales jump to eight-month high in August, beating estimates",
+      "url": "https://money.usnews.com/investing/news/articles/2026-09-24/us-new-home-sales-jump-to-eight-month-high-in-august",
+      "source": "U.S. News",
       "category": "Macro",
-      "timestamp": "2026-09-23T18:10:00Z"
-    },
-    {
-      "headline": "Iran will not negotiate, reopen Hormuz until its conditions are met: security chief",
-      "url": "https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260923-irna04.htm",
-      "source": "IRNA (via GlobalSecurity.org)",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-23T15:30:00Z"
-    },
-    {
-      "headline": "Quantum stocks catch a bid after IonQ shows real-time error correction",
-      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61945487/quantum-stocks-rally-ionq-real-time-error-correction",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-09-23T13:34:36Z"
+      "timestamp": "2026-09-24T14:00:00Z"
     }
   ]
 }
