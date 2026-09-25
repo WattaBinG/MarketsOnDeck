@@ -647,3 +647,43 @@ function initWireEnhance() {
     }
   }).catch(function () {});
 }
+
+
+// Market-matched masthead: the homepage banner's chart line follows the day's
+// SPY move from ticker.json. Green at +0.25% or better, red at -0.25% or
+// worse, split otherwise. Split is also the fallback whenever the quote isn't
+// from today's session (weekends, holidays, before the first refresh, missed
+// refreshes) so the banner never claims a direction it can't back up.
+// ?masthead=green|red|split forces a variant for review.
+var MASTHEAD_THRESHOLD = 0.25;
+function etDateKey(d) {
+  try {
+    var p = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+    return p;
+  } catch (e) { return null; }
+}
+function setMasthead(variant, note) {
+  var pic = document.getElementById('masthead');
+  if (!pic) return;
+  var src = pic.querySelector('source'), img = pic.querySelector('img');
+  pic.setAttribute('data-variant', variant);
+  if (src) src.srcset = '/assets/brand/masthead/' + variant + '-phone.webp';
+  if (img) img.src = '/assets/brand/masthead/' + variant + '-wide.webp';
+  if (note && img) img.title = note;
+}
+function initMasthead() {
+  if (!document.getElementById('masthead')) return;
+  var forced = (new URLSearchParams(location.search).get('masthead') || '').toLowerCase();
+  if (['green', 'red', 'split'].indexOf(forced) !== -1) { setMasthead(forced, 'Preview: ' + forced); return; }
+  fetchJsonRetry('/assets/ticker.json').then(function (data) {
+    if (!data || !data.asOf || !data.items) return;
+    var asOf = new Date(data.asOf);
+    if (isNaN(asOf) || etDateKey(asOf) !== etDateKey(new Date())) return;
+    var spy = data.items.filter(function (i) { return i.symbol === 'SPY'; })[0];
+    if (!spy || typeof spy.changePercent !== 'number') return;
+    var pct = spy.changePercent;
+    var v = pct >= MASTHEAD_THRESHOLD ? 'green' : (pct <= -MASTHEAD_THRESHOLD ? 'red' : 'split');
+    setMasthead(v, 'SPY ' + (pct > 0 ? '+' : '') + pct.toFixed(2) + '% as of ' + (data.asOfLabel || 'today'));
+  }).catch(function () {});
+}
+document.addEventListener('DOMContentLoaded', initMasthead);

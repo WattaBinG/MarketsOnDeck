@@ -687,3 +687,15 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .sentiment-periods button { appearance:none; border:1px solid var(--border); background:transparent; color:var(--text-muted); border-radius:4px; padding:4px 0; font:600 9.5px/1 var(--font-sans); cursor:pointer; }
 .sentiment-periods button:hover { color:var(--text); border-color:var(--text-muted); }
 .sentiment-periods button.active { color:var(--bg); background:var(--text); border-color:var(--text); }
+
+
+/* Market-matched masthead (homepage). The chart line in the banner follows
+   the day's SPY move: green up day, red down day, split (red dip, green
+   rally) when flat, closed, or the quote is stale. main.js picks the variant. */
+.masthead-wrap { padding-top: 18px; }
+.masthead { display: block; }
+.masthead img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 1; border-radius: 14px; background: #0f1a30; }
+@media (max-width: 640px) {
+  .masthead-wrap { padding-top: 12px; }
+  .masthead img { aspect-ratio: 12 / 7; border-radius: 12px; }
+}
