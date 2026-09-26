@@ -718,3 +718,30 @@ function linkDailyTickers() {
   });
 }
 document.addEventListener('DOMContentLoaded', linkDailyTickers);
+
+// A dated edition is read on its own. The same archive follows it, allowing
+// another date without scrolling through every full article in succession.
+function initDailyEditionPicker() {
+  var feed = document.querySelector('.daily-feed');
+  if (!feed) return;
+  var entries = Array.from(feed.querySelectorAll('.daily-entry'));
+  var archive = feed.querySelector('.daily-archive');
+  if (!entries.length || !archive) return;
+  var links = Array.from(archive.querySelectorAll('a[href^="#"]'));
+  var latest = entries[0];
+  function selectEdition() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    var selected = entries.find(function (entry) { return entry.id === id; }) || latest;
+    entries.forEach(function (entry) { entry.classList.toggle('daily-selected', entry === selected); });
+    links.forEach(function (link) {
+      if (link.getAttribute('href') === '#' + selected.id) link.setAttribute('aria-current', 'location');
+      else link.removeAttribute('aria-current');
+    });
+    selected.after(archive);
+    feed.classList.add('daily-single-view');
+    if (id && selected.id === id) requestAnimationFrame(function () { selected.scrollIntoView(); });
+  }
+  window.addEventListener('hashchange', selectEdition);
+  selectEdition();
+}
+document.addEventListener('DOMContentLoaded', initDailyEditionPicker);

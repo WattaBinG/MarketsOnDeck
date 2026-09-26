@@ -723,3 +723,13 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .daily-entry p, .daily-entry li { font-size: 17px; }
   .daily-archive .brief-sidebar { padding: 18px; }
 }
+
+/* Small editorial as-of notes should remain readable on phones. */
+.daily-entry p[style*="font-size:13"] { font-size: 15px !important; line-height: 1.65; }
+
+/* When scripting is available, each dated edition is a single reading view.
+   The archive remains at the end, rather than stacking full articles. */
+.daily-feed.daily-single-view .daily-entry { display: none; }
+.daily-feed.daily-single-view .daily-entry.daily-selected { display: flex; }
+.daily-feed.daily-single-view .daily-archive { margin-top: 44px; }
+.daily-archive a[aria-current="location"] { font-weight: 700; text-decoration-thickness: 2px; }
