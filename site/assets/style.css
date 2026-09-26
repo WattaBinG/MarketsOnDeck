@@ -487,15 +487,30 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 }
 .wire-archive-link:hover { color: var(--accent); }
 
-/* Wire page layout — main headline column + a narrow sticky sidebar for
-   short-lived daily content (currently just "What to Watch Today"). Stacks
-   to a single column on narrower screens, sidebar content first since it's
-   the most time-sensitive thing on the page. */
+/* Wire page layout — main headlines and a narrow sidebar for Pulse/Watch.
+   On narrow screens the sidebar follows the headlines. */
 .wire-layout { display: grid; grid-template-columns: 1fr 300px; gap: 44px; align-items: start; }
 .wire-sidebar { position: sticky; top: 20px; }
 @media (max-width: 900px) {
-  .wire-layout { grid-template-columns: 1fr; }
-  .wire-sidebar { position: static; order: -1; margin-bottom: 28px; }
+  .wire-layout { grid-template-columns: minmax(0, 1fr) minmax(140px, 38%); gap: 12px; }
+  .wire-main, .wire-sidebar { min-width: 0; }
+  .wire-sidebar { position: static; }
+  .wire-main .wire-list { column-count: 1; }
+  .wire-main .wire-list li { overflow-wrap: anywhere; }
+  .wire-sidebar .sentiment-card, .wire-sidebar .watch-box { padding: 10px; }
+  .wire-sidebar .sentiment-periods { grid-template-columns: repeat(3, 1fr); }
+  .wire-sidebar .sentiment-dial svg { width: 100%; height: auto; }
+  .wire-sidebar .sentiment-readout { flex-wrap: wrap; gap: 2px 5px; }
+  .wire-sidebar .sentiment-score { font-size: 19px; }
+  .wire-sidebar .sentiment-label { font-size: 11px; }
+  .wire-sidebar .watch-box-header { font-size: 15px; }
+  .wire-sidebar .watch-box-date { font-size: 10px; }
+  .wire-sidebar .watch-list li { display: block; font-size: 12px; }
+  .wire-sidebar .watch-event { display: block; text-align: left; }
+  .wire-sidebar .ai-strip-list { display: grid; gap: 5px; }
+  .wire-sidebar .ai-tool { min-width: 0; padding: 4px; border-radius: 6px; }
+  .wire-sidebar .ai-tool-name { font-size: 11px; overflow-wrap: anywhere; }
+  .wire-sidebar .ai-strip-source { font-size: 10px; }
 }
 .watch-box {
   border: 1px solid var(--border-strong); border-radius: 10px; padding: 18px 20px;
@@ -725,3 +740,21 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .daily-feed.daily-single-view .daily-entry.daily-selected { display: flex; }
 .daily-feed.daily-single-view .daily-archive { margin-top: 44px; }
 .daily-archive a[aria-current="location"] { font-weight: 700; text-decoration-thickness: 2px; }
+
+/* Homepage Record, now a compact Wire sidebar card. */
+.wire-sidebar .record-band { padding: 14px 16px; margin: 0 0 14px; }
+.wire-sidebar .record-band-top { display: block; }
+.wire-sidebar .record-band-top .eyebrow { font: 700 16px/1.25 var(--font-display); text-transform: uppercase; letter-spacing: 0; }
+.wire-sidebar .record-band-asof { display: block; font-size: 10px; margin-top: 3px; }
+.wire-sidebar .record-band-main { display: block; margin-top: 12px; }
+.wire-sidebar .record-band-stats { gap: 10px 6px; }
+.wire-sidebar .record-band-stat .stat-num { font-size: 19px; line-height: 1.25; }
+.wire-sidebar .record-band-stat .stat-label { font-size: 10px; line-height: 1.25; }
+.wire-sidebar .record-band-chart { margin-top: 12px; }
+.wire-sidebar .record-band-cta { font-size: 12px; line-height: 1.35; }
+@media (max-width: 900px) {
+  .wire-sidebar .record-band { padding: 10px; }
+  .wire-sidebar .record-band-stats { grid-template-columns: 1fr; gap: 9px; }
+  .wire-sidebar .record-band-stat .stat-num { font-size: 17px; }
+  .wire-sidebar .record-band-stat .stat-label { font-size: 9px; }
+}
