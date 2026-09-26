@@ -487,15 +487,13 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 }
 .wire-archive-link:hover { color: var(--accent); }
 
-/* Wire page layout — main headline column + a narrow sticky sidebar for
-   short-lived daily content (currently just "What to Watch Today"). Stacks
-   to a single column on narrower screens, sidebar content first since it's
-   the most time-sensitive thing on the page. */
+/* Wire page layout — main headlines and a narrow sidebar for Pulse/Watch.
+   On narrow screens the sidebar follows the headlines. */
 .wire-layout { display: grid; grid-template-columns: 1fr 300px; gap: 44px; align-items: start; }
 .wire-sidebar { position: sticky; top: 20px; }
 @media (max-width: 900px) {
   .wire-layout { grid-template-columns: 1fr; }
-  .wire-sidebar { position: static; order: -1; margin-bottom: 28px; }
+  .wire-sidebar { position: static; margin-top: 28px; }
 }
 .watch-box {
   border: 1px solid var(--border-strong); border-radius: 10px; padding: 18px 20px;
