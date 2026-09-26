@@ -495,7 +495,8 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .wire-layout { grid-template-columns: minmax(0, 1fr) minmax(140px, 38%); gap: 12px; }
   .wire-main, .wire-sidebar { min-width: 0; }
   .wire-sidebar { position: static; }
-  .wire-list { column-count: 1; }
+  .wire-main .wire-list { column-count: 1; }
+  .wire-main .wire-list li { overflow-wrap: anywhere; }
   .wire-sidebar .sentiment-card, .wire-sidebar .watch-box { padding: 10px; }
   .wire-sidebar .sentiment-periods { grid-template-columns: repeat(3, 1fr); }
   .wire-sidebar .sentiment-dial svg { width: 100%; height: auto; }
