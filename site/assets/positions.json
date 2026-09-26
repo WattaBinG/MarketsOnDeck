@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-23T20:00:00Z",
-  "asOfLabel": "Market Close, Sep 23",
+  "asOf": "2026-09-26T03:35:00Z",
+  "asOfLabel": "Mixed marks: Sep 25 stocks/ETH/MET; options from Sep 23 snapshot (quote times unverified)",
   "positions": [
     {
       "account": "Trading",
@@ -8,9 +8,11 @@
       "assetType": "equity",
       "quantity": 200,
       "avgCost": 17.1,
-      "currentPrice": 16.55,
-      "priorClose": 17.16,
-      "unrealizedGain": -110.0
+      "currentPrice": 16.5699,
+      "priorClose": 16.8,
+      "unrealizedGain": -106.02,
+      "markAsOf": "2026-09-25T16:00:00-04:00",
+      "markBasis": "Sep 25 regular-session last trade"
     },
     {
       "account": "Trading",
@@ -18,9 +20,11 @@
       "assetType": "equity",
       "quantity": 500,
       "avgCost": 8.81,
-      "currentPrice": 9.12,
-      "priorClose": 9.08,
-      "unrealizedGain": 155.0
+      "currentPrice": 8.95,
+      "priorClose": 9.16,
+      "unrealizedGain": 70.0,
+      "markAsOf": "2026-09-25T16:00:00-04:00",
+      "markBasis": "Sep 25 regular-session last trade"
     },
     {
       "account": "Trading",
@@ -28,9 +32,11 @@
       "assetType": "equity",
       "quantity": 153,
       "avgCost": 124.25,
-      "currentPrice": 148.36,
-      "priorClose": 154.72,
-      "unrealizedGain": 3688.83
+      "currentPrice": 148.73,
+      "priorClose": 148.03,
+      "unrealizedGain": 3745.44,
+      "markAsOf": "2026-09-25T16:00:00-04:00",
+      "markBasis": "Sep 25 regular-session last trade"
     },
     {
       "account": "Trading",
@@ -38,9 +44,11 @@
       "assetType": "equity",
       "quantity": 75,
       "avgCost": 300.7,
-      "currentPrice": 296.72,
-      "priorClose": 305.35,
-      "unrealizedGain": -298.5
+      "currentPrice": 293.16,
+      "priorClose": 292.18,
+      "unrealizedGain": -565.5,
+      "markAsOf": "2026-09-25T16:00:00-04:00",
+      "markBasis": "Sep 25 regular-session last trade"
     },
     {
       "account": "Agentic",
@@ -48,9 +56,11 @@
       "assetType": "equity",
       "quantity": 2.281702,
       "avgCost": 189.93,
-      "currentPrice": 187.86,
-      "priorClose": 188.32,
-      "unrealizedGain": -4.72
+      "currentPrice": 187.91,
+      "priorClose": 187.11,
+      "unrealizedGain": -4.61,
+      "markAsOf": "2026-09-25T16:00:00-04:00",
+      "markBasis": "Sep 25 regular-session last trade"
     },
     {
       "account": "Agentic",
@@ -58,9 +68,11 @@
       "assetType": "equity",
       "quantity": 8,
       "avgCost": 8.16,
-      "currentPrice": 9.77,
-      "priorClose": 10.64,
-      "unrealizedGain": 12.88
+      "currentPrice": 9.785,
+      "priorClose": 9.72,
+      "unrealizedGain": 13.0,
+      "markAsOf": "2026-09-25T16:00:00-04:00",
+      "markBasis": "Sep 25 regular-session last trade"
     },
     {
       "account": "Trading",
@@ -73,7 +85,9 @@
       "avgCost": 436.22,
       "currentPrice": 222.0,
       "priorClose": 508.0,
-      "unrealizedGain": -428.44
+      "unrealizedGain": -428.44,
+      "markAsOf": "2026-09-23",
+      "markBasis": "Sep 23 snapshot; quote time unknown"
     },
     {
       "account": "Trading",
@@ -86,7 +100,9 @@
       "avgCost": 1367.5,
       "currentPrice": 2243.0,
       "priorClose": 1367.5,
-      "unrealizedGain": 3502.0
+      "unrealizedGain": 3502.0,
+      "markAsOf": "2026-09-23",
+      "markBasis": "Sep 23 snapshot; quote time unknown"
     },
     {
       "account": "Trading",
@@ -99,7 +115,9 @@
       "avgCost": 497.5,
       "currentPrice": 360.0,
       "priorClose": 497.5,
-      "unrealizedGain": -275.0
+      "unrealizedGain": -275.0,
+      "markAsOf": "2026-09-23",
+      "markBasis": "Sep 23 snapshot; quote time unknown"
     },
     {
       "account": "Agentic",
@@ -112,27 +130,34 @@
       "avgCost": 60.5,
       "currentPrice": 24.0,
       "priorClose": 34.0,
-      "unrealizedGain": -73.0
+      "unrealizedGain": -73.0,
+      "markAsOf": "2026-09-23",
+      "markBasis": "Sep 23 snapshot; quote time unknown"
     },
     {
       "account": "Trading",
       "symbol": "ETH",
       "assetType": "crypto",
-      "quantity": 1.6,
-      "avgCost": 2688.52,
-      "currentPrice": 2688.52,
-      "priorClose": 2688.52,
-      "unrealizedGain": 0
+      "quantity": 1.59999984,
+      "avgCost": 2448.11,
+      "currentPrice": 2690.69,
+      "unrealizedGain": 388.13,
+      "markAsOf": "2026-09-25T23:31:00-04:00",
+      "markBasis": "Robinhood spot quote"
     },
     {
       "account": "Trading",
-      "symbol": "USDG",
-      "assetType": "crypto",
-      "quantity": 1.0,
-      "avgCost": 1.0,
-      "currentPrice": 1.0,
-      "priorClose": 1.0,
-      "unrealizedGain": 0
+      "symbol": "METV26",
+      "assetType": "futures",
+      "contract": "Micro Ether Futures",
+      "expiration": "2026-10-30",
+      "quantity": 20,
+      "multiplier": 0.1,
+      "avgCost": 2698.3,
+      "currentPrice": 2701.0,
+      "unrealizedGain": 5.35,
+      "markAsOf": "2026-09-25T23:35:00-04:00",
+      "markBasis": "Sep 25 Robinhood quote, not settlement"
     }
   ]
 }

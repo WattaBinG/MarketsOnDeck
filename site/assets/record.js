@@ -67,6 +67,9 @@ document.addEventListener('DOMContentLoaded', function () {
     positionsTbody.innerHTML = rows.map(function (p) {
       var dir = p.unrealizedGain > 0 ? 'gain' : (p.unrealizedGain < 0 ? 'loss' : '');
       var symbolCell = escapeHtml(p.symbol);
+      if (p.assetType === 'futures') {
+        symbolCell += ' <span class="text-muted" style="font-size:12px;">Micro Ether · ' + shortDate(p.expiration) + ' · ' + p.multiplier + ' ETH/contract</span>';
+      }
       if (p.assetType === 'option') {
         symbolCell += ' <span class="text-muted" style="font-size:12px;">$' + p.strike + (p.optionType === 'put' ? 'P' : 'C') + ' ' + shortDate(p.expiration) + '</span>';
       }
@@ -76,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '<td class="col-optional"><span class="badge-type">' + typeLabel(p.assetType) + '</span></td>' +
         '<td class="num col-optional">' + trimQty(p.quantity) + '</td>' +
         '<td class="num col-optional">$' + p.avgCost.toFixed(2) + '</td>' +
-        '<td class="num">$' + p.currentPrice.toFixed(2) + '</td>' +
+        '<td class="num">$' + p.currentPrice.toFixed(2) + '<br><small class="text-muted">' + escapeHtml(p.markAsOf ? p.markAsOf.replace('T', ' ').replace(/-04:00$/, ' ET') : '') + (p.markBasis ? ' · ' + escapeHtml(p.markBasis) : '') + '</small></td>' +
         '<td class="num ' + dir + '">' + money(p.unrealizedGain) + '</td>' +
         '</tr>';
     }).join('');
@@ -114,7 +117,13 @@ document.addEventListener('DOMContentLoaded', function () {
   function rangeCutoffDate(range) {
     if (!state.trades.length) return null;
     var newest = state.trades.reduce(function (max, t) { return t.date > max ? t.date : max; }, state.trades[0].date);
-    if (range === 'day') return newest; // 1D — just the most recent trading day in the dataset
+    if (range === 'day') {
+      // The positions feed may have a newer mark day than the last closed trade.
+      var latestMark = state.positions.reduce(function (max, p) {
+        return p.markAsOf && p.markAsOf.slice(0, 10) > max ? p.markAsOf.slice(0, 10) : max;
+      }, newest);
+      return latestMark;
+    }
     var d = new Date(newest + 'T12:00:00Z');
     if (range === 'week') d.setUTCDate(d.getUTCDate() - 7);
     else if (range === 'month') d.setUTCDate(d.getUTCDate() - 30);
@@ -152,10 +161,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var card = document.getElementById('statTodayTotalCard');
     if (!card) return;
     if (state.range !== 'day' || !state.positions.length) { card.hidden = true; return; }
-    card.hidden = false;
-
     var account = document.getElementById('recordAccount').value;
     var cutoff = rangeCutoffDate('day');
+    // Do not show a partial 'Today, Total' when some held positions lack
+    // current-day quotes or a prior close (notably options and spot ETH).
+    var scopedPositions = state.positions.filter(function (p) { return account === 'all' || p.account === account; });
+    if (scopedPositions.some(function (p) {
+      return !p.markAsOf || p.markAsOf.slice(0, 10) !== cutoff || typeof p.priorClose !== 'number';
+    })) { card.hidden = true; return; }
+    card.hidden = false;
     var todayRealized = state.trades
       .filter(function (t) { return (account === 'all' || t.account === account) && t.date === cutoff; })
       .reduce(function (sum, t) { return sum + t.realizedGain; }, 0);
@@ -163,8 +177,9 @@ document.addEventListener('DOMContentLoaded', function () {
     var todayUnrealized = state.positions
       .filter(function (p) { return account === 'all' || p.account === account; })
       .reduce(function (sum, p) {
-        var prior = (typeof p.priorClose === 'number') ? p.priorClose : p.currentPrice;
-        return sum + (p.currentPrice - prior) * p.quantity;
+        if (!p.markAsOf || p.markAsOf.slice(0, 10) !== cutoff || typeof p.priorClose !== 'number') return sum;
+        var prior = p.priorClose;
+        return sum + (p.currentPrice - prior) * p.quantity * (p.multiplier || 1);
       }, 0);
 
     var total = todayRealized + todayUnrealized;
@@ -372,7 +387,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function typeLabel(t) {
-    return { equity: 'Stock', option: 'Option', crypto: 'Crypto', other: 'Other' }[t] || t;
+    return { equity: 'Stock', option: 'Option', crypto: 'Crypto', futures: 'Futures', other: 'Other' }[t] || t;
   }
 
   function trimQty(q) {
