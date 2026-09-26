@@ -758,3 +758,8 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .wire-sidebar .record-band-stat .stat-num { font-size: 17px; }
   .wire-sidebar .record-band-stat .stat-label { font-size: 9px; }
 }
+
+/* Homepage newsletter footer CTA: center the copy and the embed together. */
+.newsletter-cta { text-align: center; }
+.newsletter-cta > p { margin-left: auto !important; margin-right: auto !important; }
+.newsletter-cta > iframe { margin-left: auto; margin-right: auto; }
