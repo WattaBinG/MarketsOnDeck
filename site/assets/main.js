@@ -255,13 +255,7 @@ function initPinned() {
     var allItems = pinnedItems.concat(cryptoItems);
     if (!allItems.length) { bar.hidden = true; return; }
     bar.hidden = false;
-    var stockAsOfChip = (tickerData && tickerData.asOfLabel)
-      ? '<span class="ticker-asof ticker-asof-pinned" title="Stock and ETF prices as of this time. Changes are versus the prior regular-session close. Periodic snapshots, not a live feed.">Stocks as of ' + escapeHtml(tickerData.asOfLabel) + '</span>'
-      : '';
-    var cryptoAsOfChip = (cryptoData && cryptoData.asOf)
-      ? '<span class="ticker-asof ticker-asof-pinned" title="Crypto snapshot timestamp from its separate refresh job. Periodic snapshot, not a live feed.">Crypto as of ' + escapeHtml(timeAgoLabel(cryptoData.asOf)) + '</span>'
-      : '<span class="ticker-asof ticker-asof-pinned">Crypto as-of unavailable</span>';
-    bar.innerHTML = allItems.map(renderTickerItem).join('') + stockAsOfChip + cryptoAsOfChip;
+    bar.innerHTML = allItems.map(renderTickerItem).join('');
   }).catch(function () { bar.hidden = true; });
 }
 
@@ -283,10 +277,9 @@ function initTicker() {
       var scrollItems = data.items.filter(function (item) { return pinnedSymbols.indexOf(item.symbol) === -1; });
       if (!scrollItems.length) { strip.hidden = true; return; }
       strip.hidden = false;
-      var asOfHtml = '<div class="ticker-asof" title="Change and % are versus the prior regular-session close. Periodic snapshots, not a live feed.">' + escapeHtml(data.asOfLabel || 'Updated') + '</div>';
       var itemsHtml = scrollItems.map(renderTickerItem).join('');
       // duplicate the row once so the CSS animation (-50%) loops seamlessly
-      track.innerHTML = asOfHtml + itemsHtml + asOfHtml + itemsHtml;
+      track.innerHTML = itemsHtml + itemsHtml;
     })
     .catch(function () { strip.hidden = true; });
 }

@@ -22,7 +22,7 @@ POSITIONS = ROOT / "site" / "assets" / "positions.json"
 
 PINNED = ["SPY", "QQQ", "DIA", "IWM", "USO"]  # oil rides USO; BTC/ETH/SOL pin via crypto.json
 CRYPTO_PINNED = ["BTC", "ETH", "SOL"]        # never duplicated into this strip
-EXCLUDED = ["USDG"]                      # dollar-pegged stablecoin - price never moves, strip noise (Keith, 2026-09-22)
+EXCLUDED = ["USDG", "METV26"]          # stablecoin and Micro Ether futures; ETH is already pinned
 MAX_ITEMS = 15
 
 
