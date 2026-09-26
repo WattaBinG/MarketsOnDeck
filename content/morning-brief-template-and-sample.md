@@ -55,10 +55,10 @@ not oversights):**
 
 ---
 
-## The Market Tape — End-of-Day Wrap (added 2026-09-09, per Keith)
+## The After Market Tape — End-of-Day Wrap (added 2026-09-09, per Keith)
 
 A second daily piece, published after the close (~4:15pm ET, once the day's real closing prints are in) —
-**not a rename of the Morning Brief**, a companion to it. Morning Brief still opens the day; The Market Tape closes
+**not a rename of the Morning Brief**, a companion to it. Morning Brief still opens the day; The After Market Tape closes
 it. "Tape" here is plain market slang ("reading the tape") — this is unrelated to the buried predictions-ledger
 feature that also used the name "The Tape" internally (`site/tape/`, still hidden from nav/robots.txt, still
 parked). Two different things sharing a name on purpose; don't confuse them.
@@ -75,10 +75,10 @@ close instead of the open:**
    CPI print landing the next morning), that's worth a closing-paragraph mention.
 6. Close with the same "why this matters" plain-language beat.
 7. Same disclosure handling as the Morning Brief (see above, updated 2026-09-16) — no per-entry disclosure
-   paragraph; the page-bottom notice on `site/brief/index.html` already covers Market Tape entries too.
+   paragraph; the page-bottom notice on `site/brief/index.html` already covers After Market Tape entries too.
 
-**Publishing (changed 2026-09-16, per Keith):** Morning Brief and Market Tape now each get their own page —
-`site/brief/index.html` (Morning Brief only) and `site/market-tape/index.html` (Market Tape only, unrelated to
+**Publishing (changed 2026-09-16, per Keith):** Morning Brief and After Market Tape now each get their own page —
+`site/brief/index.html` (Morning Brief only) and `site/market-tape/index.html` (After Market Tape only, unrelated to
 `site/tape/`, the separate parked predictions feature). Each page has its own jump-list and its own set of `.card`
 entries with ids `brief-YYYY-MM-DD` / `tape-YYYY-MM-DD` respectively. This reverses the 2026-09-02 "one shared page"
 decision — Keith wants the two treated as genuinely separate daily pieces, each with real depth (account moves,
@@ -98,7 +98,7 @@ check on the daily commitment" note below.
 
 ## Full Coverage Requirement (added 2026-09-14, per Keith)
 
-Both daily pieces (Morning Brief and Market Tape) must cover, every time, not just when convenient:
+Both daily pieces (Morning Brief and After Market Tape) must cover, every time, not just when convenient:
 
 1. **All four benchmarks, not just SPY** — SPY, QQQ, DIA (Dow proxy), and crypto (BTC/ETH/SOL). Pull benchmark
    levels from `site/assets/ticker.json` (refreshed at/near market open and close) rather than a fresh Alpha
@@ -172,3 +172,10 @@ denser style is a real ongoing production commitment — every trading day, inde
 analytical work per entry than the old bullet format required. Worth deciding up front whether this is truly daily,
 or whether "most trading days" with an honest occasional skip is the more sustainable version before the format
 becomes a source of guilt instead of a habit.
+
+
+## Daily page presentation (2026-09-26 review)
+
+Publish the newest card first on each page with `daily-entry daily-entry-latest`; older cards use `daily-entry` and remain beneath the Jump To archive. Add the newest archive link at the start of the list and move the former latest card under it. Keep the existing `/market-tape/` path so older links work.
+
+Use short, useful headings and occasional relevant emoji, never decoration in every paragraph. A verified market symbol may be written as `$NVDA` (or `$SPY`) in a new entry; the site links recognized symbols to their Yahoo Finance quote pages. Check symbol spelling and the actual security before publication. An unrecognized symbol remains plain text, never silently corrected to another instrument. Dollar prices such as `$50` are not symbols. Link story references directly to the original report or primary source you checked, with meaningful link text; don't invent a source link or turn a vague claim into a citation. Existing prose is historical and should not be rewritten merely to insert new links.
