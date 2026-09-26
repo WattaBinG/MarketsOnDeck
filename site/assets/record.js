@@ -161,10 +161,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var card = document.getElementById('statTodayTotalCard');
     if (!card) return;
     if (state.range !== 'day' || !state.positions.length) { card.hidden = true; return; }
-    card.hidden = false;
-
     var account = document.getElementById('recordAccount').value;
     var cutoff = rangeCutoffDate('day');
+    // Do not show a partial 'Today, Total' when some held positions lack
+    // current-day quotes or a prior close (notably options and spot ETH).
+    var scopedPositions = state.positions.filter(function (p) { return account === 'all' || p.account === account; });
+    if (scopedPositions.some(function (p) {
+      return !p.markAsOf || p.markAsOf.slice(0, 10) !== cutoff || typeof p.priorClose !== 'number';
+    })) { card.hidden = true; return; }
+    card.hidden = false;
     var todayRealized = state.trades
       .filter(function (t) { return (account === 'all' || t.account === account) && t.date === cutoff; })
       .reduce(function (sum, t) { return sum + t.realizedGain; }, 0);
