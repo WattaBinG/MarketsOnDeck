@@ -687,3 +687,34 @@ function initMasthead() {
   }).catch(function () {});
 }
 document.addEventListener('DOMContentLoaded', initMasthead);
+
+// Link explicit, verified $SYMBOL notation in editorial copy. The allowlist
+// prevents misspellings from pointing at another security; never touch links.
+function linkDailyTickers() {
+  var known = new Set(['SPY','QQQ','DIA','IWM','NVDA','AMD','INTC','AVGO','META','GOOGL','MSFT','AAPL','TSLA','HD','SOFI','QUBT','SPCX','SPCH','KLAC','LULU','COST','CCL','USO','SCHL','MU','SCHW']);
+  document.querySelectorAll('.daily-entry').forEach(function (entry) {
+    var walker = document.createTreeWalker(entry, NodeFilter.SHOW_TEXT);
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(function (node) {
+      if (node.parentElement.closest('a,script,style,code')) return;
+      var text = node.nodeValue;
+      var re = /(^|[^\w$])\$([A-Z]{1,5})(?![\w])/g;
+      var match, last = 0, fragment = document.createDocumentFragment(), changed = false;
+      while ((match = re.exec(text))) {
+        if (!known.has(match[2])) continue;
+        changed = true;
+        fragment.appendChild(document.createTextNode(text.slice(last, match.index) + match[1]));
+        var a = document.createElement('a');
+        a.href = 'https://finance.yahoo.com/quote/' + encodeURIComponent(match[2]) + '/';
+        a.target = '_blank'; a.rel = 'noopener noreferrer';
+        a.textContent = '$' + match[2];
+        a.setAttribute('aria-label', match[2] + ' quote on Yahoo Finance');
+        fragment.appendChild(a);
+        last = re.lastIndex;
+      }
+      if (changed) { fragment.appendChild(document.createTextNode(text.slice(last))); node.replaceWith(fragment); }
+    });
+  });
+}
+document.addEventListener('DOMContentLoaded', linkDailyTickers);
