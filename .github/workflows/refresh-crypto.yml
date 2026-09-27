@@ -5,13 +5,19 @@ on:
   schedule:
     - cron: '*/15 * * * *'
   workflow_dispatch:
+    inputs:
+      cycle:
+        description: "UTC 15-minute cycle dispatched by Cloudflare"
+        required: false
+        type: string
 
 permissions:
   contents: write
 
 concurrency:
   group: refresh-publish-main
-  cancel-in-progress: true
+  cancel-in-progress: false
+  queue: max
 
 jobs:
   refresh:
