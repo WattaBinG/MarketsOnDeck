@@ -759,6 +759,130 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .wire-sidebar .record-band-stat .stat-label { font-size: 9px; }
 }
 
+/* Homepage review: Watch | smaller linked banner | Pulse, compact Record beneath Pulse. */
+.home-dashboard{display:grid;grid-template-columns:minmax(170px,220px) minmax(0,1fr) minmax(185px,220px);gap:12px clamp(12px,1.8vw,24px);align-items:start}
+.home-dashboard > .wire-left{grid-column:1;grid-row:1;min-width:0}
+.home-dashboard > .masthead-wrap{grid-column:2;grid-row:1;min-width:0;padding:0}
+.home-dashboard .masthead-link{display:block;text-decoration:none}
+.home-dashboard .masthead-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:14px}
+.home-dashboard .masthead img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:contain}
+.home-dashboard > .top-right{grid-column:3;grid-row:1;min-width:0;display:flex;flex-direction:column;gap:8px}
+.home-dashboard .sentiment-card{margin:0;padding:8px 10px 5px}
+.home-dashboard .sentiment-card .sentiment-dial{max-width:125px}
+.home-dashboard .sentiment-card .sentiment-note{font-size:9px;line-height:1.3}
+.home-dashboard .sentiment-periods{grid-template-columns:repeat(3,1fr);gap:2px;margin-top:5px}
+.home-dashboard .sentiment-periods button{font-size:9px;padding:3px 0}
+.home-dashboard .record-band{margin:0;padding:8px 10px}
+.home-dashboard .record-band-top{display:block}
+.home-dashboard .record-band-top .eyebrow{font:700 15px/1.2 var(--font-display);text-transform:uppercase;letter-spacing:0}
+.home-dashboard .record-band-asof{display:block;font-size:9px;margin-top:2px}
+.home-dashboard .record-band-main{display:block;margin-top:5px}
+.home-dashboard .record-band-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 5px}
+.home-dashboard .record-band-stat .stat-num{font-size:15px;line-height:1.2;overflow-wrap:anywhere}
+.home-dashboard .record-band-stat .stat-label{font-size:9px;line-height:1.25}
+.home-dashboard .record-band-chart{margin-top:4px;height:30px;overflow:hidden}
+.home-dashboard .record-band-chart svg{width:100%;height:35px}
+.home-dashboard .record-band-cta{font-size:10px;margin-top:3px}
+.home-dashboard .wire-left .watch-box{padding:9px 10px}
+.home-dashboard .wire-left .watch-box-header{font-size:15px}
+.home-dashboard .wire-left .watch-box-date{font-size:10px;margin-bottom:5px}
+.home-dashboard .wire-left .watch-list li{display:block;padding:5px 0;font-size:11px;line-height:1.25}
+.home-dashboard .wire-left .watch-time,.home-dashboard .wire-left .watch-event{display:block;text-align:left}
+.home-dashboard .wire-left .watch-box-link{font-size:10px}
+.home-dashboard > .home-wire-title{grid-column:1/-1;grid-row:2;padding:2px 0 0}
+.home-dashboard > .wire-main{grid-column:1/-1;grid-row:3;min-width:0}
+.home-dashboard .wire-main .wire-list{column-count:3;column-gap:28px}
+.home-dashboard .wire-main .wire-list li{overflow-wrap:anywhere}
+.home-dashboard > .ai-strip{grid-column:1/-1;grid-row:4;min-width:0}
+@media(max-width:900px) and (min-width:641px){
+ .home-dashboard{grid-template-columns:minmax(145px,1fr) minmax(0,2.2fr) minmax(150px,1fr);gap:10px}
+ .home-dashboard .wire-main .wire-list{column-count:2}
+}
+@media(max-width:640px){
+ .home-dashboard{display:flex;flex-direction:column;gap:9px}
+ .home-dashboard > .wire-left,.home-dashboard > .masthead-wrap,.home-dashboard > .top-right,.home-dashboard > .home-wire-title,.home-dashboard > .wire-main,.home-dashboard > .ai-strip{width:100%;min-width:0}
+ .home-dashboard > .wire-left{order:1}.home-dashboard > .masthead-wrap{order:2}.home-dashboard > .top-right{order:3}.home-dashboard > .home-wire-title{order:4}.home-dashboard > .wire-main{order:5}.home-dashboard > .ai-strip{order:6}
+ .home-dashboard .wire-left .watch-list{display:flex;gap:12px}.home-dashboard .wire-left .watch-list li{flex:1;min-width:0}
+ .home-dashboard .masthead img{aspect-ratio:3/1}
+ .home-dashboard .top-right{display:flex;flex-direction:column;gap:8px}
+ .home-dashboard .sentiment-card{display:grid;grid-template-columns:minmax(0,1fr) 95px;grid-template-rows:auto auto;align-items:center}
+ .home-dashboard .sentiment-head{grid-column:1;grid-row:1}.home-dashboard .sentiment-periods{grid-column:1;grid-row:2}.home-dashboard .sentiment-dial{grid-column:2;grid-row:1/span 2;max-width:95px}
+ .home-dashboard .sentiment-readout{grid-column:2;grid-row:2;font-size:10px}.home-dashboard .sentiment-score{font-size:17px}.home-dashboard .sentiment-label{font-size:10px}
+ .home-dashboard .sentiment-slider,.home-dashboard .sentiment-date,.home-dashboard .sentiment-note{display:none}
+ .home-dashboard .record-band-stats{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .home-dashboard .record-band-chart{height:25px}
+ .home-dashboard .wire-main .wire-list{column-count:2;column-gap:14px}
+ .home-dashboard .wire-main .wire-list li{padding:7px 0}
+ .home-dashboard .wire-main .wire-list a{font-size:13px}
+ .home-dashboard .wire-main .wire-source{white-space:normal;font-size:9px}
+}
+/* Keep the top row short enough that The Wire starts near the three panels. */
+@media(min-width:641px){
+ .home-dashboard .sentiment-card{display:grid;grid-template-columns:minmax(0,1fr) 82px;grid-template-rows:auto auto;align-items:center}
+ .home-dashboard .sentiment-head{grid-column:1;grid-row:1}
+ .home-dashboard .sentiment-periods{grid-column:1;grid-row:2;grid-template-columns:repeat(3,1fr)}
+ .home-dashboard .sentiment-dial{grid-column:2;grid-row:1/span 2;max-width:82px}
+ .home-dashboard .sentiment-readout{grid-column:2;grid-row:2;margin:0;gap:2px}
+ .home-dashboard .sentiment-score{font-size:16px}.home-dashboard .sentiment-label{font-size:10px}
+ .home-dashboard .sentiment-slider,.home-dashboard .sentiment-date,.home-dashboard .sentiment-note{display:none}
+ .home-dashboard .record-band-chart{display:none}
+ .home-dashboard .record-band-cta{margin-top:5px}
+}
+/* Mobile review: make the story the entry point, keep the panels after the Wire. */
+@media(max-width:640px){
+ .home-dashboard > .masthead-wrap{order:1}
+ .home-dashboard > .home-wire-title{order:2}
+ .home-dashboard > .wire-main{order:3}
+ .home-dashboard > .wire-left{order:4}
+ .home-dashboard > .top-right{order:5}
+ .home-dashboard > .ai-strip{order:6}
+ .home-dashboard{gap:6px}
+ .home-dashboard .masthead img{aspect-ratio:3/1}
+ .home-dashboard .home-wire-title{padding:2px 0 0}
+ .home-dashboard .home-wire-title.section-tight{margin:0;padding-top:0;padding-bottom:0}
+ .home-dashboard .home-wire-title .eyebrow{font-size:9px;letter-spacing:.06em}
+ .home-dashboard .home-wire-title h1{font-size:30px!important;line-height:1;margin:2px 0 3px}
+ .home-dashboard .wire-toolbar{margin-bottom:5px;gap:5px}
+ .home-dashboard .wire-filters{gap:3px}
+ .home-dashboard .wire-filter-btn{padding:5px 8px;font-size:10px}
+ .home-dashboard .wire-updated{font-size:10px}
+ .home-dashboard .wire-top{padding:6px 0 10px;margin-bottom:5px}
+ .home-dashboard .wire-top-label{margin-bottom:3px;font-size:9px}
+ .home-dashboard .wire-top-headline{font-size:clamp(22px,7.1vw,29px);line-height:1.1}
+ .home-dashboard .wire-top-source{margin-top:4px;font-size:10px}
+ .home-dashboard .wire-main .wire-list{column-count:2;column-gap:13px}
+ .home-dashboard .wire-main .wire-list li{padding:5px 0;gap:3px}
+ .home-dashboard .wire-main .wire-list a{font-size:12px;line-height:1.23}
+ .home-dashboard .wire-main .wire-tag{font-size:8px}
+ .home-dashboard .wire-left{border-top:1px solid var(--border);padding-top:12px;margin-top:12px}
+}
+/* Mobile review fixes (audit 2026-09-27): single-column phone headlines,
+   stacked watch list, 2x2 record stats, ticker safe-center, bigger pills.
+   Appended last so these win at equal specificity. */
+@media (max-width: 640px) {
+  /* 1. Single-column headlines at readable size */
+  .home-dashboard .wire-main .wire-list { column-count: 1; column-gap: 0; }
+  .home-dashboard .wire-main .wire-list li { padding: 10px 0; }
+  .home-dashboard .wire-main .wire-list a { font-size: 16px; line-height: 1.4; }
+  .home-dashboard .wire-main .wire-tag { font-size: 10px; }
+  .home-dashboard .wire-main .wire-source { font-size: 11px; }
+
+  /* 2. Watch list stacked (undo the 2-across flex) */
+  .home-dashboard .wire-left .watch-list { display: block; }
+  .home-dashboard .wire-left .watch-list li { font-size: 13px; padding: 7px 0; }
+
+  /* 3. Record stats 2x2 instead of 4-across */
+  .home-dashboard .record-band-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px; }
+  .home-dashboard .record-band-stat .stat-num { font-size: 19px; overflow-wrap: normal; }
+  .home-dashboard .record-band-stat .stat-label { font-size: 10px; }
+
+  /* 5. Bigger filter pills */
+  .home-dashboard .wire-filter-btn { padding: 10px 14px; font-size: 12px; }
+}
+
+/* 4. Pinned ticker: safe center so the left end can't clip out of scroll reach */
+.ticker-pinned { justify-content: safe center; }
+
 /* Homepage newsletter footer CTA: center the copy and the embed together. */
 .newsletter-cta { text-align: center; }
 .newsletter-cta > p { margin-left: auto !important; margin-right: auto !important; }
