@@ -29,3 +29,9 @@ The dispatcher logs each accepted workflow and cycle, throws on non-204 status
 so the Cron Past Events table records failure, and does not log the token. A
 GitHub dispatch request is not proof of a completed workflow. Watch failures in
 both Cloudflare Cron Past Events and GitHub Actions.
+
+Git-connected deployment: Cloudflare Builds uses repository `WattaBinG/MarketsOnDeck`,
+branch `main`, root directory `scheduler`, deploy command `npx wrangler deploy`.
+The separate Worker was initially a Hello World placeholder; no production
+schedule should be assumed until Builds has deployed this source and a real
+cron cycle is verified. The GitHub schedules remain as a backstop in that window.
