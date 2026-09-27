@@ -887,3 +887,13 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .newsletter-cta { text-align: center; }
 .newsletter-cta > p { margin-left: auto !important; margin-right: auto !important; }
 .newsletter-cta > iframe { margin-left: auto; margin-right: auto; }
+
+/* Center The Wire heading and category controls above the headlines. */
+.home-dashboard .home-wire-title .article-header { text-align: center; }
+.home-dashboard .wire-toolbar { justify-content: center; flex-direction: column; align-items: center; gap: 8px; }
+.home-dashboard .wire-filters { justify-content: center; }
+.home-dashboard .wire-updated { text-align: center; }
+@media (max-width: 640px) {
+  .home-dashboard .wire-toolbar { gap: 5px; }
+  .home-dashboard .wire-filters { gap: 5px; max-width: 280px; }
+}
