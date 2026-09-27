@@ -19,7 +19,7 @@ archive = json.loads((Path(__file__).resolve().parents[1] / 'site/assets/wire-ar
 archived_urls = {it.get('url') for it in archive.get('items', [])}
 visible = json.loads((Path(__file__).resolve().parents[1] / 'site/assets/wire.json').read_text())
 visible_urls = {it.get('url') for it in visible.get('items', [])}
-token = os.environ['DISCORD_BOT_TOKEN']
+token = os.environ['DISCORD_BOT_TOKEN'].strip()
 channels = [x.strip() for x in os.environ['DISCORD_NEWS_CHANNEL_ID'].split(',') if x.strip()]
 for index, channel in enumerate(channels, 1):
     counts = {k: 0 for k in ('retrieved', 'in_window', 'text_link', 'sport_excluded', 'market_excluded', 'eligible', 'archived_match', 'visible_match', 'new_candidate')}
