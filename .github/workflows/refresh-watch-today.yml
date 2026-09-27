@@ -6,6 +6,11 @@ name: Refresh What to Watch Today
 # afternoon and the box rolls to the next trading day in the evening.
 on:
   workflow_dispatch:
+    inputs:
+      cycle:
+        description: "UTC daily cycle dispatched by Cloudflare"
+        required: false
+        type: string
 
 permissions:
   contents: write
