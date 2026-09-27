@@ -5,8 +5,6 @@ name: Refresh What to Watch Today
 # returns - GitHub cron is UTC-only) so today's results stay up through the
 # afternoon and the box rolls to the next trading day in the evening.
 on:
-  schedule:
-    - cron: '0 23 * * 0-4'
   workflow_dispatch:
 
 permissions:
