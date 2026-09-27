@@ -348,7 +348,6 @@ def fetch_discord(state):
         oldest = None
         channel_items = []
         complete = False
-        diag = {"retrieved": 0, "text_link": 0, "sport_excluded": 0, "market_excluded": 0, "fresh": 0}
         for page in range(30):
             # Discord returns messages newest-first. A second `after` request
             # using the maximum ID skips the older pages. Walk back with
@@ -391,7 +390,6 @@ def fetch_discord(state):
                 if not mid or not mid.isdigit() or int(mid) <= int(original_cursor):
                     crossed_cursor = True
                     continue
-                diag["retrieved"] += 1
                 newest = mid if newest is None else max(newest, mid, key=int)
                 content = (msg.get("content") or "").strip()
                 urls = re.findall(r"https?://[^\s<>()]+", content)
@@ -403,13 +401,10 @@ def fetch_discord(state):
                         urls = [emb["url"]]
                 if not text or not urls:
                     continue
-                diag["text_link"] += 1
                 if SPORT.search(text):
-                    diag["sport_excluded"] += 1
                     skipped_sport += 1
                     continue
                 if not DISCORD_MONEY.search(text):
-                    diag["market_excluded"] += 1
                     skipped_offtopic += 1
                     continue
                 try:
@@ -418,7 +413,6 @@ def fetch_discord(state):
                     continue
                 if ts.timestamp() < datetime.now(timezone.utc).timestamp() - MAX_AGE_HOURS * 3600:
                     continue
-                diag["fresh"] += 1
                 if urls[0] in archived_urls:
                     continue
                 if len(text) > 200:
@@ -436,7 +430,6 @@ def fetch_discord(state):
             print(f"discord: channel {ci + 1} pagination incomplete; preserving cursor and discarding partial results", file=sys.stderr)
             continue
         items.extend(channel_items)
-        print(f"discord diagnostic channel {ci + 1}: " + ", ".join(f"{k}={v}" for k, v in diag.items()))
         if newest is not None:
             if ci == 0:
                 state["discord_last_message_id"] = max(original_cursor, newest, key=int)
@@ -715,10 +708,6 @@ def main():
     pinned = [it for it in candidates if it.get("_pinned")]
     unpinned = [it for it in candidates if not it.get("_pinned")]
     rest = sorted((pinned + unpinned)[:MAX_ITEMS], key=lambda x: x["_ts"], reverse=True)
-    print(f"discord diagnostic selection: fresh={sum(it['source'] == DISCORD_SOURCE for it in fresh)}, "
-          f"keep={sum(it['source'] == DISCORD_SOURCE for it in keep)}, "
-          f"pinned={sum(it['source'] == DISCORD_SOURCE for it in pinned)}, "
-          f"visible={sum(it['source'] == DISCORD_SOURCE for it in rest)}")
     listed = {id(it) for it in rest} | lead_dupes
     overflow = [it for it in keep if id(it) not in listed]
 
