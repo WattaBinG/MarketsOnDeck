@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20260926f">
+<link rel="stylesheet" href="/assets/style.css?v=20260927b">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
 <meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
@@ -52,27 +52,58 @@
 </div>
 
 <main>
-  <div class="container masthead-wrap">
-    <picture class="masthead" id="masthead" data-variant="split">
-      <source media="(max-width: 640px)" srcset="/assets/brand/masthead/split-phone.webp" width="1200" height="700">
-      <img src="/assets/brand/masthead/split-wide.webp" width="2400" height="800" alt="Markets On Deck: Headlines, Alerts, The Record" fetchpriority="high">
-    </picture>
-  </div>
-  <div class="container section-tight">
-    <div class="article-header" style="max-width:none; text-align:left;">
+  <div class="container home-dashboard">
+    <aside class="wire-left" aria-label="What to watch today">
+      <!-- WATCH_TODAY_START — updated once each morning by the Watch Today routine; keep this exact structure so the automated edit stays a clean find/replace -->
+      <div class="watch-box" data-watch-date="2026-09-25">
+        <div class="watch-box-header">What to Watch Today</div>
+        <div class="watch-box-date">Friday, September 25</div>
+        <ul class="watch-list">
+          <li><span class="watch-time">1:00 PM ET</span><span class="watch-event">Baker Hughes Rig Count</span></li>
+          <li><span class="watch-time">3:30 PM ET</span><span class="watch-event">CFTC Commitments of Traders</span></li>
+        </ul>
+        <a class="watch-box-link" href="https://www.census.gov/economic-indicators/" target="_blank" rel="noopener">Full economic calendar &rarr;</a>
+      </div>
+      <!-- WATCH_TODAY_END -->
+    </aside>
+    <div class="masthead-wrap">
+      <a class="masthead-link" href="/index.html" aria-label="Markets On Deck home">
+        <picture class="masthead" id="masthead" data-variant="split">
+          <source media="(max-width: 640px)" srcset="/assets/brand/masthead/split-wide.webp" width="2400" height="800">
+          <img src="/assets/brand/masthead/split-wide.webp" width="2400" height="800" alt="Markets On Deck: Headlines, Alerts, The Record" fetchpriority="high">
+        </picture>
+      </a>
+    </div>
+    <aside class="top-right" aria-label="Market Pulse and Public Record">
+      <section class="sentiment-card" id="sentimentCard" hidden>
+        <div class="sentiment-head"><h2 class="sentiment-title">Market Pulse</h2></div>
+        <div class="sentiment-periods" id="sentimentPeriods" role="group" aria-label="Market Pulse timeframe">
+          <button type="button" data-period="1D" class="active">1D</button><button type="button" data-period="1W">1W</button><button type="button" data-period="1M">1M</button><button type="button" data-period="3M">3M</button><button type="button" data-period="6M">6M</button><button type="button" data-period="1Y">1Y</button>
+        </div>
+        <div class="sentiment-dial" id="sentimentDial" role="img" aria-label="Market sentiment gauge"></div>
+        <div class="sentiment-readout"><span class="sentiment-score num" id="sentimentScore"></span><span class="sentiment-label" id="sentimentLabel"></span></div>
+        <input type="range" class="sentiment-slider" id="sentimentSlider" min="0" max="0" value="0" step="1" aria-label="Slide to see previous days' readings" hidden>
+        <div class="sentiment-date" id="sentimentDate"></div><div class="sentiment-note" id="sentimentNote"></div>
+      </section>
+      <a class="record-band" id="recordBand" href="/record/index.html" hidden>
+        <div class="record-band-top"><span class="eyebrow">The Public Record</span><span class="record-band-asof" id="recordBandAsOf"></span></div>
+        <div class="record-band-main">
+          <div class="record-band-stats">
+            <div class="record-band-stat"><span class="stat-num num" id="rbPnl">&mdash;</span><span class="stat-label">Net Realized, 2026</span></div>
+            <div class="record-band-stat"><span class="stat-num num" id="rbWinRate">&mdash;</span><span class="stat-label">Win Rate</span></div>
+            <div class="record-band-stat"><span class="stat-num num" id="rbTrades">&mdash;</span><span class="stat-label">Closed Trades</span></div>
+            <div class="record-band-stat"><span class="stat-num num" id="rbSpy">&mdash;</span><span class="stat-label">S&amp;P 500, Same Span</span></div>
+          </div>
+          <div class="record-band-chart" id="recordBandChart" role="img" aria-label="Cumulative realized profit and loss curve for 2026"></div>
+        </div><span class="record-band-cta">View every trade &rarr;</span>
+      </a>
+    </aside>
+    <div class="home-wire-title section-tight"><div class="article-header" style="max-width:none; text-align:left;">
       <div class="eyebrow">Refreshed Hourly &middot; Every Headline Links to Its Real Source</div>
       <h1 style="font-size:clamp(28px,4.4vw,42px);">The Wire</h1>
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="wire-layout">
+    </div></div>
     <div class="wire-main">
-    <div class="wire-toolbar">
-      <div class="wire-filters" id="wireFilters" role="group" aria-label="Filter headlines by category"></div>
-      <span class="wire-updated" id="wireUpdated"></span>
-    </div>
+      <div class="wire-toolbar"><div class="wire-filters" id="wireFilters" role="group" aria-label="Filter headlines by category"></div><span class="wire-updated" id="wireUpdated"></span></div>
     <!-- WIRE_TOP_START — updated hourly by the Wire Refresh routine; keep this exact structure so the automated edit stays a clean find/replace -->
     <a class="wire-top" href="https://www.aljazeera.com/news/liveblog/2026/9/27/iran-war-live-tehran-awaits-official-response-as-trump-rejects-hormuz-plan?traffic_source=rss" target="_blank" rel="noopener">
       <img class="wire-top-image" src="/assets/images/wire-geopolitics.jpg" alt="">
@@ -108,48 +139,6 @@
 
     <p class="footer-disclosure" style="margin-top:32px; padding-top:16px; border-top:1px solid var(--border);">Headlines are aggregated from real published sources and link out to the original reporting &mdash; MarketsOnDeck doesn't write or verify the underlying reporting itself. Market prices shown on this page are periodic snapshots, not a live feed. Nothing here is investment advice or a recommendation to buy or sell any security.</p>
     </div>
-
-    <aside class="wire-sidebar">
-      <section class="sentiment-card" id="sentimentCard" hidden>
-        <div class="sentiment-head">
-          <h2 class="sentiment-title">Market Pulse</h2>
-        </div>
-        <div class="sentiment-periods" id="sentimentPeriods" role="group" aria-label="Market Pulse timeframe">
-          <button type="button" data-period="1D" class="active">1D</button><button type="button" data-period="1W">1W</button><button type="button" data-period="1M">1M</button><button type="button" data-period="3M">3M</button><button type="button" data-period="6M">6M</button><button type="button" data-period="1Y">1Y</button>
-        </div>
-        <div class="sentiment-dial" id="sentimentDial" role="img" aria-label="Market sentiment gauge"></div>
-        <div class="sentiment-readout"><span class="sentiment-score num" id="sentimentScore"></span><span class="sentiment-label" id="sentimentLabel"></span></div>
-        <input type="range" class="sentiment-slider" id="sentimentSlider" min="0" max="0" value="0" step="1" aria-label="Slide to see previous days' readings" hidden>
-        <div class="sentiment-date" id="sentimentDate"></div>
-        <div class="sentiment-note" id="sentimentNote"></div>
-      </section>
-      <!-- WATCH_TODAY_START — updated once each morning by the Watch Today routine; keep this exact structure so the automated edit stays a clean find/replace -->
-      <div class="watch-box" data-watch-date="2026-09-25">
-        <div class="watch-box-header">What to Watch Today</div>
-        <div class="watch-box-date">Friday, September 25</div>
-        <ul class="watch-list">
-          <li><span class="watch-time">1:00 PM ET</span><span class="watch-event">Baker Hughes Rig Count</span></li>
-          <li><span class="watch-time">3:30 PM ET</span><span class="watch-event">CFTC Commitments of Traders</span></li>
-        </ul>
-        <a class="watch-box-link" href="https://www.census.gov/economic-indicators/" target="_blank" rel="noopener">Full economic calendar &rarr;</a>
-      </div>
-      <!-- WATCH_TODAY_END -->
-      <a class="record-band" id="recordBand" href="/record/index.html" hidden>
-        <div class="record-band-top">
-          <span class="eyebrow">The Public Record</span>
-          <span class="record-band-asof" id="recordBandAsOf"></span>
-        </div>
-        <div class="record-band-main">
-          <div class="record-band-stats">
-            <div class="record-band-stat"><span class="stat-num num" id="rbPnl">&mdash;</span><span class="stat-label">Net Realized, 2026</span></div>
-            <div class="record-band-stat"><span class="stat-num num" id="rbWinRate">&mdash;</span><span class="stat-label">Win Rate</span></div>
-            <div class="record-band-stat"><span class="stat-num num" id="rbTrades">&mdash;</span><span class="stat-label">Closed Trades</span></div>
-            <div class="record-band-stat"><span class="stat-num num" id="rbSpy">&mdash;</span><span class="stat-label">S&amp;P 500, Same Span</span></div>
-          </div>
-          <div class="record-band-chart" id="recordBandChart" role="img" aria-label="Cumulative realized profit and loss curve for 2026"></div>
-        </div>
-        <span class="record-band-cta">View every trade &rarr;</span>
-      </a>
       <section class="ai-strip" id="aiStrip" hidden>
         <div class="ai-strip-head">
           <h2 class="ai-strip-title">Top AI Tools</h2>
@@ -157,10 +146,7 @@
         </div>
         <ol class="ai-strip-list" id="aiStripList"></ol>
       </section>
-    </aside>
-    </div>
   </div>
-
 
   <div class="container">
     <section class="section-tight newsletter-cta" aria-labelledby="newsletterTitle" style="border-top:1px solid var(--border); margin-top:28px;">
