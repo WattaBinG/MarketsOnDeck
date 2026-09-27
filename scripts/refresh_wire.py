@@ -458,6 +458,18 @@ def fetch_discord(state):
     return kept
 
 
+def select_fresh_with_source_slots(fresh):
+    """Reserve source slots even when eligible items are already in the first cap."""
+    keep = list(fresh[:MAX_ITEMS + 4])
+    for src, n in ((ARK_SOURCE, 1), (WB_SOURCE, 4), (DISCORD_SOURCE, 4)):
+        room = [it for it in fresh if it["source"] == src][:n]
+        for it in room:
+            it["_pinned"] = True
+            if it not in keep:
+                keep.append(it)
+    return keep
+
+
 def main():
     seen = set()
     items = []
@@ -546,15 +558,7 @@ def main():
 
     fresh = [it for it in items if it["_ts"] >= cutoff]
     fetched_aged = [it for it in items if it["_ts"] < cutoff]
-    keep = list(fresh[:MAX_ITEMS + 4])
-    # Guarantee the non-RSS sources a few slots each: with 17 feeds refreshing
-    # hourly, a pure freshest-first cap can crowd every mirror/Discord item
-    # off the list even when they carry fresh news.
-    for src, n in ((ARK_SOURCE, 1), (WB_SOURCE, 4), (DISCORD_SOURCE, 4)):
-        room = [it for it in fresh if it["source"] == src and it not in keep][:n]
-        for it in room:
-            it["_pinned"] = True
-        keep.extend(room)
+    keep = select_fresh_with_source_slots(fresh)
     aged = fetched_aged + [it for it in fresh if it not in keep]
 
     # Cluster same-story headlines (deterministic greedy pass, recency order).
