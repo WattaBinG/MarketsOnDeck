@@ -335,6 +335,7 @@ def fetch_discord(state):
         # DISCORD_UA below fixes it (verified from a cloud host 2026-09-23).
         print("discord: REST credentials not set; relying on the local-reader posts file")
     for ci, channel in enumerate(channels if token else []):
+        diag = {"retrieved": 0, "text_link": 0, "sport_excluded": 0, "market_excluded": 0, "fresh": 0}
         after = str((state.get("discord_last_message_id") if ci == 0 else cursors.get(channel)) or "")
         newest = None
         pages = 0
@@ -364,6 +365,7 @@ def fetch_discord(state):
             if not isinstance(batch, list) or not batch:
                 break
             for msg in batch:
+                diag["retrieved"] += 1
                 mid = str(msg.get("id") or "")
                 if not mid:
                     continue
@@ -378,10 +380,13 @@ def fetch_discord(state):
                         urls = [emb["url"]]
                 if not text or not urls:
                     continue  # a wire item needs both a headline and an outbound link
+                diag["text_link"] += 1
                 if SPORT.search(text):
+                    diag["sport_excluded"] += 1
                     skipped_sport += 1
                     continue  # homer/goal alerts never reach a finance wire
                 if not DISCORD_MONEY.search(text):
+                    diag["market_excluded"] += 1
                     skipped_offtopic += 1
                     continue  # other non-market chatter stays off the wire
                 try:
@@ -390,6 +395,8 @@ def fetch_discord(state):
                     continue
                 if len(text) > 200:
                     text = text[:197].rstrip() + "..."
+                if ts.timestamp() >= datetime.now(timezone.utc).timestamp() - MAX_AGE_HOURS * 3600:
+                    diag["fresh"] += 1
                 items.append({
                     "headline": text,
                     "url": urls[0],
@@ -402,6 +409,7 @@ def fetch_discord(state):
             after = max((str(m.get("id")) for m in batch), key=int, default=after)
             if len(batch) < 100:
                 break
+        print(f"discord diagnostic channel {ci + 1}: " + ", ".join(f"{k}={v}" for k, v in diag.items()))
         if newest is not None:
             if ci == 0:
                 prev = str(state.get("discord_last_message_id") or "0")
@@ -681,6 +689,10 @@ def main():
     pinned = [it for it in candidates if it.get("_pinned")]
     unpinned = [it for it in candidates if not it.get("_pinned")]
     rest = sorted((pinned + unpinned)[:MAX_ITEMS], key=lambda x: x["_ts"], reverse=True)
+    print(f"discord diagnostic selection: fresh={sum(it['source'] == DISCORD_SOURCE for it in fresh)}, "
+          f"keep={sum(it['source'] == DISCORD_SOURCE for it in keep)}, "
+          f"pinned={sum(it['source'] == DISCORD_SOURCE for it in pinned)}, "
+          f"visible={sum(it['source'] == DISCORD_SOURCE for it in rest)}")
     listed = {id(it) for it in rest} | lead_dupes
     overflow = [it for it in keep if id(it) not in listed]
 
