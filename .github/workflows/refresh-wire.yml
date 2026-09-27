@@ -3,8 +3,6 @@ name: Refresh The Wire
 # Aggregates publishers' own RSS headlines with source attribution and
 # outbound links only — no article text, no AI-written prose (AUTOMATION.md).
 on:
-  schedule:
-    - cron: '*/15 * * * *'
   workflow_dispatch:
     inputs:
       cycle:
