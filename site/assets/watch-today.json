@@ -1,17 +1,8 @@
 {
-  "date": "2026-09-25",
-  "dateLabel": "Friday, September 25",
-  "events": [
-    {
-      "time": "1:00 PM ET",
-      "event": "Baker Hughes Rig Count"
-    },
-    {
-      "time": "3:30 PM ET",
-      "event": "CFTC Commitments of Traders"
-    }
-  ],
-  "note": null,
+  "date": "2026-09-28",
+  "dateLabel": "Monday, September 28",
+  "events": [],
+  "note": "No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).",
   "calendarUrl": "https://www.census.gov/economic-indicators/",
   "sources": [
     "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
