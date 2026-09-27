@@ -2,8 +2,6 @@ name: Refresh crypto ticker
 # Autonomous replacement for the old local Claude routine's crypto leg.
 # Deterministic: Coinbase Exchange public market data only (see AUTOMATION.md).
 on:
-  schedule:
-    - cron: '*/15 * * * *'
   workflow_dispatch:
     inputs:
       cycle:
