@@ -1,10 +1,12 @@
 const API = "https://api.github.com/repos/WattaBinG/MarketsOnDeck/actions/workflows";
 const WORKFLOWS = ["refresh-wire.yml", "refresh-crypto.yml"];
+const WATCH_WORKFLOW = "refresh-watch-today.yml";
 
 export async function dispatchCycle(controller, env, fetcher = fetch) {
   if (!env.GITHUB_DISPATCH_TOKEN) throw new Error("Missing GITHUB_DISPATCH_TOKEN");
   const cycle = new Date(controller.scheduledTime).toISOString();
-  const results = await Promise.allSettled(WORKFLOWS.map(async (workflow) => {
+  const dueWorkflows = controller.cron === "0 23 * * 0-4" ? [WATCH_WORKFLOW] : WORKFLOWS;
+  const results = await Promise.allSettled(dueWorkflows.map(async (workflow) => {
     const response = await fetcher(`${API}/${workflow}/dispatches`, {
       method: "POST",
       headers: {
