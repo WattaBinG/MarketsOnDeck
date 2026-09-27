@@ -856,3 +856,29 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .home-dashboard .wire-main .wire-tag{font-size:8px}
  .home-dashboard .wire-left{border-top:1px solid var(--border);padding-top:12px;margin-top:12px}
 }
+/* Mobile review fixes (audit 2026-09-27): single-column phone headlines,
+   stacked watch list, 2x2 record stats, ticker safe-center, bigger pills.
+   Appended last so these win at equal specificity. */
+@media (max-width: 640px) {
+  /* 1. Single-column headlines at readable size */
+  .home-dashboard .wire-main .wire-list { column-count: 1; column-gap: 0; }
+  .home-dashboard .wire-main .wire-list li { padding: 10px 0; }
+  .home-dashboard .wire-main .wire-list a { font-size: 16px; line-height: 1.4; }
+  .home-dashboard .wire-main .wire-tag { font-size: 10px; }
+  .home-dashboard .wire-main .wire-source { font-size: 11px; }
+
+  /* 2. Watch list stacked (undo the 2-across flex) */
+  .home-dashboard .wire-left .watch-list { display: block; }
+  .home-dashboard .wire-left .watch-list li { font-size: 13px; padding: 7px 0; }
+
+  /* 3. Record stats 2x2 instead of 4-across */
+  .home-dashboard .record-band-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px; }
+  .home-dashboard .record-band-stat .stat-num { font-size: 19px; overflow-wrap: normal; }
+  .home-dashboard .record-band-stat .stat-label { font-size: 10px; }
+
+  /* 5. Bigger filter pills */
+  .home-dashboard .wire-filter-btn { padding: 10px 14px; font-size: 12px; }
+}
+
+/* 4. Pinned ticker: safe center so the left end can't clip out of scroll reach */
+.ticker-pinned { justify-content: safe center; }
