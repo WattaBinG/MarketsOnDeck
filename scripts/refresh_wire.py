@@ -334,13 +334,26 @@ def fetch_discord(state):
         # Cloudflare blocks bot-token requests that claim to be Chrome.
         # DISCORD_UA below fixes it (verified from a cloud host 2026-09-23).
         print("discord: REST credentials not set; relying on the local-reader posts file")
+    # Exclude already-published archive URLs during backfill. They may still
+    # have valid timestamps, but must not reappear on the homepage.
+    try:
+        archived_urls = {it.get("url") for it in json.loads((ASSETS / "wire-archive.json").read_text()).get("items", [])}
+    except Exception:
+        archived_urls = set()
     for ci, channel in enumerate(channels if token else []):
-        diag = {"retrieved": 0, "text_link": 0, "sport_excluded": 0, "market_excluded": 0, "fresh": 0}
-        after = str((state.get("discord_last_message_id") if ci == 0 else cursors.get(channel)) or "")
+        original_cursor = str((state.get("discord_last_message_id") if ci == 0 else cursors.get(channel)) or "0")
+        if original_cursor == "0":
+            original_cursor = str((int((datetime.now(timezone.utc).timestamp() - MAX_AGE_HOURS * 3600) * 1000) - 1420070400000) << 22)
         newest = None
-        pages = 0
-        while pages < 3:  # at most 300 messages per channel per run
-            qs = "limit=100" + (f"&after={after}" if after else "")
+        oldest = None
+        channel_items = []
+        complete = False
+        diag = {"retrieved": 0, "text_link": 0, "sport_excluded": 0, "market_excluded": 0, "fresh": 0}
+        for page in range(30):
+            # Discord returns messages newest-first. A second `after` request
+            # using the maximum ID skips the older pages. Walk back with
+            # `before` until we cross the original high-water mark.
+            qs = "limit=100" + (f"&before={oldest}" if oldest else (f"&after={original_cursor}" if original_cursor != "0" else ""))
             req = Request(f"https://discord.com/api/v10/channels/{channel}/messages?{qs}",
                           headers={"User-Agent": DISCORD_UA, "Authorization": f"Bot {token}"})
             try:
@@ -354,21 +367,31 @@ def fetch_discord(state):
                         retry = 5.0
                     print(f"discord: rate limited, waiting {retry}s", file=sys.stderr)
                     _time.sleep(min(retry, 30.0))
-                    continue  # same page again
+                    continue
                 print(f"discord: HTTP {e.code}; skipping source "
                       "(check token, channel access, Message Content Intent)", file=sys.stderr)
                 break
             except Exception as e:
                 print(f"discord: fetch failed ({e}); skipping source", file=sys.stderr)
                 break
-            pages += 1
-            if not isinstance(batch, list) or not batch:
+            if not isinstance(batch, list):
+                print("discord: invalid messages response; skipping source", file=sys.stderr)
                 break
+            if not batch:
+                complete = True
+                break
+            ids = [int(m["id"]) for m in batch if m.get("id") and str(m["id"]).isdigit()]
+            if not ids or (oldest and min(ids) >= int(oldest)):
+                print("discord: pagination stalled; skipping source", file=sys.stderr)
+                break
+            oldest = str(min(ids))
+            crossed_cursor = False
             for msg in batch:
-                diag["retrieved"] += 1
                 mid = str(msg.get("id") or "")
-                if not mid:
+                if not mid or not mid.isdigit() or int(mid) <= int(original_cursor):
+                    crossed_cursor = True
                     continue
+                diag["retrieved"] += 1
                 newest = mid if newest is None else max(newest, mid, key=int)
                 content = (msg.get("content") or "").strip()
                 urls = re.findall(r"https?://[^\s<>()]+", content)
@@ -379,43 +402,46 @@ def fetch_discord(state):
                     if not urls and emb.get("url"):
                         urls = [emb["url"]]
                 if not text or not urls:
-                    continue  # a wire item needs both a headline and an outbound link
+                    continue
                 diag["text_link"] += 1
                 if SPORT.search(text):
                     diag["sport_excluded"] += 1
                     skipped_sport += 1
-                    continue  # homer/goal alerts never reach a finance wire
+                    continue
                 if not DISCORD_MONEY.search(text):
                     diag["market_excluded"] += 1
                     skipped_offtopic += 1
-                    continue  # other non-market chatter stays off the wire
+                    continue
                 try:
                     ts = datetime.fromisoformat(str(msg.get("timestamp")).replace("Z", "+00:00"))
                 except (ValueError, TypeError):
                     continue
+                if ts.timestamp() < datetime.now(timezone.utc).timestamp() - MAX_AGE_HOURS * 3600:
+                    continue
+                diag["fresh"] += 1
+                if urls[0] in archived_urls:
+                    continue
                 if len(text) > 200:
                     text = text[:197].rstrip() + "..."
-                if ts.timestamp() >= datetime.now(timezone.utc).timestamp() - MAX_AGE_HOURS * 3600:
-                    diag["fresh"] += 1
-                items.append({
-                    "headline": text,
-                    "url": urls[0],
-                    "source": DISCORD_SOURCE,
+                channel_items.append({
+                    "headline": text, "url": urls[0], "source": DISCORD_SOURCE,
                     "category": classify(text, "Markets"),
                     "timestamp": ts.strftime("%Y-%m-%dT%H:%M:%SZ"),
-                    "_ts": ts.timestamp(),
-                    "_known_ts": True,
+                    "_ts": ts.timestamp(), "_known_ts": True,
                 })
-            after = max((str(m.get("id")) for m in batch), key=int, default=after)
-            if len(batch) < 100:
+            if crossed_cursor or len(batch) < 100:
+                complete = True
                 break
+        if not complete:
+            print(f"discord: channel {ci + 1} pagination incomplete; preserving cursor and discarding partial results", file=sys.stderr)
+            continue
+        items.extend(channel_items)
         print(f"discord diagnostic channel {ci + 1}: " + ", ".join(f"{k}={v}" for k, v in diag.items()))
         if newest is not None:
             if ci == 0:
-                prev = str(state.get("discord_last_message_id") or "0")
-                state["discord_last_message_id"] = max(prev, newest, key=int)
+                state["discord_last_message_id"] = max(original_cursor, newest, key=int)
             else:
-                cursors[channel] = max(str(cursors.get(channel) or "0"), newest, key=int)
+                cursors[channel] = max(original_cursor, newest, key=int)
 
     # Local reader merge (the trades.json pattern: Keith's PC writes, the
     # cloud merges). scripts/discord_local_reader.py commits raw channel
