@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20260926d">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile1">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
 <meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
@@ -53,6 +53,7 @@
       <div class="eyebrow">Daily &middot; End of Day &middot; Tied to Real Positions</div>
       <h1>After Market Tape</h1>
       <p class="hero-sub">Written fresh most trading days after the closing bell &mdash; what actually moved, and why. Newest entry first, archived below like a blog &mdash; nothing gets quietly overwritten. <a href="/brief/index.html" style="color:var(--accent); text-decoration:underline;">See the premarket companion, The Morning Brief &rarr;</a></p>
+      <nav class="daily-jump" aria-label="Quick links"><a href="#latest-entry">Latest entry ↓</a><a href="#older-entries">Older entries ↓</a></nav>
       <div class="share-bar" data-title="After Market Tape — MarketsOnDeck">
         <span class="share-label">Share</span>
         <a class="share-btn share-x" href="#" target="_blank" rel="noopener" aria-label="Share on X">X</a>
@@ -65,7 +66,7 @@
   <div class="container">
     <div class="brief-layout daily-feed">
 
-      <div class="brief-main article-body prose daily-entries">
+      <div class="brief-main article-body prose daily-entries" id="latest-entry">
 
 <div class="card daily-entry daily-entry-latest" id="tape-2026-09-25">
 <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 25, 2026</span><span class="badge badge-accent">After Market Tape</span></div>
@@ -81,7 +82,7 @@
 <p style="margin-top:16px;">Beyond Carnival, the next material calendar checkpoint is <a href="https://www.bea.gov/news/schedule/full" rel="noopener noreferrer" target="_blank">the PCE inflation release on Wednesday, September 30</a>, confirmed by BEA. <strong>Why this matters:</strong> a green benchmark, a rising stock, a gaining option mark and a closed profit are four different things. The corrected Record keeps spot ETH and its futures exposure separate, preserves the two accounts, and labels mark times rather than treating every figure as a simultaneous close.</p>
 </div>
 
-      <section class="daily-archive" aria-label="Older entries">
+      <section class="daily-archive" id="older-entries" aria-label="Older entries">
         <h2>Older entries</h2>
       <details class="brief-sidebar" open>
         <summary class="card-eyebrow">Jump To</summary>
