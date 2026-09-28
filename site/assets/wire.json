@@ -1,17 +1,65 @@
 {
-  "asOf": "2026-09-28T18:31:32Z",
-  "asOfLabel": "2:31 PM ET",
+  "asOf": "2026-09-28T18:46:34Z",
+  "asOfLabel": "2:46 PM ET",
   "topStory": {
-    "headline": "Meta hires MongoDB CEO CJ Desai to lead enterprise unit. MongoDB shares crater",
-    "url": "https://www.cnbc.com/2026/09/28/mongodb-meta-cj-desai.html",
-    "source": "CNBC",
-    "category": "Movers",
-    "timestamp": "2026-09-28T18:10:02Z",
-    "firstSeen": "2026-09-28T18:17:35Z",
-    "leadSince": "2026-09-28T18:31:32Z",
-    "image": "/assets/images/wire-movers.jpg"
+    "headline": "NYMEX Natural Gas October futures settle at $3.0000/MMBtu.",
+    "url": "https://x.com/financialjuice/status/2104640357141303639",
+    "source": "MarketsOnDeck Discord",
+    "category": "Markets",
+    "timestamp": "2026-09-28T18:32:58Z",
+    "firstSeen": "2026-09-28T18:46:34Z",
+    "leadSince": "2026-09-28T18:46:34Z",
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "OpenAI’s AI agents need to catch up",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-09-28T18:45:00Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
+    },
+    {
+      "headline": "Feds can't withhold counterterrorism funds from states to force election admin changes, judge rules",
+      "url": "https://www.cnbc.com/2026/09/28/elections-dhs-counterterrorism.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-28T18:41:51Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
+    },
+    {
+      "headline": "Spending $800 to see my family this Thanksgiving is a financial burden. How can I push for a cheaper flight?",
+      "url": "https://www.marketwatch.com/story/spending-800-to-see-my-family-this-thanksgiving-is-a-financial-burden-how-can-i-push-for-a-cheaper-flight-c6dd1fdf?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-09-28T18:40:00Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
+    },
+    {
+      "headline": "Watch: Trump announces plan for $15 billion steel plant, would be largest in U.S. history",
+      "url": "https://www.cnbc.com/2026/09/28/trump-steel-plant-iowa.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-28T18:35:55Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
+    },
+    {
+      "headline": "NYMEX WTI Crude November futures settle at $92.60 a barrel, up 19 cents, 0.21%.",
+      "url": "https://x.com/financialjuice/status/2104640128711004375",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-28T18:31:55Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
+    },
+    {
+      "headline": "Brazil debt profile worsens as floating-rate share hits fresh high",
+      "url": "https://www.investing.com/news/economy-news/brazil-debt-profile-worsens-as-floatingrate-share-hits-fresh-high-4921007",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-28T18:31:29Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
+    },
     {
       "headline": "Nvidia launches new platform for reining in rogue AI agents",
       "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
@@ -19,6 +67,14 @@
       "category": "AI",
       "timestamp": "2026-09-28T18:31:23Z",
       "firstSeen": "2026-09-28T18:31:32Z"
+    },
+    {
+      "headline": "Exclusive-Colombia has held discussions with IMF, including on securing financing: sources",
+      "url": "https://www.investing.com/news/economy-news/exclusivecolombia-has-held-discussions-with-imf-including-on-securing-financing-sources-4921006",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-28T18:30:45Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
     },
     {
       "headline": "AI is supercharging hacking, and your local hospitals and banks aren’t ready",
@@ -29,6 +85,14 @@
       "firstSeen": "2026-09-28T18:31:32Z"
     },
     {
+      "headline": "Support and resistance levels explained: how traders use price floors and ceilings",
+      "url": "https://www.investing.com/news/stock-market-news/support-and-resistance-levels-explained-how-traders-use-price-floors-and-ceilings-93CH-4921003",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-28T18:28:32Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
+    },
+    {
       "headline": "Treasury yields rise as march to multiyear highs continues",
       "url": "https://www.cnbc.com/2026/09/28/treasury-yields-bonds-selloff.html",
       "source": "CNBC",
@@ -37,84 +101,20 @@
       "firstSeen": "2026-09-28T18:31:32Z"
     },
     {
-      "headline": "\"De-Globalization Endgame\": Deutsche Bank Warns Historic Copper Squeeze Could Ignite 50% Rally <>",
-      "url": "https://www.zerohedge.com/commodities/de-globalization-endgame-deutsche-bank-warns-historic-copper-squeeze-could-ignite-50",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Best drone ETFs: a head-to-head comparison of JEDI, DRNZ, and European options",
+      "url": "https://www.investing.com/news/stock-market-news/best-drone-etfs-a-headtohead-comparison-of-jedi-drnz-and-european-options-93CH-4921002",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-09-28T18:25:50Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
+      "timestamp": "2026-09-28T18:27:54Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
     },
     {
-      "headline": "GS mid-day client flows: HFs are -24% better for sale led by macro products& semis. LOs are -25% better for sale selling macro products and TMT.",
-      "url": "https://x.com/zerohedge/status/2104637129766682738",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Nvidia at $230: ceiling test or breakout in the making",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-at-230-ceiling-test-or-breakout-in-the-making-93CH-4921000",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-09-28T18:19:52Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
-    },
-    {
-      "headline": "What a US diesel export ban could mean for you",
-      "url": "https://www.bbc.co.uk/news/articles/cky9z3r00l9eo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-28T18:18:30Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
-    },
-    {
-      "headline": "Saudis 'furious': Trump ‘flips & flops’ between deals with Iran and ‘attacks in devastating fashion’",
-      "url": "https://www.france24.com/en/tv-shows/spotlight/20260928-saudis-furious-trump-flips-flops-between-deal-with-iran-and-attacks-in-devastating-fashion",
-      "source": "France 24",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-28T18:18:16Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
-    },
-    {
-      "headline": "New York Times executive shot and killed by in-laws in Bay Area park, police say",
-      "url": "https://www.nbcnews.com/news/us-news/new-york-executive-shot-killed-laws-bay-area-park-police-say-rcna600300",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-09-28T18:17:51Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
-    },
-    {
-      "headline": "Reminder: Braemar Hotels & Resorts' Series B Preferred Stock Goes Ex-Dividend Soon",
-      "url": "https://www.nasdaq.com/articles/reminder-braemar-hotels-resorts-series-b-preferred-stock-goes-ex-dividend-soon",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-28T18:15:52Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
-    },
-    {
-      "headline": "The U.S. and China agree to $60 billion in tariff cuts on products like dolls and fireworks. Rare earths remain a sticking point.",
-      "url": "https://www.marketwatch.com/story/the-u-s-and-china-agree-to-60-billion-in-tariff-cuts-on-products-like-dolls-and-fireworks-rare-earths-remain-a-sticking-point-e4667872?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-28T18:15:00Z",
-      "firstSeen": "2026-09-28T18:17:35Z"
-    },
-    {
-      "headline": "Notable Monday Option Activity: DASH, UBER, XOM",
-      "url": "https://www.nasdaq.com/articles/notable-monday-option-activity-dash-uber-xom",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-28T18:14:02Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
-    },
-    {
-      "headline": "Swiss Market Fails To Hold Early Gains, Ends Flat",
-      "url": "https://www.nasdaq.com/articles/swiss-market-fails-hold-early-gains-ends-flat",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-28T18:13:05Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
-    },
-    {
-      "headline": "US Bancorp's Series M Preferred Stock About To Put More Money In Your Pocket",
-      "url": "https://www.nasdaq.com/articles/us-bancorps-series-m-preferred-stock-about-put-more-money-your-pocket",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-28T18:12:48Z",
-      "firstSeen": "2026-09-28T18:31:32Z"
+      "timestamp": "2026-09-28T18:24:43Z",
+      "firstSeen": "2026-09-28T18:46:34Z"
     },
     {
       "headline": "Iran Agrees To Suspend Uranium Enrichment In Exchange For US Sanctions Relief - Al Hadath",
