@@ -1,36 +1,5 @@
 [
   {
-    "date": "2025-09-28",
-    "score": 67,
-    "label": "Greed",
-    "scores": {
-      "1D": {
-        "score": 67,
-        "label": "Greed"
-      },
-      "1W": {
-        "score": 52,
-        "label": "Neutral"
-      },
-      "1M": {
-        "score": 59,
-        "label": "Neutral"
-      },
-      "3M": {
-        "score": 70,
-        "label": "Greed"
-      },
-      "6M": {
-        "score": 87,
-        "label": "Extreme Greed"
-      },
-      "1Y": {
-        "score": 68,
-        "label": "Greed"
-      }
-    }
-  },
-  {
     "date": "2025-09-29",
     "score": 45,
     "label": "Neutral",
@@ -11253,37 +11222,6 @@
     }
   },
   {
-    "date": "2026-09-26",
-    "score": 56,
-    "label": "Neutral",
-    "scores": {
-      "1D": {
-        "score": 56,
-        "label": "Neutral"
-      },
-      "1W": {
-        "score": 55,
-        "label": "Neutral"
-      },
-      "1M": {
-        "score": 63,
-        "label": "Greed"
-      },
-      "3M": {
-        "score": 85,
-        "label": "Extreme Greed"
-      },
-      "6M": {
-        "score": 89,
-        "label": "Extreme Greed"
-      },
-      "1Y": {
-        "score": 69,
-        "label": "Greed"
-      }
-    }
-  },
-  {
     "date": "2026-09-27",
     "score": 47,
     "label": "Neutral",
@@ -11293,23 +11231,54 @@
         "label": "Neutral"
       },
       "1W": {
-        "score": 55,
+        "score": 51,
         "label": "Neutral"
       },
       "1M": {
-        "score": 63,
+        "score": 61,
         "label": "Greed"
       },
       "3M": {
-        "score": 85,
+        "score": 83,
         "label": "Extreme Greed"
       },
       "6M": {
-        "score": 89,
+        "score": 88,
         "label": "Extreme Greed"
       },
       "1Y": {
-        "score": 69,
+        "score": 68,
+        "label": "Greed"
+      }
+    }
+  },
+  {
+    "date": "2026-09-28",
+    "score": 49,
+    "label": "Neutral",
+    "scores": {
+      "1D": {
+        "score": 49,
+        "label": "Neutral"
+      },
+      "1W": {
+        "score": 51,
+        "label": "Neutral"
+      },
+      "1M": {
+        "score": 61,
+        "label": "Greed"
+      },
+      "3M": {
+        "score": 83,
+        "label": "Extreme Greed"
+      },
+      "6M": {
+        "score": 88,
+        "label": "Extreme Greed"
+      },
+      "1Y": {
+        "score": 68,
         "label": "Greed"
       }
     }
