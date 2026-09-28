@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-28T15:47:18Z",
-  "asOfLabel": "11:47 AM ET",
+  "asOf": "2026-09-28T16:16:49Z",
+  "asOfLabel": "12:16 PM ET",
   "source": "Apple App Store - US Top Free Apps chart",
   "sourceUrl": "https://www.apple.com/app-store/charts/",
   "items": [
@@ -20,14 +20,19 @@
       "url": "https://gemini.google.com"
     },
     {
-      "rank": 16,
+      "rank": 13,
       "name": "Claude by Anthropic",
       "url": "https://claude.ai"
     },
     {
-      "rank": 36,
+      "rank": 39,
       "name": "Grok AI",
       "url": "https://grok.com"
+    },
+    {
+      "rank": 95,
+      "name": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com"
     }
   ]
 }
