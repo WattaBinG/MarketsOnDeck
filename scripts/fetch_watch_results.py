@@ -11,9 +11,9 @@ latest period).
 
 Keyless source (2026-09-22, verified live): BLS Public Data API v2 without
 a registration key (25 queries/day - at most one per run, only when a
-mappable event needs its actual). EIA/BEA/claims need registered keys
-(FRED + EIA option scoped with Keith); those events keep the bare
-strikethrough until keys land.
+mappable event needs its actual). DOL weekly claims PDF and EIA WPSR JSON are public without keys and
+are guarded by release date and reporting week. Other unmapped events
+keep the bare strikethrough until an official source can be validated.
 """
 import json, re, sys
 from datetime import datetime
@@ -22,6 +22,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import econ_series as es
+import econ_official as official
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = ROOT / "site" / "index.html"
@@ -49,22 +50,25 @@ def main():
         if not tm or not ev: continue
         h = int(tm.group(1)) % 12 + (12 if tm.group(3) == "PM" else 0)
         if h * 60 + int(tm.group(2)) > now_min: continue  # hasn't passed yet
-        kind = es.kind_for(ev.group(1).strip())
+        kind = es.kind_for(ev.group(1).strip()) or official.kind_for(ev.group(1).strip())
         if kind: work.append((li, ev.group(1).strip(), kind))
     if not work:
         print("no passed mappable events awaiting actuals; nothing to do"); return
 
-    needed = sorted({sid for _, _, kind in work for sid in es.SERIES_FOR[kind]})
-    try:
-        data = es.bls(needed)
-    except Exception as e:
-        print(f"FAILED(closed): BLS fetch: {e}"); return
+    needed = sorted({sid for _, _, kind in work if kind in es.SERIES_FOR for sid in es.SERIES_FOR[kind]})
+    data = {}
+    if needed:
+        try:
+            data = es.bls(needed)
+        except Exception as e:
+            print(f"FAILED(closed): BLS fetch: {e}")
 
     changed = False
     actuals = {}
     for li, event, kind in work:
         try:
-            actual = es.fmt_actual(kind, data, today)
+            actual = (es.fmt_actual(kind, data, today) if kind in es.SERIES_FOR
+                      else official.value(kind, today, actual=True))
         except Exception as e:
             print(f"FAILED(closed): {event}: {e}"); continue
         block = block.replace(li, li.replace("Act: &mdash;", f"Act: {actual}"))
