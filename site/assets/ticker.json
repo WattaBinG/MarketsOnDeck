@@ -82,18 +82,17 @@
       "held": true
     },
     {
-      "symbol": "META",
-      "price": 720.21,
-      "change": -31.45,
-      "changePercent": -4.18,
-      "held": true
-    },
-    {
       "symbol": "CCL",
       "price": null,
       "change": null,
       "changePercent": null,
       "held": true
+    },
+    {
+      "symbol": "META",
+      "price": 720.21,
+      "change": -31.45,
+      "changePercent": -4.18
     },
     {
       "symbol": "NVDA",
