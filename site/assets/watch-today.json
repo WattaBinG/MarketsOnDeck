@@ -1,12 +1,12 @@
 {
   "date": "2026-09-29",
   "dateLabel": "Tuesday, September 29",
-  "events": [
-    { "time": "8:00 AM ET", "event": "CarMax Earnings (BMO)" },
-    { "time": "9:00 AM ET", "event": "Case-Shiller Home Prices" },
-    { "time": "10:00 AM ET", "event": "Consumer Confidence" },
-    { "time": "10:00 AM ET", "event": "JOLTS Job Openings" },
-    { "time": "After Close", "event": "Carnival Earnings (AMC)" }
-  ],
-  "calendarUrl": "https://www.investing.com/economic-calendar/"
+  "events": [],
+  "note": "No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).",
+  "calendarUrl": "https://www.census.gov/economic-indicators/",
+  "sources": [
+    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
+    "https://www.bls.gov/schedule/news_release/bls.ics",
+    "https://www.census.gov/economic-indicators/"
+  ]
 }
