@@ -16,6 +16,10 @@ try:
     import econ_series as es
 except Exception:
     es = None
+try:
+    import econ_official as official
+except Exception:
+    official = None
 ROOT=Path(__file__).resolve().parent.parent; OUT=ROOT/'site/assets/watch-today.json'; INDEX=ROOT/'site/index.html'
 ET=ZoneInfo('America/New_York'); UA='MarketsOnDeck calendar bot (+https://marketsondeck.wattabing.workers.dev)'
 SUPPORTED_YEAR=2026
@@ -61,7 +65,7 @@ def parse_census(text,target):
 def render(out):
  def li(e):
   nums=''
-  if e.get('prev'):
+  if e.get('kind') and e.get('prev'):
    nums=(f'<span class="watch-numbers">Act: &mdash; &middot; Cons: &mdash; &middot; '
          f'Prev: {html.escape(e["prev"])}</span>')
   return (f'          <li><span class="watch-time">{html.escape(e["time"])}</span>'
@@ -113,6 +117,13 @@ def main():
    try:
     o['kind']=k; o['prev']=es.fmt_prev(k,data)
    except Exception as e: print('note: no prev for %s (%s)' % (o['event'], e))
+ if official:
+  for o in event_objs:
+   k=official.kind_for(o['event'])
+   if not k: continue
+   try:
+    o['kind']=k; o['prev']=official.value(k,target,actual=False)
+   except Exception as e: print('note: no official prev for %s (%s)' % (o['event'], e))
  out={'date':target.isoformat(),'dateLabel':target.strftime('%A, %B ')+str(target.day),'events':event_objs,'note':note,'calendarUrl':'https://www.census.gov/economic-indicators/','sources':list(SOURCES.values())}
  OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8'); render(out)
  print('OK:',out['dateLabel'],len(events),'verified events'); print('COMMIT_MSG=Refresh What to Watch Today: '+out['dateLabel'])
