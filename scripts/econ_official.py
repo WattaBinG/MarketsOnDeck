@@ -6,12 +6,13 @@ The publication date and reference week must match the scheduled event date.
 """
 import json
 import re
-from datetime import date, timedelta
+from datetime import date, timedelta, datetime
 from io import BytesIO
 from urllib.request import Request, urlopen
 
 EIA_URL = 'https://ir.eia.gov/wpsr/psw00.json'
 DOL_URL = 'https://www.dol.gov/ui/data.pdf'
+EIA_GAS_URL = 'https://ir.eia.gov/ngs/wngsr.json'
 UA = 'MarketsOnDeck calendar bot (+https://marketsondeck.net/)'
 
 
@@ -25,6 +26,8 @@ def kind_for(label):
         return 'crude_stocks'
     if re.fullmatch(r'Initial Jobless Claims', label, re.I):
         return 'initial_claims'
+    if re.fullmatch(r'EIA Weekly Natural Gas Storage Report', label, re.I):
+        return 'natural_gas_storage'
     return None
 
 
@@ -94,9 +97,35 @@ def dol(today, actual=True, payload=None):
     return f'{value // 1000:,}K' if value % 1000 == 0 else f'{value / 1000:.1f}K'
 
 
+def eia_gas(today, actual=True, payload=None):
+    """Lower-48 net weekly storage change, tied to release and reference week."""
+    raw = payload if payload is not None else _read(EIA_GAS_URL)
+    doc = json.loads(raw.decode('utf-8-sig') if isinstance(raw, bytes) else raw)
+    expected = today if actual else today - timedelta(days=7)
+    stamp = doc['release_date'][:10 if doc['release_date'][5:7].isdigit() else 11]
+    release = (date.fromisoformat(stamp) if stamp[5:7].isdigit()
+               else datetime.strptime(stamp, '%Y-%b-%d').date())
+    if doc.get('release_name') != 'Weekly Natural Gas Storage Report' or release != expected:
+        raise ValueError(f'EIA gas release {release} is not expected date for {today}')
+    if _date(doc['current_week']) != release - timedelta(days=6) or _date(doc['week_ago']) != release - timedelta(days=13):
+        raise ValueError('EIA gas reference week is not current')
+    series = next((s for s in doc['series'] if s.get('series_id') == 'png.nw2_epg0_swo_r48_bcf.w'), None)
+    if not series or series.get('units') != 'billion cubic feet' or series.get('source') != 'U.S. Energy Information Administration':
+        raise ValueError('unexpected EIA gas series')
+    points = series['data'][:2]
+    if len(points) != 2 or [p[0] for p in points] != [doc['current_week'], doc['week_ago']]:
+        raise ValueError('EIA gas series week mismatch')
+    delta = float(points[0][1]) - float(points[1][1])
+    if abs(delta) > 1000 or delta != float(series['calculated']['net_change']):
+        raise ValueError('implausible EIA gas change')
+    return f'natural gas {delta:+.0f} Bcf'
+
+
 def value(kind, today, actual=True):
     if kind == 'crude_stocks':
         return eia(today, actual)
     if kind == 'initial_claims':
         return dol(today, actual)
+    if kind == 'natural_gas_storage':
+        return eia_gas(today, actual)
     raise ValueError(f'unknown official kind {kind}')
