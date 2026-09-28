@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/style.css?v=20260926d">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
 <meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
@@ -53,6 +53,7 @@
       <div class="eyebrow">Daily &middot; Premarket &middot; Tied to Real Positions</div>
       <h1>Morning Brief</h1>
       <p class="hero-sub">Written fresh most trading mornings before the opening bell &mdash; what's actually worth watching, not a wire-service headline dump. Newest entry first, archived below like a blog &mdash; nothing gets quietly overwritten. <a href="/market-tape/index.html" style="color:var(--accent); text-decoration:underline;">See the end-of-day companion, After Market Tape &rarr;</a></p>
+      <nav class="daily-jump" aria-label="Quick links"><a href="#latest-entry">Latest entry ↓</a><a href="#older-entries">Older entries ↓</a></nav>
       <div class="share-bar" data-title="Morning Brief — MarketsOnDeck">
         <span class="share-label">Share</span>
         <a class="share-btn share-x" href="#" target="_blank" rel="noopener" aria-label="Share on X">X</a>
@@ -65,7 +66,7 @@
   <div class="container">
     <div class="brief-layout daily-feed">
 
-      <div class="brief-main article-body prose daily-entries">
+      <div class="brief-main article-body prose daily-entries" id="latest-entry">
 
 <div class="card daily-entry daily-entry-latest" id="brief-2026-09-24">
         <div class="card-eyebrow" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:8px;"><span>September 24, 2026</span><span class="badge">Morning Brief</span></div>
@@ -94,7 +95,7 @@
       </div>
 
 
-      <section class="daily-archive" aria-label="Older entries">
+      <section class="daily-archive" id="older-entries" aria-label="Older entries">
         <h2>Older entries</h2>
       <details class="brief-sidebar" open>
         <summary class="card-eyebrow">Jump To</summary>
