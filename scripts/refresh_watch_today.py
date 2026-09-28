@@ -20,6 +20,10 @@ try:
     import econ_official as official
 except Exception:
     official = None
+try:
+    import econ_bea as bea
+except Exception:
+    bea = None
 ROOT=Path(__file__).resolve().parent.parent; OUT=ROOT/'site/assets/watch-today.json'; INDEX=ROOT/'site/index.html'
 ET=ZoneInfo('America/New_York'); UA='MarketsOnDeck calendar bot (+https://marketsondeck.wattabing.workers.dev)'
 SUPPORTED_YEAR=2026
@@ -64,12 +68,13 @@ def parse_census(text,target):
  return out
 def render(out):
  def li(e):
-  nums=''
-  if e.get('kind') and e.get('prev'):
-   nums=(f'<span class="watch-numbers">Act: &mdash; &middot; Cons: &mdash; &middot; '
-         f'Prev: {html.escape(e["prev"])}</span>')
-  return (f'          <li><span class="watch-time">{html.escape(e["time"])}</span>'
-          f'<span class="watch-event">{html.escape(e["event"])}</span>{nums}</li>')
+  # Keep the actual adjacent to the time even in the narrow sidebar.
+  actual=(f'<span class="watch-actual">Act: {html.escape(e["actual"])}</span>'
+          if e.get('actual') else '')
+  prev=(f'<span class="watch-numbers">Cons: &mdash; &middot; Prev: {html.escape(e["prev"])}</span>'
+        if e.get('prev') else '')
+  return (f'          <li><span class="watch-meta"><span class="watch-time">{html.escape(e["time"])}</span>'
+          f'{actual}</span><span class="watch-event">{html.escape(e["event"])}</span>{prev}</li>')
  lis='\n'.join(li(e) for e in out['events'])
  if not out['events'] and out.get('note'): lis=f'          <li><span class="watch-time">&mdash;</span><span class="watch-event">{html.escape(out["note"])}</span></li>'
  block=('<!-- WATCH_TODAY_START — updated once each morning by the Watch Today routine; keep this exact structure so the automated edit stays a clean find/replace -->\n'
@@ -113,6 +118,7 @@ def main():
    try: data=es.bls(needed)
    except Exception as e: print('note: prev values unavailable (%s); building without them' % e)
   for o,k in kinds:
+   if k: o['kind']=k
    if not k or not data: continue
    try:
     o['kind']=k; o['prev']=es.fmt_prev(k,data)
@@ -121,9 +127,14 @@ def main():
   for o in event_objs:
    k=official.kind_for(o['event'])
    if not k: continue
+   o['kind']=k
    try:
-    o['kind']=k; o['prev']=official.value(k,target,actual=False)
+    o['prev']=official.value(k,target,actual=False)
    except Exception as e: print('note: no official prev for %s (%s)' % (o['event'], e))
+ if bea:
+  for o in event_objs:
+   k=bea.kind_for(o['event'])
+   if k: o['kind']=k
  out={'date':target.isoformat(),'dateLabel':target.strftime('%A, %B ')+str(target.day),'events':event_objs,'note':note,'calendarUrl':'https://www.census.gov/economic-indicators/','sources':list(SOURCES.values())}
  OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8'); render(out)
  print('OK:',out['dateLabel'],len(events),'verified events'); print('COMMIT_MSG=Refresh What to Watch Today: '+out['dateLabel'])
