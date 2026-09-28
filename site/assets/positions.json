@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-28T18:42:00Z",
+  "asOf": "2026-09-28T19:37:00Z",
   "asOfLabel": "Market Close, Sep 25 (equities/options); ETH priced live intraday",
   "positions": [
     { "account": "Trading", "symbol": "SOFI", "assetType": "equity", "quantity": 200, "avgCost": 17.1, "currentPrice": 16.58, "priorClose": 16.8, "unrealizedGain": -104.00 },
@@ -12,6 +12,6 @@
     { "account": "Trading", "symbol": "HD", "assetType": "option", "optionType": "call", "strike": 300, "expiration": "2026-10-02", "quantity": 2, "avgCost": 497.5, "currentPrice": 173.00, "priorClose": 184.00, "unrealizedGain": -649.00 },
     { "account": "Trading", "symbol": "TSLA", "assetType": "option", "optionType": "call", "strike": 365, "expiration": "2026-10-02", "quantity": 3, "avgCost": 563.3333, "currentPrice": 1270.00, "priorClose": 563.3333, "unrealizedGain": 2120.00 },
     { "account": "Agentic", "symbol": "CCL", "assetType": "option", "optionType": "call", "strike": 25, "expiration": "2026-10-16", "quantity": 2, "avgCost": 60.5, "currentPrice": 26.00, "priorClose": 23.00, "unrealizedGain": -69.00 },
-    { "account": "Trading", "symbol": "ETH", "assetType": "crypto", "quantity": 1.59999984, "avgCost": 2688.73, "currentPrice": 2688.73, "priorClose": 2688.73, "unrealizedGain": 0 }
+    { "account": "Trading", "symbol": "ETH", "assetType": "crypto", "quantity": 1.59999984, "avgCost": 2672.82, "currentPrice": 2672.82, "priorClose": 2672.82, "unrealizedGain": 0 }
   ]
 }
