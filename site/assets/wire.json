@@ -1,152 +1,133 @@
 {
-  "asOf": "2026-09-29T10:16:08Z",
-  "asOfLabel": "6:16 AM ET",
+  "asOf": "2026-09-29T10:35:00Z",
+  "asOfLabel": "6:35 AM ET",
   "topStory": {
-    "headline": "Top Performing Pet Insurance Stocks",
-    "url": "https://www.benzinga.com/money/pet-insurance-stocks",
-    "source": "Benzinga",
-    "category": "Markets",
-    "timestamp": "2026-09-29T10:00:14Z",
-    "firstSeen": "2026-09-29T10:16:08Z",
-    "leadSince": "2026-09-29T10:16:08Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "US Bond-Market Selloff Deepens as Trump Spurns Iran's Offer to Reopen Hormuz",
+    "url": "https://www.bloomberg.com/news/articles/2026-09-28/bond-selloff-resumes-as-oil-rises-after-trump-spurns-iran-offer",
+    "source": "Bloomberg",
+    "category": "Geopolitics",
+    "timestamp": "2026-09-28T21:00:00Z",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
     {
-      "headline": "Warren Buffett's Top Crash-Survival Strategy Has 98 Years of History Behind It",
-      "url": "https://www.nasdaq.com/articles/warren-buffetts-top-crash-survival-strategy-has-98-years-history-behind-it",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:10:00Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
+      "headline": "Fed rate-hike odds hit 70% as 10-year Treasury yield tops 5.2%, highest since 2007",
+      "url": "https://www.benzinga.com/markets/economic-data/26/09/62020961/fed-rate-hike-odds-70-percent-gold-treasury-yields-2007",
+      "source": "Benzinga",
+      "category": "Macro",
+      "timestamp": "2026-09-29T09:00:00Z"
     },
     {
-      "headline": "Smart ring maker Oura postpones IPO due to market 'uncertainty'",
-      "url": "https://www.cnbc.com/2026/09/29/smart-ring-maker-oura-postpones-ipo-due-to-market-uncertainty.html",
+      "headline": "Oil rises near $96 a barrel after Trump rejects Iran's Strait of Hormuz proposal",
+      "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-28T20:30:00Z"
+    },
+    {
+      "headline": "Dow, S&P 500, Nasdaq fall as Treasury yields continue to climb",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-28-dow-sp-500-nasdaq-080420627.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-28T20:00:00Z"
+    },
+    {
+      "headline": "Emerging-market stocks slide as oil gains on renewed Mideast tensions",
+      "url": "https://www.bloomberg.com/news/articles/2026-09-28/emerging-stocks-slide-as-oil-gains-on-renewed-mideast-tensions",
+      "source": "Bloomberg",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-28T19:00:00Z"
+    },
+    {
+      "headline": "Gold slides to seven-week low as Fed hike bets, rising Treasury yields weigh",
+      "url": "https://www.investing.com/news/economy-news/golds-lustre-dims-as-treasury-yields-surge-markets-bet-on-higher-fed-rates-4920959",
+      "source": "Reuters (via Investing.com)",
+      "category": "Macro",
+      "timestamp": "2026-09-28T18:30:00Z"
+    },
+    {
+      "headline": "RBA delivers fourth rate hike of 2026, lifting cash rate to 4.60%, a 15-year high",
+      "url": "https://seekingalpha.com/news/4647847-rba-delivers-fourth-rate-hike-of-2026-to-460-as-inflation-pressures-mount",
+      "source": "Seeking Alpha",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T04:30:00Z"
+    },
+    {
+      "headline": "AMD to acquire Fei-Fei Li's World Labs for $8.2 billion",
+      "url": "https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html",
       "source": "CNBC",
       "category": "Movers",
-      "timestamp": "2026-09-29T10:09:19Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
+      "timestamp": "2026-09-28T17:00:00Z"
     },
     {
-      "headline": "This Warren Buffett Stock Is Up 58%. History Says This Is What Happens Next.",
-      "url": "https://www.nasdaq.com/articles/warren-buffett-stock-58-history-says-what-happens-next",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:03:00Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
-    },
-    {
-      "headline": "CarMax Inc. Reports Advance In Q2 Income",
-      "url": "https://www.nasdaq.com/articles/carmax-inc-reports-advance-q2-income",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:01:13Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
-    },
-    {
-      "headline": "Hartree Partners buys $604k of Hudson Technologies stock",
-      "url": "https://www.investing.com/news/insider-trading-news/hartree-partners-buys-604k-of-hudson-technologies-stock-93CH-4921933",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:00:59Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
-    },
-    {
-      "headline": "US stock futures flat as tech bounce meets crude-driven caution",
-      "url": "https://www.investing.com/news/economy-news/us-stock-futures-flat-as-tech-bounce-meets-crudedriven-caution-4921932",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:00:57Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
-    },
-    {
-      "headline": "Exclusive-Anthropic leaders to control AI lab via ’Founder LLC’ to promote public good over market forces",
-      "url": "https://www.investing.com/news/stock-market-news/exclusiveanthropic-leaders-to-control-ai-lab-via-founder-llc-to-promote-public-good-over-market-forces-4921448",
-      "source": "Investing.com",
-      "category": "AI",
-      "timestamp": "2026-09-29T10:00:38Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
-    },
-    {
-      "headline": "Artificial Intelligence Stocks Under $10",
-      "url": "https://www.benzinga.com/money/artificial-intelligence-stocks-under-10",
+      "headline": "MongoDB stock craters 18% after CEO Desai's abrupt departure to Meta",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/62030997/mongodb-stock-craters-18-percent-ceo-departure",
       "source": "Benzinga",
-      "category": "AI",
-      "timestamp": "2026-09-29T10:00:14Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
+      "category": "Movers",
+      "timestamp": "2026-09-28T16:30:00Z"
     },
     {
-      "headline": "Best Stocks to Day Trade",
-      "url": "https://www.benzinga.com/money/best-stocks-to-day-trade",
+      "headline": "Kodiak Sciences shares surge 156% on positive Phase 3 DAYBREAK trial results for wet AMD",
+      "url": "https://www.gurufocus.com/news/9100249/kodiak-sciences-kod-surges-156-after-positive-phase-3-daybreak-trial-results",
+      "source": "GuruFocus",
+      "category": "Movers",
+      "timestamp": "2026-09-28T16:00:00Z"
+    },
+    {
+      "headline": "Navitas Semiconductor jumps 20% after landing US Army silicon-carbide contract",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/62036466/navitas-semiconductor-stock-surges-after-hours-heres-why",
       "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:00:14Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
+      "category": "Movers",
+      "timestamp": "2026-09-28T22:00:00Z"
     },
     {
-      "headline": "Top Performing Monthly Dividend ETFs",
-      "url": "https://www.benzinga.com/money/best-monthly-dividend-etfs",
+      "headline": "Tesla stock drops as JPMorgan cuts price target ahead of Q3 delivery numbers",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/62027590/tesla-stock-drops-whats-going-on-today",
       "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:00:14Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
+      "category": "Movers",
+      "timestamp": "2026-09-28T15:30:00Z"
     },
     {
-      "headline": "Top Performing Green Penny Stocks",
-      "url": "https://www.benzinga.com/money/best-green-penny-stocks",
+      "headline": "Alphabet shares slip as AI leaders' research paper calls for oversight of self-directed AI research",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/62028820/whats-going-on-with-alphabet-stock-today-3",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-28T15:00:00Z"
+    },
+    {
+      "headline": "SoFi Technologies slips nearly 4% as insider Form 144 filing weighs on sentiment",
+      "url": "https://stockstotrade.com/news/sofi-technologies-inc-sofi-news-2026_09_28-2/",
+      "source": "StocksToTrade",
+      "category": "Markets",
+      "timestamp": "2026-09-28T14:30:00Z"
+    },
+    {
+      "headline": "SpaceX puts Starship into orbit for the first time, deploys 26 Starlink V3 satellites",
+      "url": "https://finance.yahoo.com/markets/stocks/article/spacex-stock-watchers-should-keep-an-eye-on-gpus-analyst-says-163158250.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-28T16:31:58Z"
+    },
+    {
+      "headline": "Week ahead: Core PCE, September jobs report and Micron, Nike earnings set to test rate-hike path",
+      "url": "https://seekingalpha.com/news/4647037-earnings-week-ahead-mu-nke-ccl-and-more",
+      "source": "Seeking Alpha",
+      "category": "Macro",
+      "timestamp": "2026-09-28T13:00:00Z"
+    },
+    {
+      "headline": "Micron's AI-driven rally faces a test as chipmaker reports fiscal Q4 results Wednesday",
+      "url": "https://www.benzinga.com/markets/market-summary/26/09/62012052/earnings-volatility-watch-micron-implied-moves-september-2026",
       "source": "Benzinga",
       "category": "Markets",
-      "timestamp": "2026-09-29T10:00:14Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
+      "timestamp": "2026-09-28T12:30:00Z"
     },
     {
-      "headline": "Best AI Stocks",
-      "url": "https://www.benzinga.com/money/best-artificial-intelligence-stocks",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:00:14Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
-    },
-    {
-      "headline": "Forex Analysis: What it is & Best Analysis for Trading",
-      "url": "https://www.benzinga.com/money/best-method-of-analysis-forex-trading",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T10:00:14Z",
-      "firstSeen": "2026-09-29T10:16:08Z"
-    },
-    {
-      "headline": "Iran Agrees To Suspend Uranium Enrichment In Exchange For US Sanctions Relief - Al Hadath",
-      "url": "https://t.me/WalterBloomberg/36037",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-28T17:14:45Z",
-      "firstSeen": "2026-09-29T01:31:51Z"
-    },
-    {
-      "headline": "36 DAYS TO MIDTERMS: DEMOCRATS HIT NEW 2026 HIGH With just 36 days until the Nov. 3 midterms, Kalshi’s American Power Index has swung sharply toward Democrats. USAGov Democrats now lead at +3.8 — t...",
-      "url": "https://t.me/WalterBloomberg/36036",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-09-28T16:54:09Z",
-      "firstSeen": "2026-09-29T01:31:51Z"
-    },
-    {
-      "headline": "WAIVER WOULD ALLOW PILGRIMS TO TRAVEL ON IRAQI AIRWAYS TO AND FROM IRAN FOR PILGRIMAGE FOR ONE MONTH, SOURCE SAYS",
-      "url": "https://t.me/WalterBloomberg/36035",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-28T16:46:32Z",
-      "firstSeen": "2026-09-29T01:31:51Z"
-    },
-    {
-      "headline": "US CONSIDERING SANCTIONS WAIVER FOR FLIGHTS BETWEEN IRAN AND IRAQ'S HOLY CITY OF NAJAF, PERSON WITH DIRECT KNOWLEDGE SAYS",
-      "url": "https://t.me/WalterBloomberg/36034",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-28T16:45:33Z",
-      "firstSeen": "2026-09-29T01:31:51Z"
+      "headline": "JOLTS job openings and consumer confidence due Tuesday as markets brace for a heavy data week",
+      "url": "https://www.heygotrade.com/en/news/weekly-economic-outlook-2026-09-28/",
+      "source": "Gotrade",
+      "category": "Macro",
+      "timestamp": "2026-09-28T12:00:00Z"
     }
   ]
 }
