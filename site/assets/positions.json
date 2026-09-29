@@ -1,17 +1,17 @@
 {
-  "asOf": "2026-09-29T15:40:42Z",
+  "asOf": "2026-09-29T17:40:37Z",
   "asOfLabel": "Market Close, Sep 28",
   "positions": [
     { "account": "Trading", "symbol": "SOFI", "assetType": "equity", "quantity": 200, "avgCost": 17.1, "currentPrice": 15.93, "priorClose": 16.58, "unrealizedGain": -234.00 },
     { "account": "Trading", "symbol": "QUBT", "assetType": "equity", "quantity": 500, "avgCost": 8.81, "currentPrice": 8.57, "priorClose": 8.96, "unrealizedGain": -120.00 },
     { "account": "Trading", "symbol": "SPCX", "assetType": "equity", "quantity": 153, "avgCost": 124.25, "currentPrice": 145.47, "priorClose": 148.68, "unrealizedGain": 3246.66 },
-    { "account": "Trading", "symbol": "HD", "assetType": "equity", "quantity": 75, "avgCost": 300.7, "currentPrice": 289.89, "priorClose": 293.20, "unrealizedGain": -810.75 },
+    { "account": "Trading", "symbol": "HD", "assetType": "equity", "quantity": 75, "avgCost": 300.7, "currentPrice": 289.89, "priorClose": 293.2, "unrealizedGain": -810.75 },
     { "account": "Agentic", "symbol": "KLAC", "assetType": "equity", "quantity": 2.281702, "avgCost": 189.93, "currentPrice": 189.17, "priorClose": 187.92, "unrealizedGain": -1.73 },
-    { "account": "Agentic", "symbol": "SPCH", "assetType": "equity", "quantity": 8, "avgCost": 8.16, "currentPrice": 9.36, "priorClose": 9.785, "unrealizedGain": 9.60 },
+    { "account": "Agentic", "symbol": "SPCH", "assetType": "equity", "quantity": 8, "avgCost": 8.16, "currentPrice": 9.36, "priorClose": 9.785, "unrealizedGain": 9.6 },
     { "account": "Trading", "symbol": "SPCX", "assetType": "option", "optionType": "call", "strike": 155, "expiration": "2026-10-02", "quantity": 4, "avgCost": 261.6112, "currentPrice": 57.00, "priorClose": 145.00, "unrealizedGain": -818.44 },
     { "account": "Trading", "symbol": "HD", "assetType": "option", "optionType": "call", "strike": 300, "expiration": "2026-10-02", "quantity": 2, "avgCost": 497.5, "currentPrice": 83.00, "priorClose": 173.00, "unrealizedGain": -829.00 },
     { "account": "Trading", "symbol": "TSLA", "assetType": "option", "optionType": "call", "strike": 365, "expiration": "2026-10-02", "quantity": 3, "avgCost": 563.3333, "currentPrice": 385.00, "priorClose": 563.3333, "unrealizedGain": -535.00 },
     { "account": "Agentic", "symbol": "CCL", "assetType": "option", "optionType": "call", "strike": 25, "expiration": "2026-10-16", "quantity": 2, "avgCost": 60.5, "currentPrice": 26.00, "priorClose": 26.00, "unrealizedGain": -69.00 },
-    { "account": "Trading", "symbol": "ETH", "assetType": "crypto", "quantity": 1.59999984, "avgCost": 2448.11, "currentPrice": 2682.04, "priorClose": 2682.04, "unrealizedGain": 374.29 }
+    { "account": "Trading", "symbol": "ETH", "assetType": "crypto", "quantity": 1.59999984, "avgCost": 2448.11, "currentPrice": 2673.29, "priorClose": 2673.29, "unrealizedGain": 360.29 }
   ]
 }
