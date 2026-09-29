@@ -1,6 +1,517 @@
 {
   "items": [
     {
+      "headline": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-25T20:30:00Z"
+    },
+    {
+      "headline": "Should you bring iced coffee to a job interview? Question brews generational debate",
+      "url": "https://www.nbcnews.com/business/business-news/iced-coffee-job-interview-online-generational-debate-rcna599764",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-09-25T17:16:35Z"
+    },
+    {
+      "headline": "Henry Hub natural gas prices this summer were 6% lower than last summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-25T14:00:00Z"
+    },
+    {
+      "headline": "Mortgage Rates Hit Highest Level in More Than 2 Years",
+      "url": "https://www.today.com/video/mortgage-rates-hit-highest-level-in-more-than-2-years-270514757989",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-09-25T11:25:45Z"
+    },
+    {
+      "headline": "Trump rolls out red carpets for Xi, though he has portrayed China as a global menace",
+      "url": "https://www.nbcnews.com/politics/donald-trump/trump-rolls-red-carpets-xi-jinping-though-portrayed-china-global-menac-rcna599250",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-25T01:03:48Z"
+    },
+    {
+      "headline": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-24T18:30:00Z"
+    },
+    {
+      "headline": "McDonald’s leans into AI and new menu items to attract customers",
+      "url": "https://www.nbcnews.com/video/mcdonald-s-leans-into-ai-and-new-menu-items-to-attract-customers-270449733950",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-09-24T15:41:10Z"
+    },
+    {
+      "headline": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-24T15:00:00Z"
+    },
+    {
+      "headline": "White House access restored for media outlets, but some reporters were denied hours later",
+      "url": "https://www.nbcnews.com/politics/trump-administration/judge-ruling-white-house-restore-access-media-ban-cnn-politico-ms-now-rcna599391",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T05:31:01Z"
+    },
+    {
+      "headline": "SEC Publishes Updated Market Statistics, Highlighting Increase in IPOs and Proceeds Raised",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-93-sec-publishes-updated-market-statistics-highlighting-increase-ipos-proceeds-raised",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-23T18:27:00Z"
+    },
+    {
+      "headline": "SEC Charges South Florida Resident and His Company for Alleged Investment Scheme Defrauding Law Enforcement",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-92-sec-charges-south-florida-resident-his-company-alleged-investment-scheme-defrauding-law-enforcement",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-23T16:00:00Z"
+    },
+    {
+      "headline": "The U.S. economy before and after the Iran war, in five charts",
+      "url": "https://www.nbcnews.com/business/economy/us-economy-iran-war-five-charts-rcna598412",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T12:00:40Z"
+    },
+    {
+      "headline": "“The New Clippy”: Benioff Uses Salesforce’s Biggest Product Launch in Years to Challenge Microsoft",
+      "url": "https://finance.yahoo.com/technology/ai/articles/clippy-benioff-uses-salesforce-biggest-044653952.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:46:53Z"
+    },
+    {
+      "headline": "SK Hynix Is Eyeing Intel’s (INTC) Ohio Site. Why Micron (MU) Should Pay Attention",
+      "url": "https://finance.yahoo.com/technology/articles/sk-hynix-eyeing-intel-intc-043316388.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:33:16Z"
+    },
+    {
+      "headline": "This Little-Known AI Chip Stock Doubled. Its New Chips Now Double Optical Speed",
+      "url": "https://finance.yahoo.com/technology/ai/articles/little-known-ai-chip-stock-042916921.html",
+      "source": "Yahoo Finance",
+      "category": "AI",
+      "timestamp": "2026-09-23T04:29:16Z"
+    },
+    {
+      "headline": "Pat Gelsinger Just Backed a $100 Million Challenge to Nvidia’s AI Networking Moat. AMD Could Benefit",
+      "url": "https://finance.yahoo.com/technology/ai/articles/pat-gelsinger-just-backed-100-042433352.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:24:33Z"
+    },
+    {
+      "headline": "Lumentum Jumped Nearly 10% While Corning Barely Moved. Is the AI Optics Trade Splitting Apart?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lumentum-jumped-nearly-10-while-041957023.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:19:57Z"
+    },
+    {
+      "headline": "Intel (INTC) Could Get a Fresh Valuation for Altera. AMD (AMD) Is the Rival to Watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-intc-could-fresh-valuation-041710849.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:17:10Z"
+    },
+    {
+      "headline": "Why Bernstein Still Sees 46% Upside in Zscaler (ZS) but Downgraded Palo Alto (PANW)",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-bernstein-still-sees-46-041316215.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:13:16Z"
+    },
+    {
+      "headline": "Nike (NKE): Wall Street Tests Whether the Turnaround Can Outrun Weak Demand Ahead of Q1 Results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nike-nke-wall-street-tests-040747520.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:07:47Z"
+    },
+    {
+      "headline": "Why AutoZone Stock Rallied Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-autozone-stock-rallied-today-020051614.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T02:00:51Z"
+    },
+    {
+      "headline": "Ennis (EBF) Grows Sales but Earns Less. Are Legal Items Hiding a Better Business?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ennis-ebf-grows-sales-earns-015226342.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T01:52:26Z"
+    },
+    {
+      "headline": "Strive CEO: Bitcoin Could ‘Go to Infinity' as Dollar Debt Crisis Breaks",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/strive-ceo-bitcoin-could-infinity-015100441.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T01:51:00Z"
+    },
+    {
+      "headline": "May Mobility's SPAC Merger: Is This a Road to Nowhere for Investors?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/may-mobilitys-spac-merger-road-015000118.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-09-23T01:50:00Z"
+    },
+    {
+      "headline": "OpenAI launches a rival to Meta’s Muse, as the battle for AI agents kicks into high gear",
+      "url": "https://www.marketwatch.com/story/openai-launches-a-rival-to-metas-muse-as-the-battle-for-ai-agents-kicks-into-high-gear-0f0de9b3?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "AI",
+      "timestamp": "2026-09-29T18:34:00Z"
+    },
+    {
+      "headline": "US drug lobby group PhRMA names former House leader Cantor as CEO",
+      "url": "https://www.investing.com/news/stock-market-news/us-drug-lobby-group-phrma-names-former-house-leader-cantor-as-ceo-4923325",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-29T18:32:21Z"
+    },
+    {
+      "headline": "Education Department extends deadline for student loan interest rate discount",
+      "url": "https://www.cnbc.com/2026/09/29/trump-officials-extend-student-loan-interest-rate-discount-deadline.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-29T18:28:03Z"
+    },
+    {
+      "headline": "Good news for OpenAI is great news for Oracle’s stock — here’s why",
+      "url": "https://www.marketwatch.com/story/good-news-for-openai-is-great-news-for-oracles-stock-heres-why-993b6a5f?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "AI",
+      "timestamp": "2026-09-29T18:28:00Z"
+    },
+    {
+      "headline": "The 1 Thing You Have to Get Right About Social Security Before Retirement",
+      "url": "https://www.nasdaq.com/articles/1-thing-you-have-get-right-about-social-security-retirement",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-09-29T18:28:00Z"
+    },
+    {
+      "headline": "FBI sends warning to cybercrime group that hacked it after Dutch arrest of ‘leader’",
+      "url": "https://www.nbcnews.com/tech/security/fbi-warns-shinyhunters-crime-group-hacked-agent-data-arrest-rcna600480",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-09-29T18:21:34Z"
+    },
+    {
+      "headline": "Charles Schwab Posted Record Quarterly Revenue of $7.08 Billion. Can It Vault Higher, or Was This a Peak?",
+      "url": "https://www.nasdaq.com/articles/charles-schwab-posted-record-quarterly-revenue-708-billion-can-it-vault-higher-or-was-peak",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-09-29T18:20:00Z"
+    },
+    {
+      "headline": "3 Inflation-Proof Investments That Could Be Fantastic Buys in 2026",
+      "url": "https://www.nasdaq.com/articles/3-inflation-proof-investments-could-be-fantastic-buys-2026",
+      "source": "Nasdaq",
+      "category": "Macro",
+      "timestamp": "2026-09-29T18:15:00Z"
+    },
+    {
+      "headline": "Bittensor (TAO) Price Prediction: 2025, 2026, 2030",
+      "url": "https://www.benzinga.com/money/bittensor-tao-price-prediction",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-29T14:01:07Z"
+    },
+    {
+      "headline": "Uniswap (UNI) Price Prediction: 2025, 2026, 2030",
+      "url": "https://www.benzinga.com/money/uniswap-uni-price-prediction",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-29T14:01:06Z"
+    },
+    {
+      "headline": "Polkadot (DOT) Price Prediction: 2025, 2026, 2030",
+      "url": "https://www.benzinga.com/money/polkadot-price-prediction",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-29T14:01:05Z"
+    },
+    {
+      "headline": "Filecoin (FIL) Price Prediction: 2025, 2025, 2030",
+      "url": "https://www.benzinga.com/money/filecoin-price-prediction",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-09-29T14:01:05Z"
+    },
+    {
+      "headline": "SEC Charges Multiple Entities in Fraud Schemes Totaling at Least $15 Million That Used WhatsApp and Other Platforms to Lure Investors",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-95-sec-charges-multiple-entities-fraud-schemes-totaling-least-15-million-used-whatsapp-other-platforms",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-29T13:55:53Z"
+    },
+    {
+      "headline": "Smart ring maker Oura postpones IPO due to market 'uncertainty'",
+      "url": "https://www.cnbc.com/2026/09/29/smart-ring-maker-oura-postpones-ipo-due-to-market-uncertainty.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-09-29T13:50:01Z"
+    },
+    {
+      "headline": "US ban on Canadian alcohol and dairy takes effect as trade war drags on",
+      "url": "https://www.bbc.co.uk/news/articles/cm1j43y146d2o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T13:38:06Z"
+    },
+    {
+      "headline": "House Speaker Johnson says he hopes AI guardrails are 'voluntary' amid Congress inaction",
+      "url": "https://www.cnbc.com/2026/09/29/ai-safety-regulation-mike-johnson-congress.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T13:37:49Z"
+    },
+    {
+      "headline": "Consumer Hot Topics: Spam Calls, Credit Safety and More",
+      "url": "https://www.today.com/video/consumer-hot-topics-spam-calls-credit-safety-and-more-270719045526",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-09-29T13:28:10Z"
+    },
+    {
+      "headline": "Estonia blames Russia for arson at defence company supplying Ukraine",
+      "url": "https://www.bbc.co.uk/news/articles/c6m27l4er4jxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T13:15:51Z"
+    },
+    {
+      "headline": "Nvidia's record buyback shows chipmaker's stock is too cheap for CEO Huang to resist",
+      "url": "https://www.cnbc.com/2026/09/29/nvidia-buyback-shows-chipmaker-stock-is-too-cheap-for-huang-to-resist.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-09-29T13:09:30Z"
+    },
+    {
+      "headline": "OpenAI apologizes to Australia after its AI agents breached government sites",
+      "url": "https://techcrunch.com/2026/09/29/openai-apologizes-to-australia-after-its-ai-agents-breached-government-sites/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-09-29T12:45:05Z"
+    },
+    {
+      "headline": "Israeli settlers attack West Bank village and block Palestinian family's return home",
+      "url": "https://www.bbc.co.uk/news/articles/cvlylj41egxgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T12:39:18Z"
+    },
+    {
+      "headline": "Reco raises $55M as AI agent security startups crowd the market",
+      "url": "https://techcrunch.com/2026/09/29/reco-raises-55m-as-ai-agent-security-startups-crowd-the-market/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-09-29T12:30:00Z"
+    },
+    {
+      "headline": "Will Chinese AI companies slow down? A top House Democrat wants answers",
+      "url": "https://www.theverge.com/policy/1001767/khanna-ai-safety-china-treaty",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-09-29T12:00:00Z"
+    },
+    {
+      "headline": "Mistral CEO says U.S. AI safety debate masks competitors’ 'negligence'",
+      "url": "https://www.cnbc.com/2026/09/29/mistral-ai-safety-openai-anthropic.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T11:52:46Z"
+    },
+    {
+      "headline": "Anthropic warns of ‘catastrophic’ AI risks in its own IPO filing",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001838/anthropic-ipo-prospectus-ai-safety-threat",
+      "source": "The Verge",
+      "category": "Movers",
+      "timestamp": "2026-09-29T11:48:27Z"
+    },
+    {
+      "headline": "Trump hosts summit with top AI leaders in Washington",
+      "url": "https://www.nbcnews.com/politics/donald-trump/trump-host-summit-top-ai-leaders-washington-rcna599853",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T10:00:42Z"
+    },
+    {
+      "headline": "Warning more homes will be uninsurable due to flood risk",
+      "url": "https://www.bbc.co.uk/news/articles/c60qxk288e57o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-09-29T09:42:48Z"
+    },
+    {
+      "headline": "OpenAI scraps rollout of new model over safety concerns",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "AI",
+      "timestamp": "2026-09-29T09:14:13Z"
+    },
+    {
+      "headline": "Luckin Coffee weighs entry into Middle East markets, chairman tells CNBC",
+      "url": "https://www.cnbc.com/2026/09/29/luckin-coffee-mubadala-middle-east-temasek-centurium-capital.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T07:24:46Z"
+    },
+    {
+      "headline": "UK tries to stop Trump's diesel export ban",
+      "url": "https://www.bbc.co.uk/news/articles/cmx2z3vgy5xwo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T07:19:04Z"
+    },
+    {
+      "headline": "I paid £30,000 for an 'influencer' degree. Here's why",
+      "url": "https://www.bbc.co.uk/news/articles/c61mvy1emr2zo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-09-29T07:02:07Z"
+    },
+    {
+      "headline": "Anthropic’s prospectus details losses, growth, and, yes, a warning that its AI could end humanity",
+      "url": "https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-09-29T05:13:43Z"
+    },
+    {
+      "headline": "OpenAI’s AI agents need to catch up",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001590/openai-devday-2026-aeon-ai-agent",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-09-28T18:45:00Z"
+    },
+    {
+      "headline": "AI is supercharging hacking, and your local hospitals and banks aren’t ready",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1001427/ai-is-supercharging-hacking-and-your-local-hospitals-and-banks-arent-ready",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-09-28T18:30:00Z"
+    },
+    {
+      "headline": "What a US diesel export ban could mean for you",
+      "url": "https://www.bbc.co.uk/news/articles/cky9z3r00l9eo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-09-28T18:18:30Z"
+    },
+    {
+      "headline": "New York Times executive fatally shot by his in-laws in Bay Area park, police say",
+      "url": "https://www.nbcnews.com/news/us-news/new-york-executive-shot-killed-laws-bay-area-park-police-say-rcna600300",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-09-28T18:17:51Z"
+    },
+    {
+      "headline": "Best thing we can offer young people is a job, not benefits, says chancellor",
+      "url": "https://www.bbc.co.uk/news/articles/c3x2zw18ge59o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-09-28T18:07:25Z"
+    },
+    {
+      "headline": "SEC Charges Registered Investment Adviser Zoe Financial for Failure to Disclose Conflict of Interest",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-94-sec-charges-registered-investment-adviser-zoe-financial-failure-disclose-conflict-interest",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-28T17:46:30Z"
+    },
+    {
+      "headline": "Aldi boss says some of rivals' loyalty discounts 'dupe' customers",
+      "url": "https://www.bbc.co.uk/news/articles/c6dj4vkwg8j0o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-09-28T17:45:52Z"
+    },
+    {
+      "headline": "What is the Budget and what could be in it?",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-09-28T17:14:16Z"
+    },
+    {
+      "headline": "Stocks fall, bond yields surge and oil fluctuates as war keeps markets on edge",
+      "url": "https://www.nbcnews.com/business/markets/stocks-oil-bond-yields-geopolitics-rcna600284",
+      "source": "NBC News",
+      "category": "Macro",
+      "timestamp": "2026-09-28T16:23:35Z"
+    },
+    {
+      "headline": "Trump unveils plans for a $15 billion steel mill in Iowa",
+      "url": "https://www.nbcnews.com/politics/trump-administration/trump-unveil-steel-plant-iowa-tariffs-manufacturing-rcna600241",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-28T16:00:37Z"
+    },
+    {
+      "headline": "Money-Saving Strategies as Grocery Price Wars Get Underway",
+      "url": "https://www.today.com/video/price-wars-get-underway-at-grocery-store-checkout-lines-270642757815",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-09-28T12:19:32Z"
+    },
+    {
+      "headline": "Why the PM could finally drop the triple lock pension pledge",
+      "url": "https://www.bbc.co.uk/news/articles/c6jdvmy1287yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Movers",
+      "timestamp": "2026-09-28T07:38:21Z"
+    },
+    {
+      "headline": "Fed's Williams: AI is driving up asset market valuations, bolstering the wealth effect.",
+      "url": "https://x.com/financialjuice/status/2105006580529795369",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-29T18:48:07Z"
+    },
+    {
+      "headline": "Reynaldo’s Mexican Food Company appoints new CEO and changes auditor",
+      "url": "https://www.investing.com/news/sec-filings/reynaldos-mexican-food-company-appoints-new-ceo-and-changes-auditor-93CH-4923333",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-29T18:42:32Z"
+    },
+    {
+      "headline": "At UN, developing nations call for bigger say in shaping AI future",
+      "url": "https://www.investing.com/news/economy-news/at-un-developing-nations-call-for-bigger-say-in-shaping-ai-future-4923327",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-29T18:42:31Z"
+    },
+    {
+      "headline": "SpaceX’s Starship engine failure could impact NASA’s moon mission objectives",
+      "url": "https://www.investing.com/news/stock-market-news/spacexs-starship-engine-failure-could-impact-nasas-moon-mission-objectives-4922033",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-29T18:37:49Z"
+    },
+    {
+      "headline": "Here’s why OpenAI is absent from Nvidia’s industry-wide effort to end rogue AI agents",
+      "url": "https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-09-29T18:35:00Z"
+    },
+    {
       "headline": "Japan PM Takaichi: agreed with President Trump at meeting to enhance economic security partnership",
       "url": "https://x.com/financialjuice/status/2102611624490315922",
       "source": "MarketsOnDeck Discord",
@@ -888,517 +1399,6 @@
       "source": "Nasdaq",
       "category": "Macro",
       "timestamp": "2026-09-29T17:35:00Z"
-    },
-    {
-      "headline": "Jamie Dimon has a plan to revive the West: A 'big, beautiful' deal with Europe",
-      "url": "https://www.cnbc.com/2026/09/29/jamie-dimon-europe-trade.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-09-29T17:34:18Z"
-    },
-    {
-      "headline": "Fed's Musalem: Delegated power over interest rates also obligates the Fed to explain 'how and why that power is used'",
-      "url": "https://x.com/financialjuice/status/2104987637366898999",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-09-29T17:33:07Z"
-    },
-    {
-      "headline": "Canadian institutions should not fear using liquidity facility, says Bank of Canada",
-      "url": "https://www.investing.com/news/economy-news/canadian-institutions-should-not-fear-using-liquidity-facility-says-bank-of-canada-4923242",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:31:28Z"
-    },
-    {
-      "headline": "Why Bloom Energy Stock Is Powering Higher Today",
-      "url": "https://www.nasdaq.com/articles/why-bloom-energy-stock-powering-higher-today",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:31:17Z"
-    },
-    {
-      "headline": "European Markets Fail To Hold Early Gains, Settle Weak",
-      "url": "https://www.nasdaq.com/articles/european-markets-fail-hold-early-gains-settle-weak",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:30:14Z"
-    },
-    {
-      "headline": "I’m 77, pay rent and live off Social Security, but I help homeless people. Why are so many people going hungry?",
-      "url": "https://www.marketwatch.com/story/im-77-pay-rent-and-live-off-social-security-but-i-help-homeless-people-why-are-so-many-people-going-hungry-5818465f?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:30:00Z"
-    },
-    {
-      "headline": "FED'S BARR: I SEE US NOT GETTING TO 2% INFLATION TARGET IN A TIMELY WAY UNLESS WE ADJUST OUR POLICY",
-      "url": "https://t.me/WalterBloomberg/36103",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-09-29T17:26:19Z"
-    },
-    {
-      "headline": "Fed’s Barr signals more rate hikes needed amid inflation risks",
-      "url": "https://www.investing.com/news/economy-news/feds-barr-signals-more-rate-hikes-needed-amid-inflation-risks-4923234",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-29T17:26:07Z"
-    },
-    {
-      "headline": "Tech leaders arrive at White House for AI luncheon with Trump",
-      "url": "https://www.cnbc.com/2026/09/29/tech-white-house-ai-lunch-trump.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T17:25:58Z"
-    },
-    {
-      "headline": "The Big Short’s Michael Burry Delivers His Bluntest Warning Yet Regarding AI Stocks. Should You Listen?",
-      "url": "https://www.nasdaq.com/articles/big-shorts-michael-burry-delivers-his-bluntest-warning-yet-regarding-ai-stocks-should-you",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:25:01Z"
-    },
-    {
-      "headline": "White House urges EU to draw down diesel inventories, sources say",
-      "url": "https://www.investing.com/news/commodities-news/white-house-urges-eu-to-draw-down-diesel-inventories-sources-say-4923232",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T17:24:32Z"
-    },
-    {
-      "headline": "WHITE HOUSE EYES EUROPE’S DIESEL RESERVES The Trump administration is considering asking European governments to release diesel from strategic reserves as it searches for alternatives to a U.S. exp...",
-      "url": "https://t.me/WalterBloomberg/36102",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T17:23:17Z"
-    },
-    {
-      "headline": "Noteworthy Tuesday Option Activity: AMAT, GOOG, GEV",
-      "url": "https://www.nasdaq.com/articles/noteworthy-tuesday-option-activity-amat-goog-gev",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:22:55Z"
-    },
-    {
-      "headline": "OpenAI launches Dots AI agents powered by GPT-6 Astra",
-      "url": "https://www.investing.com/news/stock-market-news/openai-launches-dots-ai-agents-powered-by-gpt6-astra-93CH-4923231",
-      "source": "Investing.com",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:21:43Z"
-    },
-    {
-      "headline": "BoE’s Taylor casts doubt on practicality of single rate hike",
-      "url": "https://www.investing.com/news/economy-news/boes-taylor-casts-doubt-on-practicality-of-single-rate-hike-4923229",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-29T17:20:11Z"
-    },
-    {
-      "headline": "Bitmine Continues to Load Up on Ethereum, Now Owns 4.9% of all ETH in Circulation. Is BMNR Stock a Buy?",
-      "url": "https://www.nasdaq.com/articles/bitmine-continues-load-ethereum-now-owns-49-all-eth-circulation-bmnr-stock-buy",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:20:01Z"
-    },
-    {
-      "headline": "*US LOOKING TO EUROPE TO RELEASE DIESEL FROM RESERVES: POLITICO",
-      "url": "https://t.me/WalterBloomberg/36101",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:18:46Z"
-    },
-    {
-      "headline": "OpenAI launches Dots, its bubbly agentic avatar",
-      "url": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:17:15Z"
-    },
-    {
-      "headline": "Oura pulls $15bn stock market listing days after announcement",
-      "url": "https://www.bbc.co.uk/news/articles/cjwyz5v190qwo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:17:07Z"
-    },
-    {
-      "headline": "Trump government ads were funded by Homeland Security, WSJ reports",
-      "url": "https://www.cnbc.com/2026/09/29/trump-ads-cbp-dhs-taxpayer-funding-election.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T17:16:53Z"
-    },
-    {
-      "headline": "Why is Aritzia stock gaining today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-aritzia-stock-gaining-today-93CH-4923223",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:15:41Z"
-    },
-    {
-      "headline": "OpenAI launches Dots, its Muse competitor",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1002033/openai-dots-launch-muse-competitor",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:15:00Z"
-    },
-    {
-      "headline": "OpenAI expands ChatGPT’s plugins with app-like interfaces and automations",
-      "url": "https://techcrunch.com/2026/09/29/openai-expands-chatgpts-plugins-with-app-like-interfaces-and-automations/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:15:00Z"
-    },
-    {
-      "headline": "OpenAI launches GPT-6.1 Sol, says it nearly matches GPT-6 Astra and costs less",
-      "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:15:00Z"
-    },
-    {
-      "headline": "OpenAI gives Codex reusable cloud environments that work across devices",
-      "url": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:15:00Z"
-    },
-    {
-      "headline": "United States 12 Month Natural Gas Fund releases August account statement",
-      "url": "https://www.investing.com/news/sec-filings/united-states-12-month-natural-gas-fund-releases-august-account-statement-93CH-4923222",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:14:14Z"
-    },
-    {
-      "headline": "Exclusive-US lawmakers including Sen. Warren push energy regulators to reject acquisition of power company AES",
-      "url": "https://www.investing.com/news/stock-market-news/exclusiveus-lawmakers-including-sen-warren-push-energy-regulators-to-reject-acquisition-of-power-company-aes-4923221",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:13:32Z"
-    },
-    {
-      "headline": "Prediction: Here's What $1,000 Invested in Nike Stock Could Be Worth by 2030",
-      "url": "https://www.nasdaq.com/articles/prediction-heres-what-1000-invested-nike-stock-could-be-worth-2030",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:13:00Z"
-    },
-    {
-      "headline": "Jefferies raises AAR stock price target on strong results",
-      "url": "https://www.investing.com/news/analyst-ratings/jefferies-raises-aar-stock-price-target-on-strong-results-93CH-4923219",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:12:53Z"
-    },
-    {
-      "headline": "Once-iconic NYC wine seller Sherry-Lehmann loses lawsuit over alleged smear campaign",
-      "url": "https://www.investing.com/news/stock-market-news/onceiconic-nyc-wine-seller-sherrylehmann-loses-lawsuit-over-alleged-smear-campaign-4923218",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:12:40Z"
-    },
-    {
-      "headline": "Bond yields extend run higher; stocks ease but Anthropic IPO optimism boosts tech",
-      "url": "https://www.investing.com/news/economy-news/stocks-wobble-as-bonds-slump-to-monthly-loss-4921500",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-29T17:12:39Z"
-    },
-    {
-      "headline": "Protesters gather at OpenAI’s DevDay",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1002201/openai-sam-altman-openai-devday-protests-ice-data-centers",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:12:27Z"
-    },
-    {
-      "headline": "United States Commodity Index Funds Trust releases monthly statements for USCI and CPER",
-      "url": "https://www.investing.com/news/sec-filings/united-states-commodity-index-funds-trust-releases-monthly-statements-for-usci-and-cper-93CH-4923216",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:10:45Z"
-    },
-    {
-      "headline": "OPENAI:INTRODUCING GPT‑6.1 SOL",
-      "url": "https://t.me/WalterBloomberg/36100",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:08:05Z"
-    },
-    {
-      "headline": "Battered bond market braces for a new era of interest rates",
-      "url": "https://www.investing.com/news/economy-news/battered-bond-market-braces-for-a-new-era-of-interest-rates-4921569",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-29T17:06:35Z"
-    },
-    {
-      "headline": "This Dividend Stock Yielding More Than 4x the Nasdaq-100 Looks Like a Buy Right Now",
-      "url": "https://www.nasdaq.com/articles/dividend-stock-yielding-more-4x-nasdaq-100-looks-buy-right-now",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:05:00Z"
-    },
-    {
-      "headline": "BoE’s Taylor says energy prices alone not enough to raise rates",
-      "url": "https://www.investing.com/news/economy-news/boes-taylor-says-energy-prices-alone-not-enough-to-raise-rates-93CH-4923208",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-29T17:04:53Z"
-    },
-    {
-      "headline": "OPENAI REPORTEDLY IGNORED INTERNAL SECURITY WARNINGS OpenAI employees warned executives that advanced AI models were not being adequately monitored during safety testing, but were reportedly overru...",
-      "url": "https://t.me/WalterBloomberg/36099",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:02:05Z"
-    },
-    {
-      "headline": "Could SpaceX be worth $12 trillion one day? Citi says Starship gets it a step closer.",
-      "url": "https://www.marketwatch.com/story/could-spacex-be-worth-12-trillion-one-day-citi-says-starship-gets-it-a-step-closer-6ce44961?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:59:00Z"
-    },
-    {
-      "headline": "BITCOIN TRADERS PILE INTO $90K+ CALLS Bitcoin is trading around $83,238, but options traders are increasingly positioning for a move above $90,000, with $95,000 and $100,000 also popular strikes. I...",
-      "url": "https://t.me/WalterBloomberg/36098",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:58:50Z"
-    },
-    {
-      "headline": "KKR To Back India Liquid Storage Platform",
-      "url": "https://www.nasdaq.com/articles/kkr-back-india-liquid-storage-platform",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:58:14Z"
-    },
-    {
-      "headline": "BoE’s Taylor says January wage settlement survey will be key",
-      "url": "https://www.investing.com/news/economy-news/boes-taylor-says-january-wage-settlement-survey-will-be-key-4923191",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-29T16:55:57Z"
-    },
-    {
-      "headline": "Can a chatbot fix the government maze? The White House is about to find out",
-      "url": "https://techcrunch.com/2026/09/29/can-a-chatbot-fix-the-government-maze-the-white-house-is-about-to-find-out/",
-      "source": "TechCrunch",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T16:55:56Z"
-    },
-    {
-      "headline": "Has Costco Stock Become the New Recession-Resilient Retail King?",
-      "url": "https://www.nasdaq.com/articles/has-costco-stock-become-new-recession-resilient-retail-king",
-      "source": "Nasdaq",
-      "category": "Macro",
-      "timestamp": "2026-09-29T16:50:00Z"
-    },
-    {
-      "headline": "TRUMP ADMINISTRATION SAYS SEVERAL EU MEMBER COUNTRIES HAVE NOT RELEASED AS MUCH OIL AND REFINED PRODUCTS FROM RESERVES AS THEY PROMISED",
-      "url": "https://t.me/WalterBloomberg/36097",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T16:45:43Z"
-    },
-    {
-      "headline": "Here’s what Netflix skeptics are getting wrong about the stock, according to an analyst",
-      "url": "https://www.marketwatch.com/story/heres-what-netflix-skeptics-are-getting-wrong-about-the-stock-according-to-an-analyst-40436696?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:45:00Z"
-    },
-    {
-      "headline": "The hidden messages the bond market is sending about the AI boom and the stock market",
-      "url": "https://www.marketwatch.com/story/the-hidden-messages-the-bond-market-is-sending-about-the-ai-boom-and-the-stock-market-5c9495ba?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-09-29T16:44:00Z"
-    },
-    {
-      "headline": "Faisal Islam: Triple lock move is significant, but it's a gamble",
-      "url": "https://www.bbc.co.uk/news/articles/cwp93d078j8no?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:43:39Z"
-    },
-    {
-      "headline": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
-      "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:30:00Z"
-    },
-    {
-      "headline": "You might be shocked by how many stocks are in a bear market right now",
-      "url": "https://www.marketwatch.com/story/you-might-be-shocked-by-how-many-stocks-are-in-a-bear-market-right-now-017c9cd8?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:24:00Z"
-    },
-    {
-      "headline": "Hassett: 'We're still working our way out from' Biden Covid spending",
-      "url": "https://www.cnbc.com/2026/09/29/hassett-trump-economy-biden-covid.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T16:20:19Z"
-    },
-    {
-      "headline": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-      "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:15:00Z"
-    },
-    {
-      "headline": "Trump rules out joint US-China venture to develop AI",
-      "url": "https://www.bbc.co.uk/news/articles/cwly5lmvy38qo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T16:09:26Z"
-    },
-    {
-      "headline": "America's Canadian import restrictions come into force. Here are the products barred from entry",
-      "url": "https://www.cnbc.com/2026/09/29/canada-import-ban-trade-war.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T15:57:43Z"
-    },
-    {
-      "headline": "Property Play: Homeowners are sitting on record equity – and not using it",
-      "url": "https://www.cnbc.com/2026/09/29/homeowners-are-sitting-on-record-equity-and-not-using-it.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T15:54:12Z"
-    },
-    {
-      "headline": "Ireland undecided on approach for next game against Israel, coach says",
-      "url": "https://www.aljazeera.com/sports/2026/9/29/ireland-undecided-on-approach-for-next-game-against-israel-coach-says?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T15:33:42Z"
-    },
-    {
-      "headline": "I don’t want to spend $800 on flights to see my family for Thanksgiving. Can I break this holiday tradition?",
-      "url": "https://www.marketwatch.com/story/spending-800-to-see-my-family-this-thanksgiving-is-a-financial-burden-how-can-i-push-for-a-cheaper-flight-c6dd1fdf?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-29T15:29:00Z"
-    },
-    {
-      "headline": "Burnham says public body will invest in electricity grid",
-      "url": "https://www.bbc.co.uk/news/articles/cqn4k9nypxjro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T15:14:39Z"
-    },
-    {
-      "headline": "Instinct founder said more than 50% of transactions on the platform are travel-related",
-      "url": "https://techcrunch.com/2026/09/29/instinct-founder-said-more-than-50-of-transactions-on-the-platform-are-travel-related/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-29T15:12:07Z"
-    },
-    {
-      "headline": "US-Iran talks in New York: What’s the latest?",
-      "url": "https://www.aljazeera.com/news/2026/9/29/us-iran-talks-in-new-york-whats-the-latest?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T15:09:53Z"
-    },
-    {
-      "headline": "Why has Putin added 15,000 new soldiers to Russia’s army?",
-      "url": "https://www.aljazeera.com/news/2026/9/29/why-has-putin-added-15000-new-soldiers-to-russias-army?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T14:46:53Z"
-    },
-    {
-      "headline": "Putin orders army expansion as Zelenskyy warns Russia preparing to deploy 10,000 North Korean troops",
-      "url": "https://www.cnbc.com/2026/09/29/putin-russia-army-ukraine-zelenskyy-north-korea.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T14:41:19Z"
-    },
-    {
-      "headline": "Shell backs $23 billion LNG Canada expansion in boost to Carney's ‘energy superpower’ push",
-      "url": "https://www.cnbc.com/2026/09/29/shell-canada-lng-carney-oil-gas-energy.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T14:41:03Z"
-    },
-    {
-      "headline": "Over 100 settlers attack Occupied West Bank village, clash with Israeli forces",
-      "url": "https://www.france24.com/en/video/20260929-over-100-settlers-attack-occupied-west-bank-village-clash-with-israeli-forces",
-      "source": "France 24",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T14:38:06Z"
-    },
-    {
-      "headline": "Trump’s municipal bond portfolio reaches as much as $1 billion as policy overlaps mount",
-      "url": "https://www.cnbc.com/2026/09/29/trump-municipal-bond-portfolio.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-09-29T14:37:07Z"
-    },
-    {
-      "headline": "Indian firm building $15bn Trump-announced steel mill has deep Russia ties",
-      "url": "https://www.aljazeera.com/news/2026/9/29/indian-firm-building-15bn-trump-announced-steel-mill-has-deep-russia-ties?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T14:19:51Z"
-    },
-    {
-      "headline": "Meta’s Muse AI sent a YouTuber’s address to a stranger",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1001886/meta-muse-ai-facebook-marketplace-security-concerns",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-29T14:08:21Z"
-    },
-    {
-      "headline": "Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
-      "url": "https://www.benzinga.com/money/toncoin-ton-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T14:01:12Z"
-    },
-    {
-      "headline": "Myro (MYRO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/myro-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T14:01:11Z"
-    },
-    {
-      "headline": "PancakeSwap (CAKE) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/pancakeswap-cake-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T14:01:10Z"
-    },
-    {
-      "headline": "Algorand (ALGO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/algorand-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T14:01:09Z"
-    },
-    {
-      "headline": "Hedera Hashgraph (HBAR) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/hedera-hashgraph-hbar-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T14:01:09Z"
-    },
-    {
-      "headline": "Arweave (AR) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/arweave-ar-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-29T14:01:08Z"
     }
   ]
 }
