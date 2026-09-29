@@ -1,12 +1,13 @@
 {
-  "date": "2026-09-29",
-  "dateLabel": "Tuesday, September 29",
-  "events": [],
-  "note": "No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).",
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "date": "2026-09-30",
+  "dateLabel": "Wednesday, September 30",
+  "events": [
+    { "time": "8:15 AM ET", "event": "ADP Employment Report" },
+    { "time": "8:30 AM ET", "event": "GDP Third Estimate (Q2)" },
+    { "time": "8:30 AM ET", "event": "Core PCE Price Index" },
+    { "time": "Before Market Open", "event": "Conagra Earnings (BMO)" },
+    { "time": "Before Market Open", "event": "Jabil Earnings (BMO)" },
+    { "time": "9:45 AM ET", "event": "Chicago PMI" }
+  ],
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
