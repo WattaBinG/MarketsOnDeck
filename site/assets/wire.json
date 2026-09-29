@@ -1,17 +1,89 @@
 {
-  "asOf": "2026-09-29T08:15:54Z",
-  "asOfLabel": "4:15 AM ET",
+  "asOf": "2026-09-29T08:30:55Z",
+  "asOfLabel": "4:30 AM ET",
   "topStory": {
-    "headline": "Treasury yields move lower as inflation concerns persist",
+    "headline": "Treasury yields ease as inflation concerns persist",
     "url": "https://www.cnbc.com/2026/09/29/treasury-yields-bonds.html",
     "source": "CNBC",
     "category": "Macro",
-    "timestamp": "2026-09-29T07:52:47Z",
+    "timestamp": "2026-09-29T08:17:15Z",
     "firstSeen": "2026-09-29T08:01:22Z",
     "leadSince": "2026-09-29T08:01:22Z",
     "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
+    {
+      "headline": "UK M4 MONEY SUPPLY ACTUAL 0.4% (FORECAST -, PREVIOUS -0.3%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2104851323380441279",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-29T08:30:56Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
+    {
+      "headline": "UK MORTGAGE LENDING ACTUAL 4.410B (FORECAST 4.4B, PREVIOUS 4.292B ,REVISION 4.082B) $MACRO",
+      "url": "https://x.com/financialjuice/status/2104851311930028301",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-29T08:30:55Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
+    {
+      "headline": "UK MORTGAGE APPROVALS ACTUAL 54.918K (FORECAST 56.1K, PREVIOUS 56.053K) $MACRO",
+      "url": "https://x.com/financialjuice/status/2104851300701868206",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-29T08:30:54Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
+    {
+      "headline": "ECB's Kazimir: Rate hike was unavoidable.",
+      "url": "https://x.com/financialjuice/status/2104850862908826023",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-29T08:28:54Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
+    {
+      "headline": "Mistral CEO says U.S. AI safety debate masks competitors’ 'negligence'",
+      "url": "https://www.cnbc.com/2026/09/29/mistral-ai-safety-openai-anthropic.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-09-29T08:20:04Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
+    {
+      "headline": "US-Iran talks continue, but ‘deal unlikely’ before midterm elections",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/29/us-iran-talks-continue-but-deal-unlikely-before-midterm-elections?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-29T08:15:48Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
+    {
+      "headline": "Vail Resorts stock edges down as weak pass sales overshadow Q4 beat",
+      "url": "https://www.investing.com/news/earnings/vail-resorts-stock-falls-2-on-weak-pass-sales-despite-q4-beat-4921141",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-09-29T08:15:26Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
+    {
+      "headline": "Why is Boozt stock rallying today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-boozt-stock-rallying-today-93CH-4921733",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-29T08:14:26Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
+    {
+      "headline": "Why is Medios stock rallying today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-medios-stock-rallying-today-93CH-4921732",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-29T08:13:52Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
+    },
     {
       "headline": "OpenAI scraps rollout of new model over safety concerns",
       "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko?at_medium=RSS&at_campaign=rss",
@@ -21,100 +93,28 @@
       "firstSeen": "2026-09-29T08:15:54Z"
     },
     {
-      "headline": "Not the GPUs. This Overlooked Piece of Nvidia's Business Could Matter Most for the Stock's Next Leg Up.",
-      "url": "https://www.nasdaq.com/articles/not-gpus-overlooked-piece-nvidias-business-could-matter-most-stocks-next-leg",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T08:05:00Z",
-      "firstSeen": "2026-09-29T08:15:54Z"
-    },
-    {
-      "headline": "ITALIAN INDUSTRIAL SALES MOM ACTUAL 0.6% (FORECAST -, PREVIOUS -1.0%) $MACRO",
-      "url": "https://x.com/financialjuice/status/2104843893976318008",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-09-29T08:01:54Z",
-      "firstSeen": "2026-09-29T08:15:54Z"
-    },
-    {
-      "headline": "Israeli settlers attack Jalud village in occupied West Bank, torch homes",
-      "url": "https://www.aljazeera.com/news/2026/9/29/israeli-settlers-attack-jalud-village-in-occupied-west-bank-torch-homes?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T08:01:14Z",
-      "firstSeen": "2026-09-29T08:15:54Z"
-    },
-    {
-      "headline": "Lilly's Foundayo Outperforms Oral Semaglutide In New Diabetes Analysis",
-      "url": "https://www.nasdaq.com/articles/lillys-foundayo-outperforms-oral-semaglutide-new-diabetes-analysis",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-29T08:00:43Z",
-      "firstSeen": "2026-09-29T08:15:54Z"
-    },
-    {
-      "headline": "Bond selloff; Anthropic IPO prospectus reports - what’s moving markets",
-      "url": "https://www.investing.com/news/economy-news/bond-selloff-anthropic-ipo-prospectus-reports--whats-moving-markets-4921714",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-29T07:49:36Z",
-      "firstSeen": "2026-09-29T08:01:22Z"
-    },
-    {
-      "headline": "Glencore stock maintains Outperform rating ahead of ASX listing",
-      "url": "https://www.investing.com/news/analyst-ratings/glencore-stock-maintains-outperform-rating-ahead-of-asx-listing-93CH-4921713",
+      "headline": "Jefferies Financial stock slips 3% as Fixed Income, Asset Management revenues fall",
+      "url": "https://www.investing.com/news/earnings/jefferies-financial-stock-slips-3-as-fixed-income-asset-management-revenues-fall-4921169",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-09-29T07:48:54Z",
-      "firstSeen": "2026-09-29T08:01:22Z"
+      "timestamp": "2026-09-29T08:10:59Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
     },
     {
-      "headline": "Rising bond yields put the brakes on stocks",
-      "url": "https://www.investing.com/news/economy-news/stocks-wobble-as-bonds-slump-to-monthly-loss-4921500",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-29T07:48:48Z",
-      "firstSeen": "2026-09-29T08:01:22Z"
-    },
-    {
-      "headline": "Blackstone to launch investment platform for Nordics warehouses",
-      "url": "https://www.investing.com/news/stock-market-news/blackstone-to-launch-investment-platform-for-nordics-warehouses-4921699",
+      "headline": "Baird downgrades Ryder stock rating on elevated expectations",
+      "url": "https://www.investing.com/news/analyst-ratings/baird-downgrades-ryder-stock-rating-on-elevated-expectations-93CH-4921728",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-09-29T07:48:29Z",
-      "firstSeen": "2026-09-29T08:01:22Z"
+      "timestamp": "2026-09-29T08:06:59Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
     },
     {
-      "headline": "Dave & Buster’s interim CFO Cory Hatton buys $25,999 in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/dave--busters-interim-cfo-cory-hatton-buys-25999-in-stock-93CH-4921710",
+      "headline": "Citizens downgrades Arbor Realty Trust stock rating on rate outlook",
+      "url": "https://www.investing.com/news/analyst-ratings/citizens-downgrades-arbor-realty-trust-stock-rating-on-rate-outlook-93CH-4921727",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-09-29T07:45:53Z",
-      "firstSeen": "2026-09-29T08:01:22Z"
-    },
-    {
-      "headline": "U.S. Treasury yields hold while Aussie yields retreat  after 2011-era peak run up",
-      "url": "https://www.investing.com/news/forex-news/us-treasury-yields-hold-while-aussie-yields-retreat--after-2011era-peak-run-up-4921704",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T07:44:21Z",
-      "firstSeen": "2026-09-29T08:01:22Z"
-    },
-    {
-      "headline": "Israel’s West Bank road closures turn routine journeys into long ordeals",
-      "url": "https://www.aljazeera.com/news/2026/9/29/israels-west-bank-road-closures-turn-routine-journeys-into-long-ordeals?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T07:44:06Z",
-      "firstSeen": "2026-09-29T08:01:22Z"
-    },
-    {
-      "headline": "US closes probe into over 1 million Chrysler vehicles over underhood fire risk",
-      "url": "https://www.investing.com/news/stock-market-news/us-closes-probe-into-over-1-million-chrysler-vehicles-over-underhood-fire-risk-4921706",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-29T07:43:42Z",
-      "firstSeen": "2026-09-29T08:01:22Z"
+      "timestamp": "2026-09-29T08:06:57Z",
+      "firstSeen": "2026-09-29T08:30:55Z"
     },
     {
       "headline": "Iran Agrees To Suspend Uranium Enrichment In Exchange For US Sanctions Relief - Al Hadath",
