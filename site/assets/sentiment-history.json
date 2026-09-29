@@ -1,36 +1,5 @@
 [
   {
-    "date": "2025-09-29",
-    "score": 45,
-    "label": "Neutral",
-    "scores": {
-      "1D": {
-        "score": 45,
-        "label": "Neutral"
-      },
-      "1W": {
-        "score": 62,
-        "label": "Greed"
-      },
-      "1M": {
-        "score": 57,
-        "label": "Neutral"
-      },
-      "3M": {
-        "score": 68,
-        "label": "Greed"
-      },
-      "6M": {
-        "score": 88,
-        "label": "Extreme Greed"
-      },
-      "1Y": {
-        "score": 62,
-        "label": "Greed"
-      }
-    }
-  },
-  {
     "date": "2025-09-30",
     "score": 77,
     "label": "Greed",
@@ -87,7 +56,7 @@
         "label": "Extreme Greed"
       },
       "1Y": {
-        "score": 72,
+        "score": 74,
         "label": "Greed"
       }
     }
@@ -11222,28 +11191,59 @@
     }
   },
   {
-    "date": "2026-09-27",
-    "score": 47,
+    "date": "2026-09-26",
+    "score": 55,
     "label": "Neutral",
     "scores": {
       "1D": {
-        "score": 47,
+        "score": 55,
         "label": "Neutral"
       },
       "1W": {
-        "score": 51,
+        "score": 54,
         "label": "Neutral"
       },
       "1M": {
-        "score": 61,
+        "score": 63,
         "label": "Greed"
       },
       "3M": {
-        "score": 83,
+        "score": 85,
         "label": "Extreme Greed"
       },
       "6M": {
-        "score": 88,
+        "score": 89,
+        "label": "Extreme Greed"
+      },
+      "1Y": {
+        "score": 69,
+        "label": "Greed"
+      }
+    }
+  },
+  {
+    "date": "2026-09-28",
+    "score": 31,
+    "label": "Fear",
+    "scores": {
+      "1D": {
+        "score": 31,
+        "label": "Fear"
+      },
+      "1W": {
+        "score": 43,
+        "label": "Neutral"
+      },
+      "1M": {
+        "score": 58,
+        "label": "Neutral"
+      },
+      "3M": {
+        "score": 82,
+        "label": "Extreme Greed"
+      },
+      "6M": {
+        "score": 89,
         "label": "Extreme Greed"
       },
       "1Y": {
@@ -11253,7 +11253,7 @@
     }
   },
   {
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "score": 37,
     "label": "Fear",
     "scores": {
@@ -11262,19 +11262,19 @@
         "label": "Fear"
       },
       "1W": {
-        "score": 51,
+        "score": 43,
         "label": "Neutral"
       },
       "1M": {
-        "score": 61,
-        "label": "Greed"
+        "score": 58,
+        "label": "Neutral"
       },
       "3M": {
-        "score": 83,
+        "score": 82,
         "label": "Extreme Greed"
       },
       "6M": {
-        "score": 88,
+        "score": 89,
         "label": "Extreme Greed"
       },
       "1Y": {
