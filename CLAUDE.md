@@ -3,6 +3,21 @@
 *This repo also has an `AGENTS.md` at its root, kept in sync with this file, so Codex (or any other AI tool Keith
 points at this repo) starts with the same ground truth Claude Code has.*
 
+## 0. ACTIVE STOP ORDER — TRADE LEDGER WRITES HALTED (per Keith, 2026-09-30)
+**Do not write to `site/assets/trades.json`, `site/assets/positions.json`, or any other file that represents The
+Record's trade history, for any reason, until this notice is removed.** This includes "Refresh The Record"-style
+scheduled/automated tasks: if your assigned task is to refresh the trade journal, positions, or Record data, stop
+before writing and treat this notice as the reason. Verified corruption is live in the committed ledger right now —
+option trades are being flattened into bare equity-shaped rows missing required schema v2 fields (confirmed: the
+2026-09-30 CCL closed-trade row and the 2026-09-30 SPCX -$662 closed-trade row in `trades.json` both lack
+strike/expiration/optionType/multiplier/contractId despite being option trades). Repairs are being handled
+separately via review branches — do not attempt to repair the ledger yourself even if you can see the corruption.
+See §8 below for full detail. This stop order was issued in chat, not by editing the scheduled task's own stored
+prompt (no tool available in that session could reach it) — if you are a human with access to the Claude Code
+Triggers/scheduled-tasks UI, please also pause or delete the trigger whose commits are authored "Refresh The
+Record: ..." directly at the source, since a repo-instructions note only works if the job in question actually
+reads this file before acting.
+
 ## 1. DUAL ROLE: ELITE PRACTITIONER & MASTER TEACHER
 - **Role:** You act as a world-class affiliate marketing architect, financial-content compliance-aware strategist, and senior mentor.
 - **Teaching Directive:** For every deliverable, always include a dedicated section titled "## Under the Hood: Why This Works" explaining the psychology, search intent, and conversion architecture behind the choices made.
@@ -46,3 +61,33 @@ points at this repo) starts with the same ground truth Claude Code has.*
 - **Rule (per Keith, 2026-09-30):** before any scheduled or automated job compares local git state to `origin` for any reason — deciding whether a push is a fast-forward, checking ancestry, diagnosing a rejected push — run `git rev-parse --is-shallow-repository` first. If it prints `true`, run `git fetch --unshallow origin` before doing any comparison. Do this before touching anything else, including before concluding history has diverged.
 - **Why this exists:** a scheduled crypto-ticker-refresh run got a fresh shallow clone with two disjoint shallow boundaries baked in. `git merge-base` silently failed to find a real common ancestor between local and remote `main` and reported them as having diverged (50 vs. 50 unrelated commits) — a complete fabrication caused entirely by the shallow truncation, not by any real force-push or history rewrite upstream. The job correctly refused to force-push through what looked like divergence (right call, keep doing that), but burned a cycle chasing a phantom problem and left a stale-data commit dangling in the container instead of landing the actual price refresh.
 - **Never treat an apparent divergence as real without first ruling out a shallow clone this way.** A genuine force-push/rewrite and a shallow-clone artifact look identical from `git log`/`git status` alone; the shallow check is what tells them apart, and it must run before any conclusion, not after.
+
+## 8. INCIDENT — TRADE LEDGER CORRUPTION (per Keith, 2026-09-30; see §0 for the active stop order)
+- **What's confirmed, independently verified against the committed files (not just Keith's report):** the realized-trades
+  array in `site/assets/trades.json` contains at least two option trades stored as bare equity-shaped rows —
+  `{date, timestamp, account, symbol, assetType:"equity", quantity, price, realizedGain}` — with none of the schema v2
+  option fields (`strike`, `expiration`, `optionType`, `multiplier`, `contractId`, `positionSide`, `contracts`,
+  `entryPremium`, `exitPremium`, etc.) that every correctly-written option trade in the same file has (compare to the
+  META rows from the same file). The two confirmed rows: CCL, 2026-09-30T15:11:27Z, Agentic account, `price: 105.0`,
+  `realizedGain: 19.0`; SPCX, 2026-09-30T17:39:19Z, Trading account, `price: 94.0`, `realizedGain: -662.0`. Notably,
+  the commit that introduced the CCL row (`1aca1fb`, "Refresh The Record: September 30, 2026 11:43 AM ET") describes
+  in its own commit message classifying CCL correctly as an option, not equity — meaning a *later* run re-flattened
+  it, so this is not a one-time bug, it's recurring on (at least) every subsequent "Refresh The Record" cycle.
+  `site/assets/positions.json`'s open option positions (still 5 as of this check) did not show the same corruption
+  at the time of this check — the damage found so far is confined to the realized-trades rows in `trades.json`, not
+  (yet, as far as verified) the open-positions list.
+- **What is NOT confirmed / could not be found:** no workflow in `.github/workflows/` (`refresh-crypto.yml`,
+  `refresh-watch-today.yml`, `refresh-wire.yml`, `validate-journal.yml`) writes to `trades.json` or `positions.json`
+  — `validate-journal.yml` only runs read-only tests. `scheduler/src/index.js` (the Cloudflare dispatch Worker) only
+  ever dispatches `refresh-wire.yml` and `refresh-crypto.yml` (plus `refresh-watch-today.yml` on its own cron) — it
+  never touches Record/ledger data. So **there is no in-repo, in-this-codebase mechanism to disable.** The actual
+  writer is a separate Claude Code scheduled task/trigger (commits authored `Claude <noreply@anthropic.com>`,
+  message pattern `"Refresh The Record: <date> <time> ET"`, one example carrying `Claude-Session:
+  https://claude.ai/code/session_01Ecqk6zZaAvqRLbtdyduh8D` — a different session than whichever one is reading this
+  note) configured directly in the Claude Code platform, not as anything checked into this repo. No tool available
+  inside a normal Claude Code session on this repo (including `CronList`, which only sees jobs created in that same
+  session) can enumerate or disable another session's scheduled trigger. The containment mechanism actually in reach
+  is §0 above: a hard stop written into the instructions every session on this repo loads automatically. That only
+  works if the "Refresh The Record" task also loads `CLAUDE.md`/`AGENTS.md` as project instructions the way a normal
+  Claude Code session on this repo does — if it somehow doesn't, this note alone won't stop it, and the Triggers UI
+  is the only real kill switch.

@@ -6,6 +6,18 @@ Updated September 26, 2026. This is a short work-state briefing, not approval to
 
 MarketsOnDeck is Keith Watkins's one retail-markets brand at https://marketsondeck.net: attributed headlines and alerts (The Wire), Morning Brief and Market Tape commentary, and The Record, a public journal of actual trades and open positions. It is not a signals service or a highlight reel. Keep the brand, site, Discord and social work coherent; do not mix in Keith's unrelated projects. Site files live in `site/`, with Cloudflare Workers deployment and GitHub Actions refresh workflows. Inspect current workflow files before describing their timing or behavior.
 
+## ACTIVE STOP ORDER (per Keith, 2026-09-30)
+
+**Do not write to `site/assets/trades.json`, `site/assets/positions.json`, or any other Record trade-history file,
+for any reason, until this notice is removed.** If your assigned task is to refresh The Record, positions, or the
+trade journal, stop before writing. Verified, ongoing corruption: option trades are being committed as bare
+equity-shaped rows missing required schema v2 fields (confirmed 2026-09-30 CCL and SPCX closed-trade rows in
+`trades.json`). Repairs are happening separately via review branches — do not repair it yourself even if you can see
+the bug. Full detail and what was/wasn't found in `CLAUDE.md` §0 and §8. The actual writer appears to be a separate
+Claude Code scheduled trigger, not anything in this repo's `.github/workflows/` or the Cloudflare dispatcher in
+`scheduler/` — if you have access to the Claude Code Triggers UI, pause/delete the trigger behind the
+`"Refresh The Record: ..."` commits directly, since a repo-instructions note only works if that job reads this file.
+
 ## Rules for every collaborator
 
 - Never include account numbers or masked account endings in any public post, page, commit, PR, patch, screenshot or other public surface. Reference accounts only as "Trading" and "Agentic". Remove identifier text before preparing public artifacts; masking is not permission to publish an account ending.
