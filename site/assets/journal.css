@@ -1,0 +1,30 @@
+/* Keep explicit contract identity and units readable, including on phones. */
+#recordTable td, #positionsTable td { white-space: normal; overflow-wrap: anywhere; }
+#recordTable td:nth-child(2), #positionsTable td:first-child { min-width: 170px; }
+#recordTable td:nth-child(6), #positionsTable td:nth-child(5), #positionsTable td:nth-child(6) { min-width: 150px; }
+#metaVerifiedFills { display: block; text-align: left; }
+#metaVerifiedFills[hidden] { display: none; }
+@media (max-width:640px) {
+  #recordTable, #recordTable tbody { display:block; width:100%; }
+  #recordTable thead { position:absolute; width:1px; height:1px; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+  #recordTable tbody tr:not(:has(td[colspan])) { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; border:1px solid var(--border-strong); border-radius:10px; padding:14px; margin-bottom:12px; }
+  #recordTable tbody tr:not(:has(td[colspan])) td { display:block; min-width:0; border:0; padding:0; text-align:left; white-space:normal; }
+  #recordTable td:nth-child(2), #recordTable td:nth-child(6), #recordTable td:nth-child(7) { grid-column:1/-1; }
+  #recordTable tbody td::before { display:block; font:600 10px/1.4 var(--font-mono); color:var(--text-muted); text-transform:uppercase; }
+  #recordTable td:nth-child(1)::before { content:'Date'; }
+  #recordTable td:nth-child(3)::before { content:'Account'; }
+  #recordTable td:nth-child(4)::before { content:'Type'; }
+  #recordTable td:nth-child(5)::before { content:'Quantity'; }
+  #recordTable td:nth-child(6)::before { content:'Entry / Exit'; }
+  #recordTable td:nth-child(7)::before { content:'Realized P&L'; }
+  #positionsTable td:first-child, #positionsTable td:nth-child(5), #positionsTable td:nth-child(6) { min-width:0; }
+}
+@media (min-width:641px) {
+  #recordTable td:first-child, #recordTable td:nth-child(4), #recordTable td:nth-child(5) { white-space:nowrap; overflow-wrap:normal; }
+  #recordTable td:nth-child(2) { min-width:210px; }
+  #recordTable .badge-type { white-space:nowrap; }
+}
+@media (min-width:641px) {
+  #positionsTable .badge-type, #positionsTable td:nth-child(4) { white-space:nowrap; overflow-wrap:normal; }
+  #positionsTable td:first-child, #recordTable td:nth-child(2) { min-width:240px; }
+}

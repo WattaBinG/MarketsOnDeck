@@ -14,6 +14,7 @@
 <meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<link rel="stylesheet" href="/assets/journal.css?v=20260930a">
 </head>
 <body>
 <header class="site-header">
@@ -117,7 +118,7 @@
             <th data-sort="account" class="col-optional">Account <span class="sort-arrow">&#9660;</span></th>
             <th data-sort="assetType" class="col-optional">Type <span class="sort-arrow">&#9660;</span></th>
             <th data-sort="quantity" class="col-optional">Qty <span class="sort-arrow">&#9660;</span></th>
-            <th data-sort="price" class="col-optional">Price <span class="sort-arrow">&#9660;</span></th>
+            <th data-sort="price" class="col-optional">Entry / Exit <span class="sort-arrow">&#9660;</span></th>
             <th data-sort="realizedGain">Realized P&amp;L <span class="sort-arrow">&#9660;</span></th>
           </tr>
         </thead>
@@ -127,7 +128,7 @@
       </table>
     </div>
 
-    <p class="text-muted" style="margin-top:20px; font-size:13px;">Data pulled directly from the brokerage account's own realized profit &amp; loss history, refreshed automatically. Options rows omit a per-share price where the platform's own figure doesn't scale cleanly against the contract's real premium — the realized P&amp;L figure itself is accurate regardless. Trades with no resolvable symbol are shown as "(unresolved)" rather than guessed at.</p>
+    <p class="text-muted" style="margin-top:20px; font-size:13px;">Data pulled directly from the brokerage account's own realized profit &amp; loss history, refreshed automatically. Verified options show full contract identity, entry/exit premiums per share, and dollars per contract. Older options with missing evidence are labeled unavailable; their reported P&amp;L is preserved. Trades with no resolvable symbol are shown as "(unresolved)" rather than guessed at.</p>
 
     <div class="article-header" style="max-width:none; text-align:left; margin-top:48px;">
       <div class="eyebrow">Still Open</div>
@@ -157,7 +158,7 @@
         </tbody>
       </table>
     </div>
-    <p class="text-muted" style="margin-top:20px; font-size:13px;">Options show strike, call/put, and expiration where available. Uses the account filter above. Priced from the brokerage account's own live/last-close quotes — not a guarantee of what you'd actually realize on exit (bid/ask spread, fees, and slippage aren't reflected).</p>
+    <p class="text-muted" style="margin-top:20px; font-size:13px;">Options show underlying, strike, call/put, expiration, contract count, and explicit price units. Existing option costs and marks retain their dollars-per-contract convention; no marks are refreshed by this display change. Uses the account filter above. Priced from the brokerage account's own live/last-close quotes — not a guarantee of what you'd actually realize on exit (bid/ask spread, fees, and slippage aren't reflected).</p>
   </div>
 </main>
 
@@ -199,6 +200,7 @@
   </div>
 </footer>
 <script src="/assets/main.js?v=20260926d"></script>
-<script src="/assets/record.js?v=20260918a"></script>
+<script src="/assets/journal-format.js?v=20260930a"></script>
+<script src="/assets/record.js?v=20260930a"></script>
 </body>
 </html>

@@ -1,0 +1,15 @@
+name: Validate option journal
+on:
+  pull_request:
+    paths: ['site/assets/trades.json', 'site/assets/positions.json', 'site/assets/*journal*', 'site/assets/record.js', 'scripts/validate_journal.py', 'tests/*journal*']
+  push:
+    branches: [main]
+    paths: ['site/assets/trades.json', 'site/assets/positions.json']
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/validate_journal.py
+      - run: python3 -m unittest discover -s tests -p 'test_journal*.py'
+      - run: node tests/test_journal_format.cjs
