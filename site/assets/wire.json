@@ -1,17 +1,89 @@
 {
-  "asOf": "2026-09-30T18:31:25Z",
-  "asOfLabel": "2:31 PM ET",
+  "asOf": "2026-09-30T18:46:28Z",
+  "asOfLabel": "2:46 PM ET",
   "topStory": {
-    "headline": "**S&P 500 BREADTH FLASHES RARE WARNING** The equal-weight S&P 500 is heading for a seventh straight weekly decline — something seen only twice before, during 2002 and 2022 bear markets. Yet the hea...",
-    "url": "https://x.com/DeItaone/status/2105361629319680401",
-    "source": "MarketsOnDeck Discord",
-    "category": "Markets",
-    "timestamp": "2026-09-30T18:18:35Z",
-    "firstSeen": "2026-09-30T18:31:25Z",
-    "leadSince": "2026-09-30T18:31:25Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "WHITE HOUSE SAYS S. KOREA TO INVEST IN US ENERGY",
+    "url": "https://t.me/WalterBloomberg/36188",
+    "source": "Walter Bloomberg (unofficial mirror)",
+    "category": "Geopolitics",
+    "timestamp": "2026-09-30T18:41:57Z",
+    "firstSeen": "2026-09-30T18:46:28Z",
+    "leadSince": "2026-09-30T18:46:28Z",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
+    {
+      "headline": "10-year Treasury yield turns higher as traders look past inflation data, await jobs report",
+      "url": "https://www.cnbc.com/2026/09/30/treasury-yields-bonds-selloff.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-30T18:45:10Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
+    },
+    {
+      "headline": "*BIGGEST US GRID SUSPENDS PLAN FOR NEW DATA CENTER POWER AUCTION",
+      "url": "https://t.me/WalterBloomberg/36189",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-09-30T18:45:03Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
+    },
+    {
+      "headline": "WALGREENS OWNER NEARS $9 BILLION BOOTS SALE Walgreens owner Sycamore Partners is nearing a deal to sell Boots for close to $9 billion including debt, according to the WSJ. The buyer is reportedly t...",
+      "url": "https://t.me/WalterBloomberg/36186",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Movers",
+      "timestamp": "2026-09-30T18:38:13Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
+    },
+    {
+      "headline": "SYCAMORE PARTNERS IN TALKS TO SELL U.K. PHARMACY CHAIN BOOTS, SOURCES SAY SYCAMORE PARTNERS IN TALKS TO SELL U.K. PHARMACY CHAIN BOOTS, SOURCES SAY CANADIAN ARM OF WESTON FAMILY IN TALKS TO BUY BOO...",
+      "url": "https://t.me/WalterBloomberg/36185",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-09-30T18:36:22Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
+    },
+    {
+      "headline": "Highest Volume Contracts / No Index/ETFs",
+      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-30T18:35:10Z",
+      "firstSeen": "2026-09-30T18:31:25Z"
+    },
+    {
+      "headline": "NYMEX Natural Gas November futures settle at $3.0260/MMBtu.",
+      "url": "https://x.com/financialjuice/status/2105365096897929606",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-30T18:32:36Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
+    },
+    {
+      "headline": "NYMEX Diesel October futures settle at $4.9569 a gallon.",
+      "url": "https://x.com/financialjuice/status/2105364955742470497",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-30T18:32:35Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
+    },
+    {
+      "headline": "NYMEX Gasoline October futures settle at $3.4378 a gallon.",
+      "url": "https://x.com/financialjuice/status/2105364900998512847",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-30T18:31:42Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
+    },
+    {
+      "headline": "NYMEX WTI Crude November futures settle at $90.42 a barrel, up $1.04, 1.16%.",
+      "url": "https://x.com/financialjuice/status/2105364863404876066",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-30T18:31:41Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
+    },
     {
       "headline": "$SNPS - OPENAI AND SYNOPSYS ANNOUNCE GPT-SYNOPSYS: FRONTIER INTELLIGENCE TO REVOLUTIONIZE CHIP DESIGN",
       "url": "https://t.me/WalterBloomberg/36184",
@@ -21,28 +93,28 @@
       "firstSeen": "2026-09-30T18:31:25Z"
     },
     {
-      "headline": "Highest Volume Contracts / No Index/ETFs",
-      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-09-30T18:31:14Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
+      "headline": "Prediction: Moderna Stock Will Soar 100% by 2030",
+      "url": "https://www.nasdaq.com/articles/prediction-moderna-stock-will-soar-100-2030",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-09-30T18:25:00Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
     },
     {
-      "headline": "EUR/USD is sitting right on 1.13 support. Everyone wants to chase the dollar breakout. DB's Saravelos says this is exactly the wrong time to do it. <> <:neort:875080101035917332>",
-      "url": "https://www.zerohedge.com/the-market-ear/wrong-time-chase-dollar",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Freedom Broker initiates Matson stock coverage with buy rating",
+      "url": "https://www.investing.com/news/analyst-ratings/freedom-broker-initiates-matson-stock-coverage-with-buy-rating-93CH-4925721",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-09-30T18:29:37Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
+      "timestamp": "2026-09-30T18:24:47Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
     },
     {
-      "headline": "**UBS mid-day rates note: ** Treasuries are giving back their post-PCE gains as markets refocus on the strength of US growth, with 10-year yields back above 5.25% and 30-year yields north of 5.6%....",
-      "url": "https://x.com/zerohedge/status/2105363476440830115",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Brazil, US set up working group to discuss potential trade agreement",
+      "url": "https://www.investing.com/news/economy-news/brazil-us-set-up-working-group-to-discuss-potential-trade-agreement-4925720",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-09-30T18:26:34Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
+      "timestamp": "2026-09-30T18:24:46Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
     },
     {
       "headline": "DOJ accuses Minnesota federal judges of misconduct for NY Times immigration interviews",
@@ -53,12 +125,12 @@
       "firstSeen": "2026-09-30T18:31:25Z"
     },
     {
-      "headline": "**FEDERATED HERMES: DON’T RUSH INTO BONDS YET** Treasury yields are at some of their highest levels in a generation, but Federated Hermes CIO R.J. Gallo says elevated rate volatility means it may b...",
-      "url": "https://x.com/DeItaone/status/2105362653388345432",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Wall St regulator unveils new retail investor proposals for private assets",
+      "url": "https://www.investing.com/news/economy-news/wall-st-regulator-to-unveil-new-retail-investor-proposals-for-private-assets-4924538",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-09-30T18:24:33Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
+      "timestamp": "2026-09-30T18:24:27Z",
+      "firstSeen": "2026-09-30T18:46:28Z"
     },
     {
       "headline": "AI voice startup ElevenLabs doubles valuation to $22B",
@@ -75,78 +147,6 @@
       "category": "Markets",
       "timestamp": "2026-09-30T18:22:28Z",
       "firstSeen": "2026-09-30T18:31:25Z"
-    },
-    {
-      "headline": "GameStop, $GME, CEO Ryan Cohen has bought $10.6 million in stock",
-      "url": "https://x.com/unusual_whales/status/2105362289486700895",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-09-30T18:21:42Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
-    },
-    {
-      "headline": "This chart shows that buying and holding stocks beats ‘sell in May and go away’ and other gimmicks",
-      "url": "https://www.marketwatch.com/story/why-the-halloween-indicator-isnt-working-and-what-smart-investors-are-doing-instead-6d758662?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T18:20:00Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
-    },
-    {
-      "headline": "Crude oil exports through the Strait of Hormuz hit prewar levels, but fuel shipments remain constrained",
-      "url": "https://www.cnbc.com/2026/09/30/iran-war-strait-hormuz-gulf-oil-fuel.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T18:17:24Z",
-      "firstSeen": "2026-09-30T18:15:55Z"
-    },
-    {
-      "headline": "‘I’d rather be on a beach in Bali’: My husband resents my $8 million net worth. Should I pay for his retirement?",
-      "url": "https://www.marketwatch.com/story/i-feel-like-hes-holding-me-back-i-have-8-million-my-husband-resents-my-success-should-i-pay-for-more-things-08a4221b?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T18:15:00Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
-    },
-    {
-      "headline": "Strong indications’ Iran linked to suspected UK airbase plot",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/9/30/aje-onl-nf_indications-iran-linked-suspected-uk-airbase-plot-300926?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T18:09:51Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
-    },
-    {
-      "headline": "The AI Tamagotchis are coming",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1002779/openai-dots-meta-muse-ai-agents-hardware-devices",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-30T18:07:38Z",
-      "firstSeen": "2026-09-30T18:15:55Z"
-    },
-    {
-      "headline": "SEC clears Tesla-crafted auto-vote plan for wide use, worrying activists",
-      "url": "https://www.investing.com/news/stock-market-news/sec-clears-teslacrafted-autovote-plan-for-wide-use-worrying-activists-4925710",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-30T18:07:05Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
-    },
-    {
-      "headline": "A pilot brawl, then a rapid descent: passengers recount chaos on flydubai flight",
-      "url": "https://www.investing.com/news/commodities-news/a-pilot-brawl-then-a-rapid-descent-passengers-recount-chaos-on-flydubai-flight-4925642",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-30T18:06:43Z",
-      "firstSeen": "2026-09-30T18:31:25Z"
-    },
-    {
-      "headline": "ITALY PROLONGS UNTIL MID-OCTOBER SUSPENSION OF EU'S SCHENGEN FREE BORDER AGREEMENT WITH SPAIN - STATEMENT",
-      "url": "https://t.me/WalterBloomberg/36181",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-09-30T18:01:54Z",
-      "firstSeen": "2026-09-30T18:15:55Z"
     }
   ]
 }
