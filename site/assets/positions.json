@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-30T17:43:08Z",
-  "asOfLabel": "Market Close, Sep 29",
+  "asOf": "2026-09-30T18:44:59Z",
+  "asOfLabel": "Intraday, Sep 30 (options ~2:47 PM ET, futures ~2:24 PM ET)",
   "positions": [
     {
       "account": "Trading",
@@ -69,11 +69,16 @@
       "optionType": "call",
       "strike": 287.5,
       "expiration": "2026-10-09",
-      "quantity": 5,
-      "avgCost": 453.0,
-      "currentPrice": 643.0,
+      "quantity": 9,
+      "avgCost": 425.0,
+      "currentPrice": 390.0,
       "priorClose": 800.0,
-      "unrealizedGain": 950.0
+      "unrealizedGain": -315.0,
+      "markAsOf": "2026-09-30T18:44:59Z",
+      "priceUnit": "USD_per_contract",
+      "contracts": 9,
+      "multiplier": 100,
+      "underlying": "HD"
     },
     {
       "account": "Trading",
@@ -83,10 +88,15 @@
       "strike": 365,
       "expiration": "2026-10-02",
       "quantity": 7,
-      "avgCost": 307.7143,
-      "currentPrice": 202.0,
+      "avgCost": 307.71,
+      "currentPrice": 131.0,
       "priorClose": 385.0,
-      "unrealizedGain": -740.0
+      "unrealizedGain": -1236.97,
+      "markAsOf": "2026-09-30T18:44:59Z",
+      "priceUnit": "USD_per_contract",
+      "contracts": 7,
+      "multiplier": 100,
+      "underlying": "TSLA"
     },
     {
       "account": "Trading",
@@ -96,10 +106,15 @@
       "strike": 155,
       "expiration": "2026-10-02",
       "quantity": 2,
-      "avgCost": 261.6112,
-      "currentPrice": 87.0,
+      "avgCost": 261.61,
+      "currentPrice": 84.5,
       "priorClose": 57.0,
-      "unrealizedGain": -349.22
+      "unrealizedGain": -354.22,
+      "markAsOf": "2026-09-30T18:44:59Z",
+      "priceUnit": "USD_per_contract",
+      "contracts": 2,
+      "multiplier": 100,
+      "underlying": "SPCX"
     },
     {
       "account": "Trading",
@@ -110,9 +125,14 @@
       "expiration": "2026-10-02",
       "quantity": 2,
       "avgCost": 497.5,
-      "currentPrice": 44.0,
+      "currentPrice": 8.0,
       "priorClose": 83.0,
-      "unrealizedGain": -907.0
+      "unrealizedGain": -979.0,
+      "markAsOf": "2026-09-30T18:44:59Z",
+      "priceUnit": "USD_per_contract",
+      "contracts": 2,
+      "multiplier": 100,
+      "underlying": "HD"
     },
     {
       "account": "Agentic",
@@ -123,9 +143,14 @@
       "expiration": "2026-10-16",
       "quantity": 1,
       "avgCost": 60.5,
-      "currentPrice": 105.0,
+      "currentPrice": 74.0,
       "priorClose": 26.0,
-      "unrealizedGain": 44.5
+      "unrealizedGain": 13.5,
+      "markAsOf": "2026-09-30T18:44:59Z",
+      "priceUnit": "USD_per_contract",
+      "contracts": 1,
+      "multiplier": 100,
+      "underlying": "CCL"
     },
     {
       "account": "Trading",
@@ -146,6 +171,50 @@
       "currentPrice": 2679.3312,
       "priorClose": 2679.3312,
       "unrealizedGain": 369.95
+    },
+    {
+      "account": "Trading",
+      "symbol": "METV26",
+      "assetType": "futures",
+      "underlying": "ETH",
+      "description": "Micro Ether Futures, October 2026",
+      "side": "long",
+      "quantity": 10,
+      "quantityUnit": "contracts",
+      "avgCost": 267.805,
+      "currentPrice": 269.05,
+      "quotedAvgCost": 2678.05,
+      "quotedMark": 2690.5,
+      "multiplier": 0.1,
+      "tickValue": 0.05,
+      "expiration": "2026-10-30",
+      "settlement": "cash",
+      "unrealizedGain": 12.45,
+      "dayPnl": -10.0,
+      "markAsOf": "2026-09-30T18:24:00Z",
+      "note": "Quoted prices are native futures quotes; avgCost/currentPrice are per-contract dollars (quoted \u00d7 multiplier)."
+    },
+    {
+      "account": "Trading",
+      "symbol": "DOGE",
+      "assetType": "crypto",
+      "quantity": 1.0,
+      "avgCost": 0.0,
+      "currentPrice": 0.15,
+      "unrealizedGain": 0.15,
+      "markAsOf": "2026-09-30T18:44:59Z",
+      "note": "Dust: retained in accounting, hidden from public display (under $5)."
+    },
+    {
+      "account": "Trading",
+      "symbol": "USDC",
+      "assetType": "crypto",
+      "quantity": 0.00993,
+      "avgCost": 1.0,
+      "currentPrice": 1.0,
+      "unrealizedGain": 0.0,
+      "markAsOf": "2026-09-30T18:44:59Z",
+      "note": "Dust: retained in accounting, hidden from public display (under $5)."
     }
   ]
 }
