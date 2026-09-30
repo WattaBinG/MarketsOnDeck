@@ -1,104 +1,120 @@
 {
-  "asOf": "2026-09-30T19:46:26Z",
-  "asOfLabel": "3:46 PM ET",
+  "asOf": "2026-09-30T20:00:59Z",
+  "asOfLabel": "4:00 PM ET",
   "topStory": {
-    "headline": "Sen. Hawley: OpenAI CEO Sam Altman declined to testify at rogue AI hearing",
-    "url": "https://www.cnbc.com/2026/09/30/hawley-openai-sam-altman-rogue-ai.html",
-    "source": "CNBC",
-    "category": "AI",
-    "timestamp": "2026-09-30T19:34:11Z",
-    "firstSeen": "2026-09-30T19:46:26Z",
-    "leadSince": "2026-09-30T19:46:26Z",
-    "image": "/assets/images/wire-ai.jpg"
+    "headline": "US judge allows Paramount to close Warner Bros acquisition",
+    "url": "https://www.investing.com/news/stock-market-news/us-judge-allows-paramount-to-close-warner-bros-acquisition-4925773",
+    "source": "Investing.com",
+    "category": "Markets",
+    "timestamp": "2026-09-30T19:48:32Z",
+    "firstSeen": "2026-09-30T20:00:59Z",
+    "leadSince": "2026-09-30T20:00:59Z",
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "Third Quarter Ends With Surging Yields Closing At 24 Year High... As Stocks Yawn <>",
+      "url": "https://www.zerohedge.com/markets/third-quarter-ends-surging-yields-closing-24-year-high-stocks-yawn",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-30T20:00:41Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "Trump Responds To Watchdog Report: Force Powell Off The Fed Board - Or Sue Him <>",
+      "url": "https://www.zerohedge.com/political/fed-watchdog-finds-no-crimes-24-billion-renovation-just-everything-else",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-30T19:59:36Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "Google grapples with employee skepticism about the new Gemini Model $GOOGL",
+      "url": "https://x.com/financialjuice/status/2105385651835371543",
+      "source": "MarketsOnDeck Discord",
+      "category": "AI",
+      "timestamp": "2026-09-30T19:54:35Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "Exclusive-Anthropic’s IPO pitch embraces AI’s promise and peril",
+      "url": "https://www.investing.com/news/stock-market-news/exclusiveanthropics-ipo-pitch-embraces-ais-promise-and-peril-4925792",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-09-30T19:54:29Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "*TRUMP SAYS POWELL SHOULD BE 'FORCED TO RESIGN' FROM FED BOARD *TRUMP: BLANCHE WILL MAKE A DETERMINATION ABOUT THE BUILDING *TRUMP: IF POWELL DOESN'T RESIGN HE SHOULD BE SUED BY THE US <:neort:8750...",
+      "url": "https://x.com/zerohedge/status/2105385070689390823",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-30T19:51:37Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "AI can exhibit 'self-preserving behaviors,' 'resist shutdown,’ ’conceal or manipulate information' - Anthropic's IPO Filing.",
+      "url": "https://x.com/financialjuice/status/2105384998199066774",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-09-30T19:51:36Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "🔴 MOC IMBALANCE S&P 500: -6771.9 MLN NASDAQ 100: -2790.7 MLN DOW 30: -2444.3 MLN MAG 7: -1731.5 MLN $MACRO",
+      "url": "https://x.com/financialjuice/status/2105384921107738870",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-30T19:51:35Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "Defense ETF picks: sector oversold with RSI readings below 30",
+      "url": "https://www.investing.com/news/stock-market-news/defense-etf-picks-sector-oversold-with-rsi-readings-below-30-93CH-4925788",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T19:51:24Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "Northrop Grumman stock analysis after F/A-XX contract loss",
+      "url": "https://www.investing.com/news/stock-market-news/northrop-grumman-stock-analysis-after-faxx-contract-loss-93CH-4925787",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T19:51:17Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "JUST IN: The Fed is now expected to leave rates unchanged in October, at 62%, per Polymarket⁠.com. Dovish comments yesterday doubled those odds, and this morning's cool PCE report pushed them even...",
+      "url": "https://x.com/unusual_whales/status/2105384522825224260",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-30T19:49:35Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
     {
       "headline": "Highest Volume Contracts / No Index/ETFs",
       "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-09-30T19:45:50Z",
+      "timestamp": "2026-09-30T19:47:48Z",
       "firstSeen": "2026-09-30T18:31:25Z"
     },
     {
-      "headline": "Crude oil exports through the Strait of Hormuz hit prewar levels, but fuel shipments remain constrained",
-      "url": "https://www.cnbc.com/2026/09/30/iran-war-strait-hormuz-gulf-oil-fuel.html",
+      "headline": "Why is General Motors stock sliding today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-general-motors-stock-sliding-today-93CH-4925783",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T19:47:06Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
+    },
+    {
+      "headline": "Fed watchdog finds renovation failures, but no grounds for criminal referral",
+      "url": "https://www.cnbc.com/2026/09/30/fed-inspector-general-report-powell-trump.html",
       "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:44:47Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "U.S. bond yields head for biggest jump in a generation as global rout rattles investors",
-      "url": "https://www.marketwatch.com/story/u-s-bond-yields-head-for-biggest-jump-in-a-generation-as-global-rout-rattles-investors-7dede2f2?mod=mw_rss_topstories",
-      "source": "MarketWatch",
       "category": "Macro",
-      "timestamp": "2026-09-30T19:42:00Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Paramount’s mega debt sale reveals how higher bond yields are squeezing corporate America",
-      "url": "https://www.marketwatch.com/story/paramounts-mega-debt-sale-reveals-how-higher-bond-yields-are-squeezing-corporate-america-e9694ec3?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-09-30T19:42:00Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Senators clinch construction permitting deal before election jet-set",
-      "url": "https://www.cnbc.com/2026/09/30/permitting-deal-congress-election.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T19:35:53Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Why is Rafael stock crashing today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-rafael-stock-crashing-today-93CH-4925770",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:32:46Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Why is Sagimet Biosciences stock rallying today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-sagimet-biosciences-stock-rallying-today-93CH-4925769",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:32:35Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Fed’s Cook: inflation has been too high for too long",
-      "url": "https://www.investing.com/news/economy-news/feds-cook-inflation-has-been-too-high-for-too-long-4925765",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T19:30:29Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Why is Capital Bancorp stock surging today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-capital-bancorp-stock-surging-today-93CH-4925762",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:29:27Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Why is Peoples Bancorp stock sliding today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-peoples-bancorp-stock-sliding-today-93CH-4925761",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:29:14Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Why is Connect Biopharma stock surging today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-connect-biopharma-stock-surging-today-93CH-4925759",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:29:01Z",
-      "firstSeen": "2026-09-30T19:46:26Z"
+      "timestamp": "2026-09-30T19:46:17Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
     },
     {
       "headline": "FED’S COOK: INFLATION HAS BEEN TOO HIGH FOR TOO LONG Fed Governor Lisa Cook says she remains committed to bringing inflation back to target while preserving labor-market strength. Cook did not comm...",
@@ -107,30 +123,6 @@
       "category": "Macro",
       "timestamp": "2026-09-30T19:26:59Z",
       "firstSeen": "2026-09-30T19:46:26Z"
-    },
-    {
-      "headline": "Billionaires like Ken Griffin are doling out tons of money to prove that a college degree still matters",
-      "url": "https://www.marketwatch.com/story/billionaires-like-ken-griffin-are-doling-out-tons-of-money-to-prove-that-a-college-degree-still-matters-63e50332?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:21:00Z",
-      "firstSeen": "2026-09-30T19:31:24Z"
-    },
-    {
-      "headline": "Alphabet vs. Meta Platforms: Which Media Stock Is a Better Buy in 2026?",
-      "url": "https://www.nasdaq.com/articles/alphabet-vs-meta-platforms-which-media-stock-better-buy-2026",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:20:01Z",
-      "firstSeen": "2026-09-30T19:31:24Z"
-    },
-    {
-      "headline": "3 Reasons Johnson & Johnson Is Still a Buy With Its Stock Near a Record High",
-      "url": "https://www.nasdaq.com/articles/3-reasons-johnson-johnson-still-buy-its-stock-near-record-high",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-09-30T19:20:00Z",
-      "firstSeen": "2026-09-30T19:31:24Z"
     },
     {
       "headline": "PENTAGON TO CREATE NEW DRONE WARFARE GROUP Defense Secretary Pete Hegseth is establishing a permanent Pentagon organization for drones, autonomous systems and defense robotics, according to Sen. Ti...",
@@ -147,6 +139,14 @@
       "category": "Geopolitics",
       "timestamp": "2026-09-30T18:54:47Z",
       "firstSeen": "2026-09-30T19:16:31Z"
+    },
+    {
+      "headline": "*OPENAI CEO SAM ALTMAN TO SKIP CONGRESS HEARING ON AI: NBC",
+      "url": "https://t.me/WalterBloomberg/36191",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-30T18:48:51Z",
+      "firstSeen": "2026-09-30T20:00:59Z"
     }
   ]
 }
