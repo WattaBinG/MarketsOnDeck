@@ -40,3 +40,15 @@ node tests/test_journal_format.cjs
 ```
 
 The new GitHub check detects a flattened META refresh. It is not deployment gating unless the owner configures a required check/branch protection. The external brokerage routine is outside this repo; its instruction must be updated separately. This patch cannot control it.
+
+## Sep 30 reconciliation: both accounts, new buys, futures
+
+- **Both-account sourcing.** The journal covers Trading and Agentic. Every fill from both accounts appears as a trade row, including new option buys (buy_to_open), not just closes. The Sep 30 HD (9 contracts, 3 lots) and TSLA (4 contracts, 2 lots) buys are booked alongside the SPCX and CCL closes.
+- **Native asset types.** Futures rows carry native quoted prices (`quotedAvgCost`, `quotedMark`), `multiplier`, `quantityUnit: "contracts"`, and expiration. The per-contract dollar fields (`avgCost`, `currentPrice`) remain for totals math. Display layers show the quoted values.
+- **Underlyings-only ticker strip.** The public ticker strip shows underlying symbols (HD, TSLA, SPY) — never option contract IDs or futures codes.
+- **Internal accounting vs public display.** `positions.json` retains every nonzero position including dust (DOGE, USDC). Public table rendering hides rows under $5; stats, totals, and unrealized P&L use all rows. A footer notes hidden positions remain counted.
+- **USDG is cash-like.** Book the exact unit quantity. No trade rows, no P&L tracking.
+
+## Writer regression rules
+
+- A writer that flattens option closes to equity-shaped rows, drops new buy fills, or deletes dust positions is regressing. The validator (`scripts/validate_journal.py`) checks: contract identity on option rows, fill references resolve, futures carry quoted prices, and no nonzero position is missing.
