@@ -66,20 +66,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     positionsTbody.innerHTML = rows.map(function (p) {
       var dir = p.unrealizedGain > 0 ? 'gain' : (p.unrealizedGain < 0 ? 'loss' : '');
-      var symbolCell = escapeHtml(p.symbol);
+      var symbolCell = escapeHtml(JournalFormat.identity(p));
       if (p.assetType === 'futures') {
         symbolCell += ' <span class="text-muted" style="font-size:12px;">Micro Ether · ' + shortDate(p.expiration) + ' · ' + p.multiplier + ' ETH/contract</span>';
-      }
-      if (p.assetType === 'option') {
-        symbolCell += ' <span class="text-muted" style="font-size:12px;">$' + p.strike + (p.optionType === 'put' ? 'P' : 'C') + ' ' + shortDate(p.expiration) + '</span>';
       }
       return '<tr>' +
         '<td><strong>' + symbolCell + '</strong></td>' +
         '<td class="col-optional">' + escapeHtml(p.account) + '</td>' +
         '<td class="col-optional"><span class="badge-type">' + typeLabel(p.assetType) + '</span></td>' +
-        '<td class="num col-optional">' + trimQty(p.quantity) + '</td>' +
-        '<td class="num col-optional">$' + p.avgCost.toFixed(2) + '</td>' +
-        '<td class="num">$' + p.currentPrice.toFixed(2) + '<br><small class="text-muted">' + escapeHtml(p.markAsOf ? p.markAsOf.replace('T', ' ').replace(/-04:00$/, ' ET') : '') + (p.markBasis ? ' · ' + escapeHtml(p.markBasis) : '') + '</small></td>' +
+        '<td class="num col-optional">' + escapeHtml(JournalFormat.quantity(p)) + '</td>' +
+        '<td class="num col-optional">' + (p.assetType === 'option' ? escapeHtml(JournalFormat.premium(p, p.avgCost)) : '$' + p.avgCost.toFixed(2)) + '</td>' +
+        '<td class="num">' + (p.assetType === 'option' ? escapeHtml(JournalFormat.premium(p, p.currentPrice)) : '$' + p.currentPrice.toFixed(2)) + '<br><small class="text-muted">' + escapeHtml(p.markAsOf ? p.markAsOf.replace('T', ' ').replace(/-04:00$/, ' ET') : '') + (p.markBasis ? ' · ' + escapeHtml(p.markBasis) : '') + '</small></td>' +
         '<td class="num ' + dir + '">' + money(p.unrealizedGain) + '</td>' +
         '</tr>';
     }).join('');
@@ -313,7 +310,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var cutoff = rangeCutoffDate(state.range);
     var rows = state.trades.filter(function (t) {
-      if (search && t.symbol.toUpperCase().indexOf(search) === -1) return false;
+      if (search && JournalFormat.identity(t).toUpperCase().indexOf(search) === -1) return false;
       if (account !== 'all' && t.account !== account) return false;
       if (type !== 'all' && t.assetType !== type) return false;
       if (outcome === 'win' && t.realizedGain <= 0) return false;
@@ -323,7 +320,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     rows.sort(function (a, b) {
-      var av = a[state.sortKey], bv = b[state.sortKey];
+      var av = state.sortKey === 'price' && a.assetType === 'option' ? a.exitPremium : a[state.sortKey];
+      var bv = state.sortKey === 'price' && b.assetType === 'option' ? b.exitPremium : b[state.sortKey];
       if (typeof av === 'string') { av = av.toLowerCase(); bv = (bv || '').toLowerCase(); }
       if (av < bv) return state.sortDir === 'asc' ? -1 : 1;
       if (av > bv) return state.sortDir === 'asc' ? 1 : -1;
@@ -341,11 +339,11 @@ document.addEventListener('DOMContentLoaded', function () {
       var dir = t.realizedGain > 0 ? 'gain' : (t.realizedGain < 0 ? 'loss' : '');
       return '<tr data-symbol="' + escapeHtml(t.symbol) + '" data-date="' + t.date + '" data-gain="' + t.realizedGain + '">' +
         '<td class="num">' + t.date + '</td>' +
-        '<td><strong>' + escapeHtml(t.symbol) + '</strong></td>' +
+        '<td><strong>' + escapeHtml(JournalFormat.identity(t)) + (t.assetType === 'option' ? '<br><small>' + escapeHtml(t.action ? t.action.replace(/_/g, ' ') : 'Close action unavailable') + ' · ' + escapeHtml(JournalFormat.quantity(t)) + '</small>' : '') + '</strong></td>' +
         '<td class="col-optional">' + escapeHtml(t.account) + '</td>' +
         '<td class="col-optional"><span class="badge-type">' + typeLabel(t.assetType) + '</span></td>' +
-        '<td class="num col-optional">' + trimQty(t.quantity) + '</td>' +
-        '<td class="num col-optional">' + (t.price != null ? '$' + t.price.toFixed(2) : '&mdash;') + '</td>' +
+        '<td class="num col-optional">' + escapeHtml(JournalFormat.quantity(t)) + '</td>' +
+        '<td class="num col-optional">' + JournalFormat.closePrices(t) + '</td>' +
         '<td class="num ' + dir + '">' + money(t.realizedGain) + '</td>' +
         '</tr>';
     }).join('');

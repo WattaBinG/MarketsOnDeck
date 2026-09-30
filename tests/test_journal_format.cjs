@@ -1,0 +1,12 @@
+const assert = require('node:assert/strict');
+const j = require('../site/assets/journal-format.js');
+const d = require('../site/assets/trades.json');
+assert.match(j.identity(d.trades[0]), /META \$742.50 put · 2026-10-02/);
+assert.match(j.closePrices(d.trades[0]), /Entry \$8.25\/share · \$825.00\/contract/);
+assert.match(j.closePrices(d.trades[0]), /Exit \$22.80\/share · \$2,280.00\/contract/);
+assert.equal(j.quantity(d.trades[0]), '1 contract');
+assert.match(j.identity({symbol:'META',assetType:'option'}), /details unavailable/);
+assert.match(j.closePrices({assetType:'option',price:2280}), /Unavailable/);
+assert.equal(j.closePrices({assetType:'equity',price:17.1}), '$17.10');
+assert.equal(j.premium({priceUnit:'USD_per_contract',multiplier:100},60.5), '$0.605/share · $60.50/contract');
+console.log('Journal formatter tests passed');
