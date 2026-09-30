@@ -275,6 +275,22 @@
       "timestamp": "2026-09-30T16:07:30Z"
     }
   ],
+  "equityOpenFills": [
+    {
+      "symbol": "HD",
+      "assetType": "equity",
+      "id": "HD-stock-open-1",
+      "account": "Trading",
+      "action": "buy",
+      "shares": 25,
+      "price": 286.005,
+      "priceUnit": "USD_per_share",
+      "filledAt": "2026-09-30T16:09:08Z",
+      "timestampPrecision": "second",
+      "orderRef": "6abd3423",
+      "evidence": "Brokerage execution record"
+    }
+  ],
   "trades": [
     {
       "date": "2026-09-28",
