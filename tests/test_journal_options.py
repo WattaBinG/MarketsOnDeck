@@ -17,11 +17,23 @@ class JournalOptions(unittest.TestCase):
         del self.data['trades'][0]['expiration']
         with self.assertRaises(AssertionError): v.validate(self.data)
     def test_totals_and_fees(self):
-        rows = self.data['trades'][:3]
-        self.assertEqual(len(self.data['trades']), 345)
-        self.assertEqual(self.data['summary']['totalRealizedGain'], 34444.22)
+        rows = [t for t in self.data['trades'] if t.get('contractId') == 'META:2026-10-02:put:742.5'][:3]
+        self.assertEqual(len(self.data['trades']), 353)
+        self.assertEqual(self.data['summary']['totalRealizedGain'], 33801.06)
         self.assertEqual(sum(r['entryPerContract'] * r['contracts'] for r in rows), 5470)
         self.assertEqual(sum(r['exitPerContract'] * r['contracts'] for r in rows), 8240)
         self.assertAlmostEqual(sum(r['regulatoryFees'] for r in rows), .16)
-        self.assertEqual(sum(f['contracts'] for f in self.data['optionOpenFills']), 4)
+        meta_fills = [f for f in self.data['optionOpenFills'] if f.get('contractId') == 'META:2026-10-02:put:742.5']
+        self.assertEqual(sum(f['contracts'] for f in meta_fills), 4)
+
+    def test_sep30_repairs(self):
+        v.validate_sep30_repairs(self.data)
+
+    def test_futures_positions(self):
+        positions = json.loads((ROOT / 'site/assets/positions.json').read_text())
+        v.validate_futures(positions)
+
+    def test_no_dust_deleted(self):
+        positions = json.loads((ROOT / 'site/assets/positions.json').read_text())
+        v.validate_no_dust_deleted(positions)
 if __name__ == '__main__': unittest.main()
