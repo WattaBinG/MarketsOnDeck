@@ -1,6 +1,524 @@
 {
   "items": [
     {
+      "headline": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-24T18:30:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-24T15:00:00Z"
+    },
+    {
+      "headline": "White House access restored for media outlets, but some reporters were denied hours later",
+      "url": "https://www.nbcnews.com/politics/trump-administration/judge-ruling-white-house-restore-access-media-ban-cnn-politico-ms-now-rcna599391",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-24T05:31:01Z"
+    },
+    {
+      "headline": "SEC Publishes Updated Market Statistics, Highlighting Increase in IPOs and Proceeds Raised",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-93-sec-publishes-updated-market-statistics-highlighting-increase-ipos-proceeds-raised",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-23T18:27:00Z"
+    },
+    {
+      "headline": "SCOOP with @​ByKLong @​ceostroff: - The CFTC is examining unusual Kalshi trades with near-identical sizes that now total over $5B - Prop-trading firms Jump Trading (a Kalshi shareholder) and Winter...",
+      "url": "https://x.com/zerohedge/status/2102613006731362620",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-09-23T04:17:02Z"
+    },
+    {
+      "headline": "Japan PM Takaichi: agreed with President Trump at meeting to enhance economic security partnership",
+      "url": "https://x.com/financialjuice/status/2102611624490315922",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-23T04:11:02Z"
+    },
+    {
+      "headline": "Nike (NKE): Wall Street Tests Whether the Turnaround Can Outrun Weak Demand Ahead of Q1 Results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nike-nke-wall-street-tests-040747520.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:07:47Z"
+    },
+    {
+      "headline": "Why AutoZone Stock Rallied Today",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/why-autozone-stock-rallied-today-020051614.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T02:00:51Z"
+    },
+    {
+      "headline": "Ennis (EBF) Grows Sales but Earns Less. Are Legal Items Hiding a Better Business?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/ennis-ebf-grows-sales-earns-015226342.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T01:52:26Z"
+    },
+    {
+      "headline": "Strive CEO: Bitcoin Could ‘Go to Infinity' as Dollar Debt Crisis Breaks",
+      "url": "https://finance.yahoo.com/markets/crypto/articles/strive-ceo-bitcoin-could-infinity-015100441.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T01:51:00Z"
+    },
+    {
+      "headline": "May Mobility's SPAC Merger: Is This a Road to Nowhere for Investors?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/may-mobilitys-spac-merger-road-015000118.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-09-23T01:50:00Z"
+    },
+    {
+      "headline": "Westinghouse Air Brake (WAB) Signs $700 Million-Plus Rail Services Deal. Can Profits Grow?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/westinghouse-air-brake-wab-signs-014350177.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-09-23T01:43:50Z"
+    },
+    {
+      "headline": "Vista Gold (VGZ) Agrees to Sale. Can its Buyer Fund the Mt Todd Gold Mine?",
+      "url": "https://finance.yahoo.com/markets/commodities/articles/vista-gold-vgz-agrees-sale-014206537.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T01:42:06Z"
+    },
+    {
+      "headline": "Titan International (TWI) Signs ITM Sale. How Much of the $285 Million is New Cash?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/titan-international-twi-signs-itm-012718577.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T01:26:44Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces approval of application by BancFirst Corporation",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-22T20:30:00Z"
+    },
+    {
+      "headline": "SEC Censures OTC Link LLC for Repeated Compliance Failures Related to Regulation SCI",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-91-sec-censures-otc-link-llc-repeated-compliance-failures-related-regulation-sci",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-22T16:41:11Z"
+    },
+    {
+      "headline": "Public companies produce most U.S. crude oil and natural gas",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68184",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-22T14:00:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board issues enforcement actions with former employee of Northstar Bank, former employee of American Express Travel Related Services Company, Inc., and former employee of Regions Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-18T15:00:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces termination of enforcement action with SNB Bancshares and Bank of Eufaula",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260918b.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-18T15:00:00Z"
+    },
+    {
+      "headline": "What goes into diesel prices?",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68164",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-18T14:00:00Z"
+    },
+    {
+      "headline": "SEC Issues “Innovation Exemption” to Facilitate the Trading of Tokenized NMS Stock and Request for Comment",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-90-sec-issues-innovation-exemption-facilitate-trading-tokenized-nms-stock-request-comment",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-17T12:55:00Z"
+    },
+    {
+      "headline": "Federal Reserve issues FOMC statement",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-16T18:00:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board and Federal Open Market Committee release economic projections from the September 15-16 FOMC meeting",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916b.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-16T18:00:00Z"
+    },
+    {
+      "headline": "SEC Proposes Rescission of Shareholder Proposal Rule and Reforms to Proxy Solicitation Process",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-89-sec-proposes-rescission-shareholder-proposal-rule-reforms-proxy-solicitation-process",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-16T14:00:00Z"
+    },
+    {
+      "headline": "Corpus Christi LNG expansion makes facility the second-largest in the United States",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68144",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-15T14:00:00Z"
+    },
+    {
+      "headline": "SEC Grants Exemptive Relief from Certain Inline XBRL Filing or Submission Requirements",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-88-sec-grants-exemptive-relief-certain-inline-xbrl-filing-or-submission-requirements",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-14T16:47:00Z"
+    },
+    {
+      "headline": "Joint Readout of Principals’ Meeting of U.S. and UK Authorities Regarding Central Counterparty Resolution",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-87-joint-readout-principals-meeting-us-uk-authorities-regarding-central-counterparty-resolution",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-11T15:00:00Z"
+    },
+    {
+      "headline": "Agencies seek comment on proposed third-party risk management guidance and issue statement on community bank engagement with core service providers",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260911a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-11T14:00:00Z"
+    },
+    {
+      "headline": "Agencies reduce regulatory burden for community banks, increase eligibility for 18-month exam cycle",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260910a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-10T20:00:00Z"
+    },
+    {
+      "headline": "SEC Charges Founder and His Two New Jersey-Based Companies in Alleged $16 Million Ponzi Scheme",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-86-sec-charges-founder-his-two-new-jersey-based-companies-alleged-16-million-ponzi-scheme",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-10T17:45:22Z"
+    },
+    {
+      "headline": "United States on track for record crude oil production in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68125",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-10T14:00:00Z"
+    },
+    {
+      "headline": "New England natural gas prices have been trading near record discounts to Henry Hub",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68124",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-09T14:00:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces termination of enforcement actions with United Texas Bank, Quontic Bank Acquisition Corp., and Quontic Bank Holdings Corp.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260904a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-04T15:00:00Z"
+    },
+    {
+      "headline": "Elevated crack spreads and crude oil prices contribute to higher prices at the pump",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68104",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-04T14:00:00Z"
+    },
+    {
+      "headline": "SEC Proposes Rescission of Political Contribution Rule for Investment Advisers",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-85-sec-proposes-rescission-political-contribution-rule-investment-advisers",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-03T20:30:00Z"
+    },
+    {
+      "headline": "SEC Investor Advisory Committee to Host Sept. 10 Meeting",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-84-sec-investor-advisory-committee-host-sept-10-meeting",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-03T14:27:49Z"
+    },
+    {
+      "headline": "Weekly average load in ERCOT continues near record high",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68084",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-03T14:00:00Z"
+    },
+    {
+      "headline": "SEC Announces Agenda and Panelists for Roundtable on Preparations for 24-Hour Trading",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-83-sec-announces-agenda-panelists-roundtable-preparations-24-hour-trading",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-01T19:17:39Z"
+    },
+    {
+      "headline": "SEC Charges San Francisco Bay Area Private Fund Executives with Multimillion Dollar Ponzi-Like Scheme",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-82-sec-charges-san-francisco-bay-area-private-fund-executives-multimillion-dollar-ponzi-scheme",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-01T17:52:32Z"
+    },
+    {
+      "headline": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68064",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-01T14:00:00Z"
+    },
+    {
+      "headline": "U.S. uranium production more than tripled in 2025 and was the highest since 2017",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68044",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-08-28T14:00:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board issues enforcement action with former employee of Banco Popular de Puerto Rico",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260827a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-08-27T15:00:00Z"
+    },
+    {
+      "headline": "Eight petroleum liquids pipeline projects have been completed since the start of 2025",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68024",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-08-26T14:00:00Z"
+    },
+    {
+      "headline": "Minutes of the Board's discount rate meetings on July 20 and July 29, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260825a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-08-25T18:00:00Z"
+    },
+    {
+      "headline": "Dangote refinery drives increase in petroleum shipments from Nigeria",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68004",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-08-24T14:00:00Z"
+    },
+    {
+      "headline": "Longer wells boost Permian crude oil and natural gas production",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67984",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-08-19T14:00:00Z"
+    },
+    {
+      "headline": "Waterborne shipments from the U.S. Gulf Coast increased in April and May",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67964",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-08-17T14:00:00Z"
+    },
+    {
+      "headline": "Gas cost calculator: How much have higher gas prices cost you?",
+      "url": "https://www.nbcnews.com/data-graphics/gas-price-calculator-iran-war-2026-rcna350151",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-06-20T09:00:40Z"
+    },
+    {
+      "headline": "Tracking U.S., state and county gas prices, in maps and charts",
+      "url": "https://www.nbcnews.com/data-graphics/gas-prices-iran-war-state-national-cost-trump-rcna265835",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-04-08T17:52:34Z"
+    },
+    {
+      "headline": "Jobless claims fall to lowest level since mid-May",
+      "url": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-07-03T12:36:00Z"
+    },
+    {
+      "headline": "Jobless claims stay low in latest week",
+      "url": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-02-13T13:33:00Z"
+    },
+    {
+      "headline": "Consumer credit growth soars in December",
+      "url": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-02-07T20:26:00Z"
+    },
+    {
+      "headline": "U.S. productivity slows down in fourth quarter while unit labor costs accelerate",
+      "url": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-02-06T13:34:00Z"
+    },
+    {
+      "headline": "Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed Bath & Beyond",
+      "url": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-02-03T13:46:00Z"
+    },
+    {
+      "headline": "Trump asks Supreme Court to pause TikTok ban",
+      "url": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Geopolitics",
+      "timestamp": "2024-12-28T00:32:00Z"
+    },
+    {
+      "headline": "Amazon says it had best-ever Thanksgiving Holiday week with record sales and number of items sold",
+      "url": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-12-03T14:05:00Z"
+    },
+    {
+      "headline": "U.S. stock futures and bond yields drop on reports Putin has updated nuclear doctrine",
+      "url": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Macro",
+      "timestamp": "2024-11-19T08:55:00Z"
+    },
+    {
+      "headline": "Charter Communications announces buyout deal for Liberty Broadband at terms above its previous proposal",
+      "url": "https://www.marketwatch.com/story/charter-communications-announces-buyout-deal-for-liberty-broadband-at-terms-above-its-previous-proposal-552f7acd?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Movers",
+      "timestamp": "2024-11-13T13:52:00Z"
+    },
+    {
+      "headline": "General Motors unveils new all-electric Cadillac called the Vistiq with 300-mile range",
+      "url": "https://www.marketwatch.com/story/general-motors-unveils-new-all-electric-cadillac-called-the-vistiq-with-300-mile-range-c16fb8a6?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-11-12T13:53:00Z"
+    },
+    {
+      "headline": "Vestas Wind Systems stock slumps as company says margins to be at low end of guidance",
+      "url": "https://www.marketwatch.com/story/vestas-wind-systems-stock-slumps-as-company-says-margins-to-be-at-low-end-of-guidance-a33bf5c4?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-11-05T08:39:00Z"
+    },
+    {
+      "headline": "Burberry shares rise on report Moncler could bid for it",
+      "url": "https://www.marketwatch.com/story/burberry-shares-rise-on-report-moncler-could-bid-for-it-9de42b98?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Movers",
+      "timestamp": "2024-11-04T08:36:00Z"
+    },
+    {
+      "headline": "Kazatomprom reports 17% increase in production during the third quarter",
+      "url": "https://www.marketwatch.com/story/kazatomprom-reports-17-increase-in-production-during-the-third-quarter-68742d5c?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-11-01T07:36:00Z"
+    },
+    {
+      "headline": "Anheuser-Busch InBev shares slip as sales come up shy of estimates",
+      "url": "https://www.marketwatch.com/story/anheuser-busch-inbev-shares-slip-as-sales-come-up-shy-of-estimates-508282c4?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Movers",
+      "timestamp": "2024-10-31T08:09:00Z"
+    },
+    {
+      "headline": "Wingstop’s stock slides 12% after profit falls short of estimates",
+      "url": "https://www.marketwatch.com/story/wingstops-stock-slides-12-after-profit-falls-short-of-estimates-1146f0ec?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-10-30T12:22:00Z"
+    },
+    {
+      "headline": "Euronext wheat edges lower as US corn stocks weigh on grains",
+      "url": "https://www.investing.com/news/commodities-news/euronext-wheat-edges-lower-as-us-corn-stocks-weigh-on-grains-93CH-4925669",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T17:21:42Z"
+    },
+    {
+      "headline": "Inside Man: How Chinese spies used lies, love and betrayal to target the Federal Reserve",
+      "url": "https://www.cnbc.com/2026/09/30/john-rogers-fed-china-espionage-case.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-09-30T17:21:23Z"
+    },
+    {
+      "headline": "HSBC upgrades Target stock rating on earnings recovery potential",
+      "url": "https://www.investing.com/news/analyst-ratings/hsbc-upgrades-target-stock-rating-on-earnings-recovery-potential-93CH-4925668",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T17:20:44Z"
+    },
+    {
+      "headline": "2 Outstanding Dividend Stocks to Buy and Hold for a Decade",
+      "url": "https://www.nasdaq.com/articles/2-outstanding-dividend-stocks-buy-and-hold-decade",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-09-30T17:20:01Z"
+    },
+    {
+      "headline": "ECB’s Lagarde rules out 2027 French presidential bid",
+      "url": "https://www.investing.com/news/economy-news/ecbs-lagarde-rules-out-2027-french-presidential-bid-93CH-4925666",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-09-30T17:19:22Z"
+    },
+    {
+      "headline": "TRUMP: WE LEAVE IRAQ WITH A WONDERFUL NEW PRIME MINISTER",
+      "url": "https://t.me/WalterBloomberg/36173",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-30T17:19:22Z"
+    },
+    {
+      "headline": "Commerce Secretary Lutnick reports $250 million in 2025 income",
+      "url": "https://www.investing.com/news/economy-news/commerce-secretary-lutnick-reports-250-million-in-2025-income-4925665",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T17:18:59Z"
+    },
+    {
+      "headline": "BTIG cuts Connect Biopharma stock price target on trial timeline",
+      "url": "https://www.investing.com/news/analyst-ratings/btig-cuts-connect-biopharma-stock-price-target-on-trial-timeline-93CH-4925672",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T17:24:45Z"
+    },
+    {
+      "headline": "The ugly economics of consumer AI",
+      "url": "https://techcrunch.com/2026/09/30/the-ugly-economics-of-consumer-ai/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-09-30T17:24:45Z"
+    },
+    {
+      "headline": "Stock Market Indexes Rally on Inflation Data, Though the Dow Sat It Out",
+      "url": "https://www.nasdaq.com/articles/stock-market-indexes-rally-inflation-data-though-dow-sat-it-out",
+      "source": "Nasdaq",
+      "category": "Macro",
+      "timestamp": "2026-09-30T17:23:01Z"
+    },
+    {
       "headline": "SEC Charges South Florida Resident and His Company for Alleged Investment Scheme Defrauding Law Enforcement",
       "url": "https://www.sec.gov/newsroom/press-releases/2026-92-sec-charges-south-florida-resident-his-company-alleged-investment-scheme-defrauding-law-enforcement",
       "source": "SEC",
@@ -881,524 +1399,6 @@
       "source": "SEC",
       "category": "Macro",
       "timestamp": "2026-09-30T15:45:00Z"
-    },
-    {
-      "headline": "Judge blocks New York rent-setting software ban",
-      "url": "https://www.investing.com/news/economy-news/judge-blocks-new-york-rentsetting-software-ban-4925550",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T15:43:05Z"
-    },
-    {
-      "headline": "Trump's meeting with tech leaders leaves AI safety more unsettled than ever",
-      "url": "https://www.cnbc.com/2026/09/30/after-trump-meeting-with-tech-leaders-ai-safety-in-more-chaotic-state.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T15:36:20Z"
-    },
-    {
-      "headline": "Russia ramps up disinformation attacks on French media ahead of 2027 Presidential race",
-      "url": "https://www.france24.com/en/france/20260930-russia-ramps-up-disinformation-attacks-on-french-media-ahead-of-2027-presidential-race",
-      "source": "France 24",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T15:29:40Z"
-    },
-    {
-      "headline": "The 15 worst-performing S&P 500 stocks during a dismal September",
-      "url": "https://www.marketwatch.com/story/the-15-worst-performing-s-p-500-stocks-during-a-dismal-september-991f8a07?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T15:28:00Z"
-    },
-    {
-      "headline": "US inflation rises below expectations in August; consumer spending robust",
-      "url": "https://www.investing.com/news/economy-news/us-inflation-rises-less-than-expected-in-august-consumer-spending-surges-4925188",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T15:25:06Z"
-    },
-    {
-      "headline": "Senate expected to vote on stock trading ban, data center bill before election recess",
-      "url": "https://www.cnbc.com/2026/09/30/senate-stock-trading-ban-data-center-election.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T15:19:39Z"
-    },
-    {
-      "headline": "'Super intelligence is a national security issue,' Jay Clayton says; dodges AI 'czar' question",
-      "url": "https://www.cnbc.com/2026/09/30/ai-national-security-jay-clayton.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T15:16:17Z"
-    },
-    {
-      "headline": "Fed’s preferred gauge showed core inflation at 3.0% in August, much lighter than expected",
-      "url": "https://www.cnbc.com/2026/09/30/feds-preferred-gauge-showed-core-inflation-at-3point0percent-in-august-much-lighter-than-expected.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-09-30T15:14:57Z"
-    },
-    {
-      "headline": "Greggs to shut four factories and cut 740 jobs",
-      "url": "https://www.bbc.co.uk/news/articles/cm7802ylq973o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T15:03:22Z"
-    },
-    {
-      "headline": "Deutsche Bank CEO warns Germany’s political shift is troubling foreign investors",
-      "url": "https://www.cnbc.com/2026/09/30/deutsche-bank-germany-investors-elections.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T15:00:54Z"
-    },
-    {
-      "headline": "‘We lived within our means’: I earned $30,000 as a pastor and still retired comfortably. Why don’t you tell people that?",
-      "url": "https://www.marketwatch.com/story/we-lived-within-our-means-i-earned-30-000-as-a-pastor-and-still-retired-comfortably-why-dont-you-tell-people-that-6b9f231e?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T15:00:00Z"
-    },
-    {
-      "headline": "Citi tells investors it’s time to sell Moderna after 600%-plus stock gains",
-      "url": "https://www.marketwatch.com/story/citi-tells-investors-its-time-to-sell-moderna-after-600-plus-stock-gains-84cb9b62?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:59:00Z"
-    },
-    {
-      "headline": "China extends 52-year unbeaten record as Asian Games organisers apologise",
-      "url": "https://www.aljazeera.com/sports/2026/9/30/china-extends-52-year-unbeaten-record-as-asian-games-organisers-apologise?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T14:54:34Z"
-    },
-    {
-      "headline": "Russia launches largest attack on Ukraine energy infrastructure since spring",
-      "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T14:53:02Z"
-    },
-    {
-      "headline": "Google reportedly tests paying publishers for AI search results",
-      "url": "https://www.theverge.com/tech/1002665/google-paying-publishers-ai-search-features",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-30T14:51:49Z"
-    },
-    {
-      "headline": "Another day, another AI warning: Bridgewater sounds the alarm on 18% labor shock",
-      "url": "https://www.investing.com/news/economy-news/another-day-another-ai-warning-bridgewater-sounds-the-alarm-on-18-labor-shock-4925471",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:49:41Z"
-    },
-    {
-      "headline": "German inflation hits highest level in almost 3 years",
-      "url": "https://www.investing.com/news/economy-news/german-unemployment-rises-much-more-than-expected-in-september-4924280",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:49:09Z"
-    },
-    {
-      "headline": "Analysis-AI borrowers face tough sell in risky corners of US credit market",
-      "url": "https://www.investing.com/news/economy-news/analysisai-borrowers-face-tough-sell-in-risky-corners-of-us-credit-market-4925428",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:42:36Z"
-    },
-    {
-      "headline": "Private sector jobs rose by 90,000 in September, better than expected, ADP reports",
-      "url": "https://www.cnbc.com/2026/09/30/private-sector-jobs-rose-by-90000-in-september-better-than-expected-adp-reports.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:42:04Z"
-    },
-    {
-      "headline": "US dollar retreats after softer-than-expected inflation data",
-      "url": "https://www.investing.com/news/economy-news/dollar-set-for-september-rise-mainly-at-euros-expense-4923987",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:37:25Z"
-    },
-    {
-      "headline": "Household energy bills forecast to see biggest rise in four years",
-      "url": "https://www.bbc.co.uk/news/articles/cwz0zvj4m1myo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:36:45Z"
-    },
-    {
-      "headline": "U.S. DIESEL FUTURES EXTEND GAINS, UP 4.5%, AFTER EIA STORAGE REPORT",
-      "url": "https://t.me/WalterBloomberg/36167",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:35:22Z"
-    },
-    {
-      "headline": "Fed finalizes bank ’stress test’ overhaul",
-      "url": "https://www.investing.com/news/economy-news/fed-finalizes-bank-stress-test-overhaul-4925252",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:32:29Z"
-    },
-    {
-      "headline": "Eli Lilly says closely watched combo obesity regimen boosts weight loss in mid-stage trial",
-      "url": "https://www.cnbc.com/2026/09/30/eli-lilly-obesity-drug-amylin-tirzepatide-weight-loss-trial.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:32:03Z"
-    },
-    {
-      "headline": "Adding Lilly’s new drug to Zepbound helped people lose up to 23% of their weight. But there were more side effects.",
-      "url": "https://www.marketwatch.com/story/adding-lillys-new-drug-to-zepbound-helped-people-lose-up-to-23-of-their-weight-but-there-were-more-side-effects-b7b7c6c0?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:32:00Z"
-    },
-    {
-      "headline": "Wall St regulator to unveil new retail investor proposals for private assets",
-      "url": "https://www.investing.com/news/economy-news/wall-st-regulator-to-unveil-new-retail-investor-proposals-for-private-assets-4924538",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:31:56Z"
-    },
-    {
-      "headline": "Kalshi, Polymarket trading volumes on some products raises questions amid massive growth",
-      "url": "https://www.cnbc.com/2026/09/30/kalshi-polymarket-trading-volume-scrutiny.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:31:26Z"
-    },
-    {
-      "headline": "This is the big risk that stock investors should be watching as rising bond yields menace markets",
-      "url": "https://www.marketwatch.com/story/this-is-the-big-risk-that-stock-investors-should-be-watching-as-rising-bond-yields-menace-markets-904cae0a?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:31:00Z"
-    },
-    {
-      "headline": "Instagram is adding an AI ‘assistant’ to tell you how to post",
-      "url": "https://www.theverge.com/tech/1002402/instagram-ai-edits-assistant-creators-analytics-youtube",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-30T14:30:00Z"
-    },
-    {
-      "headline": "Cerebras Systems’ Andrew Feldman on whether AI can keep scaling at TechCrunch Disrupt 2026",
-      "url": "https://techcrunch.com/2026/09/30/cerebras-systems-andrew-feldman-on-whether-ai-can-keep-scaling-at-techcrunch-disrupt-2026/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-30T14:30:00Z"
-    },
-    {
-      "headline": "Restate lands $20M as the need for durable infrastructure increases with AI agents",
-      "url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-30T14:27:11Z"
-    },
-    {
-      "headline": "$LLY - ELI LILLY’S NEW OBESITY DRUG DELIVERS 23.3% WEIGHT LOSS Eli Lilly’s experimental drug eloralintide, combined with Zepbound, delivered 23.3% average weight loss over roughly 11 months, compar...",
-      "url": "https://t.me/WalterBloomberg/36166",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:17:15Z"
-    },
-    {
-      "headline": "3 days left to exhibit: Turn visibility into your next opportunity at TechCrunch Disrupt 2026",
-      "url": "https://techcrunch.com/2026/09/30/3-days-left-to-exhibit-at-techcrunch-disrupt-2026-2/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-30T14:15:00Z"
-    },
-    {
-      "headline": "Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
-      "url": "https://www.benzinga.com/money/toncoin-ton-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:19Z"
-    },
-    {
-      "headline": "Myro (MYRO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/myro-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:18Z"
-    },
-    {
-      "headline": "PancakeSwap (CAKE) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/pancakeswap-cake-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:18Z"
-    },
-    {
-      "headline": "Algorand (ALGO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/algorand-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:17Z"
-    },
-    {
-      "headline": "Hedera Hashgraph (HBAR) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/hedera-hashgraph-hbar-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:16Z"
-    },
-    {
-      "headline": "Arweave (AR) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/arweave-ar-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:15Z"
-    },
-    {
-      "headline": "Bittensor (TAO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/bittensor-tao-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:14Z"
-    },
-    {
-      "headline": "Uniswap (UNI) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/uniswap-uni-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:14Z"
-    },
-    {
-      "headline": "Polkadot (DOT) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/polkadot-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:13Z"
-    },
-    {
-      "headline": "Filecoin (FIL) Price Prediction: 2025, 2025, 2030",
-      "url": "https://www.benzinga.com/money/filecoin-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:11:12Z"
-    },
-    {
-      "headline": "Americans get back to their spending ways. Economy might be speeding up again.",
-      "url": "https://www.marketwatch.com/story/americans-get-back-to-their-spending-ways-economy-might-be-speeding-up-again-7884c424?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:08:00Z"
-    },
-    {
-      "headline": "U.S. INFLATION BREADTH SHOWS SIGNS OF COOLING Despite softer core PCE revisions, 51% of the PCE basket is still rising at 3% or more annually, little changed from recent months. However, the share...",
-      "url": "https://t.me/WalterBloomberg/36165",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:07:54Z"
-    },
-    {
-      "headline": "MEXICO GROWS CONFIDENT ON US DEAL TO CUT STEEL, AUTO TARIFFS",
-      "url": "https://t.me/WalterBloomberg/36164",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Movers",
-      "timestamp": "2026-09-30T14:05:48Z"
-    },
-    {
-      "headline": "Regulating AI 'not the right place to start' says Bailey",
-      "url": "https://www.bbc.co.uk/news/articles/cvzez7k0pn40o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T14:00:33Z"
-    },
-    {
-      "headline": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68224",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-09-30T14:00:00Z"
-    },
-    {
-      "headline": "FTC LAUNCHES INDUSTRY-WIDE AI PROBE AFTER HUGGING FACE INCIDENT The U.S. Federal Trade Commission is conducting an industry-wide AI investigation following the Hugging Face incident, according to a...",
-      "url": "https://t.me/WalterBloomberg/36163",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-09-30T13:55:42Z"
-    },
-    {
-      "headline": "Why Israel is interfering in Palestinian education",
-      "url": "https://www.aljazeera.com/opinions/2026/9/30/why-israel-is-interfering-in-palestinian-education?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-30T13:22:33Z"
-    },
-    {
-      "headline": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-09-30T13:00:00Z"
-    },
-    {
-      "headline": "America.gov gets really weird when you ask it about Minecraft, but it’s not a glitch",
-      "url": "https://techcrunch.com/2026/09/29/america-gov-gets-really-weird-when-you-ask-it-about-minecraft-but-its-not-a-glitch/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-29T23:30:55Z"
-    },
-    {
-      "headline": "Chinese AI tool told researchers how to make bioweapons",
-      "url": "https://www.bbc.co.uk/news/articles/cmrergq3j7lgo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T23:15:29Z"
-    },
-    {
-      "headline": "The start-ups hoping to return battery making to the US",
-      "url": "https://www.bbc.co.uk/news/articles/cvgyexx4g8ro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T23:06:50Z"
-    },
-    {
-      "headline": "Huel ad banned for suggesting its products could replace all meals",
-      "url": "https://www.bbc.co.uk/news/articles/c920v3y1gjgpo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T23:06:06Z"
-    },
-    {
-      "headline": "OpenAI launches always-on AI agents a day after apologizing for a hack by its bots",
-      "url": "https://www.nbcnews.com/tech/tech-news/openai-launches-dots-ai-agents-safety-questions-rcna600338",
-      "source": "NBC News",
-      "category": "AI",
-      "timestamp": "2026-09-29T23:03:10Z"
-    },
-    {
-      "headline": "Trump orders US government to call AI ‘Super Intelligence’",
-      "url": "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai",
-      "source": "The Verge",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-29T22:25:45Z"
-    },
-    {
-      "headline": "The internet is convinced Elon Musk’s xAI trolled OpenAI’s ‘Dots’ launch",
-      "url": "https://techcrunch.com/2026/09/29/the-internet-is-convinced-elon-musks-xai-trolled-openais-dots-launch/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-29T22:20:59Z"
-    },
-    {
-      "headline": "Elon Musk’s AI-powered Grokipedia is updating again",
-      "url": "https://www.theverge.com/tech/1002448/elon-musk-grokipedia-ai-updating-again",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-29T21:49:09Z"
-    },
-    {
-      "headline": "Protesters gather at OpenAI’s DevDay",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1002201/openai-sam-altman-openai-devday-protests-ice-data-centers",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-29T17:12:27Z"
-    },
-    {
-      "headline": "What is the triple lock and why are people talking about it?",
-      "url": "https://www.bbc.co.uk/news/articles/cq6m03ld7nvo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T17:09:46Z"
-    },
-    {
-      "headline": "Faisal Islam: Triple lock move is significant, but it's a gamble",
-      "url": "https://www.bbc.co.uk/news/articles/cwp93d078j8no?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-09-29T16:43:39Z"
-    },
-    {
-      "headline": "OpenAI DevDay 2026: The biggest news and announcements",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1001681/openai-devday-2026-biggest-news-announcements",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-09-29T16:00:00Z"
-    },
-    {
-      "headline": "SEC Charges Multiple Entities in Fraud Schemes Totaling at Least $15 Million That Used WhatsApp and Other Platforms to Lure Investors",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-95-sec-charges-multiple-entities-fraud-schemes-totaling-least-15-million-used-whatsapp-other-platforms",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-09-29T13:55:53Z"
-    },
-    {
-      "headline": "Consumer Hot Topics: Spam Calls, Credit Safety and More",
-      "url": "https://www.today.com/video/consumer-hot-topics-spam-calls-credit-safety-and-more-270719045526",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-09-29T13:28:10Z"
-    },
-    {
-      "headline": "New York Times executive fatally shot by his in-laws in Bay Area park, police say",
-      "url": "https://www.nbcnews.com/news/us-news/new-york-executive-shot-killed-laws-bay-area-park-police-say-rcna600300",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-09-28T18:17:51Z"
-    },
-    {
-      "headline": "SEC Charges Registered Investment Adviser Zoe Financial for Failure to Disclose Conflict of Interest",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-94-sec-charges-registered-investment-adviser-zoe-financial-failure-disclose-conflict-interest",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-09-28T17:46:30Z"
-    },
-    {
-      "headline": "Stocks fall, bond yields surge and oil fluctuates as war keeps markets on edge",
-      "url": "https://www.nbcnews.com/business/markets/stocks-oil-bond-yields-geopolitics-rcna600284",
-      "source": "NBC News",
-      "category": "Macro",
-      "timestamp": "2026-09-28T16:23:35Z"
-    },
-    {
-      "headline": "Trump unveils plans for a $15 billion steel mill in Iowa",
-      "url": "https://www.nbcnews.com/politics/trump-administration/trump-unveil-steel-plant-iowa-tariffs-manufacturing-rcna600241",
-      "source": "NBC News",
-      "category": "Geopolitics",
-      "timestamp": "2026-09-28T16:00:37Z"
-    },
-    {
-      "headline": "Money-Saving Strategies as Grocery Price Wars Get Underway",
-      "url": "https://www.today.com/video/price-wars-get-underway-at-grocery-store-checkout-lines-270642757815",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-09-28T12:19:32Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-09-25T20:30:00Z"
-    },
-    {
-      "headline": "Should you bring iced coffee to a job interview? Question brews generational debate",
-      "url": "https://www.nbcnews.com/business/business-news/iced-coffee-job-interview-online-generational-debate-rcna599764",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-09-25T17:16:35Z"
-    },
-    {
-      "headline": "Henry Hub natural gas prices this summer were 6% lower than last summer",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-09-25T14:00:00Z"
-    },
-    {
-      "headline": "Mortgage Rates Hit Highest Level in More Than 2 Years",
-      "url": "https://www.today.com/video/mortgage-rates-hit-highest-level-in-more-than-2-years-270514757989",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-09-25T11:25:45Z"
     }
   ]
 }
