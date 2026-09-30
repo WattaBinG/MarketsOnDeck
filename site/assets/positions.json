@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-30T15:42:10Z",
+  "asOf": "2026-09-30T16:43:14Z",
   "asOfLabel": "Market Close, Sep 29",
   "positions": [
     {
@@ -36,11 +36,11 @@
       "account": "Trading",
       "symbol": "HD",
       "assetType": "equity",
-      "quantity": 75.0,
-      "avgCost": 300.7,
+      "quantity": 100.0,
+      "avgCost": 297.03,
       "currentPrice": 288.04,
       "priorClose": 289.89,
-      "unrealizedGain": -949.5
+      "unrealizedGain": -899.0
     },
     {
       "account": "Agentic",
@@ -64,6 +64,32 @@
     },
     {
       "account": "Trading",
+      "symbol": "HD",
+      "assetType": "option",
+      "optionType": "call",
+      "strike": 287.5,
+      "expiration": "2026-10-09",
+      "quantity": 3,
+      "avgCost": 465.0,
+      "currentPrice": 643.0,
+      "priorClose": 800.0,
+      "unrealizedGain": 534.0
+    },
+    {
+      "account": "Trading",
+      "symbol": "TSLA",
+      "assetType": "option",
+      "optionType": "call",
+      "strike": 365,
+      "expiration": "2026-10-02",
+      "quantity": 7,
+      "avgCost": 307.7143,
+      "currentPrice": 202.0,
+      "priorClose": 385.0,
+      "unrealizedGain": -740.0
+    },
+    {
+      "account": "Trading",
       "symbol": "SPCX",
       "assetType": "option",
       "optionType": "call",
@@ -73,13 +99,7 @@
       "avgCost": 261.6112,
       "currentPrice": 87.0,
       "priorClose": 57.0,
-      "unrealizedGain": -698.44,
-      "underlying": "SPCX",
-      "contracts": 4,
-      "multiplier": 100,
-      "priceUnit": "USD_per_contract",
-      "positionSide": "long",
-      "contractId": "SPCX:2026-10-02:call:155"
+      "unrealizedGain": -698.44
     },
     {
       "account": "Trading",
@@ -92,32 +112,7 @@
       "avgCost": 497.5,
       "currentPrice": 44.0,
       "priorClose": 83.0,
-      "unrealizedGain": -907.0,
-      "underlying": "HD",
-      "contracts": 2,
-      "multiplier": 100,
-      "priceUnit": "USD_per_contract",
-      "positionSide": "long",
-      "contractId": "HD:2026-10-02:call:300"
-    },
-    {
-      "account": "Trading",
-      "symbol": "TSLA",
-      "assetType": "option",
-      "optionType": "call",
-      "strike": 365,
-      "expiration": "2026-10-02",
-      "quantity": 3,
-      "avgCost": 563.3333,
-      "currentPrice": 202.0,
-      "priorClose": 385.0,
-      "unrealizedGain": -1084.0,
-      "underlying": "TSLA",
-      "contracts": 3,
-      "multiplier": 100,
-      "priceUnit": "USD_per_contract",
-      "positionSide": "long",
-      "contractId": "TSLA:2026-10-02:call:365"
+      "unrealizedGain": -907.0
     },
     {
       "account": "Agentic",
@@ -130,13 +125,7 @@
       "avgCost": 60.5,
       "currentPrice": 105.0,
       "priorClose": 26.0,
-      "unrealizedGain": 44.5,
-      "underlying": "CCL",
-      "contracts": 1,
-      "multiplier": 100,
-      "priceUnit": "USD_per_contract",
-      "positionSide": "long",
-      "contractId": "CCL:2026-10-16:call:25"
+      "unrealizedGain": 44.5
     },
     {
       "account": "Trading",
@@ -154,9 +143,9 @@
       "assetType": "crypto",
       "quantity": 1.599999835075599,
       "avgCost": 2448.1128,
-      "currentPrice": 2681.0746,
-      "priorClose": 2681.0746,
-      "unrealizedGain": 372.74
+      "currentPrice": 2687.2851,
+      "priorClose": 2687.2851,
+      "unrealizedGain": 382.68
     }
   ]
 }
