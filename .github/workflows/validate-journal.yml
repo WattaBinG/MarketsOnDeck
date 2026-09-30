@@ -1,7 +1,7 @@
 name: Validate option journal
 on:
   pull_request:
-    paths: ['site/assets/trades.json', 'site/assets/positions.json', 'site/assets/*journal*', 'site/assets/record.js', 'scripts/validate_journal.py', 'tests/*journal*']
+    paths: ['site/assets/trades.json', 'site/assets/positions.json', 'site/assets/*journal*', 'site/assets/record.js', 'scripts/validate_journal.py', 'tests/*journal*', 'tests/test_display_filter.cjs']
   push:
     branches: [main]
     paths: ['site/assets/trades.json', 'site/assets/positions.json']
@@ -13,3 +13,4 @@ jobs:
       - run: python3 scripts/validate_journal.py
       - run: python3 -m unittest discover -s tests -p 'test_journal*.py'
       - run: node tests/test_journal_format.cjs
+      - run: node tests/test_display_filter.cjs

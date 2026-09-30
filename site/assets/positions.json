@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-09-30T17:43:08Z",
-  "asOfLabel": "Market Close, Sep 29",
+  "asOf": "2026-09-30",
+  "asOfLabel": "September 30, 2026",
   "positions": [
     {
       "account": "Trading",
@@ -69,11 +69,18 @@
       "optionType": "call",
       "strike": 287.5,
       "expiration": "2026-10-09",
-      "quantity": 5,
-      "avgCost": 453.0,
+      "quantity": 9,
+      "avgCost": 425.0,
       "currentPrice": 643.0,
       "priorClose": 800.0,
-      "unrealizedGain": 950.0
+      "unrealizedGain": 1962.0,
+      "positionSide": "long",
+      "contractId": "HD:2026-10-09:call:287.5",
+      "basisNote": "9 contracts 9/30: 3@$4.65 + 2@$4.35 + 4@$3.90 = $425 avg.",
+      "priceUnit": "USD_per_contract",
+      "contracts": 9,
+      "multiplier": 100,
+      "underlying": "HD"
     },
     {
       "account": "Trading",
@@ -86,7 +93,14 @@
       "avgCost": 307.7143,
       "currentPrice": 202.0,
       "priorClose": 385.0,
-      "unrealizedGain": -740.0
+      "unrealizedGain": -740.0,
+      "positionSide": "long",
+      "contractId": "TSLA:2026-10-02:call:365.0",
+      "basisNote": "7 contracts: 1@$5.40 + 2@$5.75 + 4@$1.16 (9/30) = $307.71 avg.",
+      "priceUnit": "USD_per_contract",
+      "contracts": 7,
+      "multiplier": 100,
+      "underlying": "TSLA"
     },
     {
       "account": "Trading",
@@ -96,10 +110,17 @@
       "strike": 155,
       "expiration": "2026-10-02",
       "quantity": 2,
-      "avgCost": 261.6112,
-      "currentPrice": 87.0,
+      "avgCost": 87.0,
+      "currentPrice": 82.0,
       "priorClose": 57.0,
-      "unrealizedGain": -349.22
+      "unrealizedGain": -10.0,
+      "positionSide": "long",
+      "contractId": "SPCX:2026-10-02:call:155.0",
+      "basisNote": "Sep 28 $0.87 lot remains; Sep 22 $4.25 lot closed 9/30. Screenshot -$10.",
+      "priceUnit": "USD_per_contract",
+      "contracts": 2,
+      "multiplier": 100,
+      "underlying": "SPCX"
     },
     {
       "account": "Trading",
@@ -112,7 +133,14 @@
       "avgCost": 497.5,
       "currentPrice": 44.0,
       "priorClose": 83.0,
-      "unrealizedGain": -907.0
+      "unrealizedGain": -907.0,
+      "positionSide": "long",
+      "contractId": "HD:2026-10-02:call:300.0",
+      "basisNote": "2 contracts @ $4.975 avg ($497.50/contract).",
+      "priceUnit": "USD_per_contract",
+      "contracts": 2,
+      "multiplier": 100,
+      "underlying": "HD"
     },
     {
       "account": "Agentic",
@@ -122,20 +150,28 @@
       "strike": 25,
       "expiration": "2026-10-16",
       "quantity": 1,
-      "avgCost": 60.5,
+      "avgCost": 35.0,
       "currentPrice": 105.0,
       "priorClose": 26.0,
-      "unrealizedGain": 44.5
+      "unrealizedGain": 70.0,
+      "positionSide": "long",
+      "contractId": "CCL:2026-10-16:call:25.0",
+      "basisNote": "Sep 22 $0.35 lot remains; Sep 2 $0.86 lot closed 9/30.",
+      "priceUnit": "USD_per_contract",
+      "contracts": 1,
+      "multiplier": 100,
+      "underlying": "CCL"
     },
     {
       "account": "Trading",
       "symbol": "USDG",
       "assetType": "crypto",
-      "quantity": 1.0,
+      "quantity": 102.582488,
       "avgCost": 1.0,
       "currentPrice": 1.0,
       "priorClose": 1.0,
-      "unrealizedGain": 0.0
+      "unrealizedGain": 0.0,
+      "note": "Cash-like, 7% APY. Screenshot-confirmed."
     },
     {
       "account": "Trading",
@@ -143,9 +179,47 @@
       "assetType": "crypto",
       "quantity": 1.599999835075599,
       "avgCost": 2448.1128,
-      "currentPrice": 2679.3312,
-      "priorClose": 2679.3312,
-      "unrealizedGain": 369.95
+      "currentPrice": 2680.63,
+      "priorClose": 2680.63,
+      "unrealizedGain": 372.03
+    },
+    {
+      "account": "Trading",
+      "symbol": "DOGE",
+      "assetType": "crypto",
+      "quantity": 1.0,
+      "avgCost": 0.07,
+      "currentPrice": 0.094,
+      "priorClose": 0.094,
+      "unrealizedGain": 0.024,
+      "note": "Dust, retained. Reward basis."
+    },
+    {
+      "account": "Trading",
+      "symbol": "USDC",
+      "assetType": "crypto",
+      "quantity": 0.00993,
+      "avgCost": 1.0,
+      "currentPrice": 1.0,
+      "priorClose": 1.0,
+      "unrealizedGain": 0.0,
+      "note": "Dust, retained."
+    },
+    {
+      "account": "Trading",
+      "symbol": "METV26",
+      "assetType": "futures",
+      "quantity": 10,
+      "quantityUnit": "contracts",
+      "avgCost": 267.805,
+      "currentPrice": 269.05,
+      "quotedAvgCost": 2678.05,
+      "quotedMark": 2690.5,
+      "multiplier": 0.1,
+      "expiration": "2026-10-30",
+      "unrealizedGain": 12.45,
+      "positionSide": "long",
+      "note": "Micro Ether Futures Oct 2026. Native quotes. Browser-verified 2026-09-30."
     }
   ]
 }
