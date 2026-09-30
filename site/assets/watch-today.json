@@ -1,32 +1,13 @@
 {
-  "date": "2026-09-30",
-  "dateLabel": "Wednesday, September 30",
+  "date": "2026-10-01",
+  "dateLabel": "Thursday, October 1",
   "events": [
-    {
-      "time": "8:30 AM ET",
-      "event": "GDP (Third Estimate), Industries, Corporate Profits, State GDP, and State Personal Income, 2nd Quarter 2026; State PCE, 2025",
-      "kind": "gdp",
-      "actual": "GDP +2.2% annualized"
-    },
-    {
-      "time": "8:30 AM ET",
-      "event": "Personal Income and Outlays, August 2026",
-      "kind": "pce",
-      "actual": "PCE price +0.3% m/m"
-    },
-    {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Petroleum Status Report",
-      "kind": "crude_stocks",
-      "prev": "crude stocks +3.0M bbl",
-      "actual": "crude stocks +0.9M bbl"
-    }
+    { "time": "Before Market Open", "event": "Accenture Earnings (BMO)" },
+    { "time": "8:30 AM ET", "event": "Jobless Claims" },
+    { "time": "9:45 AM ET", "event": "S&P Manufacturing PMI" },
+    { "time": "10:00 AM ET", "event": "ISM Manufacturing PMI" },
+    { "time": "10:00 AM ET", "event": "Construction Spending" },
+    { "time": "4:15 PM ET", "event": "Nike Earnings (AMC)" }
   ],
-  "note": null,
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
