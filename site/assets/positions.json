@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-30T14:45:00Z",
+  "asOf": "2026-09-30T15:42:10Z",
   "asOfLabel": "Market Close, Sep 29",
   "positions": [
     {
@@ -126,13 +126,13 @@
       "optionType": "call",
       "strike": 25,
       "expiration": "2026-10-16",
-      "quantity": 2,
+      "quantity": 1,
       "avgCost": 60.5,
       "currentPrice": 105.0,
       "priorClose": 26.0,
-      "unrealizedGain": 89.0,
+      "unrealizedGain": 44.5,
       "underlying": "CCL",
-      "contracts": 2,
+      "contracts": 1,
       "multiplier": 100,
       "priceUnit": "USD_per_contract",
       "positionSide": "long",
@@ -140,13 +140,23 @@
     },
     {
       "account": "Trading",
+      "symbol": "USDG",
+      "assetType": "crypto",
+      "quantity": 1.0,
+      "avgCost": 1.0,
+      "currentPrice": 1.0,
+      "priorClose": 1.0,
+      "unrealizedGain": 0.0
+    },
+    {
+      "account": "Trading",
       "symbol": "ETH",
       "assetType": "crypto",
       "quantity": 1.599999835075599,
-      "avgCost": 2448.11,
-      "currentPrice": 2674.6,
-      "priorClose": 2674.6,
-      "unrealizedGain": 362.38
+      "avgCost": 2448.1128,
+      "currentPrice": 2681.0746,
+      "priorClose": 2681.0746,
+      "unrealizedGain": 372.74
     }
   ]
 }
