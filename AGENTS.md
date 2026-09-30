@@ -43,6 +43,19 @@ Claude Code scheduled trigger, not anything in this repo's `.github/workflows/` 
 - Cloudflare deploy cleanup: check actual GitHub-to-Workers pipeline and preview/production separation before changing it; no silent production deployment.
 - Prediction game and Reddit launch are parked. Do not build, announce or post them without a new Keith decision.
 
+
+## The Record ledger (option journal v2)
+
+- **Pull both Trading and Agentic histories.** Every fill from both accounts must appear in the ledger. New option buys are trades too, not just closes.
+- **Preserve executing-account ownership.** Each trade row carries the account that executed it. Never merge or reassign.
+- **Use Robinhood's standard detailed position/order views only. Never legend mode** (per Keith, 2026-09-30 — too confusing).
+- **Keep options, futures, and crypto native.** Options use full contract identity (underlying, strike, expiration, type). Futures use quoted prices with multiplier. Crypto uses exact quantities.
+- **Ticker strip uses underlyings only.** Never show option contract symbols or futures codes in the ticker strip.
+- **Muse owns the Record ledger writer.** The active stop order above remains until Keith authorizes cutover.
+- **Internal data retains all positions; sub-$5 hiding is display-only.** Never delete nonzero dust from `positions.json`. Every dollar remains in accounting and totals. Public rendering hides table rows under $5 only; stats and unrealized totals use all rows.
+- **USDG is cash-like.** No trade rows, no P&L tracking. Book the exact unit quantity the account shows.
+- **Book only what the account confirms. If the account and the ledger disagree, flag the discrepancy — don't average or guess.**
+
 ## Handoff lanes
 
 Spark/Gemini can research and draft Market Tape copy, but verify its source access and facts; do not assume it can edit GitHub. Codex handles local routines and code when available. Instinct can implement and prepare PRs/previews and coordinate reviewed publication. These are working lanes, not exclusive permissions: Keith approves the public result and can change assignments. On each handoff, report what was actually done, what remains queued or blocked, and links to the real artifacts.
