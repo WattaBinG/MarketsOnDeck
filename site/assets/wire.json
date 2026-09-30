@@ -1,48 +1,88 @@
 {
-  "asOf": "2026-09-30T16:46:22Z",
-  "asOfLabel": "12:46 PM ET",
+  "asOf": "2026-09-30T17:00:55Z",
+  "asOfLabel": "1:00 PM ET",
   "topStory": {
-    "headline": "Why is Vistra stock sliding today?",
-    "url": "https://www.investing.com/news/stock-market-news/why-is-vistra-stock-sliding-today-93CH-4925604",
-    "source": "Investing.com",
-    "category": "Markets",
-    "timestamp": "2026-09-30T16:20:10Z",
-    "firstSeen": "2026-09-30T16:31:28Z",
-    "leadSince": "2026-09-30T16:31:28Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "Gold is supposed to be a safe haven when inflation surges. So why isn’t it working that way now?",
+    "url": "https://www.marketwatch.com/story/gold-is-supposed-to-be-a-safe-haven-when-inflation-surges-so-why-isnt-it-working-that-way-now-45cbb07b?mod=mw_rss_topstories",
+    "source": "MarketWatch",
+    "category": "Macro",
+    "timestamp": "2026-09-30T16:51:00Z",
+    "firstSeen": "2026-09-30T17:00:55Z",
+    "leadSince": "2026-09-30T17:00:55Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "Highest Volume Contracts / No Index/ETFs",
-      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-09-30T16:45:45Z",
-      "firstSeen": "2026-09-30T16:31:28Z"
-    },
-    {
-      "headline": "Goldman Sachs shifts fed forecast to December hike from October",
-      "url": "https://x.com/financialjuice/status/2105338190270005250",
+      "headline": "*FED WATCHDOG FINDS NO CRIMINAL VIOLATIONS IN RENOVATION PROJECT",
+      "url": "https://x.com/zerohedge/status/2105341993220280812",
       "source": "MarketsOnDeck Discord",
       "category": "Macro",
-      "timestamp": "2026-09-30T16:45:33Z",
-      "firstSeen": "2026-09-30T16:46:22Z"
+      "timestamp": "2026-09-30T17:00:41Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
+    },
+    {
+      "headline": "Gulf Exports Roar Back To Pre-War Levels, Goldman Says; Blas Sees \"Trump Has Advantage\" On Hormuz <>",
+      "url": "https://www.zerohedge.com/energy/gulf-exports-roar-back-pre-war-levels-goldman-says-blas-sees-trump-has-advantage-hormuz",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-09-30T17:00:40Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
+    },
+    {
+      "headline": "10Y yield +6bps, 5.30% any second: highest since 2002 <:neort:875080101035917332>",
+      "url": "https://x.com/zerohedge/status/2105341286194577477",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-30T16:57:42Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
     },
     {
       "headline": "DOJ accuses Minnesota federal judges of misconduct for NY Times immigration interviews",
       "url": "https://www.cnbc.com/2026/09/30/doj-minnesota-judges-complaint.html",
       "source": "CNBC",
       "category": "Markets",
-      "timestamp": "2026-09-30T16:44:50Z",
+      "timestamp": "2026-09-30T16:57:12Z",
       "firstSeen": "2026-09-30T16:31:28Z"
     },
     {
-      "headline": "US oil industry warns diesel prices will not return to normal for a year - FT <>",
-      "url": "https://www.ft.com/content/0d74d66a-a9ee-4c22-83ab-9df6452117de?syn-25a6b1a6=1",
+      "headline": "SpaceXAI plans to soon unveil four Grok pricing tiers. $SPCX",
+      "url": "https://x.com/financialjuice/status/2105340675436707930",
+      "source": "MarketsOnDeck Discord",
+      "category": "AI",
+      "timestamp": "2026-09-30T16:56:38Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
+    },
+    {
+      "headline": "Highest Volume Contracts / No Index/ETFs",
+      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-09-30T16:44:32Z",
-      "firstSeen": "2026-09-30T16:46:22Z"
+      "timestamp": "2026-09-30T16:51:25Z",
+      "firstSeen": "2026-09-30T16:31:28Z"
+    },
+    {
+      "headline": "Focus Turns To Japan As Source Of Relentless Treasury Selling <>",
+      "url": "https://www.zerohedge.com/markets/focus-turns-japan-source-relentless-treasury-selling",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-30T16:48:34Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
+    },
+    {
+      "headline": "Goldman saw the plunge in market odds, ***pushes back its next Fed rate forecast from October to December ***and sees **\"a strong chance that the FOMC will ultimately conclude that additional rate...",
+      "url": "https://x.com/zerohedge/status/2105338644424773935",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-30T16:47:32Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
+    },
+    {
+      "headline": "S&P rises, Nasdaq gains 1% as traders pare Fed rate hike bets on U.S. data deluge",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-drift-higher-as-yields-pause-oil-prices-slide-4923936",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-09-30T16:44:47Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
     },
     {
       "headline": "Trump's latest global tariffs face trade court challenge",
@@ -53,68 +93,28 @@
       "firstSeen": "2026-09-30T16:46:22Z"
     },
     {
-      "headline": "Gold miners have a problem gold doesn't. The fuel bill. And right now, it's not coming down nearly as fast as crude. <> <:neort:875080101035917332>",
-      "url": "https://www.zerohedge.com/the-market-ear/gold-miners-have-problem-gold-doesnt",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-09-30T16:32:33Z",
-      "firstSeen": "2026-09-30T16:46:22Z"
-    },
-    {
-      "headline": "Commerce Secretary Howard Lutnick reports more than $250 million in income last year",
-      "url": "https://www.cnbc.com/2026/09/30/howard-lutnick-commerce-secretary-disclosure-cantor-fitzgerald.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-09-30T16:30:42Z",
-      "firstSeen": "2026-09-30T16:46:22Z"
-    },
-    {
-      "headline": "Wall Street may be sleeping on this networking stock tied to Google and OpenAI",
-      "url": "https://www.marketwatch.com/story/wall-street-may-be-sleeping-on-this-networking-stock-tied-to-google-and-openai-1cb9741f?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "AI",
-      "timestamp": "2026-09-30T16:29:00Z",
-      "firstSeen": "2026-09-30T16:31:28Z"
-    },
-    {
-      "headline": "Meta disputes claim that Muse read a user’s private messages without permission",
-      "url": "https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-30T16:24:23Z",
-      "firstSeen": "2026-09-30T16:31:28Z"
-    },
-    {
-      "headline": "European stocks fall as markets weigh hot EU Inflation against soft U.S. data",
-      "url": "https://www.investing.com/news/stock-market-news/european-equities-gain-as-tech-listings-track-us-ai-expansion-signals-4924144",
+      "headline": "Trump to unveil $200 billion investment in US projects by South Korea, White House says",
+      "url": "https://www.investing.com/news/commodities-news/trump-expected-to-announce-54-billion-south-korea-investment-in-alaska-lng-sources-say-4925265",
       "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-09-30T16:21:30Z",
-      "firstSeen": "2026-09-30T16:31:28Z"
-    },
-    {
-      "headline": "Paramount Gold Nevada at Mining Forum Americas 2026: permits near",
-      "url": "https://www.investing.com/news/transcripts/paramount-gold-nevada-at-mining-forum-americas-2026-permits-near-93CH-4925605",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-09-30T16:20:43Z",
-      "firstSeen": "2026-09-30T16:31:28Z"
-    },
-    {
-      "headline": "Dolly Parton planned for her estate. The fight with her nephew shows why that matters.",
-      "url": "https://www.marketwatch.com/story/dolly-parton-planned-for-her-estate-the-fight-with-her-nephew-shows-why-that-matters-b7e57c26?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-09-30T16:20:00Z",
-      "firstSeen": "2026-09-30T16:31:28Z"
-    },
-    {
-      "headline": "Trump administration starts sending $500 Obamacare refund checks — who stands to benefit",
-      "url": "https://www.cnbc.com/2026/09/30/obamacare-aca-refund-checks.html",
-      "source": "CNBC",
       "category": "Geopolitics",
-      "timestamp": "2026-09-30T16:19:47Z",
-      "firstSeen": "2026-09-30T16:31:28Z"
+      "timestamp": "2026-09-30T16:42:48Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
+    },
+    {
+      "headline": "Facing climate lawsuits, Big Oil again turns to US Supreme Court",
+      "url": "https://www.investing.com/news/stock-market-news/facing-climate-lawsuits-big-oil-again-turns-to-us-supreme-court-4924551",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T16:42:30Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
+    },
+    {
+      "headline": "Mineralys at Stifel cardiometabolic forum: launch plan takes shape",
+      "url": "https://www.investing.com/news/transcripts/mineralys-at-stifel-cardiometabolic-forum-launch-plan-takes-shape-93CH-4925623",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-09-30T16:40:47Z",
+      "firstSeen": "2026-09-30T17:00:55Z"
     },
     {
       "headline": "ECB'S LAGARDE TELLS LA CROIX IF I LEAVE ECB EARLY, \"IT WILL ONLY BE BY A FEW MONTHS\"",
