@@ -54,32 +54,55 @@ document.addEventListener('DOMContentLoaded', function () {
     var account = accountEl ? accountEl.value : 'all';
     var rows = state.positions.filter(function (p) { return account === 'all' || p.account === account; });
 
+    // Totals and stats use ALL positions (including dust under $5)
     var totalUnrealized = rows.reduce(function (sum, p) { return sum + p.unrealizedGain; }, 0);
     setText('statUnrealizedPnl', money(totalUnrealized), totalUnrealized >= 0 ? 'gain' : 'loss');
     setText('statPositionCount', String(rows.length));
     renderTodayTotal();
 
-    if (!rows.length) {
+    // Display filter: hide rows worth under $5 (dust), but they remain counted above
+    var displayRows = rows.filter(function (p) {
+      var value = Math.abs(p.quantity * p.currentPrice);
+      // For futures, use quoted mark for the $5 threshold
+      if (p.assetType === 'futures' && p.quotedMark) {
+        value = Math.abs(p.quantity * p.quotedMark * (p.multiplier || 1));
+      }
+      return value >= 5;
+    });
+    var hiddenCount = rows.length - displayRows.length;
+
+    if (!displayRows.length) {
       positionsTbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">No open positions match this filter.</td></tr>';
       return;
     }
 
-    positionsTbody.innerHTML = rows.map(function (p) {
+    positionsTbody.innerHTML = displayRows.map(function (p) {
       var dir = p.unrealizedGain > 0 ? 'gain' : (p.unrealizedGain < 0 ? 'loss' : '');
       var symbolCell = escapeHtml(JournalFormat.identity(p));
+      var qtyCell, avgCell, markCell;
       if (p.assetType === 'futures') {
+        // Futures: show native quoted prices, label quantity as contracts
         symbolCell += ' <span class="text-muted" style="font-size:12px;">Micro Ether · ' + shortDate(p.expiration) + ' · ' + p.multiplier + ' ETH/contract</span>';
+        qtyCell = escapeHtml(String(p.quantity) + ' contracts');
+        avgCell = '$' + Number(p.quotedAvgCost || p.avgCost).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '<br><small class="text-muted">quoted</small>';
+        markCell = '$' + Number(p.quotedMark || p.currentPrice).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + '<br><small class="text-muted">quoted</small>';
+      } else {
+        qtyCell = escapeHtml(JournalFormat.quantity(p));
+        avgCell = (p.assetType === 'option' ? escapeHtml(JournalFormat.premium(p, p.avgCost)) : '$' + p.avgCost.toFixed(2));
+        markCell = (p.assetType === 'option' ? escapeHtml(JournalFormat.premium(p, p.currentPrice)) : '$' + p.currentPrice.toFixed(2));
       }
+      var markAsOf = p.markAsOf ? p.markAsOf.replace('T', ' ').replace(/-04:00$/, ' ET') : '';
+      if (p.markBasis) markAsOf += ' · ' + p.markBasis;
       return '<tr>' +
         '<td><strong>' + symbolCell + '</strong></td>' +
         '<td class="col-optional">' + escapeHtml(p.account) + '</td>' +
         '<td class="col-optional"><span class="badge-type">' + typeLabel(p.assetType) + '</span></td>' +
-        '<td class="num col-optional">' + escapeHtml(JournalFormat.quantity(p)) + '</td>' +
-        '<td class="num col-optional">' + (p.assetType === 'option' ? escapeHtml(JournalFormat.premium(p, p.avgCost)) : '$' + p.avgCost.toFixed(2)) + '</td>' +
-        '<td class="num">' + (p.assetType === 'option' ? escapeHtml(JournalFormat.premium(p, p.currentPrice)) : '$' + p.currentPrice.toFixed(2)) + '<br><small class="text-muted">' + escapeHtml(p.markAsOf ? p.markAsOf.replace('T', ' ').replace(/-04:00$/, ' ET') : '') + (p.markBasis ? ' · ' + escapeHtml(p.markBasis) : '') + '</small></td>' +
+        '<td class="num col-optional">' + qtyCell + '</td>' +
+        '<td class="num col-optional">' + avgCell + '</td>' +
+        '<td class="num">' + markCell + '<br><small class="text-muted">' + escapeHtml(markAsOf) + '</small></td>' +
         '<td class="num ' + dir + '">' + money(p.unrealizedGain) + '</td>' +
         '</tr>';
-    }).join('');
+    }).join('') + (hiddenCount > 0 ? '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:12px; font-size:12px;">' + hiddenCount + ' position' + (hiddenCount === 1 ? '' : 's') + ' under $5 hidden from display — still counted in totals above.</td></tr>' : '');
   }
 
   function shortDate(iso) {
