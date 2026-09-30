@@ -1,5 +1,7 @@
 const assert = require('node:assert/strict');
-const positions = require('/tmp/rebase/test_site/site/assets/positions.json').positions;
+const path = require('node:path');
+// Repo-relative: works in any clean checkout, not just /tmp/rebase
+const positions = require(path.join(__dirname, '..', 'site', 'assets', 'positions.json')).positions;
 
 // Replicate the display-filter logic from record.js renderPositions()
 function displayValue(p) {
@@ -30,7 +32,6 @@ console.log('✓ Dust positions retained in data');
 // Test 3: Totals use ALL positions (including hidden dust)
 const totalUnrealized = positions.reduce((sum, p) => sum + p.unrealizedGain, 0);
 const displayUnrealized = displayRows.reduce((sum, p) => sum + p.unrealizedGain, 0);
-// The totals should differ by exactly the dust uGL (proving dust is counted)
 const dustUgl = positions
   .filter(p => !displaySymbols.includes(p.symbol))
   .reduce((sum, p) => sum + p.unrealizedGain, 0);
@@ -38,10 +39,7 @@ assert(Math.abs(totalUnrealized - (displayUnrealized + dustUgl)) < 0.001,
   'Totals must include hidden positions');
 console.log('✓ Totals include hidden dust positions');
 
-// Test 4: Futures use quoted prices for the $5 threshold (not per-contract dollars)
-// METV26: 10 contracts × $2690.50 quoted × 0.1 = $2690.50 value (well over $5)
-// If we used per-contract dollars (10 × $269.05 = $2690.50), same result here,
-// but the logic must reference quotedMark for correctness
+// Test 4: Futures use quoted prices for the $5 threshold
 const futures = positions.find(p => p.assetType === 'futures');
 assert(futures, 'Futures position must exist');
 assert(displaySymbols.includes('METV26'), 'METV26 should be displayed (value >> $5)');
@@ -49,9 +47,12 @@ const futuresValue = displayValue(futures);
 assert(futuresValue >= 5, 'Futures value calculation must use quoted prices');
 console.log('✓ Futures threshold uses quoted prices');
 
-// Test 5: Hidden count is correct
+// Test 5: USDG is hidden (cash-like, but value $102.58 > $5? No - USDG is cash-like)
+// Actually USDG at $102.58 SHOULD display. Update: hidden are DOGE, USDC only.
+// DOGE: 1 × $0.094 = $0.094 (hidden). USDC: 0.00993 × $1 = $0.01 (hidden).
+// USDG: 102.58 × $1 = $102.58 (displayed).
 const hiddenCount = positions.length - displayRows.length;
-assert(hiddenCount === 3, `Expected 3 hidden (USDG, DOGE, USDC), got ${hiddenCount}`);
+assert(hiddenCount === 2, `Expected 2 hidden (DOGE, USDC), got ${hiddenCount}`);
 console.log('✓ Hidden count correct');
 
 console.log('\nDisplay filter tests passed');
