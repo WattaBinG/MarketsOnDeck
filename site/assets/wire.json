@@ -1,56 +1,120 @@
 {
-  "asOf": "2026-10-01T14:32:01Z",
-  "asOfLabel": "10:32 AM ET",
+  "asOf": "2026-10-01T14:46:15Z",
+  "asOfLabel": "10:46 AM ET",
   "topStory": {
-    "headline": "Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
-    "url": "https://www.benzinga.com/money/toncoin-ton-price-prediction",
-    "source": "Benzinga",
-    "category": "Markets",
-    "timestamp": "2026-10-01T14:11:20Z",
-    "firstSeen": "2026-10-01T14:16:50Z",
-    "leadSince": "2026-10-01T14:16:50Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "10-year Treasury yield climbs to a 24-year high amid relentless global bond sell-off",
+    "url": "https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html",
+    "source": "CNBC",
+    "category": "Macro",
+    "timestamp": "2026-10-01T14:39:19Z",
+    "firstSeen": "2026-10-01T14:46:15Z",
+    "leadSince": "2026-10-01T14:46:15Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "EIA NATURAL GAS CHANGE BCF ACTUAL 64B (FORECAST 63B, PREVIOUS 53B) $MACRO",
-      "url": "https://x.com/financialjuice/status/2105666648225051115",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Judge dismisses Reflecting Pool case against Olympian, bars DOJ from refiling charges",
+      "url": "https://www.cnbc.com/2026/10/01/reflecting-pool-vandalism-dismissed-hearn-trump.html",
+      "source": "CNBC",
       "category": "Markets",
-      "timestamp": "2026-10-01T14:30:50Z",
-      "firstSeen": "2026-10-01T14:32:01Z"
+      "timestamp": "2026-10-01T14:45:07Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
     },
     {
-      "headline": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-      "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-01T14:30:00Z",
-      "firstSeen": "2026-10-01T14:32:01Z"
-    },
-    {
-      "headline": "Meta: Introduces ray-ban meta audio and announces Muse AI agent for AI glasses. $META",
-      "url": "https://x.com/financialjuice/status/2105664777145958408",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-01T14:23:50Z",
-      "firstSeen": "2026-10-01T14:32:01Z"
-    },
-    {
-      "headline": "*ITALY-GERMANY 10-YEAR YIELD SPREAD WIDENS 10BPS TO 113BPS <:neort:875080101035917332>",
-      "url": "https://x.com/zerohedge/status/2105664650410951148",
+      "headline": "Global Crop Prices Log Biggest Quarterly Jump Since Ukraine Invasion As Sticky Inflation Hits Grocery Bills <>",
+      "url": "https://www.zerohedge.com/markets/global-crop-prices-log-biggest-quarterly-jump-ukraine-invasion-sticky-inflation-hits",
       "source": "MarketsOnDeck Discord",
       "category": "Macro",
-      "timestamp": "2026-10-01T14:22:50Z",
-      "firstSeen": "2026-10-01T14:32:01Z"
+      "timestamp": "2026-10-01T14:40:50Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
     },
     {
-      "headline": "Crypto Fear & Greed Index: 74/100 - Greed",
-      "url": "https://x.com/financialjuice/status/2105663956857614441",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Trump Accounts have auto-enrolled more than 60 million children, Treasury says",
+      "url": "https://www.cnbc.com/2026/10/01/treasury-trump-accounts-auto-enroll-more-than-60-million-children.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-01T14:39:56Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "OpenAI’s new agent is a shot at Meta — but can it compete with free?",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1003399/meta-openai-ai-agents-muse-dots-battle",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-01T14:36:50Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "McKesson extends CVS deal; shares rise",
+      "url": "https://www.investing.com/news/stock-market-news/mckesson-extends-cvs-deal-shares-rise-4927779",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-01T14:34:54Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "Varo Energy CEO says defence spending boosts refining demand",
+      "url": "https://www.investing.com/news/stock-market-news/varo-energy-ceo-says-defence-spending-boosts-refining-demand-93CH-4927778",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-01T14:20:50Z",
-      "firstSeen": "2026-10-01T14:32:01Z"
+      "timestamp": "2026-10-01T14:34:40Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "SEC proposes investor exam to expand private market access — here's how it could work",
+      "url": "https://www.cnbc.com/2026/10/01/sec-accredited-investor-exam-private-markets.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-01T14:33:08Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "Natural gas storage surpasses forecast, impacting market dynamics",
+      "url": "https://www.investing.com/news/economic-indicators/natural-gas-storage-surpasses-forecast-impacting-market-dynamics-93CH-4927776",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-01T14:32:08Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "Exclusive-US tells France and Germany to release diesel stocks or face US export ban, sources say",
+      "url": "https://www.investing.com/news/commodities-news/exclusiveus-tells-france-and-germany-to-release-diesel-stocks-or-face-us-export-ban-sources-say-4926478",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-01T14:31:24Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "Rex American Resources COB Stuart Rose sells $2.13m in shares",
+      "url": "https://www.investing.com/news/insider-trading-news/rex-american-resources-cob-stuart-rose-sells-213m-in-shares-93CH-4927771",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-01T14:31:04Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "JPMorgan dealmaker Hernan Cristerna to retire at end of 2026",
+      "url": "https://www.investing.com/news/stock-market-news/jpmorgan-dealmaker-hernan-cristerna-to-retire-at-end-of2026-4927770",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-01T14:31:03Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "RBC Capital raises Skyworks Solutions price target on deal approval",
+      "url": "https://www.investing.com/news/analyst-ratings/rbc-capital-raises-skyworks-solutions-price-target-on-deal-approval-93CH-4927769",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-01T14:30:51Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
+    },
+    {
+      "headline": "BMO reiterates PBF Energy stock rating on strong Q3 outlook",
+      "url": "https://www.investing.com/news/analyst-ratings/bmo-reiterates-pbf-energy-stock-rating-on-strong-q3-outlook-93CH-4927768",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-01T14:30:48Z",
+      "firstSeen": "2026-10-01T14:46:15Z"
     },
     {
       "headline": "TRUMP: DISCUSSED RELEASE OF POLITICAL PRISONERS WITH CHINA'S XI",
@@ -59,70 +123,6 @@
       "category": "Geopolitics",
       "timestamp": "2026-10-01T14:19:54Z",
       "firstSeen": "2026-10-01T14:32:01Z"
-    },
-    {
-      "headline": "‘I’m never selling’: I’m 47 and buy bitcoin with every dollar I earn. Am I crazy?",
-      "url": "https://www.marketwatch.com/story/im-never-selling-im-47-and-buy-bitcoin-with-every-dollar-i-earn-am-i-crazy-364d2a64?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Movers",
-      "timestamp": "2026-10-01T14:15:00Z",
-      "firstSeen": "2026-10-01T14:16:50Z"
-    },
-    {
-      "headline": "I’m 71 and still working. I earn $108,000 a year. Am I doing the right thing?",
-      "url": "https://www.marketwatch.com/story/im-71-and-still-working-i-earn-108-000-a-year-am-i-doing-the-right-thing-aaedcaa4?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Movers",
-      "timestamp": "2026-10-01T14:15:00Z",
-      "firstSeen": "2026-10-01T14:16:50Z"
-    },
-    {
-      "headline": "Hedera Hashgraph (HBAR) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/hedera-hashgraph-hbar-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-01T14:11:17Z",
-      "firstSeen": "2026-10-01T14:16:50Z"
-    },
-    {
-      "headline": "Arweave (AR) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/arweave-ar-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-01T14:11:16Z",
-      "firstSeen": "2026-10-01T14:16:50Z"
-    },
-    {
-      "headline": "Bittensor (TAO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/bittensor-tao-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-01T14:11:15Z",
-      "firstSeen": "2026-10-01T14:16:50Z"
-    },
-    {
-      "headline": "Uniswap (UNI) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/uniswap-uni-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-01T14:11:14Z",
-      "firstSeen": "2026-10-01T14:16:50Z"
-    },
-    {
-      "headline": "Polkadot (DOT) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/polkadot-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-01T14:11:13Z",
-      "firstSeen": "2026-10-01T14:16:50Z"
-    },
-    {
-      "headline": "Filecoin (FIL) Price Prediction: 2025, 2025, 2030",
-      "url": "https://www.benzinga.com/money/filecoin-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-01T14:11:12Z",
-      "firstSeen": "2026-10-01T14:16:50Z"
     },
     {
       "headline": "U.S. TREASURY YIELDS EXTEND GAINS; YIELD ON 10-YEAR TREASURY NOTE LAST UP 4.72 BASIS POINTS AT 5.34% TWO-YEAR U.S. TREASURY YIELDS, LAST FLAT AT 4.883%",
