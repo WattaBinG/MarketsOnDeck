@@ -1,0 +1,118 @@
+/* MarketsOnDeck Learn — quiz + progress styles.
+   Purely additive. Uses site CSS variables so light/dark mode follows automatically. */
+
+.learn-quiz-section {
+  margin-top: 44px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+#learn-quiz { margin-top: 14px; }
+
+.quiz-meta {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.quiz-dots { display: flex; gap: 6px; margin-bottom: 16px; }
+.quiz-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--border);
+}
+.quiz-dot.is-done { background: var(--gain); }
+.quiz-dot.is-current { background: var(--accent-2); }
+
+.quiz-q {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 14px;
+  line-height: 1.45;
+}
+
+.quiz-choices {
+  display: grid; gap: 10px;
+  margin: 0 0 8px; padding: 0; list-style: none;
+}
+
+.quiz-choice {
+  width: 100%;
+  text-align: left;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color .15s ease, background .15s ease;
+}
+.quiz-choice:hover:not(:disabled) { border-color: var(--accent); }
+.quiz-choice:disabled { cursor: default; }
+.quiz-choice.is-wrong { border-color: var(--loss); background: var(--loss-bg); }
+.quiz-choice.is-right { border-color: var(--gain); background: var(--gain-bg); font-weight: 600; }
+
+.quiz-feedback {
+  margin-top: 12px;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.quiz-feedback strong { display: block; margin-bottom: 4px; }
+.quiz-hint { background: var(--surface-raised); border: 1px solid var(--border); }
+.quiz-explain { background: var(--gain-bg); border: 1px solid var(--gain); }
+
+.quiz-actions { margin-top: 14px; display: flex; gap: 10px; flex-wrap: wrap; }
+
+.quiz-result { text-align: left; padding: 4px 0; }
+.quiz-score {
+  font-family: var(--font-display);
+  font-size: 46px;
+  line-height: 1;
+  margin: 10px 0 6px;
+}
+.quiz-verdict { font-size: 16px; margin: 0 0 16px; line-height: 1.55; }
+.quiz-best { font-size: 14px; color: var(--text-muted); margin-bottom: 16px; }
+
+/* ---- hub progress ---- */
+
+#learn-progress { margin: 22px 0 6px; }
+
+.lp-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.lp-card h3 { margin: 0 0 4px; font-size: 18px; }
+.lp-sub { font-size: 14px; color: var(--text-muted); margin: 0 0 6px; }
+
+.lp-bar {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--surface-raised);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  margin: 12px 0 8px;
+}
+.lp-fill {
+  height: 100%;
+  width: 0;
+  background: var(--gain);
+  border-radius: 999px;
+  transition: width .45s ease;
+}
+
+.lp-count { font-size: 14px; color: var(--text-muted); }
+.lp-continue { margin-top: 10px; font-size: 15px; }
+.lp-note { font-size: 13px; color: var(--text-muted); margin: 12px 0 0; }
+.lp-done { color: var(--gain); font-weight: 600; }
+.lp-partial { color: var(--text-muted); }
+
+@media (max-width: 640px) {
+  .quiz-q { font-size: 17px; }
+  .lp-card { padding: 15px 16px; }
+}
