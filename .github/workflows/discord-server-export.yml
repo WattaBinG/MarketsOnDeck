@@ -1,0 +1,29 @@
+name: Discord server export (read-only)
+# Manual, read-only export of the Discord server structure (guilds, channels,
+# roles) for the server-cleanup review. Triggered by hand from the Actions tab.
+# Only GET requests; the bot token comes from repo secrets and never appears
+# in logs (GitHub masks secrets automatically).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Export server structure
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+        run: python3 scripts/discord_server_export.py
+      - name: Upload server map
+        uses: actions/upload-artifact@v4
+        with:
+          name: discord-server-map
+          path: discord-export/server-map.json
+          if-no-files-found: error
