@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
+<link rel="stylesheet" href="/assets/learn.css?v=20261001a">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
 <meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
@@ -55,6 +56,8 @@
     <p class="hero-sub">Most trading sites either show off or talk down to you. This section does neither: every concept is explained in plain English, jargon gets defined the first time it appears, and the examples come from real trades in a real account — wins and losses both.</p>
     <p><em>Educational content only — not investment advice. Options involve risk, including the possible loss of principal, and are not suitable for every investor. Nothing here is a recommendation to buy or sell any security. Do your own research.</em></p>
 
+    <div id="learn-progress" aria-live="polite"></div>
+
     <h2 style="margin-top:36px;">Learning paths</h2>
     <p class="text-muted">Follow a path in order, or jump to whatever you need. Each path builds on the one before it.</p>
 
@@ -90,13 +93,13 @@
       <table>
         <thead><tr><th>#</th><th>Lesson</th><th>What you'll learn</th><th>Status</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td><a href="/learn/options-in-plain-english.html">Options in plain English: calls and puts</a></td><td>What an option is, how calls and puts work, what you can win and lose</td><td>Published</td></tr>
+          <tr data-lesson="options-in-plain-english"><td>1</td><td><a href="/learn/options-in-plain-english.html">Options in plain English: calls and puts</a></td><td>What an option is, how calls and puts work, what you can win and lose</td><td>Published</td></tr>
           <tr><td>2</td><td>Reading an options chain</td><td>Bid/ask, volume, open interest, and finding the contracts worth trading</td><td>Coming soon</td></tr>
           <tr><td>3</td><td>Delta, theta, and the greeks without the math degree</td><td>The handful of numbers that actually matter and what they tell you</td><td>Coming soon</td></tr>
-          <tr><td>4</td><td><a href="/learn/covered-calls.html">Covered calls: getting paid on stocks you own</a></td><td>Sell calls above your cost basis, keep the premium, know the trade-offs</td><td>Published</td></tr>
+          <tr data-lesson="covered-calls"><td>4</td><td><a href="/learn/covered-calls.html">Covered calls: getting paid on stocks you own</a></td><td>Sell calls above your cost basis, keep the premium, know the trade-offs</td><td>Published</td></tr>
           <tr><td>5</td><td>Cash-secured puts: getting paid to wait for your price</td><td>How selling puts sets your entry price — and pays you while you wait</td><td>Coming soon</td></tr>
           <tr><td>6</td><td>The Wheel strategy</td><td>Puts, assignment, covered calls — the full loop, start to finish</td><td>Coming soon</td></tr>
-          <tr><td>7</td><td><a href="/learn/earnings-and-iv-crush.html">Earnings and IV crush</a></td><td>Why options get expensive before news and cheaper right after — even when you're right</td><td>Published</td></tr>
+          <tr data-lesson="earnings-and-iv-crush"><td>7</td><td><a href="/learn/earnings-and-iv-crush.html">Earnings and IV crush</a></td><td>Why options get expensive before news and cheaper right after — even when you're right</td><td>Published</td></tr>
           <tr><td>8</td><td>Assignment: what actually happens</td><td>Exercise, assignment, and the Monday-morning surprises to plan for</td><td>Coming soon</td></tr>
           <tr><td>9</td><td>Spreads and defined risk</td><td>Vertical spreads: capping your risk and your reward on purpose</td><td>Coming soon</td></tr>
           <tr><td>10</td><td>Rolling options</td><td>When to roll a position instead of closing it — and when not to</td><td>Coming soon</td></tr>
@@ -154,5 +157,6 @@
   </div>
 </footer>
 <script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/learn.js?v=20261001a" defer></script>
 </body>
 </html>
