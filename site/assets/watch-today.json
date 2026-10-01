@@ -1,27 +1,11 @@
 {
-  "date": "2026-10-01",
-  "dateLabel": "Thursday, October 1",
+  "date": "2026-10-02",
+  "dateLabel": "Friday, October 2",
   "events": [
-    {
-      "time": "8:30 AM ET",
-      "event": "Initial Jobless Claims",
-      "kind": "initial_claims",
-      "prev": "197K",
-      "actual": "197K"
-    },
-    {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Natural Gas Storage Report",
-      "kind": "natural_gas_storage",
-      "prev": "natural gas +53 Bcf",
-      "actual": "natural gas +64 Bcf"
-    }
+    { "time": "8:30 AM ET", "event": "Nonfarm Payrolls (Sept)" },
+    { "time": "8:30 AM ET", "event": "Unemployment Rate" },
+    { "time": "10:00 AM ET", "event": "ISM Services PMI" },
+    { "time": "10:00 AM ET", "event": "Factory Orders" }
   ],
-  "note": null,
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
