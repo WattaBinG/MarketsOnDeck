@@ -1,8 +1,12 @@
 name: Discord server export (read-only)
-# Manual, read-only export of the Discord server structure (guilds, channels,
-# roles) for the server-cleanup review. Triggered by hand from the Actions tab.
+# Manual, read-only export of the Discord server structure for the
+# server-cleanup review. Triggered by hand from the Actions tab.
 # Only GET requests; the bot token comes from repo secrets and never appears
 # in logs (GitHub masks secrets automatically).
+# The export is trimmed to the minimum needed (no channel permission
+# overwrites, no role permission bitfields, only the MarketsOnDeck guild)
+# and GPG-encrypted to the committed public key before upload, so the
+# public artifact reveals nothing. retention-days: 1.
 on:
   workflow_dispatch:
 
@@ -21,9 +25,18 @@ jobs:
         env:
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
         run: python3 scripts/discord_server_export.py
+      - name: Encrypt export
+        run: |
+          gpg --batch --import scripts/discord-export-public.asc
+          gpg --batch --yes --trust-model always \
+            --recipient discord-export@marketsondeck.local \
+            --encrypt --output discord-export/server-map.json.gpg \
+            discord-export/server-map.json
+          rm discord-export/server-map.json
       - name: Upload server map
         uses: actions/upload-artifact@v4
         with:
           name: discord-server-map
-          path: discord-export/server-map.json
+          path: discord-export/server-map.json.gpg
           if-no-files-found: error
+          retention-days: 1
