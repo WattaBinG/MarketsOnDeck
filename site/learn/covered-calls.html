@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Covered calls: getting paid on stocks you own | Learn | MarketsOnDeck</title>
+<meta name="description" content="How covered calls work: own 100 shares, sell a call above your cost basis, keep the premium. A worked example from a real position, plus the trade-offs and common mistakes. Educational content, not investment advice.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/overview/index.html">Overview</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/market-tape/index.html">After Market Tape</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
+        <li><a href="/learn/index.html" class="active">Learn</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
+<main>
+  <div class="container section-tight">
+    <div class="article-header">
+      <div class="eyebrow">Learn &middot; Lesson 4 &middot; Path 3: Income strategies</div>
+      <h1>Covered calls: getting paid on stocks you own</h1>
+      <div class="article-meta"><span>By Keith</span><span>&middot;</span><span>Lesson 4 of 12</span></div>
+      <div class="share-bar" data-title="Covered calls: getting paid on stocks you own — MarketsOnDeck Learn">
+        <span class="share-label">Share</span>
+        <a class="share-btn share-x" href="#" target="_blank" rel="noopener" aria-label="Share on X">X</a>
+        <a class="share-btn share-fb" href="#" target="_blank" rel="noopener" aria-label="Share on Facebook">Facebook</a>
+        <a class="share-btn share-li" href="#" target="_blank" rel="noopener" aria-label="Share on LinkedIn">LinkedIn</a>
+        <button class="share-btn share-copy" type="button">Copy Link</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="article-body prose">
+
+      <p><em>Educational content only — not investment advice. Options involve risk, including the possible loss of principal, and are not suitable for every investor. Nothing here is a recommendation to buy or sell any security.</em></p>
+
+      <p>A <strong>covered call</strong> is the simplest income trade in options: you own at least 100 shares of a stock, and you <strong>sell a call</strong> against them. You collect the premium up front. In exchange, you agree to sell your shares at the strike price if the stock runs past it. This account runs covered calls on its stock positions every week — it's the bread-and-butter strategy here.</p>
+
+      <h2>Key terms</h2>
+      <div class="table-scroll">
+        <table>
+          <thead><tr><th>Term</th><th>Plain-English meaning</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Covered</strong></td><td>You own the 100 shares, so if you're forced to sell them, you have them. No scrambling.</td></tr>
+            <tr><td><strong>Cost basis</strong></td><td>What you actually paid per share on average. Your personal break-even.</td></tr>
+            <tr><td><strong>Assignment</strong></td><td>When the call buyer uses their right and your shares get sold at the strike — usually automatically at expiration if the stock is above it.</td></tr>
+            <tr><td><strong>Delta</strong></td><td>Roughly, how much the option's price moves when the stock moves $1 — and, loosely, the market's guess at the chance the option finishes in the money. A 0.20 delta ≈ a ~20% chance.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>The one rule that matters: sell above your cost basis</h2>
+      <p>The standing rule on this account: <strong>never sell a call below what you paid for the shares.</strong> Why? Because if the stock rallies and your shares get called away, you still walk away with a profit on the stock <em>plus</em> the premium. A covered call sold below your basis can turn a winning stock into a losing trade — the premium isn't worth that.</p>
+
+      <h2>Worked example: the shape of a real trade</h2>
+      <p>Here's the shape of a covered call this account runs on its HD position — 100 shares at a <strong>$297.03</strong> cost basis:</p>
+      <ul>
+        <li><strong>Sell</strong> one $300 call expiring in two weeks for <strong>$1.67</strong> → collect <strong>$167</strong> (1 × 100 × $1.67).</li>
+        <li>The $300 strike sits <strong>above the $297.03 basis</strong> — the rule holds.</li>
+      </ul>
+      <p>Two endings:</p>
+      <ul>
+        <li><strong>HD stays under $300 through expiration.</strong> The call expires worthless. You keep the <strong>$167</strong>, keep your 100 shares, and can sell another call next cycle. This is the most common outcome — and the whole point.</li>
+        <li><strong>HD rallies past $300 and you're assigned.</strong> Your shares are sold at $300. Stock profit: ($300 − $297.03) × 100 = <strong>$297</strong>. Plus the <strong>$167</strong> premium you already collected. Total gain: <strong>$464</strong> on a two-week trade. You miss any rally <em>beyond</em> $300 — that's the price of the premium.</li>
+      </ul>
+
+      <h2>What you're really trading</h2>
+      <p>A covered call swaps <strong>open-ended upside for immediate income</strong>. You keep:</p>
+      <ul>
+        <li>The premium, no matter what.</li>
+        <li>All dividends while you hold the shares.</li>
+        <li>Any stock gain up to the strike price.</li>
+      </ul>
+      <p>You give up:</p>
+      <ul>
+        <li>Gains above the strike — if the stock moons, you watch from the sidelines holding your premium.</li>
+      </ul>
+      <p>And note what it <em>doesn't</em> do: it doesn't protect you much on the way down. A $167 premium softens a $1,000 drop, but it doesn't prevent it. A covered call is an income trade on a stock you'd be happy holding — not a hedge.</p>
+
+      <h2>Common mistakes</h2>
+      <ul>
+        <li><strong>Selling below your cost basis for a fatter premium.</strong> Lower strikes pay more, but assignment below your basis locks in a stock loss the premium rarely covers. The rule exists for a reason.</li>
+        <li><strong>Chasing the highest premium with no regard for delta.</strong> A call with a 0.50 delta pays beautifully — because there's roughly a coin-flip chance your shares get called away. Match the strike to an exit price you'd actually accept.</li>
+        <li><strong>Selling calls on stocks you don't want to sell.</strong> If you'd be upset to lose the shares at the strike, the strike is wrong — pick a higher one or skip the trade.</li>
+        <li><strong>Ignoring the ex-dividend date.</strong> A call buyer can <em>exercise early</em> to capture a dividend, taking your shares before expiration. Check the dividend calendar before selling calls on dividend payers.</li>
+        <li><strong>Paying to avoid assignment over and over.</strong> When a call goes deep in the money, you can <em>roll</em> it (buy it back, sell a later/higher one) — but doing that repeatedly at a debit can quietly turn a winner into a loser. Sometimes taking assignment at a profit above your basis is the right answer.</li>
+      </ul>
+
+      <h2>The takeaway</h2>
+      <p>Own 100 shares. Sell a call <strong>above your cost basis</strong> at a strike you'd be happy to exit at. Keep the premium either way. The most common outcome — the stock stays put and the call withers — is also the best one for the income seller.</p>
+
+      <p><a href="/learn/earnings-and-iv-crush.html">Next: Lesson 7 — Earnings and IV crush &rarr;</a> <span class="text-muted">(or continue the path: Lesson 5, Cash-secured puts — coming soon)</span></p>
+
+      <p><em>Educational content only — not investment advice. Options involve risk, including the possible loss of principal. Do your own research before trading.</em></p>
+
+    </div>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/market-tape/index.html">After Market Tape</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
+          <li><a href="/learn/index.html">Learn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:markets.on.deck@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+    <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js?v=20260926d"></script>
+</body>
+</html>
