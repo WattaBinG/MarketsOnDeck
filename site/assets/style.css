@@ -557,6 +557,50 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 }
 .watch-box-link:hover { text-decoration: underline; }
 
+/* Earnings Today box — rendered by scripts/refresh_earnings.py. Mirrors the
+   watch-box so the two "Today" blocks read as one section. */
+.earn-box {
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 10px 12px;
+  box-shadow: var(--shadow-sm);
+}
+.earn-box-header { font-family: var(--font-display); font-weight: 700; font-size: 17px; letter-spacing: .01em; }
+.earn-box-date { font-size: 11px; color: var(--text-muted); margin-bottom: 6px; }
+.earn-list { list-style: none; margin: 0; padding: 0; }
+.earn-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; padding: 6px 0; border-top: 1px solid var(--border); font-size: 12.5px; }
+.earn-list li:first-child { border-top: none; }
+.earn-slot { font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--accent); border: 1px solid var(--border-strong); border-radius: 4px; padding: 1px 5px; white-space: nowrap; }
+.earn-id { display: inline-flex; align-items: baseline; gap: 6px; min-width: 0; }
+.earn-ticker { font-weight: 700; }
+.earn-ticker:hover { text-decoration: underline; }
+.earn-name { color: var(--text-muted); font-size: .92em; overflow-wrap: anywhere; }
+.earn-eps { margin-left: auto; font-size: .85em; color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.earn-badge { font-size: 10px; font-weight: 700; border-radius: 999px; padding: 2px 8px; white-space: nowrap; }
+.earn-badge-big-beat { background: var(--gain); color: #fff; }
+.earn-badge-beat { background: var(--gain-bg); color: var(--gain); }
+.earn-badge-inline { background: var(--surface-raised); color: var(--text-muted); }
+.earn-badge-miss { background: var(--loss-bg); color: var(--loss); }
+.earn-badge-big-miss { background: var(--loss); color: #fff; }
+.earn-week { margin-top: 8px; border-top: 1px dashed var(--border); padding-top: 6px; }
+.earn-week-header { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--text-muted); margin-bottom: 2px; }
+.earn-week-list { list-style: none; margin: 0; padding: 0; font-size: 11.5px; }
+.earn-week-list li { display: flex; align-items: baseline; gap: 8px; padding: 3px 0; }
+.earn-week-day { color: var(--text-muted); font-size: .9em; min-width: 74px; }
+
+/* Reusable plain-English jargon legend — site pattern for casual visitors.
+   Drop a .legend at the foot of any block that shows market jargon
+   (BMO/AMC, EPS, beat/miss, call/put, strike, expiry...) instead of
+   cluttering every row with explanations. Keep it tight and muted. */
+.legend {
+  margin-top: 8px;
+  font-size: 10px;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
 /* Share bar — on original content pages (Brief, Episodes, Record). Plain
    text-pill buttons to match the site's spare typographic style, not icon
    fonts. Links are populated by initShareBars() in main.js so each page only
@@ -792,6 +836,10 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .home-dashboard .wire-left .watch-event{display:block;text-align:left}
 .home-dashboard .wire-left .watch-meta{display:grid;grid-template-columns:76px minmax(0,1fr)}
 .home-dashboard .wire-left .watch-box-link{font-size:10px}
+.home-dashboard .wire-left .earn-box{padding:9px 10px}
+.home-dashboard .wire-left .earn-box-header{font-size:15px}
+.home-dashboard .wire-left .earn-box-date{font-size:10px;margin-bottom:5px}
+.home-dashboard .wire-left .earn-list li{font-size:11px}
 .home-dashboard > .home-wire-title{grid-column:1/-1;grid-row:2;padding:2px 0 0}
 .home-dashboard > .wire-main{grid-column:1/-1;grid-row:3;min-width:0}
 .home-dashboard .wire-main .wire-list{column-count:3;column-gap:28px}
@@ -873,6 +921,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   /* 2. Watch list stacked (undo the 2-across flex) */
   .home-dashboard .wire-left .watch-list { display: block; }
   .home-dashboard .wire-left .watch-list li { font-size: 13px; padding: 7px 0; }
+  .home-dashboard .wire-left .earn-list li { font-size: 13px; padding: 7px 0; }
 
   /* 3. Record stats 2x2 instead of 4-across */
   .home-dashboard .record-band-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 12px; }
