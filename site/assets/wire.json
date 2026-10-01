@@ -1,17 +1,89 @@
 {
-  "asOf": "2026-10-01T16:16:51Z",
-  "asOfLabel": "12:16 PM ET",
+  "asOf": "2026-10-01T16:31:22Z",
+  "asOfLabel": "12:31 PM ET",
   "topStory": {
-    "headline": "**CITADEL’S RUBNER: Q4 IS THE “RELOAD”** Citadel Securities’ Scott Rubner expects retail investors to return to U.S. stocks in October after trading activity cooled sharply in September. He says lo...",
-    "url": "https://x.com/DeItaone/status/2105690882817098155",
+    "headline": "**OPENAI PARTS WAYS WITH THREE SAFETY RESEARCHERS** OpenAI has parted ways with three safety researchers for allegedly sharing confidential company information with a third-party AI-safety organiza...",
+    "url": "https://x.com/DeItaone/status/2105694631497286143",
     "source": "MarketsOnDeck Discord",
-    "category": "Markets",
-    "timestamp": "2026-10-01T16:06:52Z",
-    "firstSeen": "2026-10-01T16:16:51Z",
-    "leadSince": "2026-10-01T16:16:51Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "category": "AI",
+    "timestamp": "2026-10-01T16:21:54Z",
+    "firstSeen": "2026-10-01T16:31:22Z",
+    "leadSince": "2026-10-01T16:31:22Z",
+    "image": "/assets/images/wire-ai.jpg"
   },
   "items": [
+    {
+      "headline": "PUTIN: RUSSIAN DIESEL WILL NOT GET TO GLOBAL MARKETS AS THERE ARE SANCTIONS AGAINST RUSSIAN OIL",
+      "url": "https://t.me/WalterBloomberg/36256",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-01T16:29:39Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
+    {
+      "headline": "Putin: Ukraine partially achieved its aims in hitting Russian oil refineries, Russia responded in kind.",
+      "url": "https://x.com/financialjuice/status/2105696166243360817",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-01T16:27:52Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
+    {
+      "headline": "Meta’s Mark Zuckerberg is coming for Apple’s empire",
+      "url": "https://www.marketwatch.com/story/metas-mark-zuckerberg-is-coming-for-apples-empire-f34d1f92?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-01T16:24:00Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
+    {
+      "headline": "**VENEZUELA OIL EXPORTS FALL, U.S. SHIPMENTS RISE** Venezuela’s oil exports fell to 1.08 million bpd in September, while shipments to the U.S. increased to 629,000 bpd. Exports to India fell to 253...",
+      "url": "https://x.com/DeItaone/status/2105694235278139668",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-01T16:21:00Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
+    {
+      "headline": "EU Trade Chief Sefcovic: Discussed high diesel prices with USTR Greer, expressed Europe's desire for a coordinated approach",
+      "url": "https://x.com/financialjuice/status/2105694025307345160",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-01T16:20:56Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
+    {
+      "headline": "VENEZUELA OIL EXPORTS FALL, U.S. SHIPMENTS RISE Venezuela’s oil exports fell to 1.08 million bpd in September, while shipments to the U.S. increased to 629,000 bpd. Exports to India fell to 253,000...",
+      "url": "https://t.me/WalterBloomberg/36254",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-01T16:20:03Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
+    {
+      "headline": "EU TRADE CHIEF SEFCOVIC SAYS HE DISCUSSED HIGH DIESEL PRICES WITH USTR GREER, EXPRESSED EUROPE'S DESIRE FOR COORDINATED APPROACH",
+      "url": "https://t.me/WalterBloomberg/36253",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-01T16:18:50Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
+    {
+      "headline": "PUTIN: WESTERN INTELLIGENCE ASSISTANCE TO UKRAINE TO STRIKE DEEP INTO RUSSIA REPRESENTS A THREAT FOR THE FUTURE",
+      "url": "https://t.me/WalterBloomberg/36252",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-01T16:18:11Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
+    {
+      "headline": "Trump said he has done ‘a very bad job’ of explaining his economic record, per Reuters",
+      "url": "https://x.com/unusual_whales/status/2105693471818617250",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-01T16:17:54Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
+    },
     {
       "headline": "PUTIN: WE ARE NOT THREATENING ANYONE AND WE DO NOT PLAN TO ATTACK ANY EUROPEAN COUNTRIES, NOT IN 2030, NOT IN 2050",
       "url": "https://t.me/WalterBloomberg/36251",
@@ -21,12 +93,12 @@
       "firstSeen": "2026-10-01T16:16:51Z"
     },
     {
-      "headline": "Highest Volume Contracts / No Index/ETFs",
-      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
-      "source": "MarketsOnDeck Discord",
+      "headline": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
+      "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
+      "source": "MarketWatch",
       "category": "Markets",
-      "timestamp": "2026-10-01T16:15:54Z",
-      "firstSeen": "2026-10-01T15:32:08Z"
+      "timestamp": "2026-10-01T16:16:00Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
     },
     {
       "headline": "PUTIN: WE ARE NOT GOING TO ATTACK ANYONE, BUT WILL RESPOND IF WE FACE AGGRESSION",
@@ -34,14 +106,6 @@
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Markets",
       "timestamp": "2026-10-01T16:15:02Z",
-      "firstSeen": "2026-10-01T16:16:51Z"
-    },
-    {
-      "headline": "Microsoft MAI-Transcribe-2-Streaming priced at $0.54/hr. $MSFT",
-      "url": "https://x.com/financialjuice/status/2105692901757870444",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-01T16:14:58Z",
       "firstSeen": "2026-10-01T16:16:51Z"
     },
     {
@@ -53,12 +117,12 @@
       "firstSeen": "2026-10-01T16:16:51Z"
     },
     {
-      "headline": "Microsoft launches mAI-transcribe-2-streaming. $MSFT",
-      "url": "https://x.com/financialjuice/status/2105692430477689134",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Cerrado Gold at small cap showcase conference: cash flow and growth",
+      "url": "https://www.investing.com/news/transcripts/cerrado-gold-at-small-cap-showcase-conference-cash-flow-and-growth-93CH-4927938",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-01T16:13:53Z",
-      "firstSeen": "2026-10-01T16:16:51Z"
+      "timestamp": "2026-10-01T16:13:49Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
     },
     {
       "headline": "PUTIN: IF THREAT EMERGES TO RUSSIAN EXCLAVE OF KALININGRAD WE WILL CONSIDER USING ALL WEAPONS IN OUR ARSENAL",
@@ -69,84 +133,20 @@
       "firstSeen": "2026-10-01T16:16:51Z"
     },
     {
-      "headline": "PUTIN ON THREATS OVER KALININGRAD: WE DO NOT SCARE ANYONE PUTIN: MILITARY DRILLS, ARRESTS OF RUSSIAN VESSELS IS AN ESCALATION PUTIN: EMERGENCE ON THE AGENDA OF USAGE OF ALL AVAILABLE MEANS WILL BE...",
-      "url": "https://t.me/WalterBloomberg/36248",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-01T16:11:33Z",
-      "firstSeen": "2026-10-01T16:16:51Z"
-    },
-    {
-      "headline": "Trump Accounts have auto-enrolled more than 60 million children, Treasury says",
-      "url": "https://www.cnbc.com/2026/10/01/treasury-trump-accounts-auto-enroll-more-than-60-million-children.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-01T16:06:45Z",
-      "firstSeen": "2026-10-01T16:16:51Z"
-    },
-    {
-      "headline": "30-year mortgage rate posts biggest jump in four years",
-      "url": "https://www.marketwatch.com/story/30-year-mortgage-rate-posts-biggest-jump-in-four-years-e288f596?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Movers",
-      "timestamp": "2026-10-01T16:06:00Z",
-      "firstSeen": "2026-10-01T16:16:51Z"
-    },
-    {
-      "headline": "GM reports 5.5% decline in third-quarter U.S. sales as EV sales drop",
-      "url": "https://www.cnbc.com/2026/10/01/us-auto-sales-q3.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-01T16:05:41Z",
-      "firstSeen": "2026-10-01T15:46:16Z"
-    },
-    {
-      "headline": "Stocks trading ex-div - Fri Oct 2",
-      "url": "https://unusualwhales.com/flow/dividends?utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Temasek comfortable with current AI spending levels, executive says",
+      "url": "https://www.investing.com/news/stock-market-news/temasek-comfortable-with-current-ai-spending-levels-executive-says-4927937",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-01T16:03:29Z",
-      "firstSeen": "2026-10-01T16:02:10Z"
+      "timestamp": "2026-10-01T16:12:51Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
     },
     {
-      "headline": "EU ENERGY UNION TASKFORCE TO MEET FRIDAY TO DISCUSS POTENTIAL DIESEL STOCK RELEASES, TWO EU DIPLOMATS SAY",
-      "url": "https://t.me/WalterBloomberg/36246",
-      "source": "Walter Bloomberg (unofficial mirror)",
+      "headline": "Historic low layoffs underpin US labor market; factory gate price pressures rising",
+      "url": "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-fall-layoffs-drop-in-september-4927423",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-01T16:02:03Z",
-      "firstSeen": "2026-10-01T16:02:10Z"
-    },
-    {
-      "headline": "Nike is set to report earnings after the bell. Here's what to expect",
-      "url": "https://www.cnbc.com/2026/10/01/nike-nke-q1-2027-earnings.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-01T16:00:01Z",
-      "firstSeen": "2026-10-01T16:16:51Z"
-    },
-    {
-      "headline": "10-year Treasury yield climbs to a 24-year high amid relentless global bond sell-off",
-      "url": "https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-10-01T15:59:12Z",
-      "firstSeen": "2026-10-01T14:46:15Z"
-    },
-    {
-      "headline": "Analyst Favorites: Core Natural Resources Ranks As a Top Metals Pick",
-      "url": "https://www.nasdaq.com/articles/analyst-favorites-core-natural-resources-ranks-top-metals-pick",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-01T15:57:54Z",
-      "firstSeen": "2026-10-01T16:16:51Z"
-    },
-    {
-      "headline": "Billionaire family offices bet on geothermal energy, brain implants in September",
-      "url": "https://www.cnbc.com/2026/10/01/billionaire-family-offices-back-geothermal-energy-in-september.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-01T15:57:41Z",
-      "firstSeen": "2026-10-01T15:46:16Z"
+      "timestamp": "2026-10-01T16:12:34Z",
+      "firstSeen": "2026-10-01T16:31:22Z"
     }
   ]
 }
