@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Learn | MarketsOnDeck</title>
+<meta name="description" content="Learn how markets actually work — options, covered calls, IV crush, and risk — explained in plain English with real trades from a real account. Educational content, not investment advice.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/overview/index.html">Overview</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/market-tape/index.html">After Market Tape</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
+        <li><a href="/learn/index.html" class="active">Learn</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
+<main>
+  <div class="container section-tight">
+    <div class="eyebrow">MarketsOnDeck Learn</div>
+    <h1 class="mt-0">Learn how it actually works</h1>
+    <p class="hero-sub">Most trading sites either show off or talk down to you. This section does neither: every concept is explained in plain English, jargon gets defined the first time it appears, and the examples come from real trades in a real account — wins and losses both.</p>
+    <p><em>Educational content only — not investment advice. Options involve risk, including the possible loss of principal, and are not suitable for every investor. Nothing here is a recommendation to buy or sell any security. Do your own research.</em></p>
+
+    <h2 style="margin-top:36px;">Learning paths</h2>
+    <p class="text-muted">Follow a path in order, or jump to whatever you need. Each path builds on the one before it.</p>
+
+    <div class="grid grid-2" style="margin-top:20px;">
+      <a class="card" href="/learn/options-in-plain-english.html" style="text-decoration:none;">
+        <span class="badge badge-accent">Path 1 &middot; Start here</span>
+        <h3>The basics</h3>
+        <p>What an option actually is, what calls and puts do, and how to read an options chain without feeling lost.</p>
+        <span class="card-link">Start learning &rarr;</span>
+      </a>
+      <a class="card" href="/learn/options-in-plain-english.html" style="text-decoration:none;">
+        <span class="badge badge-accent">Path 2 &middot; Core options</span>
+        <h3>How options are priced</h3>
+        <p>The greeks without the math degree — delta, theta, and why an option melts a little every day. Plus defined-risk spreads.</p>
+        <span class="card-link">Start learning &rarr;</span>
+      </a>
+      <a class="card" href="/learn/covered-calls.html" style="text-decoration:none;">
+        <span class="badge badge-accent">Path 3 &middot; Income strategies</span>
+        <h3>Getting paid on stocks you own</h3>
+        <p>Covered calls, cash-secured puts, the wheel strategy, and rolling — the real trades this account runs every week.</p>
+        <span class="card-link">Start learning &rarr;</span>
+      </a>
+      <a class="card" href="/learn/earnings-and-iv-crush.html" style="text-decoration:none;">
+        <span class="badge badge-accent">Path 4 &middot; Risk &amp; survival</span>
+        <h3>Don't blow up</h3>
+        <p>IV crush around earnings, what assignment actually does to your account, position sizing, and the kill switch.</p>
+        <span class="card-link">Start learning &rarr;</span>
+      </a>
+    </div>
+
+    <h2 style="margin-top:40px;">All lessons</h2>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th>#</th><th>Lesson</th><th>What you'll learn</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><a href="/learn/options-in-plain-english.html">Options in plain English: calls and puts</a></td><td>What an option is, how calls and puts work, what you can win and lose</td><td>Published</td></tr>
+          <tr><td>2</td><td>Reading an options chain</td><td>Bid/ask, volume, open interest, and finding the contracts worth trading</td><td>Coming soon</td></tr>
+          <tr><td>3</td><td>Delta, theta, and the greeks without the math degree</td><td>The handful of numbers that actually matter and what they tell you</td><td>Coming soon</td></tr>
+          <tr><td>4</td><td><a href="/learn/covered-calls.html">Covered calls: getting paid on stocks you own</a></td><td>Sell calls above your cost basis, keep the premium, know the trade-offs</td><td>Published</td></tr>
+          <tr><td>5</td><td>Cash-secured puts: getting paid to wait for your price</td><td>How selling puts sets your entry price — and pays you while you wait</td><td>Coming soon</td></tr>
+          <tr><td>6</td><td>The Wheel strategy</td><td>Puts, assignment, covered calls — the full loop, start to finish</td><td>Coming soon</td></tr>
+          <tr><td>7</td><td><a href="/learn/earnings-and-iv-crush.html">Earnings and IV crush</a></td><td>Why options get expensive before news and cheaper right after — even when you're right</td><td>Published</td></tr>
+          <tr><td>8</td><td>Assignment: what actually happens</td><td>Exercise, assignment, and the Monday-morning surprises to plan for</td><td>Coming soon</td></tr>
+          <tr><td>9</td><td>Spreads and defined risk</td><td>Vertical spreads: capping your risk and your reward on purpose</td><td>Coming soon</td></tr>
+          <tr><td>10</td><td>Rolling options</td><td>When to roll a position instead of closing it — and when not to</td><td>Coming soon</td></tr>
+          <tr><td>11</td><td>Position sizing and the kill switch</td><td>How much to risk per trade, and the account-level line you never cross</td><td>Coming soon</td></tr>
+          <tr><td>12</td><td>Taxes on options: the basics</td><td>Short vs. long term, wash sales, and why you still talk to a tax pro</td><td>Coming soon</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 style="margin-top:40px;">House rules for this section</h2>
+    <ul>
+      <li><strong>Plain English first.</strong> Every jargon term gets a short definition the first time it shows up. No glossary-hunting required.</li>
+      <li><strong>Real examples.</strong> The numbers come from trades this account actually makes — covered calls above cost basis, cash-secured puts at target prices, the standing rule against pre-earnings option entries.</li>
+      <li><strong>Education, not advice.</strong> These lessons explain mechanics and risks. They never tell you what to trade — that's your call, with your own research.</li>
+    </ul>
+    <p class="text-muted" style="font-size:14px;">See a term we didn't explain, or a lesson you want written next? <a href="mailto:markets.on.deck@gmail.com">Tell us</a> — this section grows from reader questions.</p>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/market-tape/index.html">After Market Tape</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
+          <li><a href="/learn/index.html">Learn</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:markets.on.deck@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+    <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js?v=20260926d"></script>
+</body>
+</html>
