@@ -26,6 +26,7 @@ Keith has referral links for the platforms below. Whenever a page, post, lesson 
 | --- | --- |
 | Robinhood | https://join.robinhood.com/keithw61 |
 | Charles Schwab | https://www.schwab.com/client-referral?refrid=REFERA73Z7DHR |
+| Public.com | https://public.com/user-referral?referrer=wattaBing |
 | Webull | https://www.webull.com/s/0efq3ZohMyc5T8DjWb |
 | Polymarket US | https://polymarket.us/join/cryptodamus |
 | Kalshi Predictions | https://kalshi.com/t/5661t3nm |
