@@ -1,40 +1,120 @@
 {
-  "asOf": "2026-10-02T17:46:14Z",
-  "asOfLabel": "1:46 PM ET",
+  "asOf": "2026-10-02T18:00:34Z",
+  "asOfLabel": "2:00 PM ET",
   "topStory": {
-    "headline": "Oil prices mixed as G7 nations to release diesel stocks",
-    "url": "https://www.cnbc.com/2026/10/02/oil-wti-brent-diesel-stock-release-europe.html",
+    "headline": "10-year Treasury yield ticks higher despite weaker-than-expected jobs report",
+    "url": "https://www.cnbc.com/2026/10/02/treasury-yields-bonds-nonfarm-payrolls.html",
     "source": "CNBC",
-    "category": "Markets",
-    "timestamp": "2026-10-02T17:18:28Z",
-    "firstSeen": "2026-10-02T17:15:38Z",
-    "leadSince": "2026-10-02T17:15:38Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "category": "Macro",
+    "timestamp": "2026-10-02T17:54:42Z",
+    "firstSeen": "2026-10-02T18:00:34Z",
+    "leadSince": "2026-10-02T18:00:34Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "Are These The WTFest ETF Charts You've Ever Seen? <>",
-      "url": "https://www.zerohedge.com/markets/are-these-wtfest-etf-charts-youve-ever-seen",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-02T17:40:15Z",
-      "firstSeen": "2026-10-02T17:46:14Z"
+      "headline": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-02T18:00:00Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
     },
     {
-      "headline": "Men are losing ground in the labor market. Here's why",
-      "url": "https://www.cnbc.com/2026/10/02/men-labor-market-jobs-report.html",
+      "headline": "1.93 million Americans have been jobless for 27+ weeks, which represents the 3rd-highest share since the Great Recession, per YF",
+      "url": "https://x.com/unusual_whales/status/2106081025310744910",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-02T17:57:16Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "Call it AI, call it Super Intelligence, only 2% of consumers are buying it",
+      "url": "https://techcrunch.com/podcast/call-it-ai-call-it-super-intelligence-only-2-of-consumers-are-buying-it/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T17:56:00Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "Why Lilly and Novo are betting on amylin to power a new wave of obesity drugs after GLP-1s",
+      "url": "https://www.cnbc.com/2026/10/02/lilly-novo-amylin-obesity-drugs.html",
       "source": "CNBC",
       "category": "Markets",
-      "timestamp": "2026-10-02T17:38:59Z",
-      "firstSeen": "2026-10-02T17:15:38Z"
+      "timestamp": "2026-10-02T17:55:26Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
     },
     {
-      "headline": "Why bond investors quickly lost their enthusiasm for weak labor figures",
-      "url": "https://www.marketwatch.com/story/why-bond-investors-quickly-lost-their-enthusiasm-for-weak-labor-figures-7a9727da?mod=mw_rss_topstories",
+      "headline": "See How Commercial Metals Ranks Among Analysts' Top Metals Picks",
+      "url": "https://www.nasdaq.com/articles/see-how-commercial-metals-ranks-among-analysts-top-metals-picks",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-02T17:48:20Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
+      "url": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+      "source": "TechCrunch",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T17:48:16Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "How much higher can bond yields rise — and what does it mean for stocks?",
+      "url": "https://www.marketwatch.com/story/how-much-higher-can-bond-yields-rise-and-what-does-it-mean-for-stocks-12883d6c?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "category": "Macro",
-      "timestamp": "2026-10-02T17:38:00Z",
-      "firstSeen": "2026-10-02T17:46:14Z"
+      "timestamp": "2026-10-02T17:48:00Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "Europe’s leaders rush to release diesel from stockpiles as fuel shock hangs over U.S. midterms",
+      "url": "https://www.marketwatch.com/story/europes-leaders-rush-to-release-diesel-from-stockpiles-as-fuel-shock-hangs-over-u-s-midterms-80bf0f38?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-02T17:48:00Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "Why Western Digital Stock Just Crashed",
+      "url": "https://www.nasdaq.com/articles/why-western-digital-stock-just-crashed",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-02T17:45:56Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "With record earnings in the rearview, Micron faces Taiwan strike prospects",
+      "url": "https://www.investing.com/news/stock-market-news/with-record-earnings-in-the-rearview-micron-faces-taiwan-strike-prospects-4927735",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T17:45:54Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "G7 countries agree on release of diesel and oil stocks after US pressure",
+      "url": "https://www.investing.com/news/stock-market-news/europe-discussing-plan-for-diesel-stock-releases-after-us-pressure-source-says-4929100",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-02T17:42:34Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "Emerson Electric technical analysis: bullish structure with short-term caution signals",
+      "url": "https://www.investing.com/news/stock-market-news/emerson-electric-technical-analysis-bullish-structure-with-shortterm-caution-signals-93CH-4930260",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-02T17:41:57Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
+    },
+    {
+      "headline": "Italy seeks clarity on rumors about Lagarde’s ECB future",
+      "url": "https://www.investing.com/news/economy-news/italy-seeks-clarity-on-rumors-about-lagardes-ecb-future-93CH-4930259",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-02T17:41:07Z",
+      "firstSeen": "2026-10-02T18:00:34Z"
     },
     {
       "headline": "META PARTS WAYS WITH VIRTUE AI - SEMAFOR",
@@ -43,86 +123,6 @@
       "category": "Markets",
       "timestamp": "2026-10-02T17:33:33Z",
       "firstSeen": "2026-10-02T17:46:14Z"
-    },
-    {
-      "headline": "Meta lets go of virtue ai employees hired in June - Semafor $META",
-      "url": "https://x.com/financialjuice/status/2106074658713796958",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-02T17:32:16Z",
-      "firstSeen": "2026-10-02T17:46:14Z"
-    },
-    {
-      "headline": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
-      "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-02T17:32:05Z",
-      "firstSeen": "2026-10-02T17:46:14Z"
-    },
-    {
-      "headline": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
-      "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-02T17:30:00Z",
-      "firstSeen": "2026-10-02T17:46:14Z"
-    },
-    {
-      "headline": "The U.S. can’t find enough of this critical machine component to win the humanoid-robots race",
-      "url": "https://www.marketwatch.com/story/to-win-the-humanoid-robots-race-the-u-s-needs-this-critical-machine-component-thats-hard-to-find-ca244571?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-02T17:29:00Z",
-      "firstSeen": "2026-10-02T17:46:14Z"
-    },
-    {
-      "headline": "Fed’s Goolsbee says rate hike and pause both ’on the table’",
-      "url": "https://www.investing.com/news/economy-news/feds-goolsbee-says-rate-hike-and-pause-both-on-the-table-4930242",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-02T17:24:29Z",
-      "firstSeen": "2026-10-02T17:31:03Z"
-    },
-    {
-      "headline": "Ford fends off Hyundai to retain No. 3 U.S. sales position in third quarter",
-      "url": "https://www.cnbc.com/2026/10/02/ford-q3-sales.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-02T17:20:33Z",
-      "firstSeen": "2026-10-02T17:31:03Z"
-    },
-    {
-      "headline": "Tesla stock jumps 5% on better-than-expected vehicle deliveries report",
-      "url": "https://www.cnbc.com/2026/10/02/tesla-tsla-q3-2026-vehicle-delivery-production.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-02T17:20:12Z",
-      "firstSeen": "2026-10-02T17:15:38Z"
-    },
-    {
-      "headline": "Teradyne director Johnson sells $67,284 in shares",
-      "url": "https://www.investing.com/news/insider-trading-news/teradyne-director-johnson-sells-67284-in-shares-93CH-4930239",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-02T17:16:00Z",
-      "firstSeen": "2026-10-02T17:31:03Z"
-    },
-    {
-      "headline": "Tesla Delivered 486,532 Vehicles in Q3. Here’s Why the Real Test Could Come on Oct. 21.",
-      "url": "https://www.nasdaq.com/articles/tesla-delivered-486532-vehicles-q3-heres-why-real-test-could-come-oct-21",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-02T17:10:01Z",
-      "firstSeen": "2026-10-02T17:31:03Z"
-    },
-    {
-      "headline": "Southern Glazer’s agrees to pricing restrictions in FTC settlement, official says",
-      "url": "https://www.investing.com/news/stock-market-news/southern-glazers-agrees-to-pricing-restrictions-in-ftc-settlement-official-says-4930233",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T17:06:32Z",
-      "firstSeen": "2026-10-02T17:15:38Z"
     },
     {
       "headline": "SPOT GOLD FALLS NEARLY 1% TO $4,137.85/OZ",
