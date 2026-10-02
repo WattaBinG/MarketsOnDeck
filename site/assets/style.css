@@ -965,3 +965,22 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .home-dashboard .wire-top-headline { font-size: clamp(20px, 5.6vw, 25px); line-height: 1.15; }
   .home-dashboard .wire-top { padding: 4px 0 8px; }
 }
+
+/* Mobile wire grid (2026-10-02, Keith: the single phone column looks sparse
+   next to desktop's 3-column masonry). Phones get a compact 2-column card
+   grid so the feed feels rich, not like one endless row. Appended last. */
+@media (max-width: 640px) {
+  .home-dashboard .wire-main .wire-list { column-count: 2; column-gap: 10px; }
+  .home-dashboard .wire-main .wire-list li {
+    break-inside: avoid;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin: 0 0 10px;
+  }
+  .home-dashboard .wire-main .wire-list a { font-size: 13.5px; line-height: 1.35; }
+  .home-dashboard .wire-main .wire-tag { font-size: 9px; margin-bottom: 4px; }
+  .home-dashboard .wire-main .wire-source { font-size: 10px; }
+  .home-dashboard .wire-main .wire-time { font-size: 10px; }
+}
