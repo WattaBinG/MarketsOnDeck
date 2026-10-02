@@ -249,7 +249,8 @@ function initPinned() {
     var tickerData = results[0], cryptoData = results[1];
     var pinnedSymbols = (tickerData && tickerData.pinned) || [];
     var pinnedItems = (tickerData && tickerData.items || []).filter(function (item) {
-      return pinnedSymbols.indexOf(item.symbol) !== -1;
+      // Never render a blank ticker: drop anything without a real price.
+      return pinnedSymbols.indexOf(item.symbol) !== -1 && typeof item.price === 'number';
     });
     var cryptoItems = (cryptoData && cryptoData.items) || [];
     var allItems = pinnedItems.concat(cryptoItems);
@@ -274,7 +275,10 @@ function initTicker() {
     .then(function (data) {
       if (!data || !data.items || !data.items.length) { strip.hidden = true; return; }
       var pinnedSymbols = data.pinned || [];
-      var scrollItems = data.items.filter(function (item) { return pinnedSymbols.indexOf(item.symbol) === -1; });
+      var scrollItems = data.items.filter(function (item) {
+        // Never render a blank ticker: drop anything without a real price.
+        return pinnedSymbols.indexOf(item.symbol) === -1 && typeof item.price === 'number';
+      });
       if (!scrollItems.length) { strip.hidden = true; return; }
       strip.hidden = false;
       var itemsHtml = scrollItems.map(renderTickerItem).join('');
