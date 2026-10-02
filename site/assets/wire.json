@@ -1,17 +1,97 @@
 {
-  "asOf": "2026-10-02T18:45:35Z",
-  "asOfLabel": "2:45 PM ET",
+  "asOf": "2026-10-02T19:00:34Z",
+  "asOfLabel": "3:00 PM ET",
   "topStory": {
-    "headline": "NYMEX Natural Gas November futures settle at $3.0350/MMBtu.",
-    "url": "https://x.com/financialjuice/status/2106089848289587591",
-    "source": "MarketsOnDeck Discord",
-    "category": "Markets",
-    "timestamp": "2026-10-02T18:32:18Z",
-    "firstSeen": "2026-10-02T18:45:35Z",
-    "leadSince": "2026-10-02T18:45:35Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "10-year Treasury yield ticks higher despite weaker-than-expected jobs report",
+    "url": "https://www.cnbc.com/2026/10/02/treasury-yields-bonds-nonfarm-payrolls.html",
+    "source": "CNBC",
+    "category": "Macro",
+    "timestamp": "2026-10-02T18:58:09Z",
+    "firstSeen": "2026-10-02T19:00:34Z",
+    "leadSince": "2026-10-02T19:00:34Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
+    {
+      "headline": "Attorney General Blanche: The DoJ is satisfied with the Fed IG report, and is not reopening the criminal probe into Powell.",
+      "url": "https://x.com/financialjuice/status/2106096318061977673",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-02T18:58:19Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
+    {
+      "headline": "FAA says Boeing 737 Max software glitch not a flight-safety issue",
+      "url": "https://www.cnbc.com/2026/10/02/faa-says-boeing-737-max-10-software-glitch-not-a-flight-safety-issue.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-02T18:56:10Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
+    {
+      "headline": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
+      "url": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T18:55:01Z",
+      "firstSeen": "2026-10-02T18:31:04Z"
+    },
+    {
+      "headline": "Brent Crude futures settle at $102.25/bbl, down 6 cents, 0.06%.",
+      "url": "https://x.com/financialjuice/status/2106095319679385792",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-02T18:54:18Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
+    {
+      "headline": "Wall Street's Midterm Map Just Flipped - Here's What Goldman And JPMorgan See <>",
+      "url": "https://www.zerohedge.com/political/wall-streets-midterm-map-just-flipped-heres-what-goldman-and-jpmorgan-see",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-02T18:50:18Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
+    {
+      "headline": "The government can take 15% of Social Security benefits to repay student loans. These proposals seek to stop it.",
+      "url": "https://www.marketwatch.com/story/the-government-can-take-15-of-social-security-benefits-to-repay-student-loans-these-proposals-seek-to-stop-it-102622fa?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-02T18:50:00Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
+    {
+      "headline": "How AI is redefining Wall Street jobs — and boosting demand for this new 'hottest skill' by 1,721%",
+      "url": "https://www.cnbc.com/2026/10/02/ai-redefining-wall-street-jobs.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T18:49:03Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
+    {
+      "headline": "These bond strategies can help you get a safe 5% return on your cash",
+      "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Macro",
+      "timestamp": "2026-10-02T18:48:00Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
+    {
+      "headline": "Cars have become unaffordable for many Americans. Here’s what the numbers show.",
+      "url": "https://www.marketwatch.com/story/heres-the-most-you-should-be-spending-on-your-car-payment-whether-you-make-60-000-or-over-150-000-ee1c228c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-02T18:47:00Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
+    {
+      "headline": "Nasdaq climbs to record after softer jobs data cools rate-hike expectations",
+      "url": "https://www.investing.com/news/economy-news/wall-st-futures-gain-as-yields-oil-prices-ease-ahead-of-jobs-report-4929250",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-02T18:43:30Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
+    },
     {
       "headline": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
       "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
@@ -21,100 +101,20 @@
       "firstSeen": "2026-10-02T18:45:35Z"
     },
     {
-      "headline": "NYMEX WTI Crude November futures settle at $91.11 a barrel, down $1.76, 1.9%.",
-      "url": "https://x.com/financialjuice/status/2106089637491913197",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:32:15Z",
-      "firstSeen": "2026-10-02T18:45:35Z"
-    },
-    {
-      "headline": "David Ellison says combined Paramount and Warner Bros. Discovery will be named Skydance",
-      "url": "https://www.cnbc.com/2026/10/02/paramount-warner-bros-discovery-skydance.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:31:49Z",
-      "firstSeen": "2026-10-02T18:45:35Z"
-    },
-    {
-      "headline": "G7 countries agree on release of diesel and oil stocks after US pressure",
-      "url": "https://www.investing.com/news/stock-market-news/europe-discussing-plan-for-diesel-stock-releases-after-us-pressure-source-says-4929100",
+      "headline": "Russian airstrikes choke bridges across Dnipro River in Kyiv",
+      "url": "https://www.investing.com/news/commodities-news/russian-airstrikes-choke-bridges-across-dnipro-river-in-kyiv-4930294",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-02T18:24:31Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
+      "timestamp": "2026-10-02T18:42:59Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
     },
     {
-      "headline": "Bridger Aerospace at Noble Capital Markets Virtual Equity Investor Conference: growth in a scarce market",
-      "url": "https://www.investing.com/news/transcripts/bridger-aerospace-at-noble-capital-markets-virtual-equity-investor-conference-growth-in-a-scarce-market-93CH-4930288",
+      "headline": "U.S. stocks rise as Fed rate hike bets wane, but head for weekly loss on bond rout",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-drift-higher-with-nonfarm-payrolls-in-focus-4928740",
       "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:23:10Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
-    },
-    {
-      "headline": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
-      "url": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-02T18:21:13Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
-    },
-    {
-      "headline": "Nvidia breaks to all-time high of $237.87, driven by buyback, analyst upgrade, and AI demand",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-breaks-to-alltime-high-of-23787-driven-by-buyback-analyst-upgrade-and-ai-demand-93CH-4930287",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-02T18:20:47Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
-    },
-    {
-      "headline": "Electrical OEM sector: strong demand, high valuation risk",
-      "url": "https://www.investing.com/news/stock-market-news/electrical-oem-sector-strong-demand-high-valuation-risk-93CH-4930286",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:20:03Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
-    },
-    {
-      "headline": "Moderna to replace Warner Bros Discovery  on Nasdaq 100",
-      "url": "https://www.investing.com/news/stock-market-news/moderna-to-join-nasdaq-100-replacing-warner-bros-discovery-4928725",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:19:50Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
-    },
-    {
-      "headline": "Starbucks loses bid to dismiss union trademark lawsuit",
-      "url": "https://www.investing.com/news/stock-market-news/starbucks-loses-bid-to-dismiss-union-trademark-lawsuit-93CH-4930285",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:19:44Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
-    },
-    {
-      "headline": "Boeing white-collar workers approve contract offer, averting strike fears",
-      "url": "https://www.investing.com/news/stock-market-news/boeing-whitecollar-workers-approve-latest-contract-offer-averting-strike-fears-4928173",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:19:32Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
-    },
-    {
-      "headline": "Nike earnings analysis: questions answered and next catalysts",
-      "url": "https://www.investing.com/news/stock-market-news/nike-earnings-analysis-questions-answered-and-next-catalysts-93CH-4930284",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:19:29Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
-    },
-    {
-      "headline": "WMS options activity points to possible hedge roll near 52-week low",
-      "url": "https://www.investing.com/news/stock-market-news/wms-options-activity-points-to-possible-hedge-roll-near-52week-low-93CH-4930283",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T18:19:12Z",
-      "firstSeen": "2026-10-02T18:31:04Z"
+      "category": "Macro",
+      "timestamp": "2026-10-02T18:42:40Z",
+      "firstSeen": "2026-10-02T19:00:34Z"
     },
     {
       "headline": "META PARTS WAYS WITH VIRTUE AI - SEMAFOR",
