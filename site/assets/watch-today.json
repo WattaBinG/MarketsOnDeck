@@ -1,28 +1,11 @@
 {
-  "date": "2026-10-02",
-  "dateLabel": "Friday, October 2",
+  "date": "2026-10-05",
+  "dateLabel": "Monday, October 5",
   "events": [
     {
-      "time": "4:30 AM ET",
-      "event": "Employment Situation",
-      "kind": "jobs",
-      "prev": "+162K",
-      "actual": "payrolls +29K, unemployment 4.2%"
-    },
-    {
-      "time": "1:00 PM ET",
-      "event": "Baker Hughes Rig Count"
-    },
-    {
-      "time": "3:30 PM ET",
-      "event": "CFTC Commitments of Traders"
+      "time": "10:00 AM ET",
+      "event": "ISM Services PMI"
     }
   ],
-  "note": null,
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
