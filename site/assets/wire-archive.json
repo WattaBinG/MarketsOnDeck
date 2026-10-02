@@ -1,6 +1,167 @@
 {
   "items": [
     {
+      "headline": "Google announces Gemini 4 and says it’s so capable that only ‘trusted cyber defenders’ can have it right now",
+      "url": "https://www.theverge.com/tech/1002980/google-gemini-4-argon",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-09-30T20:41:41Z"
+    },
+    {
+      "headline": "Judge allows Paramount to close $110 billion takeover of Warner Bros. Discovery",
+      "url": "https://www.nbcnews.com/business/media/judge-allows-paramount-close-110-billion-takeover-warner-bros-discover-rcna600780",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-09-30T19:42:25Z"
+    },
+    {
+      "headline": "All the latest news on Meta’s cute, creepy Muse AI agent",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1002671/meta-muse-ai",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-09-30T15:18:49Z"
+    },
+    {
+      "headline": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-24T18:30:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-24T15:00:00Z"
+    },
+    {
+      "headline": "SEC Publishes Updated Market Statistics, Highlighting Increase in IPOs and Proceeds Raised",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-93-sec-publishes-updated-market-statistics-highlighting-increase-ipos-proceeds-raised",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-23T18:27:00Z"
+    },
+    {
+      "headline": "SEC Charges South Florida Resident and His Company for Alleged Investment Scheme Defrauding Law Enforcement",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-92-sec-charges-south-florida-resident-his-company-alleged-investment-scheme-defrauding-law-enforcement",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-09-23T16:00:00Z"
+    },
+    {
+      "headline": "“The New Clippy”: Benioff Uses Salesforce’s Biggest Product Launch in Years to Challenge Microsoft",
+      "url": "https://finance.yahoo.com/technology/ai/articles/clippy-benioff-uses-salesforce-biggest-044653952.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:46:53Z"
+    },
+    {
+      "headline": "SK Hynix Is Eyeing Intel’s (INTC) Ohio Site. Why Micron (MU) Should Pay Attention",
+      "url": "https://finance.yahoo.com/technology/articles/sk-hynix-eyeing-intel-intc-043316388.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:33:16Z"
+    },
+    {
+      "headline": "South Korea picks Texas gas plant as initial project under US investment agreement - FT",
+      "url": "https://x.com/financialjuice/status/2102616635907645842",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:31:06Z"
+    },
+    {
+      "headline": "Dutch final Q2 GDP rises 0.6% quarter-on-quarter, CBS",
+      "url": "https://x.com/financialjuice/status/2102616603166937303",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-23T04:31:05Z"
+    },
+    {
+      "headline": "DUTCH GDP QOQ FINAL SA ACTUAL 0.6% (FORECAST 0.4%, PREVIOUS 0.4%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2102616568249086080",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-23T04:31:04Z"
+    },
+    {
+      "headline": "DUTCH GDP YOY FINAL NSA ACTUAL 1.6% (FORECAST -, PREVIOUS 1.3%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2102616557138702822",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-23T04:31:03Z"
+    },
+    {
+      "headline": "This Little-Known AI Chip Stock Doubled. Its New Chips Now Double Optical Speed",
+      "url": "https://finance.yahoo.com/technology/ai/articles/little-known-ai-chip-stock-042916921.html",
+      "source": "Yahoo Finance",
+      "category": "AI",
+      "timestamp": "2026-09-23T04:29:16Z"
+    },
+    {
+      "headline": "Pat Gelsinger Just Backed a $100 Million Challenge to Nvidia’s AI Networking Moat. AMD Could Benefit",
+      "url": "https://finance.yahoo.com/technology/ai/articles/pat-gelsinger-just-backed-100-042433352.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:24:33Z"
+    },
+    {
+      "headline": "Lumentum Jumped Nearly 10% While Corning Barely Moved. Is the AI Optics Trade Splitting Apart?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/lumentum-jumped-nearly-10-while-041957023.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:19:57Z"
+    },
+    {
+      "headline": "Intel (INTC) Could Get a Fresh Valuation for Altera. AMD (AMD) Is the Rival to Watch",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/intel-intc-could-fresh-valuation-041710849.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-09-23T04:17:10Z"
+    },
+    {
+      "headline": "China finance ministry offers 3-month bills at 1.1101% yield: traders",
+      "url": "https://x.com/financialjuice/status/2102603788955603390",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-23T03:40:02Z"
+    },
+    {
+      "headline": "looking beyond price alone: positioning, leverage and flows can become part of the move itself. 6. One of the more interesting rotations underneath the market is happening in financials. As investo...",
+      "url": "https://x.com/fxevolution/status/2102600246106919294",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-09-23T03:26:04Z"
+    },
+    {
+      "headline": "Washington’s big crypto bill is stuck. The SEC is pushing ahead anyway",
+      "url": "https://www.cnbc.com/2026/10/02/sec-bitcoin-crypto-proposal.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-02T06:15:49Z"
+    },
+    {
+      "headline": "Skanska Wins $271 Mln Contract For U.S. Coast Guard Pier In Rhode Island",
+      "url": "https://www.nasdaq.com/articles/skanska-wins-271-mln-contract-us-coast-guard-pier-rhode-island",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-02T06:13:44Z"
+    },
+    {
+      "headline": "Vape tax comes into effect - but prices won't rise yet",
+      "url": "https://www.bbc.co.uk/news/articles/c6j4jrjgv2j7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-09-30T23:02:11Z"
+    },
+    {
+      "headline": "Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation",
+      "url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-09-30T21:07:40Z"
+    },
+    {
       "headline": "The AI Tamagotchis are coming",
       "url": "https://www.theverge.com/ai-artificial-intelligence/1002779/openai-dots-meta-muse-ai-agents-hardware-devices",
       "source": "The Verge",
@@ -1238,167 +1399,6 @@
       "source": "Nasdaq",
       "category": "Markets",
       "timestamp": "2026-10-02T06:34:11Z"
-    },
-    {
-      "headline": "Nike’s Turnaround Hits a Speed Bump on Disappointing Fiscal 2027 Guidance. Should Investors Run for the Exits?",
-      "url": "https://www.nasdaq.com/articles/nikes-turnaround-hits-speed-bump-disappointing-fiscal-2027-guidance-should-investors-run",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-02T06:28:37Z"
-    },
-    {
-      "headline": "Jewelry giant Pandora is getting in on lab-grown diamonds and hoping a new Vietnam plant helps growth in Asia",
-      "url": "https://www.cnbc.com/2026/10/02/-jewelry-giant-pandora-vietnam-asia-growth-.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-02T06:27:58Z"
-    },
-    {
-      "headline": "Prediction: 2 Space Stocks That Could Join SpaceX and Rocket Lab in the Nasdaq-100 by 2030",
-      "url": "https://www.nasdaq.com/articles/prediction-2-space-stocks-could-join-spacex-and-rocket-lab-nasdaq-100-2030",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-02T06:25:00Z"
-    },
-    {
-      "headline": "Asian shares fall after wild swings in bonds, FX; US jobs data looms",
-      "url": "https://www.investing.com/news/economy-news/asian-shares-fall-after-wild-swings-in-bonds-fx-before-us-jobs-data-4928814",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-02T06:18:26Z"
-    },
-    {
-      "headline": "OpenAI’s Jev clone could help the frontier lab stop its swarming agents",
-      "url": "https://techcrunch.com/2026/09/30/openais-jev-clone-could-help-the-frontier-lab-stop-its-swarming-agents/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-30T19:00:57Z"
-    },
-    {
-      "headline": "SEC Charges Meyer Global Management and Its CEO With Defrauding Retail Investors in Private Funds That Held Interests in SpaceX and Other Pre-IPO Securities",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-98-sec-charges-meyer-global-management-its-ceo-defrauding-retail-investors-private-funds-held-interests",
-      "source": "SEC",
-      "category": "Movers",
-      "timestamp": "2026-09-30T18:30:01Z"
-    },
-    {
-      "headline": "AI voice startup ElevenLabs doubles valuation to $22B",
-      "url": "https://techcrunch.com/2026/09/30/ai-voice-startup-elevenlabs-doubles-valuation-to-22b/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-30T18:23:57Z"
-    },
-    {
-      "headline": "Watchdog finds no criminality in Fed renovation that drew Trump’s scrutiny",
-      "url": "https://www.nbcnews.com/news/us-news/federal-reserve-renovation-watchdog-report-rcna600656",
-      "source": "NBC News",
-      "category": "Macro",
-      "timestamp": "2026-09-30T17:00:07Z"
-    },
-    {
-      "headline": "SEC Charges Two Individuals With Orchestrating Fraud Scheme That Targeted Veterans",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-97-sec-charges-two-individuals-orchestrating-fraud-scheme-targeted-veterans",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-09-30T16:42:15Z"
-    },
-    {
-      "headline": "SEC Proposes Amendments to Expand Responsible Retailization of Private Markets",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-96-sec-proposes-amendments-expand-responsible-retailization-private-markets",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-09-30T15:45:00Z"
-    },
-    {
-      "headline": "Morning Bid: Can Treasuries rally for a second day?",
-      "url": "https://www.investing.com/news/economy-news/morning-bid-can-treasuries-rally-for-a-second-day-4928881",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-02T04:36:33Z"
-    },
-    {
-      "headline": "Inside our months-long investigation into Kevin O’Leary’s Utah data center debacle",
-      "url": "https://www.theverge.com/podcast/1002851/utah-ai-data-center-stratos-kevin-oleary-investigation-backlash",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-01T14:00:00Z"
-    },
-    {
-      "headline": "October Freebies: Doughnut, Hockey, Knife Skills Course, More",
-      "url": "https://www.today.com/video/here-s-what-you-can-get-for-free-during-october-2026-270847045912",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-01T13:30:37Z"
-    },
-    {
-      "headline": "Hearing tech startup Legato launches its AI hearing glasses",
-      "url": "https://techcrunch.com/2026/10/01/hearing-tech-startup-legato-launches-its-ai-hearing-glasses/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-01T13:00:00Z"
-    },
-    {
-      "headline": "Mortgage rates hit highest point since 2023 as Treasury yields rise",
-      "url": "https://www.nbcnews.com/business/economy/mortgage-rates-treasury-yields-markets-rcna600894",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-01T12:55:50Z"
-    },
-    {
-      "headline": "Satlyt, founded by a former Google and SpaceX product manager, raises $8M to run AI on satellites",
-      "url": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-01T12:00:00Z"
-    },
-    {
-      "headline": "Trump's AI rebrand causes 'unprecedented' demand for Slovenian website names",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2z23xj555o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-01T11:37:46Z"
-    },
-    {
-      "headline": "AI boom could trigger market shocks, Bank of England boss warns",
-      "url": "https://www.bbc.co.uk/news/articles/cv8e30enrkxyo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Macro",
-      "timestamp": "2026-10-01T10:05:25Z"
-    },
-    {
-      "headline": "Energy bills are rising by £60 a year - here's how you can bring that down",
-      "url": "https://www.bbc.co.uk/news/articles/crm4rygl4m3o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-01T07:08:22Z"
-    },
-    {
-      "headline": "Employers should teach primary-age children about work, says Milburn",
-      "url": "https://www.bbc.co.uk/news/articles/cr2kwlw0p3v9o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-01T07:07:08Z"
-    },
-    {
-      "headline": "Elon Musk’s Grokipedia has a ‘newly refreshed’ design",
-      "url": "https://www.theverge.com/tech/1003068/elon-musk-grokipedia-v-0-3-spacexai",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-01T00:23:45Z"
-    },
-    {
-      "headline": "Inside India newsletter: Foreign insurers get the red-carpet treatment — and policy uncertainty",
-      "url": "https://www.cnbc.com/2026/10/01/india-insurance-prudential-aviva-axa.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-01T00:23:44Z"
-    },
-    {
-      "headline": "Google releases Gemini 4 Argon, called its most powerful model yet",
-      "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-09-30T23:43:07Z"
     }
   ]
 }
