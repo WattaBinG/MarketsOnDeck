@@ -34,12 +34,6 @@
       "changePercent": 0.52
     },
     {
-      "symbol": "USO",
-      "price": null,
-      "change": null,
-      "changePercent": null
-    },
-    {
       "symbol": "SOFI",
       "price": 15.85,
       "change": 0.13,
@@ -61,13 +55,6 @@
       "held": true
     },
     {
-      "symbol": "HD",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "held": true
-    },
-    {
       "symbol": "KLAC",
       "price": 199.84,
       "change": 4.91,
@@ -86,27 +73,6 @@
       "price": 354.5,
       "change": -0.31,
       "changePercent": -0.09,
-      "held": true
-    },
-    {
-      "symbol": "CCL",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "held": true
-    },
-    {
-      "symbol": "DOGE",
-      "price": null,
-      "change": null,
-      "changePercent": null,
-      "held": true
-    },
-    {
-      "symbol": "USDC",
-      "price": null,
-      "change": null,
-      "changePercent": null,
       "held": true
     }
   ]
