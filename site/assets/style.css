@@ -941,3 +941,27 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 
 /* Quick links stay visible at tablet and desktop widths too. */
 #latest-entry, #older-entries { scroll-margin-top: 84px; }
+
+/* Mobile polish (2026-10-02, from Keith's phone screenshots): the wire filter
+   pills wrapped "Geopolitics" onto its own lonely row, and the top-story
+   headline filled the whole phone screen. Appended last so these win. */
+@media (max-width: 640px) {
+  /* Filter pills scroll sideways instead of wrapping awkwardly. */
+  .wire-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: none;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+    margin-bottom: -4px;
+  }
+  .wire-filters::-webkit-scrollbar { display: none; }
+  .wire-filter-btn { flex-shrink: 0; }
+  .home-dashboard .wire-filters { max-width: none; }
+
+  /* Top story keeps its punch without shouting full-screen. */
+  .home-dashboard .wire-top-headline { font-size: clamp(20px, 5.6vw, 25px); line-height: 1.15; }
+  .home-dashboard .wire-top { padding: 4px 0 8px; }
+}
