@@ -18,6 +18,19 @@ Claude Code scheduled trigger, not anything in this repo's `.github/workflows/` 
 `scheduler/` — if you have access to the Claude Code Triggers UI, pause/delete the trigger behind the
 `"Refresh The Record: ..."` commits directly, since a repo-instructions note only works if that job reads this file.
 
+## Referral links (use these exact links)
+
+Keith has referral links for the platforms below. Whenever a page, post, lesson or article names one of these platforms, link the platform name to its referral link with `rel="sponsored noopener"`, and keep the affiliate disclosure on any page that has them. Do not invent links, and do not state a bonus amount unless you have checked the provider's current terms. Source of truth for offers: `site/legal/affiliate-disclosure.html`.
+
+| Platform | Link |
+| --- | --- |
+| Robinhood | https://join.robinhood.com/keithw61 |
+| Charles Schwab | https://www.schwab.com/client-referral?refrid=REFERA73Z7DHR |
+| Polymarket US | https://polymarket.us/join/cryptodamus |
+| Kalshi Predictions | https://kalshi.com/t/5661t3nm |
+| Kalshi Perpetuals | https://kalshi.com/t/292pnj0o |
+| Phemex | https://phemex.com/register?referralCode=HUN4X2&scene=referral |
+
 ## Rules for every collaborator
 
 - Never include account numbers or masked account endings in any public post, page, commit, PR, patch, screenshot or other public surface. Reference accounts only as "Trading" and "Agentic". Remove identifier text before preparing public artifacts; masking is not permission to publish an account ending.
