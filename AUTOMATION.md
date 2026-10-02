@@ -194,3 +194,7 @@ Once this is merged, the Claude Desktop scheduled routines for **crypto**,
 Actions replacements cover the same files. Keep or remove the others
 (Morning Brief drafts, Record refreshes) as Keith prefers; nothing here
 conflicts with them.
+
+## Keep the SEO head block on every page
+
+Each indexable page carries a canonical link, Open Graph and Twitter tags (image: `/assets/brand/badge-1200.jpg`), and a JSON-LD block. When you write a new Morning Brief, Market Tape or Record edition by copying the previous page, keep that whole head block and update the canonical URL, `og:title`, `og:description`, `og:url`, the JSON-LD `name`/`description`/`url`, and the sitemap `lastmod`. Do not delete or reset these tags.
