@@ -1,17 +1,57 @@
 {
-  "asOf": "2026-10-02T19:31:01Z",
-  "asOfLabel": "3:31 PM ET",
+  "asOf": "2026-10-02T19:46:03Z",
+  "asOfLabel": "3:46 PM ET",
   "topStory": {
-    "headline": "Global Net Lease's Series B Preferred Stock Crosses Above 8% Yield Territory",
-    "url": "https://www.nasdaq.com/articles/global-net-leases-series-b-preferred-stock-crosses-above-8-yield-territory",
+    "headline": "Notable Friday Option Activity: ORCL, GS, RKLB",
+    "url": "https://www.nasdaq.com/articles/notable-friday-option-activity-orcl-gs-rklb",
     "source": "Nasdaq",
-    "category": "Macro",
-    "timestamp": "2026-10-02T18:54:22Z",
-    "firstSeen": "2026-10-02T19:31:01Z",
-    "leadSince": "2026-10-02T19:31:01Z",
-    "image": "/assets/images/wire-macro.jpg"
+    "category": "Markets",
+    "timestamp": "2026-10-02T19:27:25Z",
+    "firstSeen": "2026-10-02T19:46:03Z",
+    "leadSince": "2026-10-02T19:46:03Z",
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "G7 to release 100 million barrels of oil and diesel after Trump export ban threat",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T19:36:25Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
+    {
+      "headline": "ECB's Nagel: Possible that the German economy will grow around 1% this year",
+      "url": "https://x.com/financialjuice/status/2106105905117090074",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-02T19:36:19Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
+    {
+      "headline": "Wow. Tesla, $TSLA, is up about 5% today after Q3 deliveries hit 486,532, beating estimates of 461,974. SpaceX, $SPCX, is up more than 6%, days after Starship reached orbit for the first time. Toget...",
+      "url": "https://x.com/unusual_whales/status/2106104933099675674",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-02T19:32:22Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
+    {
+      "headline": "If I was Trump going into a big midterm loss, I would just go out with a bang: Cut entitlements & close the budget deficit It will crash the economy and he’ll be hated for 2 years—but history will...",
+      "url": "https://x.com/zerohedge/status/2106104740572696741",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T19:32:18Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
+    {
+      "headline": "Does AI have a soul? Pope Leo and Anthropic clash.",
+      "url": "https://www.marketwatch.com/story/does-ai-have-a-soul-pope-leo-and-anthropic-clash-0c1669fb?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "AI",
+      "timestamp": "2026-10-02T19:32:00Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
     {
       "headline": "10-year Treasury yield ticks higher despite weaker-than-expected jobs report",
       "url": "https://www.cnbc.com/2026/10/02/treasury-yields-bonds-nonfarm-payrolls.html",
@@ -21,12 +61,44 @@
       "firstSeen": "2026-10-02T19:31:01Z"
     },
     {
-      "headline": "Week Ahead: Economic Indicators 5th – 9th October (US) <>",
-      "url": "https://features.financialjuice.com/2026/10/02/week-ahead-economic-indicators-5th-9th-october-us/",
-      "source": "MarketsOnDeck Discord",
+      "headline": "DG Crosses Above 2% Yield Territory",
+      "url": "https://www.nasdaq.com/articles/dg-crosses-above-2-yield-territory",
+      "source": "Nasdaq",
+      "category": "Macro",
+      "timestamp": "2026-10-02T19:27:31Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
+    {
+      "headline": "Notable Friday Option Activity: MCRI, ESE, MRVL",
+      "url": "https://www.nasdaq.com/articles/notable-friday-option-activity-mcri-ese-mrvl",
+      "source": "Nasdaq",
       "category": "Markets",
-      "timestamp": "2026-10-02T19:28:18Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
+      "timestamp": "2026-10-02T19:27:18Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
+    {
+      "headline": "Notable Friday Option Activity: PCVX, RDDT, CBT",
+      "url": "https://www.nasdaq.com/articles/notable-friday-option-activity-pcvx-rddt-cbt",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-02T19:27:16Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
+    {
+      "headline": "Noteworthy Friday Option Activity: LEN, IREN, HIMS",
+      "url": "https://www.nasdaq.com/articles/noteworthy-friday-option-activity-len-iren-hims",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-02T19:27:14Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
+    },
+    {
+      "headline": "Treasuries Show Significant Downturn After Initial Surge",
+      "url": "https://www.nasdaq.com/articles/treasuries-show-significant-downturn-after-initial-surge",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-10-02T19:26:25Z",
+      "firstSeen": "2026-10-02T19:46:03Z"
     },
     {
       "headline": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
@@ -42,78 +114,6 @@
       "source": "MarketWatch",
       "category": "Macro",
       "timestamp": "2026-10-02T19:23:00Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
-    },
-    {
-      "headline": "Fitch revises LKQ outlook to stable on sluggish claims volume and share buybacks",
-      "url": "https://www.investing.com/news/stock-market-news/fitch-revises-lkq-outlook-to-stable-on-sluggish-claims-volume-and-share-buybacks-4930337",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T19:20:47Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
-    },
-    {
-      "headline": "Bitcoin trapped at $84K in whipsaw zone: Live levels",
-      "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-slips-to-83119-bears-eye-81194-live-levels-93CH-4919475",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T19:19:26Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
-    },
-    {
-      "headline": "Alphabet C consolidates in $332-$350 range: Live levels",
-      "url": "https://www.investing.com/news/stock-market-news/alphabet-c-tests-33690-support-below-ichimoku-cloud-live-levels-93CH-4920694",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T19:19:20Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
-    },
-    {
-      "headline": "Tesla hits 200 SMA & 61.8% Fib at $372: Hourly levels",
-      "url": "https://www.investing.com/news/stock-market-news/tesla-teeters-above-support-at-361-live-levels-93CH-4920695",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T19:19:19Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
-    },
-    {
-      "headline": "FAA says Boeing 737 Max software glitch not a flight-safety issue",
-      "url": "https://www.cnbc.com/2026/10/02/faa-says-boeing-737-max-10-software-glitch-not-a-flight-safety-issue.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-02T19:19:15Z",
-      "firstSeen": "2026-10-02T19:00:34Z"
-    },
-    {
-      "headline": "Nasdaq 100 consolidates below ATH with double top risk: Live",
-      "url": "https://www.investing.com/news/stock-market-news/nasdaq-100-rangebound-between-30548-and-30787-live-levels-93CH-4920692",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T19:19:07Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
-    },
-    {
-      "headline": "Dow Jones tests 52,000 resistance in descending channel: Live",
-      "url": "https://www.investing.com/news/stock-market-news/dow-jones-trapped-at-51913-between-double-bottom-and-downtrend-live-93CH-4920690",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T19:19:04Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
-    },
-    {
-      "headline": "Natural Gas trapped at $3.037 resistance cluster: Live levels",
-      "url": "https://www.investing.com/news/commodities-news/natural-gas-trapped-in-30813203-range-live-levels-93CH-4919473",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-02T19:19:03Z",
-      "firstSeen": "2026-10-02T19:31:01Z"
-    },
-    {
-      "headline": "BREAKING: The G7, which includes Britain, France, Japan and others, agreed to release diesel from reserve stockpiles to ease record-high prices driven mostly by the war in Iran.",
-      "url": "https://x.com/unusual_whales/status/2106101409699844546",
-      "source": "MarketsOnDeck Discord",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-02T19:18:18Z",
       "firstSeen": "2026-10-02T19:31:01Z"
     },
     {
