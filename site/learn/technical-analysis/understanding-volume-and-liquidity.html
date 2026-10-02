@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Understanding volume and liquidity | Learn | MarketsOnDeck</title>
+<meta name="description" content="How many shares trade, and why it affects your fills.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<link rel="stylesheet" href="/assets/learn.css?v=1">
+<link rel="canonical" href="https://marketsondeck.net/learn/technical-analysis/understanding-volume-and-liquidity.html">
+<meta property="og:title" content="Understanding volume and liquidity | Learn | MarketsOnDeck">
+<meta property="og:description" content="How many shares trade, and why it affects your fills.">
+<meta property="og:url" content="https://marketsondeck.net/learn/technical-analysis/understanding-volume-and-liquidity.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MarketsOnDeck">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+<meta name="twitter:title" content="Understanding volume and liquidity | Learn | MarketsOnDeck">
+<meta name="twitter:description" content="How many shares trade, and why it affects your fills.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Understanding volume and liquidity", "description": "How many shares trade, and why it affects your fills.", "url": "https://marketsondeck.net/learn/technical-analysis/understanding-volume-and-liquidity.html", "author": {"@type": "Organization", "name": "MarketsOnDeck"}, "publisher": {"@type": "Organization", "name": "MarketsOnDeck"}, "mainEntityOfPage": "https://marketsondeck.net/learn/technical-analysis/understanding-volume-and-liquidity.html"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Learn", "item": "https://marketsondeck.net/learn/index.html"}, {"@type": "ListItem", "position": 2, "name": "Technical Analysis", "item": "https://marketsondeck.net/learn/technical-analysis/index.html"}]}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/overview/index.html">Overview</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/market-tape/index.html">After Market Tape</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
+        <li><a href="/learn/index.html" class="active">Learn</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
+<main>
+<div class="container section-tight learn-wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/learn/index.html">Learn</a> <span aria-hidden="true">/</span> <a href="/learn/technical-analysis/index.html">Technical Analysis</a> <span aria-hidden="true">/</span> <span>Understanding volume and liquidity</span></nav>
+<div class="article-header"><div class="eyebrow">Technical Analysis</div><h1>Understanding volume and liquidity</h1><p class="learn-sub">How many shares trade, and why it affects your fills.</p></div></div>
+<div class="container learn-wrap learn-cols"><article class="article-body prose learn-article">
+<aside class="learn-toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#reading-volume">Reading volume</a></li><li><a href="#liquidity">Liquidity</a></li><li><a href="#why-it-matters-to-you">Why it matters to you</a></li><li><a href="#quick-check-before-you-trade">Quick check before you trade</a></li></ol></aside>
+<p>Volume is the number of shares traded in a period. It shows how much participation is behind a price move.</p>
+<h2 id="reading-volume">Reading volume</h2>
+<ul><li>A big price move on high volume has more participation behind it than the same move on low volume.</li><li>A breakout above a level on rising volume is generally trusted more than one on thin volume.</li><li>Compare today&#x27;s volume with the average volume over recent weeks, not with an absolute number.</li></ul>
+<h2 id="liquidity">Liquidity</h2>
+<p>Liquidity is how easily you can buy or sell without moving the price. A liquid stock has lots of shares trading and a tight bid-ask spread. An illiquid one has few trades and a wide spread.</p>
+<h2 id="why-it-matters-to-you">Why it matters to you</h2>
+<ul><li>Illiquid stocks cost more to trade because of the spread.</li><li>A market order in a thin stock can fill far from the last price.</li><li>In an illiquid stock, a sell stop can fill much lower than its trigger.</li><li>Options have the same issue: check volume, open interest and the bid-ask spread of each contract.</li></ul>
+<h2 id="quick-check-before-you-trade">Quick check before you trade</h2>
+<p>Look at average daily volume and the current spread. If the spread is wide compared with the price, use limit orders and a smaller size.</p>
+<div class="learn-note"><strong>Key point.</strong> Volume figures on free charts can differ from other sources, since feeds count trades differently.</div>
+<section class="learn-related"><h2>Keep learning</h2><ul><li><a href="/learn/stocks/market-mechanics-bid-ask-spread-hours.html">Market mechanics: bid, ask, spread and hours</a></li><li><a href="/learn/technical-analysis/candlestick-basics-reading-ohlc.html">Candlestick basics: reading OHLC</a></li><li><a href="/learn/resources/glossary.html">Trading glossary</a></li></ul></section><section class="learn-related"><h2>See it in practice</h2><p>These lessons use real market examples. Follow them on the site:</p><ul><li><a href="/brief/index.html">Morning Brief</a>: the daily setup before the open</li><li><a href="/market-tape/index.html">After Market Tape</a>: what moved after the close</li><li><a href="/record/index.html">The Record</a>: every real trade, wins and losses</li><li><a href="/episodes/index.html">Episodes</a>: full trade breakdowns</li></ul></section><p class="learn-disc"><strong>Education only, not investment advice.</strong> Trading involves real risk of loss, including loss of everything you put in. See the <a href="/about.html#disclosure">full disclaimer</a>.</p><div class="learn-pnwrap"><a class="learn-pn" href="/learn/technical-analysis/core-indicators-ema-sma-rsi.html"><span>Previous</span>Core indicators: SMA, EMA and RSI</a></div></article>
+<aside class="learn-side" aria-label="Technical Analysis track"><strong>Technical Analysis</strong><ul><li><a href="/learn/technical-analysis/candlestick-basics-reading-ohlc.html">Candlestick basics: reading OHLC</a></li><li><a href="/learn/technical-analysis/core-indicators-ema-sma-rsi.html">Core indicators: SMA, EMA and RSI</a></li><li><a href="/learn/technical-analysis/understanding-volume-and-liquidity.html" class="cur">Understanding volume and liquidity</a></li></ul><a href="/learn/resources/index.html">Glossary and calculators &rarr;</a></aside></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
+          <li><a href="/learn/index.html">Learn</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/market-tape/index.html">After Market Tape</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:markets.on.deck@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+    <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/learn.js?v=1" defer></script>
+</body>
+</html>
