@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Core indicators: SMA, EMA and RSI | Learn | MarketsOnDeck</title>
+<meta name="description" content="Moving averages and the relative strength index in plain English.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<link rel="stylesheet" href="/assets/learn.css?v=1">
+<link rel="canonical" href="https://marketsondeck.net/learn/technical-analysis/core-indicators-ema-sma-rsi.html">
+<meta property="og:title" content="Core indicators: SMA, EMA and RSI | Learn | MarketsOnDeck">
+<meta property="og:description" content="Moving averages and the relative strength index in plain English.">
+<meta property="og:url" content="https://marketsondeck.net/learn/technical-analysis/core-indicators-ema-sma-rsi.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MarketsOnDeck">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+<meta name="twitter:title" content="Core indicators: SMA, EMA and RSI | Learn | MarketsOnDeck">
+<meta name="twitter:description" content="Moving averages and the relative strength index in plain English.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Core indicators: SMA, EMA and RSI", "description": "Moving averages and the relative strength index in plain English.", "url": "https://marketsondeck.net/learn/technical-analysis/core-indicators-ema-sma-rsi.html", "author": {"@type": "Organization", "name": "MarketsOnDeck"}, "publisher": {"@type": "Organization", "name": "MarketsOnDeck"}, "mainEntityOfPage": "https://marketsondeck.net/learn/technical-analysis/core-indicators-ema-sma-rsi.html"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Learn", "item": "https://marketsondeck.net/learn/index.html"}, {"@type": "ListItem", "position": 2, "name": "Technical Analysis", "item": "https://marketsondeck.net/learn/technical-analysis/index.html"}]}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/overview/index.html">Overview</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/market-tape/index.html">After Market Tape</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
+        <li><a href="/learn/index.html" class="active">Learn</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
+<main>
+<div class="container section-tight learn-wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/learn/index.html">Learn</a> <span aria-hidden="true">/</span> <a href="/learn/technical-analysis/index.html">Technical Analysis</a> <span aria-hidden="true">/</span> <span>Core indicators: SMA, EMA and RSI</span></nav>
+<div class="article-header"><div class="eyebrow">Technical Analysis</div><h1>Core indicators: SMA, EMA and RSI</h1><p class="learn-sub">Moving averages and the relative strength index in plain English.</p></div></div>
+<div class="container learn-wrap learn-cols"><article class="article-body prose learn-article">
+<aside class="learn-toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#simple-moving-average-sma">Simple moving average (SMA)</a></li><li><a href="#exponential-moving-average-ema">Exponential moving average (EMA)</a></li><li><a href="#how-people-read-moving-averages">How people read moving averages</a></li><li><a href="#relative-strength-index-rsi">Relative strength index (RSI)</a></li><li><a href="#keep-it-simple">Keep it simple</a></li></ol></aside>
+<p>An indicator is a calculation drawn on a chart from price (and sometimes volume). It summarizes what already happened. It does not see the future.</p>
+<h2 id="simple-moving-average-sma">Simple moving average (SMA)</h2>
+<p>The average closing price over a set number of periods. A 50-day SMA adds up the last 50 closes and divides by 50. As each new day arrives, the oldest drops out, so the line moves with the price.</p>
+<h2 id="exponential-moving-average-ema">Exponential moving average (EMA)</h2>
+<p>Like an SMA but it weights recent prices more, so it reacts faster. A 20-day EMA turns sooner than a 20-day SMA.</p>
+<h2 id="how-people-read-moving-averages">How people read moving averages</h2>
+<ul><li>Price above a rising average is usually read as an uptrend. Below a falling average, a downtrend.</li><li>Averages can act as support or resistance where price tends to pause.</li><li>A 50-day crossing above the 200-day is often called a golden cross. Crossing below is a death cross. These lag the move and are not reliable on their own.</li></ul>
+<h2 id="relative-strength-index-rsi">Relative strength index (RSI)</h2>
+<p>RSI is a momentum gauge that moves between 0 and 100. It is usually calculated over 14 periods. By convention, above 70 is called overbought and below 30 is called oversold.</p>
+<ul><li>Overbought does not mean the price must fall. Strong trends can stay above 70 for a long time.</li><li>Oversold does not mean the price must rise.</li></ul>
+<h2 id="keep-it-simple">Keep it simple</h2>
+<p>Using several indicators that all come from the same price data does not add much confirmation. Learn one or two well.</p>
+<div class="learn-note"><strong>Key point.</strong> Indicators describe the past. Treat them as context.</div>
+<section class="learn-related"><h2>Keep learning</h2><ul><li><a href="/learn/technical-analysis/candlestick-basics-reading-ohlc.html">Candlestick basics: reading OHLC</a></li><li><a href="/learn/technical-analysis/understanding-volume-and-liquidity.html">Understanding volume and liquidity</a></li><li><a href="/learn/resources/glossary.html">Trading glossary</a></li></ul></section><section class="learn-related"><h2>See it in practice</h2><p>These lessons use real market examples. Follow them on the site:</p><ul><li><a href="/brief/index.html">Morning Brief</a>: the daily setup before the open</li><li><a href="/market-tape/index.html">After Market Tape</a>: what moved after the close</li><li><a href="/record/index.html">The Record</a>: every real trade, wins and losses</li><li><a href="/episodes/index.html">Episodes</a>: full trade breakdowns</li></ul></section><p class="learn-disc"><strong>Education only, not investment advice.</strong> Trading involves real risk of loss, including loss of everything you put in. See the <a href="/about.html#disclosure">full disclaimer</a>.</p><div class="learn-pnwrap"><a class="learn-pn" href="/learn/technical-analysis/candlestick-basics-reading-ohlc.html"><span>Previous</span>Candlestick basics: reading OHLC</a><a class="learn-pn next" href="/learn/technical-analysis/understanding-volume-and-liquidity.html"><span>Next</span>Understanding volume and liquidity</a></div></article>
+<aside class="learn-side" aria-label="Technical Analysis track"><strong>Technical Analysis</strong><ul><li><a href="/learn/technical-analysis/candlestick-basics-reading-ohlc.html">Candlestick basics: reading OHLC</a></li><li><a href="/learn/technical-analysis/core-indicators-ema-sma-rsi.html" class="cur">Core indicators: SMA, EMA and RSI</a></li><li><a href="/learn/technical-analysis/understanding-volume-and-liquidity.html">Understanding volume and liquidity</a></li></ul><a href="/learn/resources/index.html">Glossary and calculators &rarr;</a></aside></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
+          <li><a href="/learn/index.html">Learn</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/market-tape/index.html">After Market Tape</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:markets.on.deck@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+    <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/learn.js?v=1" defer></script>
+</body>
+</html>
