@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Order types: market, limit and stop-loss | Learn | MarketsOnDeck</title>
+<meta name="description" content="The order type controls the price you get.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://marketsondeck.net/assets/brand/icon-180.png">
+<link rel="stylesheet" href="/assets/learn.css?v=1">
+<link rel="canonical" href="https://marketsondeck.net/learn/stocks/order-types-market-limit-stop-loss.html">
+<meta property="og:title" content="Order types: market, limit and stop-loss | Learn | MarketsOnDeck">
+<meta property="og:description" content="The order type controls the price you get.">
+<meta property="og:url" content="https://marketsondeck.net/learn/stocks/order-types-market-limit-stop-loss.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MarketsOnDeck">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+<meta name="twitter:title" content="Order types: market, limit and stop-loss | Learn | MarketsOnDeck">
+<meta name="twitter:description" content="The order type controls the price you get.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Order types: market, limit and stop-loss", "description": "The order type controls the price you get.", "url": "https://marketsondeck.net/learn/stocks/order-types-market-limit-stop-loss.html", "author": {"@type": "Organization", "name": "MarketsOnDeck"}, "publisher": {"@type": "Organization", "name": "MarketsOnDeck"}, "mainEntityOfPage": "https://marketsondeck.net/learn/stocks/order-types-market-limit-stop-loss.html"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Learn", "item": "https://marketsondeck.net/learn/index.html"}, {"@type": "ListItem", "position": 2, "name": "Stocks 101", "item": "https://marketsondeck.net/learn/stocks/index.html"}]}]}</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/overview/index.html">Overview</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/market-tape/index.html">After Market Tape</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
+        <li><a href="/learn/index.html" class="active">Learn</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
+<main>
+<div class="container section-tight learn-wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/learn/index.html">Learn</a> <span aria-hidden="true">/</span> <a href="/learn/stocks/index.html">Stocks 101</a> <span aria-hidden="true">/</span> <span>Order types: market, limit and stop-loss</span></nav>
+<div class="article-header"><div class="eyebrow">Stocks 101</div><h1>Order types: market, limit and stop-loss</h1><p class="learn-sub">The order type controls the price you get.</p></div></div>
+<div class="container learn-wrap learn-cols"><article class="article-body prose learn-article">
+<aside class="learn-toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#market-order">Market order</a></li><li><a href="#limit-order">Limit order</a></li><li><a href="#stop-loss-order">Stop-loss order</a></li><li><a href="#the-catch-with-stops">The catch with stops</a></li><li><a href="#stop-limit">Stop-limit</a></li></ol></aside>
+<p>When you press buy or sell, you send an order to your broker. The type of order controls how and at what price it fills.</p>
+<h2 id="market-order">Market order</h2>
+<p>Buy or sell right now at the best available price. It fills quickly, but in a thin or fast-moving stock the fill can be worse than the last price you saw.</p>
+<h2 id="limit-order">Limit order</h2>
+<p>You name the price. A buy limit at $50 only fills at $50 or lower. A sell limit only fills at your price or higher. You control the price, but the order may never fill.</p>
+<h2 id="stop-loss-order">Stop-loss order</h2>
+<p>A stop-loss becomes a market order once the price touches your trigger. It is meant to get you out of a falling position. Pick a trigger that would show your idea was wrong, not a random percentage. A stop set too tight gets hit by normal daily swings.</p>
+<h2 id="the-catch-with-stops">The catch with stops</h2>
+<p>A stop does not guarantee your price. If a stock gaps down overnight, the stop triggers and fills at whatever price is available, which can be well below the trigger.</p>
+<h2 id="stop-limit">Stop-limit</h2>
+<p>A stop-limit turns into a limit order, not a market order, when the trigger hits. You control the worst price, but the order may not fill at all in a fast drop.</p>
+<div class="learn-note"><strong>Key point.</strong> Decide how much you are willing to lose before you enter, then size the position so that loss is small compared with your account. The position size calculator on the Resources page does this math.</div>
+<section class="learn-related"><h2>Keep learning</h2><ul><li><a href="/learn/stocks/how-to-execute-your-first-trade.html">How to execute your first trade</a></li><li><a href="/learn/options/buyer-risk-vs-seller-risk.html">Buyer risk vs seller risk</a></li><li><a href="/learn/resources/calculators.html#calc-size">Position size calculator</a></li><li><a href="/learn/resources/glossary.html">Trading glossary</a></li></ul></section><section class="learn-related"><h2>See it in practice</h2><p>These lessons use real market examples. Follow them on the site:</p><ul><li><a href="/brief/index.html">Morning Brief</a>: the daily setup before the open</li><li><a href="/market-tape/index.html">After Market Tape</a>: what moved after the close</li><li><a href="/record/index.html">The Record</a>: every real trade, wins and losses</li><li><a href="/episodes/index.html">Episodes</a>: full trade breakdowns</li></ul></section><p class="learn-disc"><strong>Education only, not investment advice.</strong> Trading involves real risk of loss, including loss of everything you put in. See the <a href="/about.html#disclosure">full disclaimer</a>.</p><div class="learn-pnwrap"><a class="learn-pn" href="/learn/stocks/market-mechanics-bid-ask-spread-hours.html"><span>Previous</span>Market mechanics: bid, ask, spread and hours</a><a class="learn-pn next" href="/learn/stocks/how-to-execute-your-first-trade.html"><span>Next</span>How to execute your first trade</a></div></article>
+<aside class="learn-side" aria-label="Stocks 101 track"><strong>Stocks 101</strong><ul><li><a href="/learn/stocks/what-is-a-stock-and-market-cap.html">What a stock is, and what market cap means</a></li><li><a href="/learn/stocks/market-mechanics-bid-ask-spread-hours.html">Market mechanics: bid, ask, spread and hours</a></li><li><a href="/learn/stocks/order-types-market-limit-stop-loss.html" class="cur">Order types: market, limit and stop-loss</a></li><li><a href="/learn/stocks/how-to-execute-your-first-trade.html">How to execute your first trade</a></li></ul><a href="/learn/resources/index.html">Glossary and calculators &rarr;</a></aside></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
+          <li><a href="/learn/index.html">Learn</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/market-tape/index.html">After Market Tape</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:markets.on.deck@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+    <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/learn.js?v=1" defer></script>
+</body>
+</html>
