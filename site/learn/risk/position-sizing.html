@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Position sizing: decide what you can lose before you trade | Learn | MarketsOnDeck</title>
+<meta name="description" content="The 1% rule in plain arithmetic — how big a position to take so that one bad trade can't hurt you.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/learn.css?v=1">
+<link rel="canonical" href="https://marketsondeck.net/learn/risk/position-sizing.html">
+<meta property="og:title" content="Position sizing: decide what you can lose before you trade | Learn | MarketsOnDeck">
+<meta property="og:description" content="The 1% rule in plain arithmetic — how big a position to take so that one bad trade can't hurt you.">
+<meta property="og:url" content="https://marketsondeck.net/learn/risk/position-sizing.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MarketsOnDeck">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+<meta name="twitter:title" content="Position sizing: decide what you can lose before you trade | Learn | MarketsOnDeck">
+<meta name="twitter:description" content="The 1% rule in plain arithmetic — how big a position to take so that one bad trade can't hurt you.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Position sizing: decide what you can lose before you trade", "description": "The 1% rule in plain arithmetic — how big a position to take so that one bad trade can't hurt you.", "url": "https://marketsondeck.net/learn/risk/position-sizing.html", "author": {"@type": "Organization", "name": "MarketsOnDeck"}, "publisher": {"@type": "Organization", "name": "MarketsOnDeck"}, "mainEntityOfPage": "https://marketsondeck.net/learn/risk/position-sizing.html"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Learn", "item": "https://marketsondeck.net/learn/index.html"}, {"@type": "ListItem", "position": 2, "name": "Risk & Survival", "item": "https://marketsondeck.net/learn/risk/index.html"}]}]}</script>
+<meta name="twitter:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/overview/index.html">Overview</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/market-tape/index.html">After Market Tape</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
+        <li><a href="/learn/index.html" class="active">Learn</a></li>
+        <li><a href="/follow/index.html">Follow</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
+<main>
+<div class="container section-tight learn-wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/learn/index.html">Learn</a> <span aria-hidden="true">/</span> <a href="/learn/risk/index.html">Risk &amp; Survival</a> <span aria-hidden="true">/</span> <span>Position sizing</span></nav>
+<div class="article-header"><div class="eyebrow">Risk &amp; Survival</div><h1>Position sizing: decide what you can lose before you trade</h1><p class="learn-sub">The 1% rule in plain arithmetic — how big a position to take so that one bad trade can't hurt you.</p></div></div>
+<div class="container learn-wrap learn-cols"><article class="article-body prose learn-article">
+<aside class="learn-toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#core-idea">The core idea</a></li><li><a href="#one-percent-rule">The 1% rule</a></li><li><a href="#the-formula">The formula</a></li><li><a href="#worked-example">Worked example</a></li><li><a href="#options-sizing">Sizing options trades</a></li><li><a href="#calculator">Use the calculator</a></li><li><a href="#mistakes">Common mistakes</a></li><li><a href="#takeaway">The takeaway</a></li></ol></aside>
+<h2 id="core-idea">The core idea</h2>
+<p>Beginners size positions by gut — <em>this one feels good, I'll go big.</em> Professionals size by math: decide the most you'll lose if you're wrong, then work backward to the position size. Your confidence doesn't set your size; your <strong>stop</strong> (the price where you admit you're wrong and exit) does. Risk is <strong>position size × stop distance</strong>, not a feeling.</p>
+<h2 id="one-percent-rule">The 1% rule</h2>
+<p>Risk no more than <strong>1% of your account</strong> on a single trade. On a $10,000 account, that's $100. Why it matters: losing streaks happen to everyone. Ten straight 1% losses leave you down roughly 10% — annoying, recoverable. Ten straight 10% losses leave you down about 65% — and now you need a near-triple just to get back to even. The math of drawdowns is brutal on the way down and worse on the way back. Survival is the whole game, and position sizing is how you buy survival.</p>
+<div class="learn-note"><strong>Key point.</strong> Position size and risk are different things. A $2,500 position can carry $100 of risk or $2,500 of risk depending on where your stop is. The stop sets the risk; the math sets the size.</div>
+<h2 id="the-formula">The formula</h2>
+<p><strong>Shares = (account × risk %) ÷ (entry price − stop price).</strong> In words: divide the dollars you're willing to lose by what you'd lose per share if stopped out. The result is how many shares keep the loss inside your budget.</p>
+<h2 id="worked-example">Worked example</h2>
+<p>An illustration with round numbers. Account: $10,000. Risk per trade: 1% → <strong>$100</strong>. You want to buy a stock at $50 with a stop at $48:</p>
+<ul>
+<li>Dollars at risk: $10,000 × 1% = <strong>$100</strong></li>
+<li>Loss per share if stopped: $50 − $48 = <strong>$2</strong></li>
+<li>Shares: $100 ÷ $2 = <strong>50 shares</strong> → a $2,500 position</li>
+</ul>
+<p>Notice: the position is 25% of the account, but the <em>risk</em> is 1%. That's the lesson — size and risk are different things, and the stop is what connects them. No stop, no math, no trade.</p>
+<h2 id="options-sizing">Sizing options trades</h2>
+<p>Options make this simpler in one way: for a <strong>bought</strong> option, the most you can lose is the premium you paid. One contract bought at $1.50 = $150 of max risk. Apply the same rule — that $150 should fit inside your per-trade risk budget. (Sold options are a different animal with different risk math; the lessons on <a href="/learn/options/cash-secured-puts.html">cash-secured puts</a> and buyer-vs-seller risk cover that side.)</p>
+<h2 id="calculator">Use the calculator</h2>
+<p>You don't have to do this arithmetic by hand every time. This site has a <a href="/learn/resources/calculators.html#calc-size">position-size calculator</a> — plug in your account size, risk percent, entry, and stop, and it tells you the share count. Run every trade through it before you place the order. Thirty seconds now beats regret later.</p>
+<h2 id="mistakes">Common mistakes</h2>
+<ul>
+<li><strong>Sizing by confidence.</strong> "I'm really sure about this one" is how 1% becomes 10%. The market doesn't grade your certainty.</li>
+<li><strong>Trading with no stop.</strong> Without a stop price, position size is meaningless — your risk is the entire position.</li>
+<li><strong>Moving the stop to avoid the loss.</strong> A stop you won't honor isn't a stop. The math only works if you actually exit.</li>
+<li><strong>Averaging down without a plan.</strong> Every add is a new risk decision. Adding to a loser because "it's cheaper now" doubles down on being wrong.</li>
+<li><strong>Counting the same risk twice.</strong> Three positions in three stocks that all move together is one big position wearing a disguise.</li>
+</ul>
+<h2 id="takeaway">The takeaway</h2>
+<p>Before every trade, answer one question: <em>if my stop hits, I lose $X — can I live with $X?</em> If yes, take the trade. If the math says the position is too big for your stop, shrink the position — never the stop. Do this on every trade and no single loss can ever end your run.</p>
+<section class="learn-related"><h2>Keep learning</h2><ul><li><a href="/learn/resources/calculators.html#calc-size">Position size calculator</a></li><li><a href="/learn/stocks/order-types-market-limit-stop-loss.html">Order types: market, limit and stop-loss</a></li><li><a href="/learn/resources/glossary.html">Trading glossary</a></li></ul></section><section class="learn-related"><h2>See it in practice</h2><p>These lessons use real market examples. Follow them on the site:</p><ul><li><a href="/brief/index.html">Morning Brief</a>: the daily setup before the open</li><li><a href="/market-tape/index.html">After Market Tape</a>: what moved after the close</li><li><a href="/record/index.html">The Record</a>: every real trade, wins and losses</li><li><a href="/episodes/index.html">Episodes</a>: full trade breakdowns</li></ul></section><p class="learn-disc"><strong>Education only, not investment advice.</strong> Trading involves real risk of loss, including loss of everything you put in. See the <a href="/about.html#disclosure">full disclaimer</a>.</p></article>
+<aside class="learn-side" aria-label="Risk and Survival track"><strong>Risk &amp; Survival</strong><ul><li><a href="/learn/risk/position-sizing.html" class="cur">Position sizing</a></li></ul><a href="/learn/resources/index.html">Glossary and calculators &rarr;</a></aside></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
+          <li><a href="/learn/index.html">Learn</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/market-tape/index.html">After Market Tape</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/follow/index.html">Follow</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:markets.on.deck@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+    <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/learn.js?v=1" defer></script>
+</body>
+</html>

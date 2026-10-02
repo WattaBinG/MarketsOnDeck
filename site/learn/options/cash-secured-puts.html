@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cash-secured puts: getting paid to wait for a stock you want | Learn | MarketsOnDeck</title>
+<meta name="description" content="Sell a put, collect the premium, and either keep it or buy the stock at a discount you chose. The put side of the income coin.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/style.css?v=20260928mobile2">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/brand/icon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/brand/icon-180.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="/assets/learn.css?v=1">
+<link rel="canonical" href="https://marketsondeck.net/learn/options/cash-secured-puts.html">
+<meta property="og:title" content="Cash-secured puts: getting paid to wait for a stock you want | Learn | MarketsOnDeck">
+<meta property="og:description" content="Sell a put, collect the premium, and either keep it or buy the stock at a discount you chose. The put side of the income coin.">
+<meta property="og:url" content="https://marketsondeck.net/learn/options/cash-secured-puts.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MarketsOnDeck">
+<meta property="og:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+<meta name="twitter:title" content="Cash-secured puts: getting paid to wait for a stock you want | Learn | MarketsOnDeck">
+<meta name="twitter:description" content="Sell a put, collect the premium, and either keep it or buy the stock at a discount you chose. The put side of the income coin.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Cash-secured puts: getting paid to wait for a stock you want", "description": "Sell a put, collect the premium, and either keep it or buy the stock at a discount you chose. The put side of the income coin.", "url": "https://marketsondeck.net/learn/options/cash-secured-puts.html", "author": {"@type": "Organization", "name": "MarketsOnDeck"}, "publisher": {"@type": "Organization", "name": "MarketsOnDeck"}, "mainEntityOfPage": "https://marketsondeck.net/learn/options/cash-secured-puts.html"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Learn", "item": "https://marketsondeck.net/learn/index.html"}, {"@type": "ListItem", "position": 2, "name": "Options Trading", "item": "https://marketsondeck.net/learn/options/index.html"}]}]}</script>
+<meta name="twitter:image" content="https://marketsondeck.net/assets/brand/badge-1200.jpg">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="primaryNav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/overview/index.html">Overview</a></li>
+        <li><a href="/brief/index.html">Morning Brief</a></li>
+        <li><a href="/market-tape/index.html">After Market Tape</a></li>
+        <li><a href="/record/index.html">The Record</a></li>
+        <li><a href="/learn/index.html" class="active">Learn</a></li>
+        <li><a href="/follow/index.html">Follow</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.5M12 19v2.5M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2.5 12H5M19 12h2.5M4.2 19.8L6 18M18 6l1.8-1.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M1 4h16M1 9h16M1 14h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+<div class="ticker-pinned-wrap"><div class="ticker-pinned" id="tickerPinned"></div></div>
+<div class="ticker-strip" id="tickerStrip">
+  <div class="ticker-scroll">
+    <div class="ticker-track"></div>
+  </div>
+</div>
+<main>
+<div class="container section-tight learn-wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/learn/index.html">Learn</a> <span aria-hidden="true">/</span> <a href="/learn/options/index.html">Options Trading</a> <span aria-hidden="true">/</span> <span>Cash-secured puts</span></nav>
+<div class="article-header"><div class="eyebrow">Options Trading</div><h1>Cash-secured puts: getting paid to wait for a stock you want</h1><p class="learn-sub">Sell a put, collect the premium, and either keep it or buy the stock at a discount you chose. The put side of the income coin.</p></div></div>
+<div class="container learn-wrap learn-cols"><article class="article-body prose learn-article">
+<aside class="learn-toc" aria-label="On this page"><strong>On this page</strong><ol><li><a href="#what-it-is">What it is</a></li><li><a href="#key-terms">Key terms</a></li><li><a href="#worked-example">Worked example</a></li><li><a href="#vs-limit-order">When it beats a limit order</a></li><li><a href="#risks">The honest risks</a></li><li><a href="#broker-needs">What you need from a broker</a></li><li><a href="#mistakes">Common mistakes</a></li><li><a href="#takeaway">The takeaway</a></li></ol></aside>
+<p><em>Educational content only — not investment advice. Options involve risk, including the possible loss of principal, and are not suitable for every investor. Nothing here is a recommendation to buy or sell any security.</em></p>
+<h2 id="what-it-is">What it is</h2>
+<p>A <strong>cash-secured put</strong> is the mirror image of the covered call. Instead of owning shares and selling a call against them, you keep cash on the sideline and <strong>sell a put</strong>. You collect the premium up front. In exchange, you agree to buy 100 shares at the strike price if the stock falls there. Two endings, both acceptable: the stock stays up and you keep the premium, or it drops and you buy a stock you wanted at a price you picked in advance — minus the premium you already collected.</p>
+<div class="learn-note"><strong>Key point.</strong> You must actually want the stock. A cash-secured put obligates you to buy 100 shares at the strike — only sell puts at strikes you'd happily buy at.</div>
+<h2 id="key-terms">Key terms</h2>
+<div class="table-scroll">
+<table>
+<thead><tr><th>Term</th><th>Plain-English meaning</th></tr></thead>
+<tbody>
+<tr><td><strong>Selling a put</strong></td><td>You sell someone the <em>right</em> to sell you shares at the strike. You collect cash now; you hold the obligation.</td></tr>
+<tr><td><strong>Cash-secured</strong></td><td>You keep the full cost of 100 shares in cash, ready if you're assigned. A $50 strike means $5,000 set aside.</td></tr>
+<tr><td><strong>Strike</strong></td><td>The price you'd buy at if assigned.</td></tr>
+<tr><td><strong>Premium</strong></td><td>What you collect for taking on the obligation. Quoted per share; one contract covers 100 shares.</td></tr>
+<tr><td><strong>Assignment</strong></td><td>The put buyer exercises their right and you buy 100 shares at the strike — usually automatic at expiration if the stock is below it.</td></tr>
+</tbody>
+</table>
+</div>
+<h2 id="worked-example">Worked example</h2>
+<p>An illustration with round numbers. Say a stock trades at $52 and you'd be happy owning it at $50:</p>
+<ul>
+<li><strong>Sell</strong> one $50 put, about a month out, for <strong>$1.50</strong> → collect <strong>$150</strong> (1 × 100 × $1.50). Set aside <strong>$5,000</strong> in cash.</li>
+</ul>
+<p>Two endings:</p>
+<ul>
+<li><strong>The stock stays above $50 through expiration.</strong> The put expires worthless. You keep the <strong>$150</strong>, your $5,000 is free again, and you can sell another put next month. This is the most common outcome — and the whole point.</li>
+<li><strong>The stock drops and you're assigned.</strong> You buy 100 shares at $50 ($5,000). But you already collected $150, so your effective cost is <strong>$48.50 per share</strong>. You wanted the stock at $50; you got it at $48.50.</li>
+</ul>
+<h2 id="vs-limit-order">When it beats a limit order</h2>
+<p>A limit order to buy at $50 just sits there waiting. A cash-secured put at the $50 strike <strong>pays you to wait</strong> for the same fill. If the stock never drops, the limit order gets you nothing; the put seller still banks the premium. The trade-off: a limit order can be cancelled any time, while a short put commits you until expiration (unless you buy it back). Use the put when you'd genuinely buy at the strike; use the limit order when you want a free option to change your mind.</p>
+<h2 id="risks">The honest risks</h2>
+<ul>
+<li><strong>The stock can keep falling past your strike.</strong> You agreed to buy at $50; if it goes to $40, you're down roughly $1,000 per contract minus the premium. A cash-secured put is still a bullish trade — you have to want the stock.</li>
+<li><strong>Your cash is tied up.</strong> The $5,000 securing the put can't do anything else while the trade is on.</li>
+<li><strong>Early assignment happens.</strong> Less common on the put side, but a buyer can exercise before expiration, especially around dividends and corporate actions.</li>
+<li><strong>Selling puts on stocks you don't want is speculation, not income.</strong> If assignment would feel like a punishment, the trade was wrong from the start.</li>
+</ul>
+<h2 id="broker-needs">What you need from a broker</h2>
+<p>Selling puts requires an options approval level that covers it — brokers gate this because the obligation is real. You also need the cash to secure every contract you sell: one contract at a $50 strike ties up $5,000, two contracts tie up $10,000, and so on. If you don't have an account with options approval yet, <a href="https://public.com/user-referral?referrer=wattaBing" rel="sponsored noopener" target="_blank">Public.com is one place to open one</a>.</p>
+<div class="learn-note"><strong>Affiliate disclosure.</strong> The Public.com link above is a referral link — MarketsOnDeck may earn a bonus if you open an account through it, at no extra cost to you. That does not change what we say about the products. See the <a href="/legal/affiliate-disclosure.html">full affiliate disclosure</a>.</div>
+<h2 id="mistakes">Common mistakes</h2>
+<ul>
+<li><strong>Selling puts without the cash to back them.</strong> That's a naked put — a different, far riskier trade with margin requirements that can surprise you.</li>
+<li><strong>Selling more contracts than your cash covers.</strong> Count the full strike × 100 × contracts before you sell, not after.</li>
+<li><strong>Chasing the fattest premium on a shaky company.</strong> High premium means the market sees high risk. A 10% monthly yield on a put usually means the stock might actually go there.</li>
+<li><strong>Forgetting earnings.</strong> A stock can gap straight through your strike overnight on an earnings report. Check the calendar before selling puts into one.</li>
+<li><strong>Selling puts on a stock you wouldn't buy.</strong> Then assignment day feels like a loss instead of the plan working.</li>
+</ul>
+<h2 id="takeaway">The takeaway</h2>
+<p>A cash-secured put is a limit order that pays you. Pick a stock you'd buy anyway, pick a strike you'd buy at, keep the cash aside, collect the premium. Assigned? You own the stock below the strike. Not assigned? The premium was the whole point. And when you do get assigned, the natural next move is selling a covered call against those new shares — the two trades together are called <strong>the wheel</strong>, and that's the next lesson.</p>
+<section class="learn-related"><h2>Keep learning</h2><ul><li><a href="/learn/options/buyer-risk-vs-seller-risk.html">Buyer risk vs seller risk</a></li><li><a href="/learn/options/strike-prices-and-expiration-cycles.html">Strike prices and expiration cycles</a></li><li><a href="/learn/resources/calculators.html#calc-opt">Options P/L calculator</a></li><li><a href="/learn/resources/glossary.html">Trading glossary</a></li></ul></section><section class="learn-related"><h2>See it in practice</h2><p>These lessons use real market examples. Follow them on the site:</p><ul><li><a href="/brief/index.html">Morning Brief</a>: the daily setup before the open</li><li><a href="/market-tape/index.html">After Market Tape</a>: what moved after the close</li><li><a href="/record/index.html">The Record</a>: every real trade, wins and losses</li><li><a href="/episodes/index.html">Episodes</a>: full trade breakdowns</li></ul></section><p class="learn-disc"><strong>Education only, not investment advice.</strong> Options involve risk, including the possible loss of principal. See the <a href="/about.html#disclosure">full disclaimer</a>.</p><div class="learn-pnwrap"><a class="learn-pn prev" href="/learn/options/buyer-risk-vs-seller-risk.html"><span>Previous</span>Buyer risk vs seller risk</a></div></article>
+<aside class="learn-side" aria-label="Options Trading track"><strong>Options Trading</strong><ul><li><a href="/learn/options/calls-vs-puts-the-fundamentals.html">Calls vs puts: the fundamentals</a></li><li><a href="/learn/options/strike-prices-and-expiration-cycles.html">Strike prices and expiration cycles</a></li><li><a href="/learn/options/understanding-the-greeks-delta-theta-iv.html">Understanding the Greeks: delta, theta and IV</a></li><li><a href="/learn/options/buyer-risk-vs-seller-risk.html">Buyer risk vs seller risk</a></li><li><a href="/learn/options/cash-secured-puts.html" class="cur">Cash-secured puts</a></li></ul><a href="/learn/resources/index.html">Glossary and calculators &rarr;</a></aside></div>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand row gap-xs" style="margin-bottom:14px;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
+        </div>
+        <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Content</h4>
+        <ul>
+          <li><a href="/overview/index.html">Overview</a></li>
+          <li><a href="/learn/index.html">Learn</a></li>
+          <li><a href="/brief/index.html">Morning Brief</a></li>
+          <li><a href="/market-tape/index.html">After Market Tape</a></li>
+          <li><a href="/record/index.html">The Record</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/follow/index.html">Follow</a></li>
+          <li><a href="/legal/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+          <li><a href="/legal/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="/legal/terms-of-service.html">Terms of Service</a></li>
+          <li><a href="mailto:markets.on.deck@gmail.com">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>&copy; 2026 MarketsOnDeck. Not investment advice.</span>
+      <span>One trader, one real account, documented in public.</span>
+    </div>
+    <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
+  </div>
+</footer>
+<script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/learn.js?v=1" defer></script>
+</body>
+</html>
