@@ -941,3 +941,46 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 
 /* Quick links stay visible at tablet and desktop widths too. */
 #latest-entry, #older-entries { scroll-margin-top: 84px; }
+
+/* Mobile polish (2026-10-02, from Keith's phone screenshots): the wire filter
+   pills wrapped "Geopolitics" onto its own lonely row, and the top-story
+   headline filled the whole phone screen. Appended last so these win. */
+@media (max-width: 640px) {
+  /* Filter pills scroll sideways instead of wrapping awkwardly. */
+  .wire-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    max-width: none;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+    margin-bottom: -4px;
+  }
+  .wire-filters::-webkit-scrollbar { display: none; }
+  .wire-filter-btn { flex-shrink: 0; }
+  .home-dashboard .wire-filters { max-width: none; }
+
+  /* Top story keeps its punch without shouting full-screen. */
+  .home-dashboard .wire-top-headline { font-size: clamp(20px, 5.6vw, 25px); line-height: 1.15; }
+  .home-dashboard .wire-top { padding: 4px 0 8px; }
+}
+
+/* Mobile wire grid (2026-10-02, Keith: the single phone column looks sparse
+   next to desktop's 3-column masonry). Phones get a compact 2-column card
+   grid so the feed feels rich, not like one endless row. Appended last. */
+@media (max-width: 640px) {
+  .home-dashboard .wire-main .wire-list { column-count: 2; column-gap: 10px; }
+  .home-dashboard .wire-main .wire-list li {
+    break-inside: avoid;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin: 0 0 10px;
+  }
+  .home-dashboard .wire-main .wire-list a { font-size: 13.5px; line-height: 1.35; }
+  .home-dashboard .wire-main .wire-tag { font-size: 9px; margin-bottom: 4px; }
+  .home-dashboard .wire-main .wire-source { font-size: 10px; }
+  .home-dashboard .wire-main .wire-time { font-size: 10px; }
+}
