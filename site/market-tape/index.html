@@ -78,6 +78,53 @@
     </div>
   </div>
   <div class="container">
+    <section class="tv-section" aria-label="Live market chart">
+      <style>
+        .tv-section { margin: 6px 0 26px; }
+        .tv-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+        .tv-head h2 { font-size: 19px; margin: 0; }
+        .tv-head p { margin: 0; font-size: 13px; opacity: .72; }
+        .tv-wrap { height: 520px; border: 1px solid var(--border); border-radius: 14px; overflow: hidden; background: #0f172a; }
+        @media (max-width: 640px) { .tv-wrap { height: 420px; } .tv-head h2 { font-size: 17px; } }
+      </style>
+      <div class="tv-head">
+        <h2>Today's tape, visualized</h2>
+        <p>Live chart &mdash; tap a ticker to follow any name in the entries below.</p>
+      </div>
+      <div class="tv-wrap">
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container" style="height:100%;width:100%">
+          <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+          <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+          {
+            "symbol": "AMEX:SPY",
+            "interval": "D",
+            "theme": "dark",
+            "style": "1",
+            "locale": "en",
+            "timezone": "America/New_York",
+            "backgroundColor": "rgba(15, 23, 42, 1)",
+            "gridColor": "rgba(148, 163, 184, 0.08)",
+            "hide_side_toolbar": true,
+            "hide_top_toolbar": false,
+            "hide_legend": false,
+            "hide_volume": false,
+            "allow_symbol_change": true,
+            "save_image": true,
+            "withdateranges": true,
+            "watchlist": ["AMEX:SPY", "NASDAQ:QQQ", "AMEX:DIA", "AMEX:IWM", "NYSE:HD", "NASDAQ:TSLA", "NYSE:CCL", "NYSE:NKE"],
+            "compareSymbols": [],
+            "studies": [],
+            "autosize": true
+          }
+          </script>
+        </div>
+        <!-- TradingView Widget END -->
+      </div>
+    </section>
+  </div>
+  <div class="container">
     <div class="brief-layout daily-feed">
 
       <div class="brief-main article-body prose daily-entries" id="latest-entry">
