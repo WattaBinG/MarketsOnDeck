@@ -1,17 +1,145 @@
 {
-  "asOf": "2026-10-03T01:17:12Z",
-  "asOfLabel": "9:17 PM ET",
+  "asOf": "2026-10-03T01:25:35Z",
+  "asOfLabel": "9:25 PM ET",
   "topStory": {
-    "headline": "TRUMP ON DIESEL: EXPORT BAN WAS NEVER REALLY ON THE TABLE",
-    "url": "https://t.me/WalterBloomberg/36357",
-    "source": "Walter Bloomberg (unofficial mirror)",
+    "headline": "US to send third carrier, 10,000 more troops to Middle East as China halts fuel exports; oil jumps on Iran strike fears",
+    "url": "https://www.cnbc.com/2026/10/01/oil-prices-today-wti-brent.html",
+    "source": "CNBC",
     "category": "Geopolitics",
-    "timestamp": "2026-10-02T20:04:50Z",
-    "firstSeen": "2026-10-02T21:47:19Z",
-    "leadSince": "2026-10-02T21:47:19Z",
+    "timestamp": "2026-10-02T01:00:00Z",
+    "firstSeen": "2026-10-03T01:25:35Z",
+    "leadSince": "2026-10-03T01:25:35Z",
     "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
+    {
+      "headline": "Nasdaq, S&P 500 close at records as Nvidia hits all-time high; weak jobs data fuels Fed rate-cut bets",
+      "url": "https://www.benzinga.com/news/26/10/62141603/nvidia-nasdaq-100-record-high-western-digital-sinks-soft-jobs-report-fed-hike-bets-markets-friday",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-10-02T21:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "September payrolls rise just 29,000, badly missing 84,000 estimate; unemployment ticks up to 4.2%",
+      "url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-02T13:30:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "US 10-year Treasury yield hits 5.34%, highest since 2002, as global bond selloff deepens",
+      "url": "https://finance.yahoo.com/markets/currencies/articles/u-10-treasury-yield-hits-174445262.html",
+      "source": "Yahoo Finance",
+      "category": "Macro",
+      "timestamp": "2026-10-01T18:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "Bank stocks sink further into correction as Citigroup tumbles on bond-yield worries",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-01/bank-stocks-sink-further-into-correction-as-citigroup-tumbles-mupql1a7",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-10-01T20:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "Chip-equipment stocks rally: KLA, Lam Research, AMD, Analog Devices, Marvell trade higher",
+      "url": "https://www.theglobeandmail.com/investing/markets/stocks/ADI/pressreleases/4933023/analog-devices-amd-kla-corporation-lam-research-and-marvell-technology-stocks-trade-up-what-you-need-to-know",
+      "source": "The Globe and Mail",
+      "category": "Markets",
+      "timestamp": "2026-10-02T20:30:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "Nike shares fall as revenue misses estimates despite EPS beat; full-year outlook cut further",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nike-falls-revenue-miss-overshadows-205104024.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-10-02T20:51:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "G7 agrees to release up to 100 million barrels of emergency diesel and crude stocks to counter fuel crisis",
+      "url": "https://oilprice.com/Latest-Energy-News/World-News/G7-Moves-to-Release-100-Million-Barrels-to-Counter-Diesel-Crisis.html",
+      "source": "OilPrice.com",
+      "category": "Macro",
+      "timestamp": "2026-10-02T16:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "RTX wins $24.4 billion Navy contract for SM-6 missile production, its second major defense deal this week",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-01/rtx-gets-24-billion-deal-to-boost-missile-output-for-us-navy",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-10-01T19:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "US to send USS Theodore Roosevelt carrier group, Marine unit to Middle East as Trump weighs resuming Iran strikes in November",
+      "url": "https://www.agbi.com/oil-and-gas/2026/10/oil-price-stable-while-us-set-to-send-more-troops-to-middle-east/",
+      "source": "AGBI",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T12:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "Hang Seng falls 3% to 11-week low as China's Golden Week removes top copper buyer from market",
+      "url": "https://riotimesonline.com/copper-markets-latam-saturday-october-3-2026",
+      "source": "Rio Times",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T22:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "FlyDubai attacker was previously banned from flying by Oman - WSJ",
+      "url": "https://www.investing.com/news/economy-news/flydubai-attacker-was-previously-banned-from-flying-by-oman--wsj-4930620",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-03T00:53:19Z",
+      "firstSeen": "2026-10-03T01:17:12Z"
+    },
+    {
+      "headline": "SpaceX (SPCX) shares surge 7%+ after Starship reaches orbit, Crew-13 launch, Musk teases Nvidia-powered systems",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62144230/spacex-stock-surges-whats-going-on-2",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-02T19:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "Synaptics jumps 15% after-hours on amended all-cash $123/share ON Semiconductor buyout",
+      "url": "https://www.benzinga.com/markets/equities/26/10/62126038/synaptics-syna-stock-fifteen-percent-after-hours-on-semiconductor-merger-deal",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-01T22:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "Tesla shares rise after Q3 deliveries of 486,532 vehicles beat estimates by roughly 25,000 units",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-2-213128258.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-10-02T21:31:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "SoFi, Mastercard move SoFi Bank's full $25 billion card program to stablecoin settlement",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61930061/sofi-mastercard-launch-stablecoin-settlement-across-25-billion-card-program",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-09-22T14:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
+    {
+      "headline": "Disney to cut hundreds of jobs as part of TV restructuring around streaming, WSJ reports",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-01/disney-to-cut-hundreds-of-jobs-as-part-of-tv-revamp-wsj-says",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-10-01T17:00:00Z",
+      "firstSeen": "2026-10-03T01:25:35Z"
+    },
     {
       "headline": "Japan finance minister Katayama: Bessent questions if Japan government has been sending consistent messages to markets",
       "url": "https://x.com/financialjuice/status/2106190260937855243",
@@ -21,132 +149,12 @@
       "firstSeen": "2026-10-03T01:17:12Z"
     },
     {
-      "headline": "Prairie operating director Richard Frommer buys $12,600 in shares",
-      "url": "https://www.investing.com/news/insider-trading-news/prairie-operating-director-richard-frommer-buys-12600-in-shares-93CH-4930630",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-03T01:01:00Z",
-      "firstSeen": "2026-10-03T01:17:12Z"
-    },
-    {
-      "headline": "FlyDubai attacker was previously banned from flying by Oman - WSJ",
-      "url": "https://www.investing.com/news/economy-news/flydubai-attacker-was-previously-banned-from-flying-by-oman--wsj-4930620",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:53:19Z",
-      "firstSeen": "2026-10-03T01:17:12Z"
-    },
-    {
       "headline": "Why AMD Stock Jumped 30% in September",
       "url": "https://www.nasdaq.com/articles/why-amd-stock-jumped-30-september",
       "source": "Nasdaq",
-      "category": "Markets",
+      "category": "Movers",
       "timestamp": "2026-10-03T00:50:02Z",
       "firstSeen": "2026-10-03T01:02:44Z"
-    },
-    {
-      "headline": "McGrath RentCorp director Joseph Hanna sells $862,824 in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/mcgrath-rentcorp-director-joseph-hanna-sells-862824-in-stock-93CH-4930617",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:45:55Z",
-      "firstSeen": "2026-10-03T01:17:12Z"
-    },
-    {
-      "headline": "Foundation fighting blindness fund sells $2.75m in Opus Genetics stock",
-      "url": "https://www.investing.com/news/insider-trading-news/foundation-fighting-blindness-fund-sells-275m-in-opus-genetics-stock-93CH-4930616",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:45:52Z",
-      "firstSeen": "2026-10-03T01:17:12Z"
-    },
-    {
-      "headline": "Meta wants your next gadget to be Muse-infused",
-      "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-03T00:45:39Z",
-      "firstSeen": "2026-10-03T00:47:15Z"
-    },
-    {
-      "headline": "Better Pharmaceuticals ETF: VanEck's PPH vs. Invesco PJP",
-      "url": "https://www.nasdaq.com/articles/better-pharmaceuticals-etf-vanecks-pph-vs-invesco-pjp",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:33:28Z",
-      "firstSeen": "2026-10-03T01:02:44Z"
-    },
-    {
-      "headline": "Liquidity services EVP John Daunt sells $30,566 in company stock",
-      "url": "https://www.investing.com/news/insider-trading-news/liquidity-services-evp-john-daunt-sells-30566-in-company-stock-93CH-4930604",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:31:17Z",
-      "firstSeen": "2026-10-03T01:02:44Z"
-    },
-    {
-      "headline": "Xometry CTO Raghavan Vaidyanathan sells $192,725 in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/xometry-cto-raghavan-vaidyanathan-sells-192725-in-stock-93CH-4930603",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:31:13Z",
-      "firstSeen": "2026-10-03T01:02:44Z"
-    },
-    {
-      "headline": "Xometry CEO Sanjeev Sahni sells 1,112 XMTR shares for $114,851",
-      "url": "https://www.investing.com/news/insider-trading-news/xometry-ceo-sanjeev-sahni-sells-1112-xmtr-shares-for-114851-93CH-4930602",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-03T00:31:08Z",
-      "firstSeen": "2026-10-03T01:02:44Z"
-    },
-    {
-      "headline": "Take Five: Reality bites",
-      "url": "https://www.investing.com/news/economy-news/take-five-reality-bites-4929089",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:30:26Z",
-      "firstSeen": "2026-10-03T01:02:44Z"
-    },
-    {
-      "headline": "Brent Crude Is Now Trading Above $100. What Does That Mean For the Crypto Market?",
-      "url": "https://www.nasdaq.com/articles/brent-crude-now-trading-above-100-what-does-mean-crypto-market",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:20:00Z",
-      "firstSeen": "2026-10-03T00:47:15Z"
-    },
-    {
-      "headline": "Newegg chief legal officer Michael Chen sells $884 of stock",
-      "url": "https://www.investing.com/news/insider-trading-news/newegg-chief-legal-officer-michael-chen-sells-884-of-stock-93CH-4930590",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:16:08Z",
-      "firstSeen": "2026-10-03T00:32:27Z"
-    },
-    {
-      "headline": "SpaceX's Third Quarter Just Ended. Here Are the 3 Numbers That Matter Most for the Stock.",
-      "url": "https://www.nasdaq.com/articles/spacexs-third-quarter-just-ended-here-are-3-numbers-matter-most-stock",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-03T00:01:01Z",
-      "firstSeen": "2026-10-03T00:47:15Z"
-    },
-    {
-      "headline": "TRUMP ON DIESEL: WE HAVE A VERY GOOD RELATIONSHIP WITH EUROPE",
-      "url": "https://t.me/WalterBloomberg/36356",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-02T20:00:48Z",
-      "firstSeen": "2026-10-02T20:01:08Z"
-    },
-    {
-      "headline": "META PARTS WAYS WITH VIRTUE AI - SEMAFOR",
-      "url": "https://t.me/WalterBloomberg/36354",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-02T17:33:33Z",
-      "firstSeen": "2026-10-02T17:46:14Z"
     }
   ]
 }
