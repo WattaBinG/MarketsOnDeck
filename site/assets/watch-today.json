@@ -1,11 +1,12 @@
 {
   "date": "2026-10-05",
   "dateLabel": "Monday, October 5",
-  "events": [
-    {
-      "time": "10:00 AM ET",
-      "event": "ISM Services PMI"
-    }
-  ],
-  "calendarUrl": "https://www.investing.com/economic-calendar/"
+  "events": [],
+  "note": "No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).",
+  "calendarUrl": "https://www.census.gov/economic-indicators/",
+  "sources": [
+    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
+    "https://www.bls.gov/schedule/news_release/bls.ics",
+    "https://www.census.gov/economic-indicators/"
+  ]
 }
