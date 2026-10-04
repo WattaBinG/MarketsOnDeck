@@ -1,6 +1,335 @@
 {
   "items": [
     {
+      "headline": "Meta wants your next gadget to be Muse-infused",
+      "url": "https://techcrunch.com/2026/10/02/meta-wants-you-to-build-your-own-muse-gadget/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-03T00:45:39Z"
+    },
+    {
+      "headline": "Sean Parker is rebuilding Stability AI around music",
+      "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T21:09:14Z"
+    },
+    {
+      "headline": "Meta open sources code to let you make Muse AI gadgets",
+      "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-02T21:08:37Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-02T20:45:00Z"
+    },
+    {
+      "headline": "Apple will limit Mac disk access as AI agents ‘substantially’ increase risk",
+      "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-02T20:08:40Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-02T20:00:00Z"
+    },
+    {
+      "headline": "G7 nations to release diesel stocks as wars in Europe and Middle East constrain fuel supplies",
+      "url": "https://www.cnbc.com/2026/10/02/diesel-oil-trump-europe-export-ban.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T19:25:36Z"
+    },
+    {
+      "headline": "Affected by layoffs? Don’t miss this $75 deal for your TechCrunch Disrupt 2026 Expo+ Pass",
+      "url": "https://techcrunch.com/2026/10/02/disrupt-2026-layoff-expo-plus-passes-available-for-75-dollars/",
+      "source": "TechCrunch",
+      "category": "Movers",
+      "timestamp": "2026-10-02T19:15:51Z"
+    },
+    {
+      "headline": "How AI is redefining Wall Street jobs — and boosting demand for this new 'hottest skill' by 1,721%",
+      "url": "https://www.cnbc.com/2026/10/02/ai-redefining-wall-street-jobs.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T18:49:03Z"
+    },
+    {
+      "headline": "Apple says it’s tightening macOS ‘Full Disk Access’ controls due to new risks from AI agents",
+      "url": "https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T18:11:27Z"
+    },
+    {
+      "headline": "OpenAI’s Dot agent is enterprise software that can also order your dinner",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1004096/openai-chatgpt-dots-hands-on-agent",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-02T18:00:00Z"
+    },
+    {
+      "headline": "Call it AI, call it Super Intelligence, only 2% of consumers are buying it",
+      "url": "https://techcrunch.com/podcast/call-it-ai-call-it-super-intelligence-only-2-of-consumers-are-buying-it/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T17:56:00Z"
+    },
+    {
+      "headline": "It’s not AI anymore, it’s ‘super intelligence’ (according to the White House)",
+      "url": "https://techcrunch.com/video/its-not-ai-anymore-its-super-intelligence-according-to-the-white-house/",
+      "source": "TechCrunch",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T17:48:16Z"
+    },
+    {
+      "headline": "Breaking up (with Elon Musk) is hard to do",
+      "url": "https://www.theverge.com/tech/1004177/elon-musk-unfollows-shivon-zilis",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-02T17:37:36Z"
+    },
+    {
+      "headline": "TechCrunch Disrupt 2026: Blackstone’s Jas Khaira on building the next generation of AI giants",
+      "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-blackstones-jas-khaira-on-building-the-next-generation-of-ai-giants/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T17:32:05Z"
+    },
+    {
+      "headline": "Circuit Breaker Labs hopes to make AI safer for your kids (and you)",
+      "url": "https://techcrunch.com/2026/10/02/circuit-breaker-labs-hopes-to-make-ai-safer-for-your-kids-and-you/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T17:00:00Z"
+    },
+    {
+      "headline": "Tony Romo out as NFL analyst for CBS Sports following July DUI arrest",
+      "url": "https://www.nbcnews.com/business/media/tony-romo-nfl-analyst-cbs-sports-july-dui-arrest-rcna601164",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-02T16:46:40Z"
+    },
+    {
+      "headline": "UK diesel prices top £2 a litre for first time, RAC says",
+      "url": "https://www.bbc.co.uk/news/articles/crn8e86y5n0zo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-02T15:50:05Z"
+    },
+    {
+      "headline": "Pope Leo XIV is not a fan of AI-generated art",
+      "url": "https://techcrunch.com/2026/10/02/pope-leo-xiv-is-not-a-fan-of-ai-generated-art/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T15:39:41Z"
+    },
+    {
+      "headline": "Paramount and Warner Bros. is getting a new name: Skydance",
+      "url": "https://www.nbcnews.com/video/paramount-and-warner-bros-under-merger-will-be-called-skydance-270919749770",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-02T15:28:53Z"
+    },
+    {
+      "headline": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-02T15:00:00Z"
+    },
+    {
+      "headline": "US jobs market sees sharp slowdown ahead of midterm elections",
+      "url": "https://www.bbc.co.uk/news/articles/cm2d6gg0642yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-02T14:30:48Z"
+    },
+    {
+      "headline": "TechCrunch Disrupt 2026: Clay’s Kareem Amin on the rise of the GTM engineer",
+      "url": "https://techcrunch.com/2026/10/02/techcrunch-disrupt-2026-clays-kareem-amin-on-the-rise-of-the-gtm-engineer/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T14:30:00Z"
+    },
+    {
+      "headline": "G7 countries to release up to 100 million barrels of diesel and crude oil reserves",
+      "url": "https://www.nbcnews.com/business/energy/g-7-diesel-crude-release-trump-macron-rcna601132",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-02T14:22:46Z"
+    },
+    {
+      "headline": "U.S. natural gas production reached a record high in July 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68225",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-02T14:00:00Z"
+    },
+    {
+      "headline": "Last 24 hours: Exhibit at TechCrunch Disrupt 2026 and reach 10,000+ tech leaders",
+      "url": "https://techcrunch.com/2026/10/02/last-24-hours-exhibit-at-techcrunch-disrupt-2026-and-reach-10000-tech-leaders/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-02T14:00:00Z"
+    },
+    {
+      "headline": "Why UK diesel prices have breached the £2 per litre mark",
+      "url": "https://www.bbc.co.uk/news/articles/c20zgjzz0e4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-02T13:38:22Z"
+    },
+    {
+      "headline": "U.S. labor market slows with midterms on the horizon",
+      "url": "https://www.nbcnews.com/business/economy/labor-market-slowed-september-final-monthly-jobs-report-midterms-shows-rcna600497",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-02T12:34:26Z"
+    },
+    {
+      "headline": "AI hallucinations are making entitled customers even worse",
+      "url": "https://www.theverge.com/report/1002963/ai-hallucinations-customer-service-jobs-agents",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-02T12:00:00Z"
+    },
+    {
+      "headline": "If a data center is camouflaged in the woods, will anyone hate it?",
+      "url": "https://www.theverge.com/tech/1003681/microsoft-data-centers-ai-environment-biomimicry",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-02T12:00:00Z"
+    },
+    {
+      "headline": "Amazon writes scary blog warning communities not to block data centers",
+      "url": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-02T11:52:20Z"
+    },
+    {
+      "headline": "No more cereal at the end of the aisle? New rules in Scotland's supermarkets",
+      "url": "https://www.bbc.co.uk/news/articles/cmwyzye21463o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-02T10:47:07Z"
+    },
+    {
+      "headline": "Brazil votes in high-stakes election as U.S.-China rivalry and debt loom large",
+      "url": "https://www.cnbc.com/2026/10/02/brazil-election-bolsonaro-lula-china-trump.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T09:24:33Z"
+    },
+    {
+      "headline": "US pressures Europe to release diesel reserves as Trump threatens export ban",
+      "url": "https://www.bbc.co.uk/news/articles/c5zjzjgdeneeo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T08:54:00Z"
+    },
+    {
+      "headline": "OpenAI fires workers for 'mishandling sensitive information'",
+      "url": "https://www.bbc.co.uk/news/articles/c6y9z9r4ejzwo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "AI",
+      "timestamp": "2026-10-02T08:20:32Z"
+    },
+    {
+      "headline": "Is it a coincidence that the 2 key data centers of OpenAI's Stargate are suddenly on the ropes? Project Jupiter (4.5GW) loans trading < 90, major delays... SB Energy (8GW) delaying IPO, major delay...",
+      "url": "https://x.com/zerohedge/status/2102599984399179870",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-09-23T03:25:02Z"
+    },
+    {
+      "headline": "XRP Price Outlook: What Investors Can Expect Over the Next 3 Years",
+      "url": "https://www.nasdaq.com/articles/xrp-price-outlook-what-investors-can-expect-over-next-3-years",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-04T13:23:00Z"
+    },
+    {
+      "headline": "A 'weird' IPO pull, a tainted reputation and the stalled breakout moment for AI wearables",
+      "url": "https://www.cnbc.com/2026/10/04/ai-wearables-oura-ipo-privacy.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-04T13:22:39Z"
+    },
+    {
+      "headline": "Micron or Sandisk: If I Could Only Own One for the Next 5 Years, It Would Be This One",
+      "url": "https://www.nasdaq.com/articles/micron-or-sandisk-if-i-could-only-own-one-next-5-years-it-would-be-one",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-04T13:16:00Z"
+    },
+    {
+      "headline": "History Says a 10%+ Stock Market Correction Is Inevitable Eventually. Here Are 3 Dividend Stocks I'd Buy to Prepare for the Next One.",
+      "url": "https://www.nasdaq.com/articles/history-says-10-stock-market-correction-inevitable-eventually-here-are-3-dividend-stocks",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-04T13:05:01Z"
+    },
+    {
+      "headline": "Kim wins Asian Games gold to secure military exemption",
+      "url": "https://www.bbc.co.uk/sport/golf/articles/cmy0rn425k4xo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-03T08:51:14Z"
+    },
+    {
+      "headline": "Top McKinsey executive reveals Asian owner-CEOs' secrets to success",
+      "url": "https://www.cnbc.com/2026/10/03/mckinsey-asian-leaders-success-ambani-mahindra.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-03T06:00:01Z"
+    },
+    {
+      "headline": "G7 to release millions of barrels of oil and diesel after Trump threat",
+      "url": "https://www.bbc.co.uk/news/articles/ck87zg8jnwngo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-03T04:38:31Z"
+    },
+    {
+      "headline": "Hawaii’s picturesque Hōlei Sea Arch collapses into the ocean",
+      "url": "https://www.nbcnews.com/news/us-news/hawaiis-picturesque-holei-sea-arch-collapses-ocean-rcna601241",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-03T02:50:21Z"
+    },
+    {
+      "headline": "Social Security's Trump Bump-Led 2027 COLA Will Be One of the Largest in 35 Years, but It May Financially Cripple America's Leading Retirement Program",
+      "url": "https://www.nasdaq.com/articles/social-securitys-trump-bump-led-2027-cola-will-be-one-largest-35-years-it-may-financially",
+      "source": "Nasdaq",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-04T13:26:01Z"
+    },
+    {
+      "headline": "Why Dutch Bros Stock Dropped 21% in September",
+      "url": "https://www.nasdaq.com/articles/why-dutch-bros-stock-dropped-21-september",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-04T13:25:01Z"
+    },
+    {
+      "headline": "Top Wall Street analysts are upbeat about the prospects for these 3 stocks",
+      "url": "https://www.cnbc.com/2026/10/04/top-analysts-are-upbeat-about-the-prospects-for-these-3-stocks.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-04T13:24:16Z"
+    },
+    {
       "headline": "War, $100 oil and a bond sell-off reshaped markets in the third quarter",
       "url": "https://www.cnbc.com/2026/10/01/q3-markets-stocks-oil-iran-war.html",
       "source": "CNBC",
@@ -1071,335 +1400,6 @@
       "source": "Investing.com",
       "category": "Geopolitics",
       "timestamp": "2026-10-04T10:30:43Z"
-    },
-    {
-      "headline": "Revolut’s rise to become Europe’s $115 billion big bank rival",
-      "url": "https://www.investing.com/news/economy-news/revoluts-rise-to-become-europes-115-billion-big-bank-rival-4930922",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-04T10:30:29Z"
-    },
-    {
-      "headline": "History Says Stocks Typically Fall After a Fed Hike Cycle Begins -- Then Gain 6.8% Within a Year. Here's My Plan.",
-      "url": "https://www.nasdaq.com/articles/history-says-stocks-typically-fall-after-fed-hike-cycle-begins-then-gain-68-within-year",
-      "source": "Nasdaq",
-      "category": "Macro",
-      "timestamp": "2026-10-04T10:20:01Z"
-    },
-    {
-      "headline": "Costco's Underlying Sales Growth Has Slowed 3 Months in a Row. Its September Report Comes Oct. 7.",
-      "url": "https://www.nasdaq.com/articles/costcos-underlying-sales-growth-has-slowed-3-months-row-its-september-report-comes-oct-7",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-04T10:13:02Z"
-    },
-    {
-      "headline": "Russia hits Kyiv bridge for second day as infrastructure attacks intensify",
-      "url": "https://www.investing.com/news/economy-news/russia-hits-kyiv-bridge-for-second-day-as-infrastructure-attacks-intensify-4930918",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-04T09:58:03Z"
-    },
-    {
-      "headline": "RUSSIA WILL INTENSIFY STRIKES ON KYIV AND OTHER REGIONS OF UKRAINE FOLLOWING LATEST ZELENSKIY REMARKS - TASS CITES RUSSIA DEFENCE MINISTRY",
-      "url": "https://t.me/WalterBloomberg/36361",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-04T09:55:01Z"
-    },
-    {
-      "headline": "Berkshire buys more Lennar shares, but pace of purchases slows",
-      "url": "https://www.cnbc.com/2026/10/03/berkshire-buys-more-lennar-shares-but-pace-of-purchases-slows.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-04T09:33:19Z"
-    },
-    {
-      "headline": "Trump taps Director of National Intelligence Jay Clayton as AI czar",
-      "url": "https://www.cnbc.com/2026/10/03/trump-jay-clayton-ai-czar.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-04T09:25:01Z"
-    },
-    {
-      "headline": "Ireland–Israel nations League clash overshadowed by political tensions",
-      "url": "https://www.france24.com/en/video/20261004-ireland%E2%80%93israel-nations-league-clash-overshadowed-by-political-tensions",
-      "source": "France 24",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-04T08:27:07Z"
-    },
-    {
-      "headline": "Japan PM protests to U.S. after Marine arrested over Okinawa murder",
-      "url": "https://www.investing.com/news/economy-news/japan-pm-protests-to-us-after-marine-arrested-over-okinawa-murder-4930912",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-04T08:04:10Z"
-    },
-    {
-      "headline": "Germany's Merz visits Kyiv as Russia steps up attacks on Ukrainian cities",
-      "url": "https://www.france24.com/en/germany-s-merz-visits-kyiv-as-russia-steps-up-attacks-on-ukrainian-cities",
-      "source": "France 24",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-04T07:58:36Z"
-    },
-    {
-      "headline": "UK lawmakers warn reliance on U.S. cloud giants poses strategic risk - Bloomberg",
-      "url": "https://www.investing.com/news/economy-news/uk-lawmakers-warn-reliance-on-us-cloud-giants-poses-strategic-risk--bloomberg-4930910",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-04T07:25:25Z"
-    },
-    {
-      "headline": "South Korea orders financial sector security checks after data breaches",
-      "url": "https://www.investing.com/news/economy-news/south-korea-orders-financial-sector-security-checks-after-data-breaches-4930908",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-04T06:48:24Z"
-    },
-    {
-      "headline": "Germany’s Merz arrives in Kyiv with €1.35bn aid package, drone deal in focus",
-      "url": "https://www.investing.com/news/economy-news/germanys-merz-arrives-in-kyiv-with-135bn-aid-package-drone-deal-in-focus-4930907",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-04T06:11:47Z"
-    },
-    {
-      "headline": "Singapore debuts a state-backed dating app for young government workers as it works to slow a demographic crisis",
-      "url": "https://www.cnbc.com/2026/10/04/government-dating-app-fertility-singapore-asia.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-04T05:09:49Z"
-    },
-    {
-      "headline": "Ukraine’s surprise robot offensive exposes a vulnerability in Putin’s war machine",
-      "url": "https://www.cnbc.com/2026/10/04/russia-ukraine-war-putin-zelenskyy-donbas-lyman.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-04T05:00:01Z"
-    },
-    {
-      "headline": "Trump’s new AI czar outlines U.S. strategy for AI risks and leadership, WSJ says",
-      "url": "https://www.investing.com/news/economy-news/trumps-new-ai-czar-outlines-us-strategy-for-ai-risks-and-leadership-wsj-says-4930900",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-04T03:30:13Z"
-    },
-    {
-      "headline": "Australia’s Chalmers blames U.S.-Iran war for higher inflation, borrowing costs",
-      "url": "https://www.investing.com/news/economy-news/australias-chalmers-blames-usiran-war-for-higher-inflation-borrowing-costs-4930899",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-04T02:41:39Z"
-    },
-    {
-      "headline": "The government can take 15% of Social Security benefits to repay student loans. These proposals seek to stop it.",
-      "url": "https://www.marketwatch.com/story/the-government-can-take-15-of-social-security-benefits-to-repay-student-loans-these-proposals-seek-to-stop-it-102622fa?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-04T00:02:00Z"
-    },
-    {
-      "headline": "Falling wages, soaring energy prices and inflation: It’s beginning to look a lot like the 1970s",
-      "url": "https://www.marketwatch.com/story/falling-wages-soaring-energy-prices-and-inflation-its-beginning-to-look-a-lot-like-the-1970s-d645cbca?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-10-03T23:58:00Z"
-    },
-    {
-      "headline": "White House forms AI task force to assess technology risks - WSJ",
-      "url": "https://www.investing.com/news/economy-news/white-house-forms-ai-task-force-to-assess-technology-risks--wsj-4930893",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-03T22:59:47Z"
-    },
-    {
-      "headline": "Tesla’s Cybercab had a rocky first month in Austin. Now comes the hard part: expanding",
-      "url": "https://www.cnbc.com/2026/10/03/tesla-cybercab-pressure-to-expand-after-rocky-first-month-in-austin.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-03T20:29:07Z"
-    },
-    {
-      "headline": "My wife never went back to work after raising our kids. Do I have to share my retirement savings 50/50?",
-      "url": "https://www.marketwatch.com/story/my-wife-never-went-back-to-work-after-raising-our-kids-do-i-have-to-share-my-retirement-savings-50-50-f0727f82?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-03T20:00:00Z"
-    },
-    {
-      "headline": "‘I don’t want to die on the sales floor’: I’m 67 and earn $19.50 an hour at a big-box store. When can I finally retire?",
-      "url": "https://www.marketwatch.com/story/i-dont-want-to-die-on-the-sales-floor-im-67-and-earn-19-50-an-hour-at-a-big-box-store-when-can-i-finally-retire-369abcf9?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Movers",
-      "timestamp": "2026-10-03T19:30:00Z"
-    },
-    {
-      "headline": "These bond strategies can help you get a safe 5% return on your cash",
-      "url": "https://www.marketwatch.com/story/these-bond-strategies-can-help-you-get-a-safe-5-return-on-your-cash-5fa45ccd?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-10-03T18:49:00Z"
-    },
-    {
-      "headline": "Amazon responds to data center backlash, says it no longer uses NDAs",
-      "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-03T18:43:57Z"
-    },
-    {
-      "headline": "‘I want to make her proud’: My mother, a divorcée, died and I’m her executor. Do I need to file for probate?",
-      "url": "https://www.marketwatch.com/story/i-want-to-make-her-proud-my-mother-a-divorcee-died-and-im-her-executor-do-i-need-to-file-for-probate-a39b1123?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-03T18:30:00Z"
-    },
-    {
-      "headline": "High mortgage rates are trapping homeowners in place, and making renovations harder to afford",
-      "url": "https://www.cnbc.com/2026/10/03/mortgage-rates-home-equity-heloc-remodeling.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-03T17:57:40Z"
-    },
-    {
-      "headline": "A tough job market is pushing more young Americans to make a big bet: on themselves",
-      "url": "https://www.marketwatch.com/story/a-tough-job-market-is-pushing-more-young-americans-to-make-a-big-bet-on-themselves-1aaddeca?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-03T17:24:00Z"
-    },
-    {
-      "headline": "Capcom is preparing for a ‘future where we create games together with AI’",
-      "url": "https://www.theverge.com/games/1004418/capcom-ai-game-development",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-03T16:49:10Z"
-    },
-    {
-      "headline": "Switching jobs to get higher pay works best in these industries",
-      "url": "https://www.marketwatch.com/story/the-best-industry-to-change-jobs-to-get-paid-more-money-and-the-worst-ae33a3a7?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-03T16:42:00Z"
-    },
-    {
-      "headline": "OpenAI safety employee resigns, claiming the company’s ‘culture is broken’",
-      "url": "https://techcrunch.com/2026/10/03/openai-safety-employee-resigns-claiming-the-companys-culture-is-broken/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-03T16:30:01Z"
-    },
-    {
-      "headline": "‘I have $400,000 in equity’: I’m 80. Should I sell my house because of dangerous stairs — or spend thousands renovating?",
-      "url": "https://www.marketwatch.com/story/i-have-a-low-interest-rate-im-80-years-old-should-i-move-out-of-my-house-because-of-dangerous-stairs-389c3c7b?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-03T16:00:00Z"
-    },
-    {
-      "headline": "KEY MEMBER OF SHINYHUNTERS HACKING SQUAD THAT BROKE INTO THE FBI HAS BEEN DETAINED IN JORDAN, SOURCES SAY",
-      "url": "https://t.me/WalterBloomberg/36360",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-03T15:14:58Z"
-    },
-    {
-      "headline": "Splice CEO Kakul Srivastava thinks AI emails are killing conversations",
-      "url": "https://www.theverge.com/entertainment/1004162/splice-ceo-kakul-srivastava-ai-interview",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-03T15:00:00Z"
-    },
-    {
-      "headline": "U.S.-RUSSIA UKRAINE TALKS EXPAND TO MULTIBILLION-DOLLAR OIL DEAL Trump administration talks with Russia over ending the Ukraine war have expanded to include a potential multibillion-dollar deal inv...",
-      "url": "https://t.me/WalterBloomberg/36359",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-03T14:53:17Z"
-    },
-    {
-      "headline": "TRUMP PROMISES $5,000 PAYMENTS IF GOP WINS MIDTERMS President Trump says he would give every adult U.S. citizen $5,000 if Republicans win both the House and Senate in the 2026 midterm elections. Tr...",
-      "url": "https://t.me/WalterBloomberg/36358",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-03T14:51:22Z"
-    },
-    {
-      "headline": "An OpenAI safety employee has quit and is sounding the alarm",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-03T14:31:56Z"
-    },
-    {
-      "headline": "All the AI agents that can live in your text messages",
-      "url": "https://techcrunch.com/2026/10/03/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-03T14:00:00Z"
-    },
-    {
-      "headline": "Novig credits Sydney Sweeney-backed campaign for platform’s surge in growth",
-      "url": "https://www.cnbc.com/2026/10/03/novig-credits-sydney-sweeney-backed-campaign-for-platforms-surge-in-growth.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-03T13:30:48Z"
-    },
-    {
-      "headline": "Lula or Bolsonaro: Wall Street braces for two wildly different results in Brazil election",
-      "url": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-03T13:12:27Z"
-    },
-    {
-      "headline": "Global tech policymakers agree to embrace AI in science",
-      "url": "https://www.nbcnews.com/tech/tech-news/global-tech-policymakers-embrace-ai-science-rcna600974",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-03T13:00:41Z"
-    },
-    {
-      "headline": "America’s data center fight is a preview of what's to come for the rest of the world",
-      "url": "https://www.cnbc.com/2026/10/03/data-center-backlash-europe-asia-africa.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-03T12:39:29Z"
-    },
-    {
-      "headline": "FlyDubai plane attack by co-pilot was an attempted 'terrorist' act, UAE says",
-      "url": "https://www.cnbc.com/2026/10/03/flydubai-co-pilot-attacked-pilot-with-axe-uae-says.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-03T12:34:59Z"
-    },
-    {
-      "headline": "High-tech vehicles are driving up auto repair costs for shops and consumers",
-      "url": "https://www.cnbc.com/2026/10/03/vehicle-repair-costs.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-03T12:00:01Z"
-    },
-    {
-      "headline": "Private capital is reshaping Hollywood moviemaking",
-      "url": "https://www.cnbc.com/2026/10/03/private-capital-hollywood-film-financing.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-03T12:00:01Z"
-    },
-    {
-      "headline": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
-      "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-03T11:00:01Z"
-    },
-    {
-      "headline": "Suppliers pile pressure on government over energy bills",
-      "url": "https://www.bbc.co.uk/news/articles/cq0ld88kzxw8o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-03T08:58:44Z"
     }
   ]
 }
