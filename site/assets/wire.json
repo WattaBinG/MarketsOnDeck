@@ -1,17 +1,73 @@
 {
-  "asOf": "2026-10-05T15:15:39Z",
-  "asOfLabel": "11:15 AM ET",
+  "asOf": "2026-10-05T15:30:41Z",
+  "asOfLabel": "11:30 AM ET",
   "topStory": {
-    "headline": "Norway stocks higher at close of trade; Oslo OBX up 0.29%",
-    "url": "https://www.investing.com/news/stock-market-news/norway-stocks-higher-at-close-of-trade-oslo-obx-up-029-4932508",
-    "source": "Investing.com",
-    "category": "Markets",
-    "timestamp": "2026-10-05T15:00:04Z",
-    "firstSeen": "2026-10-05T15:15:39Z",
-    "leadSince": "2026-10-05T15:15:39Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "Fed bids for 6-month bills total $6.2 bln.",
+    "url": "https://x.com/financialjuice/status/2107127614691582273",
+    "source": "MarketsOnDeck Discord",
+    "category": "Macro",
+    "timestamp": "2026-10-05T15:16:09Z",
+    "firstSeen": "2026-10-05T15:30:41Z",
+    "leadSince": "2026-10-05T15:30:41Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
+    {
+      "headline": "David Ellison just brought in a co-CEO to run his new empire: Meet Ynon Kreiz",
+      "url": "https://www.cnbc.com/2026/10/03/david-ellison-ynon-kreiz-skydance.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:29:13Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
+    },
+    {
+      "headline": "Anthropic, OpenAI, Google and Meta execs set to testify at NYC Council hearing on AI risks",
+      "url": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
+      "source": "CNBC",
+      "category": "AI",
+      "timestamp": "2026-10-05T15:26:12Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
+    },
+    {
+      "headline": "Higher Bond Yields Don't Mean What They Used To <>",
+      "url": "https://www.zerohedge.com/markets/higher-bond-yields-dont-mean-what-they-used",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-05T15:25:08Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
+    },
+    {
+      "headline": "Satya Nadella reinvented Microsoft once. Can he do it again in the AI era?",
+      "url": "https://www.cnbc.com/2026/10/05/satya-nadella-reinvented-microsoft-once-can-he-do-it-in-the-ai-era.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:20:39Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
+    },
+    {
+      "headline": "JPMorgan says don't panic about bond yields. The 10-year Treasury yield recently hit 5.34%, its highest since 2002. \"Equities got hurt by the spike in bond yields, but we do not think this will per...",
+      "url": "https://x.com/unusual_whales/status/2107128175935246391",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-05T15:19:08Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
+    },
+    {
+      "headline": "Russia plague: What we know about the suspected case reportedly linked to a lab worker’s death",
+      "url": "https://www.cnbc.com/2026/10/05/russia-plague-suspected-case-irkutsk.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-05T15:16:39Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
+    },
+    {
+      "headline": "David Ellison and Ynon Kreiz announce Skydance leadership team",
+      "url": "https://www.cnbc.com/2026/10/05/david-ellison-ynon-kreiz-skydance-leadership-team.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:16:17Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
+    },
     {
       "headline": "OpenAI launches visual ads that appear alongside image generation results",
       "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
@@ -37,20 +93,20 @@
       "firstSeen": "2026-10-05T15:15:39Z"
     },
     {
-      "headline": "10Y yield new HOD 5.324%",
-      "url": "https://x.com/zerohedge/status/2107125601345875971",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-05T15:08:08Z",
-      "firstSeen": "2026-10-05T15:15:39Z"
-    },
-    {
       "headline": "Starbucks sued over ’sugar-free’ claims for protein beverages",
       "url": "https://www.investing.com/news/stock-market-news/starbucks-sued-over-sugarfree-claims-for-protein-beverages-4932506",
       "source": "Investing.com",
       "category": "Markets",
       "timestamp": "2026-10-05T15:06:29Z",
       "firstSeen": "2026-10-05T15:15:39Z"
+    },
+    {
+      "headline": "Nasdaq 100 Movers: FER, MELI",
+      "url": "https://www.nasdaq.com/articles/nasdaq-100-movers-fer-meli",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:04:36Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
     },
     {
       "headline": "Russia hospitalizes almost 200 people after researcher's death from plague: Reports",
@@ -69,35 +125,11 @@
       "firstSeen": "2026-10-05T15:15:39Z"
     },
     {
-      "headline": "I’m in my 20s and keep getting laid off. Should I invest in my employer’s 401(k) or look into other options?",
-      "url": "https://www.marketwatch.com/story/im-in-my-20s-and-keep-getting-laid-off-should-i-invest-in-my-employers-401-k-or-look-into-other-options-387b34d3?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:00:00Z",
-      "firstSeen": "2026-10-05T15:15:39Z"
-    },
-    {
-      "headline": "‘People in the U.S. need to wake up’: As a mortgage loan officer, I rejected wealthy couples due to overspending. We’re all heading for trouble.",
-      "url": "https://www.marketwatch.com/story/people-in-the-u-s-need-to-wake-up-as-a-mortgage-loan-officer-i-rejected-wealthy-couples-due-to-overspending-were-all-heading-for-trouble-6a52e04e?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:00:00Z",
-      "firstSeen": "2026-10-05T15:15:39Z"
-    },
-    {
-      "headline": "Open or closed AI? How founders are choosing what to build on at TechCrunch Disrupt 2026",
-      "url": "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-05T15:00:00Z",
-      "firstSeen": "2026-10-05T15:15:39Z"
-    },
-    {
-      "headline": "S&P 500 up, Nasdaq at record high as megacap tech stocks rise",
-      "url": "https://www.investing.com/news/economy-news/wall-st-futures-dip-as-tech-stocks-take-a-breather-4931591",
+      "headline": "Norway stocks higher at close of trade; Oslo OBX up 0.29%",
+      "url": "https://www.investing.com/news/stock-market-news/norway-stocks-higher-at-close-of-trade-oslo-obx-up-029-4932508",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-05T14:55:22Z",
+      "timestamp": "2026-10-05T15:00:04Z",
       "firstSeen": "2026-10-05T15:15:39Z"
     },
     {
@@ -107,38 +139,6 @@
       "category": "Geopolitics",
       "timestamp": "2026-10-05T14:55:14Z",
       "firstSeen": "2026-10-05T15:01:16Z"
-    },
-    {
-      "headline": "Revolut’s rise to become Europe’s $115 billion big bank rival",
-      "url": "https://www.investing.com/news/economy-news/revoluts-rise-to-become-europes-115-billion-big-bank-rival-4930922",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:55:04Z",
-      "firstSeen": "2026-10-05T15:15:39Z"
-    },
-    {
-      "headline": "Treasury yields rise to start the week; traders look ahead to Fed minutes",
-      "url": "https://www.cnbc.com/2026/10/05/treasury-yields-bonds-fed-rates.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-10-05T14:53:55Z",
-      "firstSeen": "2026-10-05T14:16:14Z"
-    },
-    {
-      "headline": "Sainsbury’s held merger talks with Morrisons earlier this year - report",
-      "url": "https://www.investing.com/news/stock-market-news/sainsburys-held-merger-talks-with-morrisons-earlier-this-year--report-93CH-4932505",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-05T14:53:36Z",
-      "firstSeen": "2026-10-05T15:15:39Z"
-    },
-    {
-      "headline": "US services sector activity slows in September; price pressures mount",
-      "url": "https://www.investing.com/news/economy-news/us-services-sector-activity-slows-in-september-price-pressures-mount-4932428",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-05T14:48:19Z",
-      "firstSeen": "2026-10-05T15:15:39Z"
     },
     {
       "headline": "HOUTHI MILITARY LEADERS VOW TO INTENSIFY STRIKES Houthi Defense Minister Mohammed Nasser al-Atifi and Chief of Staff Yusuf Hassan al-Madani issued a statement commemorating slain military commander...",
