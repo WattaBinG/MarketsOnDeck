@@ -867,7 +867,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .home-dashboard .wire-list-wrap .wire-list{column-count:2;column-gap:14px}
  .home-dashboard .wire-list-wrap .wire-list li{padding:7px 0}
  .home-dashboard .wire-list-wrap .wire-list a{font-size:13px}
- .home-dashboard .wire-main .wire-source{white-space:normal;font-size:9px}
+ .home-dashboard .wire-list-wrap .wire-source{white-space:normal;font-size:9px}
 }
 /* Keep the top row short enough that The Wire starts near the three panels. */
 @media(min-width:641px){
@@ -907,7 +907,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .home-dashboard .wire-list-wrap .wire-list{column-count:2;column-gap:13px}
  .home-dashboard .wire-list-wrap .wire-list li{padding:5px 0;gap:3px}
  .home-dashboard .wire-list-wrap .wire-list a{font-size:12px;line-height:1.23}
- .home-dashboard .wire-main .wire-tag{font-size:8px}
+ .home-dashboard .wire-list-wrap .wire-tag{font-size:8px}
  .home-dashboard .wire-left{border-top:1px solid var(--border);padding-top:8px;margin-top:4px}
 }
 /* Mobile review fixes (audit 2026-09-27): single-column phone headlines,
@@ -918,8 +918,8 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .home-dashboard .wire-list-wrap .wire-list { column-count: 1; column-gap: 0; }
   .home-dashboard .wire-list-wrap .wire-list li { padding: 10px 0; }
   .home-dashboard .wire-list-wrap .wire-list a { font-size: 16px; line-height: 1.4; }
-  .home-dashboard .wire-main .wire-tag { font-size: 10px; }
-  .home-dashboard .wire-main .wire-source { font-size: 11px; }
+  .home-dashboard .wire-list-wrap .wire-tag { font-size: 10px; }
+  .home-dashboard .wire-list-wrap .wire-source { font-size: 11px; }
 
   /* 2. Watch list stacked (undo the 2-across flex) */
   .home-dashboard .wire-left .watch-list { display: block; }
@@ -1032,7 +1032,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
     margin: 0 0 10px;
   }
   .home-dashboard .wire-list-wrap .wire-list a { font-size: 13.5px; line-height: 1.35; }
-  .home-dashboard .wire-main .wire-tag { font-size: 9px; margin-bottom: 4px; }
-  .home-dashboard .wire-main .wire-source { font-size: 10px; }
-  .home-dashboard .wire-main .wire-time { font-size: 10px; }
+  .home-dashboard .wire-list-wrap .wire-tag { font-size: 9px; margin-bottom: 4px; }
+  .home-dashboard .wire-list-wrap .wire-source { font-size: 10px; white-space: normal; }
+  .home-dashboard .wire-list-wrap .wire-time { font-size: 10px; }
 }
