@@ -1,152 +1,135 @@
 {
-  "asOf": "2026-10-05T19:31:07Z",
-  "asOfLabel": "3:31 PM ET",
+  "asOf": "2026-10-05T20:29:56Z",
+  "asOfLabel": "4:29 PM ET",
   "topStory": {
-    "headline": "TREASURY YIELDS SURGE TO FRESH 24-YEAR HIGHS Treasuries sold off sharply, pushing the 10-year yield to 5.34% and the 30-year to 5.70%, their highest levels since 2002. Pressure comes from resilient...",
-    "url": "https://t.me/WalterBloomberg/36432",
-    "source": "Walter Bloomberg (unofficial mirror)",
-    "category": "Macro",
-    "timestamp": "2026-10-05T18:52:33Z",
-    "firstSeen": "2026-10-05T19:16:06Z",
-    "leadSince": "2026-10-05T19:16:06Z",
-    "image": "/assets/images/wire-macro.jpg"
+    "headline": "Third tanker in two days struck by unknown projectile in Strait of Hormuz, engine-room fire reported",
+    "url": "https://abcnews.com/International/wireStory/tanker-hit-projectile-enters-strait-hormuz-mideast-developments-136613611",
+    "source": "ABC News",
+    "category": "Geopolitics",
+    "timestamp": "2026-10-05T20:29:56Z",
+    "firstSeen": "2026-10-05T20:29:56Z",
+    "leadSince": "2026-10-05T20:29:56Z",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
     {
-      "headline": "All the drama around AI’s takeover of mathematics",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1004933/ai-math-openai-breakthrough-solution",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-05T19:28:59Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "New high on last week's $SPY 783c 10/16 <:neort:875080101035917332>",
-      "url": "https://x.com/unusual_whales/status/2107190747938378012",
-      "source": "MarketsOnDeck Discord",
+      "headline": "Nasdaq closes at record 27,477.31 as AI trade leads tech rally",
+      "url": "https://www.cnbc.com/2026/10/04/stock-market-today-live-updates.html",
+      "source": "CNBC",
       "category": "Markets",
-      "timestamp": "2026-10-05T19:27:15Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
+      "timestamp": "2026-10-05T20:29:56Z"
     },
     {
-      "headline": "Trump: No rush for Canada trade talks",
-      "url": "https://x.com/financialjuice/status/2107189303407149140",
-      "source": "MarketsOnDeck Discord",
+      "headline": "S&P 500 nears record as megacap tech gauge climbs 1.3%; emerging markets rally on cooling Fed-hike bets",
+      "url": "https://bloomberg.com/news/articles/2026-10-05/emerging-market-assets-climb-as-fed-hike-bets-cool-oil-drops",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "September payrolls rose just 29,000, unemployment ticks up to 4.2%",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-5-135537124.html",
+      "source": "Yahoo Finance",
+      "category": "Macro",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "Bond traders cut Fed rate-hike bets after weak US jobs report",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-02/bond-traders-pull-back-on-fed-hike-bets-after-soft-jobs-data",
+      "source": "Bloomberg",
+      "category": "Macro",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "Euro hits 17-month low as political uncertainty in Spain and France rattles markets",
+      "url": "https://www.cnbc.com/2026/10/05/euro-dollar-spain-france-risk.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "30-year mortgage rate posts biggest weekly jump in four years, climbs to 7.28%",
+      "url": "https://finance.yahoo.com/real-estate/articles/30-mortgage-rate-jumps-7-184200480.html",
+      "source": "Yahoo Finance",
+      "category": "Macro",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "Saudi Arabia, Turkey and Pakistan activate defense pact, agree to rapid troop deployment amid Houthi attacks",
+      "url": "https://www.al-monitor.com/originals/2026/10/turkey-pakistan-deploy-forces-saudi-arabia-amid-houthi-attacks",
+      "source": "Al-Monitor",
       "category": "Geopolitics",
-      "timestamp": "2026-10-05T19:21:16Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
+      "timestamp": "2026-10-05T20:29:56Z"
     },
     {
-      "headline": "Alphabet C wedged near $350 resistance: Live levels",
-      "url": "https://www.investing.com/news/stock-market-news/alphabet-c-consolidates-332350-breakout-levels-live-93CH-4932453",
+      "headline": "Saudi-backed Yemeni forces retake Mokha, advance on Bab al-Mandeb Strait against Houthis",
+      "url": "https://foxnews.com/live-news/us-iran-war-trump-oil-strait-hormuz-terrorism-october-5",
+      "source": "Fox News",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "Saudi Arabia unexpectedly cuts oil prices to Asia to six-year lows as Hormuz flows increase",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-05/saudis-cut-flagship-oil-price-to-asia-to-lowest-in-six-years",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "Nvidia hits record high as market cap closes in on $6 trillion",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-stock-hits-record-high-175422059.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "SpaceX shares jump more than 7% after three launches in under 13 hours",
+      "url": "https://www.benzinga.com/markets/equities/26/10/62154415/spacex-qualcomm-and-3-stocks-to-watch-heading-into-monday",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "Nike shares fall as revenue miss overshadows fiscal Q4 earnings beat",
+      "url": "https://www.investing.com/news/stock-market-news/nike-falls-as-revenue-miss-overshadows-earnings-beat-4928309",
       "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:48Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:29:56Z"
     },
     {
-      "headline": "Bitcoin battles $83,900 support amid fading momentum: Live levels",
-      "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-tests-87363-resistance-with-fading-momentum-live-levels-93CH-4931135",
+      "headline": "C.H. Robinson to acquire RXO in $5.8 billion brokerage mega-deal",
+      "url": "https://www.axios.com/pro/supply-chain-deals/2026/10/05/ch-robinson-rxo-brokerage-deal",
+      "source": "Axios",
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "Onsemi revises Synaptics takeover to $5.7 billion all-cash deal after rival bid",
+      "url": "https://www.benzinga.com/markets/large-cap/26/10/62133107/on-semiconductor-shares-jump-after-revised-synaptics-merger-deal",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:29:56Z"
+    },
+    {
+      "headline": "Skyworks completes $32.5 billion merger with Qorvo",
+      "url": "https://www.investing.com/news/company-news/skyworks-completes-merger-with-qorvo-in-325b-deal-93CH-4932143",
       "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:46Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:29:56Z"
     },
     {
-      "headline": "Crude Oil WTI tests 50% Fib at $88.76 amid downtrend: Live",
-      "url": "https://www.investing.com/news/commodities-news/crude-oil-wti-tests-200-sma-after-hs-breakdown-live-levels-93CH-4931134",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:45Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
+      "headline": "Vistra shares jump as Trump administration plans $4 billion loan for nuclear plant upgrades",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-02/us-to-offer-4-billion-loan-for-vistra-to-boost-nuclear-output",
+      "source": "Bloomberg",
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:29:56Z"
     },
     {
-      "headline": "Nasdaq 100 tests all-time high at 31,336: Live levels",
-      "url": "https://www.investing.com/news/stock-market-news/nasdaq-100-tests-31281-resistance-near-double-top-live-levels-93CH-4932456",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:45Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "Tesla tests $386.66 resistance with double top risk: Live",
-      "url": "https://www.investing.com/news/stock-market-news/tesla-reclaims-200ma-eyes-386-resistance-hourly-levels-93CH-4932452",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:44Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "Dow Jones stalls under 51,850 resistance: Live levels",
-      "url": "https://www.investing.com/news/stock-market-news/dow-jones-squeezed-at-51328-with-bears-in-control-live-levels-93CH-4932455",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:42Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "Silver consolidates near $61.54 with bear flag 80% complete: Live",
-      "url": "https://www.investing.com/news/commodities-news/silver-bounces-at-6165-but-macro-downtrend-looms-live-levels-93CH-4931129",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:41Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "London Gas Oil compresses above $1,358 support: Live levels",
-      "url": "https://www.investing.com/news/commodities-news/london-gas-oil-tests-1356-support-on-5h-chart-live-levels-93CH-4931131",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:41Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "Natural Gas stuck at $3.08 cloud resistance: Live levels",
-      "url": "https://www.investing.com/news/commodities-news/natural-gas-trapped-at-3016-with-bear-flag-forming-live-levels-93CH-4931132",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:20:41Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "Go ahead and get that poetry degree. Republican law won’t prevent people with humanities majors from getting student loans.",
-      "url": "https://www.marketwatch.com/story/go-ahead-and-get-that-poetry-degree-republican-law-wont-prevent-people-with-humanities-majors-from-getting-student-loans-f94587cf?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-05T19:18:00Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "Euro drops to 17-month low on France debt concerns",
-      "url": "https://www.investing.com/news/economy-news/dollar-holds-firm-as-french-fiscal-woes-keep-euro-on-back-foot-4930983",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-05T19:13:21Z",
-      "firstSeen": "2026-10-05T19:31:07Z"
-    },
-    {
-      "headline": "HIGH YIELDS FORCE MUNI BORROWERS TO DELAY REFINANCINGS Roughly $6 billion of municipal bond refinancing deals are on hold or delayed as elevated yields erase potential savings for borrowers. Benchm...",
-      "url": "https://t.me/WalterBloomberg/36431",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-10-05T18:44:43Z",
-      "firstSeen": "2026-10-05T19:00:48Z"
-    },
-    {
-      "headline": "$SPCX - SPACEX PROPOSES 32-MILE GAS PIPELINE FOR STARSHIP SpaceX is seeking approval to build a 32.4-mile natural gas pipeline in Florida to supply methane for Starship launches from Cape Canaveral...",
-      "url": "https://t.me/WalterBloomberg/36430",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-05T18:40:55Z",
-      "firstSeen": "2026-10-05T18:46:06Z"
-    },
-    {
-      "headline": "AI OPTIMISM OVERRIDES RISING BOND YIELDS Tech stocks are rallying even as bond yields climb, with investors continuing to bet heavily on the long-term benefits of AI. Interactive Brokers strategist...",
-      "url": "https://t.me/WalterBloomberg/36429",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-10-05T18:31:49Z",
-      "firstSeen": "2026-10-05T18:46:06Z"
+      "headline": "MercadoLibre surges as Bolsonaro's son takes surprise lead in Brazil's first-round vote",
+      "url": "https://finance.yahoo.com/markets/article/brazilian-stocks-soar-as-flavio-bolsonaro-takes-surprise-election-lead-160951504.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:29:56Z"
     }
   ]
 }
