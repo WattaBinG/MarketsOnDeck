@@ -1,6 +1,244 @@
 {
   "items": [
     {
+      "headline": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-02T20:45:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-02T20:00:00Z"
+    },
+    {
+      "headline": "How AI is redefining Wall Street jobs — and boosting demand for this new 'hottest skill' by 1,721%",
+      "url": "https://www.cnbc.com/2026/10/02/ai-redefining-wall-street-jobs.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-02T18:49:03Z"
+    },
+    {
+      "headline": "DUTCH GDP YOY FINAL NSA ACTUAL 1.6% (FORECAST -, PREVIOUS 1.3%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2102616557138702822",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-09-23T04:31:03Z"
+    },
+    {
+      "headline": "SCOOP with @​ByKLong @​ceostroff: - The CFTC is examining unusual Kalshi trades with near-identical sizes that now total over $5B - Prop-trading firms Jump Trading (a Kalshi shareholder) and Winter...",
+      "url": "https://x.com/zerohedge/status/2102613006731362620",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-09-23T04:17:02Z"
+    },
+    {
+      "headline": "U.S. LNG exports rose 23% in the first half of 2026 because of higher capacity",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68064",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-01T14:00:00Z"
+    },
+    {
+      "headline": "Tracking U.S., state and county gas prices, in maps and charts",
+      "url": "https://www.nbcnews.com/data-graphics/gas-prices-iran-war-state-national-cost-trump-rcna265835",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-04-08T17:52:34Z"
+    },
+    {
+      "headline": "Jobless claims fall to lowest level since mid-May",
+      "url": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-07-03T12:36:00Z"
+    },
+    {
+      "headline": "Jobless claims stay low in latest week",
+      "url": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-02-13T13:33:00Z"
+    },
+    {
+      "headline": "Consumer credit growth soars in December",
+      "url": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-02-07T20:26:00Z"
+    },
+    {
+      "headline": "U.S. productivity slows down in fourth quarter while unit labor costs accelerate",
+      "url": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-02-06T13:34:00Z"
+    },
+    {
+      "headline": "Beyond to buy rights to Buy Buy Baby brand and reunite it with Bed Bath & Beyond",
+      "url": "https://www.marketwatch.com/story/beyond-to-buy-rights-to-buy-buy-baby-brand-and-reunite-it-with-bed-bath-beyond-4383c6be?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2025-02-03T13:46:00Z"
+    },
+    {
+      "headline": "Trump asks Supreme Court to pause TikTok ban",
+      "url": "https://www.marketwatch.com/story/trump-asks-supreme-court-to-pause-tiktok-ban-2b724ae6?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Geopolitics",
+      "timestamp": "2024-12-28T00:32:00Z"
+    },
+    {
+      "headline": "Amazon says it had best-ever Thanksgiving Holiday week with record sales and number of items sold",
+      "url": "https://www.marketwatch.com/story/amazon-says-it-had-best-ever-thanksgiving-holiday-week-with-record-sales-and-number-of-items-sold-786e0143?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-12-03T14:05:00Z"
+    },
+    {
+      "headline": "U.S. stock futures and bond yields drop on reports Putin has updated nuclear doctrine",
+      "url": "https://www.marketwatch.com/story/u-s-stock-futures-and-bond-yields-drop-on-reports-putin-has-updated-nuclear-doctrine-4b9792c4?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Macro",
+      "timestamp": "2024-11-19T08:55:00Z"
+    },
+    {
+      "headline": "Charter Communications announces buyout deal for Liberty Broadband at terms above its previous proposal",
+      "url": "https://www.marketwatch.com/story/charter-communications-announces-buyout-deal-for-liberty-broadband-at-terms-above-its-previous-proposal-552f7acd?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Movers",
+      "timestamp": "2024-11-13T13:52:00Z"
+    },
+    {
+      "headline": "General Motors unveils new all-electric Cadillac called the Vistiq with 300-mile range",
+      "url": "https://www.marketwatch.com/story/general-motors-unveils-new-all-electric-cadillac-called-the-vistiq-with-300-mile-range-c16fb8a6?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-11-12T13:53:00Z"
+    },
+    {
+      "headline": "Vestas Wind Systems stock slumps as company says margins to be at low end of guidance",
+      "url": "https://www.marketwatch.com/story/vestas-wind-systems-stock-slumps-as-company-says-margins-to-be-at-low-end-of-guidance-a33bf5c4?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-11-05T08:39:00Z"
+    },
+    {
+      "headline": "Burberry shares rise on report Moncler could bid for it",
+      "url": "https://www.marketwatch.com/story/burberry-shares-rise-on-report-moncler-could-bid-for-it-9de42b98?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Movers",
+      "timestamp": "2024-11-04T08:36:00Z"
+    },
+    {
+      "headline": "Kazatomprom reports 17% increase in production during the third quarter",
+      "url": "https://www.marketwatch.com/story/kazatomprom-reports-17-increase-in-production-during-the-third-quarter-68742d5c?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-11-01T07:36:00Z"
+    },
+    {
+      "headline": "Anheuser-Busch InBev shares slip as sales come up shy of estimates",
+      "url": "https://www.marketwatch.com/story/anheuser-busch-inbev-shares-slip-as-sales-come-up-shy-of-estimates-508282c4?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Movers",
+      "timestamp": "2024-10-31T08:09:00Z"
+    },
+    {
+      "headline": "Wingstop’s stock slides 12% after profit falls short of estimates",
+      "url": "https://www.marketwatch.com/story/wingstops-stock-slides-12-after-profit-falls-short-of-estimates-1146f0ec?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2024-10-30T12:22:00Z"
+    },
+    {
+      "headline": "Sugar futures rally: what’s driving the move and how to invest",
+      "url": "https://www.investing.com/news/stock-market-news/sugar-futures-rally-whats-driving-the-move-and-how-to-invest-93CH-4932589",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-05T16:12:00Z"
+    },
+    {
+      "headline": "Monday's ETF Movers: ILF, TAN",
+      "url": "https://www.nasdaq.com/articles/mondays-etf-movers-ilf-tan",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-05T16:10:12Z"
+    },
+    {
+      "headline": "YIELD ON 30-YEAR U.S. TREASURY BONDS RISES TO FRESH 24-YEAR HIGH OF 5.6959; LAST UP 5.89 BASIS POINTS AT 5.689%",
+      "url": "https://t.me/WalterBloomberg/36412",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Macro",
+      "timestamp": "2026-10-05T16:10:05Z"
+    },
+    {
+      "headline": "Monday Sector Laggards: Trucking, Auto Dealerships",
+      "url": "https://www.nasdaq.com/articles/monday-sector-laggards-trucking-auto-dealerships",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-05T16:08:38Z"
+    },
+    {
+      "headline": "Monday Sector Leaders: Oil & Gas Equipment & Services, Oil & Gas Exploration & Production Stocks",
+      "url": "https://www.nasdaq.com/articles/monday-sector-leaders-oil-gas-equipment-services-oil-gas-exploration-production-stocks",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-05T16:08:35Z"
+    },
+    {
+      "headline": "Daily Dividend Report: PS,MMS,PFLT,PNNT,SBR",
+      "url": "https://www.nasdaq.com/articles/daily-dividend-report-psmmspfltpnntsbr",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-05T16:08:32Z"
+    },
+    {
+      "headline": "This Small-Cap Stock Announced a Deal With Eli Lilly. Then Its Shares Doubled",
+      "url": "https://www.nasdaq.com/articles/small-cap-stock-announced-deal-eli-lilly-then-its-shares-doubled",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-10-05T16:05:02Z"
+    },
+    {
+      "headline": "Voyager Technologies Secures $22.4 Mln OTA From Dept. Of War",
+      "url": "https://www.nasdaq.com/articles/voyager-technologies-secures-224-mln-ota-dept-war",
+      "source": "Nasdaq",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-05T16:04:28Z"
+    },
+    {
+      "headline": "Bond Market Sell-Off: 3 of the Best ETFs to Buy Right Now",
+      "url": "https://www.nasdaq.com/articles/bond-market-sell-3-best-etfs-buy-right-now",
+      "source": "Nasdaq",
+      "category": "Macro",
+      "timestamp": "2026-10-05T16:03:00Z"
+    },
+    {
+      "headline": "Treasury yields rise to start the week; traders look ahead to Fed minutes",
+      "url": "https://www.cnbc.com/2026/10/05/treasury-yields-bonds-fed-rates.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-05T14:53:55Z"
+    },
+    {
+      "headline": "Exclusive-US to announce $150 million for Alaska power lines as Vance campaigns in Senate battleground",
+      "url": "https://www.investing.com/news/commodities-news/exclusiveus-to-announce-150-million-for-alaska-power-lines-as-vance-campaigns-in-senate-battleground-4932581",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-05T16:12:40Z"
+    },
+    {
+      "headline": "US and German scientists win Nobel medicine prize for work on light and brain",
+      "url": "https://www.investing.com/news/stock-market-news/american-deisseroth-and-germans-hegemann-and-nagel-win-2026-nobel-medicine-prize-4931412",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-05T16:12:22Z"
+    },
+    {
       "headline": "Amazon responds to data center backlash, says it no longer uses NDAs",
       "url": "https://techcrunch.com/2026/10/03/amazon-responds-to-data-center-backlash-says-it-no-longer-uses-ndas/",
       "source": "TechCrunch",
@@ -1161,244 +1399,6 @@
       "source": "Investing.com",
       "category": "Markets",
       "timestamp": "2026-10-05T15:26:16Z"
-    },
-    {
-      "headline": "Nvidia Stock: Buy at the High?",
-      "url": "https://www.nasdaq.com/articles/nvidia-stock-buy-high",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:25:01Z"
-    },
-    {
-      "headline": "A drive through the West Bank",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/5/a-drive-through-the-west-bank?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T15:22:10Z"
-    },
-    {
-      "headline": "David Ellison and Ynon Kreiz announce Skydance leadership team",
-      "url": "https://www.cnbc.com/2026/10/05/david-ellison-ynon-kreiz-skydance-leadership-team.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:16:17Z"
-    },
-    {
-      "headline": "OpenAI launches visual ads that appear alongside image generation results",
-      "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-05T15:14:24Z"
-    },
-    {
-      "headline": "Prediction: This Lesser-Known Growth ETF Will Crush the S&P 500 Over the Next 20 Years",
-      "url": "https://www.nasdaq.com/articles/prediction-lesser-known-growth-etf-will-crush-sp-500-over-next-20-years",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:13:00Z"
-    },
-    {
-      "headline": "U.S. Stocks Moving To The Upside, Nasdaq Reaches New Record High",
-      "url": "https://www.nasdaq.com/articles/us-stocks-moving-upside-nasdaq-reaches-new-record-high",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:11:15Z"
-    },
-    {
-      "headline": "MBB, XOCT: Big ETF Outflows",
-      "url": "https://www.nasdaq.com/articles/mbb-xoct-big-etf-outflows",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:09:30Z"
-    },
-    {
-      "headline": "HYG, WULX: Big ETF Inflows",
-      "url": "https://www.nasdaq.com/articles/hyg-wulx-big-etf-inflows",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:09:16Z"
-    },
-    {
-      "headline": "Monday 10/5 Insider Buying Report: GTLB, ESEA",
-      "url": "https://www.nasdaq.com/articles/monday-10-5-insider-buying-report-gtlb-esea",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:05:41Z"
-    },
-    {
-      "headline": "If I Were Starting Over in the Stock Market in My 20s, This Is the First Investing Move I'd Make",
-      "url": "https://www.nasdaq.com/articles/if-i-were-starting-over-stock-market-my-20s-first-investing-move-id-make",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:05:00Z"
-    },
-    {
-      "headline": "Nasdaq 100 Movers: FER, MELI",
-      "url": "https://www.nasdaq.com/articles/nasdaq-100-movers-fer-meli",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:04:36Z"
-    },
-    {
-      "headline": "Russia hospitalizes almost 200 people after researcher's death from plague: Reports",
-      "url": "https://www.cnbc.com/2026/10/05/suspected-plague-cases-reported-in-russias-irkutsk-region.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T15:01:29Z"
-    },
-    {
-      "headline": "France, Germany propose new rapid EU trade response tool",
-      "url": "https://www.investing.com/news/economy-news/france-germany-propose-new-rapid-eu-trade-response-tool-4932514",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-05T15:01:02Z"
-    },
-    {
-      "headline": "Revolut’s rise to become Europe’s $115 billion big bank rival",
-      "url": "https://www.investing.com/news/economy-news/revoluts-rise-to-become-europes-115-billion-big-bank-rival-4930922",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-05T14:55:04Z"
-    },
-    {
-      "headline": "US services sector activity slows in September; price pressures mount",
-      "url": "https://www.investing.com/news/economy-news/us-services-sector-activity-slows-in-september-price-pressures-mount-4932428",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-05T14:48:19Z"
-    },
-    {
-      "headline": "HOUTHI MILITARY LEADERS VOW TO INTENSIFY STRIKES Houthi Defense Minister Mohammed Nasser al-Atifi and Chief of Staff Yusuf Hassan al-Madani issued a statement commemorating slain military commander...",
-      "url": "https://t.me/WalterBloomberg/36406",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T14:46:59Z"
-    },
-    {
-      "headline": "US stocks mixed, while euro slides on France worries and Brazil markets surge",
-      "url": "https://www.investing.com/news/economy-news/stocks-upbeat-dollar-wobbles-as-fed-hike-bets-recede-4930982",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-05T14:19:12Z"
-    },
-    {
-      "headline": "BIS chief warns soaring debt, market changes could complicate future crisis response",
-      "url": "https://www.investing.com/news/economy-news/bis-chief-warns-soaring-debt-market-changes-could-complicate-future-crisis-response-4932459",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-05T14:18:56Z"
-    },
-    {
-      "headline": "Toncoin (TON) Price Prediction 2025, 2026, 2027-2030",
-      "url": "https://www.benzinga.com/money/toncoin-ton-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:44Z"
-    },
-    {
-      "headline": "Myro (MYRO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/myro-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:42Z"
-    },
-    {
-      "headline": "PancakeSwap (CAKE) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/pancakeswap-cake-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:36Z"
-    },
-    {
-      "headline": "Algorand (ALGO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/algorand-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:35Z"
-    },
-    {
-      "headline": "Hedera Hashgraph (HBAR) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/hedera-hashgraph-hbar-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:34Z"
-    },
-    {
-      "headline": "Arweave (AR) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/arweave-ar-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:34Z"
-    },
-    {
-      "headline": "Bittensor (TAO) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/bittensor-tao-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:31Z"
-    },
-    {
-      "headline": "Uniswap (UNI) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/uniswap-uni-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:30Z"
-    },
-    {
-      "headline": "Polkadot (DOT) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/polkadot-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:29Z"
-    },
-    {
-      "headline": "Filecoin (FIL) Price Prediction: 2025, 2025, 2030",
-      "url": "https://www.benzinga.com/money/filecoin-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-05T14:13:21Z"
-    },
-    {
-      "headline": "Macron slams Russia’s ‘irresponsible’ strikes on Ukraine’s civilian infrastructure",
-      "url": "https://www.france24.com/en/europe/20261005-macron-slams-russia-s-irresponsible-strikes-on-ukraine-s-civilian-infrastructure",
-      "source": "France 24",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T14:09:16Z"
-    },
-    {
-      "headline": "GM says hybrid vehicles are coming: 'We're not tone deaf to our customers'",
-      "url": "https://www.cnbc.com/2026/10/05/gm-hybrid-vehicles.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-05T12:30:01Z"
-    },
-    {
-      "headline": "Go ahead and get that poetry degree. Republican law won’t prevent people with humanities majors from getting student loans.",
-      "url": "https://www.marketwatch.com/story/go-ahead-and-get-that-poetry-degree-republican-law-wont-prevent-people-with-humanities-majors-from-getting-student-loans-f94587cf?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-05T12:30:00Z"
-    },
-    {
-      "headline": "In Russia-occupied Oleshky, Ukrainians face hunger, drones and landmines",
-      "url": "https://www.aljazeera.com/news/2026/10/5/in-russia-occupied-oleshky-ukrainians-face-hunger-drones-and-landmines?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T12:26:40Z"
-    },
-    {
-      "headline": "Why airfares could rise even more, but airline profits won't",
-      "url": "https://www.cnbc.com/2026/10/05/airfare-prices-airline-profits.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-05T12:06:44Z"
-    },
-    {
-      "headline": "Trump chooses top spy boss to run new AI taskforce",
-      "url": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T10:03:38Z"
     }
   ]
 }
