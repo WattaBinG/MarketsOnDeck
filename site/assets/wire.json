@@ -1,24 +1,104 @@
 {
-  "asOf": "2026-10-05T15:45:41Z",
-  "asOfLabel": "11:45 AM ET",
+  "asOf": "2026-10-05T16:00:46Z",
+  "asOfLabel": "12:00 PM ET",
   "topStory": {
-    "headline": "US CFTC Chairman Selig in WSJ: Today, the CFTC is proposing its first round of regulations for the crypto markets.",
-    "url": "https://x.com/financialjuice/status/2107133518086336803",
-    "source": "MarketsOnDeck Discord",
+    "headline": "Brazilian stocks jump as Bolsonaro now seen as heavy favorite to win presidency",
+    "url": "https://www.cnbc.com/2026/10/05/brazilian-stocks-jump-bolsonaro-now-heavy-favorite-to-win-presidency.html",
+    "source": "CNBC",
     "category": "Markets",
-    "timestamp": "2026-10-05T15:40:08Z",
-    "firstSeen": "2026-10-05T15:45:41Z",
-    "leadSince": "2026-10-05T15:45:41Z",
+    "timestamp": "2026-10-05T15:47:42Z",
+    "firstSeen": "2026-10-05T16:00:46Z",
+    "leadSince": "2026-10-05T16:00:46Z",
     "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "Russia plague: What we know about the suspected case reportedly linked to a lab worker’s death",
+      "url": "https://www.cnbc.com/2026/10/05/russia-plague-suspected-case-irkutsk.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-05T15:57:36Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
+    },
+    {
+      "headline": "Nvidia's, $NVDA, biggest server maker just had one of its biggest quarter. Foxconn reported Q3 sales of $95.4 billion, up 47% YoY, beating expectations of $89 billion. September alone hit a record...",
+      "url": "https://x.com/unusual_whales/status/2107137990070075740",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:57:15Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
+    },
+    {
+      "headline": "U.S. stocks tick higher as bond market moves, oil prices remain in the spotlight",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-tick-higher-as-soft-jobs-data-eases-fed-hike-bets-4930969",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-05T15:56:39Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
+    },
+    {
+      "headline": "AI researchers detail safety risks at NYC Council with Anthropic, OpenAI, Google and Meta execs set to testify",
+      "url": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
+      "source": "CNBC",
+      "category": "AI",
+      "timestamp": "2026-10-05T15:56:06Z",
+      "firstSeen": "2026-10-05T15:30:41Z"
+    },
+    {
+      "headline": "US Supreme Court hears bid by oil companies to avoid climate lawsuit",
+      "url": "https://www.investing.com/news/stock-market-news/us-supreme-court-weighs-bid-by-oil-companies-to-avoid-climate-lawsuit-4931499",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:54:28Z",
+      "firstSeen": "2026-10-05T15:45:41Z"
+    },
+    {
+      "headline": "Bond vol is back at panic highs. Credit is pricing stress. VIX is asleep. The S&P is near record highs. And the Fed put everyone is relying on may not work this time. <> <:neort:875080101035917332>",
+      "url": "https://www.zerohedge.com/the-market-ear/sp-500-has-stopped-trading-reality",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-05T15:54:08Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
+    },
+    {
+      "headline": "Qualcomm and Arm begin new trial over chip testing tools",
+      "url": "https://www.investing.com/news/stock-market-news/qualcomm-and-arm-begin-new-trial-over-chip-testing-tools-4932554",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:52:42Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
+    },
+    {
+      "headline": "David Ellison and Ynon Kreiz announce Skydance leadership team",
+      "url": "https://www.cnbc.com/2026/10/05/david-ellison-ynon-kreiz-skydance-leadership-team.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:51:15Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
+    },
+    {
+      "headline": "TOTALENERGIES CEO SAYS I PREFER A WORLD OF DISRUPTION RATHER THAN A PEACEFUL WORLD BECAUSE IT CREATES MORE OPPORTUNITIES",
+      "url": "https://t.me/WalterBloomberg/36411",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-05T15:50:37Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
+    },
     {
       "headline": "Highest Volume Contracts / No Index/ETFs",
       "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-05T15:45:33Z",
+      "timestamp": "2026-10-05T15:48:04Z",
       "firstSeen": "2026-10-05T15:45:41Z"
+    },
+    {
+      "headline": "Nvidia's $20 billion Groq deal faces lawsuit alleging startup's stockholders were shortchanged",
+      "url": "https://www.cnbc.com/2026/10/05/nvidia-groq-deal-stockholder-lawsuit.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-05T15:46:49Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
     },
     {
       "headline": "These are the cheapest and most expensive U.S. flights this November",
@@ -29,100 +109,28 @@
       "firstSeen": "2026-10-05T15:45:41Z"
     },
     {
-      "headline": "Aramco Cuts Asia Oil Prices To Six-Year Low, Warns Global Oil Supply Buffer \"Scarily Thin\" <>",
-      "url": "https://www.zerohedge.com/energy/aramco-cuts-asia-oil-prices-six-year-low-warns-global-oil-supply-buffer-scarily-thin",
-      "source": "MarketsOnDeck Discord",
+      "headline": "SpaceX’s stock could actually be a bargain, according to this metric",
+      "url": "https://www.marketwatch.com/story/spacexs-stock-could-actually-be-a-bargain-according-to-this-metric-ac3ddf45?mod=mw_rss_topstories",
+      "source": "MarketWatch",
       "category": "Markets",
-      "timestamp": "2026-10-05T15:41:08Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
+      "timestamp": "2026-10-05T15:45:00Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
     },
     {
-      "headline": "AI researchers detail safety risks at NYC Council with Anthropic, OpenAI, Google and Meta execs set to testify",
-      "url": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
-      "source": "CNBC",
-      "category": "AI",
-      "timestamp": "2026-10-05T15:41:03Z",
-      "firstSeen": "2026-10-05T15:30:41Z"
-    },
-    {
-      "headline": "US CFTC CHairman Selig in WSJ: The CFTC is moving to institute rules and regulations that account for distinctions between crypto assets and other types of commodities. <>",
-      "url": "https://www.wsj.com/opinion/cftcs-new-rules-for-crypto-a1314e87",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:40:10Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
-    },
-    {
-      "headline": "Strategy, $MSTR, is profitable again, for the first time in four quarters. It booked a $21 billion unrealized gain on its Bitcoin in Q3, per Bloomberg. The swing is massive: Q1: $14.5 billion loss...",
-      "url": "https://x.com/unusual_whales/status/2107132957165048154",
-      "source": "MarketsOnDeck Discord",
-      "category": "Movers",
-      "timestamp": "2026-10-05T15:37:09Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
-    },
-    {
-      "headline": "Satya Nadella reinvented Microsoft once. Can he do it again in the AI era?",
-      "url": "https://www.cnbc.com/2026/10/05/satya-nadella-reinvented-microsoft-once-can-he-do-it-in-the-ai-era.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:36:52Z",
-      "firstSeen": "2026-10-05T15:30:41Z"
-    },
-    {
-      "headline": "UK grocer Sainsbury’s held merger talks with rival Morrisons, reports say",
-      "url": "https://www.investing.com/news/stock-market-news/uk-grocer-sainsburys-held-merger-talks-with-rival-morrisons-reports-say-4932399",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-05T15:36:45Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
-    },
-    {
-      "headline": "US Supreme Court hears bid by oil companies to avoid climate lawsuit",
-      "url": "https://www.investing.com/news/stock-market-news/us-supreme-court-weighs-bid-by-oil-companies-to-avoid-climate-lawsuit-4931499",
+      "headline": "US stocks mixed, while euro slides on France worries and Brazil markets surge",
+      "url": "https://www.investing.com/news/economy-news/stocks-upbeat-dollar-wobbles-as-fed-hike-bets-recede-4930982",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-05T15:36:32Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
+      "timestamp": "2026-10-05T15:43:20Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
     },
     {
-      "headline": "Poland stocks higher at close of trade; WIG30 up 1.50%",
-      "url": "https://www.investing.com/news/stock-market-news/poland-stocks-higher-at-close-of-trade-wig30-up-150-4932543",
-      "source": "Investing.com",
+      "headline": "US CFTC CHAIRMAN SELIG IN WSJ: TODAY THE CFTC IS PROPOSING ITS FIRST ROUND OF REGULATIONS FOR CRYPTO MARKETS US CFTC CHAIRMAN SELIG IN WSJ: CFTC IS MOVING TO INSTITUTE RULES AND REGULATIONS THAT AC...",
+      "url": "https://t.me/WalterBloomberg/36410",
+      "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Markets",
-      "timestamp": "2026-10-05T15:35:03Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
-    },
-    {
-      "headline": "US 6-Month Bill Auction High Yield 4.165% Bid-to-cover 2.79 US sells $82 bln Awards 40.62% of bids at high",
-      "url": "https://x.com/financialjuice/status/2107132090324226493",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-05T15:34:09Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
-    },
-    {
-      "headline": "US 3-Month Bill Auction High Yield 4.050% Bid-to-cover 2.51 US sells $95 bln Awards 21.30% of bids at high",
-      "url": "https://x.com/financialjuice/status/2107132062314451004",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-05T15:34:08Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
-    },
-    {
-      "headline": "US 6-MONTH AWARDED HIGH ACTUAL 40.620% (FORECAST -, PREVIOUS 37.890%) $MACRO",
-      "url": "https://x.com/financialjuice/status/2107131884073578688",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:33:14Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
-    },
-    {
-      "headline": "Meta, TikTok, X challenge UK watchdog over online safety data demands",
-      "url": "https://www.investing.com/news/stock-market-news/meta-tiktok-x-challenge-uk-watchdog-over-online-safety-data-demands-4932529",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-05T15:30:57Z",
-      "firstSeen": "2026-10-05T15:45:41Z"
+      "timestamp": "2026-10-05T15:39:24Z",
+      "firstSeen": "2026-10-05T16:00:46Z"
     },
     {
       "headline": "*TRUMP TO EASE USE OF TAX-EXEMPT VARIETY OF DIESEL",
@@ -139,14 +147,6 @@
       "category": "Geopolitics",
       "timestamp": "2026-10-05T15:08:24Z",
       "firstSeen": "2026-10-05T15:15:39Z"
-    },
-    {
-      "headline": "*IRAN SAYS ENEMY’S NEXT MISTAKE WILL BRING NEW FRONTS, SURPRISES",
-      "url": "https://t.me/WalterBloomberg/36407",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T14:55:14Z",
-      "firstSeen": "2026-10-05T15:01:16Z"
     }
   ]
 }
