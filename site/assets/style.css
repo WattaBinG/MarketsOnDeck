@@ -806,8 +806,8 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 }
 
 /* Homepage review: Watch | smaller linked banner | Pulse, compact Record beneath Pulse. */
-.home-dashboard{display:grid;grid-template-columns:minmax(170px,220px) minmax(0,1fr) minmax(185px,220px);grid-template-rows:auto auto auto auto;gap:12px clamp(12px,1.8vw,24px);align-items:start}
-.home-dashboard > .wire-left{grid-column:1;grid-row:1/-1;min-width:0}
+.home-dashboard{display:grid;grid-template-columns:minmax(170px,220px) minmax(0,1fr) minmax(185px,220px);grid-template-rows:auto auto auto auto auto;gap:12px clamp(12px,1.8vw,24px);align-items:start}
+.home-dashboard > .wire-left{grid-column:1;grid-row:1/span 3;min-width:0}
 .home-dashboard > .masthead-wrap{grid-column:2;grid-row:1;min-width:0;padding:0}
 .home-dashboard .masthead-link{display:block;text-decoration:none}
 .home-dashboard .masthead-link:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:14px}
@@ -842,16 +842,18 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .home-dashboard .wire-left .earn-list li{font-size:11px}
 .home-dashboard > .home-wire-title{grid-column:2;grid-row:2;padding:2px 0 0}
 .home-dashboard > .wire-main{grid-column:2;grid-row:3;min-width:0}
-.home-dashboard .wire-main .wire-list{column-count:2;column-gap:24px}
-.home-dashboard .wire-main .wire-list li{overflow-wrap:anywhere}
-.home-dashboard > .ai-strip{grid-column:1/-1;grid-row:4;min-width:0}
+.home-dashboard > .wire-list-wrap{grid-column:1/-1;grid-row:4;min-width:0}
+.home-dashboard .wire-list-wrap .wire-list{column-count:3;column-gap:28px}
+.home-dashboard .wire-list-wrap .wire-list li{overflow-wrap:anywhere;break-inside:avoid}
+.home-dashboard .wire-list-wrap .wire-archive-link{display:block;text-align:center}
+.home-dashboard > .ai-strip{grid-column:1/-1;grid-row:5;min-width:0}
 @media(max-width:900px) and (min-width:641px){
  .home-dashboard{grid-template-columns:minmax(145px,1fr) minmax(0,2.2fr) minmax(150px,1fr);gap:10px}
- .home-dashboard .wire-main .wire-list{column-count:1}
+ .home-dashboard .wire-list-wrap .wire-list{column-count:2;column-gap:20px}
 }
 @media(max-width:640px){
  .home-dashboard{display:flex;flex-direction:column;gap:9px}
- .home-dashboard > .wire-left,.home-dashboard > .masthead-wrap,.home-dashboard > .top-right,.home-dashboard > .home-wire-title,.home-dashboard > .wire-main,.home-dashboard > .ai-strip{width:100%;min-width:0}
+ .home-dashboard > .wire-left,.home-dashboard > .masthead-wrap,.home-dashboard > .top-right,.home-dashboard > .home-wire-title,.home-dashboard > .wire-main,.home-dashboard > .wire-list-wrap,.home-dashboard > .ai-strip{width:100%;min-width:0}
  .home-dashboard > .wire-left{order:1}.home-dashboard > .masthead-wrap{order:2}.home-dashboard > .top-right{order:3}.home-dashboard > .home-wire-title{order:4}.home-dashboard > .wire-main{order:5}.home-dashboard > .ai-strip{order:6}
  .home-dashboard .wire-left .watch-list{display:flex;gap:12px}.home-dashboard .wire-left .watch-list li{flex:1;min-width:0}
  .home-dashboard .masthead img{aspect-ratio:3/1}
@@ -862,9 +864,9 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .home-dashboard .sentiment-slider,.home-dashboard .sentiment-date,.home-dashboard .sentiment-note{display:none}
  .home-dashboard .record-band-stats{grid-template-columns:repeat(4,minmax(0,1fr))}
  .home-dashboard .record-band-chart{height:25px}
- .home-dashboard .wire-main .wire-list{column-count:2;column-gap:14px}
- .home-dashboard .wire-main .wire-list li{padding:7px 0}
- .home-dashboard .wire-main .wire-list a{font-size:13px}
+ .home-dashboard .wire-list-wrap .wire-list{column-count:2;column-gap:14px}
+ .home-dashboard .wire-list-wrap .wire-list li{padding:7px 0}
+ .home-dashboard .wire-list-wrap .wire-list a{font-size:13px}
  .home-dashboard .wire-main .wire-source{white-space:normal;font-size:9px}
 }
 /* Keep the top row short enough that The Wire starts near the three panels. */
@@ -885,8 +887,9 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .home-dashboard > .home-wire-title{order:2}
  .home-dashboard > .wire-main{order:4}
  .home-dashboard > .wire-left{order:3}
- .home-dashboard > .top-right{order:5}
- .home-dashboard > .ai-strip{order:6}
+ .home-dashboard > .wire-list-wrap{order:5}
+ .home-dashboard > .top-right{order:6}
+ .home-dashboard > .ai-strip{order:7}
  .home-dashboard{gap:6px}
  .home-dashboard .masthead img{aspect-ratio:3/1}
  .home-dashboard .home-wire-title{padding:2px 0 0}
@@ -901,9 +904,9 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .home-dashboard .wire-top-label{margin-bottom:3px;font-size:9px}
  .home-dashboard .wire-top-headline{font-size:clamp(22px,7.1vw,29px);line-height:1.1}
  .home-dashboard .wire-top-source{margin-top:4px;font-size:10px}
- .home-dashboard .wire-main .wire-list{column-count:2;column-gap:13px}
- .home-dashboard .wire-main .wire-list li{padding:5px 0;gap:3px}
- .home-dashboard .wire-main .wire-list a{font-size:12px;line-height:1.23}
+ .home-dashboard .wire-list-wrap .wire-list{column-count:2;column-gap:13px}
+ .home-dashboard .wire-list-wrap .wire-list li{padding:5px 0;gap:3px}
+ .home-dashboard .wire-list-wrap .wire-list a{font-size:12px;line-height:1.23}
  .home-dashboard .wire-main .wire-tag{font-size:8px}
  .home-dashboard .wire-left{border-top:1px solid var(--border);padding-top:8px;margin-top:4px}
 }
@@ -912,9 +915,9 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
    Appended last so these win at equal specificity. */
 @media (max-width: 640px) {
   /* 1. Single-column headlines at readable size */
-  .home-dashboard .wire-main .wire-list { column-count: 1; column-gap: 0; }
-  .home-dashboard .wire-main .wire-list li { padding: 10px 0; }
-  .home-dashboard .wire-main .wire-list a { font-size: 16px; line-height: 1.4; }
+  .home-dashboard .wire-list-wrap .wire-list { column-count: 1; column-gap: 0; }
+  .home-dashboard .wire-list-wrap .wire-list li { padding: 10px 0; }
+  .home-dashboard .wire-list-wrap .wire-list a { font-size: 16px; line-height: 1.4; }
   .home-dashboard .wire-main .wire-tag { font-size: 10px; }
   .home-dashboard .wire-main .wire-source { font-size: 11px; }
 
@@ -1019,8 +1022,8 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
    next to desktop's 3-column masonry). Phones get a compact 2-column card
    grid so the feed feels rich, not like one endless row. Appended last. */
 @media (max-width: 640px) {
-  .home-dashboard .wire-main .wire-list { column-count: 2; column-gap: 10px; }
-  .home-dashboard .wire-main .wire-list li {
+  .home-dashboard .wire-list-wrap .wire-list { column-count: 2; column-gap: 10px; }
+  .home-dashboard .wire-list-wrap .wire-list li {
     break-inside: avoid;
     background: var(--surface);
     border: 1px solid var(--border);
@@ -1028,7 +1031,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
     padding: 10px 12px;
     margin: 0 0 10px;
   }
-  .home-dashboard .wire-main .wire-list a { font-size: 13.5px; line-height: 1.35; }
+  .home-dashboard .wire-list-wrap .wire-list a { font-size: 13.5px; line-height: 1.35; }
   .home-dashboard .wire-main .wire-tag { font-size: 9px; margin-bottom: 4px; }
   .home-dashboard .wire-main .wire-source { font-size: 10px; }
   .home-dashboard .wire-main .wire-time { font-size: 10px; }
