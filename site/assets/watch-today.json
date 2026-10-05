@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-05",
-  "dateLabel": "Monday, October 5",
-  "events": [],
-  "note": "No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).",
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "date": "2026-10-06",
+  "dateLabel": "Tuesday, October 6",
+  "events": [
+    { "time": "8:00 AM ET", "event": "Lamb Weston Earnings (BMO)" },
+    { "time": "8:30 AM ET", "event": "Trade Balance" },
+    { "time": "10:00 AM ET", "event": "ISM Services PMI" },
+    { "time": "1:00 PM ET", "event": "3-Year Note Auction" },
+    { "time": "After Close", "event": "Constellation Brands Earnings (AMC)" }
+  ],
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
