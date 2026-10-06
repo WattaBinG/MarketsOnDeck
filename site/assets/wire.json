@@ -1,24 +1,104 @@
 {
-  "asOf": "2026-10-06T16:01:01Z",
-  "asOfLabel": "12:01 PM ET",
+  "asOf": "2026-10-06T16:16:26Z",
+  "asOfLabel": "12:16 PM ET",
   "topStory": {
-    "headline": "**DIMON WARNS AI HAS INCREASED CYBER RISK TENFOLD** JPMorgan CEO Jamie Dimon says AI has increased cyber risk tenfold, making cybersecurity the bank’s biggest threat. He also warned governments “ca...",
-    "url": "https://x.com/DeItaone/status/2107498240987763144",
-    "source": "MarketsOnDeck Discord",
+    "headline": "British Airways plans record 106-seat business class on Airbus A380 jumbo jets",
+    "url": "https://www.cnbc.com/2026/10/06/british-airways-business-class-a380.html",
+    "source": "CNBC",
     "category": "Markets",
-    "timestamp": "2026-10-06T15:49:07Z",
-    "firstSeen": "2026-10-06T16:01:01Z",
-    "leadSince": "2026-10-06T16:01:01Z",
+    "timestamp": "2026-10-06T15:52:33Z",
+    "firstSeen": "2026-10-06T15:46:19Z",
+    "leadSince": "2026-10-06T16:16:26Z",
     "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
     {
-      "headline": "Fed's Daly concerned AI, tariffs, energy costs may last longer - Axios <>",
-      "url": "https://www.axios.com/2026/10/06/fed-ai-daly-inflation-chips",
+      "headline": "Meta Muse popularity lifts AMD stock to fresh highs as AI agents juice CPU sales",
+      "url": "https://www.cnbc.com/2026/10/06/meta-muse-gives-amd-a-boost-as-ai-momentum-shifts-to-personal-agents-.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-06T16:15:07Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Google launches EmbeddingGemma 2 multimodal model. $GOOGL",
+      "url": "https://x.com/financialjuice/status/2107502646714109955",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-06T16:06:10Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "in light of today's Constellation news, a reminder on the Uranium market. <:neort:875080101035917332>",
+      "url": "https://x.com/zerohedge/status/2107501984714768818",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-06T16:04:07Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Stocks trading ex-div - Wed Oct 7",
+      "url": "https://unusualwhales.com/flow/dividends?utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-06T16:02:14Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Daly: Fed may observe shocks diminishing within 1-3 years: Axios",
+      "url": "https://x.com/financialjuice/status/2107501508677738653",
       "source": "MarketsOnDeck Discord",
       "category": "Macro",
-      "timestamp": "2026-10-06T16:00:09Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
+      "timestamp": "2026-10-06T16:02:11Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Ukraine fires nearly 900 drones at Russia, says Moscow",
+      "url": "https://www.france24.com/en/video/20261006-ukraine-fires-nearly-900-drones-at-russia-says-moscow",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-06T16:01:42Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Fed's Daly: May result in more tightening required.",
+      "url": "https://x.com/financialjuice/status/2107501224069148742",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-06T16:01:11Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Paramount takes over Warner Bros in $110bn Hollywood merger",
+      "url": "https://www.bbc.co.uk/news/articles/cxj0604d33qzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Movers",
+      "timestamp": "2026-10-06T16:01:11Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Fed's Daly: These factors could keep inflation elevated.",
+      "url": "https://x.com/financialjuice/status/2107501168872259737",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-06T16:01:10Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Don't Trust The 'Le Pen Bounce': Goldman Lays Out Three Cheap Tail Hedges For The Next Leg Of France's Bond Rout <>",
+      "url": "https://www.zerohedge.com/markets/dont-trust-le-pen-bounce-goldman-lays-out-three-cheap-tail-hedges-next-leg-frances-bond-0",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-06T16:01:08Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
+    },
+    {
+      "headline": "Anthropic expands Claude Startups program in bid to snag founders and fast-growing companies",
+      "url": "https://www.cnbc.com/2026/10/06/anthropic-claude-startups-program.html",
+      "source": "CNBC",
+      "category": "AI",
+      "timestamp": "2026-10-06T16:00:28Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
     },
     {
       "headline": "Anthropic is giving startups a free year of Claude Team and $1,000 in credits",
@@ -37,68 +117,12 @@
       "firstSeen": "2026-10-06T16:01:01Z"
     },
     {
-      "headline": "What if 5%+ rates aren't happening despite the AI boom… but partly because of it? <> <:neort:875080101035917332>",
-      "url": "https://www.zerohedge.com/the-market-ear/what-if-ai-reason-rates-stay-above-5",
-      "source": "MarketsOnDeck Discord",
+      "headline": "DIMON WARNS AI HAS INCREASED CYBER RISK TENFOLD JPMorgan CEO Jamie Dimon says AI has increased cyber risk tenfold, making cybersecurity the bank’s biggest threat. He also warned governments “can’t...",
+      "url": "https://t.me/WalterBloomberg/36482",
+      "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Markets",
-      "timestamp": "2026-10-06T15:59:07Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
-    },
-    {
-      "headline": "These 5 chip stocks are cheaper than the S&P 500 — and offer faster growth",
-      "url": "https://www.marketwatch.com/story/these-5-chip-stocks-are-cheaper-than-the-s-p-500-and-offer-faster-growth-f8ab4386?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-06T15:57:00Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
-    },
-    {
-      "headline": "Every midterm election year since 1946 has been followed by positive one-year stock returns. The biggest gain after a midterm election year was in 1954, at 34%. The average one-year gain has tallie...",
-      "url": "https://x.com/unusual_whales/status/2107500126222835857",
-      "source": "MarketsOnDeck Discord",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-06T15:56:08Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
-    },
-    {
-      "headline": "British Airways plans record 106-seat business class on Airbus A380 jumbo jets",
-      "url": "https://www.cnbc.com/2026/10/06/british-airways-business-class-a380.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-06T15:52:33Z",
-      "firstSeen": "2026-10-06T15:46:19Z"
-    },
-    {
-      "headline": "Trade deficit hits $105.6 billion, widest since just before Trump tariffs enacted last year",
-      "url": "https://www.cnbc.com/2026/10/06/trade-deficit-hits-105point6-billion-widest-since-just-before-trump-tariffs-enacted-last-year.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-06T15:52:22Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
-    },
-    {
-      "headline": "NEW: Companies are switching their top model more than ever. The monthly share of firms switching providers reached a record 8% in September. This is why: 1/ ARR is a dumb measure for AI spend. The...",
-      "url": "https://x.com/zerohedge/status/2107498663744598194",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-06T15:51:07Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
-    },
-    {
-      "headline": "Diplomats: Sanctions affect about 1,650 new entities and individuals, increasing total Russia-related designations by 50%.",
-      "url": "https://x.com/financialjuice/status/2107497701151572179",
-      "source": "MarketsOnDeck Discord",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-06T15:47:08Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
-    },
-    {
-      "headline": "High diesel prices may put 'another squeeze' on the consumer, economist says",
-      "url": "https://www.cnbc.com/2026/10/06/diesel-prices-inflation.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-06T15:45:52Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
+      "timestamp": "2026-10-06T15:48:32Z",
+      "firstSeen": "2026-10-06T16:16:26Z"
     },
     {
       "headline": "TRUMP SAYS FRANCE FACES OUT-OF-CONTROL MASS MIGRATION TRUMP SAYS ISLAM SEEKS TO TAKE OVER FRANCE",
@@ -106,30 +130,6 @@
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Geopolitics",
       "timestamp": "2026-10-06T15:40:21Z",
-      "firstSeen": "2026-10-06T15:46:19Z"
-    },
-    {
-      "headline": "Boeing vs. Space Exploration Technologies: Which Industrials Stock Is a Better Buy in 2026?",
-      "url": "https://www.nasdaq.com/articles/boeing-vs-space-exploration-technologies-which-industrials-stock-better-buy-2026",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-06T15:40:02Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
-    },
-    {
-      "headline": "Here's Why SpaceX's AI Infrastructure in Space \"Moonshot\" Won't Uproot Neocloud Companies",
-      "url": "https://www.nasdaq.com/articles/heres-why-spacexs-ai-infrastructure-space-moonshot-wont-uproot-neocloud-companies",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-06T15:40:00Z",
-      "firstSeen": "2026-10-06T16:01:01Z"
-    },
-    {
-      "headline": "Wall Street marches higher, S&P 500 scales first record high since mid-August",
-      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-nasdaq-hits-record-on-reduced-fed-hike-bets-4933219",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-06T15:37:25Z",
       "firstSeen": "2026-10-06T15:46:19Z"
     },
     {
