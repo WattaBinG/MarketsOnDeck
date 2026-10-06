@@ -3,21 +3,21 @@
   "dateLabel": "Wednesday, October 7",
   "events": [
     {
-      "time": "7:00 AM ET",
-      "event": "MBA Mortgage Applications"
-    },
-    {
       "time": "10:30 AM ET",
-      "event": "EIA Crude Oil Inventories"
-    },
-    {
-      "time": "1:00 PM ET",
-      "event": "10-Year Note Auction"
+      "event": "EIA Weekly Petroleum Status Report",
+      "kind": "crude_stocks",
+      "prev": "crude stocks +0.9M bbl"
     },
     {
       "time": "2:00 PM ET",
-      "event": "FOMC Meeting Minutes"
+      "event": "FOMC Minutes"
     }
   ],
-  "calendarUrl": "https://www.investing.com/economic-calendar/"
+  "note": null,
+  "calendarUrl": "https://www.census.gov/economic-indicators/",
+  "sources": [
+    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
+    "https://www.bls.gov/schedule/news_release/bls.ics",
+    "https://www.census.gov/economic-indicators/"
+  ]
 }
