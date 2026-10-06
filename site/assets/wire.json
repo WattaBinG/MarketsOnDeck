@@ -1,152 +1,133 @@
 {
-  "asOf": "2026-10-06T02:15:28Z",
-  "asOfLabel": "10:15 PM ET",
+  "asOf": "2026-10-06T02:25:00Z",
+  "asOfLabel": "10:25 PM ET",
   "topStory": {
-    "headline": "AI researcher warns 'we are racing to build and grow our own adversary' in NYC hearing",
-    "url": "https://www.cnbc.com/2026/10/05/anthropic-openai-google-meta-execs-testify-nyc-council-ai-hearing.html",
-    "source": "CNBC",
-    "category": "Markets",
-    "timestamp": "2026-10-05T23:28:31Z",
-    "firstSeen": "2026-10-05T23:31:04Z",
-    "leadSince": "2026-10-05T23:31:04Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "Treasury yields hit fresh 24-year highs as long-bond selloff deepens",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-05/treasuries-slump-pushes-long-end-yields-to-fresh-24-year-highs",
+    "source": "Bloomberg",
+    "category": "Macro",
+    "timestamp": "2026-10-05T18:52:33Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
+    {
+      "headline": "Treasury yields hit 24-year highs, with the 10-year climbing to 5.34% and the 30-year to 5.70%",
+      "url": "https://www.cnbc.com/2026/10/05/treasury-yields-bonds-fed-rates.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-05T13:00:00Z"
+    },
+    {
+      "headline": "China shuts down a record 670 banks, raising new worries over oil and AI exposure",
+      "url": "https://www.cnbc.com/2026/10/06/cnbc-daily-open-china-shuts-down-record-670-banks-new-worries-over-oil-and-ai-.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-06T01:00:00Z"
+    },
+    {
+      "headline": "Schneider Electric to acquire PTC for $22.6 billion in record AI-industrial push",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-05/schneider-electric-to-acquire-ptc-for-more-than-20-billion",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-10-05T14:00:00Z"
+    },
+    {
+      "headline": "Nasdaq, Nvidia post record highs as tech strength outshines bond weakness",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-rise-as-tech-rallies-investors-shrug-off-bond-market-caution-081220790.html",
+      "source": "Yahoo Finance",
+      "category": "Markets",
+      "timestamp": "2026-10-05T20:30:00Z"
+    },
+    {
+      "headline": "SpaceX stock climbs to highest since June, returning Musk to trillionaire status",
+      "url": "https://www.cnbc.com/2026/10/05/spacex-stock-climbs-highest-since-june-returning-musk-to-trillionaire.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-05T20:15:00Z"
+    },
+    {
+      "headline": "Wells Fargo gets a bold upgrade ahead of earnings; Morgan Stanley sees room to play catch-up",
+      "url": "https://www.cnbc.com/investingclub/2026/10/05/wells-fargo-gets-a-bold-upgrade-ahead-of-earnings-why-the-stock-can-play-catch-up.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-05T13:30:00Z"
+    },
+    {
+      "headline": "Vistra stock soars after Trump administration plans $4 billion in loans for nuclear upgrades",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62155488/why-is-vistra-stock-soaring-monday",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-05T13:15:00Z"
+    },
+    {
+      "headline": "Western Digital stock rises in premarket after prior session's 10% drop",
+      "url": "https://www.benzinga.com/markets/tech/26/10/62155423/whats-going-on-with-western-digital-stock-monday-3",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-05T12:30:00Z"
+    },
+    {
+      "headline": "Nu Holdings rises after Flavio Bolsonaro beats expectations in Brazil's first-round vote",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62161115/nu-stock-rises-after-bolsonaro-beats-expectations-in-brazils-first-round-vote",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-05T15:00:00Z"
+    },
+    {
+      "headline": "Houthis claim strike on Aramco site near Riyadh as Yemen fighting intensifies",
+      "url": "https://www.aljazeera.com/news/2026/10/4/houthis-claim-strike-on-saudi-energy-facility-as-yemen-fighting-intensifies",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-04T10:00:00Z"
+    },
+    {
+      "headline": "Rubio opens 4-day NATO tour in Iceland to discuss Arctic security after Greenland pact",
+      "url": "https://www.france24.com/en/europe/20261005-rubio-visits-iceland-as-us-boosts-arctic-presence-after-greenland-security-pact",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-05T18:00:00Z"
+    },
     {
       "headline": "Trump says MAGA Inc. PAC will pay for controversial TV ads that government funded",
       "url": "https://www.cnbc.com/2026/10/05/trump-ads-election.html",
       "source": "CNBC",
       "category": "Geopolitics",
-      "timestamp": "2026-10-06T01:55:50Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
+      "timestamp": "2026-10-06T01:55:50Z"
     },
     {
-      "headline": "Conservative data center activists take fight to AI companies’ front door in San Francisco",
+      "headline": "Conservative data center activists take fight to AI companies' front door in San Francisco",
       "url": "https://www.nbcnews.com/tech/tech-news/conservative-data-center-activists-humans-first-fight-ai-companies-rcna601739",
       "source": "NBC News",
       "category": "Markets",
-      "timestamp": "2026-10-06T01:55:38Z",
-      "firstSeen": "2026-10-06T02:15:28Z"
+      "timestamp": "2026-10-06T01:55:38Z"
     },
     {
       "headline": "Exclusive-Accenture contractor removed from FBI following damaging data breach, sources say",
       "url": "https://www.investing.com/news/stock-market-news/exclusiveaccenture-contractor-removed-from-fbi-following-damaging-data-breach-sources-say-4933183",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-06T01:54:41Z",
-      "firstSeen": "2026-10-06T01:31:02Z"
+      "timestamp": "2026-10-06T01:54:41Z"
     },
     {
-      "headline": "Asian shares track Wall Street higher, Treasury yields near multi-decade highs",
-      "url": "https://www.investing.com/news/economy-news/asian-shares-track-wall-street-higher-treasury-yields-near-multidecade-highs-4933238",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-06T01:54:23Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
-    },
-    {
-      "headline": "Aiming at fuel costs, Trump opens tax-exempt ‘red dye’ diesel to all drivers",
+      "headline": "Aiming at fuel costs, Trump opens tax-exempt 'red dye' diesel to all drivers",
       "url": "https://www.nbcnews.com/business/energy/aiming-fuel-costs-trump-opens-tax-exempt-red-dye-diesel-rcna601748",
       "source": "NBC News",
       "category": "Geopolitics",
-      "timestamp": "2026-10-06T01:48:58Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
+      "timestamp": "2026-10-06T01:48:58Z"
     },
     {
       "headline": "Trump offers U.S. help to Russia after plague death; WHO assesses the situation as low risk",
       "url": "https://www.cnbc.com/2026/10/06/russia-plague-death-trump-offers-us-help.html",
       "source": "CNBC",
       "category": "Geopolitics",
-      "timestamp": "2026-10-06T01:47:32Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
-    },
-    {
-      "headline": "Cricut CEO Ashish Arora sells $1.16 million in CRCT stock",
-      "url": "https://www.investing.com/news/insider-trading-news/cricut-ceo-ashish-arora-sells-116-million-in-crct-stock-93CH-4933234",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-06T01:47:03Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
-    },
-    {
-      "headline": "Greenland Mines director Riad El-Dada sells $32,727 in common stock",
-      "url": "https://www.investing.com/news/insider-trading-news/greenland-mines-director-riad-eldada-sells-32727-in-common-stock-93CH-4933233",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-06T01:46:05Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
-    },
-    {
-      "headline": "Adaptive Biotechnologies COO Julie Rubinstein sells $1m in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/adaptive-biotechnologies-coo-julie-rubinstein-sells-1m-in-stock-93CH-4933232",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-06T01:46:03Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
-    },
-    {
-      "headline": "Why is SoftBank stock declining today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-softbank-stock-declining-today-93CH-4933227",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-06T01:45:23Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
-    },
-    {
-      "headline": "Australian Markets Notably Higher",
-      "url": "https://www.nasdaq.com/articles/australian-markets-notably-higher-0",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-06T01:43:54Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
+      "timestamp": "2026-10-06T01:47:32Z"
     },
     {
       "headline": "KKR to acquire Gen II Fund Services for $5.1 billion in private-markets push",
       "url": "https://www.investing.com/news/stock-market-news/kkr-to-acquire-gen-ii-fund-services-for-51-billion-in-privatemarkets-push-4933222",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-06T01:37:26Z",
-      "firstSeen": "2026-10-06T02:01:01Z"
-    },
-    {
-      "headline": "U.S. stock futures steady after Nasdaq hits record on reduced Fed hike bets",
-      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-nasdaq-hits-record-on-reduced-fed-hike-bets-4933219",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-06T01:33:50Z",
-      "firstSeen": "2026-10-06T02:15:28Z"
-    },
-    {
-      "headline": "*TRUMP: CHINA WILL BE DOUBLING UP WHAT THEY’RE BUYING",
-      "url": "https://t.me/WalterBloomberg/36435",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-06T00:22:27Z",
-      "firstSeen": "2026-10-06T00:30:30Z"
-    },
-    {
-      "headline": "TRUMP: HAVE DECIDED TO DO ADS AND PAY FOR THEM MYSELF, AND WITH MONEY I RAISED FOR MAGA, INC.",
-      "url": "https://t.me/WalterBloomberg/36434",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T22:39:25Z",
-      "firstSeen": "2026-10-05T23:31:04Z"
-    },
-    {
-      "headline": "*SAUDI-LED COALITION SAYS DESTROYED SANAA MISSILE LAUNCHER: SPA",
-      "url": "https://t.me/WalterBloomberg/36433",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-05T22:19:12Z",
-      "firstSeen": "2026-10-05T23:31:04Z"
-    },
-    {
-      "headline": "TREASURY YIELDS SURGE TO FRESH 24-YEAR HIGHS Treasuries sold off sharply, pushing the 10-year yield to 5.34% and the 30-year to 5.70%, their highest levels since 2002. Pressure comes from resilient...",
-      "url": "https://t.me/WalterBloomberg/36432",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-10-05T18:52:33Z",
-      "firstSeen": "2026-10-05T23:31:04Z"
+      "timestamp": "2026-10-06T01:37:26Z"
     }
   ]
 }
