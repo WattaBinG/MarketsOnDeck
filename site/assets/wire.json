@@ -1,48 +1,136 @@
 {
-  "asOf": "2026-10-07T18:15:35Z",
-  "asOfLabel": "2:15 PM ET",
+  "asOf": "2026-10-07T18:30:35Z",
+  "asOfLabel": "2:30 PM ET",
   "topStory": {
-    "headline": "Fed officials see another hike coming, but no sign as to when, minutes show",
-    "url": "https://www.cnbc.com/2026/10/07/fed-officials-see-another-hike-coming-but-no-sign-as-to-when-minutes-show.html",
-    "source": "CNBC",
+    "headline": "FOMC Minutes Show All 19 Fed Officials Supported Rate Hike, \"Most\" Assess Another Hike \"By Year End Is Appropriate\" <>",
+    "url": "https://www.zerohedge.com/markets/fomc-minutes-show-all-19-fed-officials-supported-rate-hike-most-assess-another-hike-year",
+    "source": "MarketsOnDeck Discord",
     "category": "Macro",
-    "timestamp": "2026-10-07T18:07:09Z",
-    "firstSeen": "2026-10-07T18:15:35Z",
-    "leadSince": "2026-10-07T18:15:35Z",
+    "timestamp": "2026-10-07T18:15:40Z",
+    "firstSeen": "2026-10-07T18:30:35Z",
+    "leadSince": "2026-10-07T18:30:35Z",
     "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "ChatGPT for Teens keeps teens talking, even during mental health crises",
-      "url": "https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-07T18:15:28Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "Putin Praises Iran's 'Courage' As US Gloats Over Oil Blockade & 'Zero' Exports <>",
-      "url": "https://www.zerohedge.com/geopolitical/putin-praises-irans-courage-us-gloats-over-oil-blockade-zero-exports",
-      "source": "MarketsOnDeck Discord",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-07T18:10:40Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
+      "headline": "Modelo owner Constellation is getting creative to bring back beer drinkers as overall demand weakens",
+      "url": "https://www.cnbc.com/2026/10/07/constellation-brands-earnings-beer-demand.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-07T18:28:27Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
     },
     {
       "headline": "Fed’s minutes show no appetite for a series of interest-rate hikes",
       "url": "https://www.marketwatch.com/story/fed-minutes-show-no-appetite-for-a-series-of-interest-rate-hikes-8b1c6436?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "category": "Macro",
-      "timestamp": "2026-10-07T18:07:00Z",
+      "timestamp": "2026-10-07T18:28:00Z",
       "firstSeen": "2026-10-07T18:15:35Z"
     },
     {
-      "headline": "**CAPITAL ECONOMICS: CENTRAL BANKS MAY HIKE LESS THAN MARKETS EXPECT** Capital Economics says central banks are unlikely to raise rates as far as investors currently price over the next year. While...",
-      "url": "https://x.com/DeItaone/status/2107895095512997956",
+      "headline": "Trump to speak to Putin about plague lab worker's death in Russia",
+      "url": "https://www.bbc.co.uk/news/articles/cqgm0vrl3xp7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-07T18:27:40Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "SYRIA WEIGHS MILITARY SUPPORT FOR SAUDI ARABIA AGAINST HOUTHIS Syria is considering providing military assistance to Saudi Arabia as the kingdom battles Iran-backed Houthis in Yemen, according to U...",
+      "url": "https://t.me/WalterBloomberg/36596",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-07T18:27:34Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "SpaceX Credit Risk Hits New High As AI Debt Binge Fears Spook Bondholders <>",
+      "url": "https://www.zerohedge.com/markets/spacex-credit-risk-hits-new-high-ai-debt-binge-fears-spook-bondholders",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-07T18:05:40Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
+      "timestamp": "2026-10-07T18:25:40Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "Americans grow more pessimistic about their finances, New York Fed finds — expert warns of ‘tough choices’ ahead",
+      "url": "https://www.cnbc.com/2026/10/07/new-york-fed-financial-outlook-inflation.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-07T18:24:12Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "Why is Black Hills stock surging today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-black-hills-stock-surging-today-93CH-4937337",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-07T18:23:58Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "Inflation fears on the rise as one-year outlook in Fed survey hits highest level since May 2023",
+      "url": "https://www.cnbc.com/2026/10/07/inflation-fears-on-the-rise-as-one-year-outlook-in-fed-survey-hits-highest-since-may-2023.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-07T18:22:24Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "SpaceX may chase ‘stunning’ AI returns by taking on a lot of debt to buy Nvidia chips",
+      "url": "https://www.marketwatch.com/story/spacex-reportedly-is-looking-to-raise-as-much-money-as-the-company-generates-in-revenue-to-buy-nvidia-chips-01ca6d82?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-07T18:22:00Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "Why is Spotify stock rallying today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-spotify-stock-rallying-today-93CH-4937336",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-07T18:20:23Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "Lucid Group bull and bear case: upside potential against deep execution risk",
+      "url": "https://www.investing.com/news/stock-market-news/lucid-group-bull-and-bear-case-upside-potential-against-deep-execution-risk-93CH-4937335",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-07T18:20:09Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "Here comes third-quarter earnings season. Booming profits could propel the S&P 500 to new heights",
+      "url": "https://www.cnbc.com/2026/10/07/here-comes-third-quarter-earnings-season-booming-profits-could-propel-the-sp-500-to-new-heights.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-07T18:19:53Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "FOMC on AI: \"Several participants observed that the rate of price increases in the core goods category also remained elevated, as effects of the AI buildout appeared to increase while the effects o...",
+      "url": "https://x.com/zerohedge/status/2107898563330207812",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-07T18:19:41Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "Trump administration plans to charge international students $70,000 for work authorization",
+      "url": "https://www.investing.com/news/economy-news/trump-administration-plans-to-charge-international-students-70000-for-work-authorization-4937334",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-07T18:19:03Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
+    },
+    {
+      "headline": "BREAKING: Ray Dalio says AI is a \"classic bubble,\" and it may be close to bursting. The billionaire Bridgewater founder says two forces usually pop a bubble: rising interest rates, and investors ne...",
+      "url": "https://x.com/unusual_whales/status/2107897998084579722",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-07T18:17:40Z",
+      "firstSeen": "2026-10-07T18:30:35Z"
     },
     {
       "headline": "CAPITAL ECONOMICS: CENTRAL BANKS MAY HIKE LESS THAN MARKETS EXPECT Capital Economics says central banks are unlikely to raise rates as far as investors currently price over the next year. While ele...",
@@ -53,99 +141,11 @@
       "firstSeen": "2026-10-07T18:15:35Z"
     },
     {
-      "headline": "🔴 New York Fed intervened in FX market on behalf of treasury",
-      "url": "https://x.com/financialjuice/status/2107894752536326623",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-07T18:04:41Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "10-year Treasury yield ease from 24-year high after solid bond auction eases demand fears",
-      "url": "https://www.cnbc.com/2026/10/07/treasury-yields-auction-fomc-minutes.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-10-07T18:04:27Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "FOMC Meeting Minutes <>",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-07T18:03:41Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "Fed minutes: some participants noted treasury market functioning smoothly, emphasized need for planning market stress",
-      "url": "https://x.com/financialjuice/status/2107894333563130210",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-07T18:02:57Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "Fed minutes: many participants said despite recent increase in long-term Treasury yields, financial conditions seem supportive of economic growth",
-      "url": "https://x.com/financialjuice/status/2107894321407996413",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-07T18:02:56Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "Fed minutes: staff economic outlook was stronger than the one prepared for July meeting",
-      "url": "https://x.com/financialjuice/status/2107894308619886982",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-07T18:02:54Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "Fed minutes: some participants noted AL expansion may cause demand to exceed supply medium term, pushing inflation higher",
-      "url": "https://x.com/financialjuice/status/2107894295340392914",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-07T18:02:52Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
       "headline": "*FED: MOST PARTICIPANTS SAW ANOTHER 2026 HIKE LIKELY APPROPRIATE",
       "url": "https://t.me/WalterBloomberg/36594",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Macro",
       "timestamp": "2026-10-07T18:02:22Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "*FED: ALL 19 OFFICIALS SUPPORTED RATE HIKE AT SEPTEMBER MEETING",
-      "url": "https://t.me/WalterBloomberg/36593",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-10-07T18:01:41Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "Is SpaceX About to Hand Nvidia a $40 Billion Payday? Here's What it Could Mean for Investors.",
-      "url": "https://www.nasdaq.com/articles/spacex-about-hand-nvidia-40-billion-payday-heres-what-it-could-mean-investors",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-07T18:01:35Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "Microsoft is giving Copilot more control over Windows and your files",
-      "url": "https://www.theverge.com/tech/1007113/microsoft-windows-copilot-ai-control-search-hybrid-intelligence",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-07T18:01:20Z",
-      "firstSeen": "2026-10-07T18:15:35Z"
-    },
-    {
-      "headline": "Tropical Storm Isaias forecast to hit US Gulf coast as hurricane early Saturday",
-      "url": "https://www.investing.com/news/commodities-news/tropical-stormisaias-forecast-to-hit-us-gulf-coast-as-hurricane-early-saturday-4937254",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-07T18:01:12Z",
       "firstSeen": "2026-10-07T18:15:35Z"
     }
   ]
