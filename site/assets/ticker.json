@@ -34,6 +34,13 @@
       "changePercent": -0.74
     },
     {
+      "symbol": "SPCX",
+      "price": 171.89,
+      "change": 0.8,
+      "changePercent": 0.47,
+      "held": true
+    },
+    {
       "symbol": "SOFI",
       "price": 15.77,
       "change": -0.15,
@@ -48,13 +55,6 @@
       "held": true
     },
     {
-      "symbol": "SPCX",
-      "price": 171.89,
-      "change": 0.8,
-      "changePercent": 0.47,
-      "held": true
-    },
-    {
       "symbol": "KLAC",
       "price": 197.76,
       "change": -9.09,
@@ -65,15 +65,13 @@
       "symbol": "SPCH",
       "price": 12.88,
       "change": 0.14,
-      "changePercent": 1.1,
-      "held": true
+      "changePercent": 1.1
     },
     {
       "symbol": "TSLA",
       "price": 380.34,
       "change": 1.61,
-      "changePercent": 0.43,
-      "held": true
+      "changePercent": 0.43
     },
     {
       "symbol": "NVDA",
