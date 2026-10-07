@@ -507,15 +507,6 @@ function initRecordBand() {
     pnlEl.classList.add(totalGain >= 0 ? 'gain' : 'loss');
     document.getElementById('rbWinRate').textContent = winRate.toFixed(1) + '%';
     document.getElementById('rbTrades').textContent = String(trades.length);
-    var spy = (data.summary && data.summary.benchmark && typeof data.summary.benchmark.spyYtdPercent === 'number')
-      ? data.summary.benchmark.spyYtdPercent : null;
-    var spyEl = document.getElementById('rbSpy');
-    if (spy !== null) {
-      spyEl.textContent = (spy >= 0 ? '+' : '') + spy.toFixed(1) + '%';
-      spyEl.classList.add(spy >= 0 ? 'gain' : 'loss');
-    } else if (spyEl.parentNode) {
-      spyEl.parentNode.style.display = 'none';
-    }
     var asOf = document.getElementById('recordBandAsOf');
     if (asOf && data.summary && data.summary.asOf) asOf.textContent = 'Journal through ' + data.summary.asOf;
     renderEquityCurve(document.getElementById('recordBandChart'), trades, { height: 150 });

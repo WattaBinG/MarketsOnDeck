@@ -198,3 +198,27 @@ conflicts with them.
 ## Keep the SEO head block on every page
 
 Each indexable page carries a canonical link, Open Graph and Twitter tags (image: `/assets/brand/badge-1200.jpg`), and a JSON-LD block. When you write a new Morning Brief, Market Tape or Record edition by copying the previous page, keep that whole head block and update the canonical URL, `og:title`, `og:description`, `og:url`, the JSON-LD `name`/`description`/`url`, and the sitemap `lastmod`. Do not delete or reset these tags.
+
+## Dated trust views (review batch October 7)
+
+The ledger remains an owner-published source. No script in this batch writes
+trades.json or positions.json. After an owner ledger update, run
+`python3 scripts/build_trust_views.py` to regenerate episode and Overview
+HTML from the recorded closes, then `python3 scripts/refresh_earnings.py`.
+The browser uses the same ledger for displayed episode totals and recent
+contract identities, so an old generated HTML snapshot does not override a
+newly fetched ledger. If JavaScript or the feed fails, the static fields keep
+an explicit coverage date. Commit these generated views with the source
+update; they are not an independent brokerage reconciliation.
+
+`trust.js` labels dated ledger, positions, stocks, crypto, news and calendar
+snapshots. It re-evaluates time warnings every minute from the same fetched
+snapshot, without repeatedly requesting feeds. Crypto/news warn after one
+hour. Stocks remain labeled last-close snapshots; weekends and pre-close
+hours do not turn yesterday's normal close into a feed-failure claim. Holiday
+closures can conservatively trigger an older-snapshot label, not an assertion
+that a workflow failed. Earnings fail closed when their schedule date differs
+from the current Eastern date, in both the renderer and the browser.
+
+Tests: `node tests/test_trust.cjs` and
+`python3 -m unittest discover -s tests -p 'test_*.py'`.

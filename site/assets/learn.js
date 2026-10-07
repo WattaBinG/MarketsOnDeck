@@ -11,7 +11,7 @@ function ps(){var a=+$('ps-acct').value,r=+$('ps-risk').value,e=+$('ps-entry').v
 if(!(a>0&&r>0&&e>0&&s>0)){o.innerHTML='<p class="calc-warn">Enter positive numbers in every field.</p>';return}
 var rps=Math.abs(e-s);if(rps===0){o.innerHTML='<p class="calc-warn">Entry and stop can\'t be the same price.</p>';return}
 var dollars=a*r/100,sh=Math.floor(dollars/rps),val=sh*e,long=e>s;
-o.innerHTML='<div><dt>Dollars at risk</dt><dd>'+fmt(dollars)+'</dd></div><div><dt>Risk per share</dt><dd>'+fmt(rps)+'</dd></div><div><dt>Shares</dt><dd>'+sh.toLocaleString()+'</dd></div><div><dt>Position value</dt><dd>'+fmt(val)+'</dd></div><div><dt>% of account</dt><dd>'+(val/a*100).toFixed(1)+'%</dd></div><div><dt>Direction</dt><dd>'+(long?'Long':'Short')+'</dd></div>'+(val>a?'<p class="calc-warn">This position is bigger than your account. It would need margin.</p>':'')}
+o.innerHTML='<div><dt>Planned dollars at risk</dt><dd>'+fmt(dollars)+'</dd></div><div><dt>Planned risk per share</dt><dd>'+fmt(rps)+'</dd></div><div><dt>Shares</dt><dd>'+sh.toLocaleString()+'</dd></div><div><dt>Position value</dt><dd>'+fmt(val)+'</dd></div><div><dt>% of account</dt><dd>'+(val/a*100).toFixed(1)+'%</dd></div><div><dt>Direction</dt><dd>'+(long?'Long':'Short')+'</dd></div>'+(val>a?'<p class="calc-warn">This position is bigger than your account. It would need margin.</p>':'')}
 ids.forEach(function(i){$(i).addEventListener('input',ps)});ps()}
 // options P/L
 if($('op-out')){var oi=['op-type','op-side','op-strike','op-prem','op-qty','op-px'];

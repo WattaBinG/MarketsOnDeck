@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
         avgCell = (p.assetType === 'option' ? escapeHtml(JournalFormat.premium(p, p.avgCost)) : '$' + p.avgCost.toFixed(2));
         markCell = (p.assetType === 'option' ? escapeHtml(JournalFormat.premium(p, p.currentPrice)) : '$' + p.currentPrice.toFixed(2));
       }
+      if (p.note) symbolCell += '<br><small class="position-note">' + escapeHtml(p.note) + '</small>';
       var markAsOf = p.markAsOf ? p.markAsOf.replace('T', ' ').replace(/-04:00$/, ' ET') : '';
       if (p.markBasis) markAsOf += ' · ' + p.markBasis;
       return '<tr>' +

@@ -1036,3 +1036,12 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .home-dashboard .wire-list-wrap .wire-source { font-size: 10px; white-space: normal; }
   .home-dashboard .wire-list-wrap .wire-time { font-size: 10px; }
 }
+
+/* Trust layer: freshness must remain visible on phones and in both themes. */
+.data-freshness{font-size:13px;line-height:1.5;padding:9px 12px;margin:8px auto;max-width:1200px;overflow-wrap:anywhere;border:1px solid var(--border);background:var(--bg);color:var(--text)}
+.data-stale{border-left:4px solid #cf671d;background:var(--surface);color:var(--text)}
+.data-stale [hidden]{display:none!important}
+.home-dashboard .sentiment-card .sentiment-date,.home-dashboard .sentiment-card .sentiment-note{display:block;font-size:11px;line-height:1.4}
+.home-dashboard .sentiment-card #pulseFreshness{grid-column:1/-1;width:100%;box-sizing:border-box;font-size:11px;line-height:1.4;padding:6px;margin:6px 0}
+
+.position-note{display:block;max-width:48ch;font-size:12px;line-height:1.5;font-weight:400;color:var(--text);border-left:3px solid #cf671d;padding-left:8px;margin-top:6px}

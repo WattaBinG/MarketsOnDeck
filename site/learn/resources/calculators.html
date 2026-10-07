@@ -64,10 +64,10 @@
 <div class="container section-tight learn-wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="/learn/index.html">Learn</a> <span aria-hidden="true">/</span> <a href="/learn/resources/index.html">Resources</a> <span aria-hidden="true">/</span> <span>Calculators</span></nav><div class="article-header"><div class="eyebrow">Resources</div><h1>Calculators</h1><p class="learn-sub">Runs in your browser. Nothing is saved or sent anywhere.</p></div></div>
 <div class="container learn-wrap">
 <section class="calc" id="calc-size" aria-labelledby="h-size"><h2 id="h-size">Position size</h2>
-<p>How many shares to buy so a stop-out costs only the percent of your account that you choose.</p>
+<p>Estimate share count for a planned risk budget, assuming execution at the stop price. A stop order is not a guaranteed loss cap. Gaps, slippage and fees can increase actual losses; correlated positions add to total exposure.</p>
 <div class="calc-grid">
 <label>Account size ($)<input type="number" id="ps-acct" value="10000" min="0" step="any" inputmode="decimal"></label>
-<label>Risk per trade (%)<input type="number" id="ps-risk" value="1" min="0" step="any" inputmode="decimal"></label>
+<label>Planned risk per trade (%)<input type="number" id="ps-risk" value="1" min="0" step="any" inputmode="decimal"></label>
 <label>Entry price ($)<input type="number" id="ps-entry" value="50" min="0" step="any" inputmode="decimal"></label>
 <label>Stop price ($)<input type="number" id="ps-stop" value="48" min="0" step="any" inputmode="decimal"></label></div>
 <dl class="calc-out" id="ps-out" aria-live="polite"></dl></section>
@@ -123,7 +123,8 @@
     <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
   </div>
 </footer>
-<script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/trust.js?v=20261007"></script>
+<script src="/assets/main.js?v=20261007-trust"></script>
 <script src="/assets/learn.js?v=1" defer></script>
 </body>
 </html>

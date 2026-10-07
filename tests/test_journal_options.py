@@ -52,9 +52,11 @@ class JournalOptions(unittest.TestCase):
     def test_totals_and_fees(self):
         rows = [t for t in self.data['trades']
                 if t.get('contractId') == 'META:2026-10-02:put:742.5'][:3]
-        self.assertEqual(len(self.data['trades']), 347)
-        self.assertEqual(self.data['summary']['totalRealizedGain'], 33801.22)
-        self.assertEqual(self.data['summary']['winRate'], 70.52)
+        self.assertEqual(len(self.data['trades']), self.data['summary']['totalTrades'])
+        self.assertAlmostEqual(sum(t['realizedGain'] for t in self.data['trades']), self.data['summary']['totalRealizedGain'], places=2)
+        wins = sum(t['realizedGain'] > 0 for t in self.data['trades'])
+        losses = sum(t['realizedGain'] < 0 for t in self.data['trades'])
+        self.assertAlmostEqual(self.data['summary']['winRate'], round(100*wins/len(self.data['trades']), 2))
         self.assertEqual(sum(r['entryPerContract'] * r['contracts'] for r in rows), 5470)
         self.assertEqual(sum(r['exitPerContract'] * r['contracts'] for r in rows), 8240)
         self.assertAlmostEqual(sum(r['regulatoryFees'] for r in rows), .16)

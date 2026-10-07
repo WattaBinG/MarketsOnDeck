@@ -88,24 +88,24 @@ class BlockRendering(unittest.TestCase):
         }
 
     def test_markers_present(self):
-        block = render_earnings_block(self.data)
+        block = render_earnings_block(self.data, today=self.data["date"])
         self.assertIn("EARNINGS_TODAY_START", block)
         self.assertIn("<!-- EARNINGS_TODAY_END -->", block)
 
     def test_badge_shown_with_actual(self):
-        block = render_earnings_block(self.data)
+        block = render_earnings_block(self.data, today=self.data["date"])
         self.assertIn("earn-badge-big-beat", block)
         self.assertIn("Big Beat", block)
 
     def test_no_badge_without_actual(self):
         # ACN row renders an em-dash for the missing actual, never a badge.
-        block = render_earnings_block(self.data)
+        block = render_earnings_block(self.data, today=self.data["date"])
         acn_row = [ln for ln in block.splitlines() if "ACN" in ln][0]
         self.assertIn("&mdash;", acn_row)
         self.assertNotIn("earn-badge", acn_row)
 
     def test_legend_explains_jargon(self):
-        block = render_earnings_block(self.data)
+        block = render_earnings_block(self.data, today=self.data["date"])
         self.assertIn('class="legend"', block)
         self.assertIn("Before Market Open", block)
         self.assertIn("After Market Close", block)
@@ -113,14 +113,21 @@ class BlockRendering(unittest.TestCase):
         self.assertIn("Big Miss", block)
 
     def test_week_ahead_rendered(self):
-        block = render_earnings_block(self.data)
+        block = render_earnings_block(self.data, today=self.data["date"])
         self.assertIn("Coming up", block)
         self.assertIn("Thu, Oct 8", block)
 
     def test_links_target_blank(self):
-        block = render_earnings_block(self.data)
+        block = render_earnings_block(self.data, today=self.data["date"])
         self.assertIn('target="_blank" rel="noopener"', block)
 
+
+class EarningsRollover(unittest.TestCase):
+    def test_old_schedule_is_not_today(self):
+        block = render_earnings_block({"date":"2026-10-01"}, today="2026-10-07")
+        self.assertIn("No current earnings feed", block)
+        self.assertNotIn("Earnings Today", block)
+        self.assertNotIn("earn-list", block)
 
 if __name__ == "__main__":
     unittest.main()

@@ -67,7 +67,7 @@
     <div class="container">
       <div class="eyebrow">Every Trade, Win or Lose</div>
       <h1>The Record</h1>
-      <p class="hero-sub">Every closed trade in 2026, sourced live from the real account — not a curated highlight reel. Sort it, filter it, check it yourself.</p>
+      <p class="hero-sub">Recorded closed trades in 2026, published as dated snapshots from the real account — not a curated highlight reel. Sort it, filter it, check it yourself.</p>
       <p style="font-size:13px; font-style:italic; color:var(--text-muted); max-width:60ch;">Nothing here is investment advice or a recommendation to buy or sell any security. Past results don't predict future ones. Figures are informational, not a tax document.</p>
       <div class="share-bar" data-title="The Record — MarketsOnDeck">
         <span class="share-label">Share</span>
@@ -81,9 +81,9 @@
 
   <div class="container">
     <div class="range-tabs" role="tablist" aria-label="Time range">
-      <button class="range-tab" data-range="day" type="button" role="tab">1D</button>
-      <button class="range-tab" data-range="week" type="button" role="tab">Past Week</button>
-      <button class="range-tab" data-range="month" type="button" role="tab">Past Month</button>
+      <button class="range-tab" data-range="day" type="button" role="tab">Latest recorded day</button>
+      <button class="range-tab" data-range="week" type="button" role="tab">Latest recorded week</button>
+      <button class="range-tab" data-range="month" type="button" role="tab">Latest recorded month</button>
       <button class="range-tab active" data-range="ytd" type="button" role="tab">2026 YTD</button>
     </div>
     <div class="stat-row" id="recordStats" style="margin-top:12px;">
@@ -141,16 +141,16 @@
       </table>
     </div>
 
-    <p class="text-muted" style="margin-top:20px; font-size:13px;">Data pulled directly from the brokerage account's own realized profit &amp; loss history, refreshed automatically. Verified options show full contract identity, entry/exit premiums per share, and dollars per contract. Older options with missing evidence are labeled unavailable; their reported P&amp;L is preserved. Trades with no resolvable symbol are shown as "(unresolved)" rather than guessed at.</p>
+    <p class="text-muted" style="margin-top:20px; font-size:13px;">Data pulled directly from the brokerage account's own realized profit &amp; loss history, published as dated snapshots. Verified options show full contract identity, entry/exit premiums per share, and dollars per contract. Older options with missing evidence are labeled unavailable; their reported P&amp;L is preserved. Trades with no resolvable symbol are shown as "(unresolved)" rather than guessed at.</p>
 
     <div class="article-header" style="max-width:none; text-align:left; margin-top:48px;">
-      <div class="eyebrow">Still Open</div>
-      <h2 style="margin-bottom:6px;">Open Positions (Unrealized)</h2>
-      <p class="text-muted" style="font-size:14px; max-width:70ch;">Everything currently held and not yet sold — a real journal has to show both sides. These gains/losses are marked to the current price, not locked in; they'll show up above, in Realized P&amp;L, once actually closed.</p>
+      <div class="eyebrow">Positions Snapshot</div>
+      <h2 style="margin-bottom:6px;">Recorded Positions (Unrealized)</h2>
+      <p class="text-muted" style="font-size:14px; max-width:70ch;">Positions and marks as recorded on the snapshot date, not a statement of current holdings. Expirations, assignments, exercises and later trades may not yet be recorded. Unrealized gains and losses are not locked in.</p>
     </div>
     <div class="stat-row" id="positionsStats" style="margin-top:12px;">
       <div class="stat-card"><div class="stat-num num" id="statUnrealizedPnl">—</div><div class="stat-label">Net Unrealized</div></div>
-      <div class="stat-card"><div class="stat-num num" id="statPositionCount">—</div><div class="stat-label">Open Positions</div></div>
+      <div class="stat-card"><div class="stat-num num" id="statPositionCount">—</div><div class="stat-label">Recorded Positions</div></div>
       <div class="stat-card"><div class="stat-num num" id="statPositionsAsOf">—</div><div class="stat-label">Priced As Of</div></div>
     </div>
     <div class="table-scroll positions-scroll" style="margin-top:16px;">
@@ -162,7 +162,7 @@
             <th class="col-optional">Type</th>
             <th class="col-optional">Qty</th>
             <th class="col-optional">Avg Cost</th>
-            <th>Current</th>
+            <th>Snapshot Mark</th>
             <th>Unrealized P&amp;L</th>
           </tr>
         </thead>
@@ -171,7 +171,7 @@
         </tbody>
       </table>
     </div>
-    <p class="text-muted" style="margin-top:20px; font-size:13px;">Options show underlying, strike, call/put, expiration, contract count, and explicit price units. Existing option costs and marks retain their dollars-per-contract convention; no marks are refreshed by this display change. Uses the account filter above. Priced from the brokerage account's own live/last-close quotes — not a guarantee of what you'd actually realize on exit (bid/ask spread, fees, and slippage aren't reflected).</p>
+    <p class="text-muted" style="margin-top:20px; font-size:13px;">Options show underlying, strike, call/put, expiration, contract count, and explicit price units. Existing option costs and marks retain their dollars-per-contract convention; no marks are refreshed by this display change. Uses the account filter above. Marks from the dated brokerage snapshot — not a guarantee of what you'd actually realize on exit (bid/ask spread, fees, and slippage aren't reflected).</p>
   </div>
 </main>
 
@@ -213,8 +213,9 @@
     <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
   </div>
 </footer>
-<script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/trust.js?v=20261007"></script>
+<script src="/assets/main.js?v=20261007-trust"></script>
 <script src="/assets/journal-format.js?v=20260930a"></script>
-<script src="/assets/record.js?v=20260930a"></script>
+<script src="/assets/record.js?v=20261007-trust-20260930a"></script>
 </body>
 </html>

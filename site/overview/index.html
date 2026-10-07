@@ -75,9 +75,9 @@
         <a class="btn" href="/record/index.html">Browse The Record</a>
       </div>
       <div class="range-tabs" role="tablist" aria-label="Time range" id="homeRangeTabs">
-        <button class="range-tab" data-range="day" type="button" role="tab">1D</button>
-        <button class="range-tab" data-range="week" type="button" role="tab">Past Week</button>
-        <button class="range-tab" data-range="month" type="button" role="tab">Past Month</button>
+        <button class="range-tab" data-range="day" type="button" role="tab">Latest recorded day</button>
+        <button class="range-tab" data-range="week" type="button" role="tab">Latest recorded week</button>
+        <button class="range-tab" data-range="month" type="button" role="tab">Latest recorded month</button>
         <button class="range-tab active" data-range="ytd" type="button" role="tab">2026 YTD</button>
       </div>
       <a class="stat-row stat-row-link" id="homeStats" href="/record/index.html" style="margin-top:12px;">
@@ -94,39 +94,23 @@
           <div class="stat-label">Closed Trades</div>
         </div>
       </a>
-      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Live from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, computed straight from the real account's own trade history — click a number to see the trades behind it.</p>
+      <p class="text-muted" style="font-size:13px; margin-top:10px;">↳ Dated snapshot from <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">The Record</a>, computed straight from the real account's own trade history — click a number to see the trades behind it.</p>
     </div>
   </section>
 
   <section class="section-tight">
     <div class="container">
-      <div class="eyebrow">Two Real Accounts, One Real Benchmark</div>
-      <h2 class="mt-0">Trading vs. Agentic vs. The Market</h2>
-      <!-- SCOREBOARD_START — updated once daily by the Record Refresh routine; Trading/Agentic lead with win rate (a real % from trades.json's per-account summary) with realized dollar gain as the subtext, SPY leads with its own price return from a fixed Jan 2, 2026 close baseline — all three cards lead with a percentage so they read consistently at a glance. Keep this exact card structure so the automated edit stays a clean find/replace -->
-      <div class="grid grid-3" style="margin-top:20px;">
-        <a class="card" href="/record/index.html?account=Trading" style="text-decoration:none;">
-          <span class="badge badge-accent">Trading Account</span>
-          <div class="stat-num num" style="font-size:24px;">69.94%</div>
-          <p class="mb-0" style="font-size:13.5px;">Win rate &middot; +$33,604.31 realized, 337 trades, 2026 YTD</p>
-        </a>
-        <a class="card" href="/record/index.html?account=Agentic" style="text-decoration:none;">
-          <span class="badge badge-accent">Agentic Account</span>
-          <div class="stat-num num" style="font-size:24px;">90.00%</div>
-          <p class="mb-0" style="font-size:13.5px;">Win rate &middot; +$196.91 realized, 10 trades, 2026 YTD</p>
-        </a>
-        <a class="card" href="/record/index.html" style="text-decoration:none;">
-          <span class="badge">S&amp;P 500 (SPY)</span>
-          <div class="stat-num num gain" style="font-size:24px;">+12.37%</div>
-          <p class="mb-0" style="font-size:13.5px;">Price return, Jan 2 &ndash; today, 2026 YTD</p>
-        </a>
-      </div>
-      <!-- SCOREBOARD_END -->
+      <div class="eyebrow">Closed-Trade Statistics</div>
+      <h2 class="mt-0">Trading and Agentic Accounts</h2>
+      <!-- LEDGER_ACCOUNTS_START -->
+<p class="data-freshness">Snapshot through 2026-10-06. Win rate is not investment return.</p><div class="grid grid-2" id="ledgerAccounts"><a class="card" href="/record/?account=Agentic"><h3>Agentic</h3><p>Closed-trade win rate (excluding flats): 92.86% (13W / 1L)</p><p>Net realized: +$289.19 · 14 closes</p></a><a class="card" href="/record/?account=Trading"><h3>Trading</h3><p>Closed-trade win rate (excluding flats): 70.09% (246W / 105L)</p><p>Net realized: +$35,973.38 · 352 closes</p></a></div>
+<!-- LEDGER_ACCOUNTS_END -->
       <div class="card" style="margin-top:20px; padding:20px 24px;">
         <div class="card-eyebrow" style="margin-bottom:10px;">Cumulative Realized P&amp;L, 2026</div>
         <div id="overviewEquityCurve" style="width:100%;" role="img" aria-label="Cumulative realized profit and loss curve for 2026"></div>
-        <p class="text-muted" style="font-size:13px; margin:8px 0 0;">Drawn live in your browser from the same trades.json that powers The Record, so it can never disagree with it.</p>
+        <p class="text-muted" style="font-size:13px; margin:8px 0 0;">Computed in your browser from the same trades.json that powers The Record, not account equity or an investment return.</p>
       </div>
-      <p class="text-muted" style="font-size:13px; margin-top:14px;">Trading and Agentic show win rate on closed trades (with realized dollar gain alongside); SPY shows its own price return &mdash; different measures of performance, put in a consistent percentage format for easy comparison, not a strict apples-to-apples return comparison. A win-rate percentage on an actively-traded margin account isn't the same thing as a return on invested capital, which isn't cleanly computable here.</p>
+      <p class="text-muted" style="font-size:13px; margin-top:14px;">Win rate here excludes flat closes: wins divided by wins plus losses. It measures winning closed trades, not investment return. Realized dollars exclude open-position gains and losses. No portfolio-versus-SPY return comparison is presented because a defensible same-period portfolio return is not available.</p>
     </div>
   </section>
 
@@ -136,25 +120,9 @@
     <div class="container">
       <div class="eyebrow">Proof, Not a Promise</div>
       <h2 class="mt-0">Most Recent Closed Trades</h2>
-      <!-- RECENT_TRADES_START — updated once daily by the Record Refresh routine; always the 3 most recent trades from trades.json, unfiltered (wins or losses, whichever actually happened) — keep this exact card structure so the automated edit stays a clean find/replace -->
-      <div class="grid grid-3" style="margin-top:20px;">
-        <div class="card">
-          <span class="badge badge-loss">LOSS &middot; Sep 30</span>
-          <h3 class="num" style="text-transform:none;">SPCX <span class="text-muted" style="font-size:13px; font-weight:400;">Stock &middot; Trading</span></h3>
-          <span class="card-link num loss">-$662.00</span>
-        </div>
-        <div class="card">
-          <span class="badge badge-gain">WIN &middot; Sep 30</span>
-          <h3 class="num" style="text-transform:none;">CCL <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Agentic</span></h3>
-          <span class="card-link num gain">+$19.00</span>
-        </div>
-        <div class="card">
-          <span class="badge badge-gain">WIN &middot; Sep 28</span>
-          <h3 class="num" style="text-transform:none;">META <span class="text-muted" style="font-size:13px; font-weight:400;">Option &middot; Trading</span></h3>
-          <span class="card-link num gain">+$1,455.00</span>
-        </div>
-      </div>
-      <!-- RECENT_TRADES_END -->
+      <!-- LEDGER_RECENT_START -->
+<p class="data-freshness">Ledger through 2026-10-06; later closes may be missing.</p><div class="grid grid-3" id="ledgerRecent"><div class="card"><span class="badge">2026-10-06</span><h3>HD 287.5 call · 2026-10-09</h3><p>Option · Trading</p><p>+$468.00</p></div><div class="card"><span class="badge">2026-10-06</span><h3>HD 287.5 call · 2026-10-09</h3><p>Option · Trading</p><p>+$854.00</p></div><div class="card"><span class="badge">2026-10-06</span><h3>HD 287.5 call · 2026-10-09</h3><p>Option · Trading</p><p>-$1,120.00</p></div></div>
+<!-- LEDGER_RECENT_END -->
       <p class="text-muted" style="font-size:13px; margin-top:14px;">Unfiltered — the 3 most recent trades exactly as they closed, win or lose. <a href="/record/index.html" style="color:var(--text-muted); text-decoration:underline;">See every trade on The Record →</a></p>
     </div>
   </section>
@@ -248,6 +216,7 @@
     <p class="footer-disclosure">This site contains affiliate links and reflects real trading activity &mdash; not investment advice. <a href="/legal/affiliate-disclosure.html">Full disclosure</a></p>
   </div>
 </footer>
-<script src="/assets/main.js?v=20260926d"></script>
+<script src="/assets/trust.js?v=20261007"></script>
+<script src="/assets/main.js?v=20261007-trust"></script>
 </body>
 </html>

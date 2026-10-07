@@ -24,6 +24,7 @@ import re
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "site" / "assets" / "earnings.json"
@@ -118,8 +119,14 @@ def _week_row(r: dict) -> str:
     )
 
 
-def render_earnings_block(data: dict) -> str:
+def render_earnings_block(data: dict, today: str | None = None) -> str:
     """Render the full EARNINGS_TODAY marker block from the data file."""
+    today = today or datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+    if data["date"] != today:
+        date = html.escape(data["date"])
+        return (MARK_START + " -->\n" + f'<div class="earn-box data-stale" data-earn-date="{date}">' +
+                '<div class="earn-box-header">Earnings</div>' +
+                f'<div class="earn-box-date">No current earnings feed. Last schedule: {date}</div></div>\n' + MARK_END)
     lines = [
         "<!-- EARNINGS_TODAY_START — rendered by scripts/refresh_earnings.py "
         "from site/assets/earnings.json; keep the markers for clean find/replace -->",
