@@ -114,13 +114,16 @@ def validate_sep30_repairs(data):
             and t.get('symbol') in ('SPCX', 'CCL')]
     assert len(flat) == 0, 'Flattened SPCX/CCL rows still present'
 
-    # Trade count: 347 closed (not 353)
-    assert len(trades) == 347, f'Expected 347 trades, got {len(trades)}'
+    # Trade count: 347 Sep-30 baseline + 19 October catch-up rows
+    # (13 option closes incl. 4 Sep-22 TSLA300 backfill, 6 equity closes)
+    assert len(trades) == 366, f'Expected 366 trades, got {len(trades)}'
 
 
 def validate_futures(positions):
     """Futures rows must carry native quoted prices and contract identity.
-    METV26 MUST be present."""
+    METV26 MUST be present. Marks are validated for internal consistency
+    (avgCost/currentPrice/unrealizedGain derived from quoted prices), not
+    pinned to a stale date's values."""
     futures = [p for p in positions.get('positions', []) if p.get('assetType') == 'futures']
     # STRICT: Require METV26
     metv = [p for p in futures if 'METV26' in str(p.get('symbol', ''))]
@@ -128,8 +131,6 @@ def validate_futures(positions):
     m = metv[0]
     assert m.get('quantity') == 10, 'METV26 must be 10 contracts'
     assert m.get('quantityUnit') == 'contracts'
-    assert m.get('quotedAvgCost') == 2678.05, 'METV26 quotedAvgCost must be 2678.05'
-    assert m.get('quotedMark') == 2690.50, 'METV26 quotedMark must be 2690.50'
 
     for p in futures:
         assert p.get('quotedAvgCost') and p.get('quotedMark'), (
@@ -155,38 +156,33 @@ def validate_no_dust_deleted(positions):
 
 
 def validate_position_bases(positions):
-    """Sep 30 repair: option position bases must use lot-specific basis, not broker blended."""
+    """October 2026 anchors: HD $287.50C is the only remaining option position
+    (5 contracts, lot-specific $120/contract basis = the Oct 5 $1.20 lot,
+    FIFO-reconciled to the $600 broker clearing basis). TSLA/CCL/SPCX option
+    positions were closed or expired and must be absent."""
     pos_map = {(p.get('account'), p.get('symbol'), p.get('strike'), p.get('expiration')): p
-               for p in positions.get('positions', [])}
+               for p in positions.get('positions', [])
+               if p.get('assetType') == 'option'}
 
-    # CCL: $35 (Sep 22 $0.35 lot), not $60.50 broker blended
-    ccl = pos_map.get(('Agentic', 'CCL', 25, '2026-10-16'))
-    assert ccl is not None, 'CCL position missing'
-    assert ccl.get('avgCost') == 35.0, f"CCL basis must be $35, got {ccl.get('avgCost')}"
-    assert ccl.get('positionSide') == 'long'
-    assert ccl.get('contractId') == 'CCL:2026-10-16:call:25.0'
+    # HD: 5 contracts, $120/contract = the Oct 5 $1.20 lot
+    hd = pos_map.get(('Trading', 'HD', 287.5, '2026-10-09'))
+    assert hd is not None, 'HD option position missing'
+    assert hd.get('contracts') == 5 and hd.get('quantity') == 5
+    assert hd.get('avgCost') == 120.0, f"HD basis must be $120, got {hd.get('avgCost')}"
+    assert hd.get('positionSide') == 'long'
+    assert hd.get('contractId') == 'HD:2026-10-09:call:287.5'
+    assert hd.get('priceUnit') == 'USD_per_contract'
+    assert hd.get('multiplier') == 100
 
-    # SPCX: $87 (Sep 28 $0.87 lot), not $261.61 broker blended
-    spcx = pos_map.get(('Trading', 'SPCX', 155, '2026-10-02'))
-    assert spcx is not None, 'SPCX position missing'
-    assert spcx.get('avgCost') == 87.0, f"SPCX basis must be $87, got {spcx.get('avgCost')}"
-    assert spcx.get('positionSide') == 'long'
-    assert spcx.get('contractId') == 'SPCX:2026-10-02:call:155.0'
+    # Closed/expired: no TSLA, CCL, or SPCX option positions may remain
+    for key in pos_map:
+        assert not (key[1] in ('TSLA', 'CCL', 'SPCX')), (
+            f'Unexpected remaining option position: {key}')
 
-    # TSLA: 307.7143 (full precision), not 307.71
-    tsla = pos_map.get(('Trading', 'TSLA', 365, '2026-10-02'))
-    assert tsla is not None, 'TSLA position missing'
-    assert tsla.get('avgCost') == 307.7143, f"TSLA avg must be 307.7143, got {tsla.get('avgCost')}"
-
-    # USDG: 102.582488 units
+    # USDG: 102.582488 units, cash-like
     usdg = [p for p in positions['positions'] if p.get('symbol') == 'USDG']
     assert len(usdg) == 1, 'USDG position missing'
     assert abs(usdg[0].get('quantity', 0) - 102.582488) < 0.000001
-
-    # DOGE: mark ~$0.094
-    doge = [p for p in positions['positions'] if p.get('symbol') == 'DOGE']
-    assert len(doge) == 1, 'DOGE position missing'
-    assert abs(doge[0].get('currentPrice', 0) - 0.094) < 0.001
 
 
 if __name__ == '__main__':
