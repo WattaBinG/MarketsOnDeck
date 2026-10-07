@@ -129,7 +129,8 @@ def validate_futures(positions):
     metv = [p for p in futures if 'METV26' in str(p.get('symbol', ''))]
     assert len(metv) == 1, 'METV26 futures position must be present'
     m = metv[0]
-    assert m.get('quantity') == 10, 'METV26 must be 10 contracts'
+    assert m.get('quantity') == 30, 'METV26 must be 30 contracts'
+    # (was 10 on Sep 30; +20 added overnight Oct 6-7, avg 2,605.25 implied)
     assert m.get('quantityUnit') == 'contracts'
 
     for p in futures:

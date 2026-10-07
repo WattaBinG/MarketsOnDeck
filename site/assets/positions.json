@@ -1,7 +1,7 @@
 {
- "asOf": "2026-10-06",
- "asOfLabel": "October 6, 2026",
- "markNote": "Equity/option marks are Oct 6, 2026 closes; crypto marks are Oct 7 ~01:49 ET (24/7 market).",
+ "asOf": "2026-10-07",
+ "asOfLabel": "October 7, 2026",
+ "markNote": "Equity/option marks are Oct 6, 2026 closes; crypto marks are Oct 7 ~01:49 ET (24/7 market); futures verified Oct 7 ~01:52 ET.",
  "positions": [
   {
    "account": "Trading",
@@ -121,17 +121,17 @@
    "account": "Trading",
    "symbol": "METV26",
    "assetType": "futures",
-   "quantity": 10,
+   "quantity": 30,
    "quantityUnit": "contracts",
-   "avgCost": 267.805,
-   "currentPrice": 269.05,
-   "quotedAvgCost": 2678.05,
-   "quotedMark": 2690.5,
+   "avgCost": 262.951666667,
+   "currentPrice": 262.15,
+   "quotedAvgCost": 2629.51666667,
+   "quotedMark": 2621.5,
    "multiplier": 0.1,
    "expiration": "2026-10-30",
-   "unrealizedGain": 12.45,
+   "unrealizedGain": -24.05,
    "positionSide": "long",
-   "note": "Micro Ether Futures Oct 2026. Native quotes. PROVISIONAL: Sep-30 values, mark not yet refreshed for Oct 6 (browser verification running)."
+   "note": "Micro Ether Futures Oct 2026. Native quotes. Browser-verified 2026-10-07 ~01:52 ET: +30 @ 2,629.52, mark 2,621.5."
   }
  ]
 }
