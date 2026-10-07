@@ -1,24 +1,11 @@
 {
-  "date": "2026-10-07",
-  "dateLabel": "Wednesday, October 7",
+  "date": "2026-10-08",
+  "dateLabel": "Thursday, October 8",
   "events": [
-    {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Petroleum Status Report",
-      "kind": "crude_stocks",
-      "prev": "crude stocks +0.9M bbl",
-      "actual": "crude stocks -3.2M bbl"
-    },
-    {
-      "time": "2:00 PM ET",
-      "event": "FOMC Minutes"
-    }
+    { "time": "6:00 AM ET", "event": "PepsiCo Earnings (BMO)" },
+    { "time": "8:30 AM ET", "event": "Jobless Claims" },
+    { "time": "10:00 AM ET", "event": "Wholesale Inventories" },
+    { "time": "10:30 AM ET", "event": "Natural Gas Storage" }
   ],
-  "note": null,
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
