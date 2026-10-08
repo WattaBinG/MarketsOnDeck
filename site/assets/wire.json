@@ -1,17 +1,81 @@
 {
-  "asOf": "2026-10-08T01:31:09Z",
-  "asOfLabel": "9:31 PM ET",
+  "asOf": "2026-10-08T01:45:33Z",
+  "asOfLabel": "9:45 PM ET",
   "topStory": {
-    "headline": "Bezos says Blue Origin likely to pursue IPO in coming years",
-    "url": "https://www.investing.com/news/stock-market-news/bezos-says-blue-origin-likely-to-pursue-ipo-in-coming-years-4937760",
-    "source": "Investing.com",
-    "category": "Movers",
-    "timestamp": "2026-10-08T00:54:34Z",
+    "headline": "Samsung forecasts record third-quarter profit of $80 billion as AI boom fuels chip demand",
+    "url": "https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html",
+    "source": "CNBC",
+    "category": "Markets",
+    "timestamp": "2026-10-08T00:51:23Z",
     "firstSeen": "2026-10-08T01:00:33Z",
-    "leadSince": "2026-10-08T01:15:31Z",
-    "image": "/assets/images/wire-movers.jpg"
+    "leadSince": "2026-10-08T01:45:33Z",
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "US grants Aurora exemption for self-driving trucks safety feature",
+      "url": "https://www.investing.com/news/stock-market-news/us-grants-aurora-exemption-for-selfdriving-trucks-safety-feature-4937803",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-08T01:42:23Z",
+      "firstSeen": "2026-10-08T01:45:33Z"
+    },
+    {
+      "headline": "TikTok gave teens, children placebo safety feature in experiment, New York alleges",
+      "url": "https://www.investing.com/news/stock-market-news/tiktok-gave-teens-children-placebo-safety-feature-in-experiment-new-york-alleges-4937622",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-08T01:36:39Z",
+      "firstSeen": "2026-10-08T01:45:33Z"
+    },
+    {
+      "headline": "Wealthy investors view rates and yields as the biggest growth risk, says Deutsche Bank",
+      "url": "https://www.investing.com/news/stock-market-news/wealthy-investors-view-rates-and-yields-as-the-biggest-growth-risk-says-deutsche-bank-4935844",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-08T01:36:25Z",
+      "firstSeen": "2026-10-08T01:45:33Z"
+    },
+    {
+      "headline": "A quick Silver update. In light of a new number 1 transaction size on $SLV we though it might be good to revisit the Silver Charts. For the time being price hasn't really hit a big volume node and...",
+      "url": "https://x.com/fxevolution/status/2108007623635468699",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-08T01:32:51Z",
+      "firstSeen": "2026-10-08T01:45:33Z"
+    },
+    {
+      "headline": "AI chip boom pushes Samsung profits to record $80bn",
+      "url": "https://www.bbc.co.uk/news/articles/c687z8127302o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "AI",
+      "timestamp": "2026-10-08T01:31:56Z",
+      "firstSeen": "2026-10-08T01:45:33Z"
+    },
+    {
+      "headline": "Oil rises as Middle East supply concerns persist amid shipping attacks",
+      "url": "https://www.investing.com/news/commodities-news/oil-rises-as-middle-east-supply-concerns-persist-amid-shipping-attacks-4937802",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-08T01:30:59Z",
+      "firstSeen": "2026-10-08T01:45:33Z"
+    },
+    {
+      "headline": "Attacks on tankers in Hormuz hit highest of any week since start of Iran war, sources say",
+      "url": "https://www.investing.com/news/commodities-news/attacks-on-tankers-in-hormuz-hit-highest-of-any-week-since-start-of-iran-war-sources-say-4937056",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-08T01:30:45Z",
+      "firstSeen": "2026-10-08T01:45:33Z"
+    },
+    {
+      "headline": "Hashi Mainnet to Launch With $500M in Capital Backing, Adds Anchorage Digital to Coalition",
+      "url": "https://www.investing.com/news/cryptocurrency-news/hashi-mainnet-to-launch-with-500m-in-capital-backing-adds-anchorage-digital-to-coalition-4937792",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-08T01:30:09Z",
+      "firstSeen": "2026-10-08T01:45:33Z"
+    },
     {
       "headline": "Amazon makes fresh job cuts, mainly in retail division",
       "url": "https://www.investing.com/news/stock-market-news/amazon-makes-fresh-job-cuts-mainly-in-retail-division-4937790",
@@ -26,14 +90,6 @@
       "source": "Investing.com",
       "category": "Markets",
       "timestamp": "2026-10-08T01:18:53Z",
-      "firstSeen": "2026-10-08T01:31:09Z"
-    },
-    {
-      "headline": "BTC flows turned negative on ETF's over the last 48 hours! That will come as no surprise if you have been watching the price action. The real question becomes will these levels hold.",
-      "url": "https://x.com/fxevolution/status/2108003200746074553",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-08T01:15:49Z",
       "firstSeen": "2026-10-08T01:31:09Z"
     },
     {
@@ -59,62 +115,6 @@
       "category": "Markets",
       "timestamp": "2026-10-08T01:10:02Z",
       "firstSeen": "2026-10-08T01:31:09Z"
-    },
-    {
-      "headline": "US SEC will not charge top funds over climate concerns but warns of disclosure obligations",
-      "url": "https://www.investing.com/news/stock-market-news/us-sec-will-not-pursue-charges-against-climate-group-warns-of-disclosure-obligations-4937029",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-08T01:06:24Z",
-      "firstSeen": "2026-10-08T01:31:09Z"
-    },
-    {
-      "headline": "Nikkei 225 squeezed between SuperTrend and 20 SMA: Live levels",
-      "url": "https://www.investing.com/news/stock-market-news/nikkei-225-hits-70037-overbought-high-pullback-risk-live-93CH-4930979",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-08T01:05:45Z",
-      "firstSeen": "2026-10-08T01:31:09Z"
-    },
-    {
-      "headline": "SK Hynix breaks below Ichimoku cloud: Live levels",
-      "url": "https://www.investing.com/news/stock-market-news/sk-hynix-trapped-below-sma20-in-tight-range-live-levels-93CH-4933195",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-08T01:05:39Z",
-      "firstSeen": "2026-10-08T01:31:09Z"
-    },
-    {
-      "headline": "Asia shares subdued, bonds swamped by AI debt wave",
-      "url": "https://www.investing.com/news/stock-market-news/asia-shares-subdued-bonds-swamped-by-ai-debt-wave-4937787",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-08T01:00:21Z",
-      "firstSeen": "2026-10-08T01:15:31Z"
-    },
-    {
-      "headline": "China Stock Market May Return To Action On The Downside",
-      "url": "https://www.nasdaq.com/articles/china-stock-market-may-return-action-downside",
-      "source": "Nasdaq",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-08T01:00:20Z",
-      "firstSeen": "2026-10-08T01:31:09Z"
-    },
-    {
-      "headline": "Japan beer giants raided over alleged price-fixing cartel",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yn3592xk9o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-08T00:53:46Z",
-      "firstSeen": "2026-10-08T01:00:33Z"
-    },
-    {
-      "headline": "Samsung forecasts record third-quarter profit of $80 billion as AI boom fuels chip demand",
-      "url": "https://www.cnbc.com/2026/10/08/samsung-q3-earnings.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-08T00:51:23Z",
-      "firstSeen": "2026-10-08T01:00:33Z"
     },
     {
       "headline": "*BROADCOM WORKING TO ARRANGE MORE THAN $50B FOR OPENAI CHIP: WSJ",
