@@ -1,17 +1,105 @@
 {
-  "asOf": "2026-10-08T20:15:42Z",
-  "asOfLabel": "4:15 PM ET",
+  "asOf": "2026-10-08T20:31:05Z",
+  "asOfLabel": "4:31 PM ET",
   "topStory": {
-    "headline": "Parker Hannifin Breaks Below 200-Day Moving Average - Notable for PH",
-    "url": "https://www.nasdaq.com/articles/parker-hannifin-breaks-below-200-day-moving-average-notable-ph",
-    "source": "Nasdaq",
-    "category": "Markets",
-    "timestamp": "2026-10-08T20:07:24Z",
-    "firstSeen": "2026-10-08T20:15:42Z",
-    "leadSince": "2026-10-08T20:15:42Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+    "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+    "source": "Federal Reserve",
+    "category": "Macro",
+    "timestamp": "2026-10-08T20:30:00Z",
+    "firstSeen": "2026-10-08T20:31:05Z",
+    "leadSince": "2026-10-08T20:31:05Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
+    {
+      "headline": "SpaceX to acquire low-band spectrum licenses for mobile use. $SPCX",
+      "url": "https://x.com/financialjuice/status/2108292597580021770",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:25:47Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "These decisions you make in your 20s — not your income — determine whether you’ll spend decades in debt or retire comfortably",
+      "url": "https://www.marketwatch.com/story/these-decisions-you-make-in-your-20s-not-your-income-determine-whether-youll-spend-decades-in-debt-or-retire-comfortably-7bbb28f9?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:25:00Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "Your Stake In The Biggest Economic Bet In US History <>",
+      "url": "https://www.zerohedge.com/personal-finance/your-stake-biggest-economic-bet-us-history",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:20:49Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "Chipmakers Slide as OpenAI Revenue Reports Renew AI Spending Concerns – US Market Wrap <>",
+      "url": "https://features.financialjuice.com/2026/10/08/chipmakers-slide-as-openai-revenue-reports-renew-ai-spending-concerns-us-market-wrap/",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-10-08T20:20:47Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "Total money market funds rose $72.27 bln to $7.96 trln for week ended Oct. 7th - ICI",
+      "url": "https://x.com/financialjuice/status/2108291251011252525",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:19:47Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "Several powerful explosions occurred minutes ago in the southern part of the Strait of Hormuz, apparently caused by oil tankers violating regulations striking mines - IRIB News citing sources",
+      "url": "https://x.com/financialjuice/status/2108290855115403512",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:18:47Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "Major League Baseball proposes shortening its regular season as it pushes for a salary cap",
+      "url": "https://www.cnbc.com/2026/10/08/major-league-baseball-proposes-shorter-season-amid-salary-cap-push.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:16:21Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "2 Growth Stocks to Buy in October",
+      "url": "https://www.nasdaq.com/articles/2-growth-stocks-buy-october",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:15:00Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "Nasdaq ends over 1% lower as tech stocks take a hit on OpenAI revenue report",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-wall-st-retreats-from-records-yields-climb-4937789",
+      "source": "Investing.com",
+      "category": "AI",
+      "timestamp": "2026-10-08T20:14:57Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "Brazil finance minister calls Bolsonaro trade a ’hollow illusion’",
+      "url": "https://www.investing.com/news/economy-news/brazil-finance-minister-calls-bolsonaro-trade-a-hollow-illusion-4939666",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:13:10Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
+    {
+      "headline": "Lawmakers raise alarm at Google plan to acquire Spirit Airlines data for AI models",
+      "url": "https://www.investing.com/news/stock-market-news/lawmakers-raise-alarm-at-google-plan-to-acquire-spirit-airlines-data-for-ai-models-4939672",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-08T20:12:53Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
+    },
     {
       "headline": "Why a Starbucks takeover of Chipotle would — and wouldn't — make sense for both companies",
       "url": "https://www.cnbc.com/2026/10/08/starbucks-chipotle-acquisition.html",
@@ -21,100 +109,12 @@
       "firstSeen": "2026-10-08T20:15:42Z"
     },
     {
-      "headline": "American International Group Breaks Above 200-Day Moving Average - Bullish for AIG",
-      "url": "https://www.nasdaq.com/articles/american-international-group-breaks-above-200-day-moving-average-bullish-aig",
-      "source": "Nasdaq",
+      "headline": "Coca-Cola looks to sell Costa Coffee, Semafor reports",
+      "url": "https://www.investing.com/news/stock-market-news/cocacola-looks-to-sell-costa-coffee-semafor-reports-4939724",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-08T20:07:11Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "California is trying to shut down robot vs. human cage matches",
-      "url": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-08T20:06:56Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "Treasury yields are lower after reaching multiyear highs, traders weigh latest bond auction",
-      "url": "https://www.cnbc.com/2026/10/08/us-treasury-yields-30-year-bond-auction.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-10-08T20:06:52Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "Caterpillar (CAT) Shares Cross Below 200 DMA",
-      "url": "https://www.nasdaq.com/articles/caterpillar-cat-shares-cross-below-200-dma",
-      "source": "Nasdaq",
-      "category": "Movers",
-      "timestamp": "2026-10-08T20:06:37Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "Treasury yields are 'really, really high' but can come down soon, Bessent's new advisor says",
-      "url": "https://www.cnbc.com/2026/10/08/treasury-yields-david-zervos.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-08T20:06:31Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "UTL Crosses Above Key Moving Average Level",
-      "url": "https://www.nasdaq.com/articles/utl-crosses-above-key-moving-average-level",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-08T20:06:29Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "Notable Two Hundred Day Moving Average Cross - GLW",
-      "url": "https://www.nasdaq.com/articles/notable-two-hundred-day-moving-average-cross-glw",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-08T20:06:25Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "Fired OpenAI safety researchers dispute misconduct claims, warn of chilling effect",
-      "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-08T20:04:26Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "ONEV Makes Bullish Cross Above Critical Moving Average",
-      "url": "https://www.nasdaq.com/articles/onev-makes-bullish-cross-above-critical-moving-average",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-08T20:03:51Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "JPMorgan Chase CEO Jamie Dimon Just Issued a Blunt Warning About Artificial Intelligence",
-      "url": "https://www.nasdaq.com/articles/jpmorgan-chase-ceo-jamie-dimon-just-issued-blunt-warning-about-artificial-intelligence",
-      "source": "Nasdaq",
-      "category": "AI",
-      "timestamp": "2026-10-08T20:03:00Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "Notable Two Hundred Day Moving Average Cross - ICVT",
-      "url": "https://www.nasdaq.com/articles/notable-two-hundred-day-moving-average-cross-icvt",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-08T20:01:37Z",
-      "firstSeen": "2026-10-08T20:15:42Z"
-    },
-    {
-      "headline": "White House blocks Microsoft from foreign worker hiring program",
-      "url": "https://www.bbc.co.uk/news/articles/ck5yngl2y4gpo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-08T19:57:04Z",
-      "firstSeen": "2026-10-08T20:00:44Z"
+      "timestamp": "2026-10-08T20:12:27Z",
+      "firstSeen": "2026-10-08T20:31:05Z"
     },
     {
       "headline": "CITRINI SEES NEW ERA FOR CRYPTO AS AI AGENTS DRIVE BLOCKCHAIN ADOPTION Citrini Research says AI-powered financial agents could transform crypto investing, creating a new era of blockchain-based fin...",
