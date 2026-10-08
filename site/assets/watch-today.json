@@ -1,20 +1,14 @@
 {
-  "date": "2026-10-08",
-  "dateLabel": "Thursday, October 8",
+  "date": "2026-10-09",
+  "dateLabel": "Friday, October 9",
   "events": [
     {
-      "time": "8:30 AM ET",
-      "event": "Initial Jobless Claims",
-      "kind": "initial_claims",
-      "prev": "197K",
-      "actual": "197K"
+      "time": "1:00 PM ET",
+      "event": "Baker Hughes Rig Count"
     },
     {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Natural Gas Storage Report",
-      "kind": "natural_gas_storage",
-      "prev": "natural gas +64 Bcf",
-      "actual": "natural gas +85 Bcf"
+      "time": "3:30 PM ET",
+      "event": "CFTC Commitments of Traders"
     }
   ],
   "note": null,
