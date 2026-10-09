@@ -1,7 +1,7 @@
 {
- "asOf": "2026-10-07",
- "asOfLabel": "October 7, 2026",
- "markNote": "Equity/option marks are Oct 6, 2026 closes; crypto marks are Oct 7 ~01:49 ET (24/7 market); futures verified Oct 7 ~01:52 ET.",
+ "asOf": "2026-10-09",
+ "asOfLabel": "October 9, 2026",
+ "markNote": "Equity marks are Oct 9, 2026 closes; KLAC mark $195.64 Oct 9 close; option marks unavailable per-contract (broker total option market value $4,021.00); crypto marks Oct 9 ~16:39 ET; futures market value from Oct 9 broker snapshot ($4,185.00).",
  "positions": [
   {
    "account": "Trading",
@@ -9,9 +9,9 @@
    "assetType": "equity",
    "quantity": 120.0,
    "avgCost": 293.9184,
-   "currentPrice": 286.74,
-   "priorClose": 281.15,
-   "unrealizedGain": -861.41
+   "currentPrice": 290.76,
+   "priorClose": 295.47,
+   "unrealizedGain": -379.01
   },
   {
    "account": "Trading",
@@ -19,9 +19,9 @@
    "assetType": "equity",
    "quantity": 100.0,
    "avgCost": 123.8403,
-   "currentPrice": 171.99,
-   "priorClose": 171.09,
-   "unrealizedGain": 4814.97
+   "currentPrice": 162.59,
+   "priorClose": 160.57,
+   "unrealizedGain": 3874.97
   },
   {
    "account": "Trading",
@@ -29,9 +29,9 @@
    "assetType": "equity",
    "quantity": 200.0,
    "avgCost": 17.0975,
-   "currentPrice": 15.76,
-   "priorClose": 15.92,
-   "unrealizedGain": -267.5
+   "currentPrice": 15.8,
+   "priorClose": 15.61,
+   "unrealizedGain": -259.5
   },
   {
    "account": "Trading",
@@ -39,9 +39,9 @@
    "assetType": "equity",
    "quantity": 500.0,
    "avgCost": 8.811,
-   "currentPrice": 7.855,
-   "priorClose": 7.94,
-   "unrealizedGain": -478.0
+   "currentPrice": 7.435,
+   "priorClose": 7.45,
+   "unrealizedGain": -688.0
   },
   {
    "account": "Agentic",
@@ -49,30 +49,69 @@
    "assetType": "equity",
    "quantity": 1.001702,
    "avgCost": 189.9283,
-   "currentPrice": 197.55,
-   "priorClose": 206.85,
-   "unrealizedGain": 7.63
+   "currentPrice": 195.64,
+   "priorClose": null,
+   "unrealizedGain": 5.72
   },
   {
    "account": "Trading",
    "symbol": "HD",
    "assetType": "option",
    "optionType": "call",
-   "strike": 287.5,
-   "expiration": "2026-10-09",
-   "quantity": 5,
-   "avgCost": 120.0,
-   "currentPrice": 262.0,
-   "priorClose": 115.0,
-   "unrealizedGain": 710.0,
-   "positionSide": "long",
-   "contractId": "HD:2026-10-09:call:287.5",
-   "basisNote": "5 contracts: 5@$1.20 (Oct 5). FIFO reconciled to the $600 broker clearing basis for the 5 remaining.",
-   "markNote": "Mark $2.62/share, Oct 6 close.",
-   "priceUnit": "USD_per_contract",
-   "contracts": 5,
+   "strike": 295.0,
+   "expiration": "2026-10-16",
+   "quantity": 8,
+   "contracts": 8,
    "multiplier": 100,
-   "underlying": "HD"
+   "positionSide": "long",
+   "contractId": "HD:2026-10-16:call:295.0",
+   "avgCost": 254.375,
+   "priceUnit": "USD_per_contract",
+   "currentPrice": null,
+   "priorClose": null,
+   "unrealizedGain": null,
+   "basisNote": "Clearing basis $2,035 (8 @ avg $2.54375/share) per broker position record.",
+   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls."
+  },
+  {
+   "account": "Trading",
+   "symbol": "HD",
+   "assetType": "option",
+   "optionType": "call",
+   "strike": 300.0,
+   "expiration": "2026-10-30",
+   "quantity": 3,
+   "contracts": 3,
+   "multiplier": 100,
+   "positionSide": "long",
+   "contractId": "HD:2026-10-30:call:300.0",
+   "avgCost": 425.0,
+   "priceUnit": "USD_per_contract",
+   "currentPrice": null,
+   "priorClose": null,
+   "unrealizedGain": null,
+   "basisNote": "Clearing basis $1,275 (2 @ $4.30 + 1 @ $4.15) per broker position record.",
+   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls."
+  },
+  {
+   "account": "Trading",
+   "symbol": "SPCX",
+   "assetType": "option",
+   "optionType": "call",
+   "strike": 162.5,
+   "expiration": "2026-10-16",
+   "quantity": 2,
+   "contracts": 2,
+   "multiplier": 100,
+   "positionSide": "long",
+   "contractId": "SPCX:2026-10-16:call:162.5",
+   "avgCost": 320.0,
+   "priceUnit": "USD_per_contract",
+   "currentPrice": null,
+   "priorClose": null,
+   "unrealizedGain": null,
+   "basisNote": "Clearing basis $640 (2 @ $3.20) per broker position record.",
+   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls."
   },
   {
    "account": "Trading",
@@ -89,11 +128,12 @@
    "account": "Trading",
    "symbol": "ETH",
    "assetType": "crypto",
-   "quantity": 1.599999835075599,
+   "quantity": 1.6,
    "avgCost": 2448.1128,
-   "currentPrice": 2617.14,
-   "priorClose": 2617.14,
-   "unrealizedGain": 270.4435
+   "currentPrice": 2476.83,
+   "priorClose": 2497.26,
+   "unrealizedGain": 45.95,
+   "note": "Mark ~16:39 ET Oct 9 evening broker pull."
   },
   {
    "account": "Trading",
@@ -121,17 +161,15 @@
    "account": "Trading",
    "symbol": "METV26",
    "assetType": "futures",
-   "quantity": 30,
+   "quantity": 20,
    "quantityUnit": "contracts",
-   "avgCost": 262.951666667,
-   "currentPrice": 262.15,
-   "quotedAvgCost": 2629.51666667,
-   "quotedMark": 2621.5,
-   "multiplier": 0.1,
-   "expiration": "2026-10-30",
-   "unrealizedGain": -24.05,
    "positionSide": "long",
-   "note": "Micro Ether Futures Oct 2026. Native quotes. Browser-verified 2026-10-07 ~01:52 ET: +30 @ 2,629.52, mark 2,621.5."
+   "avgCost": 2698.325,
+   "expiration": "2026-10",
+   "currentPrice": null,
+   "priorClose": null,
+   "unrealizedGain": null,
+   "note": "/METV26 long 20 baseline (verified 2026-09-27, avg 2,698.325, Oct 2026 expiry). Broker snapshot Oct 9 ~16:39 ET: futures_market_value $4,185.00. Per-contract detail not available via API. Supersedes the micro-futures line from the Oct 7 refresh."
   }
  ]
 }
