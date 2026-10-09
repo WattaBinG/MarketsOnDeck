@@ -1,7 +1,9 @@
-# Wire and crypto dispatch clock
+# Wire, crypto, and earnings dispatch clock
 
 This separate Cloudflare Worker fires the existing GitHub Actions workflows every
-15 minutes, including weekends. The website is still deployed by those workflows;
+15 minutes, including weekends, fires the earnings-feed refresh once daily
+(11:00 UTC = 7:00 AM ET), and fires the watch-today routine on Sun–Thu evenings.
+The website is still deployed by those workflows;
 this Worker does not replace their Python feeds or publish market data itself.
 Cron is UTC. The workflow inputs label the scheduled cycle; GitHub does not
 automatically deduplicate dispatches with the same input. The workflows serialize
