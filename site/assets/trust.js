@@ -31,6 +31,11 @@
   if (typeof module!=='undefined' && module.exports) module.exports=api;
   root.ModTrust=api;
   if (typeof document==='undefined') return;
+  function readableStamp(stamp) {
+    var d=new Date(stamp);
+    if(!stamp || isNaN(d)) return 'unknown time';
+    return new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}).format(d)+' ET';
+  }
   function notice(anchor,key,text,stale) {
     if(!anchor) return;
     var n=document.getElementById(key);
@@ -72,13 +77,13 @@
     if(pos) load('positions').then(function(d){var expired=(d.positions||[]).some(function(p){return p.expiration && p.expiration<etDate();});notice(pos,'positionsFreshness','Positions and marks as recorded: '+(d.asOf||'unknown date')+'. Not verified current holdings.'+(expired?' Snapshot includes contracts whose expiration date has passed; outcomes are not reconciled here.':''),staleDate(d.asOf)||expired);}).catch(function(){notice(pos,'positionsFreshness','Positions snapshot freshness unavailable.',true);});
     var ticker=document.getElementById('tickerStrip') || document.getElementById('tickerPinned');
     if(ticker) {
-      load('ticker').then(function(d){notice(ticker,'stockFreshness','Stock quote snapshot: '+(d.asOf||'unknown date')+' ('+(d.asOfLabel||'snapshot')+').'+(olderStockClose(d.asOf)?' Older snapshot; not live quotes.':' Not live quotes.')+' Held flags reflect the published positions snapshot, not verified current holdings.',olderStockClose(d.asOf));}).catch(function(){notice(ticker,'stockFreshness','Stock snapshot unavailable.',true);});
-      load('crypto').then(function(d){var age=Date.now()-Date.parse(d.asOf);var stale=!isFinite(age)||age>3600000||age< -300000;notice(ticker,'cryptoFreshness','Crypto update: '+(d.asOf||'unknown date')+(stale?' - older or unverified snapshot.':'.'),stale);}).catch(function(){notice(ticker,'cryptoFreshness','Crypto update freshness unavailable.',true);});
+      load('ticker').then(function(d){notice(ticker,'stockFreshness','Stock quote snapshot: '+readableStamp(d.asOf)+' ('+(d.asOfLabel||'snapshot')+').'+(olderStockClose(d.asOf)?' Older snapshot; not live quotes.':' Not live quotes.')+' Held flags reflect the published positions snapshot, not verified current holdings.',olderStockClose(d.asOf));}).catch(function(){notice(ticker,'stockFreshness','Stock snapshot unavailable.',true);});
+      load('crypto').then(function(d){var age=Date.now()-Date.parse(d.asOf);var stale=!isFinite(age)||age>3600000||age< -300000;notice(ticker,'cryptoFreshness','Crypto update: '+readableStamp(d.asOf)+(stale?' - older or unverified snapshot.':'.'),stale);}).catch(function(){notice(ticker,'cryptoFreshness','Crypto update freshness unavailable.',true);});
     }
     var pulse=document.getElementById('sentimentDate');
     if(pulse)load('sentiment-history').then(function(d){var rows=Array.isArray(d)?d:(d.history||d.entries||[]);var last=rows[rows.length-1];if(last)notice(pulse,'pulseFreshness','Trend score history through '+last.date+'. Not a live market sentiment measure.',olderStockClose(last.date));}).catch(function(){notice(pulse,'pulseFreshness','Trend history date unavailable.',true);});
     var wire=document.getElementById('wireUpdated');
-    if(wire)load('wire').then(function(d){var age=Date.now()-Date.parse(d.asOf);notice(wire,'wireFreshness','News feed updated: '+(d.asOf||'unknown date')+(age>3600000||!isFinite(age)?' - older snapshot.':'.'),age>3600000||!isFinite(age));}).catch(function(){notice(wire,'wireFreshness','News feed freshness unavailable.',true);});
+    if(wire)load('wire').then(function(d){var age=Date.now()-Date.parse(d.asOf);notice(wire,'wireFreshness','News feed updated: '+readableStamp(d.asOf)+(age>3600000||!isFinite(age)?' - older snapshot.':'.'),age>3600000||!isFinite(age));}).catch(function(){notice(wire,'wireFreshness','News feed freshness unavailable.',true);});
   }
   document.addEventListener('DOMContentLoaded',function(){refresh();setInterval(refresh,60000);});
 })(typeof window!=='undefined'?window:globalThis);
