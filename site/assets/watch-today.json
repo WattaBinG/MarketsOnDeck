@@ -1,21 +1,9 @@
 {
-  "date": "2026-10-09",
-  "dateLabel": "Friday, October 9",
+  "date": "2026-10-12",
+  "dateLabel": "Monday, October 12",
   "events": [
-    {
-      "time": "1:00 PM ET",
-      "event": "Baker Hughes Rig Count"
-    },
-    {
-      "time": "3:30 PM ET",
-      "event": "CFTC Commitments of Traders"
-    }
+    { "time": "All Day", "event": "Bond Market Closed (Columbus Day)" },
+    { "time": "All Day", "event": "NABE Annual Meeting (Day 2)" }
   ],
-  "note": null,
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
