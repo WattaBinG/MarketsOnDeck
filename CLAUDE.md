@@ -62,6 +62,26 @@ reads this file before acting.
 - **Why this exists:** a scheduled crypto-ticker-refresh run got a fresh shallow clone with two disjoint shallow boundaries baked in. `git merge-base` silently failed to find a real common ancestor between local and remote `main` and reported them as having diverged (50 vs. 50 unrelated commits) — a complete fabrication caused entirely by the shallow truncation, not by any real force-push or history rewrite upstream. The job correctly refused to force-push through what looked like divergence (right call, keep doing that), but burned a cycle chasing a phantom problem and left a stale-data commit dangling in the container instead of landing the actual price refresh.
 - **Never treat an apparent divergence as real without first ruling out a shallow clone this way.** A genuine force-push/rewrite and a shallow-clone artifact look identical from `git log`/`git status` alone; the shallow check is what tells them apart, and it must run before any conclusion, not after.
 
+### Cross-reference: check AUTOMATION.md before Wire/crypto/watch-today jobs (per Keith, 2026-10-09)
+Before running any scheduled or local Claude task whose job is refreshing **The Wire** (`site/assets/wire.json`,
+`wire-archive.json`), the **crypto ticker** (`site/assets/crypto.json`), or **What to Watch Today**
+(`site/assets/watch-today.json`), read `AUTOMATION.md` first — but verify the automation is actually live before
+treating a local/scheduled job as redundant, don't just take the docs' word for it. `scheduler/README.md` itself
+warns not to assume a production schedule until a real cron cycle has been confirmed. The check: recent commits
+authored `github-actions[bot]` matching `Refresh The Wire ...` / crypto / watch-today on roughly the documented
+cadence, or Cloudflare's Cron Past Events for the dispatcher Worker in `scheduler/`. As of 2026-10-09 that check
+passed — `refresh-wire.yml`, `refresh-crypto.yml`, and `refresh-watch-today.yml` were committing on schedule via
+the Cloudflare dispatcher, and `refresh-wire.yml`/`refresh-crypto.yml` now carry only `workflow_dispatch` (the
+GitHub-cron backstop has already been removed per the README's own step 4, which only happens once a cron cycle
+is verified) — but re-check rather than assuming this holds forever. Also note "automated" here isn't "keyless":
+the public RSS/market-data sources themselves need no API key, but the dispatch pipeline needs
+`GITHUB_DISPATCH_TOKEN`, Cloudflare deployment credentials, and (Wire's Discord source) `DISCORD_BOT_TOKEN` — see
+`AUTOMATION.md` for what each workflow actually requires. Once verified live, a separately scheduled Claude task
+doing the same job duplicates that work and, since both would write the same files outside any shared commit
+lock, risks racing or clobbering its commits. Confirm with Keith before running such a task rather than assuming
+a stored prompt is current — this is exactly the class of problem the stop order in §0 guards against for the
+Record ledger.
+
 ## 8. INCIDENT — TRADE LEDGER CORRUPTION (per Keith, 2026-09-30; see §0 for the active stop order)
 - **What's confirmed, independently verified against the committed files (not just Keith's report):** the realized-trades
   array in `site/assets/trades.json` contains at least two option trades stored as bare equity-shaped rows —
