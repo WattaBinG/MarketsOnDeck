@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Render the Earnings Today block into site/index.html.
 
-Reads site/assets/earnings.json (seeded each morning by the watch routine —
-ticker, company, BMO/AMC slot, EPS estimate, IR link) and renders the
+Reads site/assets/earnings.json (seeded each morning by scripts/fetch_earnings.py
+from the Nasdaq public earnings-calendar API — ticker, company, BMO/AMC slot,
+EPS estimate, source quote link, and per-entry provenance) and renders the
 earnings box between the EARNINGS_TODAY_START / EARNINGS_TODAY_END markers
 in site/index.html.
 
@@ -93,7 +94,8 @@ def _eps(actual: float | None, estimate: float | None) -> str:
 def _row(r: dict) -> str:
     ticker = html.escape(r["ticker"])
     company = html.escape(r["company"])
-    slot = html.escape(r["slot"])
+    # slot is None when the source does not supply timing — never guessed.
+    slot = html.escape(r["slot"]) if r.get("slot") else "&mdash;"
     link = html.escape(r["link"], quote=True)
     badge = badge_for(r.get("actualEps"), r.get("epsEst"))
     badge_html = (
@@ -115,7 +117,7 @@ def _week_row(r: dict) -> str:
         f'    <li><span class="earn-week-day">{html.escape(r["dayLabel"])}</span>'
         f'<a class="earn-ticker" href="{html.escape(r["link"], quote=True)}" '
         f'target="_blank" rel="noopener">{html.escape(r["ticker"])}</a>'
-        f'<span class="earn-slot">{html.escape(r["slot"])}</span></li>'
+        f'<span class="earn-slot">{html.escape(r["slot"]) if r.get("slot") else "&mdash;"}</span></li>'
     )
 
 

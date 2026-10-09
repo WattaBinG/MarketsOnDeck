@@ -1,0 +1,57 @@
+name: Refresh earnings feed
+# Autonomous replacement for the old local Claude routine's earnings leg.
+# Fetches the upcoming earnings calendar from the Nasdaq public API
+# (scripts/fetch_earnings.py), validates, atomically writes
+# site/assets/earnings.json, and re-renders the Earnings Today block.
+# Fail-closed: on fetch/validation failure the existing file is untouched.
+# Dispatched daily by the Cloudflare scheduler (scheduler/wrangler.jsonc).
+
+on:
+  workflow_dispatch:
+    inputs:
+      cycle:
+        description: "UTC daily cycle dispatched by Cloudflare"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-publish-main
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch earnings calendar
+        run: python3 scripts/fetch_earnings.py | tee /tmp/out.txt
+      - name: Run earnings tests
+        run: python3 -m unittest discover -s tests -p 'test_earnings*.py'
+      - name: Commit if changed
+        run: |
+          if [ -z "$(git status --porcelain -- site/assets/earnings.json site/index.html)" ]; then
+            echo "no changes"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/earnings.json site/index.html
+          git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Earnings feed update')"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            test "$attempt" -lt 3 || exit 1
+            sleep $((attempt * 5))
+          done
+      - name: Deploy committed snapshot to Cloudflare
+        uses: cloudflare/wrangler-action@v3
+        with:
+          wranglerVersion: "4.136.1"
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy
