@@ -1045,3 +1045,29 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .home-dashboard .sentiment-card #pulseFreshness{grid-column:1/-1;width:100%;box-sizing:border-box;font-size:11px;line-height:1.4;padding:6px;margin:6px 0}
 
 .position-note{display:block;max-width:48ch;font-size:12px;line-height:1.5;font-weight:400;color:var(--text);border-left:3px solid #cf671d;padding-left:8px;margin-top:6px}
+
+/* Mobile reading polish, Oct9 review-only. Desktop grid stays unchanged. */
+@media (max-width:640px) {
+  .nav { padding-inline:16px; }
+  .nav-toggle, .theme-toggle { width:44px; height:44px; min-width:44px; }
+  .article-header { padding-inline:16px; }
+  .article-header .hero-sub { font-size:16px; line-height:1.5; }
+  .article-header .eyebrow { letter-spacing:.07em; font-size:10px; }
+  .section-tight:has(.article-header) { padding-top:24px; padding-bottom:12px; }
+  .daily-entry { padding:20px 16px; margin-top:12px; }
+  .daily-entry h3 { font-size:22px; line-height:1.25; overflow-wrap:break-word; }
+  .daily-entry p,.daily-entry li { font-size:17px; line-height:1.65; }
+  .daily-jump a,.share-btn,.wire-filter-btn { min-height:44px; display:inline-flex; align-items:center; }
+  .share-bar { flex-wrap:wrap; gap:8px; }
+  .home-dashboard > .wire-left { order:6; }
+  .home-dashboard > .top-right { order:7; }
+  .home-dashboard > .ai-strip { order:8; }
+  .data-freshness { margin:4px 16px; padding:6px 8px; font-size:12px; line-height:1.4; }
+  .home-dashboard .sentiment-periods button { min-height:44px; font-size:12px; }
+}
+@media (max-width:359px) {
+  .brand-name { font-size:14px; }
+  .brand { gap:6px; }
+  .home-dashboard .wire-list-wrap .wire-list { column-count:1; }
+  .home-dashboard .wire-list-wrap .wire-list a { font-size:16px; line-height:1.4; }
+}
