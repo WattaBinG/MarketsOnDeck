@@ -47,12 +47,18 @@ const futuresValue = displayValue(futures);
 assert(futuresValue >= 5, 'Futures value calculation must use quoted prices');
 console.log('✓ Futures threshold uses quoted prices');
 
-// Test 5: USDG is hidden (cash-like, but value $102.58 > $5? No - USDG is cash-like)
-// Actually USDG at $102.58 SHOULD display. Update: hidden are DOGE, USDC only.
-// DOGE: 1 × $0.094 = $0.094 (hidden). USDC: 0.00993 × $1 = $0.01 (hidden).
-// USDG: 102.58 × $1 = $102.58 (displayed).
+// Test 5: Hidden positions = DOGE, USDC dust + the 3 Oct 9 option opens whose
+// per-contract marks are unavailable (currentPrice null -> display value $0).
+// (Was 2 at the Oct 6 scope; the 3 new option positions have no broker marks.)
+const hiddenRows = positions.filter(p => displayValue(p) < 5);
+const hiddenIds = hiddenRows.map(p => p.contractId || p.symbol);
+assert(hiddenIds.includes('DOGE'), 'DOGE should be hidden');
+assert(hiddenIds.includes('USDC'), 'USDC should be hidden');
+assert(hiddenIds.includes('HD:2026-10-16:call:295.0'), 'HD $295C should be hidden (no mark)');
+assert(hiddenIds.includes('HD:2026-10-30:call:300.0'), 'HD $300C should be hidden (no mark)');
+assert(hiddenIds.includes('SPCX:2026-10-16:call:162.5'), 'SPCX $162.50C should be hidden (no mark)');
 const hiddenCount = positions.length - displayRows.length;
-assert(hiddenCount === 2, `Expected 2 hidden (DOGE, USDC), got ${hiddenCount}`);
+assert(hiddenCount === 5, `Expected 5 hidden (2 dust + 3 unmarked options), got ${hiddenCount}`);
 console.log('✓ Hidden count correct');
 
 console.log('\nDisplay filter tests passed');
