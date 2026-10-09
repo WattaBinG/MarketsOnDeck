@@ -62,6 +62,17 @@ reads this file before acting.
 - **Why this exists:** a scheduled crypto-ticker-refresh run got a fresh shallow clone with two disjoint shallow boundaries baked in. `git merge-base` silently failed to find a real common ancestor between local and remote `main` and reported them as having diverged (50 vs. 50 unrelated commits) — a complete fabrication caused entirely by the shallow truncation, not by any real force-push or history rewrite upstream. The job correctly refused to force-push through what looked like divergence (right call, keep doing that), but burned a cycle chasing a phantom problem and left a stale-data commit dangling in the container instead of landing the actual price refresh.
 - **Never treat an apparent divergence as real without first ruling out a shallow clone this way.** A genuine force-push/rewrite and a shallow-clone artifact look identical from `git log`/`git status` alone; the shallow check is what tells them apart, and it must run before any conclusion, not after.
 
+### Cross-reference: check AUTOMATION.md before Wire/crypto/watch-today jobs (per Keith, 2026-10-09)
+Before running any scheduled or local Claude task whose job is refreshing **The Wire** (`site/assets/wire.json`,
+`wire-archive.json`), the **crypto ticker** (`site/assets/crypto.json`), or **What to Watch Today**
+(`site/assets/watch-today.json`), read `AUTOMATION.md` first. All three are already fully automated via GitHub
+Actions workflows (`refresh-wire.yml`, `refresh-crypto.yml`, `refresh-watch-today.yml`) — deterministic and
+keyless, no Claude Desktop or Claude credits involved. A separately scheduled Claude task doing the same job
+duplicates that work and, since both would write the same files outside any shared commit lock, risks racing or
+clobbering its commits. Confirm with Keith that such a task is still needed before running it rather than
+assuming a stored prompt is current — this is exactly the class of problem the stop order in §0 guards against
+for the Record ledger.
+
 ## 8. INCIDENT — TRADE LEDGER CORRUPTION (per Keith, 2026-09-30; see §0 for the active stop order)
 - **What's confirmed, independently verified against the committed files (not just Keith's report):** the realized-trades
   array in `site/assets/trades.json` contains at least two option trades stored as bare equity-shaped rows —
