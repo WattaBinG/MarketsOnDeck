@@ -1,7 +1,7 @@
 {
  "asOf": "2026-10-09",
  "asOfLabel": "October 9, 2026",
- "markNote": "Equity marks are Oct 9, 2026 closes; KLAC mark $195.64 Oct 9 close; option marks unavailable per-contract (broker total option market value $4,021.00); crypto marks Oct 9 ~16:39 ET; futures market value from Oct 9 broker snapshot ($4,185.00).",
+ "markNote": "Equity marks are Oct 9, 2026 closes; KLAC mark $195.64 Oct 9 close; option marks unavailable per-contract (broker total option market value $4,021.00); crypto marks Oct 9 ~16:39 ET; futures line carried from Oct 7 refresh (see PR body for the unresolved /METV26 baseline conflict).",
  "positions": [
   {
    "account": "Trading",
@@ -71,7 +71,8 @@
    "priorClose": null,
    "unrealizedGain": null,
    "basisNote": "Clearing basis $2,035 (8 @ avg $2.54375/share) per broker position record.",
-   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls."
+   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls.",
+   "underlying": "HD"
   },
   {
    "account": "Trading",
@@ -91,7 +92,8 @@
    "priorClose": null,
    "unrealizedGain": null,
    "basisNote": "Clearing basis $1,275 (2 @ $4.30 + 1 @ $4.15) per broker position record.",
-   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls."
+   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls.",
+   "underlying": "HD"
   },
   {
    "account": "Trading",
@@ -111,7 +113,8 @@
    "priorClose": null,
    "unrealizedGain": null,
    "basisNote": "Clearing basis $640 (2 @ $3.20) per broker position record.",
-   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls."
+   "markNote": "Oct 9 per-contract marks not available; broker option market value $4,021.00 total across all 13 new long calls.",
+   "underlying": "SPCX"
   },
   {
    "account": "Trading",
@@ -161,15 +164,17 @@
    "account": "Trading",
    "symbol": "METV26",
    "assetType": "futures",
-   "quantity": 20,
+   "quantity": 30,
    "quantityUnit": "contracts",
+   "avgCost": 262.951666667,
+   "currentPrice": 262.15,
+   "quotedAvgCost": 2629.51666667,
+   "quotedMark": 2621.5,
+   "multiplier": 0.1,
+   "expiration": "2026-10-30",
+   "unrealizedGain": -24.05,
    "positionSide": "long",
-   "avgCost": 2698.325,
-   "expiration": "2026-10",
-   "currentPrice": null,
-   "priorClose": null,
-   "unrealizedGain": null,
-   "note": "/METV26 long 20 baseline (verified 2026-09-27, avg 2,698.325, Oct 2026 expiry). Broker snapshot Oct 9 ~16:39 ET: futures_market_value $4,185.00. Per-contract detail not available via API. Supersedes the micro-futures line from the Oct 7 refresh."
+   "note": "Micro Ether Futures Oct 2026. Native quotes. Browser-verified 2026-10-07 ~01:52 ET: +30 @ 2,629.52, mark 2,621.5."
   }
  ]
 }

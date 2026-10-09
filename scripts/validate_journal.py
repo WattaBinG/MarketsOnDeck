@@ -116,7 +116,8 @@ def validate_sep30_repairs(data):
 
     # Trade count: 347 Sep-30 baseline + 19 October catch-up rows
     # (13 option closes incl. 4 Sep-22 TSLA300 backfill, 6 equity closes)
-    assert len(trades) == 366, f'Expected 366 trades, got {len(trades)}'
+    # + 4 Oct 7-9 closes (3 HD Oct-9 $287.50C lots, 1 SPCX Oct-16 $162.50C partial)
+    assert len(trades) == 370, f'Expected 370 trades, got {len(trades)}'
 
 
 def validate_futures(positions):
@@ -157,27 +158,36 @@ def validate_no_dust_deleted(positions):
 
 
 def validate_position_bases(positions):
-    """October 2026 anchors: HD $287.50C is the only remaining option position
-    (5 contracts, lot-specific $120/contract basis = the Oct 5 $1.20 lot,
-    FIFO-reconciled to the $600 broker clearing basis). TSLA/CCL/SPCX option
-    positions were closed or expired and must be absent."""
+    """October 9, 2026 anchors: HD Oct-9 $287.50C is fully closed (sold Oct 9);
+    the remaining option positions are the Oct 9 opens, with broker clearing
+    basis as authoritative avgCost. TSLA/CCL option positions were closed or
+    expired and must be absent."""
     pos_map = {(p.get('account'), p.get('symbol'), p.get('strike'), p.get('expiration')): p
                for p in positions.get('positions', [])
                if p.get('assetType') == 'option'}
 
-    # HD: 5 contracts, $120/contract = the Oct 5 $1.20 lot
-    hd = pos_map.get(('Trading', 'HD', 287.5, '2026-10-09'))
-    assert hd is not None, 'HD option position missing'
-    assert hd.get('contracts') == 5 and hd.get('quantity') == 5
-    assert hd.get('avgCost') == 120.0, f"HD basis must be $120, got {hd.get('avgCost')}"
-    assert hd.get('positionSide') == 'long'
-    assert hd.get('contractId') == 'HD:2026-10-09:call:287.5'
-    assert hd.get('priceUnit') == 'USD_per_contract'
-    assert hd.get('multiplier') == 100
+    def check_open(key, contracts, avg_cost):
+        p = pos_map.get(key)
+        assert p is not None, f'Option position {key} missing'
+        assert p.get('contracts') == contracts and p.get('quantity') == contracts
+        assert p.get('avgCost') == avg_cost, (
+            f'{key} basis must be ${avg_cost}, got {p.get("avgCost")}')
+        assert p.get('positionSide') == 'long'
+        assert p.get('priceUnit') == 'USD_per_contract'
+        assert p.get('multiplier') == 100
 
-    # Closed/expired: no TSLA, CCL, or SPCX option positions may remain
+    # Oct 9 opens: broker clearing basis authoritative
+    check_open(('Trading', 'HD', 295.0, '2026-10-16'), 8, 254.375)
+    check_open(('Trading', 'HD', 300.0, '2026-10-30'), 3, 425.0)
+    check_open(('Trading', 'SPCX', 162.5, '2026-10-16'), 2, 320.0)
+
+    # Expired/closed: HD Oct-9 $287.50C must be absent (sold Oct 9)
+    assert ('Trading', 'HD', 287.5, '2026-10-09') not in pos_map, (
+        'HD Oct-9 $287.50C should be closed')
+
+    # Closed/expired: no TSLA or CCL option positions may remain
     for key in pos_map:
-        assert not (key[1] in ('TSLA', 'CCL', 'SPCX')), (
+        assert not (key[1] in ('TSLA', 'CCL')), (
             f'Unexpected remaining option position: {key}')
 
     # USDG: 102.582488 units, cash-like
