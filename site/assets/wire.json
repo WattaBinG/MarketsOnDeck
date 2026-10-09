@@ -1,17 +1,105 @@
 {
-  "asOf": "2026-10-09T12:46:52Z",
-  "asOfLabel": "8:46 AM ET",
+  "asOf": "2026-10-09T13:02:46Z",
+  "asOfLabel": "9:02 AM ET",
   "topStory": {
-    "headline": "Delta Air Lines cuts 2026 forecast on fuel surge, but CEO says demand is still strong",
-    "url": "https://www.cnbc.com/2026/10/09/delta-air-lines-dal-q3-2026-earnings.html",
+    "headline": "Treasury's Bessent hires Trump's controversial former Fed board pick, Judy Shelton, as advisor",
+    "url": "https://www.cnbc.com/2026/10/09/judy-shelton-scott-bessent-treasury.html",
     "source": "CNBC",
-    "category": "Movers",
-    "timestamp": "2026-10-09T12:20:12Z",
-    "firstSeen": "2026-10-09T12:32:17Z",
-    "leadSince": "2026-10-09T12:46:52Z",
-    "image": "/assets/images/wire-movers.jpg"
+    "category": "Macro",
+    "timestamp": "2026-10-09T12:49:28Z",
+    "firstSeen": "2026-10-09T13:02:46Z",
+    "leadSince": "2026-10-09T13:02:46Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
+    {
+      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-09T13:02:46Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "Effective fed funds rate: 3.88% October 8th vs 3.88% October 7th.",
+      "url": "https://x.com/financialjuice/status/2108543047667425775",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-09T13:00:59Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "The S&P remains just shy of all time highs supported by a handful of stocks. Below the surface, the meltdown is accelerating as half of virtually every sector is in a bear market, down 20%",
+      "url": "https://x.com/zerohedge/status/2108542253685678214",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-09T12:58:01Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "Why is Sirius XM stock climbing 2% today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-sirius-xm-stock-climbing-2-today-93CH-4941162",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-09T12:57:17Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "FTSE 100 today: Stocks rise as miners jump; oil eases",
+      "url": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-up-as-oil-retreats-after-trump-rules-out-iran-strike-4940322",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-09T12:54:09Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "Stifel reiterates Buy on Taiwan Semi stock, keeps $515 target",
+      "url": "https://www.investing.com/news/analyst-ratings/stifel-reiterates-buy-on-taiwan-semi-stock-keeps-515-target-93CH-4941160",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-09T12:50:51Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "Scotiabank upgrades Webull stock rating on valuation after selloff",
+      "url": "https://www.investing.com/news/analyst-ratings/scotiabank-upgrades-webull-stock-rating-on-valuation-after-selloff-93CH-4941159",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-09T12:50:45Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "China, EU reach \"understanding\" on hybrid vehicle trade after marathon talks",
+      "url": "https://www.investing.com/news/economy-news/china-eu-reach-understanding-on-hybrid-vehicle-trade-after-marathon-talks-4941158",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-09T12:50:10Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "Oil hits session highs after IRGC says it attacked LPG tanker in Hormuz hours ago resulting in \"massive fire\", says \"from now on any vessels committing violations outside of Hormuz will also be pun...",
+      "url": "https://x.com/zerohedge/status/2108539861489582446",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-09T12:47:59Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "**S&P 500 BULL MARKET GAINS 117% AS AI RALLY RAISES CONCENTRATION RISKS** The S&P 500 has surged 117% since October 2022, adding nearly $40 trillion in market value, largely driven by AI-related st...",
+      "url": "https://x.com/DeItaone/status/2108539689615360257",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-09T12:46:59Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
+    {
+      "headline": "Why is SCHOTT Pharma stock sliding today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-schott-pharma-stock-sliding-today-93CH-4941156",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-09T12:46:59Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
+    },
     {
       "headline": "S&P 500 BULL MARKET GAINS 117% AS AI RALLY RAISES CONCENTRATION RISKS The S&P 500 has surged 117% since October 2022, adding nearly $40 trillion in market value, largely driven by AI-related stocks...",
       "url": "https://t.me/WalterBloomberg/36683",
@@ -19,6 +107,14 @@
       "category": "Markets",
       "timestamp": "2026-10-09T12:46:52Z",
       "firstSeen": "2026-10-09T12:46:52Z"
+    },
+    {
+      "headline": "Earnings call transcript: Poonawalla Fincorp posts strong Q2 2026 growth",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-poonawalla-fincorp-posts-strong-q2-2026-growth-93CH-4941155",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-09T12:46:46Z",
+      "firstSeen": "2026-10-09T13:02:46Z"
     },
     {
       "headline": "IRGC SAYS FROM NOW ON, ANY VESSELS COMMITTING VIOLATIONS OUTSIDE STRAIT OF HORMUZ WILL ALSO BE 'PUNISHED' - STATEMENT",
@@ -32,16 +128,8 @@
       "headline": "Canada’s employment surprisingly shrinks in September, jobless rate inches up",
       "url": "https://www.investing.com/news/economy-news/canadas-employment-surprisingly-shrinks-in-september-jobless-rate-inches-up-4941126",
       "source": "Investing.com",
-      "category": "Markets",
+      "category": "Macro",
       "timestamp": "2026-10-09T12:42:41Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "China AI developers publish safety tests for just 3.6% of model releases, report finds",
-      "url": "https://www.investing.com/news/stock-market-news/china-ai-developers-publish-safety-tests-for-just-36-of-model-releases-report-finds-4941141",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-09T12:42:27Z",
       "firstSeen": "2026-10-09T12:46:52Z"
     },
     {
@@ -59,94 +147,6 @@
       "category": "Geopolitics",
       "timestamp": "2026-10-09T12:39:37Z",
       "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "🔴 Bank of Canada October rate hike chances fall to 27% from 40% on jobs report - Swap Market Data Shows",
-      "url": "https://x.com/financialjuice/status/2108537658393673744",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-09T12:39:02Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "RBC Capital cuts Evergy stock price target on lower peer multiples",
-      "url": "https://www.investing.com/news/analyst-ratings/rbc-capital-cuts-evergy-stock-price-target-on-lower-peer-multiples-93CH-4941136",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-09T12:39:02Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "🔴 Traders pull back on bets for a BOC rate hike by year's end",
-      "url": "https://x.com/financialjuice/status/2108537539548139961",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-09T12:39:01Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "AI is creating jobs, just not for young workers. Companies adopting AI are hiring more people overall, per a new Stanford and King's College London study across 41 countries. But the gains go to th...",
-      "url": "https://x.com/unusual_whales/status/2108537461739585995",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-09T12:38:59Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "Stifel cuts Targa Resources stock price target on capex outlook",
-      "url": "https://www.investing.com/news/analyst-ratings/stifel-cuts-targa-resources-stock-price-target-on-capex-outlook-93CH-4941134",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-09T12:38:52Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "Stifel cuts Realty Income stock price target on rate pressures",
-      "url": "https://www.investing.com/news/analyst-ratings/stifel-cuts-realty-income-stock-price-target-on-rate-pressures-93CH-4941133",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-09T12:38:48Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "Trump’s Fed ex-nominee Shelton to advise Bessent, Treasury says",
-      "url": "https://www.investing.com/news/economy-news/trumps-fed-exnominee-shelton-to-advise-bessent-treasury-says-4941132",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-09T12:37:08Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "India rejects monopoly claim after Musk accuses Ambani of blocking Starlink launch",
-      "url": "https://www.investing.com/news/stock-market-news/india-rejects-monopoly-claim-after-musk-accuses-ambani-of-blocking-starlink-launch-4941102",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-09T12:36:51Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "IRAN CLAIMS LPG TANKER STRUCK NEAR STRAIT OF HORMUZ Iran's Revolutionary Guard Navy says a large LPG carrier named NV Sunshine was struck while attempting to transit south of the Strait of Hormuz,...",
-      "url": "https://t.me/WalterBloomberg/36679",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-09T12:36:47Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "UKRAINIAN DELEGATION ARRIVES IN MIAMI FOR TALKS WITH US TEAM, SOURCE FAMILIAR SAYS",
-      "url": "https://t.me/WalterBloomberg/36678",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-09T12:36:09Z",
-      "firstSeen": "2026-10-09T12:46:52Z"
-    },
-    {
-      "headline": "CANADA LOSES 68,300 JOBS IN SEPTEMBER, FAR WORSE THAN EXPECTED Canada's economy shed 68,300 jobs in September, sharply missing forecasts for a 9,200 gain. The unemployment rate rose to 6.5%, while...",
-      "url": "https://t.me/WalterBloomberg/36677",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-10-09T12:31:27Z",
-      "firstSeen": "2026-10-09T12:32:17Z"
     }
   ]
 }
