@@ -1,6 +1,146 @@
 {
   "items": [
     {
+      "headline": "Anthropic launches free AI security scans for open-source projects",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-08T21:53:51Z"
+    },
+    {
+      "headline": "California is trying to shut down robot vs. human cage matches",
+      "url": "https://www.theverge.com/tech/1008401/california-shut-down-rek-fighting-robot-company-human",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-08T20:06:56Z"
+    },
+    {
+      "headline": "USA Today becomes the latest publisher to sue OpenAI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-08T17:58:33Z"
+    },
+    {
+      "headline": "Why are EU gas prices not higher already?",
+      "url": "https://www.investing.com/news/economy-news/why-are-eu-gas-prices-not-higher-already-4942043",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-10T07:43:28Z"
+    },
+    {
+      "headline": "China creates 10.52 million jobs, plans new AI and services employment measures",
+      "url": "https://www.investing.com/news/economy-news/china-creates-1052-million-jobs-plans-new-ai-and-services-employment-measures-4942031",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-10T07:10:28Z"
+    },
+    {
+      "headline": "AI is changing how lawyers work — and putting the billable hour under pressure",
+      "url": "https://www.cnbc.com/2026/10/10/ai-lawyers-billable-hour-legal-careers.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-10T05:00:01Z"
+    },
+    {
+      "headline": "The world needs Ukraine’s grain. Its farmers are running out of reasons to plant",
+      "url": "https://www.cnbc.com/2026/10/10/ukraine-grain-exports-russia-harvest.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-10T05:00:01Z"
+    },
+    {
+      "headline": "Trump's diesel agreement with Putin accused of contradicting Russia sanctions law",
+      "url": "https://www.cnbc.com/2026/10/09/trump-putin-diesel-russia-sanctions-ukraine.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-10T02:09:00Z"
+    },
+    {
+      "headline": "Anthropic can’t reliably control its AI agents. It’s cutting off its internal evals from the live internet instead",
+      "url": "https://techcrunch.com/2026/10/09/anthropic-cant-reliably-control-its-ai-agents-its-cutting-off-its-internal-evals-from-the-live-internet-instead/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-10T00:18:32Z"
+    },
+    {
+      "headline": "Boots has a new owner: Three ways it could affect you",
+      "url": "https://www.bbc.co.uk/news/articles/c63djxry8124o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-09T23:01:14Z"
+    },
+    {
+      "headline": "Analysis: Trump's shock Russia deal highlights mounting pressure to curb fuel prices",
+      "url": "https://www.bbc.co.uk/news/articles/c5lye9z4xw4yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-09T22:30:22Z"
+    },
+    {
+      "headline": "The maker of non-text AI model Jev valued at $7.5B just weeks after launch",
+      "url": "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-09T21:41:29Z"
+    },
+    {
+      "headline": "Anthropic’s AI gave Philadelphia police a fake tip about an unsolved homicide",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1009090/anthropic-fake-homicide-information-philadelphia-pd-tip",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-09T21:15:38Z"
+    },
+    {
+      "headline": "Verizon posts worst day since 2002 as SpaceX U.S. network plans whack cell provider stocks",
+      "url": "https://www.cnbc.com/2026/10/09/verizon-att-tmobile-stocks-spacex-network.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-09T20:16:58Z"
+    },
+    {
+      "headline": "An Anthropic AI model sent a false homicide tip to Philadelphia police",
+      "url": "https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-09T19:36:56Z"
+    },
+    {
+      "headline": "Trump wants to reduce the cost of fuel as the midterms loom - will it work?",
+      "url": "https://www.bbc.co.uk/news/articles/cv2d6x749lwro?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-09T19:32:50Z"
+    },
+    {
+      "headline": "Trump created a committee to dig into the Fed's Lisa Cook. What is it and what comes next?",
+      "url": "https://www.cnbc.com/2026/10/09/trump-lisa-cook-fed-firing-committee-explained.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-09T19:19:00Z"
+    },
+    {
+      "headline": "Americans' debt problems are flashing a warning not seen since the Great Recession",
+      "url": "https://www.cnbc.com/2026/10/09/american-debt-delinquency.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-09T19:18:24Z"
+    },
+    {
+      "headline": "‘Pure insanity’: Mathematicians will need years to make sense of OpenAI’s latest drop",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1008726/openai-mathematics-solutions-chaos",
+      "source": "The Verge",
+      "category": "Movers",
+      "timestamp": "2026-10-09T19:09:44Z"
+    },
+    {
+      "headline": "Can CoreWeave Unseat Amazon Web Services as the Top Cloud Provider?",
+      "url": "https://www.nasdaq.com/articles/can-coreweave-unseat-amazon-web-services-top-cloud-provider",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-10T23:30:00Z"
+    },
+    {
       "headline": "PUTIN'S ENVOY DMITRIEV ON X: RUSSIA-US COOPERATION ON DIESEL AND ENERGY WILL BENEFIT THE WORLD",
       "url": "https://t.me/WalterBloomberg/36705",
       "source": "Walter Bloomberg (unofficial mirror)",
@@ -1259,146 +1399,6 @@
       "source": "Benzinga",
       "category": "Markets",
       "timestamp": "2026-10-10T14:12:50Z"
-    },
-    {
-      "headline": "Uniswap (UNI) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/uniswap-uni-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-10T14:12:49Z"
-    },
-    {
-      "headline": "Polkadot (DOT) Price Prediction: 2025, 2026, 2030",
-      "url": "https://www.benzinga.com/money/polkadot-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-10T14:12:48Z"
-    },
-    {
-      "headline": "Filecoin (FIL) Price Prediction: 2025, 2025, 2030",
-      "url": "https://www.benzinga.com/money/filecoin-price-prediction",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-10T14:12:48Z"
-    },
-    {
-      "headline": "How de-extincting dire wolves and woolly mammoths may extend human life",
-      "url": "https://www.cnbc.com/2026/10/10/de-extincting-dire-wolves-woolly-mammoths-help-humans.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-10T14:00:01Z"
-    },
-    {
-      "headline": "Here are the top AI agents that can live in your text messages",
-      "url": "https://techcrunch.com/2026/10/10/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-10T14:00:00Z"
-    },
-    {
-      "headline": "Putin relayed Iran war proposal to Trump, Kremlin says",
-      "url": "https://www.cnbc.com/2026/10/10/putin-trump-iran-war-russia-diesel.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-10T13:42:36Z"
-    },
-    {
-      "headline": "Pokémon card values are soaring. What collectors should know before buying or selling",
-      "url": "https://www.cnbc.com/2026/10/10/pokemon-card-values-grading-guide.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-10T13:30:02Z"
-    },
-    {
-      "headline": "How Supreme Court justices are leaning in major 401(k) case over private funds and underperformance",
-      "url": "https://www.cnbc.com/2026/10/10/supreme-court-case-401k-private-funds-intel.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-10T13:00:01Z"
-    },
-    {
-      "headline": "AI agent makers are promising privacy — will they deliver?",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1009051/privacy-ai-agent-promises-openai-meta-muse-dots",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-10T13:00:00Z"
-    },
-    {
-      "headline": "TRUMP SLAMS NOBEL PEACE PRIZE SNUB Trump says he settled eight wars, secured hostage releases and prevented Iran from obtaining nuclear weapons. Yet, despite those claimed achievements, he did not...",
-      "url": "https://t.me/WalterBloomberg/36706",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-10T12:17:41Z"
-    },
-    {
-      "headline": "Buffett's 'trips down YouTube rabbit hole' revealed",
-      "url": "https://www.cnbc.com/2026/10/10/buffetts-trips-down-youtube-rabbit-hole-revealed.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-10T12:01:16Z"
-    },
-    {
-      "headline": "From BJ’s to Lululemon, retailers are trimming assortments to boost business",
-      "url": "https://www.cnbc.com/2026/10/10/from-bjs-to-lululemon-retailers-are-trimming-assortments.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-10T12:00:01Z"
-    },
-    {
-      "headline": "Hollywood takes on Zuckerberg, Musk and Altman amid widespread anxiety over AI",
-      "url": "https://www.cnbc.com/2026/10/10/ai-movies-tech-ceos-hollywood.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-10T12:00:01Z"
-    },
-    {
-      "headline": "Why Japan's 7-Eleven store closures in India don’t signal an exit",
-      "url": "https://www.cnbc.com/2026/10/10/7-eleven-india-japan-reliance.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-10T11:21:05Z"
-    },
-    {
-      "headline": "Nvidia GPUs are everywhere. Here are the ways companies are accessing them",
-      "url": "https://www.cnbc.com/2026/10/10/nvidia-gpus-are-everywhere-heres-how-companies-access-them.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-10T11:00:01Z"
-    },
-    {
-      "headline": "EU presidency proposes 8% cut to its 2028-2034 budget to €1.6 trillion",
-      "url": "https://www.investing.com/news/economy-news/eu-presidency-proposes-16-trillion-budget-for-20282034-4942071",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-10T10:14:28Z"
-    },
-    {
-      "headline": "Thailand prepares to host IMF-World Bank meetings with 15,000 delegates",
-      "url": "https://www.investing.com/news/economy-news/thailand-prepares-to-host-imfworld-bank-meetings-with-15000-delegates-4942067",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-10T09:55:25Z"
-    },
-    {
-      "headline": "European automakers gain breathing room from EU-China hybrid car deal",
-      "url": "https://www.investing.com/news/economy-news/european-automakers-gain-breathing-room-from-euchina-hybrid-car-deal-4942066",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-10T09:45:47Z"
-    },
-    {
-      "headline": "Russian attack on Ukraine’s Zaporizhzhia kills seven as war intensifies",
-      "url": "https://www.investing.com/news/economy-news/russian-attack-on-ukraines-zaporizhzhia-kills-seven-as-war-intensifies-4942056",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-10T09:20:18Z"
-    },
-    {
-      "headline": "Thailand prepares to host IMF-World Bank meetings",
-      "url": "https://www.investing.com/news/economy-news/thailand-prepares-to-host-imfworld-bank-meetings-4942052",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-10T08:48:20Z"
     }
   ]
 }
