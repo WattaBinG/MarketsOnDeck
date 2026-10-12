@@ -4,7 +4,9 @@
   "pinned": [
     "SPY",
     "QQQ",
-    "DIA"
+    "DIA",
+    "IWM",
+    "USO"
   ],
   "items": [
     {
@@ -32,6 +34,34 @@
       "changePercent": -0.29
     },
     {
+      "symbol": "SPCX",
+      "price": 163.91,
+      "change": 1.34,
+      "changePercent": 0.82,
+      "held": true
+    },
+    {
+      "symbol": "SOFI",
+      "price": 15.28,
+      "change": -0.52,
+      "changePercent": -3.29,
+      "held": true
+    },
+    {
+      "symbol": "QUBT",
+      "price": 6.96,
+      "change": -0.48,
+      "changePercent": -6.45,
+      "held": true
+    },
+    {
+      "symbol": "KLAC",
+      "price": 190.45,
+      "change": -5.12,
+      "changePercent": -2.62,
+      "held": true
+    },
+    {
       "symbol": "NVDA",
       "price": 226.66,
       "change": -2.62,
@@ -42,20 +72,6 @@
       "price": 94.04,
       "change": -0.46,
       "changePercent": -0.49
-    },
-    {
-      "symbol": "SPCX",
-      "price": 163.91,
-      "change": 1.34,
-      "changePercent": 0.82,
-      "held": true
-    },
-    {
-      "symbol": "QUBT",
-      "price": 6.96,
-      "change": -0.48,
-      "changePercent": -6.45,
-      "held": true
     },
     {
       "symbol": "INTC",
@@ -74,68 +90,6 @@
       "price": 339.64,
       "change": 3.0,
       "changePercent": 0.89
-    },
-    {
-      "symbol": "MSFT",
-      "price": 539.18,
-      "change": 4.11,
-      "changePercent": 0.77
-    },
-    {
-      "symbol": "AMZN",
-      "price": 259.94,
-      "change": -2.49,
-      "changePercent": -0.95
-    },
-    {
-      "symbol": "GOOGL",
-      "price": 352.2,
-      "change": 0.54,
-      "changePercent": 0.15
-    },
-    {
-      "symbol": "META",
-      "price": 748.59,
-      "change": 29.92,
-      "changePercent": 4.16
-    },
-    {
-      "symbol": "AMD",
-      "price": 590.97,
-      "change": -17.13,
-      "changePercent": -2.82
-    },
-    {
-      "symbol": "SOFI",
-      "price": 15.28,
-      "change": -0.52,
-      "changePercent": -3.29,
-      "held": true
-    },
-    {
-      "symbol": "KLAC",
-      "price": 190.45,
-      "change": -5.12,
-      "changePercent": -2.62,
-      "held": true
-    },
-    {
-      "symbol": "SPCH",
-      "price": 11.64,
-      "change": 0.18,
-      "changePercent": 1.61
-    },
-    {
-      "symbol": "COIN",
-      "price": 178.21,
-      "change": -1.18,
-      "changePercent": -0.66
-    },
-    {
-      "symbol": "PLTR",
-      "price": 206.66,
-      "change": -2.4,
-      "changePercent": -1.15
     }
   ]
 }
