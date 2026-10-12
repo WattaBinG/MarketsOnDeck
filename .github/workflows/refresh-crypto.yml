@@ -42,9 +42,15 @@ jobs:
             sleep $((attempt * 5))
           done
       - name: Deploy committed snapshot to Cloudflare
-        uses: cloudflare/wrangler-action@v3
-        with:
-          wranglerVersion: "4.136.1"
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # Retry wrapper: two workflows deploy the same Worker on the same
+          # 15-min tick; a simultaneous deploy or API flake fails the step.
+          # Same 3-attempt pattern as the "Commit if changed" step above.
+          for attempt in 1 2 3; do
+            npx -y wrangler@4.136.1 deploy && break
+            test "$attempt" -lt 3 || exit 1
+            sleep $((attempt * 30))
+          done
