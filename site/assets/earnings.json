@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-11",
-  "dateLabel": "Sunday, October 11",
+  "date": "2026-10-12",
+  "dateLabel": "Monday, October 12",
   "note": null,
   "thresholds": {
     "beat": 0.02,
@@ -9,8 +9,7 @@
     "miss": -0.02,
     "note": "Surprise vs EPS estimate. >+10% = Big Beat, +2% to +10% = Beat, within \u00b12% = In-line, -2% to -10% = Miss, worse than -10% = Big Miss."
   },
-  "today": [],
-  "weekAhead": [
+  "today": [
     {
       "ticker": "NCPL",
       "company": "Netcapital Inc.",
@@ -21,8 +20,7 @@
       "date": "2026-10-12",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-12",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
-      "dayLabel": "Mon, Oct 12"
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00"
     },
     {
       "ticker": "RMCF",
@@ -34,8 +32,7 @@
       "date": "2026-10-12",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-12",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
-      "dayLabel": "Mon, Oct 12"
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00"
     },
     {
       "ticker": "MSS",
@@ -47,9 +44,10 @@
       "date": "2026-10-12",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-12",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
-      "dayLabel": "Mon, Oct 12"
-    },
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00"
+    }
+  ],
+  "weekAhead": [
     {
       "ticker": "JPM",
       "company": "J P Morgan Chase & Co",
@@ -60,7 +58,7 @@
       "date": "2026-10-13",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-13",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Tue, Oct 13"
     },
     {
@@ -73,7 +71,7 @@
       "date": "2026-10-13",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-13",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Tue, Oct 13"
     },
     {
@@ -86,7 +84,7 @@
       "date": "2026-10-13",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-13",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Tue, Oct 13"
     },
     {
@@ -99,7 +97,7 @@
       "date": "2026-10-14",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-14",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Wed, Oct 14"
     },
     {
@@ -112,7 +110,7 @@
       "date": "2026-10-14",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-14",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Wed, Oct 14"
     },
     {
@@ -125,7 +123,7 @@
       "date": "2026-10-14",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-14",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Wed, Oct 14"
     },
     {
@@ -138,7 +136,7 @@
       "date": "2026-10-15",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-15",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Thu, Oct 15"
     },
     {
@@ -151,7 +149,7 @@
       "date": "2026-10-15",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-15",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Thu, Oct 15"
     },
     {
@@ -164,7 +162,7 @@
       "date": "2026-10-15",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-15",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Thu, Oct 15"
     },
     {
@@ -177,7 +175,7 @@
       "date": "2026-10-16",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-16",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Fri, Oct 16"
     },
     {
@@ -190,7 +188,7 @@
       "date": "2026-10-16",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-16",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Fri, Oct 16"
     },
     {
@@ -203,7 +201,7 @@
       "date": "2026-10-16",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-16",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Fri, Oct 16"
     },
     {
@@ -216,7 +214,7 @@
       "date": "2026-10-19",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-19",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Mon, Oct 19"
     },
     {
@@ -229,7 +227,7 @@
       "date": "2026-10-19",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-19",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Mon, Oct 19"
     },
     {
@@ -242,7 +240,7 @@
       "date": "2026-10-19",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-19",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Mon, Oct 19"
     },
     {
@@ -255,7 +253,7 @@
       "date": "2026-10-20",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-20",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Tue, Oct 20"
     },
     {
@@ -268,7 +266,7 @@
       "date": "2026-10-20",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-20",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Tue, Oct 20"
     },
     {
@@ -281,7 +279,7 @@
       "date": "2026-10-20",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-20",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Tue, Oct 20"
     },
     {
@@ -294,7 +292,7 @@
       "date": "2026-10-21",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-21",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Wed, Oct 21"
     },
     {
@@ -307,7 +305,7 @@
       "date": "2026-10-21",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-21",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Wed, Oct 21"
     },
     {
@@ -320,7 +318,7 @@
       "date": "2026-10-21",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-21",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Wed, Oct 21"
     },
     {
@@ -333,7 +331,7 @@
       "date": "2026-10-22",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-22",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Thu, Oct 22"
     },
     {
@@ -346,7 +344,7 @@
       "date": "2026-10-22",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-22",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Thu, Oct 22"
     },
     {
@@ -359,7 +357,7 @@
       "date": "2026-10-22",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-22",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Thu, Oct 22"
     },
     {
@@ -372,7 +370,7 @@
       "date": "2026-10-23",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-23",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Fri, Oct 23"
     },
     {
@@ -385,7 +383,7 @@
       "date": "2026-10-23",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-23",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Fri, Oct 23"
     },
     {
@@ -393,16 +391,55 @@
       "company": "ENI S.p.A.",
       "epsEst": 1.85,
       "actualEps": null,
-      "slot": null,
+      "slot": "BMO",
       "link": "https://www.nasdaq.com/market-activity/stocks/e",
       "date": "2026-10-23",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-23",
-      "fetchedAt": "2026-10-11T11:00:56.950029+00:00",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
       "dayLabel": "Fri, Oct 23"
+    },
+    {
+      "ticker": "VZ",
+      "company": "Verizon Communications Inc.",
+      "epsEst": 1.28,
+      "actualEps": null,
+      "slot": "BMO",
+      "link": "https://www.nasdaq.com/market-activity/stocks/vz",
+      "date": "2026-10-26",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-26",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
+      "dayLabel": "Mon, Oct 26"
+    },
+    {
+      "ticker": "WELL",
+      "company": "Welltower Inc.",
+      "epsEst": 1.64,
+      "actualEps": null,
+      "slot": "AMC",
+      "link": "https://www.nasdaq.com/market-activity/stocks/well",
+      "date": "2026-10-26",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-26",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
+      "dayLabel": "Mon, Oct 26"
+    },
+    {
+      "ticker": "CDNS",
+      "company": "Cadence Design Systems, Inc.",
+      "epsEst": 1.6,
+      "actualEps": null,
+      "slot": "AMC",
+      "link": "https://www.nasdaq.com/market-activity/stocks/cdns",
+      "date": "2026-10-26",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-26",
+      "fetchedAt": "2026-10-12T11:03:12.831492+00:00",
+      "dayLabel": "Mon, Oct 26"
     }
   ],
-  "updatedAt": "2026-10-11T11:00:56.950029+00:00",
+  "updatedAt": "2026-10-12T11:03:12.831492+00:00",
   "provenance": {
     "source": "Nasdaq earnings calendar (public API)",
     "apiPattern": "https://api.nasdaq.com/api/calendar/earnings?date=YYYY-MM-DD",
