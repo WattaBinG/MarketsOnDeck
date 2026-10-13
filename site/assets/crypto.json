@@ -1,24 +1,24 @@
 {
-  "asOf": "2026-10-13T21:43:27Z",
-  "source": "Robinhood (real-time quotes)",
+  "asOf": "2026-10-13T21:45:56Z",
+  "source": "Coinbase Exchange (public market data)",
   "items": [
     {
       "symbol": "BTC",
-      "price": 83410.79,
-      "change": 180.7,
-      "changePercent": 0.22
+      "price": 83377.94,
+      "change": 907.81,
+      "changePercent": 1.1
     },
     {
       "symbol": "ETH",
-      "price": 2509.85,
-      "change": 4.18,
-      "changePercent": 0.17
+      "price": 2508.66,
+      "change": 20.89,
+      "changePercent": 0.84
     },
     {
       "symbol": "SOL",
-      "price": 107.04,
-      "change": -0.29,
-      "changePercent": -0.27
+      "price": 107.03,
+      "change": -0.07,
+      "changePercent": -0.07
     }
   ]
 }
