@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-13T21:22:30Z",
-  "asOfLabel": "5:22 PM ET",
+  "asOf": "2026-10-13T21:31:40Z",
+  "asOfLabel": "5:31 PM ET",
   "topStory": {
     "headline": "Six Flags shares decline following deadly roller coaster incident",
     "url": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
@@ -17,7 +17,7 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-13T21:22:29Z",
+      "timestamp": "2026-10-13T21:31:40Z",
       "firstSeen": "2026-10-13T11:30:42Z"
     },
     {
@@ -25,8 +25,16 @@
       "url": "https://www.cnbc.com/2026/10/13/openai-employee-arrested-recording-device.html",
       "source": "CNBC",
       "category": "AI",
-      "timestamp": "2026-10-13T21:20:45Z",
+      "timestamp": "2026-10-13T21:31:07Z",
       "firstSeen": "2026-10-13T21:16:48Z"
+    },
+    {
+      "headline": "Saudi national charged with secretly planting recording device in OpenAI office",
+      "url": "https://www.bbc.co.uk/news/articles/cwg5jq4vlddzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "AI",
+      "timestamp": "2026-10-13T21:19:02Z",
+      "firstSeen": "2026-10-13T21:31:40Z"
     },
     {
       "headline": "Judge says Musk engaged in intimidation of ex-FEMA CFO Mary Comans, clears her name",
@@ -35,38 +43,6 @@
       "category": "Markets",
       "timestamp": "2026-10-13T21:15:32Z",
       "firstSeen": "2026-10-13T21:16:48Z"
-    },
-    {
-      "headline": "Stock Market Today, Oct. 13: Fermi Surges 14% on AMD Credit Support for Project Matador",
-      "url": "https://www.nasdaq.com/articles/stock-market-today-oct-13-fermi-surges-14-amd-credit-support-project-matador",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-13T21:14:26Z",
-      "firstSeen": "2026-10-13T21:22:30Z"
-    },
-    {
-      "headline": "Stock Market Today, Oct. 13: Markets Edge Lower as Earnings Season Kicks Off",
-      "url": "https://www.nasdaq.com/articles/stock-market-today-oct-13-markets-edge-lower-earnings-season-kicks",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-13T21:14:21Z",
-      "firstSeen": "2026-10-13T21:22:30Z"
-    },
-    {
-      "headline": "Bristol Myers Squibb vs. Eli Lilly: Which Healthcare Stock Is a Better Buy in 2026?",
-      "url": "https://www.nasdaq.com/articles/bristol-myers-squibb-vs-eli-lilly-which-healthcare-stock-better-buy-2026",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-13T21:12:02Z",
-      "firstSeen": "2026-10-13T21:22:30Z"
-    },
-    {
-      "headline": "Why Bumble Stock Skyrocketed Today",
-      "url": "https://www.nasdaq.com/articles/why-bumble-stock-skyrocketed-today",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-13T21:07:06Z",
-      "firstSeen": "2026-10-13T21:22:30Z"
     },
     {
       "headline": "Dollar dips a day ahead of CPI, while euro rises and Indian rupee extends rally",
@@ -115,6 +91,30 @@
       "category": "AI",
       "timestamp": "2026-10-13T21:01:04Z",
       "firstSeen": "2026-10-13T21:16:48Z"
+    },
+    {
+      "headline": "Martine Rothblatt, United Therapeutics CEO, sells $5.2m in shares",
+      "url": "https://www.investing.com/news/insider-trading-news/martine-rothblatt-united-therapeutics-ceo-sells-52m-in-shares-93CH-4947568",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-13T21:01:04Z",
+      "firstSeen": "2026-10-13T21:31:40Z"
+    },
+    {
+      "headline": "‘I am a pretty cautious person’: My financial adviser wants me to invest $350,000 in a UAE data center. Is this risky?",
+      "url": "https://www.marketwatch.com/story/the-prospectus-looks-impressive-my-financial-adviser-wants-me-to-invest-350-000-in-a-uae-data-center-is-this-risky-d5d3747c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-13T21:01:00Z",
+      "firstSeen": "2026-10-13T21:31:40Z"
+    },
+    {
+      "headline": "Delaware jury awards Qualcomm $2 in damages, finds Arm breached license agreement",
+      "url": "https://www.investing.com/news/stock-market-news/qualcomm-says-jury-found-arm-breached-license-agreement-4947346",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-13T21:00:47Z",
+      "firstSeen": "2026-10-13T21:31:40Z"
     },
     {
       "headline": "Morgan Stanley Raises 4Q26 Brent Price Forecast to $105 a Barrel From $100 a Barrel Morgan Stanley Raises 1Q27 Brent Price Forecast to $100 a Barrel From $95 a Barrel",
