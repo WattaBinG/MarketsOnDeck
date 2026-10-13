@@ -1,12 +1,11 @@
 {
-  "date": "2026-10-13",
-  "dateLabel": "Tuesday, October 13",
-  "events": [],
-  "note": "No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).",
-  "calendarUrl": "https://www.census.gov/economic-indicators/",
-  "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
-    "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
-  ]
+  "date": "2026-10-14",
+  "dateLabel": "Wednesday, October 14",
+  "events": [
+    { "time": "1:00 AM ET", "event": "ASML Earnings (BMO)" },
+    { "time": "6:45 AM ET", "event": "Bank of America Earnings (BMO)" },
+    { "time": "7:30 AM ET", "event": "Morgan Stanley Earnings (BMO)" },
+    { "time": "8:30 AM ET", "event": "September CPI Report" }
+  ],
+  "calendarUrl": "https://www.investing.com/economic-calendar/"
 }
