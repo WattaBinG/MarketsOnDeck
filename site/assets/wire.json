@@ -1,15 +1,15 @@
 {
-  "asOf": "2026-10-13T13:00:46Z",
-  "asOfLabel": "9:00 AM ET",
+  "asOf": "2026-10-13T13:15:48Z",
+  "asOfLabel": "9:15 AM ET",
   "topStory": {
-    "headline": "**HOUTHIS WARN OF NEW ATTACKS ON SAUDI OIL FACILITIES** Yemen's Houthis have warned workers to stay away from Saudi oil facilities, citing potential military strikes. The group also renewed warning...",
-    "url": "https://x.com/DeItaone/status/2109990924730175903",
+    "headline": "ECB settled €1,646.2 bln public-sector bond purchases.",
+    "url": "https://x.com/financialjuice/status/2109993046914093377",
     "source": "MarketsOnDeck Discord",
-    "category": "Geopolitics",
-    "timestamp": "2026-10-13T12:53:46Z",
-    "firstSeen": "2026-10-13T13:00:46Z",
-    "leadSince": "2026-10-13T13:00:46Z",
-    "image": "/assets/images/wire-geopolitics.jpg"
+    "category": "Macro",
+    "timestamp": "2026-10-13T13:02:49Z",
+    "firstSeen": "2026-10-13T13:15:48Z",
+    "leadSince": "2026-10-13T13:15:48Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
@@ -17,8 +17,96 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-13T13:00:46Z",
+      "timestamp": "2026-10-13T13:15:48Z",
       "firstSeen": "2026-10-13T11:30:42Z"
+    },
+    {
+      "headline": "Micron drops 5% as tech stocks rattled by China chip breakthrough claims",
+      "url": "https://www.cnbc.com/2026/10/13/sk-hynix-softbank-samsung-electronics-shares-tech-stocks-fall.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-13T13:13:57Z",
+      "firstSeen": "2026-10-13T13:00:46Z"
+    },
+    {
+      "headline": "Zuanic and Associates initiates Cronos stock with overweight rating",
+      "url": "https://www.investing.com/news/analyst-ratings/zuanic-and-associates-initiates-cronos-stock-with-overweight-rating-93CH-4946805",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-13T13:10:51Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
+    },
+    {
+      "headline": "SpaceX D2C aggression triggers Piper Sandler downgrade of AST SpaceMobile",
+      "url": "https://www.investing.com/news/stock-market-news/spacex-d2c-aggression-triggers-piper-sandler-downgrade-of-ast-spacemobile-4946804",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-13T13:10:48Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
+    },
+    {
+      "headline": "Earnings call transcript: UnitedHealth beats Q3 2026 estimates, lifts outlook",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-unitedhealth-beats-q3-2026-estimates-lifts-outlook-93CH-4946803",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-13T13:09:44Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
+    },
+    {
+      "headline": "TWO-YEAR U.S. TREASURY YIELDS TURN POSITIVE LAST UP 0.64 BASIS POINTS AT 4.797% YIELD CURVE BETWEEN TWO-YEAR AND 10-YEAR TREASURY NOTES LAST AT A POSITIVE 40.6",
+      "url": "https://t.me/WalterBloomberg/36800",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Macro",
+      "timestamp": "2026-10-13T13:08:05Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
+    },
+    {
+      "headline": "Paul Tudor Jones says 2027 could be a really challenging year for the stock market",
+      "url": "https://www.cnbc.com/2026/10/13/paul-tudor-jones-2027-really-challenging-year.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-13T13:06:54Z",
+      "firstSeen": "2026-10-13T13:00:46Z"
+    },
+    {
+      "headline": "Six Flags shares decline following report of deadly roller coaster incident",
+      "url": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-13T13:05:52Z",
+      "firstSeen": "2026-10-13T13:00:46Z"
+    },
+    {
+      "headline": "GERMAN CURRENT ACCOUNT BALANCE NSA ACTUAL 10.3B (FORECAST -, PREVIOUS 21.2B) $MACRO",
+      "url": "https://x.com/financialjuice/status/2109993752982917601",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-13T13:05:47Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
+    },
+    {
+      "headline": "Saudi-Led Coalition Tells People to Leave Sanaa Oil Co. Site <:neort:875080101035917332>",
+      "url": "https://x.com/zerohedge/status/2109993454654927322",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-13T13:04:46Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
+    },
+    {
+      "headline": "MARTIN SHKRELI VIOLATED LIFETIME PHARMA INDUSTRY BAN, FTC AND STATES SAY IN CONTEMPT CLAIM - CNBC",
+      "url": "https://t.me/WalterBloomberg/36799",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-13T13:03:24Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
+    },
+    {
+      "headline": "ECB bond holdings under PEPP €1.27 tln as of last week.",
+      "url": "https://x.com/financialjuice/status/2109992937212059828",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-13T13:01:51Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
     },
     {
       "headline": "Amex introduces a framework to prevent AI agents from making unauthorized purchases",
@@ -26,38 +114,6 @@
       "source": "TechCrunch",
       "category": "AI",
       "timestamp": "2026-10-13T13:00:00Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "Apple launches HomeView, its first smart display for the home",
-      "url": "https://www.theverge.com/tech/1009704/apple-homeview-smart-display-first-look",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-13T13:00:00Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "Paul Tudor Jones says 2027 could be a really challenging year for the stock market",
-      "url": "https://www.cnbc.com/2026/10/13/paul-tudor-jones-2027-really-challenging-year.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:59:59Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "Apple unveils new Apple TV 4K $AAPL",
-      "url": "https://x.com/financialjuice/status/2109992279276736872",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:59:46Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "US REDBOOK YOY ACTUAL 10.4% (FORECAST -, PREVIOUS 8.6%) $MACRO",
-      "url": "https://x.com/financialjuice/status/2109991613472690563",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:56:45Z",
       "firstSeen": "2026-10-13T13:00:46Z"
     },
     {
@@ -69,20 +125,20 @@
       "firstSeen": "2026-10-13T13:00:46Z"
     },
     {
-      "headline": "Six Flags shares decline following report of deadly roller coaster incident",
-      "url": "https://www.cnbc.com/2026/10/13/six-flags-shares-plunge-after-hours-deadly-roller-coaster-incident-goliath-georgia.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-13T12:54:14Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
+      "headline": "Bumble To Be Acquired By Ithaca For $1.3 Bln In Cash; BMBL Up Nearly 4% In Pre-Market",
+      "url": "https://www.nasdaq.com/articles/bumble-be-acquired-ithaca-13-bln-cash-bmbl-nearly-4-pre-market",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-13T12:53:43Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
     },
     {
-      "headline": "**JPMORGAN CEO JAMIE DIMON WARNS OF RISKS FROM AI AGENTS ACCESSING BANK ACCOUNTS** Jamie Dimon warns that giving AI agents access to bank accounts carries serious security and liability risks. He s...",
-      "url": "https://x.com/DeItaone/status/2109990769532530862",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:53:45Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
+      "headline": "HOUTHIS WARN OF NEW ATTACKS ON SAUDI OIL FACILITIES Yemen's Houthis have warned workers to stay away from Saudi oil facilities, citing potential military strikes. The group also renewed warnings to...",
+      "url": "https://t.me/WalterBloomberg/36798",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-13T12:53:34Z",
+      "firstSeen": "2026-10-13T13:15:48Z"
     },
     {
       "headline": "JPMORGAN CEO JAMIE DIMON WARNS OF RISKS FROM AI AGENTS ACCESSING BANK ACCOUNTS Jamie Dimon warns that giving AI agents access to bank accounts carries serious security and liability risks. He says...",
@@ -91,62 +147,6 @@
       "category": "Markets",
       "timestamp": "2026-10-13T12:52:57Z",
       "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "When Goldman & JPM Won't Hold It, Should You? The 11% AI Chip Loan Banks Refused To Underwrite <>",
-      "url": "https://www.zerohedge.com/ai/when-goldman-jpm-wont-hold-it-should-you-11-ai-chip-loan-banks-refused-underwrite",
-      "source": "MarketsOnDeck Discord",
-      "category": "AI",
-      "timestamp": "2026-10-13T12:50:45Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "Micron, SoftBank and ASML slide as Wall Street chip rout spreads",
-      "url": "https://www.cnbc.com/2026/10/13/sk-hynix-softbank-samsung-electronics-shares-tech-stocks-fall.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:50:01Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "HIGHER INTEREST RATES COULD PUT STRESS ON THE U.S. ECONOMY, JPMORGAN EXECUTIVES SAY",
-      "url": "https://t.me/WalterBloomberg/36796",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:49:12Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "GS Delta-One head, Rich Privorotsky, on latest in AI: **Four stories to unpack:** **First, **CXMT is a legitimate concern for memory economics. **Second, **Microsoft’s Maia 300 custom chips, moving...",
-      "url": "https://x.com/zerohedge/status/2109989442651926570",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:47:46Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "JPMorgan reiterates Tango Therapeutics stock rating ahead of ESMO data",
-      "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-reiterates-tango-therapeutics-stock-rating-ahead-of-esmo-data-93CH-4946684",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:46:48Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "JPMorgan upgrades CRH stock rating, sees Cemex best positioned",
-      "url": "https://www.investing.com/news/analyst-ratings/jpmorgan-upgrades-crh-stock-rating-sees-cemex-best-positioned-93CH-4946683",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-13T12:46:41Z",
-      "firstSeen": "2026-10-13T13:00:46Z"
-    },
-    {
-      "headline": "TRUMP'S SCHEDULE — TUESDAY, OCTOBER 13 🔸 8:00 AM ET — Executive Time 🔸 9:30 AM ET — White House Press Briefing 🔸 7:30 PM ET — Trump Rally in Wasilla, Alaska (3:30 PM local) TRAVEL SCHEDULE (TBD): W...",
-      "url": "https://t.me/WalterBloomberg/36795",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-13T12:20:26Z",
-      "firstSeen": "2026-10-13T12:21:28Z"
     }
   ]
 }
