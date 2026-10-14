@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-14T09:00:22Z",
-  "asOfLabel": "5:00 AM ET",
+  "asOf": "2026-10-14T09:15:57Z",
+  "asOfLabel": "5:15 AM ET",
   "topStory": {
     "headline": "Barclays initiates Constellium stock with Equalweight rating",
     "url": "https://www.investing.com/news/analyst-ratings/barclays-initiates-constellium-stock-with-equalweight-rating-93CH-4948404",
@@ -17,8 +17,48 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-14T09:00:21Z",
+      "timestamp": "2026-10-14T09:15:57Z",
       "firstSeen": "2026-10-13T11:30:42Z"
+    },
+    {
+      "headline": "Ukraine warns Starlink limits are disrupting military operations as Russia pounds its energy infrastructure",
+      "url": "https://www.cnbc.com/2026/10/14/russia-ukraine-energy-ceasefire-power-outages.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-14T09:09:02Z",
+      "firstSeen": "2026-10-14T09:15:57Z"
+    },
+    {
+      "headline": "China’s exports surge amid AI-driven demand",
+      "url": "https://www.aljazeera.com/economy/2026/10/14/chinas-exports-sugrge?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-14T09:05:17Z",
+      "firstSeen": "2026-10-14T09:15:57Z"
+    },
+    {
+      "headline": "UK 4 YR BID-TO-COVER ACTUAL 3.415 (FORECAST -, PREVIOUS 3.237) $MACRO",
+      "url": "https://x.com/financialjuice/status/2110295382232084703",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-14T09:04:23Z",
+      "firstSeen": "2026-10-14T09:15:57Z"
+    },
+    {
+      "headline": "UK 4 YR GILT YIELD ACTUAL 4.945% (FORECAST -, PREVIOUS 4.786%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2110295369741447484",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-14T09:04:22Z",
+      "firstSeen": "2026-10-14T09:15:57Z"
+    },
+    {
+      "headline": "‘Sopranos’ star Steven Van Zandt is selling his Greenwich Village penthouse for $19 million",
+      "url": "https://www.marketwatch.com/story/sopranos-star-steven-van-zandt-is-selling-his-greenwich-village-penthouse-for-19-million-ad250720?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-14T09:03:00Z",
+      "firstSeen": "2026-10-14T09:15:57Z"
     },
     {
       "headline": "Barclays initiates Alcoa stock with overweight on acquisition upside",
@@ -35,6 +75,14 @@
       "category": "Macro",
       "timestamp": "2026-10-14T08:54:24Z",
       "firstSeen": "2026-10-14T09:00:22Z"
+    },
+    {
+      "headline": "Oil prices choppy after IEA warns on market constraints; Saudi officials say Aramco facilities attacked",
+      "url": "https://www.cnbc.com/2026/10/14/oil-rises-amid-growing-tensions-between-saudis-and-iran-backed-houthis.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-14T08:53:37Z",
+      "firstSeen": "2026-10-14T09:15:57Z"
     },
     {
       "headline": "Scott Bessent's growth plans aren't enough to tame surging deficit and debt pile, IMF chief says",
@@ -67,54 +115,6 @@
       "category": "Markets",
       "timestamp": "2026-10-14T08:49:01Z",
       "firstSeen": "2026-10-14T09:00:22Z"
-    },
-    {
-      "headline": "ASML says it's getting order interest through 2030 as profit smashes expectations",
-      "url": "https://www.cnbc.com/2026/10/14/asml-3q-earnings-ai-demand-orders-capacity.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-14T08:45:13Z",
-      "firstSeen": "2026-10-14T08:15:28Z"
-    },
-    {
-      "headline": "IMF calls for US to cut deficits amid bond woes, China to shift away from exports",
-      "url": "https://www.investing.com/news/economy-news/imfs-georgieva-says-us-growth-will-not-be-enough-to-shrink-debt-4947973",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-14T08:42:54Z",
-      "firstSeen": "2026-10-14T09:00:22Z"
-    },
-    {
-      "headline": "Asian Shares Slide Ahead Of US Inflation Data",
-      "url": "https://www.nasdaq.com/articles/asian-shares-slide-ahead-us-inflation-data",
-      "source": "Nasdaq",
-      "category": "Macro",
-      "timestamp": "2026-10-14T08:42:38Z",
-      "firstSeen": "2026-10-14T09:00:22Z"
-    },
-    {
-      "headline": "Chip bellwether ASML says customers are already asking to place orders — for 2030",
-      "url": "https://www.marketwatch.com/story/chip-bellwether-asml-says-customers-are-already-asking-to-place-orders-for-2030-b3aa1a90?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-14T08:41:00Z",
-      "firstSeen": "2026-10-14T08:45:52Z"
-    },
-    {
-      "headline": "Is Apple Stock a Buy During the Holiday Quarter?",
-      "url": "https://www.nasdaq.com/articles/apple-stock-buy-during-holiday-quarter",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-14T08:35:00Z",
-      "firstSeen": "2026-10-14T09:00:22Z"
-    },
-    {
-      "headline": "'I applied for 200 jobs' - How 'spray and pray' AI job applications can backfire",
-      "url": "https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-14T08:27:17Z",
-      "firstSeen": "2026-10-14T08:30:58Z"
     },
     {
       "headline": "Morgan Stanley Raises 4Q26 Brent Price Forecast to $105 a Barrel From $100 a Barrel Morgan Stanley Raises 1Q27 Brent Price Forecast to $100 a Barrel From $95 a Barrel",
