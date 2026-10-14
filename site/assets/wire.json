@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-14T07:15:25Z",
-  "asOfLabel": "3:15 AM ET",
+  "asOf": "2026-10-14T07:31:03Z",
+  "asOfLabel": "3:31 AM ET",
   "topStory": {
     "headline": "China's exports and imports surge past expectations in September",
     "url": "https://www.cnbc.com/2026/10/14/chinas-exports-likely-grew-by-double-digits-in-september.html",
@@ -17,8 +17,24 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-14T07:15:25Z",
+      "timestamp": "2026-10-14T07:31:03Z",
       "firstSeen": "2026-10-13T11:30:42Z"
+    },
+    {
+      "headline": "U.S. Treasury yields inch lower as investors await key inflation report",
+      "url": "https://www.cnbc.com/2026/10/14/us-treasury-yields-cpi-inflation-report.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-14T07:21:38Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
+    },
+    {
+      "headline": "Hundreds of Royal Mail staff quitting each week under new efficiency plans",
+      "url": "https://www.bbc.co.uk/news/articles/cm5ynp0vz3p7o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-14T07:18:08Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
     },
     {
       "headline": "Russia arrests Japanese journalist on spying charges",
@@ -29,92 +45,76 @@
       "firstSeen": "2026-10-14T07:15:25Z"
     },
     {
-      "headline": "ASML says it's getting order interest through 2030 as profit smashes expectations",
-      "url": "https://www.cnbc.com/2026/10/14/asml-3q-earnings-ai-demand-orders-capacity.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-14T07:10:36Z",
-      "firstSeen": "2026-10-14T07:15:25Z"
-    },
-    {
-      "headline": "Russia pounds Ukraine's energy infrastructure, leaving 600,000 without power",
-      "url": "https://www.cnbc.com/2026/10/14/russia-ukraine-energy-ceasefire-power-outages.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-14T07:07:56Z",
-      "firstSeen": "2026-10-14T07:15:25Z"
-    },
-    {
-      "headline": "CNBC Daily Open: Zelenskyy heads to UK for talks on fresh support",
-      "url": "https://www.cnbc.com/2026/10/14/daily-open-zelenskyy-uk-visit-asml-results.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-14T06:57:16Z",
-      "firstSeen": "2026-10-14T07:15:25Z"
-    },
-    {
-      "headline": "Wall St futures little changed ahead of CPI data; ASML earnings in focus",
-      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-muted-after-chip-losses-drag-wall-street-cpi-data-awaited-4947807",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-14T06:55:12Z",
-      "firstSeen": "2026-10-14T07:00:21Z"
-    },
-    {
-      "headline": "VinFast-linked taxi operator GSM launches US service in Los Angeles",
-      "url": "https://www.investing.com/news/stock-market-news/vinfastlinked-taxi-operator-gsm-launches-us-service-in-los-angeles-4948165",
+      "headline": "LSEG taps Nvidia for faster historical market data processing",
+      "url": "https://www.investing.com/news/stock-market-news/lseg-teams-up-with-nvidia-for-faster-market-data-processing-4948123",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-14T06:54:24Z",
-      "firstSeen": "2026-10-14T07:00:21Z"
+      "timestamp": "2026-10-14T07:12:18Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
     },
     {
-      "headline": "'Spray and pray': How AI job applications can backfire",
-      "url": "https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-14T06:52:33Z",
-      "firstSeen": "2026-10-14T07:00:21Z"
-    },
-    {
-      "headline": "Bank of France governor says policy decisions are data dependent",
-      "url": "https://www.investing.com/news/economy-news/bank-of-france-governor-says-policy-decisions-are-data-dependent-93CH-4948167",
+      "headline": "Bitcoin stuck in Ichimoku cloud near $83,517: Live levels",
+      "url": "https://www.investing.com/news/cryptocurrency-news/bitcoin-wedged-at-84175-between-key-support-and-resistance-live-93CH-4943299",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-14T06:49:35Z",
-      "firstSeen": "2026-10-14T07:00:21Z"
+      "timestamp": "2026-10-14T07:11:53Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
     },
     {
-      "headline": "PNE plunges after lowering 2026 earnings outlook on project postponements",
-      "url": "https://www.investing.com/news/earnings/pne-plunges-after-lowering-2026-earnings-outlook-on-project-postponements-4948164",
+      "headline": "Hang Seng tests 38.2% Fib resistance at 24,652: Live levels",
+      "url": "https://www.investing.com/news/stock-market-news/hang-seng-presses-cloud-resistance-at-24372-live-levels-93CH-4943001",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-14T06:46:24Z",
-      "firstSeen": "2026-10-14T07:00:21Z"
+      "timestamp": "2026-10-14T07:11:36Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
     },
     {
-      "headline": "Mission Produce director Luis Gonzalez buys $594,785 in company stock",
-      "url": "https://www.investing.com/news/insider-trading-news/mission-produce-director-luis-gonzalez-buys-594785-in-company-stock-93CH-4948163",
+      "headline": "London Gas Oil tests 61.8% Fib resistance at $1,476: Live levels",
+      "url": "https://www.investing.com/news/commodities-news/london-gas-oil-tests-200sma-support-after-double-top-live-93CH-4943301",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-14T06:46:16Z",
-      "firstSeen": "2026-10-14T07:00:21Z"
+      "timestamp": "2026-10-14T07:11:27Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
     },
     {
-      "headline": "Zevra Therapeutics president and CEO sells $224,948 in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/zevra-therapeutics-president-and-ceo-sells-224948-in-stock-93CH-4948162",
+      "headline": "Crude Oil WTI nears breakout zone with bull trap risk: Live levels",
+      "url": "https://www.investing.com/news/commodities-news/crude-oil-wti-stuck-in-tight-range-near-91-live-levels-93CH-4943297",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-14T06:46:08Z",
-      "firstSeen": "2026-10-14T07:00:21Z"
+      "timestamp": "2026-10-14T07:11:16Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
     },
     {
-      "headline": "Danaher Collaborates With NVIDIA To Advance AI-Powered Autonomous Science",
-      "url": "https://www.nasdaq.com/articles/danaher-collaborates-nvidia-advance-ai-powered-autonomous-science",
-      "source": "Nasdaq",
+      "headline": "Silver tests $58.80 support in descending channel: Live levels",
+      "url": "https://www.investing.com/news/commodities-news/silver-tests-61706220-resistance-in-macro-downtrend-live-levels-93CH-4943300",
+      "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-14T06:45:27Z",
-      "firstSeen": "2026-10-14T07:15:25Z"
+      "timestamp": "2026-10-14T07:11:12Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
+    },
+    {
+      "headline": "Natural Gas hits $3.321 near upper Bollinger Band: Live levels",
+      "url": "https://www.investing.com/news/commodities-news/natural-gas-coils-in-bull-flag-at-3172-live-levels-93CH-4943302",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-14T07:11:11Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
+    },
+    {
+      "headline": "Brent Oil consolidates below $107 resistance: Live levels",
+      "url": "https://www.investing.com/news/commodities-news/brent-oil-stuck-in-1025010600-range-live-levels-93CH-4943298",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-14T07:11:05Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
+    },
+    {
+      "headline": "Copper doji at $6.75 as price compresses near resistance: Live",
+      "url": "https://www.investing.com/news/commodities-news/copper-pinned-at-673-fib-level-amid-breakout-risk-live-levels-93CH-4943296",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-14T07:11:01Z",
+      "firstSeen": "2026-10-14T07:31:03Z"
     },
     {
       "headline": "Morgan Stanley Raises 4Q26 Brent Price Forecast to $105 a Barrel From $100 a Barrel Morgan Stanley Raises 1Q27 Brent Price Forecast to $100 a Barrel From $95 a Barrel",
