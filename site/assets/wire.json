@@ -1,17 +1,33 @@
 {
-  "asOf": "2026-10-14T13:46:36Z",
-  "asOfLabel": "9:46 AM ET",
+  "asOf": "2026-10-14T14:01:01Z",
+  "asOfLabel": "10:01 AM ET",
   "topStory": {
-    "headline": "Citigroup expects the US Fed to deliver a 25 bp rate hike in December 2026 vs. the prior forecast of no change this year $C",
-    "url": "https://x.com/financialjuice/status/2110365116675789054",
-    "source": "MarketsOnDeck Discord",
-    "category": "Macro",
-    "timestamp": "2026-10-14T13:41:25Z",
-    "firstSeen": "2026-10-14T13:46:36Z",
-    "leadSince": "2026-10-14T13:46:36Z",
-    "image": "/assets/images/wire-macro.jpg"
+    "headline": "Netflix is laying off roughly 6% of its workforce",
+    "url": "https://www.cnbc.com/2026/10/14/netflix-layoffs.html",
+    "source": "CNBC",
+    "category": "Markets",
+    "timestamp": "2026-10-14T13:51:21Z",
+    "firstSeen": "2026-10-14T14:01:01Z",
+    "leadSince": "2026-10-14T14:01:01Z",
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-14T14:01:01Z",
+      "firstSeen": "2026-10-13T11:30:42Z"
+    },
+    {
+      "headline": "Highest Volume Contracts / No Index/ETFs",
+      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-14T14:01:01Z",
+      "firstSeen": "2026-10-14T13:31:45Z"
+    },
     {
       "headline": "Monthly wind generation in ISO-NE is about 68% higher than last year",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68304",
@@ -21,108 +37,100 @@
       "firstSeen": "2026-10-14T13:01:39Z"
     },
     {
-      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-14T13:46:36Z",
-      "firstSeen": "2026-10-13T11:30:42Z"
+      "headline": "BMO reiterates Market Perform on Murphy Oil stock at $40 target",
+      "url": "https://www.investing.com/news/analyst-ratings/bmo-reiterates-market-perform-on-murphy-oil-stock-at-40-target-93CH-4949561",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-14T13:58:45Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
     },
     {
-      "headline": "Highest Volume Contracts / No Index/ETFs",
-      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
-      "source": "MarketsOnDeck Discord",
+      "headline": "S&P 500 BANKS INDEX HITS OVER FOUR-MONTH LOW, LAST DOWN 1.3%",
+      "url": "https://t.me/WalterBloomberg/36892",
+      "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Markets",
-      "timestamp": "2026-10-14T13:46:06Z",
-      "firstSeen": "2026-10-14T13:31:45Z"
-    },
-    {
-      "headline": "Consumer prices rose 3.7% annually in September as gas costs skyrocket",
-      "url": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-14T13:45:40Z",
-      "firstSeen": "2026-10-14T13:46:36Z"
+      "timestamp": "2026-10-14T13:55:18Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
     },
     {
       "headline": "Social Security Administration announces 3.6% cost-of-living adjustment for 2027",
       "url": "https://www.cnbc.com/2026/10/14/social-security-cola-2027.html",
       "source": "CNBC",
       "category": "Markets",
-      "timestamp": "2026-10-14T13:45:13Z",
+      "timestamp": "2026-10-14T13:54:42Z",
       "firstSeen": "2026-10-14T13:31:45Z"
     },
     {
-      "headline": "US inflation rises more than expected ahead of midterm elections",
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Macro",
-      "timestamp": "2026-10-14T13:40:36Z",
-      "firstSeen": "2026-10-14T13:01:39Z"
-    },
-    {
-      "headline": "BREAKING: Consumer prices rose 3.7% from a year earlier in September, hotter than expected and up from 3.4% in August, per the Bureau of Labor Statistics. That’s the highest inflation rate since 2023.",
-      "url": "https://x.com/unusual_whales/status/2110364777856057599",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-14T13:39:26Z",
-      "firstSeen": "2026-10-14T13:46:36Z"
-    },
-    {
-      "headline": "Today Anthropic is meeting prospective investors on Oct. 14 in preparation for its initial public offering. Meanwhile odds of its IPO going live before the end of November are sliding.",
-      "url": "https://x.com/zerohedge/status/2110364114702708847",
-      "source": "MarketsOnDeck Discord",
-      "category": "Movers",
-      "timestamp": "2026-10-14T13:37:25Z",
-      "firstSeen": "2026-10-14T13:46:36Z"
-    },
-    {
-      "headline": "Barclays downgrades Dell stock after sharp rally",
-      "url": "https://www.investing.com/news/stock-market-news/barclays-downgrades-dell-stock-after-sharp-rally-4949499",
+      "headline": "Factbox-Tech leaders, governments split over ’AI doom’ fears",
+      "url": "https://www.investing.com/news/stock-market-news/factboxtech-leaders-governments-split-over-ai-doom-fears-4949457",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-14T13:36:27Z",
+      "timestamp": "2026-10-14T13:54:25Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
+    },
+    {
+      "headline": "Consumer prices rose 3.7% annually in September as gas prices skyrocket",
+      "url": "https://www.cnbc.com/2026/10/14/cpi-inflation-report-september-2026.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-14T13:53:28Z",
       "firstSeen": "2026-10-14T13:46:36Z"
     },
     {
-      "headline": "Charles Schwab and DoorDash ranked among bargain stocks that could lead the market higher",
-      "url": "https://www.marketwatch.com/story/from-charles-schwab-to-doordash-why-these-bargain-stocks-could-lead-the-market-higher-4d99fb97?mod=mw_rss_topstories",
+      "headline": "BMO reiterates Market Perform on Occidental Petroleum stock",
+      "url": "https://www.investing.com/news/analyst-ratings/bmo-reiterates-market-perform-on-occidental-petroleum-stock-93CH-4949557",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-14T13:52:46Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
+    },
+    {
+      "headline": "Bank of America adds a profit miss to the misery of a $1.2 billion government fine",
+      "url": "https://www.marketwatch.com/story/bank-of-america-adds-a-profit-miss-to-the-misery-of-a-1-2-billion-government-fine-d4420bfa?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Movers",
+      "timestamp": "2026-10-14T13:52:00Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
+    },
+    {
+      "headline": "Home BancShares earnings on deck as regional bank faces revenue test",
+      "url": "https://www.investing.com/news/earnings/home-bancshares-earnings-on-deck-as-regional-bank-faces-revenue-test-93CH-4949555",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-14T13:50:21Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
+    },
+    {
+      "headline": "CoreWeave shares sink 13% as Musk’s ‘Yikes’ highlights AI debt concerns",
+      "url": "https://www.investing.com/news/stock-market-news/coreweave-shares-sink-13-as-musks-yikes-highlights-ai-debt-concerns-4949553",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-14T13:50:06Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
+    },
+    {
+      "headline": "10-year Treasury yield jumps as September core inflation comes in hotter than expected",
+      "url": "https://www.cnbc.com/2026/10/14/us-treasury-yields-cpi-inflation-report.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-14T13:48:01Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
+    },
+    {
+      "headline": "BlackRock now manages assets equal to half the size of the U.S. economy after 15% growth",
+      "url": "https://www.marketwatch.com/story/blackrock-now-has-assets-equal-to-half-the-size-of-the-u-s-economy-after-15-growth-c382b289?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "category": "Markets",
-      "timestamp": "2026-10-14T13:36:00Z",
-      "firstSeen": "2026-10-14T13:46:36Z"
+      "timestamp": "2026-10-14T13:46:00Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
     },
     {
-      "headline": "BJ’s Restaurants earnings up next: Same-store sales in focus",
-      "url": "https://www.investing.com/news/earnings/bjs-restaurants-earnings-up-next-samestore-sales-in-focus-93CH-4949496",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-14T13:35:58Z",
-      "firstSeen": "2026-10-14T13:46:36Z"
-    },
-    {
-      "headline": "Trump's diesel dilemma — by the numbers",
-      "url": "https://www.cnbc.com/2026/10/14/trumps-diesel-dilemma-by-the-numbers.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-14T13:35:46Z",
-      "firstSeen": "2026-10-14T13:46:36Z"
-    },
-    {
-      "headline": "Wall Street opens in the red after mostly hotter-than-expected CPI report",
-      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-muted-after-chip-losses-drag-wall-street-cpi-data-awaited-4947807",
-      "source": "Investing.com",
+      "headline": "CITIGROUP EXPECTS US FED TO DELIVER A 25 BP RATE HIKE IN DECEMBER 2026 VS PRIOR FORECAST OF NO CHANGE THIS YEAR",
+      "url": "https://t.me/WalterBloomberg/36891",
+      "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Macro",
-      "timestamp": "2026-10-14T13:35:07Z",
-      "firstSeen": "2026-10-14T13:46:36Z"
-    },
-    {
-      "headline": "ManpowerGroup earnings loom: Can staffing rebound sustain momentum?",
-      "url": "https://www.investing.com/news/earnings/manpowergroup-earnings-loom-can-staffing-rebound-sustain-momentum-93CH-4949494",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-14T13:35:03Z",
-      "firstSeen": "2026-10-14T13:46:36Z"
+      "timestamp": "2026-10-14T13:40:41Z",
+      "firstSeen": "2026-10-14T14:01:01Z"
     },
     {
       "headline": "WALL STREET SET TO RAISE CORE PCE INFLATION FORECASTS AFTER HOT CPI REPORT September's stronger-than-expected CPI data could push core PCE inflation estimates to at least 0.3% MoM, up from the prev...",
@@ -138,14 +146,6 @@
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Macro",
       "timestamp": "2026-10-14T13:19:54Z",
-      "firstSeen": "2026-10-14T13:31:45Z"
-    },
-    {
-      "headline": "$NFLX - NETFLIX CUTS 1,000 JOBS AS SHARES FALL 40% Netflix is laying off 6% of its workforce, its biggest cuts since 2022, amid slowing growth and weaker customer engagement. Shares are down over 4...",
-      "url": "https://t.me/WalterBloomberg/36888",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Movers",
-      "timestamp": "2026-10-14T13:12:02Z",
       "firstSeen": "2026-10-14T13:31:45Z"
     }
   ]
