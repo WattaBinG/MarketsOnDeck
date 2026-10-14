@@ -2,12 +2,30 @@
   "date": "2026-10-15",
   "dateLabel": "Thursday, October 15",
   "events": [
-    { "time": "6:30 AM ET", "event": "PNC Financial Earnings (BMO)" },
-    { "time": "Before Market Open", "event": "US Bancorp Earnings (BMO)" },
-    { "time": "8:30 AM ET", "event": "Retail Sales (Sept)" },
-    { "time": "8:30 AM ET", "event": "PPI (Sept)" },
-    { "time": "8:30 AM ET", "event": "Weekly Jobless Claims" },
-    { "time": "After Market Close", "event": "Alcoa Earnings (AMC)" }
+    {
+      "time": "4:30 AM ET",
+      "event": "Producer Price Index",
+      "kind": "ppi",
+      "prev": "+0.4%"
+    },
+    {
+      "time": "8:30 AM ET",
+      "event": "Initial Jobless Claims",
+      "kind": "initial_claims",
+      "prev": "197K"
+    },
+    {
+      "time": "10:30 AM ET",
+      "event": "EIA Weekly Natural Gas Storage Report",
+      "kind": "natural_gas_storage",
+      "prev": "natural gas +85 Bcf"
+    }
   ],
-  "calendarUrl": "https://www.investing.com/economic-calendar/"
+  "note": null,
+  "calendarUrl": "https://www.census.gov/economic-indicators/",
+  "sources": [
+    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
+    "https://www.bls.gov/schedule/news_release/bls.ics",
+    "https://www.census.gov/economic-indicators/"
+  ]
 }
