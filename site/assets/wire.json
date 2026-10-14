@@ -1,15 +1,15 @@
 {
-  "asOf": "2026-10-14T19:49:06Z",
-  "asOfLabel": "3:49 PM ET",
+  "asOf": "2026-10-14T20:01:03Z",
+  "asOfLabel": "4:01 PM ET",
   "topStory": {
-    "headline": "Notable Wednesday Option Activity: GLXY, BZH, BX",
-    "url": "https://www.nasdaq.com/articles/notable-wednesday-option-activity-glxy-bzh-bx",
-    "source": "Nasdaq",
-    "category": "Markets",
-    "timestamp": "2026-10-14T19:21:57Z",
+    "headline": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
+    "url": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html",
+    "source": "CNBC",
+    "category": "Macro",
+    "timestamp": "2026-10-14T19:54:01Z",
     "firstSeen": "2026-10-14T19:49:06Z",
-    "leadSince": "2026-10-14T19:49:06Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "leadSince": "2026-10-14T20:01:03Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
@@ -17,24 +17,96 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-14T19:49:06Z",
+      "timestamp": "2026-10-14T20:01:03Z",
       "firstSeen": "2026-10-13T11:30:42Z"
     },
     {
-      "headline": "CoreWeave shares tumble as bond yields near 15% on concern about AI borrowing binge",
-      "url": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-10-14T19:47:50Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
+      "headline": "The Federal Bureau of Investigation of the United States refuted reports about its Director Kash Patel’s visit to Russia in a statement, posted on the X social network: <> <:neort:875080101035917332>",
+      "url": "https://vk.cc/d2Uqbi",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-14T19:58:36Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
     },
     {
-      "headline": "Highest Volume Contracts / No Index/ETFs",
-      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
+      "headline": "Apple plans to launch Apple Intelligence in China in iOS 27.3. $AAPL",
+      "url": "https://x.com/financialjuice/status/2110458417106330059",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-14T19:51:37Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "🔴 MOC IMBALANCE S&P 500: 1419.0 MLN NASDAQ 100: 599.6 MLN DOW 30: 45.5 MLN MAG 7: 356.7 MLN $MACRO",
+      "url": "https://x.com/financialjuice/status/2110458339217801455",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-14T19:45:43Z",
-      "firstSeen": "2026-10-14T19:31:33Z"
+      "timestamp": "2026-10-14T19:51:36Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "KNOP Stock Crowded With Sellers",
+      "url": "https://www.nasdaq.com/articles/knop-stock-crowded-sellers",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-14T19:50:02Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "State Street SPDR S&P 600 Small Cap Growth (SLYG) Shares Cross Below 200 DMA",
+      "url": "https://www.nasdaq.com/articles/state-street-spdr-sp-600-small-cap-growth-slyg-shares-cross-below-200-dma",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-14T19:49:36Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "iShares U.S. Telecommunications (IYZ) Shares Cross Below 200 DMA",
+      "url": "https://www.nasdaq.com/articles/ishares-us-telecommunications-iyz-shares-cross-below-200-dma",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-10-14T19:49:34Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "TTI Crosses Critical Technical Indicator",
+      "url": "https://www.nasdaq.com/articles/tti-crosses-critical-technical-indicator-0",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-14T19:49:32Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "IJR Makes Notable Cross Below Critical Moving Average",
+      "url": "https://www.nasdaq.com/articles/ijr-makes-notable-cross-below-critical-moving-average",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-14T19:49:27Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "iShares S&P Small-Cap 600 Value Breaks Below 200-Day Moving Average - Notable for IJS",
+      "url": "https://www.nasdaq.com/articles/ishares-sp-small-cap-600-value-breaks-below-200-day-moving-average-notable-ijs",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-14T19:49:21Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "Shares of PUMP Now Oversold",
+      "url": "https://www.nasdaq.com/articles/shares-pump-now-oversold",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-10-14T19:49:18Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
+    },
+    {
+      "headline": "NPK International (NPKI) Shares Enter Oversold Territory",
+      "url": "https://www.nasdaq.com/articles/npk-international-npki-shares-enter-oversold-territory-0",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-10-14T19:49:16Z",
+      "firstSeen": "2026-10-14T20:01:03Z"
     },
     {
       "headline": "Stocks fall, dollar rallies as US inflation tops forecasts",
@@ -42,78 +114,6 @@
       "source": "Investing.com",
       "category": "Macro",
       "timestamp": "2026-10-14T19:43:32Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "Explainer-What is Starshield, SpaceX’s military version of Starlink?",
-      "url": "https://www.investing.com/news/stock-market-news/explainerwhat-is-starshieldspacexs-military-version-of-starlink-4949897",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-14T19:42:49Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "Fed’s Goolsbee says September CPI data was discouraging - Yahoo Finance",
-      "url": "https://www.investing.com/news/economy-news/feds-goolsbee-says-september-cpi-data-was-discouraging--yahoo-finance-4949896",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-14T19:36:48Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "Q3 earnings strategy: where expectations look low and where beats are priced in",
-      "url": "https://www.investing.com/news/stock-market-news/q3-earnings-strategy-where-expectations-look-low-and-where-beats-are-priced-in-93CH-4949895",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-14T19:31:49Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "Asset manager earnings: record AUM and strong inflows, but shares mixed",
-      "url": "https://www.investing.com/news/stock-market-news/asset-manager-earnings-record-aum-and-strong-inflows-but-shares-mixed-93CH-4949894",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-14T19:31:38Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "Eight US states sue OpenAI, claiming ChatGPT harms children",
-      "url": "https://www.investing.com/news/stock-market-news/eight-us-states-sue-openai-claiming-chatgpt-harms-children-4949879",
-      "source": "Investing.com",
-      "category": "AI",
-      "timestamp": "2026-10-14T19:30:36Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "Wall Street banks see robust deal pipeline despite market volatility",
-      "url": "https://www.investing.com/news/economy-news/wall-street-banks-see-robust-deal-pipeline-despite-market-volatility-4949761",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-14T19:30:23Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "My wife says we can’t afford to retire. I vetoed her $8,000 trip to Italy. We’re in our 60s and have $4 million. Do I keep working?",
-      "url": "https://www.marketwatch.com/story/my-wife-says-we-cant-afford-to-retire-we-have-4-million-do-i-just-keep-working-f1b6b085?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-14T19:30:00Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "Bank earnings scorecard: winners and misses across two days of results",
-      "url": "https://www.investing.com/news/stock-market-news/bank-earnings-scorecard-winners-and-misses-across-two-days-of-results-93CH-4949892",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-14T19:28:54Z",
-      "firstSeen": "2026-10-14T19:49:06Z"
-    },
-    {
-      "headline": "Kimco Realty's Class M Preferred Stock Shares Cross 7% Yield Mark",
-      "url": "https://www.nasdaq.com/articles/kimco-realtys-class-m-preferred-stock-shares-cross-7-yield-mark",
-      "source": "Nasdaq",
-      "category": "Macro",
-      "timestamp": "2026-10-14T19:22:22Z",
       "firstSeen": "2026-10-14T19:49:06Z"
     },
     {
