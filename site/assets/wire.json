@@ -1,14 +1,14 @@
 {
-  "asOf": "2026-10-15T20:45:45Z",
-  "asOfLabel": "4:45 PM ET",
+  "asOf": "2026-10-15T21:00:45Z",
+  "asOfLabel": "5:00 PM ET",
   "topStory": {
-    "headline": "U.S. stocks higher at close of trade; Dow Jones Industrial Average up 1.08%",
-    "url": "https://www.investing.com/news/stock-market-news/us-stocks-higher-at-close-of-trade-dow-jones-industrial-average-up-108-4952637",
-    "source": "Investing.com",
+    "headline": "Investors are dumping AI stocks as ‘tech wreck’ worsens. Here’s where they’re turning now.",
+    "url": "https://www.marketwatch.com/story/traders-pile-into-bonds-and-defensive-stocks-as-the-tech-wreck-picks-up-steam-48c04374?mod=mw_rss_topstories",
+    "source": "MarketWatch",
     "category": "Markets",
-    "timestamp": "2026-10-15T20:31:03Z",
+    "timestamp": "2026-10-15T20:40:00Z",
     "firstSeen": "2026-10-15T20:45:45Z",
-    "leadSince": "2026-10-15T20:45:45Z",
+    "leadSince": "2026-10-15T21:00:45Z",
     "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
@@ -17,104 +17,112 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-15T20:45:44Z",
+      "timestamp": "2026-10-15T21:00:45Z",
       "firstSeen": "2026-10-15T16:00:48Z"
     },
     {
-      "headline": "Nvidia and Cisco confirm multimillion-dollar donations to Trump's White House ballroom",
-      "url": "https://www.cnbc.com/2026/10/15/trump-ballroom-nvidia-cisco-donations.html",
+      "headline": "Trump says 'if Ken Paxton loses' Texas Senate race, blame Cornyn and Karl Rove",
+      "url": "https://www.cnbc.com/2026/10/15/trump-paxton-texas-talarico.html",
       "source": "CNBC",
       "category": "Geopolitics",
-      "timestamp": "2026-10-15T20:44:46Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
+      "timestamp": "2026-10-15T21:00:03Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
-      "headline": "Investors are dumping AI stocks as ‘tech wreck’ worsens. Here’s where they’re turning now.",
-      "url": "https://www.marketwatch.com/story/traders-pile-into-bonds-and-defensive-stocks-as-the-tech-wreck-picks-up-steam-48c04374?mod=mw_rss_topstories",
-      "source": "MarketWatch",
+      "headline": "ANTHROPIC’S IPO VALUATION EXPECTATIONS DROP FROM $2 TRILLION TO $1.5 TRILLION Some investors are considering a $1.5 trillion valuation for Anthropic’s upcoming IPO, down 25% from earlier expectatio...",
+      "url": "https://t.me/WalterBloomberg/37013",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Movers",
+      "timestamp": "2026-10-15T20:59:27Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
+    },
+    {
+      "headline": "BREAKING: Senator Elizabeth Warren is introducing a new bill targeting Wall Street executives with ties to Jeffrey Epstein, per The Guardian. “It’s time to hold the bankers who financed Jeffrey Eps...",
+      "url": "https://x.com/unusual_whales/status/2110837617776271668",
+      "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-15T20:40:00Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
+      "timestamp": "2026-10-15T20:58:51Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
-      "headline": "Anthropic taps nonprofits METR and SecureBio to help assess risks and safety practices",
-      "url": "https://www.cnbc.com/2026/10/15/anthropic-metr-securebio-ai-safety-evaluators.html",
-      "source": "CNBC",
+      "headline": "🔴 Some investors dial back Anthropic valuation expectations amid disappointing results, market selloff - Sources",
+      "url": "https://x.com/financialjuice/status/2110837599623684408",
+      "source": "MarketsOnDeck Discord",
       "category": "AI",
-      "timestamp": "2026-10-15T20:35:21Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
+      "timestamp": "2026-10-15T20:58:50Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
-      "headline": "Why is JB Hunt Transport stock sliding today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-jb-hunt-transport-stock-sliding-today-93CH-4952641",
+      "headline": "Wall Street just dumped AI. Hedge funds are massively short Russell. And Nasdaq just flashed a huge reversal signal. This could get violent. <> <:neort:875080101035917332>",
+      "url": "https://www.zerohedge.com/the-market-ear/wall-street-just-dumped-everything-right-next-big-squeeze",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-15T20:55:50Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
+    },
+    {
+      "headline": "Cohen & Steers stock leaps over 5% on strong inflows despite Q3 miss",
+      "url": "https://www.investing.com/news/earnings/cohen--steers-stock-leaps-over-5-on-strong-inflows-despite-q3-miss-93CH-4952671",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-15T20:51:05Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
+    },
+    {
+      "headline": "Freedom Broker upgrades JPMorgan stock rating to buy on valuation",
+      "url": "https://www.investing.com/news/analyst-ratings/freedom-broker-upgrades-jpmorgan-stock-rating-to-buy-on-valuation-93CH-4952669",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-15T20:31:28Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
+      "timestamp": "2026-10-15T20:50:49Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
-      "headline": "Brazil stocks lower at close of trade; Bovespa down 1.06%",
-      "url": "https://www.investing.com/news/stock-market-news/brazil-stocks-lower-at-close-of-trade-bovespa-down-106-4952628",
+      "headline": "Optimi Health at the ThinkEquity Conference: natural psilocybin push",
+      "url": "https://www.investing.com/news/transcripts/optimi-health-at-the-thinkequity-conference-natural-psilocybin-push-93CH-4952666",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-15T20:30:05Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
+      "timestamp": "2026-10-15T20:49:01Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
-      "headline": "Porsche reveals Mission S concept car that previews new design identity",
-      "url": "https://www.cnbc.com/2026/10/15/porsche-mission-s-concept-car.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-15T20:30:01Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
+      "headline": "Fed's Hammack: Anecdotal information provides important economic guidance",
+      "url": "https://x.com/financialjuice/status/2110835197314834600",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-15T20:48:50Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
-      "headline": "Big pharma stocks close near all-time highs as tech selloff pushes investors toward safer bets",
-      "url": "https://www.marketwatch.com/story/big-pharma-stocks-near-all-time-highs-as-tech-selloff-pushes-investors-toward-safer-bets-0a5d5d07?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-15T20:29:00Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
-    },
-    {
-      "headline": "Lantern Pharma at ThinkEquity Conference: AI drug push gains pace",
-      "url": "https://www.investing.com/news/transcripts/lantern-pharma-at-thinkequity-conference-ai-drug-push-gains-pace-93CH-4952625",
+      "headline": "Yemen’s Houthis hit palace in Aden, coalition details attacks on Saudi infrastructure",
+      "url": "https://www.investing.com/news/commodities-news/yemens-houthis-hit-palace-in-aden-coalition-details-attacks-on-saudi-infrastructure-4952575",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-15T20:28:07Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
+      "timestamp": "2026-10-15T20:48:36Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
-      "headline": "Cohen Steers earnings missed by $0.03, revenue fell short of estimates",
-      "url": "https://www.investing.com/news/earnings/cohen-steers-earnings-missed-by-003-revenue-fell-short-of-estimates-4952623",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-15T20:24:55Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
-    },
-    {
-      "headline": "Prologis tops third quarter estimates on strong demand",
-      "url": "https://www.investing.com/news/earnings/prologis-tops-third-quarter-estimates-on-strong-demand-4952622",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-15T20:24:32Z",
-      "firstSeen": "2026-10-15T20:45:45Z"
-    },
-    {
-      "headline": "Canadian government bond yields slide as yield curve flattens",
-      "url": "https://www.investing.com/news/economy-news/canadian-government-bond-yields-slide-as-yield-curve-flattens-4952615",
+      "headline": "Dollar recedes from 18-month high as bond rally tempers impact of hot inflation data",
+      "url": "https://www.investing.com/news/economy-news/dollar-retreats-from-18month-high-despite-hot-cpi-as-fed-officials-temper-hike-bets-4950378",
       "source": "Investing.com",
       "category": "Macro",
-      "timestamp": "2026-10-15T20:22:10Z",
-      "firstSeen": "2026-10-15T20:30:46Z"
+      "timestamp": "2026-10-15T20:48:21Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
-      "headline": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
-      "url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-15T20:18:02Z",
-      "firstSeen": "2026-10-15T20:30:46Z"
+      "headline": "Dollar slips as U.S. bond rally offsets hot PPI; euro sees best day in two months",
+      "url": "https://www.investing.com/news/forex-news/asia-fx-mixed-dollar-slips-after-hot-us-cpi-yen-firmson-intervention-warnings-4950494",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-15T20:47:27Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
+    },
+    {
+      "headline": "CoreWeave three co-founders sold $3.3 billion in shares since IPO",
+      "url": "https://www.investing.com/news/stock-market-news/coreweave-three-cofounders-sold-33-billion-in-shares-since-ipo-4952665",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-15T20:47:03Z",
+      "firstSeen": "2026-10-15T21:00:45Z"
     },
     {
       "headline": "WHITE HOUSE PREPARES PLANS TO USE WEAPON DUBBED \"MOTHER OF ALL BOMBS\" ON IRAN, SOURCES SAY - CBS NEWS",
@@ -139,14 +147,6 @@
       "category": "Markets",
       "timestamp": "2026-10-15T17:40:42Z",
       "firstSeen": "2026-10-15T17:45:44Z"
-    },
-    {
-      "headline": "APPLE AND META TEAM UP TO MAKE MUSE AI MODEL RUN ON MAC COMPUTERS - CNBC",
-      "url": "https://t.me/WalterBloomberg/37009",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "AI",
-      "timestamp": "2026-10-15T17:03:43Z",
-      "firstSeen": "2026-10-15T19:01:39Z"
     }
   ]
 }
