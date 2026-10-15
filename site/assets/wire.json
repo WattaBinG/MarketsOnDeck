@@ -1,104 +1,152 @@
 {
-  "asOf": "2026-10-15T14:28:00Z",
-  "asOfLabel": "10:28 AM ET",
+  "asOf": "2026-10-15T14:31:21Z",
+  "asOfLabel": "10:31 AM ET",
   "topStory": {
-    "headline": "Stock Market Today (Oct. 15, 2026): S&P 500 edges lower as tech sell-off continues",
-    "url": "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-oct-15-2026",
-    "source": "TheStreet",
+    "headline": "Nvidia, AMD, Micron fall as AI stock sell-off deepens",
+    "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
+    "source": "CNBC",
     "category": "Markets",
+    "timestamp": "2026-10-15T14:29:59Z",
+    "firstSeen": "2026-10-15T14:31:21Z",
+    "leadSince": "2026-10-15T14:31:21Z",
     "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
     {
-      "headline": "Stock market today: Hot inflation report drops tech, drives S&P 500, Dow and Nasdaq down",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-hot-inflation-report-drops-tech-drives-sp-500-nasdaq-down-152206632.html",
-      "source": "Yahoo Finance",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:00:00Z"
-    },
-    {
-      "headline": "Stock Market Today: Dow, S&P Live Updates for October 15",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-14/stock-market-today-dow-s-p-live-updates",
-      "source": "Bloomberg",
-      "category": "Markets",
-      "timestamp": "2026-10-15T13:00:00Z"
-    },
-    {
-      "headline": "Stock Market Today: S&P 500, Nasdaq 100 Futures Fall As Chip Stock Sell-Off Intensifies — SKHY, TSM, RKLB In Focus",
-      "url": "https://www.benzinga.com/markets/equities/26/10/62374362/stock-market-today-sp-500-nasdaq-100-futures-fall-as-chip-stock-sell-off-intensifies-skhy-tsm-rklb-in-focus",
-      "source": "Benzinga",
-      "category": "Movers",
-      "timestamp": "2026-10-15T12:30:00Z"
-    },
-    {
-      "headline": "Why is Space Exploration Technologies stock dropping today?",
-      "url": "https://za.investing.com/news/stock-market-news/why-is-space-exploration-technologies-stock-dropping-today-93CH-4506978",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-15T13:30:00Z"
-    },
-    {
-      "headline": "Why is Bloom Energy stock plunging today?",
-      "url": "https://za.investing.com/news/stock-market-news/why-is-bloom-energy-stock-plunging-today-93CH-4506974",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-15T13:28:00Z"
-    },
-    {
-      "headline": "Price: KLA (NASDAQ:KLAC) Stock Falls 3.2% — Should You Sell?",
-      "url": "https://www.marketbeat.com/instant-alerts/price-kla-nasdaq-klac-stock-falls-32-should-you-sell-2026-10-13/",
-      "source": "MarketBeat",
-      "category": "Movers",
-      "timestamp": "2026-10-13T15:00:00Z"
-    },
-    {
-      "headline": "U.S. Producer Prices Jump 1.3% In September, Much More Than Expected",
-      "url": "https://www.nasdaq.com/articles/us-producer-prices-jump-13-september-much-more-expected",
-      "source": "Nasdaq",
+      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+      "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-15T13:51:43Z"
+      "timestamp": "2026-10-15T14:31:21Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
     },
     {
-      "headline": "Markets price roughly 62% odds the Fed holds rates steady at its Oct. 28 meeting",
-      "url": "https://kalshi.com/markets/kxfeddecision/fed-meeting/kxfeddecision-26oct",
-      "source": "Kalshi",
-      "category": "Macro",
-      "timestamp": "2026-10-15T14:00:00Z"
+      "headline": "EIA NATURAL GAS CHANGE BCF ACTUAL 67B (FORECAST 74B, PREVIOUS 85B) $MACRO",
+      "url": "https://x.com/financialjuice/status/2110740080612532723",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-15T14:30:44Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
     },
     {
-      "headline": "Oil price hikes, Saudi-Houthi strikes carry on amid Trump's midterm pause on Iran war",
-      "url": "https://www.foxnews.com/live-news/us-iran-war-donald-trump-oil-nuclear-sites-hormuz-strait-october-14",
-      "source": "Fox News",
+      "headline": "How Windows is being optimized for Nvidia’s RTX Spark laptops",
+      "url": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-15T14:30:00Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "*EU BEGINS ASSESSING ADDITIONAL SECTORS FOR CHINA TRADE QUOTAS",
+      "url": "https://t.me/WalterBloomberg/36994",
+      "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Geopolitics",
-      "timestamp": "2026-10-14T18:00:00Z"
+      "timestamp": "2026-10-15T14:29:58Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
     },
     {
-      "headline": "Iran War Updates: Ships in Strait of Hormuz still face \"indiscriminate attacks,\" maritime monitor warns",
-      "url": "https://www.cbsnews.com/live-updates/iran-war-us-houthi-saudi-arabia-trump/",
-      "source": "CBS News",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T12:00:00Z"
+      "headline": "Google’s Universal Cart shopping tool launches in the US",
+      "url": "https://techcrunch.com/2026/10/15/googles-universal-cart-shopping-tool-launches-in-the-us/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-15T14:29:33Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
     },
     {
-      "headline": "Iran reportedly fortifies nuclear sites as it prepares for possible U.S. strikes after midterms",
-      "url": "https://www.cnbc.com/2026/10/13/iran-us-war-houthis-saudi-arabia-airport.html",
+      "headline": "Trump says Nidal Hasan execution won't be live-streamed",
+      "url": "https://www.cnbc.com/2026/10/15/trump-nidal-hasan-execution-livestream.html",
       "source": "CNBC",
       "category": "Geopolitics",
-      "timestamp": "2026-10-13T12:00:00Z"
+      "timestamp": "2026-10-15T14:27:23Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
     },
     {
-      "headline": "Iran calls latest U.S. proposal to end war \"insufficient\" as Netanyahu's corruption trial resumes",
-      "url": "https://www.pbs.org/newshour/world/iran-calls-latest-u-s-proposal-to-end-war-insufficient-as-netanyahus-corruption-trial-resumes",
-      "source": "PBS NewsHour",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-14T20:00:00Z"
+      "headline": "Southwest is overhauling its frequent flyer program. Here's what's changing",
+      "url": "https://www.cnbc.com/2026/10/15/southwest-rapid-rewards-tiers-a-list.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-15T14:25:01Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
     },
     {
-      "headline": "Attacks On Hormuz Shipping Hit Wartime High",
-      "url": "https://www.rferl.org/a/iran-live-blog-trump-middle-east/33803414.html",
-      "source": "RFE/RL",
+      "headline": "After Anthropic's pre-IPO (if not Reg FD) reveal, the company's odds of going public before Nov 30 are unchanged <:neort:875080101035917332>",
+      "url": "https://x.com/zerohedge/status/2110737965320405346",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-10-15T14:22:42Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "U.S. CONSIDERS USING “MOTHER OF ALL BOMBS” AGAINST IRAN The Pentagon has reportedly developed new strike plans targeting Iranian energy infrastructure and nuclear facilities, potentially involving...",
+      "url": "https://t.me/WalterBloomberg/36993",
+      "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Geopolitics",
-      "timestamp": "2026-10-14T16:00:00Z"
+      "timestamp": "2026-10-15T14:22:03Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "U.S. reportedly considers use of 'mother of all bombs' as Iran vows to fight on",
+      "url": "https://www.cnbc.com/2026/10/15/us-iran-war-trump-hormuz.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T14:19:26Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "$CRWV - COREWEAVE SHARES FALL TO LOWEST SINCE MAY 2025, LAST DOWN 8.3% AT $60.36",
+      "url": "https://t.me/WalterBloomberg/36992",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Movers",
+      "timestamp": "2026-10-15T14:19:11Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "U.S. crude oil prices rise as investors assess Middle East supply risks",
+      "url": "https://www.cnbc.com/2026/10/15/oil-prices-today-brent-wti.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T14:19:02Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "Crypto Fear and Greed Index: 53/100 = Neutral",
+      "url": "https://x.com/financialjuice/status/2110737022931632181",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-15T14:18:44Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "Why is SK hynix ADR stock sliding today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-sk-hynix-adr-stock-sliding-today-93CH-4952152",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-15T14:17:23Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "Dollar Index bearish reversal below 102.74: Live levels",
+      "url": "https://www.investing.com/news/stock-market-news/dollar-index-consolidates-near-double-top-at-102305-live-levels-93CH-4944781",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-15T14:16:54Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "Microsoft tests resistance at $535 after sharp rally: Live levels",
+      "url": "https://www.investing.com/news/stock-market-news/microsoft-nears-overbought-rsi-below-542-resistance-live-levels-93CH-4944772",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-15T14:16:41Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
+    },
+    {
+      "headline": "TRUMP SAYS FORT HOOD ATTACKER WILL BE EXECUTED BY FIRING SQUAD — NO LIVESTREAM President Donald Trump says Nidal Malik Hasan, the former U.S. Army major convicted of killing 13 people and wounding...",
+      "url": "https://t.me/WalterBloomberg/36991",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T14:09:53Z",
+      "firstSeen": "2026-10-15T14:31:21Z"
     }
   ]
 }
