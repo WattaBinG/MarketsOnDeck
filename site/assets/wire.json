@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-15T15:00:47Z",
-  "asOfLabel": "11:00 AM ET",
+  "asOf": "2026-10-15T15:16:25Z",
+  "asOfLabel": "11:16 AM ET",
   "topStory": {
     "headline": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
     "url": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html",
@@ -17,24 +17,128 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-15T15:00:47Z",
+      "timestamp": "2026-10-15T15:16:25Z",
       "firstSeen": "2026-10-15T14:31:21Z"
     },
     {
-      "headline": "JUST IN: The global smartphone market has had its worst quarter ever, per Bloomberg",
-      "url": "https://x.com/unusual_whales/status/2110747020898288126",
+      "headline": "Fed bids for 4-week bills total $7.4 bln.",
+      "url": "https://x.com/financialjuice/status/2110751444651606068",
       "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:58:43Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
+      "category": "Macro",
+      "timestamp": "2026-10-15T15:15:43Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
     },
     {
-      "headline": "**GERMANY PLANS MAJOR AI PARTNERSHIP WITH NVIDIA — HANDELSBLATT** German Chancellor Friedrich Merz is preparing a major AI partnership with Nvidia ($NVDA ), backed by hundreds of millions of euros...",
-      "url": "https://x.com/DeItaone/status/2110746783034884158",
+      "headline": "HUANG SAYS NVIDIA DOESN'T NEED TO BACKSTOP COREWEAVE",
+      "url": "https://t.me/WalterBloomberg/36999",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-15T15:13:50Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "HUANG: `COREWEAVE'S STRENGTH IS IMPROVING EVERY DAY'",
+      "url": "https://t.me/WalterBloomberg/36998",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-15T15:13:34Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "$CRWV - HUANG: COREWEAVE'S COST OF CAPITAL IS `ACTUALLY DECREASING'",
+      "url": "https://t.me/WalterBloomberg/36997",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-15T15:13:09Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "*HUANG: COREWEAVE'S COST OF CAPITAL IS `ACTUALLY DECREASING' *HUANG: `COREWEAVE'S STRENGTH IS IMPROVING EVERY DAY' recall that Nvidia helped rescue CoreWeave's downsized IPO and holds a ~$2 billion...",
+      "url": "https://x.com/zerohedge/status/2110750664808603996",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-10-15T15:12:43Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "Nvidia CEO Huang: No Need to Backstop CoreWeave $NVDA $CRWV",
+      "url": "https://x.com/financialjuice/status/2110750124825596295",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-15T14:57:43Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
+      "timestamp": "2026-10-15T15:10:43Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "Russia accuses Ukraine of attacking oil refinery after Zelensky says strikes to resume",
+      "url": "https://www.bbc.co.uk/news/articles/cqwyrnwd9dw1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T15:09:15Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "Elon Musk says Trump is 'ultimately' responsible for any curbs on Ukraine's Starshield systems",
+      "url": "https://www.cnbc.com/2026/10/15/elon-musk-starlink-ukraine-trump-energy-ceasefire.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T15:07:26Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "Nvidia Releases Nemotron 3.5 Super VL, a 120-Billion-Parameter Open Agentic AI Model $NVDA Nvidia launches Nemotron 3.5 Super VL, expanding its portfolio of open AI models Nvidia: New model feature...",
+      "url": "https://x.com/financialjuice/status/2110748908435509349",
+      "source": "MarketsOnDeck Discord",
+      "category": "AI",
+      "timestamp": "2026-10-15T15:05:43Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "US consumer inflation hotter than expected as midterms loom",
+      "url": "https://www.france24.com/en/video/20261015-us-consumer-inflation-hotter-than-expected-as-midterms-loom",
+      "source": "France 24",
+      "category": "Macro",
+      "timestamp": "2026-10-15T15:05:25Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "TSMC chip capacity is ‘fierce’ battleground for AI customers, amid record quarter",
+      "url": "https://www.cnbc.com/2026/10/15/nvidia-apple-broadcom-in-fierce-battle-to-make-chips-at-tsmc.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-15T15:04:22Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "Israel ex-security chief sues Netanyahu over October 7 claims",
+      "url": "https://www.france24.com/en/video/20261015-israel-ex-security-chief-sues-netanyahu-over-october-7-claims",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T15:04:02Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "PulteGroup options suggest 4.4% move after earnings report",
+      "url": "https://www.investing.com/news/stock-market-news/pultegroup-options-suggest-44-move-after-earnings-report-93CH-4952246",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-15T15:04:00Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "U.S. stocks mixed as tech softness and hot PPI offset by slide in Treasury yields",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-fall-as-hot-inflation-revives-fed-hike-concerns-4950317",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-15T15:03:52Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
+    },
+    {
+      "headline": "Union Pacific shares may move 4.1% on Oct. 22 earnings",
+      "url": "https://www.investing.com/news/stock-market-news/union-pacific-shares-may-move-41-on-oct-22-earnings-93CH-4952244",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-15T15:02:43Z",
+      "firstSeen": "2026-10-15T15:16:25Z"
     },
     {
       "headline": "GERMANY PLANS MAJOR AI PARTNERSHIP WITH NVIDIA — HANDELSBLATT German Chancellor Friedrich Merz is preparing a major AI partnership with Nvidia ($NVDA ), backed by hundreds of millions of euros in g...",
@@ -43,110 +147,6 @@
       "category": "Markets",
       "timestamp": "2026-10-15T14:57:05Z",
       "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "Trump says Nidal Hasan execution won't be livestreamed",
-      "url": "https://www.cnbc.com/2026/10/15/trump-nidal-hasan-execution-livestream.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T14:55:46Z",
-      "firstSeen": "2026-10-15T14:31:21Z"
-    },
-    {
-      "headline": "Goldman: \"Demand For Compute Can Grow Exponentially, But The Capital To Finance It Cannot\" <>",
-      "url": "https://www.zerohedge.com/markets/goldman-demand-compute-can-grow-exponentially-capital-finance-it-cannot",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:55:44Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "Nandy 'minded to intervene' in Sky's £1.6bn takeover of ITV entertainment arm",
-      "url": "https://www.bbc.co.uk/news/articles/cm79pe5yej7no?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:55:21Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "German Government to collaborate with NVIDIA on AI - Handelsblatt. $NVDA",
-      "url": "https://x.com/financialjuice/status/2110745379973333395",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:51:43Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "U.S. reportedly considers use of 'mother of all bombs' as Iran vows to fight on",
-      "url": "https://www.cnbc.com/2026/10/15/us-iran-war-trump-hormuz.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T14:51:06Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "Progressive Stock Has Turned $10,000 Into More Than $90,000 in 10 Years",
-      "url": "https://www.nasdaq.com/articles/progressive-stock-has-turned-10000-more-90000-10-years",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:48:00Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "EUFN, BMNZ: Big ETF Outflows",
-      "url": "https://www.nasdaq.com/articles/eufn-bmnz-big-etf-outflows",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:47:59Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "SCHR, YRAM: Big ETF Inflows",
-      "url": "https://www.nasdaq.com/articles/schr-yram-big-etf-inflows",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:47:50Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "State Street (STT) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/state-street-stt-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:46:06Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "New York Manufacturing Index Surges To Nearly Five-Year High In October",
-      "url": "https://www.nasdaq.com/articles/new-york-manufacturing-index-surges-nearly-five-year-high-october",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-15T14:45:00Z",
-      "firstSeen": "2026-10-15T15:00:47Z"
-    },
-    {
-      "headline": "UKRAINE REPORTEDLY RUNS OUT OF PATRIOT MISSILES Ukraine has exhausted its supply of U.S.-made Patriot interceptors, according to a CNN source. The shortage leaves the country more vulnerable to Rus...",
-      "url": "https://t.me/WalterBloomberg/36995",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T14:31:44Z",
-      "firstSeen": "2026-10-15T14:45:42Z"
-    },
-    {
-      "headline": "*EU BEGINS ASSESSING ADDITIONAL SECTORS FOR CHINA TRADE QUOTAS",
-      "url": "https://t.me/WalterBloomberg/36994",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T14:29:58Z",
-      "firstSeen": "2026-10-15T14:31:21Z"
-    },
-    {
-      "headline": "U.S. CONSIDERS USING “MOTHER OF ALL BOMBS” AGAINST IRAN The Pentagon has reportedly developed new strike plans targeting Iranian energy infrastructure and nuclear facilities, potentially involving...",
-      "url": "https://t.me/WalterBloomberg/36993",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T14:22:03Z",
-      "firstSeen": "2026-10-15T14:31:21Z"
     }
   ]
 }
