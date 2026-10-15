@@ -1,15 +1,15 @@
 {
-  "asOf": "2026-10-15T08:01:18Z",
-  "asOfLabel": "4:01 AM ET",
+  "asOf": "2026-10-15T08:15:35Z",
+  "asOfLabel": "4:15 AM ET",
   "topStory": {
-    "headline": "Tech stocks plunge as Fed rate hike fears, AI funding worries mount; ASML, SK Hynix slump",
+    "headline": "Nvidia, AMD, Micron fall as AI stocks continue $1 trillion selloff amid mounting concerns",
     "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
     "source": "CNBC",
-    "category": "Macro",
-    "timestamp": "2026-10-15T07:28:44Z",
+    "category": "Markets",
+    "timestamp": "2026-10-15T08:11:34Z",
     "firstSeen": "2026-10-15T06:46:14Z",
     "leadSince": "2026-10-15T07:15:52Z",
-    "image": "/assets/images/wire-macro.jpg"
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
     {
@@ -17,16 +17,40 @@
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-15T08:01:18Z",
+      "timestamp": "2026-10-15T08:15:34Z",
       "firstSeen": "2026-10-13T11:30:42Z"
     },
     {
-      "headline": "ECB's Kazaks: Inflationary forces still stronger in immediate future.",
-      "url": "https://x.com/financialjuice/status/2110641951406272993",
+      "headline": "BoE's Breeden: easing of labor market hopes to avoid wage price pressure like in 2022",
+      "url": "https://x.com/financialjuice/status/2110644701728845890",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-15T08:11:42Z",
+      "firstSeen": "2026-10-15T08:15:35Z"
+    },
+    {
+      "headline": "Bank of England’s Breeden: companies speak to focus on cost-cutting not passing on energy price shock",
+      "url": "https://x.com/financialjuice/status/2110644313134645611",
       "source": "MarketsOnDeck Discord",
       "category": "Macro",
-      "timestamp": "2026-10-15T08:00:41Z",
-      "firstSeen": "2026-10-15T08:01:18Z"
+      "timestamp": "2026-10-15T08:10:41Z",
+      "firstSeen": "2026-10-15T08:15:35Z"
+    },
+    {
+      "headline": "TSMC posts record profit for a sixth straight quarter, beating estimates on AI boom",
+      "url": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-15T08:09:37Z",
+      "firstSeen": "2026-10-15T08:15:35Z"
+    },
+    {
+      "headline": "ECB's Kazaks: ECB is in no immediate need to rush on rates.",
+      "url": "https://x.com/financialjuice/status/2110642006175150231",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-15T08:01:42Z",
+      "firstSeen": "2026-10-15T08:15:35Z"
     },
     {
       "headline": "Elon Musk says Trump is 'ultimately' responsible for any curbs on Ukraine's Starshield systems",
@@ -51,6 +75,14 @@
       "category": "Markets",
       "timestamp": "2026-10-15T07:46:52Z",
       "firstSeen": "2026-10-15T08:01:18Z"
+    },
+    {
+      "headline": "Ukraine to resume strikes on Russian refineries, shattering hopes of an 'energy ceasefire'",
+      "url": "https://www.cnbc.com/2026/10/15/ukraine-russia-energy-ceasefire-zelenskyy.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T07:46:30Z",
+      "firstSeen": "2026-10-15T08:15:35Z"
     },
     {
       "headline": "Euro bonds reclaim safe-haven status as equities falter on AI debt",
@@ -82,38 +114,6 @@
       "source": "Investing.com",
       "category": "Markets",
       "timestamp": "2026-10-15T07:42:52Z",
-      "firstSeen": "2026-10-15T08:01:18Z"
-    },
-    {
-      "headline": "EasyJet shares rise as Apollo takeover moves toward completion",
-      "url": "https://www.investing.com/news/stock-market-news/easyjet-shares-rise-as-apollo-takeover-moves-toward-completion-93CH-4950716",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-15T07:42:38Z",
-      "firstSeen": "2026-10-15T08:01:18Z"
-    },
-    {
-      "headline": "Hyundai to recall over 94,600 US vehicles over fire risk from overheating, NHTSA says",
-      "url": "https://www.investing.com/news/stock-market-news/hyundai-to-recall-over-94600-us-vehicles-over-fire-risk-from-overheating-nhtsa-says-4950715",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-15T07:42:23Z",
-      "firstSeen": "2026-10-15T08:01:18Z"
-    },
-    {
-      "headline": "UK economy sees surprise growth in August ahead of Healey's first Budget",
-      "url": "https://www.bbc.co.uk/news/articles/ck8dz1me439no?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-15T07:40:27Z",
-      "firstSeen": "2026-10-15T06:16:14Z"
-    },
-    {
-      "headline": "Earnings call transcript: AQ Group posts strong Q3 2026 growth as stock edges higher",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-aq-group-posts-strong-q3-2026-growth-as-stock-edges-higher-93CH-4950714",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-15T07:38:03Z",
       "firstSeen": "2026-10-15T08:01:18Z"
     },
     {
