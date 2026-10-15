@@ -1,34 +1,30 @@
 {
-  "date": "2026-10-15",
-  "dateLabel": "Thursday, October 15",
+  "date": "2026-10-16",
+  "dateLabel": "Friday, October 16",
   "events": [
     {
-      "time": "4:30 AM ET",
-      "event": "Producer Price Index",
-      "kind": "ppi",
-      "prev": "+0.4%",
-      "actual": "PPI +1.3% m/m"
+      "time": "Before Mkt Open ET",
+      "event": "Travelers Earnings (BMO)"
+    },
+    {
+      "time": "8:00 AM ET",
+      "event": "Truist Financial Earnings (BMO)"
     },
     {
       "time": "8:30 AM ET",
-      "event": "Initial Jobless Claims",
-      "kind": "initial_claims",
-      "prev": "197K",
-      "actual": "199K"
+      "event": "Import & Export Prices"
     },
     {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Natural Gas Storage Report",
-      "kind": "natural_gas_storage",
-      "prev": "natural gas +85 Bcf",
-      "actual": "natural gas +67 Bcf"
+      "time": "9:15 AM ET",
+      "event": "Industrial Production"
     }
   ],
   "note": null,
   "calendarUrl": "https://www.census.gov/economic-indicators/",
   "sources": [
-    "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
     "https://www.bls.gov/schedule/news_release/bls.ics",
-    "https://www.census.gov/economic-indicators/"
+    "https://www.federalreserve.gov/releases/g17/",
+    "https://www.nasdaq.com/market-activity/stocks/trv",
+    "https://ir.regions.com/news-events/press-releases"
   ]
 }
