@@ -1,105 +1,17 @@
 {
-  "asOf": "2026-10-15T17:15:43Z",
-  "asOfLabel": "1:15 PM ET",
+  "asOf": "2026-10-15T17:25:08Z",
+  "asOfLabel": "1:25 PM ET",
   "topStory": {
-    "headline": "Apple and Meta team up to make Muse AI model run on Mac computers",
-    "url": "https://www.cnbc.com/2026/10/15/apple-meta-partner-ai.html",
+    "headline": "AI stock sell-off deepens as global tech rout wipes out more than $1 trillion this week",
+    "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
     "source": "CNBC",
-    "category": "AI",
-    "timestamp": "2026-10-15T17:00:01Z",
-    "firstSeen": "2026-10-15T17:15:43Z",
-    "leadSince": "2026-10-15T17:15:43Z",
-    "image": "/assets/images/wire-ai.jpg"
+    "category": "Markets",
+    "timestamp": "2026-10-15T17:25:08Z",
+    "firstSeen": "2026-10-15T17:25:08Z",
+    "leadSince": "2026-10-15T17:25:08Z",
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
-    {
-      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-15T17:15:42Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
-    },
-    {
-      "headline": "Did this year’s COLA beat inflation? Here’s how spending by American seniors stacks up so far in 2026.",
-      "url": "https://www.marketwatch.com/story/did-this-years-cola-beat-inflation-heres-how-spending-by-american-seniors-stacks-up-so-far-in-2026-917c400c?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-10-15T17:07:00Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "The COLA wars are coming for Social Security",
-      "url": "https://www.marketwatch.com/story/the-cola-wars-are-coming-for-social-security-10c177f1?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-15T17:07:00Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "Your Social Security check will rise an average of $75 a month — will it be able to keep up with inflation?",
-      "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-10-15T17:06:00Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "The truth about being a landlord in retirement",
-      "url": "https://www.marketwatch.com/story/the-truth-about-being-a-landlord-in-retirement-5d1daf4c?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-15T17:05:00Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "Warren Buffett Once Summed Up Investing in 13 Words. Here's Why It's More Important Than Ever.",
-      "url": "https://www.nasdaq.com/articles/warren-buffett-once-summed-investing-13-words-heres-why-its-more-important-ever",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-15T17:05:00Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "**ANTHROPIC'S SLOWING REVENUE GROWTH DOES NOT SIGNAL WEAKER AI DEMAND** D.A. Davidson analysts Gil Luria and Turner Dischinger say Anthropic's slowing revenue growth should not be interpreted as a...",
-      "url": "https://x.com/DeItaone/status/2110778562844209600",
-      "source": "MarketsOnDeck Discord",
-      "category": "AI",
-      "timestamp": "2026-10-15T17:03:47Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "Westamerica Bancorporation Q3 Net Income Slips",
-      "url": "https://www.nasdaq.com/articles/westamerica-bancorporation-q3-net-income-slips",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-15T17:03:36Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "ANTHROPIC'S SLOWING REVENUE GROWTH DOES NOT SIGNAL WEAKER AI DEMAND D.A. Davidson analysts Gil Luria and Turner Dischinger say Anthropic's slowing revenue growth should not be interpreted as a broa...",
-      "url": "https://t.me/WalterBloomberg/37008",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "AI",
-      "timestamp": "2026-10-15T17:03:21Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "Meta releases an OpenAI model, keeps most advanced tech closed $META",
-      "url": "https://x.com/financialjuice/status/2110777936249016532",
-      "source": "MarketsOnDeck Discord",
-      "category": "AI",
-      "timestamp": "2026-10-15T17:01:47Z",
-      "firstSeen": "2026-10-15T17:15:43Z"
-    },
-    {
-      "headline": "$ADBE - ADOBE AND NVIDIA EXPAND COLLABORATION TO SPEED AGENTIC CREATION ADOBE - BRAND CONCIERGE WITH NVIDIA NEMOTRON AVAILABLE TO ENTERPRISE CUSTOMERS LATER THIS YEAR",
-      "url": "https://t.me/WalterBloomberg/37007",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-15T17:01:12Z",
-      "firstSeen": "2026-10-15T17:01:15Z"
-    },
     {
       "headline": "Trump says Nidal Hasan execution won't be livestreamed",
       "url": "https://www.cnbc.com/2026/10/15/trump-nidal-hasan-execution-livestream.html",
@@ -141,12 +53,124 @@
       "firstSeen": "2026-10-15T17:01:15Z"
     },
     {
-      "headline": "TRUMP LIVE https://t.co/MUrlXlLMx5",
-      "url": "https://t.me/WalterBloomberg/37006",
-      "source": "Walter Bloomberg (unofficial mirror)",
+      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-15T17:15:42Z",
+      "firstSeen": "2026-10-15T16:00:48Z"
+    },
+    {
+      "headline": "Did this year’s COLA beat inflation? Here’s how spending by American seniors stacks up so far in 2026.",
+      "url": "https://www.marketwatch.com/story/did-this-years-cola-beat-inflation-heres-how-spending-by-american-seniors-stacks-up-so-far-in-2026-917c400c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Macro",
+      "timestamp": "2026-10-15T17:07:00Z",
+      "firstSeen": "2026-10-15T17:15:43Z"
+    },
+    {
+      "headline": "The COLA wars are coming for Social Security",
+      "url": "https://www.marketwatch.com/story/the-cola-wars-are-coming-for-social-security-10c177f1?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-15T17:07:00Z",
+      "firstSeen": "2026-10-15T17:15:43Z"
+    },
+    {
+      "headline": "Your Social Security check will rise an average of $75 a month — will it be able to keep up with inflation?",
+      "url": "https://www.marketwatch.com/story/social-securitys-cola-will-be-3-6-in-2027-as-inflation-persists-f7c9dff2?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Macro",
+      "timestamp": "2026-10-15T17:06:00Z",
+      "firstSeen": "2026-10-15T17:15:43Z"
+    },
+    {
+      "headline": "Warren Buffett Once Summed Up Investing in 13 Words. Here's Why It's More Important Than Ever.",
+      "url": "https://www.nasdaq.com/articles/warren-buffett-once-summed-investing-13-words-heres-why-its-more-important-ever",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-15T17:05:00Z",
+      "firstSeen": "2026-10-15T17:15:43Z"
+    },
+    {
+      "headline": "Apple and Meta team up to make Muse AI model run on Mac computers",
+      "url": "https://www.cnbc.com/2026/10/15/apple-meta-partner-ai.html",
+      "source": "CNBC",
+      "category": "AI",
+      "timestamp": "2026-10-15T17:00:01Z",
+      "firstSeen": "2026-10-15T17:15:43Z"
+    },
+    {
+      "headline": "CoreWeave credit default swaps hit distress levels as investors sour on AI debt",
+      "url": "https://www.cnbc.com/2026/10/15/coreweave-credit-default-swaps-hit-distress-levels-as-investors-sour-on-ai-debt.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:00:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
+    },
+    {
+      "headline": "What's behind the sell-off in AI neocloud stocks like CoreWeave and Nebius",
+      "url": "https://www.cnbc.com/2026/10/15/whats-behind-the-sell-off-in-ai-neocloud-stocks-like-coreweave-and-nebius-.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-15T15:30:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
+    },
+    {
+      "headline": "US Stock Futures Today: CoreWeave, Dell, FMC, Intel, Micron, Penske",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-15/us-stock-futures-today-coreweave-dell-fmc-intel-micron-penske",
+      "source": "Bloomberg",
+      "category": "Markets",
+      "timestamp": "2026-10-15T11:00:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
+    },
+    {
+      "headline": "Rate Pressure Vs. AI Demand: Rising Treasury Yields Trigger Nvidia, AMD Slump",
+      "url": "https://www.benzinga.com/markets/tech/26/10/62393159/rate-pressure-vs-ai-demand-rising-treasury-yields-trigger-nvidia-amd-slump",
+      "source": "Benzinga",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:30:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
+    },
+    {
+      "headline": "Penske Automotive to go private in $16.3 billion deal with Penske Corp., Mitsui",
+      "url": "https://www.benzinga.com/trading-ideas/movers/26/10/62384532/penske-automotive-opko-health-ericsson-and-other-big-stocks-moving-higher-on-thursday",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-15T13:30:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
+    },
+    {
+      "headline": "Sandisk Stock Is Falling Thursday: What's Going On?",
+      "url": "https://www.benzinga.com/markets/tech/26/10/62379819/sandisk-stock-is-falling-thursday-whats-going-on",
+      "source": "Benzinga",
+      "category": "Movers",
+      "timestamp": "2026-10-15T14:00:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
+    },
+    {
+      "headline": "Bending Spoons stock soars on new Berkshire Hathaway investment",
+      "url": "https://finance.yahoo.com/markets/article/bending-spoons-stock-soars-on-new-berkshire-hathaway-investment-151759397.html",
+      "source": "Yahoo Finance",
+      "category": "Movers",
+      "timestamp": "2026-10-14T20:00:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
+    },
+    {
+      "headline": "Ukraine resumes attacks on Russian oil refineries, officials say, after brief truce",
+      "url": "https://npr.org/2026/10/15/g-s1-148194/russia-ukraine-war",
+      "source": "NPR",
       "category": "Geopolitics",
-      "timestamp": "2026-10-15T16:54:18Z",
-      "firstSeen": "2026-10-15T17:01:15Z"
+      "timestamp": "2026-10-15T14:00:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
+    },
+    {
+      "headline": "Ukraine says Starlink restriction disrupting military as Musk claims US controls those systems",
+      "url": "https://www.cnn.com/2026/10/14/europe/russia-ukraine-energy-strike-early-warning-intl-hnk",
+      "source": "CNN",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-14T18:00:00Z",
+      "firstSeen": "2026-10-15T17:25:08Z"
     }
   ]
 }
