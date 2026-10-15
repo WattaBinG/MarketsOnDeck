@@ -1,80 +1,144 @@
 {
-  "asOf": "2026-10-15T16:00:48Z",
-  "asOfLabel": "12:00 PM ET",
+  "asOf": "2026-10-15T16:16:17Z",
+  "asOfLabel": "12:16 PM ET",
   "topStory": {
-    "headline": "Wholesale prices jumped 6.3% annually in September, biggest gain since 2022",
-    "url": "https://www.cnbc.com/2026/10/15/september-producer-price-index-retail-sales-data.html",
-    "source": "CNBC",
-    "category": "Movers",
-    "timestamp": "2026-10-15T14:43:21Z",
-    "firstSeen": "2026-10-15T14:45:42Z",
-    "leadSince": "2026-10-15T14:45:42Z",
-    "image": "/assets/images/wire-movers.jpg"
+    "headline": "Japan MoF Official: We're always monitoring market moves carefully, we won't comment on each stock, forex, and bond market move.",
+    "url": "https://x.com/financialjuice/status/2110764049961013649",
+    "source": "MarketsOnDeck Discord",
+    "category": "Macro",
+    "timestamp": "2026-10-15T16:06:47Z",
+    "firstSeen": "2026-10-15T16:16:17Z",
+    "leadSince": "2026-10-15T16:16:17Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
-    {
-      "headline": "Highest Volume Contracts / No Index/ETFs",
-      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-15T16:00:50Z",
-      "firstSeen": "2026-10-15T15:31:20Z"
-    },
     {
       "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
       "category": "Macro",
-      "timestamp": "2026-10-15T16:00:48Z",
+      "timestamp": "2026-10-15T16:16:16Z",
       "firstSeen": "2026-10-15T16:00:48Z"
     },
     {
-      "headline": "EIA GASOLINE INVENTORIES ACTUAL 3.518M (FORECAST -0.911M, PREVIOUS 0.382M) $MACRO",
-      "url": "https://x.com/financialjuice/status/2110762759931801856",
+      "headline": "Microsoft completed pre-training on Model MAI-Base-2. $MSFT",
+      "url": "https://x.com/financialjuice/status/2110766543378452527",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-15T16:00:45Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
+      "timestamp": "2026-10-15T16:15:51Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
     },
     {
-      "headline": "EIA CRUDE OIL INVENTORIES ACTUAL -8.557M (FORECAST 0.15M, PREVIOUS -3.186M) $MACRO",
-      "url": "https://x.com/financialjuice/status/2110762747378180528",
+      "headline": "Highest Volume Contracts / No Index/ETFs",
+      "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-15T16:00:44Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
+      "timestamp": "2026-10-15T16:15:29Z",
+      "firstSeen": "2026-10-15T15:31:20Z"
     },
     {
-      "headline": "Stocks trading ex-div - Fri Oct 16",
-      "url": "https://unusualwhales.com/flow/dividends?utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-15T16:00:31Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
+      "headline": "Treasury yields slide as investors flee to safety of bonds amid tech rout",
+      "url": "https://www.cnbc.com/2026/10/15/us-treasury-yields-investors-economic-data-.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-15T16:14:05Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
     },
     {
-      "headline": "Watch Taiwan Not Treasuries To Time Top In Stocks <>",
-      "url": "https://www.zerohedge.com/markets/watch-taiwan-not-treasuries-time-top-stocks",
+      "headline": "Currie Slams 'Vibe' Oil Contracts As Trump Admin Halts SPR Drains, IEA Urges Massive Reserve Release <>",
+      "url": "https://www.zerohedge.com/energy/currie-slams-vibe-oil-contracts-trump-admin-halts-spr-drains-iea-urges-massive-reserve",
       "source": "MarketsOnDeck Discord",
       "category": "Geopolitics",
-      "timestamp": "2026-10-15T15:55:44Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
+      "timestamp": "2026-10-15T16:12:46Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
     },
     {
-      "headline": "TSMC chip capacity is ‘fierce’ battleground for AI customers, amid record quarter",
-      "url": "https://www.cnbc.com/2026/10/15/nvidia-apple-broadcom-in-fierce-battle-to-make-chips-at-tsmc.html",
+      "headline": "Nvidia, AMD, Dell sell-off in global tech rout on AI funding worries",
+      "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
       "source": "CNBC",
       "category": "Markets",
-      "timestamp": "2026-10-15T15:51:23Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
+      "timestamp": "2026-10-15T16:12:05Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
     },
     {
-      "headline": "Tether Global Investments fund buys $2.7m in Gold.com stock",
-      "url": "https://www.investing.com/news/insider-trading-news/tether-global-investments-fund-buys-27m-in-goldcom-stock-93CH-4952286",
+      "headline": "Japan MoF Official: There were no concerns voiced at the G7 & G20 about the risk of financial system instability from the AI sell-off, more important is fact global economy has shown resilience to...",
+      "url": "https://x.com/financialjuice/status/2110764574689448208",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:08:44Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
+    },
+    {
+      "headline": "Netherlands stocks lower at close of trade; AEX down 0.40%",
+      "url": "https://www.investing.com/news/stock-market-news/netherlands-stocks-lower-at-close-of-trade-aex-down-040-4952338",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-15T15:46:17Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
+      "timestamp": "2026-10-15T16:07:46Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
+    },
+    {
+      "headline": "Trump says Nidal Hasan execution won't be livestreamed",
+      "url": "https://www.cnbc.com/2026/10/15/trump-nidal-hasan-execution-livestream.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T16:07:24Z",
+      "firstSeen": "2026-10-15T15:31:20Z"
+    },
+    {
+      "headline": "Italy stocks lower at close of trade; Investing.com Italy 40 down 0.72%",
+      "url": "https://www.investing.com/news/stock-market-news/italy-stocks-lower-at-close-of-trade-investingcom-italy-40-down-072-4952337",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:07:17Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
+    },
+    {
+      "headline": "Asia Fights The Tape: Central Banks Dump Dollars As AI Unwind Sends Tech Currencies Tumbling <>",
+      "url": "https://www.zerohedge.com/markets/asia-fights-tape-central-banks-dump-dollars-ai-unwind-sends-tech-currencies-tumbling",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:06:44Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
+    },
+    {
+      "headline": "Germany stocks mixed at close of trade; DAX up 0.27%",
+      "url": "https://www.investing.com/news/stock-market-news/germany-stocks-mixed-at-close-of-trade-dax-up-027-4952336",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:06:24Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
+    },
+    {
+      "headline": "France stocks higher at close of trade; CAC 40 up 0.78%",
+      "url": "https://www.investing.com/news/stock-market-news/france-stocks-higher-at-close-of-trade-cac-40-up-078-4952335",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:05:35Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
+    },
+    {
+      "headline": "Belgium stocks higher at close of trade; BEL 20 up 0.81%",
+      "url": "https://www.investing.com/news/stock-market-news/belgium-stocks-higher-at-close-of-trade-bel-20-up-081-4952334",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:05:04Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
+    },
+    {
+      "headline": "JAPAN SENIOR MINISTRY OF FINANCE OFFICIAL SAYS G7, G20 MEETINGS DID NOT SPECIFICALLY DEBATE RECENT STOCK MARKET MOVES, WHEN ASKED ABOUT STEEP GLOBAL SELL-OFF",
+      "url": "https://t.me/WalterBloomberg/37004",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:04:05Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
+    },
+    {
+      "headline": "U.S. MORTGAGE RATES HOLD AT 7.4% AFTER SEVEN WEEKS OF INCREASES The average 30-year fixed mortgage rate remained at 7.4%, ending seven consecutive weeks of increases. Rates have climbed sharply fro...",
+      "url": "https://t.me/WalterBloomberg/37003",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-15T16:00:57Z",
+      "firstSeen": "2026-10-15T16:16:17Z"
     },
     {
       "headline": "RUSSIA'S PUTIN SAYS NO SIGNIFICANT DAMAGE HAS BEEN CAUSED BY RECENT UKRAINE'S STRIKES ON RUSSIAN REFINERIES - IFAX",
@@ -83,70 +147,6 @@
       "category": "Geopolitics",
       "timestamp": "2026-10-15T15:45:09Z",
       "firstSeen": "2026-10-15T15:46:28Z"
-    },
-    {
-      "headline": "Earnings call transcript: Jio Financial posts strong Q2 2027 growth as stock stays flat",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-jio-financial-posts-strong-q2-2027-growth-as-stock-stays-flat-93CH-4952285",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-15T15:44:32Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
-    },
-    {
-      "headline": "Innoviz at the ThinkEquity Conference: defense push broadens lidar case",
-      "url": "https://www.investing.com/news/transcripts/innoviz-at-the-thinkequity-conference-defense-push-broadens-lidar-case-93CH-4952284",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-15T15:43:22Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
-    },
-    {
-      "headline": "Trump says Nidal Hasan execution won't be livestreamed",
-      "url": "https://www.cnbc.com/2026/10/15/trump-nidal-hasan-execution-livestream.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T15:42:40Z",
-      "firstSeen": "2026-10-15T15:31:20Z"
-    },
-    {
-      "headline": "U.S. Stocks Recover From Early Weakness, Dow Moves Sharply Higher",
-      "url": "https://www.nasdaq.com/articles/us-stocks-recover-early-weakness-dow-moves-sharply-higher",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-15T15:40:34Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
-    },
-    {
-      "headline": "Cracks are beginning to show in the stock market, as doubts grow about AI investments",
-      "url": "https://www.nbcnews.com/business/markets/stock-market-ai-data-centers-doubts-rcna603710",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-15T15:38:19Z",
-      "firstSeen": "2026-10-15T16:00:48Z"
-    },
-    {
-      "headline": "*ECB OFFICIALS GET IMPATIENT FOR LAGARDE TO CLEAR UP HER PLANS",
-      "url": "https://t.me/WalterBloomberg/37001",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-10-15T15:25:49Z",
-      "firstSeen": "2026-10-15T15:31:20Z"
-    },
-    {
-      "headline": "ZELENSKYY: RUSSIA LAUNCHED NEARLY 1,000 DRONES AS UKRAINE SEEKS MORE AIR DEFENSE President Zelenskyy says Russia has launched nearly 1,000 drones since yesterday, alongside multiple waves of ballis...",
-      "url": "https://t.me/WalterBloomberg/37000",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T15:19:46Z",
-      "firstSeen": "2026-10-15T15:31:20Z"
-    },
-    {
-      "headline": "HUANG SAYS NVIDIA DOESN'T NEED TO BACKSTOP COREWEAVE",
-      "url": "https://t.me/WalterBloomberg/36999",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-15T15:13:50Z",
-      "firstSeen": "2026-10-15T15:16:25Z"
     }
   ]
 }
