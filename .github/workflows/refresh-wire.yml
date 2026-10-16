@@ -39,38 +39,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install feedparser pypdf
-      - name: Refresh wire
+      - name: Publish fresh data with cycle dedupe
+        id: publish
         env:
+          REFRESH_CYCLE: ${{ inputs.cycle }}
           DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
           DISCORD_NEWS_CHANNEL_ID: ${{ vars.DISCORD_NEWS_CHANNEL_ID }}
-        run: python3 scripts/refresh_wire.py | tee /tmp/out.txt
-      - name: Reshape ticker strip
-        run: python3 scripts/build_ticker.py
-      - name: Rank AI tools strip
-        run: python3 scripts/build_ai_strip.py
-      - name: Post watch results
-        run: python3 scripts/fetch_watch_results.py
-      - name: Log Market Pulse reading
-        run: python3 scripts/log_sentiment.py
-      - name: Commit if changed
-        run: |
-          if [ -z "$(git status --porcelain -- site/assets/wire.json site/assets/wire-archive.json site/index.html data/wire-state.json site/assets/ticker.json site/assets/ai-tools.json site/assets/watch-today.json site/assets/sentiment-history.json)" ]; then
-            echo "no changes"; exit 0
-          fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/assets/wire.json site/assets/wire-archive.json site/index.html data/wire-state.json site/assets/ticker.json site/assets/ai-tools.json site/assets/watch-today.json site/assets/sentiment-history.json
-          git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Refresh The Wire')"
-          for attempt in 1 2 3; do
-            git pull --rebase origin main && git push && break
-            test "$attempt" -lt 3 || exit 1
-            sleep $((attempt * 5))
-          done
+        run: python3 scripts/publish_refresh.py --task wire --cycle "$REFRESH_CYCLE"
       - name: Deploy committed snapshot to Cloudflare
+        if: steps.publish.outputs.published == 'true'
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

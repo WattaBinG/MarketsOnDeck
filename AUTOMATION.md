@@ -224,3 +224,24 @@ from the current Eastern date, in both the renderer and the browser.
 
 Tests: `node tests/test_trust.cjs` and
 `python3 -m unittest discover -s tests -p 'test_*.py'`.
+
+## Duplicate-cycle and publish-race recovery
+
+Wire and crypto share `refresh-publish-main` so these publishers serialize.
+Each uses `scripts/publish_refresh.py` to fetch current `main` before generating
+its owned files. A successful scheduled cycle writes a `Refresh-Cycle` commit
+trailer keyed by task and the UTC 15-minute bucket. A repeated dispatch for that
+bucket exits before generation and skips deploy. A no-change cycle still writes
+an empty receipt commit. Manual runs without a cycle are not deduped.
+
+If another writer advances `main` before push, the publisher discards its stale
+local generated commit, refreshes from current `main`, and regenerates the owned
+output. At most three attempts are allowed. Any unfinished rebase is aborted
+before a retry. Authentication, source, unchanged-remote push rejection and
+exhausted retries remain failures. A successful commit is deployed once by its
+workflow; no duplicate deploy is performed. This is consumer-side dedupe: it
+does not change the Cloudflare dispatcher or prove the source of duplicate
+trigger delivery. No new Cloudflare storage or binding is required.
+
+Offline tests: `python3 scripts/test_publish_refresh.py`. They use temporary
+local repositories, never production, brokerage data or external feeds.
