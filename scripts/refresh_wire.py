@@ -110,6 +110,12 @@ ATTENTION = re.compile(r"\b(record|all[- ]time (high|low)|crash|crisis|emergency
                        r"halted|suspended|blackout|meltdown|soars?|surges?|plunges?|craters?|"
                        r"explodes?|skyrockets?|tumbles?|suffers|slams|warns|warning|alert)\b", re.I)
 ATTENTION_BOOST = 1.30  # score multiplier when a cluster's headlines carry magnitude words
+
+# Flash bot data prints ("... ACTUAL -760.6B (FORECAST -, PREVIOUS 1,324.6B)")
+# stay as list items but can never be Top Story: the lead slot is for reported
+# headlines, not raw data flashes. (Oct 15: two one-minute-apart Japan prints
+# clustered, summed recency, and parked in the lead over real news.)
+DATA_PRINT = re.compile(r"\bACTUAL\b.{0,160}\(FORECAST[^)]*PREVIOUS[^)]*\)")
 # Syndicated promo and bot-written filler we never want on the wire.
 BLOCK = re.compile(r"(motley fool|fool\.com|options flow|/news/company-news/|^\d+ (incredible|top|smart) |reasons? to buy)", re.I)
 
@@ -162,15 +168,19 @@ def recency_factor(ts_epoch, now_epoch):
 
 
 def cluster_score(cluster, now_epoch):
-    """Deterministic, explainable: sum(source weight x recency), boosted
-    for cross-source corroboration and market relevance."""
-    # Items without a real publish time score at UNKNOWN_AGE_HOURS old so
-    # evergreen filler cannot win the lead on a fabricated "just now".
-    base = sum(SOURCE_W.get(it["source"], 1.0) *
-               recency_factor(it["_ts"] if it["_known_ts"] else now_epoch - UNKNOWN_AGE_HOURS * 3600,
-                              now_epoch)
-               for it in cluster["items"])
-    n_sources = len({it["source"] for it in cluster["items"]})
+    """Deterministic, explainable: best(source weight x recency) per source,
+    boosted for cross-source corroboration and market relevance."""
+    # A source cannot inflate the base by carrying the same story twice: only
+    # its best single item counts; the multiplier below rewards cross-SOURCE
+    # corroboration. Items without a real publish time carry an assumed age in
+    # _ts (assigned in main()), so evergreen filler never scores as brand-new.
+    best = {}
+    for it in cluster["items"]:
+        s_item = SOURCE_W.get(it["source"], 1.0) * recency_factor(it["_ts"], now_epoch)
+        if s_item > best.get(it["source"], 0.0):
+            best[it["source"]] = s_item
+    base = sum(best.values())
+    n_sources = len(best)
     heads = " ".join(it["headline"] for it in cluster["items"])
     corroboration = 1.0 + 0.35 * (n_sources - 1)
     relevance = 1.25 if (MACRO.search(heads) or BROAD.search(heads) or MOVE.search(heads)) else 1.0
@@ -581,6 +591,49 @@ def main():
         print(f"only {ok_feeds}/{len(FEEDS)} feeds succeeded (need {minimum_ok}); leaving last good wire in place", file=sys.stderr)
         sys.exit(1)
 
+    # First-seen stamps (Keith's spec): every item keeps the timestamp of the
+    # run that first carried it, and that stamp travels with the story as it
+    # rises or falls. It is never overwritten with a later refresh time.
+    # Stamps persist in wire-state.json (not only the prior wire.json), so an
+    # aged-out item cannot re-enter later with a fresh stamp.
+    try:
+        prior = json.loads((ASSETS / "wire.json").read_text())
+    except Exception:
+        prior = {}
+    prior_first = {}
+    if isinstance(prior, dict):
+        for old_it in (prior.get("items") or []):
+            if old_it.get("url"):
+                prior_first[old_it["url"]] = old_it.get("firstSeen") or old_it.get("timestamp")
+        old_top = prior.get("topStory") or {}
+        if old_top.get("url"):
+            prior_first[old_top["url"]] = old_top.get("firstSeen") or old_top.get("timestamp")
+    state_first = state.setdefault("firstSeen", {})
+    now_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
+    for it in items:
+        it["firstSeen"] = state_first.get(it["url"]) or prior_first.get(it["url"]) or now_iso
+        state_first[it["url"]] = it["firstSeen"]
+        if not it["_known_ts"]:
+            # No publisher timestamp: never stamp "now". Enter at an assumed
+            # UNKNOWN_AGE_HOURS old and age in real time from the persisted
+            # first-seen stamp, so back-catalog filler cannot pose as breaking
+            # news, sort to the top, or hold a homepage slot past 36h of age.
+            try:
+                fs_epoch = datetime.fromisoformat(it["firstSeen"].replace("Z", "+00:00")).timestamp()
+            except Exception:
+                fs_epoch = now_epoch
+            it["_ts"] = fs_epoch - UNKNOWN_AGE_HOURS * 3600
+            it["timestamp"] = it["firstSeen"]
+    fs_cut = now_epoch - 45 * 86400
+    pruned = {}
+    for u, t in state_first.items():
+        try:
+            if datetime.fromisoformat(t.replace("Z", "+00:00")).timestamp() >= fs_cut:
+                pruned[u] = t
+        except Exception:
+            continue
+    state["firstSeen"] = pruned
+
     items.sort(key=lambda x: x["_ts"], reverse=True)
 
     fresh = [it for it in items if it["_ts"] >= cutoff]
@@ -617,36 +670,23 @@ def main():
         print(f"  {score:5.2f} | {base:5.2f} x {1 + .35*(n_src-1):.2f} x {rel:.2f} x {att:.2f} | "
               f"{n_src} src | {rep['headline'][:80]}")
 
-    # Incumbent lead from the current wire.json.
-    try:
-        prior = json.loads((ASSETS / "wire.json").read_text())
-        incumbent = prior.get("topStory") or None
-    except Exception:
-        prior = {}
+    # Incumbent lead from the current wire.json (prior loaded above).
+    incumbent = prior.get("topStory") or None
+    # A flash data print never holds the lead slot, even as incumbent.
+    if incumbent and DATA_PRINT.search(incumbent.get("headline", "")):
+        print("incumbent lead is a flash data print; releasing the slot")
         incumbent = None
-
-    # First-seen stamps (Keith's spec): every item keeps the timestamp of the
-    # run that first carried it, and that stamp travels with the story as it
-    # rises or falls. It is never overwritten with a later refresh time.
-    prior_first = {}
-    if isinstance(prior, dict):
-        for old_it in (prior.get("items") or []):
-            if old_it.get("url"):
-                prior_first[old_it["url"]] = old_it.get("firstSeen") or old_it.get("timestamp")
-        old_top = prior.get("topStory") or {}
-        if old_top.get("url"):
-            prior_first[old_top["url"]] = old_top.get("firstSeen") or old_top.get("timestamp")
-    now_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
-    for it in items:
-        it["firstSeen"] = prior_first.get(it["url"], now_iso)
 
     challenger = None
     for _, _, _, _, c in scored:
-        if any(it["source"] != WB_SOURCE for it in c["items"]):
+        # Lead must be a reported headline from a real source: mirror-only
+        # clusters and flash data prints are list items, never Top Story.
+        if any(it["source"] != WB_SOURCE and not DATA_PRINT.search(it["headline"])
+               for it in c["items"]):
             challenger = c
             break
     if scored and challenger is not scored[0][4]:
-        print("top-scoring story is Walter-Bloomberg-only; mirror is never a sole lead source, "
+        print("top-scoring story is lead-ineligible (mirror-only or flash data print); "
               "lead goes to the next eligible story")
     lead_cluster, held = challenger, False
     if incumbent and challenger:
