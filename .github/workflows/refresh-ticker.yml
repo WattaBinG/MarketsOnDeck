@@ -1,0 +1,54 @@
+name: Refresh ticker strip
+# Autonomous replacement for the retired local Claude routines
+# "Ticker Refresh - Intraday" and "Ticker Refresh - Market Close".
+# Free keyless Yahoo quotes only; a failed fetch keeps the previous price
+# (stale beats faked). Window runs 13:00-21:30 UTC so it covers market
+# hours in BOTH EDT (9 AM-5:30 PM ET) and EST (8 AM-4:30 PM ET) - no
+# manual shift when DST ends Nov 1.
+on:
+  schedule:
+    - cron: '*/30 13-21 * * 1-5'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-publish-main
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Refresh ticker.json
+        run: python3 scripts/refresh_ticker.py | tee /tmp/out.txt
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- site/assets/ticker.json; then
+            echo "no changes"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/ticker.json
+          git commit -m "$(grep '^COMMIT_MSG=' /tmp/out.txt | cut -d= -f2- || echo 'Refresh ticker strip')"
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            test "$attempt" -lt 3 || exit 1
+            sleep $((attempt * 5))
+          done
+      - name: Deploy committed snapshot to Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          for attempt in 1 2 3; do
+            npx -y wrangler@4.136.1 deploy && break
+            test "$attempt" -lt 3 || exit 1
+            sleep $((attempt * 30))
+          done
