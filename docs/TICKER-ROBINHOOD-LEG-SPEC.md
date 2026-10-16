@@ -47,8 +47,8 @@ symbols belong on the public ticker with real prices - never amounts,
 sizes, or cost bases. The strip = the day's top movers + his portfolio
 symbols, deduped so a symbol appears exactly once. Options positions
 contribute their UNDERLYING symbol only - an option ticker never appears
-on the strip. Strip cap: MAX ~30 tickers total - portfolio symbols take
-priority, top movers fill the remaining slots.
+on the strip. Strip size: MIN ~15, MAX ~30 tickers total -
+portfolio symbols take priority, top movers fill the remaining slots.
 
 Interaction with the GitHub Yahoo bot: this leg is PRIMARY. The bot skips
 any snapshot fresher than 12 minutes and only resumes if this leg goes
