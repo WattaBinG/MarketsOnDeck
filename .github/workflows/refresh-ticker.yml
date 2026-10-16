@@ -27,6 +27,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Refresh ticker.json
+        env:
+          ALPACA_KEY_ID: ${{ secrets.ALPACA_KEY_ID }}
+          ALPACA_SECRET_KEY: ${{ secrets.ALPACA_SECRET_KEY }}
         run: python3 scripts/refresh_ticker.py | tee /tmp/out.txt
       - name: Commit if changed
         run: |
