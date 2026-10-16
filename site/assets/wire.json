@@ -1,39 +1,143 @@
 {
-  "asOf": "2026-10-16T13:31:40Z",
-  "asOfLabel": "9:31 AM ET",
+  "asOf": "2026-10-16T13:45:54Z",
+  "asOfLabel": "9:45 AM ET",
   "topStory": {
-    "headline": "$AAPL - **UBS WARNS OF LIMITED IPHONE SALES UPSIDE, MAINTAINS $296 APPLE TARGET** UBS reiterated its Neutral rating and $296 price target on Apple, citing concerns about weakening iPhone demand ind...",
-    "url": "https://x.com/DeItaone/status/2111086072520151212",
-    "source": "MarketsOnDeck Discord",
-    "category": "Markets",
-    "timestamp": "2026-10-16T13:25:58Z",
-    "firstSeen": "2026-10-16T13:31:40Z",
-    "leadSince": "2026-10-16T13:31:40Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "headline": "U.S. small-scale solar generation has quadrupled in the last decade",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68324",
+    "source": "EIA",
+    "category": "Macro",
+    "timestamp": "2026-10-16T14:00:00Z",
+    "firstSeen": "2026-10-16T13:16:35Z",
+    "leadSince": "2026-10-16T13:45:54Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
-    {
-      "headline": "U.S. small-scale solar generation has quadrupled in the last decade",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68324",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T14:00:00Z",
-      "firstSeen": "2026-10-16T13:16:35Z"
-    },
     {
       "headline": "Highest Volume Contracts / No Index/ETFs",
       "url": "https://unusualwhales.com/flow/hot_chains/v2?limit=50&issue_types[]=Common%20Stock&issue_types[]=ADR&order=volume&order_direction=desc&utm_source=discord&utm_content=notification&utm_campaign=338736813126451201&utm_medium=foreign_discord_server",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-16T13:31:36Z",
+      "timestamp": "2026-10-16T13:45:28Z",
       "firstSeen": "2026-10-16T13:31:40Z"
     },
     {
-      "headline": "Rate Hike Odds Tumble After Warsh Does Not Address October FOMC Meeting <>",
-      "url": "https://www.zerohedge.com/markets/rate-hike-odds-tumble-after-warsh-does-not-address-october-fomc-meeting",
+      "headline": "Tesla unveils long-delayed Roadster developed with SpaceX, fueling merger speculation",
+      "url": "https://www.cnbc.com/2026/10/15/tesla-roadster-reveal-what-to-know-about-the-delayed-ev.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-16T13:44:52Z",
+      "firstSeen": "2026-10-16T01:16:30Z"
+    },
+    {
+      "headline": "Russia’s Deputy PM Novak: Russian diesel supplies set to help balance global market.",
+      "url": "https://x.com/financialjuice/status/2111090554373026062",
       "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-16T13:43:58Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "$CRWV - COREWEAVE SHARES FALL 6.9% AFTER RISING 5.9% IN THE LAST SESSION",
+      "url": "https://t.me/WalterBloomberg/37043",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Movers",
+      "timestamp": "2026-10-16T13:41:32Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "Quantum Computing Is Still Years Away. These 6 Stocks Show Who Is Closest to Real Revenue.",
+      "url": "https://www.nasdaq.com/articles/quantum-computing-still-years-away-these-6-stocks-show-who-closest-real-revenue",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:39:00Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "US INDUSTRIAL PRODUCTION YOY ACTUAL 2.25% (FORECAST -, PREVIOUS 1.42%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2111089367246688659",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:38:58Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "Why is Skyworks Solutions stock climbing today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-skyworks-solutions-stock-climbing-today-93CH-4954303",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:38:07Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "Fifth Third earnings on deck as profitability pressures loom",
+      "url": "https://www.investing.com/news/earnings/fifth-third-earnings-on-deck-as-profitability-pressures-loom-93CH-4954300",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:37:10Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "Central bankers eye higher rates as AI boom fuels scramble for cash",
+      "url": "https://www.investing.com/news/economy-news/central-bankers-eye-higher-rates-as-ai-boom-fuels-scramble-for-cash-4954264",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:37:02Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "Wall St opens muted as tech jitters linger; Tesla gains",
+      "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-muted-as-tech-jitters-linger-tesla-gains-4954293",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:36:43Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "Here are Barclays’ preferred European utilities heading into earnings",
+      "url": "https://www.investing.com/news/stock-market-news/here-are-barclays-preferred-european-utilities-heading-into-earnings-93CH-4954291",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:36:35Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "CoreWeave stock, bond set for weekly plunge as rate-hike fears hit AI bet",
+      "url": "https://www.investing.com/news/economy-news/coreweave-shares-bonds-headed-for-steep-weekly-losses-as-ai-borrowing-concerns-mount-4953586",
+      "source": "Investing.com",
       "category": "Macro",
-      "timestamp": "2026-10-16T13:27:58Z",
+      "timestamp": "2026-10-16T13:36:28Z",
+      "firstSeen": "2026-10-16T10:30:50Z"
+    },
+    {
+      "headline": "$TSLA - TESLA SHARES UP NEARLY 1% AFTER CO UNVEILS NEW ROADSTER",
+      "url": "https://t.me/WalterBloomberg/37042",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Movers",
+      "timestamp": "2026-10-16T13:32:02Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "🔴 MOO IMBALANCE S&P 500: 240.1 MLN NASDAQ 100: 73.4 MLN DOW 30: 16.1 MLN MAG 7: 44.7 MLN $MACRO",
+      "url": "https://x.com/financialjuice/status/2111087513645563965",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:31:58Z",
+      "firstSeen": "2026-10-16T13:45:54Z"
+    },
+    {
+      "headline": "BOJ chief vows to keep raising rates, anchor inflation around target",
+      "url": "https://www.investing.com/news/economy-news/global-inflation-debate-puts-boj-ratehike-pace-in-spotlight-4953375",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-16T13:31:19Z",
+      "firstSeen": "2026-10-16T09:15:49Z"
+    },
+    {
+      "headline": "$AAPL - UBS WARNS OF LIMITED IPHONE SALES UPSIDE, MAINTAINS $296 APPLE TARGET UBS reiterated its Neutral rating and $296 price target on Apple, citing concerns about weakening iPhone demand indicat...",
+      "url": "https://t.me/WalterBloomberg/37041",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-16T13:25:17Z",
       "firstSeen": "2026-10-16T13:31:40Z"
     },
     {
@@ -43,110 +147,6 @@
       "category": "Macro",
       "timestamp": "2026-10-16T13:24:14Z",
       "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "Bad Inflation Cures Itself. Good Inflation Doesn't <>",
-      "url": "https://www.zerohedge.com/markets/bad-inflation-cures-itself-good-inflation-doesnt",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-16T13:20:58Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "Our top 10 things to watch in the stock market Friday",
-      "url": "https://www.cnbc.com/investingclub/2026/10/16/our-top-10-things-to-watch-in-the-stock-market-friday-.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:19:30Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "UK competition regulator targets Microsoft’s business software grip",
-      "url": "https://www.investing.com/news/stock-market-news/uk-competition-regulator-targets-microsofts-business-software-grip-4953421",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:19:16Z",
-      "firstSeen": "2026-10-16T09:15:49Z"
-    },
-    {
-      "headline": "Eli Lilly’s weight-loss pill wins EU drug regulator’s backing",
-      "url": "https://www.investing.com/news/stock-market-news/eli-lillys-weightloss-pill-wins-eu-drug-regulators-backing-4954218",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:18:45Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "ExxonMobil signals $4.5 billion refining earnings boost as margins soar",
-      "url": "https://www.investing.com/news/commodities-news/exxonmobil-signals-45-billion-refining-earnings-boost-as-margins-soar-4954171",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-16T13:18:28Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "Earnings call transcript: Truist beats on EPS in Q3 2026 as revenue misses",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-truist-beats-on-eps-in-q3-2026-as-revenue-misses-93CH-4954217",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:18:03Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "Why is BE Semiconductor Industries stock sliding today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-be-semiconductor-industries-stock-sliding-today-93CH-4954216",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:17:53Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "2 Best Tire Stocks to Own as Premium Makers Navigate Inflation Risks",
-      "url": "https://www.investing.com/news/stock-market-news/2-best-tire-stocks-to-own-as-premium-makers-navigate-inflation-risks-4954215",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-16T13:17:40Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "**U.S. INDUSTRIAL PRODUCTION BEATS EXPECTATIONS IN SEPTEMBER** U.S. industrial production rose 0.7% in September, beating expectations of 0.4%. 🔸 Manufacturing: +0.3% (in line) 🔸 Utilities: +3.5% 🔸...",
-      "url": "https://x.com/DeItaone/status/2111083829934866565",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:16:58Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "Why is Johnson Matthey stock climbing today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-johnson-matthey-stock-climbing-today-93CH-4954214",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:16:40Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "Goldman upgrades Zeta to Buy, cuts Klaviyo on visibility gap",
-      "url": "https://www.investing.com/news/stock-market-news/goldman-upgrades-zeta-to-buy-cuts-klaviyo-on-visibility-gap-4954213",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:16:35Z",
-      "firstSeen": "2026-10-16T13:31:40Z"
-    },
-    {
-      "headline": "U.S. INDUSTRIAL PRODUCTION BEATS EXPECTATIONS IN SEPTEMBER U.S. industrial production rose 0.7% in September, beating expectations of 0.4%. 🔸 Manufacturing: +0.3% (in line) 🔸 Utilities: +3.5% 🔸 Min...",
-      "url": "https://t.me/WalterBloomberg/37039",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-16T13:16:23Z",
-      "firstSeen": "2026-10-16T13:16:35Z"
-    },
-    {
-      "headline": "$CRWV - COREWEAVE SHORT SELLERS MADE AROUND $806 MLN IN PAPER PROFIT ON WEDNESDAY, WHEN STOCK FELL 15.5% - ORTEX",
-      "url": "https://t.me/WalterBloomberg/37038",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-16T12:46:59Z",
-      "firstSeen": "2026-10-16T13:01:31Z"
     }
   ]
 }
