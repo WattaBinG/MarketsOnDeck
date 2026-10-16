@@ -4,7 +4,11 @@
 Layers (AUTOMATION.md): pinned staples first, then Keith's portfolio
 (derived here from site/assets/positions.json - symbols are his own data,
 not licensed market data), then the rotating movers picked by his local
-routine. Dedupes across layers and caps the strip at 15. Prices are never
+routine. Dedupes across layers and keeps the strip at 15-30 symbols
+(Keith, 2026-10-16: portfolio symbols first, movers fill, trim movers last
+only past 30). A portfolio symbol is NEVER dropped: if the strip has no
+price for one, the fallback chain is previous strip print, then the
+currentPrice already in positions.json, then one keyless Yahoo attempt. Prices are never
 invented: they carry over from the last local-refresh snapshot; symbols
 that arrive without a price get one keyless Yahoo Finance quote attempt,
 and anything still priceless is DROPPED (the site must never render a
@@ -28,7 +32,7 @@ CRYPTO_PINNED = ["BTC", "ETH", "SOL"]        # never duplicated into this strip
 # Never on the tape, ever: stablecoins/dust (USDG, USDC, DOGE) and Micro Ether futures.
 # USDG was excluded 2026-10-01; DOGE/USDC added 2026-10-02 (dust balances, blank quotes).
 EXCLUDED = ["USDG", "USDC", "DOGE", "METV26"]
-MAX_ITEMS = 15
+MAX_ITEMS = 30  # Keith 2026-10-16: strip is 15-30 symbols; movers trim last past 30
 
 YAHOO_UA = (
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
@@ -69,6 +73,19 @@ def main():
 
     by_symbol = {str(i.get("symbol", "")).upper(): i for i in ticker.get("items", [])}
 
+    # Held-symbol price fallback from positions.json itself (his own book's
+    # marks) so a portfolio symbol survives a Yahoo outage. Options rows
+    # carry the UNDERLYING symbol per Keith's rule; dedupe keeps one entry.
+    pos_price = {}
+    for pos in positions.get("positions", []):
+        sym = str(pos.get("symbol") or "").strip().upper()
+        cur = pos.get("currentPrice")
+        if sym and isinstance(cur, (int, float)) and sym not in pos_price:
+            prev_close = pos.get("priorClose")
+            chg = round(cur - prev_close, 2) if isinstance(prev_close, (int, float)) else None
+            pct = round((cur - prev_close) / prev_close * 100, 2) if isinstance(prev_close, (int, float)) and prev_close else None
+            pos_price[sym] = (round(cur, 2), chg, pct)
+
     ordered = []
     for sym in PINNED:                       # layer 1: staples
         ordered.append((sym, False))
@@ -83,16 +100,28 @@ def main():
     items = []
     dropped = []
     filled = []
+    kept_priceless = []
     for sym, is_held in ordered:
         prev = by_symbol.get(sym, {})
         price = prev.get("price")
         change = prev.get("change")
         change_pct = prev.get("changePercent")
+        if not isinstance(price, (int, float)) and is_held and sym in pos_price:
+            price, change, change_pct = pos_price[sym]
+            filled.append(sym + " (book)")
         if not isinstance(price, (int, float)):
             quote = fetch_yahoo_quote(sym)
             if quote:
                 price, change, change_pct = quote
                 filled.append(sym)
+        if not isinstance(price, (int, float)) and is_held:
+            # Keith 2026-10-16: portfolio symbols are never dropped. Last
+            # resort keeps the symbol with a null price rather than a gap in
+            # his book; logged loudly so it is fixed, never silent.
+            item = {"symbol": sym, "price": None, "change": None, "changePercent": None, "held": True}
+            items.append(item)
+            kept_priceless.append(sym)
+            continue
         if not isinstance(price, (int, float)):
             dropped.append(sym)              # never emit a blank ticker
             continue
@@ -113,7 +142,8 @@ def main():
     print(f"OK: {len(items)} items ({len(PINNED)} pinned, "
           f"{sum(1 for _, h in ordered if h)} held, {len(movers)} movers); "
           f"asOf {ticker.get('asOfLabel', '?')} preserved; "
-          f"yahoo-filled: {filled or 'none'}; dropped (no price): {dropped or 'none'}")
+          f"yahoo-filled: {filled or 'none'}; dropped (no price): {dropped or 'none'}; "
+          f"held kept priceless: {kept_priceless or 'none'}")
 
 
 if __name__ == "__main__":
