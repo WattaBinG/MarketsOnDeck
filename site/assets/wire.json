@@ -1,17 +1,105 @@
 {
-  "asOf": "2026-10-16T21:15:52Z",
-  "asOfLabel": "5:15 PM ET",
+  "asOf": "2026-10-16T21:30:52Z",
+  "asOfLabel": "5:30 PM ET",
   "topStory": {
     "headline": "Katie Zacharia out as Trump's White House press secretary",
     "url": "https://www.cnbc.com/2026/10/16/trump-katie-zacharia-white-house.html",
     "source": "CNBC",
     "category": "Geopolitics",
-    "timestamp": "2026-10-16T20:40:58Z",
+    "timestamp": "2026-10-16T21:26:15Z",
     "firstSeen": "2026-10-16T17:31:41Z",
     "leadSince": "2026-10-16T20:45:56Z",
     "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
+    {
+      "headline": "SoftBank weighs $18 billion acquisition of Allied Universal, source says",
+      "url": "https://www.investing.com/news/stock-market-news/softbank-weighs-18-billion-acquisition-of-allied-universal-bloomberg-news-reports-4954792",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T21:25:11Z",
+      "firstSeen": "2026-10-16T20:30:55Z"
+    },
+    {
+      "headline": "Colombia stocks lower at close of trade; COLCAP down 0.55%",
+      "url": "https://www.investing.com/news/stock-market-news/colombia-stocks-lower-at-close-of-trade-colcap-down-055-4954873",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T21:25:03Z",
+      "firstSeen": "2026-10-16T21:30:52Z"
+    },
+    {
+      "headline": "Chinese online retailer Temu agrees to data privacy restrictions to settle Texas lawsuit, documents say",
+      "url": "https://www.investing.com/news/stock-market-news/chinese-online-retailer-temu-agrees-to-data-privacy-restrictions-to-settle-texas-lawsuit-documents-say-4954577",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T21:24:35Z",
+      "firstSeen": "2026-10-16T16:16:40Z"
+    },
+    {
+      "headline": "As AI rally wobbles, stock market’s spotlight turns to earnings",
+      "url": "https://www.investing.com/news/stock-market-news/as-ai-rally-wobbles-stock-markets-spotlight-turns-to-earnings-4953575",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T21:24:20Z",
+      "firstSeen": "2026-10-16T21:30:52Z"
+    },
+    {
+      "headline": "Proofpoint taps JPMorgan, UBS for $1.25 billion debt deal - Bloomberg",
+      "url": "https://www.investing.com/news/stock-market-news/proofpoint-taps-jpmorgan-ubs-for-125-billion-debt-deal--bloomberg-93CH-4954872",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-16T21:22:53Z",
+      "firstSeen": "2026-10-16T21:30:52Z"
+    },
+    {
+      "headline": "Replit is no longer working with Anthropic, CEO says",
+      "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-16T21:22:28Z",
+      "firstSeen": "2026-10-16T21:30:52Z"
+    },
+    {
+      "headline": "New SEC rules would fleece everyday investors to enrich Wall Street",
+      "url": "https://www.marketwatch.com/story/new-sec-rules-would-fleece-everyday-investors-to-enrich-wall-street-0a00fe03?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T21:21:00Z",
+      "firstSeen": "2026-10-16T21:30:52Z"
+    },
+    {
+      "headline": "Russia stocks higher at close of trade; MOEX Russia Index up 1.70%",
+      "url": "https://www.investing.com/news/stock-market-news/russia-stocks-higher-at-close-of-trade-moex-russia-index-up-170-4954871",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-16T21:20:03Z",
+      "firstSeen": "2026-10-16T21:30:52Z"
+    },
+    {
+      "headline": "Aptera director Anthony Kirton sells $28,449 in stock",
+      "url": "https://www.investing.com/news/insider-trading-news/aptera-director-anthony-kirton-sells-28449-in-stock-93CH-4954867",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-16T21:16:03Z",
+      "firstSeen": "2026-10-16T21:30:52Z"
+    },
+    {
+      "headline": "Gold prices slip for the week as oil gains offset weaker dollar, U.S. bond rally",
+      "url": "https://www.investing.com/news/commodities-news/gold-steadies-near-4160-as-stock-selloff-drives-bond-rally-treasury-yields-fall-4952940",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-16T21:15:59Z",
+      "firstSeen": "2026-10-16T01:45:52Z"
+    },
+    {
+      "headline": "I’m 63 and diagnosed with lymphoma. Should I take my Social Security next year?",
+      "url": "https://www.marketwatch.com/story/its-a-wait-and-see-situation-im-63-and-diagnosed-with-lymphoma-should-i-take-my-social-security-next-year-ea88b419?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T21:15:00Z",
+      "firstSeen": "2026-10-16T09:30:53Z"
+    },
     {
       "headline": "Inflation Rose to 3.7% in September. Is It Time to Sell the S&P 500?",
       "url": "https://www.nasdaq.com/articles/inflation-rose-37-september-it-time-sell-sp-500",
@@ -29,100 +117,12 @@
       "firstSeen": "2026-10-16T21:15:52Z"
     },
     {
-      "headline": "Paul Mahon, United Therapeutics EVP, sells $4.5m in stock",
-      "url": "https://www.investing.com/news/insider-trading-news/paul-mahon-united-therapeutics-evp-sells-45m-in-stock-93CH-4954856",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T21:01:06Z",
-      "firstSeen": "2026-10-16T21:15:52Z"
-    },
-    {
-      "headline": "Exclusive-Boeing sales chief McMullen to retire, company memo says",
-      "url": "https://www.investing.com/news/stock-market-news/exclusiveboeing-sales-chief-mcmullen-to-retire-company-memo-says-4954848",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T21:00:56Z",
-      "firstSeen": "2026-10-16T21:15:52Z"
-    },
-    {
-      "headline": "Brazil may offer credit lines to ease impact of tax, labor reforms, minister says",
-      "url": "https://www.investing.com/news/economy-news/brazil-may-offer-credit-lines-to-ease-impact-of-tax-labor-reforms-minister-says-4954855",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T21:00:41Z",
-      "firstSeen": "2026-10-16T21:15:52Z"
-    },
-    {
-      "headline": "U.S. dollar snaps four-week win streak, helping the euro halt a five-week slide",
-      "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-dollar-weakens-after-bond-rally-rupee-set-for-2-weekly-jump-4953070",
+      "headline": "US air traffic controllers reach deal with FAA for 2.8% pay rise, WSJ reports",
+      "url": "https://www.investing.com/news/economy-news/us-air-traffic-controllers-reach-deal-with-faa-for-28-pay-rise-wsj-reports-4954860",
       "source": "Investing.com",
       "category": "Movers",
-      "timestamp": "2026-10-16T20:59:45Z",
-      "firstSeen": "2026-10-16T04:45:50Z"
-    },
-    {
-      "headline": "Don’t buy this dip: Several signs suggest there’s more pain ahead for tech stocks",
-      "url": "https://www.marketwatch.com/story/dont-buy-this-dip-several-signs-suggest-theres-more-pain-ahead-for-tech-stocks-83f971d7?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-16T20:58:00Z",
-      "firstSeen": "2026-10-16T21:01:46Z"
-    },
-    {
-      "headline": "Stocks slip as dollar heads for weekly loss",
-      "url": "https://www.investing.com/news/economy-news/most-asian-stocks-rise-as-calm-returns-after-coreweave-shock-indonesia-faces-market-downgrade-4952993",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T20:54:21Z",
-      "firstSeen": "2026-10-16T03:00:50Z"
-    },
-    {
-      "headline": "See Which Recent 13F Filers Hold MRK",
-      "url": "https://www.nasdaq.com/articles/see-which-recent-13f-filers-hold-mrk-0",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-16T20:51:47Z",
-      "firstSeen": "2026-10-16T21:15:52Z"
-    },
-    {
-      "headline": "Sound Inpatient nears $1 billion refinancing with existing lenders - Bloomberg",
-      "url": "https://www.investing.com/news/stock-market-news/sound-inpatient-nears-1-billion-refinancing-with-existing-lenders--bloomberg-93CH-4954841",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T20:49:02Z",
-      "firstSeen": "2026-10-16T21:15:52Z"
-    },
-    {
-      "headline": "Paylocity director Steven Sarowitz sells $2.93m in company stock",
-      "url": "https://www.investing.com/news/insider-trading-news/paylocity-director-steven-sarowitz-sells-293m-in-company-stock-93CH-4954840",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-16T20:46:06Z",
-      "firstSeen": "2026-10-16T21:15:52Z"
-    },
-    {
-      "headline": "Gilead Sciences CFO Andrew Dickinson sells $468,660 in shares",
-      "url": "https://www.investing.com/news/insider-trading-news/gilead-sciences-cfo-andrew-dickinson-sells-468660-in-shares-93CH-4954839",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-16T20:45:51Z",
-      "firstSeen": "2026-10-16T21:15:52Z"
-    },
-    {
-      "headline": "CoreWeave’s CEO sold nearly $1 billion of stock since IPO, filings show",
-      "url": "https://www.investing.com/news/economy-news/coreweaves-ceo-sold-nearly-1-billion-of-stock-since-ipo-filings-show-4954635",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-16T20:42:19Z",
-      "firstSeen": "2026-10-16T17:15:48Z"
-    },
-    {
-      "headline": "Oversold Conditions For Abrdn Healthcare Investors (HQH)",
-      "url": "https://www.nasdaq.com/articles/oversold-conditions-abrdn-healthcare-investors-hqh",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-16T20:42:04Z",
-      "firstSeen": "2026-10-16T21:15:52Z"
+      "timestamp": "2026-10-16T21:06:39Z",
+      "firstSeen": "2026-10-16T21:30:52Z"
     },
     {
       "headline": "TRUMP: US ECONOMY HAS NEVER BEEN STRONGER",
