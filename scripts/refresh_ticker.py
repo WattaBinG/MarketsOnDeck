@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""Refresh ticker-strip prices from free keyless quotes (GitHub Actions leg).
+"""Refresh ticker-strip prices from free backup quotes (GitHub Actions leg).
+
+Quote source chain (Keith 2026-10-16): Alpaca first when repo secrets
+ALPACA_KEY_ID / ALPACA_SECRET_KEY exist (read-only market-data key, 15-min
+delayed), then keyless fallbacks in order: Yahoo chart API, CNBC restQuote,
+Nasdaq quote API. Each symbol is priced by the first source that answers;
+the strip's source field and asOfLabel say plainly which backup fed it and
+that backup data is delayed. Runner-IP blocks on any single source can no
+longer silence the backstop.
 
 Backstop for the Robinhood quote leg (per Keith, 2026-10-16). The Robinhood
 routine (Claude local today, Muse/Claude-free later) is the PRIMARY price
@@ -17,6 +25,7 @@ build_ticker.py (pinned staples + Keith's positions + existing movers),
 with a quote attempt for any pinned/held symbol missing from the strip.
 """
 import json
+import os
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -63,6 +72,92 @@ def fetch_yahoo_quote(symbol):
         return None
 
 
+ALPACA_KEY = os.environ.get("ALPACA_KEY_ID", "").strip()
+ALPACA_SECRET = os.environ.get("ALPACA_SECRET_KEY", "").strip()
+
+
+def fetch_alpaca_quote(symbol):
+    """Alpaca market-data snapshot (free tier = IEX, 15-min delayed).
+
+    Read-only data key from repo secrets; returns None when secrets are
+    absent or the call fails. Never invents.
+    """
+    if not ALPACA_KEY or not ALPACA_SECRET:
+        return None
+    url = f"https://data.alpaca.markets/v2/stocks/{symbol}/snapshot"
+    try:
+        req = urllib.request.Request(url, headers={
+            "APCA-API-KEY-ID": ALPACA_KEY, "APCA-API-SECRET-KEY": ALPACA_SECRET})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.load(resp)
+        price = data["latestTrade"]["p"]
+        prev_close = data["prevDailyBar"]["c"]
+        if not isinstance(price, (int, float)) or not isinstance(prev_close, (int, float)) or not prev_close:
+            return None
+        return (round(price, 2), round(price - prev_close, 2),
+                round((price - prev_close) / prev_close * 100, 2))
+    except Exception:
+        return None
+
+
+def fetch_cnbc_quote(symbol):
+    """CNBC keyless restQuote. None on failure."""
+    url = ("https://quote.cnbc.com/quote-html-webservice/restQuote/"
+           f"symbolType/symbol?symbols={symbol}&output=json")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.load(resp)
+        q = data["FormattedQuoteResult"]["FormattedQuote"][0]
+        last = q.get("last")
+        if last in (None, "", "UNCH"):
+            return None
+        price = float(str(last).replace(",", ""))
+        chg = q.get("change")
+        pct = q.get("change_pct")
+        change = float(str(chg).replace(",", "")) if chg not in (None, "") else None
+        change_pct = float(str(pct).replace("%", "").replace(",", "")) if pct not in (None, "") else None
+        return (round(price, 2), change, change_pct)
+    except Exception:
+        return None
+
+
+def fetch_nasdaq_quote(symbol):
+    """Nasdaq keyless quote API. None on failure."""
+    url = f"https://api.nasdaq.com/api/quote/{symbol}/info?assetclass=stock"
+    try:
+        req = urllib.request.Request(url, headers={
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/120.0",
+            "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.load(resp)
+        pd = data["data"]["primaryData"]
+        price = float(str(pd["lastSalePrice"]).replace("$", "").replace(",", ""))
+        nc = pd.get("netChange"); pc = pd.get("percentageChange")
+        change = float(str(nc).replace("$", "").replace(",", "")) if nc not in (None, "") else None
+        change_pct = float(str(pc).replace("%", "").replace(",", "")) if pc not in (None, "") else None
+        return (round(price, 2), change, change_pct)
+    except Exception:
+        return None
+
+
+def fetch_backup_quote(symbol):
+    """First (price, change, changePct, source-name) the chain produces."""
+    q = fetch_alpaca_quote(symbol)
+    if q:
+        return q[0], q[1], q[2], "alpaca-15min"
+    q = fetch_yahoo_quote(symbol)
+    if q:
+        return q[0], q[1], q[2], "yahoo"
+    q = fetch_cnbc_quote(symbol)
+    if q:
+        return q[0], q[1], q[2], "cnbc"
+    q = fetch_nasdaq_quote(symbol)
+    if q:
+        return q[0], q[1], q[2], "nasdaq"
+    return None, None, None, None
+
+
 def et_now():
     return datetime.now(timezone.utc).astimezone(ZoneInfo("America/New_York"))
 
@@ -94,15 +189,17 @@ def main():
 
     now_utc = datetime.now(timezone.utc)
     et = et_now()
-    label = "Market Close" if et.hour >= 16 else f"Intraday {et.strftime('%-I:%M %p')} ET"
+    base_label = "Market Close" if et.hour >= 16 else f"Intraday {et.strftime('%-I:%M %p')} ET"
+    label = base_label + " (delayed backup)"
 
     updated, stale, no_price = [], [], []
+    sources_used = {}
     items = []
     for sym in want:
         prev = by_symbol.get(sym, {})
-        quote = fetch_yahoo_quote(sym)
-        if quote:
-            price, change, change_pct = quote
+        price, change, change_pct, src_name = fetch_backup_quote(sym)
+        if price is not None:
+            sources_used[sym] = src_name
             updated.append(sym)
         elif isinstance(prev.get("price"), (int, float)):
             price, change, change_pct = prev["price"], prev.get("change"), prev.get("changePercent")
@@ -120,7 +217,8 @@ def main():
         return
 
     ticker["pinned"] = PINNED
-    ticker["source"] = "yahoo-backstop"
+    mix = sorted(set(sources_used.values())) or ["none"]
+    ticker["source"] = "backup-delayed:" + "+".join(mix)
     ticker["items"] = items
     ticker["asOf"] = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
     ticker["asOfLabel"] = label
