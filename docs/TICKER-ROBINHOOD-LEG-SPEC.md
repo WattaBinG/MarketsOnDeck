@@ -97,3 +97,49 @@ Recipe:
    brief (PR first for the paper trail); check once for automated
    review-bot comments after merge and fix any real, verifiable issue with
    a follow-up commit on main.
+
+---
+
+# Market Tape Draft - replication spec (Claude-free target)
+
+Source: Keith sent the live "Market Tape Draft" routine prompt on
+2026-10-16 as spec material, same handling as the others: recipe only,
+approval governed by the separately logged exception, account identifiers
+stripped (Trading and Agentic names only).
+
+Schedule: weekdays around 6:00 PM ET. End-of-day companion to the Morning
+Brief, NOT a replacement - and a SEPARATE page since 2026-09-16:
+`site/market-tape/index.html` only. Never touch `site/brief/index.html`
+(Morning Brief's page) or `site/tape/` (unrelated parked feature).
+
+Connectors: Robinhood_Trading MCP (READ-ONLY) and
+Alpha_Vantage_MCP_Server, plus WebSearch.
+
+Recipe:
+1. Read `content/morning-brief-template-and-sample.md` IN FULL - the
+   "Market Tape - End-of-Day Wrap" section AND the Full Coverage
+   Requirement: SPY/QQQ/DIA + crypto benchmarks AND both the Trading and
+   Agentic accounts, every run.
+2. Read `site/market-tape/index.html` fully. Cards use
+   `id="tape-YYYY-MM-DD"` with a `<span class="badge badge-accent">Market
+   Tape</span>` badge near the date eyebrow; jump-list is a
+   `<details class="brief-sidebar">` `<ul>`, newest first.
+3. CLAUDE.md section 3: process language only, never directive.
+4. Stops: existing card for today = STOP; US market holiday = STOP.
+5. Data sources: `site/assets/ticker.json` for the day's actual closing
+   SPY/QQQ/DIA (canonical - refreshed right after the close; also sanity
+   check nothing material moved in extended trading by 6 PM);
+   `site/assets/crypto.json` for BTC/ETH/SOL; Alpha Vantage
+   (TOP_GAINERS_LOSERS, NEWS_SENTIMENT) for the day's real movers, sector
+   stories, and post-close news in the ~2 hours since the close; Robinhood
+   get_accounts + get_equity_positions on BOTH accounts; personal
+   positions only when genuinely relevant, either account.
+6. If a material dated event (CPI/jobs/Fed) lands tomorrow, a brief
+   closing mention is fine - confirm the real date via WebSearch first.
+7. Never invent a number, date, or claim - leave it out.
+8. Branch `market-tape-YYYY-MM-DD`, commit card + jump-list entry to
+   `site/market-tape/index.html` ONLY, push, open PR "Market Tape -
+   <date>" with a one-paragraph data-sources note.
+9. Merge per the standing logged auto-publish exception; check once for
+   review-bot comments after merge and fix real issues with a follow-up
+   commit on main.
