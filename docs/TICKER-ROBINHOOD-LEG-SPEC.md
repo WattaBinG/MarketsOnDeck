@@ -1,9 +1,18 @@
 # Robinhood ticker leg - replication spec (Claude-free target)
 
-Source: Keith pasted the live "Ticker Refresh - Market Close" routine prompt
-on 2026-10-16 as the spec to replicate without Claude. The Intraday variant
-is the same shape with its own asOfLabel; confirm against its prompt when
-Keith pastes it.
+Source: Keith pasted BOTH live routine prompts on 2026-10-16 as the spec to
+replicate without Claude ("Ticker Refresh - Market Close" and "Ticker
+Refresh - Intraday"). The two are the same recipe; differences:
+
+- Intraday: fires hourly on weekdays around 9:30 AM-3:30 PM ET (scheduled
+  at :30 past the hour). asOfLabel is the real Eastern time, e.g.
+  "11:30 AM ET". Commit message: `Refresh ticker: <asOfLabel>`.
+- Market Close: asOfLabel "Market Close". Commit message:
+  `Refresh ticker: Market Close`.
+
+Same symbol list, same positions step on both accounts, same quote math
+and skip rules. Account numbers from his paste are deliberately not
+recorded anywhere.
 
 Connection: Robinhood_Trading MCP, READ-ONLY. No trading calls, ever.
 Credentials stay in the MCP client config on Keith's machine - never in
