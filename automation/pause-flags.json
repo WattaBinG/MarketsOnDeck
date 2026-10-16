@@ -1,0 +1,8 @@
+{
+  "wire": true,
+  "crypto": true,
+  "watchToday": true,
+  "note": "Set a flag to false (or remove it) to resume that workflow. Checked by .github/workflows/refresh-wire.yml, refresh-crypto.yml, and refresh-watch-today.yml before they do any work. Earnings refresh is unaffected and has no flag here.",
+  "setBy": "Keith, 2026-10-16",
+  "reason": "Paused on request; resume only when Keith says so."
+}

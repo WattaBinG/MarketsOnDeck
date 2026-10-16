@@ -11,6 +11,8 @@ headlines, or commentary.
 | The Wire (`assets/wire.json`, `wire-archive.json`, homepage blocks) | `refresh-wire.yml` | hourly, with a sticky lead story | publishers' own public RSS feeds, the public Walter Bloomberg Telegram mirror (labeled unofficial), and Keith's own Discord news channel (via his bot) |
 | What to Watch Today (`assets/watch-today.json`) | `refresh-watch-today.yml` | 7 PM ET Sun-Thu (rolls to the next trading day) | BEA and BLS official calendars, Census economic-indicators calendar, Fed + NYSE published calendars, fixed weekly releases |
 
+Each of these three workflows checks `automation/pause-flags.json` first (`wire`, `crypto`, `watchToday` keys) and skips its refresh job entirely while its flag is `true` — set there to pause one on request, and flip it back to `false` to resume. `refresh-earnings.yml` has no flag and is unaffected.
+
 Each refresh workflow serializes its commit/push with the other publishers and then runs Wrangler to deploy that exact committed snapshot. Deployment requires the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; if either commit, push, or deploy fails, the workflow stays red and the previous production snapshot remains live. Each workflow also has a **Run workflow** button in
 GitHub → Actions for a manual kick.
 

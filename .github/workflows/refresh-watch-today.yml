@@ -20,7 +20,23 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  check_pause:
+    runs-on: ubuntu-latest
+    outputs:
+      paused: ${{ steps.check.outputs.paused }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: check
+        run: |
+          python3 -c "
+          import json
+          flags = json.load(open('automation/pause-flags.json'))
+          print('paused=' + str(bool(flags.get('watchToday', False))).lower())
+          " >> "$GITHUB_OUTPUT"
+
   refresh:
+    needs: check_pause
+    if: needs.check_pause.outputs.paused != 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
