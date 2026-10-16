@@ -22,7 +22,10 @@ this repo, commit messages, Drive previews, or tickets.
    SPY QQQ DIA IWM NVDA LULU SPCX QUBT INTC TSLA AAPL MSFT AMZN GOOGL META
    AMD SOFI KLAC SPCH COIN PLTR
 2. `get_accounts`, then `get_equity_positions` on both accounts (Trading
-   and Agentic) to build the held-symbols set.
+   and Agentic) to build the held-symbols set. Options positions
+   contribute their UNDERLYING symbol only (never the option ticker).
+   Dedupe held symbols against the fixed movers list - a symbol appears
+   once.
 3. Per symbol: price = whichever of last_trade_price /
    last_non_reg_trade_price has the LATER timestamp; baseline =
    previous_close; change = price - previous_close;
@@ -39,9 +42,12 @@ this repo, commit messages, Drive previews, or tickets.
 Skip the write entirely on a US market holiday, if Robinhood is
 unreachable, or if fewer than half the symbols return quotes.
 
-Known consideration (flagged to Keith 2026-10-16): the `held` flag
-publishes WHICH symbols he holds (not sizes) - pre-existing behavior he
-has run since the strip launched; kept as-is unless he says otherwise.
+Keith's decision, 2026-10-16 (final): the `held` flag STAYS. Portfolio
+symbols belong on the public ticker with real prices - never amounts,
+sizes, or cost bases. The strip = the day's top movers + his portfolio
+symbols, deduped so a symbol appears exactly once. Options positions
+contribute their UNDERLYING symbol only - an option ticker never appears
+on the strip.
 
 Interaction with the GitHub Yahoo bot: this leg is PRIMARY. The bot skips
 any snapshot fresher than 12 minutes and only resumes if this leg goes
