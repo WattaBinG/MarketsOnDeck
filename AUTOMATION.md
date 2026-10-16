@@ -172,7 +172,8 @@ either way.
 
 Under that decision the ticker runs primary/backstop: the Robinhood leg
 (the local routine today; the Claude-free Muse path in MoD TEAM-COMMS
-later) is PRIMARY. The GitHub `refresh-ticker.yml` bot (Yahoo, keyless)
+later) is PRIMARY - the exact replication spec Keith supplied lives in
+`docs/TICKER-ROBINHOOD-LEG-SPEC.md`. The GitHub `refresh-ticker.yml` bot (Yahoo, keyless)
 is the BACKSTOP: `scripts/refresh_ticker.py` skips its write whenever the
 existing `ticker.json` asOf is fresher than 12 minutes (a live primary
 snapshot), and resumes automatically if the primary leg goes stale - so
