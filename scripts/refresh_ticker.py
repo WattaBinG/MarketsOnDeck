@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 """Refresh ticker-strip prices from free keyless quotes (GitHub Actions leg).
 
-Replaces the retired local Claude routines "Ticker Refresh - Intraday" and
-"Ticker Refresh - Market Close": until now they were the ONLY price source
-for site/assets/ticker.json (build_ticker.py only reshapes and carries the
-last local snapshot forward).
+Backstop for the Robinhood quote leg (per Keith, 2026-10-16). The Robinhood
+routine (Claude local today, Muse/Claude-free later) is the PRIMARY price
+source - fresher and more accurate than this bot's free Yahoo feed. This
+bot never overwrites a fresh Robinhood snapshot: if ticker.json's existing
+asOf is fresher than FRESHNESS_MIN, it leaves the file untouched. If the
+primary leg dies, asOf goes stale and this bot resumes writing, so the
+strip always has prices. (build_ticker.py only reshapes and carries the
+last local snapshot forward.)
 
 Rules (AUTOMATION.md): stale beats faked. A failed fetch keeps the previous
 price and counts the symbol as stale; a price is only ever written from a
@@ -14,7 +18,7 @@ with a quote attempt for any pinned/held symbol missing from the strip.
 """
 import json
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -25,6 +29,12 @@ POSITIONS = ROOT / "site" / "assets" / "positions.json"
 PINNED = ["SPY", "QQQ", "DIA", "IWM", "USO"]
 CRYPTO_PINNED = ["BTC", "ETH", "SOL"]  # priced by refresh_crypto.py, never here
 EXCLUDED = ["USDG", "USDC", "DOGE", "METV26"]
+
+# Robinhood-leg guard: the primary routine lands a few minutes before this
+# bot's :00/:30 slots. If the existing snapshot is fresher than this, it is
+# the better data - keep it. Wider than one slot gap so a slow primary run
+# still wins; tighter than two slots so a dead primary hands back control.
+FRESHNESS_MIN = 12
 
 # Plain client UA: Yahoo 429s browser-impersonating UAs from datacenter
 # IPs (GitHub runners included); an honest non-browser UA passes.
@@ -59,6 +69,16 @@ def et_now():
 
 def main():
     ticker = json.loads(TICKER.read_text(encoding="utf-8"))
+    prev_asof = ticker.get("asOf")
+    if isinstance(prev_asof, str):
+        try:
+            prev_dt = datetime.strptime(prev_asof, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+            if datetime.now(timezone.utc) - prev_dt < timedelta(minutes=FRESHNESS_MIN):
+                print(f"SKIP: ticker.json asOf {prev_asof} is fresher than {FRESHNESS_MIN} min "
+                      "(primary Robinhood leg active); leaving it untouched")
+                return
+        except ValueError:
+            pass  # unparsable asOf - treat as stale and refresh
     positions = json.loads(POSITIONS.read_text(encoding="utf-8"))
     held_syms = []
     for pos in positions.get("positions", []):
@@ -100,6 +120,7 @@ def main():
         return
 
     ticker["pinned"] = PINNED
+    ticker["source"] = "yahoo-backstop"
     ticker["items"] = items
     ticker["asOf"] = now_utc.strftime("%Y-%m-%dT%H:%M:%SZ")
     ticker["asOfLabel"] = label

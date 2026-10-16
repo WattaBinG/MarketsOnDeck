@@ -160,6 +160,25 @@ tooltip (the honesty layer from PR #20). PR #19 (Webull OpenAPI worker) is the
 parked starting point if a licensed feed is ever added. The local
 routine that writes prices is documented in `docs/TICKER-LOCAL-ROUTINE.md`.
 
+**Keith's data-rights decision, 2026-10-16 (his call as repo owner, logged
+at his direction):** Robinhood-accurate quotes ARE the target for the
+public ticker strip. His reasoning: the Robinhood pull is real-time and
+beats the 15-minute-delayed free feeds (Alpaca/Yahoo) his audience
+otherwise gets. This supersedes the personal/internal-use-only caution
+above FOR THE TICKER STRIP ONLY, and for prices + symbols only - never
+account numbers, sizes, balances, or credentials, which remain banned from
+the repo and previews everywhere. The strip keeps its visible as-of label
+either way.
+
+Under that decision the ticker runs primary/backstop: the Robinhood leg
+(the local routine today; the Claude-free Muse path in MoD TEAM-COMMS
+later) is PRIMARY. The GitHub `refresh-ticker.yml` bot (Yahoo, keyless)
+is the BACKSTOP: `scripts/refresh_ticker.py` skips its write whenever the
+existing `ticker.json` asOf is fresher than 12 minutes (a live primary
+snapshot), and resumes automatically if the primary leg goes stale - so
+Robinhood accuracy when it runs, free-feed coverage when it doesn't, and
+the two never overwrite each other.
+
 ## Honesty and failure behavior
 
 - Every data file carries its own `asOf` timestamp, and the site displays it,
