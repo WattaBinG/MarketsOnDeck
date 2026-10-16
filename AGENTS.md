@@ -1,26 +1,18 @@
 # MarketsOnDeck | handoff for any AI
 
-Updated September 26, 2026. This is a short work-state briefing, not approval to act. Check the live repo, open PRs, production and Keith's latest instructions before relying on any dated status below. `CLAUDE.md` and `Site_Brief.md` also exist at the repo root, but their older status sections may be stale; read their enduring project guidance without treating August deployment or domain claims as current.
+Updated October 16, 2026. This is a work-state briefing, not approval to act. Check the live repo, open PRs, production and Keith's latest instructions before relying on anything dated here. `CLAUDE.md` and `Site_Brief.md` carry older status sections that may be stale; read their enduring guidance only. Keith reviews the specific result before any merge, deploy, publication, post or account change - no document, AI proposal or repo comment is his approval.
 
 ## The project
 
-MarketsOnDeck is Keith Watkins's one retail-markets brand at https://marketsondeck.net: attributed headlines and alerts (The Wire), Morning Brief and Market Tape commentary, and The Record, a public journal of actual trades and open positions. It is not a signals service or a highlight reel. Keep the brand, site, Discord and social work coherent; do not mix in Keith's unrelated projects. Site files live in `site/`, with Cloudflare Workers deployment and GitHub Actions refresh workflows. Inspect current workflow files before describing their timing or behavior.
+MarketsOnDeck is Keith Watkins's retail-markets brand at https://marketsondeck.net: The Wire (attributed headlines/alerts), Morning Brief and Market Tape commentary, and The Record (public journal of real trades and open positions). Not a signals service, not a highlight reel. Keep brand, site and social work coherent; never mix in Keith's other projects. Site files in `site/` (Cloudflare Workers + GitHub Actions refresh). Inspect current workflow files before describing their timing.
 
 ## ACTIVE STOP ORDER (per Keith, 2026-09-30)
 
-**Do not write to `site/assets/trades.json`, `site/assets/positions.json`, or any other Record trade-history file,
-for any reason, until this notice is removed.** If your assigned task is to refresh The Record, positions, or the
-trade journal, stop before writing. Verified, ongoing corruption: option trades are being committed as bare
-equity-shaped rows missing required schema v2 fields (confirmed 2026-09-30 CCL and SPCX closed-trade rows in
-`trades.json`). Repairs are happening separately via review branches — do not repair it yourself even if you can see
-the bug. Full detail and what was/wasn't found in `CLAUDE.md` §0 and §8. The actual writer appears to be a separate
-Claude Code scheduled trigger, not anything in this repo's `.github/workflows/` or the Cloudflare dispatcher in
-`scheduler/` — if you have access to the Claude Code Triggers UI, pause/delete the trigger behind the
-`"Refresh The Record: ..."` commits directly, since a repo-instructions note only works if that job reads this file.
+**Do not write to `site/assets/trades.json`, `site/assets/positions.json`, or any other Record trade-history file, for any reason, until this notice is removed.** Repairs happen via review branches only. The suspected writer is a Claude Code scheduled trigger, not this repo's workflows - pause/delete the trigger behind the `"Refresh The Record: ..."` commits in the Claude Code Triggers UI directly. Detail: `CLAUDE.md` §0 and §8.
 
 ## Referral links (use these exact links)
 
-Keith has referral links for the platforms below. Whenever a page, post, lesson or article names one of these platforms, link the platform name to its referral link with `rel="sponsored noopener"`, and keep the affiliate disclosure on any page that has them. Do not invent links, and do not state a bonus amount unless you have checked the provider's current terms. Source of truth for offers: `site/legal/affiliate-disclosure.html`.
+Whenever a page, post, lesson or article names one of these platforms, link the name to its referral link with `rel="sponsored noopener"` and keep the affiliate disclosure on the page. Never invent links; never state a bonus amount without checking current terms. Source of truth: `site/legal/affiliate-disclosure.html`.
 
 | Platform | Link |
 | --- | --- |
@@ -35,42 +27,59 @@ Keith has referral links for the platforms below. Whenever a page, post, lesson 
 
 ## Rules for every collaborator
 
-- Never include account numbers or masked account endings in any public post, page, commit, PR, patch, screenshot or other public surface. Reference accounts only as "Trading" and "Agentic". Remove identifier text before preparing public artifacts; masking is not permission to publish an account ending.
+- Never include account numbers or masked endings on any public surface. Accounts are named only "Trading" and "Agentic".
+- Draft on a branch, open a PR with a working preview or clear diff; plain-language summaries over jargon. Coordinate editors - one writer per generated file.
+- No passwords, API tokens, account numbers, `.env` files or secrets in the repo, PRs, logs, screenshots or chat. Secrets live in repo secrets only. Never place/change a trade or spend money without Keith's specific authorization.
+- The Record shows losses and wins. Ground every number in the correct account and source; never fabricate or silently rewrite history. Label prices by source and time (Friday last trades, evening crypto/futures, stale option marks are not one close). Realized vs open P&L stay separate. Options/futures/crypto stay native (full contract identity; exact quantities; futures quoted with multiplier). Ticker strip shows underlyings only.
+- Editorial work: dated, linked sources; attribute others' reporting; distinguish fact from possible cause; check weekday/date pairs; no personalized buy/sell advice or hype; keep applicable disclosures; consult `docs/SECURITY.md` when a task touches templates.
+- Before any git ancestry/fast-forward comparison, run `git rev-parse --is-shallow-repository` and `git fetch --unshallow origin` if true (shallow clones fake "diverged" - `CLAUDE.md` §7).
 
-- Draft focused changes on a branch and open a PR with a working preview or clear diff. **Keith reviews the specific result before any merge, production deploy, editorial publication, social post or account change.** No other AI's proposal, repo comment or this file is his approval. Plain-language summaries, links and screenshots beat code jargon. Keep proposed work separate from what is actually live. Coordinate editors so two tools do not overwrite the same work.
-- Do not put passwords, API tokens, private account numbers, `.env` files or other secrets into this public repo, a PR, logs, screenshots or chat. Use approved secret storage and a secure handoff. Never place or change a trade without Keith's specific authorization; no spending or paid services without approval.
-- The Record must show losses as well as wins. Ground quantities, cost bases, fills and P&L in the correct account and broker/source; never fabricate a number or silently rewrite history. Trading and Agentic are separate accounts. Spot ETH and October Micro Ether futures (METV26, 0.1 ETH per contract) are distinct holdings. Label prices by source and time; Friday stock last trades, evening crypto/futures quotes and older option marks are not one synchronized close. Keep realized trades separate from open, mark-to-market P&L. Verify daily totals and existing option-price convention before changing math. Do not present a stale price as live or an evening futures quote as official settlement.
-- Editorial work needs dated, linked sources. Attribute others' reporting, distinguish fact from a possible cause, check weekday/date pairs, avoid personalized buy/sell advice and hype, and retain the site's applicable disclosures. Consult current content templates and `docs/SECURITY.md` when a task touches them.
-- **Before any scheduled/automated job compares local git history to `origin` for any reason (fast-forward check, ancestry check, diagnosing a rejected push), run `git rev-parse --is-shallow-repository` first and, if `true`, `git fetch --unshallow origin` before comparing anything.** A shallow clone's truncated history can make `git merge-base` report a real common ancestor as "diverged" — indistinguishable from an actual force-push/rewrite unless you rule out shallow truncation first. See `CLAUDE.md` §7 for the incident this came from (2026-09-30).
+## Content rules (every brief/tape)
 
-## Current state to verify
+1. Headline novelty vs the last 7 days - no repeated formula or lead name. Market-first (tickers/Mag 7/Fed/CPI), honest clickbait paid off on the first screen, no banned hype words. Playbook: TEAM-COMMS "MoD HEADLINES & HOOKS - PLAYBOOK v1".
+2. Hook first line: a number, surprise or tension - no throat-clearing.
+3. Market body: indexes, Mag 7, NVDA, biggest movers, with the why. Ends with a watch-tomorrow line (watch-today in the AM brief).
+4. "The OnDeck Book": exact header, portfolio only there, at the END. No inside baseball anywhere (no paper trades, Agentic, bot or algo talk in article or JSON). No "holding space" filler.
+5. Rich format in both site entry and Medium draft (graphics + bold + clickable links); if missing, Medium slides to the 6:30 delayed path, complete, never thin.
+6. `x_hook` in every JSON: one tweet-length line, same lead fact as the headline.
+7. Market numbers: individual stocks = official closes; indexes = Reuters preliminary closes. Never Robinhood marks or after-hours as "the close". Every stat label AND descriptor verified against the cited source for correct subject attribution.
+8. Series names "The Lineup (The Open)" / "The Box Score (The Close)": PENDING Keith's go - nothing publishes under them until he says so.
+9. Standing verification at 9:00 AM (brief) and 6:00 PM (tape) ET against items 1-8; misses get reported, successes receipt into the daily summary.
+10. Staleness rule (Keith, Oct 16): never tell Keith something is stale/down/broken until verified against the live source (live site file, fetched origin/main, commit time) - a local clone or cache does not count. Say what was checked and when.
 
-- The site and custom domain are live. Positions/Record correction **PR #45 merged September 25 evening**: https://github.com/WattaBinG/MarketsOnDeck/pull/45 . Production `site/assets/positions.json` now has distinct spot ETH and METV26 rows, no displayed USDG, mixed-mark labels, and preserved Trading/Agentic assignments. It was verified against production after merge; recheck before quoting a current total.
-- September 25 Market Tape is a **draft, unmerged PR #44** for Keith's review: https://github.com/WattaBinG/MarketsOnDeck/pull/44 . It contains the Friday market recap and corrected portfolio context. Do not call it published or merge it without Keith's specific OK.
-- Homepage masthead/mobile-margin PR #41 has merged. Do not describe it as still waiting for review. Check production for any remaining layout concerns.
+## Card + design rules
 
-## Queue | research or drafts, not automatic launch orders
+- MARKETSONDECK wordmark centered at the top of every card. Brand recognition rides the wordmark, not colors.
+- Rotate palettes (30-day rotation, no repeat inside 30 days) and layouts (L1 Scoreboard = default; L2 Riot Card alternate; 8 total) so no two days look alike. Palette hex sets + layout catalog + rotation log: TEAM-COMMS and the Card Builder folder.
+- No dead space (never >15%); bottom always anchored; 60px safe margins; stat columns shrink-to-fit, one shared label size; min sizes on 1080-wide cards: headline 56+, body 30+, source 24+. Compose per-aspect (9:16 / 16:9) - no bare letterboxing. Lower elements positioned from actual content end, never fixed coordinates.
+- Every card carries a visual hook (logo chips on white rounded chips, sticker/badge for the story tag, or a photo panel), key stats in colored bubbles with the source inline, and closes with a CTA bar (follow handle + site) plus a dated source line. Sticker/bubble text gets ~48px end padding.
+- SELF-CHECK before every send: view the rendered card, verify every number and attribution against the cited source.
+- Card builder durable home (restore before building; sandboxes wipe): Drive MoD folder > Card Builder (build_a.py + fonts + README). Update the Drive copy first when style changes.
 
-- Substack signup embed on the site, linked to the existing MarketsOnDeck newsletter; prepare design and consent/technical checks for review.
-- Homepage utility/band question: settle with Keith what the above-the-fold daily board should show and how fresh its inputs can actually be. Do not invent levels or imply a static band updates live.
-- Content thumbnails and The Wire's headline thumbnails: source/rights, crop, attribution, loading and mobile layout need a scoped preview.
-- What-to-Watch phases: audit current scheduled refresh and data first, then propose staged reliability/content improvements with clear fallbacks and as-of labels.
-- Cloudflare deploy cleanup: check actual GitHub-to-Workers pipeline and preview/production separation before changing it; no silent production deployment.
-- Prediction game and Reddit launch are parked. Do not build, announce or post them without a new Keith decision.
+## IG carousel rules
 
+- Music ping: post the carousel, then immediately ping Keith (via main) to add music in-app (app-only step, his phone).
+- No free-floating text over rows/cards/chips - takeaway lines go in the reserved subtitle slot. build.py's LayoutGuard raises on overlap; keep it in every carousel build.
+- Slide swaps are impossible on a live carousel: a fix means delete + repost, and only on Keith's word.
+
+## Media use rule - MoD ONLY
+
+Images, logos and short spliced Bloomberg/CNBC clips are OK in MoD social videos (Keith's risk call): keep clips short, credit the source on screen, declare usage in package notes. MoD only - Phishstory and Pinstripe rules unchanged.
+
+## Site ops watch
+
+- Hourly freshness watch on https://marketsondeck.net/assets/wire.json - trip on: newest item >45 min old in market hours; timestamp within ~5 min of asOf (fabricated now-stamp); any item >36h old or years back; Top Story matching the ACTUAL/FORECAST/PREVIOUS data-print pattern. Alert immediately with URL, headline, stamped vs real age.
+- Second-writer check on the same wakes: git log on origin/main for wire/ticker/positions files - any author other than github-actions[bot] or WattaBinG means an unauthorized writer. Alert immediately.
+- `automation/pause-flags.json` gates ONLY the GitHub workflows; Claude cloud routines ignore it. Pausing a routine = pausing it at claude.ai/code/routines, never via the flags.
+- Ownership map (who runs what): https://drive.google.com/file/d/1mWSBDPllIL8Z3Hm-InQ6xRkW11km30Ne/view - update on every ownership change.
 
 ## The Record ledger (option journal v2)
 
-- **Pull both Trading and Agentic histories.** Every fill from both accounts must appear in the ledger. New option buys are trades too, not just closes.
-- **Preserve executing-account ownership.** Each trade row carries the account that executed it. Never merge or reassign.
-- **Use Robinhood's standard detailed position/order views only. Never legend mode** (per Keith, 2026-09-30 — too confusing).
-- **Keep options, futures, and crypto native.** Options use full contract identity (underlying, strike, expiration, type). Futures use quoted prices with multiplier. Crypto uses exact quantities.
-- **Ticker strip uses underlyings only.** Never show option contract symbols or futures codes in the ticker strip.
-- **Muse owns the Record ledger writer.** The active stop order above remains until Keith authorizes cutover.
-- **Internal data retains all positions; sub-$5 hiding is display-only.** Never delete nonzero dust from `positions.json`. Every dollar remains in accounting and totals. Public rendering hides table rows under $5 only; stats and unrealized totals use all rows.
-- **USDG is cash-like.** No trade rows, no P&L tracking. Book the exact unit quantity the account shows.
-- **Book only what the account confirms. If the account and the ledger disagree, flag the discrepancy — don't average or guess.**
+- Pull both Trading and Agentic histories; every fill appears, including new option buys. Each row carries its executing account - never merge or reassign.
+- Robinhood standard detailed position/order views only, never legend mode (Keith, 2026-09-30).
+- Internal data retains all positions; sub-$5 hiding is display-only - never delete nonzero dust from `positions.json`. USDG is cash-like (no trade rows, no P&L). Book only what the account confirms; flag discrepancies, never average or guess.
+- Muse owns the Record ledger writer. The stop order above stands until Keith authorizes cutover.
 
 ## Handoff lanes
 
-Spark/Gemini can research and draft Market Tape copy, but verify its source access and facts; do not assume it can edit GitHub. Codex handles local routines and code when available. Instinct can implement and prepare PRs/previews and coordinate reviewed publication. These are working lanes, not exclusive permissions: Keith approves the public result and can change assignments. On each handoff, report what was actually done, what remains queued or blocked, and links to the real artifacts.
+Spark/Gemini: research and draft Tape copy (verify source access and facts). Codex: local routines and code. Instinct: implement, prepare PRs/previews, coordinate reviewed publication. Working lanes, not exclusive permissions - Keith approves the public result and can change assignments. On each handoff report what was done, what remains, and links to real artifacts. Prediction game and Reddit launch stay parked without a new Keith decision.
