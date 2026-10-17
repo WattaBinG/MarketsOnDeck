@@ -1,0 +1,39 @@
+name: Deploy refresh dispatcher
+# Deploys scheduler/ (the marketsondeck-refresh-dispatcher Worker) when it
+# changes. Uses Wrangler + repo secrets, the same pattern as the refresh
+# workflows, because the account's Workers Builds (git integration) minutes
+# are exhausted by the 15-minute refresh commit cadence: Cloudflare now skips
+# every git-triggered build, and GitHub renders a skipped build as a failed
+# check. This workflow gives the dispatcher a quota-free deploy path.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scheduler/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-scheduler
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy dispatcher to Cloudflare
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          cd scheduler
+          # Same 3-attempt retry pattern as the refresh workflows' deploy step.
+          for attempt in 1 2 3; do
+            npx -y wrangler@4.136.1 deploy && break
+            test "$attempt" -lt 3 || exit 1
+            sleep $((attempt * 30))
+          done
