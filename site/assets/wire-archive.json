@@ -1,6 +1,76 @@
 {
   "items": [
     {
+      "headline": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-09-25T20:30:00Z"
+    },
+    {
+      "headline": "Henry Hub natural gas prices this summer were 6% lower than last summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-09-25T14:00:00Z"
+    },
+    {
+      "headline": "Is it a coincidence that the 2 key data centers of OpenAI's Stargate are suddenly on the ropes? Project Jupiter (4.5GW) loans trading < 90, major delays... SB Energy (8GW) delaying IPO, major delay...",
+      "url": "https://x.com/zerohedge/status/2102599984399179870",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-09-23T03:25:02Z"
+    },
+    {
+      "headline": "The bond market shrugged off two inflation shocks. Why stock investors should pay attention.",
+      "url": "https://www.marketwatch.com/story/the-bond-market-shrugged-off-two-inflation-shocks-why-stock-investors-should-pay-attention-5da4f771?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Macro",
+      "timestamp": "2026-10-16T21:30:00Z"
+    },
+    {
+      "headline": "Replit is no longer working with Anthropic, CEO says",
+      "url": "https://techcrunch.com/2026/10/16/replit-is-no-longer-working-with-anthropic-ceo-says/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-16T21:22:28Z"
+    },
+    {
+      "headline": "Trump posts AI-edited photo to brag about White House restoration work",
+      "url": "https://www.theverge.com/policy/1012445/donald-trump-ai-photo-white-house-rennovation-column",
+      "source": "The Verge",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-15T21:09:33Z"
+    },
+    {
+      "headline": "Meta launches an open-weight AI model that runs on Macs",
+      "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-15T20:04:53Z"
+    },
+    {
+      "headline": "Kevin Warsh says Fed is focused on taming rising prices, but gives no hint about next rate hike",
+      "url": "https://www.nbcnews.com/business/economy/will-fed-raise-interest-rates-kevin-warsh-offer-clues-rcna603661",
+      "source": "NBC News",
+      "category": "Macro",
+      "timestamp": "2026-10-15T19:59:09Z"
+    },
+    {
+      "headline": "Bluesky’s AI tool now lets you make games and apps to share on social",
+      "url": "https://www.theverge.com/tech/1012374/bluesky-ai-attie-small-social-games-apps",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-15T19:57:16Z"
+    },
+    {
+      "headline": "Amazon devices chief Panos Panay sees a future where AI devices replace the need to use apps",
+      "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-15T19:55:25Z"
+    },
+    {
       "headline": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
       "source": "Federal Reserve",
@@ -1329,76 +1399,6 @@
       "source": "Nasdaq",
       "category": "Markets",
       "timestamp": "2026-10-16T21:43:00Z"
-    },
-    {
-      "headline": "General American Investors CEO Priest Buys Nearly $100k in Preferred Stock. Should Investors Be Paying Attention?",
-      "url": "https://www.nasdaq.com/articles/general-american-investors-ceo-priest-buys-nearly-100k-preferred-stock-should-investors-be",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-16T21:37:01Z"
-    },
-    {
-      "headline": "SEC Charges Multiple Entities in Fraud Schemes Totaling at Least $15 Million That Used WhatsApp and Other Platforms to Lure Investors",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-95-sec-charges-multiple-entities-fraud-schemes-totaling-least-15-million-used-whatsapp-other-platforms",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-09-29T13:55:53Z"
-    },
-    {
-      "headline": "SEC Charges Registered Investment Adviser Zoe Financial for Failure to Disclose Conflict of Interest",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-94-sec-charges-registered-investment-adviser-zoe-financial-failure-disclose-conflict-interest",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-09-28T17:46:30Z"
-    },
-    {
-      "headline": "EchoStar’s stock looks like a stealthy way to ride the SpaceX wave, J.P. Morgan says",
-      "url": "https://www.marketwatch.com/story/echostars-stock-looks-like-a-stealthy-way-to-ride-the-spacex-wave-j-p-morgan-says-c4effa5d?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-16T20:05:00Z"
-    },
-    {
-      "headline": "Meta’s new terms may allow it to train AI on news sites for free",
-      "url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-16T14:02:40Z"
-    },
-    {
-      "headline": "U.S. small-scale solar generation has quadrupled in the last decade",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68324",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T14:00:00Z"
-    },
-    {
-      "headline": "Veritas expands its anti-counterfeit chip to jewelry, trophies, and fragrance bottles",
-      "url": "https://techcrunch.com/2026/10/16/veritas-is-building-a-chip-to-verify-luxury-goods/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-16T14:00:00Z"
-    },
-    {
-      "headline": "Here's how the CoreWeave sell-off is affecting OpenAI vs. Anthropic valuations",
-      "url": "https://www.cnbc.com/2026/10/16/coreweave-openai-anthropic-perps.html",
-      "source": "CNBC",
-      "category": "AI",
-      "timestamp": "2026-10-16T13:43:53Z"
-    },
-    {
-      "headline": "ChatGPT can peek at your Chrome tabs now",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-15T22:43:23Z"
-    },
-    {
-      "headline": "Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch",
-      "url": "https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled",
-      "source": "The Verge",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-15T22:35:55Z"
     }
   ]
 }
