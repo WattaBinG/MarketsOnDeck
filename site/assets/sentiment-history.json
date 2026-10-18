@@ -1,36 +1,5 @@
 [
   {
-    "date": "2025-10-18",
-    "score": 64,
-    "label": "Greed",
-    "scores": {
-      "1D": {
-        "score": 64,
-        "label": "Greed"
-      },
-      "1W": {
-        "score": 52,
-        "label": "Neutral"
-      },
-      "1M": {
-        "score": 45,
-        "label": "Neutral"
-      },
-      "3M": {
-        "score": 56,
-        "label": "Neutral"
-      },
-      "6M": {
-        "score": 98,
-        "label": "Extreme Greed"
-      },
-      "1Y": {
-        "score": 81,
-        "label": "Extreme Greed"
-      }
-    }
-  },
-  {
     "date": "2025-10-19",
     "score": 60,
     "label": "Greed",
@@ -11223,23 +11192,23 @@
   },
   {
     "date": "2026-10-15",
-    "score": 64,
-    "label": "Greed",
+    "score": 55,
+    "label": "Neutral",
     "scores": {
       "1D": {
-        "score": 64,
-        "label": "Greed"
+        "score": 55,
+        "label": "Neutral"
       },
       "1W": {
-        "score": 44,
+        "score": 40,
         "label": "Neutral"
       },
       "1M": {
-        "score": 48,
+        "score": 47,
         "label": "Neutral"
       },
       "3M": {
-        "score": 77,
+        "score": 76,
         "label": "Greed"
       },
       "6M": {
@@ -11247,8 +11216,8 @@
         "label": "Extreme Greed"
       },
       "1Y": {
-        "score": 84,
-        "label": "Extreme Greed"
+        "score": 79,
+        "label": "Greed"
       }
     }
   },
@@ -11285,15 +11254,15 @@
   },
   {
     "date": "2026-10-17",
-    "score": 33,
+    "score": 34,
     "label": "Fear",
     "scores": {
       "1D": {
-        "score": 33,
+        "score": 34,
         "label": "Fear"
       },
       "1W": {
-        "score": 29,
+        "score": 37,
         "label": "Fear"
       },
       "1M": {
@@ -11305,8 +11274,39 @@
         "label": "Greed"
       },
       "6M": {
-        "score": 80,
-        "label": "Extreme Greed"
+        "score": 79,
+        "label": "Greed"
+      },
+      "1Y": {
+        "score": 77,
+        "label": "Greed"
+      }
+    }
+  },
+  {
+    "date": "2026-10-18",
+    "score": 33,
+    "label": "Fear",
+    "scores": {
+      "1D": {
+        "score": 33,
+        "label": "Fear"
+      },
+      "1W": {
+        "score": 37,
+        "label": "Fear"
+      },
+      "1M": {
+        "score": 40,
+        "label": "Neutral"
+      },
+      "3M": {
+        "score": 75,
+        "label": "Greed"
+      },
+      "6M": {
+        "score": 79,
+        "label": "Greed"
       },
       "1Y": {
         "score": 77,
