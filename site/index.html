@@ -211,6 +211,44 @@
       <iframe title="Subscribe to MarketsOnDeck on Substack" src="https://marketsondeck.substack.com/embed" width="480" height="320" style="display:block; width:100%; max-width:480px; height:320px; border:1px solid var(--border); background:white;" loading="lazy" scrolling="no"></iframe>
       <p style="font-size:13px; color:var(--text-muted); margin:12px 0 0;">Form not loading? <a href="https://marketsondeck.substack.com/" target="_blank" rel="noopener">Subscribe on Substack</a>.</p>
     </section>
+
+<section class="section-tight contact-cta" id="contact" aria-labelledby="contactTitle" style="border-top:1px solid var(--border); margin-top:28px;">
+      <div class="eyebrow">Contact</div>
+      <h2 id="contactTitle" style="font-size:clamp(24px,3vw,32px); margin:10px 0;">Ideas, comments, questions - write to us.</h2>
+      <p style="color:var(--text-muted); max-width:62ch; margin:0 0 18px;">Heard something we should cover, spotted something off, or just want to talk markets? This goes straight to the MarketsOnDeck inbox.</p>
+      <form action="https://formsubmit.co/markets.on.deck@gmail.com" method="POST" style="max-width:480px; display:grid; gap:12px;">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+        <input type="hidden" name="_subject" value="[MoD site] New message from the contact form">
+        <input type="hidden" name="_template" value="box">
+        <input type="hidden" name="_next" value="https://marketsondeck.net/?sent=1#contact">
+        <label style="display:grid; gap:6px; font-size:14px; color:var(--text-muted);">Your name
+          <input type="text" name="name" required style="padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
+        </label>
+        <label style="display:grid; gap:6px; font-size:14px; color:var(--text-muted);">Your email (so we can reply)
+          <input type="email" name="email" required style="padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
+        </label>
+        <label style="display:grid; gap:6px; font-size:14px; color:var(--text-muted);">Topic
+          <select name="topic" style="padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
+            <option>Idea</option><option>Comment</option><option>Question</option><option>Something looks wrong</option>
+          </select>
+        </label>
+        <label style="display:grid; gap:6px; font-size:14px; color:var(--text-muted);">Message
+          <textarea name="message" rows="5" required style="padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary" style="justify-self:start; cursor:pointer;">Send it</button>
+        <p id="contactSent" style="display:none; color:var(--green, #2fbf71); font-weight:600; margin:0;">Sent - thanks, we read everything.</p>
+      </form>
+      <script>
+        (function () {
+          if (/[?&]sent=1/.test(location.search)) {
+            var p = document.getElementById('contactSent');
+            if (p) { p.style.display = 'block'; }
+            var c = document.getElementById('contact');
+            if (c) { c.scrollIntoView({ behavior: 'smooth' }); }
+          }
+        })();
+      </script>
+    </section>
   </div>
 
 </main>
