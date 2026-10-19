@@ -3,7 +3,7 @@
   "asOf": "2026-10-19",
   "scope": "Realized trades, January 1 - October 19, 2026 (both accounts)",
   "totalTrades": 397,
-  "totalRealizedGain": 47916.95,
+  "totalRealizedGain": 47917.03,
   "wins": 285,
   "losses": 111,
   "flat": 1,
@@ -17,7 +17,7 @@
     "winRate": 70.94
    },
    "Agentic": {
-    "realizedGain": 499.11,
+    "realizedGain": 499.19,
     "trades": 15,
     "winRate": 93.33
    }
@@ -6151,7 +6151,7 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": 209.92,
+   "realizedGain": 210.0,
    "underlying": "SPCX",
    "strike": 152.5,
    "expiration": "2026-10-23",
@@ -6172,8 +6172,8 @@
    "entryFillIds": [
     "SPCX-open-11"
    ],
-   "lotAllocationBasis": "Single-contract lot: bought Oct 15 @ $3.10 (order 6ad128dc; net debit $310.04 incl. $0.04 regulatory fee) and sold Oct 19 @ $5.20 (order 6ad635b9; net credit $519.96 incl. $0.04 fee). Realized $209.92 is net of both orders' fees per the broker net_amount fields; gross premium gain is $210.00.",
-   "realizedGainSource": "Broker net amounts (net credit $519.96 - net debit $310.04); fills verified in Robinhood order history",
+   "lotAllocationBasis": "Single-contract lot: bought Oct 15 @ $3.10 (order 6ad128dc) and sold Oct 19 @ $5.20 (order 6ad635b9). Realized booked GROSS of fees per the book rule (Keith, 2026-10-19): $520.00 - $310.00 = $210.00; order fees ($0.04 buy side in the net debit $310.04; $0.04 sell side in the net credit $519.96) are recorded in regulatoryFees and this note. Net-of-fees realized was $209.92.",
+   "realizedGainSource": "Gross premium difference (exit $520.00 - entry $310.00) per the book gross-of-fees rule (Keith, 2026-10-19); fills verified in Robinhood order history (orders 6ad128dc / 6ad635b9)",
    "evidence": "Robinhood order history"
   }
  ]
