@@ -5492,7 +5492,12 @@
    "fees": 0.13,
    "priceUnit": "USD_per_share",
    "realizedGainSource": "FIFO reconciliation vs broker order history; fees kept separate",
-   "evidence": "Robinhood order history"
+   "evidence": "Robinhood order history",
+   "underlying": "HD",
+   "positionSide": "long",
+   "action": "sell",
+   "schemaVersion": 2,
+   "id": "HD-close-13"
   },
   {
    "date": "2026-10-15",
@@ -5506,7 +5511,12 @@
    "fees": 0.16,
    "priceUnit": "USD_per_share",
    "realizedGainSource": "FIFO reconciliation vs broker order history; fees kept separate",
-   "evidence": "Robinhood order history"
+   "evidence": "Robinhood order history",
+   "underlying": "HD",
+   "positionSide": "long",
+   "action": "sell",
+   "schemaVersion": 2,
+   "id": "HD-close-14"
   },
   {
    "date": "2026-10-15",
@@ -5619,7 +5629,12 @@
    "fees": 0.16,
    "priceUnit": "USD_per_share",
    "realizedGainSource": "FIFO reconciliation vs broker order history; fees kept separate",
-   "evidence": "Robinhood order history"
+   "evidence": "Robinhood order history",
+   "underlying": "HD",
+   "positionSide": "long",
+   "action": "sell",
+   "schemaVersion": 2,
+   "id": "HD-close-15"
   },
   {
    "date": "2026-10-15",
@@ -5798,7 +5813,12 @@
    "fees": 0.13,
    "priceUnit": "USD_per_share",
    "realizedGainSource": "FIFO reconciliation vs broker order history; fees kept separate",
-   "evidence": "Robinhood order history"
+   "evidence": "Robinhood order history",
+   "underlying": "HD",
+   "positionSide": "long",
+   "action": "sell",
+   "schemaVersion": 2,
+   "id": "HD-close-16"
   },
   {
    "date": "2026-10-16",
