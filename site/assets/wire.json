@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-19T06:00:52Z",
-  "asOfLabel": "2:00 AM ET",
+  "asOf": "2026-10-19T06:16:31Z",
+  "asOfLabel": "2:16 AM ET",
   "topStory": {
     "headline": "China's third-quarter economic growth quickens to 4.5% as exports surge, beating estimates",
     "url": "https://www.cnbc.com/2026/10/19/chinas-economic-growth-quickens-to-4point6percent-as-exports-surge-stimulus-rolls-out.html",
@@ -12,6 +12,30 @@
     "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
+    {
+      "headline": "China's growth accelerates as AI boom helps boost exports",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-19T06:08:02Z",
+      "firstSeen": "2026-10-19T02:16:29Z"
+    },
+    {
+      "headline": "OpenAI bugging suspect WhatsApp'ed Saudi royal days before arrest, feds reveal",
+      "url": "https://www.cnbc.com/2026/10/19/openai-bugging-suspect-alfozan-saudi-royal-family.html",
+      "source": "CNBC",
+      "category": "AI",
+      "timestamp": "2026-10-19T06:06:58Z",
+      "firstSeen": "2026-10-19T06:16:31Z"
+    },
+    {
+      "headline": "Russia pounds Kyiv as Rubio urges Ukraine's Zelensky to 'focus' on ending the war",
+      "url": "https://www.france24.com/en/europe/20261019-live-russian-strikes-pound-kyiv-as-rubio-denies-us-paused-intel-sharing-with-ukraine",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-19T06:00:06Z",
+      "firstSeen": "2026-10-19T06:16:31Z"
+    },
     {
       "headline": "BoE probes Barclays’ handling of private credit risks, FT reports",
       "url": "https://www.investing.com/news/stock-market-news/boe-probes-barclays-handling-of-private-credit-risks-ft-reports-4956387",
@@ -91,30 +115,6 @@
       "category": "AI",
       "timestamp": "2026-10-19T05:20:00Z",
       "firstSeen": "2026-10-19T05:45:54Z"
-    },
-    {
-      "headline": "China's growth accelerates as AI export boom outweighs domestic weakness",
-      "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-19T05:17:35Z",
-      "firstSeen": "2026-10-19T02:16:29Z"
-    },
-    {
-      "headline": "Oil prices slide as sanctions relief on Russian crude raises hopes of increased supply",
-      "url": "https://www.cnbc.com/2026/10/18/oil-price-today-ukraine-russia-iran-strait-hormuz.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-19T04:51:56Z",
-      "firstSeen": "2026-10-18T22:31:27Z"
-    },
-    {
-      "headline": "Warren Buffett Warned About Stock Valuations. So Why Is Berkshire Still Buying Stocks?",
-      "url": "https://www.nasdaq.com/articles/warren-buffett-warned-about-stock-valuations-so-why-berkshire-still-buying-stocks",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-19T04:50:00Z",
-      "firstSeen": "2026-10-19T05:15:51Z"
     },
     {
       "headline": "*PUTIN ASKS TRUMP AND XI FOR A MEETING: WSJ",
