@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-19T16:31:47Z",
-  "asOfLabel": "12:31 PM ET",
+  "asOf": "2026-10-19T16:46:07Z",
+  "asOfLabel": "12:46 PM ET",
   "source": "Apple App Store - US Top Free Apps chart",
   "sourceUrl": "https://www.apple.com/app-store/charts/",
   "items": [
@@ -10,24 +10,29 @@
       "url": "https://apps.apple.com/us/app/muse-from-meta/id6760173601"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "name": "ChatGPT",
       "url": "https://chatgpt.com"
     },
     {
-      "rank": 9,
+      "rank": 8,
       "name": "Claude by Anthropic",
       "url": "https://claude.ai"
     },
     {
-      "rank": 11,
+      "rank": 10,
       "name": "Google Gemini",
       "url": "https://gemini.google.com"
     },
     {
-      "rank": 35,
+      "rank": 34,
       "name": "Grok AI",
       "url": "https://grok.com"
+    },
+    {
+      "rank": 100,
+      "name": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com"
     }
   ]
 }
