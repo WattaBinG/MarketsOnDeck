@@ -3,20 +3,18 @@
 *This repo also has an `AGENTS.md` at its root, kept in sync with this file, so Codex (or any other AI tool Keith
 points at this repo) starts with the same ground truth Claude Code has.*
 
-## 0. ACTIVE STOP ORDER — TRADE LEDGER WRITES HALTED (per Keith, 2026-09-30)
-**Do not write to `site/assets/trades.json`, `site/assets/positions.json`, or any other file that represents The
-Record's trade history, for any reason, until this notice is removed.** This includes "Refresh The Record"-style
-scheduled/automated tasks: if your assigned task is to refresh the trade journal, positions, or Record data, stop
-before writing and treat this notice as the reason. Verified corruption is live in the committed ledger right now —
-option trades are being flattened into bare equity-shaped rows missing required schema v2 fields (confirmed: the
-2026-09-30 CCL closed-trade row and the 2026-09-30 SPCX -$662 closed-trade row in `trades.json` both lack
-strike/expiration/optionType/multiplier/contractId despite being option trades). Repairs are being handled
-separately via review branches — do not attempt to repair the ledger yourself even if you can see the corruption.
-See §8 below for full detail. This stop order was issued in chat, not by editing the scheduled task's own stored
-prompt (no tool available in that session could reach it) — if you are a human with access to the Claude Code
-Triggers/scheduled-tasks UI, please also pause or delete the trigger whose commits are authored "Refresh The
-Record: ..." directly at the source, since a repo-instructions note only works if the job in question actually
-reads this file before acting.
+## 0. STOP ORDER LIFTED — TRADE LEDGER WRITES RESUMED (per Keith, 2026-10-19)
+The 2026-09-30 stop order that halted all writes to `site/assets/trades.json`, `site/assets/positions.json` and
+any other file representing The Record's trade history is LIFTED. Keith, iMessage 2026-10-19 5:51 PM ET
+(phonemsg-01M5B2CD8MC8MYQSQB6STKSR2W): "Lift freeze." — answering the ask to lift the Sep 30 freeze so the ledger
+is refreshed daily with the validator guarding. Keith the same afternoon (5:46 PM ET,
+phonemsg-01M5B22HWD7T91G1F008KWXXK8): "It should be current after every day after market check. All my trades and
+everything."
+The resumed flow: **Muse owns the Record ledger writer** — a daily post-close refresh of both accounts (options,
+equities, futures, crypto), schema v2, via review branch + PR; Instinct verifies the head before merge, and the
+hardened validator (fails any option row missing schemaVersion 2, from the PR #68 repair) gates every write in CI.
+The old "Refresh The Record" Claude Code scheduled trigger stays paused/deleted — do NOT resume it; the recurring
+corruption it caused is documented in §8 below, which stays as incident history.
 
 ## 1. DUAL ROLE: ELITE PRACTITIONER & MASTER TEACHER
 - **Role:** You act as a world-class affiliate marketing architect, financial-content compliance-aware strategist, and senior mentor.
@@ -62,7 +60,7 @@ reads this file before acting.
 - **Why this exists:** a scheduled crypto-ticker-refresh run got a fresh shallow clone with two disjoint shallow boundaries baked in. `git merge-base` silently failed to find a real common ancestor between local and remote `main` and reported them as having diverged (50 vs. 50 unrelated commits) — a complete fabrication caused entirely by the shallow truncation, not by any real force-push or history rewrite upstream. The job correctly refused to force-push through what looked like divergence (right call, keep doing that), but burned a cycle chasing a phantom problem and left a stale-data commit dangling in the container instead of landing the actual price refresh.
 - **Never treat an apparent divergence as real without first ruling out a shallow clone this way.** A genuine force-push/rewrite and a shallow-clone artifact look identical from `git log`/`git status` alone; the shallow check is what tells them apart, and it must run before any conclusion, not after.
 
-## 8. INCIDENT — TRADE LEDGER CORRUPTION (per Keith, 2026-09-30; see §0 for the active stop order)
+## 8. INCIDENT — TRADE LEDGER CORRUPTION (per Keith, 2026-09-30; the stop order was lifted 2026-10-19, see §0)
 - **What's confirmed, independently verified against the committed files (not just Keith's report):** the realized-trades
   array in `site/assets/trades.json` contains at least two option trades stored as bare equity-shaped rows —
   `{date, timestamp, account, symbol, assetType:"equity", quantity, price, realizedGain}` — with none of the schema v2

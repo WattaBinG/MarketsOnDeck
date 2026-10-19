@@ -6,9 +6,9 @@ Updated October 16, 2026. This is a work-state briefing, not approval to act. Ch
 
 MarketsOnDeck is Keith Watkins's retail-markets brand at https://marketsondeck.net: The Wire (attributed headlines/alerts), Morning Brief and Market Tape commentary, and The Record (public journal of real trades and open positions). Not a signals service, not a highlight reel. Keep brand, site and social work coherent; never mix in Keith's other projects. Site files in `site/` (Cloudflare Workers + GitHub Actions refresh). Inspect current workflow files before describing their timing.
 
-## ACTIVE STOP ORDER (per Keith, 2026-09-30)
+## LEDGER FREEZE LIFTED (per Keith, 2026-10-19)
 
-**Do not write to `site/assets/trades.json`, `site/assets/positions.json`, or any other Record trade-history file, for any reason, until this notice is removed.** Repairs happen via review branches only. The suspected writer is a Claude Code scheduled trigger, not this repo's workflows - pause/delete the trigger behind the `"Refresh The Record: ..."` commits in the Claude Code Triggers UI directly. Detail: `CLAUDE.md` §0 and §8.
+The 2026-09-30 stop order on Record ledger writes is LIFTED: Keith, iMessage 2026-10-19 5:51 PM ET (phonemsg-01M5B2CD8MC8MYQSQB6STKSR2W), "Lift freeze." Daily post-close refresh of `site/assets/trades.json` + `site/assets/positions.json` resumes under Muse (review branch + PR; Instinct verifies the head before merge; schema v2 validator gates every write in CI). The halted "Refresh The Record" Claude Code trigger stays paused - do NOT resume it. Incident history: `CLAUDE.md` §8.
 
 ## Referral links (use these exact links)
 
@@ -78,7 +78,7 @@ Images, logos and short spliced Bloomberg/CNBC clips are OK in MoD social videos
 - Pull both Trading and Agentic histories; every fill appears, including new option buys. Each row carries its executing account - never merge or reassign.
 - Robinhood standard detailed position/order views only, never legend mode (Keith, 2026-09-30).
 - Internal data retains all positions; sub-$5 hiding is display-only - never delete nonzero dust from `positions.json`. USDG is cash-like (no trade rows, no P&L). Book only what the account confirms; flag discrepancies, never average or guess.
-- Muse owns the Record ledger writer. The stop order above stands until Keith authorizes cutover.
+- Muse owns the Record ledger writer. Cutover authorized by Keith 2026-10-19 5:51 PM ET (see the lifted-freeze note above): daily post-close refresh via review branch + PR.
 
 ## Handoff lanes
 
