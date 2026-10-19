@@ -221,21 +221,21 @@
         <input type="hidden" name="_subject" value="[MoD site] New message from the contact form">
         <input type="hidden" name="_template" value="box">
         <input type="hidden" name="_next" value="https://marketsondeck.net/?sent=1#contact">
-        <label style="display:grid; gap:6px; font-size:14px; color:var(--text-muted);">Your name
-          <input type="text" name="name" required style="padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
+        <label style="display:block; font-size:14px; color:var(--text-muted);">Your name
+          <input type="text" name="name" required style="display:block; width:100%; margin-top:6px; box-sizing:border-box; padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
         </label>
-        <label style="display:grid; gap:6px; font-size:14px; color:var(--text-muted);">Your email (so we can reply)
-          <input type="email" name="email" required style="padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
+        <label style="display:block; font-size:14px; color:var(--text-muted);">Your email (so we can reply)
+          <input type="email" name="email" required style="display:block; width:100%; margin-top:6px; box-sizing:border-box; padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
         </label>
-        <label style="display:grid; gap:6px; font-size:14px; color:var(--text-muted);">Topic
-          <select name="topic" style="padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
+        <label style="display:block; font-size:14px; color:var(--text-muted);">Topic
+          <select name="topic" style="display:block; width:100%; margin-top:6px; box-sizing:border-box; padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;">
             <option>Idea</option><option>Comment</option><option>Question</option><option>Something looks wrong</option>
           </select>
         </label>
-        <label style="display:grid; gap:6px; font-size:14px; color:var(--text-muted);">Message
-          <textarea name="message" rows="5" required style="padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;"></textarea>
+        <label style="display:block; font-size:14px; color:var(--text-muted);">Message
+          <textarea name="message" rows="5" required style="display:block; width:100%; margin-top:6px; box-sizing:border-box; padding:10px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface, transparent); color:inherit;"></textarea>
         </label>
-        <button type="submit" class="btn btn-primary" style="justify-self:start; cursor:pointer;">Send it</button>
+        <button type="submit" style="display:inline-block; padding:12px 22px; border:0; border-radius:999px; background:var(--accent); color:#fff; font-weight:700; font-size:15px; cursor:pointer; font-family:inherit;">Send it</button>
         <p id="contactSent" style="display:none; color:var(--green, #2fbf71); font-weight:600; margin:0;">Sent - thanks, we read everything.</p>
       </form>
       <script>
