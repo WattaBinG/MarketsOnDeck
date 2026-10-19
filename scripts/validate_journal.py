@@ -114,10 +114,9 @@ def validate_sep30_repairs(data):
             and t.get('symbol') in ('SPCX', 'CCL')]
     assert len(flat) == 0, 'Flattened SPCX/CCL rows still present'
 
-    # Trade count: 347 Sep-30 baseline + 19 October catch-up rows
-    # (13 option closes incl. 4 Sep-22 TSLA300 backfill, 6 equity closes)
-    # + 4 Oct 7-9 closes (3 HD Oct-9 $287.50C lots, 1 SPCX Oct-16 $162.50C partial)
-    assert len(trades) == 370, f'Expected 370 trades, got {len(trades)}'
+    # Trade count: 370 through the Oct 9 freeze + 27 Oct 10-19 catch-up rows
+    # (ledger-catchup-2026-10-19, PR #153: 23 option closes, 4 equity closes)
+    assert len(trades) == 397, f'Expected 397 trades, got {len(trades)}'
 
 
 def validate_futures(positions):
