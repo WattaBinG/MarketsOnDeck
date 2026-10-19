@@ -1,1 +1,193 @@
-{"asOf": "2026-10-19T18:40:33Z", "asOfLabel": "2:40 PM ET", "pinned": ["SPY", "QQQ", "DIA"], "source": "robinhood", "items": [{"symbol": "SPCX", "price": 147.51, "change": 1.48, "changePercent": 1.02, "held": true}, {"symbol": "QUBT", "price": 6.46, "change": 0.1, "changePercent": 1.65, "held": true}, {"symbol": "SOFI", "price": 14.38, "change": -0.17, "changePercent": -1.16, "held": true}, {"symbol": "KLAC", "price": 167.67, "change": 1.93, "changePercent": 1.16, "held": true}, {"symbol": "CCL", "price": 26.27, "change": 0.38, "changePercent": 1.45, "held": true}, {"symbol": "HD", "price": 310.45, "change": 0.82, "changePercent": 0.26, "held": true}, {"symbol": "LLY", "price": 1250.03, "change": -7.0, "changePercent": -0.56, "held": true}, {"symbol": "INTC", "price": 92.29, "change": 2.44, "changePercent": 2.72}, {"symbol": "AMZN", "price": 261.97, "change": 11.97, "changePercent": 4.79}, {"symbol": "TSLA", "price": 366.97, "change": 12.25, "changePercent": 3.45}, {"symbol": "NVDA", "price": 217.32, "change": 3.19, "changePercent": 1.49}, {"symbol": "PLTR", "price": 194.16, "change": 8.12, "changePercent": 4.37}, {"symbol": "SPCH", "price": 9.36, "change": 0.18, "changePercent": 1.96}, {"symbol": "QQQ", "price": 718.95, "change": 9.15, "changePercent": 1.29}, {"symbol": "AMD", "price": 537.87, "change": 9.12, "changePercent": 1.72}, {"symbol": "GOOGL", "price": 344.26, "change": 3.67, "changePercent": 1.08}, {"symbol": "SPY", "price": 767.41, "change": 4.16, "changePercent": 0.55}, {"symbol": "COIN", "price": 169.25, "change": -3.91, "changePercent": -2.26}, {"symbol": "MSFT", "price": 534.09, "change": 5.04, "changePercent": 0.95}, {"symbol": "META", "price": 703.8, "change": -5.53, "changePercent": -0.78}, {"symbol": "IWM", "price": 271.08, "change": 0.64, "changePercent": 0.24}, {"symbol": "LULU", "price": 96.39, "change": -0.7, "changePercent": -0.73}, {"symbol": "AAPL", "price": 343.59, "change": 0.13, "changePercent": 0.04}, {"symbol": "DIA", "price": 519.58, "change": 0.48, "changePercent": 0.09}, {"symbol": "SKYD", "price": 6.68, "change": -0.23, "changePercent": -3.26}, {"symbol": "MRVL", "price": 236.9, "change": 9.07, "changePercent": 3.98}, {"symbol": "MRNA", "price": 225.58, "change": 7.57, "changePercent": 3.47}, {"symbol": "SNDK", "price": 1374.08, "change": 74.78, "changePercent": 5.76}, {"symbol": "MOS", "price": 17.95, "change": -0.87, "changePercent": -4.6}, {"symbol": "WDC", "price": 346.8, "change": 14.8, "changePercent": 4.46}]}
+{
+  "asOf": "2026-10-19T18:40:33Z",
+  "asOfLabel": "2:40 PM ET",
+  "pinned": [
+    "SPY",
+    "QQQ",
+    "DIA",
+    "IWM",
+    "USO"
+  ],
+  "source": "robinhood",
+  "items": [
+    {
+      "symbol": "SPY",
+      "price": 767.41,
+      "change": 4.16,
+      "changePercent": 0.55
+    },
+    {
+      "symbol": "QQQ",
+      "price": 718.95,
+      "change": 9.15,
+      "changePercent": 1.29
+    },
+    {
+      "symbol": "DIA",
+      "price": 519.58,
+      "change": 0.48,
+      "changePercent": 0.09
+    },
+    {
+      "symbol": "IWM",
+      "price": 271.08,
+      "change": 0.64,
+      "changePercent": 0.24
+    },
+    {
+      "symbol": "HD",
+      "price": 310.45,
+      "change": 0.82,
+      "changePercent": 0.26,
+      "held": true
+    },
+    {
+      "symbol": "SPCX",
+      "price": 147.51,
+      "change": 1.48,
+      "changePercent": 1.02,
+      "held": true
+    },
+    {
+      "symbol": "SOFI",
+      "price": 14.38,
+      "change": -0.17,
+      "changePercent": -1.16,
+      "held": true
+    },
+    {
+      "symbol": "QUBT",
+      "price": 6.46,
+      "change": 0.1,
+      "changePercent": 1.65,
+      "held": true
+    },
+    {
+      "symbol": "KLAC",
+      "price": 167.67,
+      "change": 1.93,
+      "changePercent": 1.16,
+      "held": true
+    },
+    {
+      "symbol": "CCL",
+      "price": 26.27,
+      "change": 0.38,
+      "changePercent": 1.45
+    },
+    {
+      "symbol": "LLY",
+      "price": 1250.03,
+      "change": -7.0,
+      "changePercent": -0.56
+    },
+    {
+      "symbol": "INTC",
+      "price": 92.29,
+      "change": 2.44,
+      "changePercent": 2.72
+    },
+    {
+      "symbol": "AMZN",
+      "price": 261.97,
+      "change": 11.97,
+      "changePercent": 4.79
+    },
+    {
+      "symbol": "TSLA",
+      "price": 366.97,
+      "change": 12.25,
+      "changePercent": 3.45
+    },
+    {
+      "symbol": "NVDA",
+      "price": 217.32,
+      "change": 3.19,
+      "changePercent": 1.49
+    },
+    {
+      "symbol": "PLTR",
+      "price": 194.16,
+      "change": 8.12,
+      "changePercent": 4.37
+    },
+    {
+      "symbol": "SPCH",
+      "price": 9.36,
+      "change": 0.18,
+      "changePercent": 1.96
+    },
+    {
+      "symbol": "AMD",
+      "price": 537.87,
+      "change": 9.12,
+      "changePercent": 1.72
+    },
+    {
+      "symbol": "GOOGL",
+      "price": 344.26,
+      "change": 3.67,
+      "changePercent": 1.08
+    },
+    {
+      "symbol": "COIN",
+      "price": 169.25,
+      "change": -3.91,
+      "changePercent": -2.26
+    },
+    {
+      "symbol": "MSFT",
+      "price": 534.09,
+      "change": 5.04,
+      "changePercent": 0.95
+    },
+    {
+      "symbol": "META",
+      "price": 703.8,
+      "change": -5.53,
+      "changePercent": -0.78
+    },
+    {
+      "symbol": "LULU",
+      "price": 96.39,
+      "change": -0.7,
+      "changePercent": -0.73
+    },
+    {
+      "symbol": "AAPL",
+      "price": 343.59,
+      "change": 0.13,
+      "changePercent": 0.04
+    },
+    {
+      "symbol": "SKYD",
+      "price": 6.68,
+      "change": -0.23,
+      "changePercent": -3.26
+    },
+    {
+      "symbol": "MRVL",
+      "price": 236.9,
+      "change": 9.07,
+      "changePercent": 3.98
+    },
+    {
+      "symbol": "MRNA",
+      "price": 225.58,
+      "change": 7.57,
+      "changePercent": 3.47
+    },
+    {
+      "symbol": "SNDK",
+      "price": 1374.08,
+      "change": 74.78,
+      "changePercent": 5.76
+    },
+    {
+      "symbol": "MOS",
+      "price": 17.95,
+      "change": -0.87,
+      "changePercent": -4.6
+    }
+  ]
+}
