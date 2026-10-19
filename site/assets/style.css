@@ -1071,3 +1071,14 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .home-dashboard .wire-list-wrap .wire-list { column-count:1; }
   .home-dashboard .wire-list-wrap .wire-list a { font-size:16px; line-height:1.4; }
 }
+
+/* Cashtags: $TICKER links rendered by assets/cashtags.js -> Yahoo Finance */
+a.cashtag {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: underline dotted;
+  text-underline-offset: 3px;
+}
+a.cashtag:hover {
+  text-decoration-style: solid;
+}
