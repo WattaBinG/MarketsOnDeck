@@ -175,14 +175,21 @@ def validate_position_bases(positions):
         assert p.get('priceUnit') == 'USD_per_contract'
         assert p.get('multiplier') == 100
 
-    # Oct 9 opens: broker clearing basis authoritative
-    check_open(('Trading', 'HD', 295.0, '2026-10-16'), 8, 254.375)
-    check_open(('Trading', 'HD', 300.0, '2026-10-30'), 3, 425.0)
-    check_open(('Trading', 'SPCX', 162.5, '2026-10-16'), 2, 320.0)
+    # Post catch-up book (PR #153, reconciled to broker history Oct 19): open options
+    # are SPCX-only. Bases = broker clearing bases carried by the catch-up.
+    check_open(('Trading', 'SPCX', 148.0, '2026-10-23'), 3, 516.0)
+    check_open(('Trading', 'SPCX', 155.0, '2026-10-23'), 6, 230.0)
+    check_open(('Trading', 'SPCX', 152.5, '2026-10-28'), 7, 471.4286)
 
+    # Expired/closed: all HD options were sold Oct 14-15 - none may remain
+    assert not any(key[1] == 'HD' for key in pos_map), (
+        'HD option positions should all be closed (sold Oct 14-15)')
     # Expired/closed: HD Oct-9 $287.50C must be absent (sold Oct 9)
     assert ('Trading', 'HD', 287.5, '2026-10-09') not in pos_map, (
         'HD Oct-9 $287.50C should be closed')
+    # SPCX 162.5C Oct-16 closed Oct 15
+    assert ('Trading', 'SPCX', 162.5, '2026-10-16') not in pos_map, (
+        'SPCX 162.5C Oct-16 should be closed (sold Oct 15)')
 
     # Closed/expired: no TSLA or CCL option positions may remain
     for key in pos_map:
