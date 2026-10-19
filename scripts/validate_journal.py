@@ -214,9 +214,10 @@ def validate_position_bases(positions, data=None):
                 # Contract is past expiration with no booked close: it expired.
                 # Surface it loudly instead of pinning silence - an expired lot
                 # without a close row is a known-gap the book should eventually book.
-                print(f'WARNING: {key}: {remaining} contract(s) past expiry with no close row'
-                      ' (treated as expired; book an expire row to clear)')
-                continue
+                raise AssertionError(
+                    f'{key}: {remaining} contract(s) past expiry with no close row - '
+                    'expired-worthless contracts are realized losses and MUST be booked '
+                    'with an expire row (action: expire, exitPremium 0) to clear this gate')
             # FIFO basis: consume fills in date order
             fls_sorted = sorted(fls, key=lambda f: f.get('filledAt', ''))
             left = closes.get(key, 0)

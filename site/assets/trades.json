@@ -2,19 +2,19 @@
  "summary": {
   "asOf": "2026-10-19",
   "scope": "Realized trades, January 1 - October 19, 2026 (both accounts)",
-  "totalTrades": 397,
-  "totalRealizedGain": 47916.95,
+  "totalTrades": 398,
+  "totalRealizedGain": 47742.95,
   "wins": 285,
-  "losses": 111,
+  "losses": 112,
   "flat": 1,
-  "winRate": 71.79,
+  "winRate": 71.61,
   "biggestWin": 5155.0,
   "biggestLoss": -1690.0,
   "perAccount": {
    "Trading": {
-    "realizedGain": 47417.84,
-    "trades": 382,
-    "winRate": 70.94
+    "realizedGain": 47243.84,
+    "trades": 383,
+    "winRate": 70.76
    },
    "Agentic": {
     "realizedGain": 499.11,
@@ -6175,6 +6175,39 @@
    "lotAllocationBasis": "Single-contract lot: bought Oct 15 @ $3.10 (order 6ad128dc; net debit $310.04 incl. $0.04 regulatory fee) and sold Oct 19 @ $5.20 (order 6ad635b9; net credit $519.96 incl. $0.04 fee). Realized $209.92 is net of both orders' fees per the broker net_amount fields; gross premium gain is $210.00.",
    "realizedGainSource": "Broker net amounts (net credit $519.96 - net debit $310.04); fills verified in Robinhood order history",
    "evidence": "Robinhood order history"
+  },
+  {
+   "date": "2026-10-02",
+   "timestamp": "2026-10-02T20:00:00Z",
+   "account": "Trading",
+   "symbol": "SPCX",
+   "assetType": "option",
+   "quantity": 2.0,
+   "price": null,
+   "realizedGain": -174.0,
+   "underlying": "SPCX",
+   "strike": 155.0,
+   "expiration": "2026-10-02",
+   "optionType": "call",
+   "multiplier": 100,
+   "contractId": "SPCX:2026-10-02:call:155.0",
+   "positionSide": "long",
+   "schemaVersion": 2,
+   "id": "SPCX-open-2-expire",
+   "action": "expire",
+   "contracts": 2,
+   "entryPremium": 0.87,
+   "exitPremium": 0.0,
+   "priceUnit": "USD_per_share",
+   "entryPerContract": 87.0,
+   "exitPerContract": 0.0,
+   "regulatoryFees": 0.0,
+   "entryFillIds": [
+    "SPCX-open-2"
+   ],
+   "lotAllocationBasis": "DRAFT - UNCONFIRMED: assumes both SPCX-open-2 contracts (2 @ $0.87) expired worthless at the Oct 2 close; no closing fill located in the ledger. Basis $174.",
+   "realizedGainSource": "pending broker confirmation",
+   "evidence": "UNCONFIRMED - Keith (10/19 6:34 PM) believes they expired worthless but is not certain; confirm vs Robinhood order history before merge"
   }
  ]
 }
