@@ -611,17 +611,28 @@ def main():
     state_first = state.setdefault("firstSeen", {})
     now_iso = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     for it in items:
-        it["firstSeen"] = state_first.get(it["url"]) or prior_first.get(it["url"]) or now_iso
+        carried = state_first.get(it["url"]) or prior_first.get(it["url"])
+        it["firstSeen"] = carried or now_iso
         state_first[it["url"]] = it["firstSeen"]
-        if not it["_known_ts"]:
+        try:
+            fs_epoch = datetime.fromisoformat(it["firstSeen"].replace("Z", "+00:00")).timestamp()
+        except Exception:
+            fs_epoch = now_epoch
+        if carried:
+            # Carried story: the stamp travels with it. Feeds re-publish old
+            # stories under the same URL with a refreshed date; never let that
+            # overwrite the stamp or re-float the item as fresh. It keeps its
+            # original time and ages out of the homepage on schedule.
+            it["timestamp"] = it["firstSeen"]
+            if it["_known_ts"]:
+                it["_ts"] = min(it["_ts"], fs_epoch)
+            else:
+                it["_ts"] = fs_epoch - UNKNOWN_AGE_HOURS * 3600
+        elif not it["_known_ts"]:
             # No publisher timestamp: never stamp "now". Enter at an assumed
             # UNKNOWN_AGE_HOURS old and age in real time from the persisted
             # first-seen stamp, so back-catalog filler cannot pose as breaking
             # news, sort to the top, or hold a homepage slot past 36h of age.
-            try:
-                fs_epoch = datetime.fromisoformat(it["firstSeen"].replace("Z", "+00:00")).timestamp()
-            except Exception:
-                fs_epoch = now_epoch
             it["_ts"] = fs_epoch - UNKNOWN_AGE_HOURS * 3600
             it["timestamp"] = it["firstSeen"]
     fs_cut = now_epoch - 45 * 86400
