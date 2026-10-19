@@ -114,9 +114,21 @@ def validate_sep30_repairs(data):
             and t.get('symbol') in ('SPCX', 'CCL')]
     assert len(flat) == 0, 'Flattened SPCX/CCL rows still present'
 
-    # Trade count: 370 through the Oct 9 freeze + 27 Oct 10-19 catch-up rows
-    # (ledger-catchup-2026-10-19, PR #153: 23 option closes, 4 equity closes)
-    assert len(trades) == 397, f'Expected 397 trades, got {len(trades)}'
+    # Trade count and summary DERIVED from the ledger itself (no hardcoded pins -
+    # a frozen-era count pin is what let the gate go stale after PR #153).
+    summ = data.get('summary', {})
+    assert len(trades) == summ.get('totalTrades'), (
+        f' trades[] has {len(trades)} rows but summary.totalTrades says {summ.get("totalTrades")}')
+    gains = [t.get('realizedGain', 0) for t in trades]
+    assert abs(sum(gains) - summ.get('totalRealizedGain', 0)) < 0.01, 'summary.totalRealizedGain mismatch'
+    assert summ.get('wins') == sum(1 for g in gains if g > 0), 'summary.wins mismatch'
+    assert summ.get('losses') == sum(1 for g in gains if g < 0), 'summary.losses mismatch'
+    assert summ.get('flat') == sum(1 for g in gains if g == 0), 'summary.flat mismatch'
+    for acct, agg in summ.get('perAccount', {}).items():
+        rows = [t for t in trades if t.get('account') == acct]
+        assert agg.get('trades') == len(rows), f'perAccount.{acct}.trades mismatch'
+        assert abs(agg.get('realizedGain', 0) - sum(t.get('realizedGain', 0) for t in rows)) < 0.01, (
+            f'perAccount.{acct}.realizedGain mismatch')
 
 
 def validate_futures(positions):
@@ -156,7 +168,7 @@ def validate_no_dust_deleted(positions):
         assert p.get('quantity', 0) != 0, f'{dust} has zero quantity'
 
 
-def validate_position_bases(positions):
+def validate_position_bases(positions, data=None):
     """October 9, 2026 anchors: HD Oct-9 $287.50C is fully closed (sold Oct 9);
     the remaining option positions are the Oct 9 opens, with broker clearing
     basis as authoritative avgCost. TSLA/CCL option positions were closed or
@@ -175,21 +187,59 @@ def validate_position_bases(positions):
         assert p.get('priceUnit') == 'USD_per_contract'
         assert p.get('multiplier') == 100
 
-    # Post catch-up book (PR #153, reconciled to broker history Oct 19): open options
-    # are SPCX-only. Bases = broker clearing bases carried by the catch-up.
-    check_open(('Trading', 'SPCX', 148.0, '2026-10-23'), 3, 516.0)
-    check_open(('Trading', 'SPCX', 155.0, '2026-10-23'), 6, 230.0)
-    check_open(('Trading', 'SPCX', 152.5, '2026-10-28'), 7, 471.4286)
-
-    # Expired/closed: all HD options were sold Oct 14-15 - none may remain
-    assert not any(key[1] == 'HD' for key in pos_map), (
-        'HD option positions should all be closed (sold Oct 14-15)')
-    # Expired/closed: HD Oct-9 $287.50C must be absent (sold Oct 9)
-    assert ('Trading', 'HD', 287.5, '2026-10-09') not in pos_map, (
-        'HD Oct-9 $287.50C should be closed')
-    # SPCX 162.5C Oct-16 closed Oct 15
-    assert ('Trading', 'SPCX', 162.5, '2026-10-16') not in pos_map, (
-        'SPCX 162.5C Oct-16 should be closed (sold Oct 15)')
+    data = data or {}
+    trades = data.get('trades', [])
+    # Open option positions DERIVED from the ledger: optionOpenFills minus trades[]
+    # closes per (account, contractId); remaining lot basis via FIFO over the fills
+    # the closes reference (entryFillIds), falling back to plain FIFO by date.
+    # No hardcoded contract pins - the gate now follows the book.
+    fills_list = data.get('optionOpenFills', [])
+    opens = {}
+    for fl in fills_list:
+        key = (fl['account'], fl['contractId'])
+        opens.setdefault(key, []).append(fl)
+    closes = {}
+    for t in trades:
+        if t.get('assetType') == 'option' and t.get('contractId'):
+            key = (t['account'], t['contractId'])
+            closes[key] = closes.get(key, 0) + t.get('contracts', t.get('quantity', 0))
+    expected = {}
+    for key, fls in opens.items():
+        total_open = sum(fl.get('contracts', 0) for fl in fls)
+        remaining = total_open - closes.get(key, 0)
+        assert remaining >= 0, f'{key}: closes exceed open fills'
+        if remaining > 0:
+            expiry = key[1].split(':')[1]
+            if expiry < str(positions.get('asOf', '9999')):
+                # Contract is past expiration with no booked close: it expired.
+                # Surface it loudly instead of pinning silence - an expired lot
+                # without a close row is a known-gap the book should eventually book.
+                print(f'WARNING: {key}: {remaining} contract(s) past expiry with no close row'
+                      ' (treated as expired; book an expire row to clear)')
+                continue
+            # FIFO basis: consume fills in date order
+            fls_sorted = sorted(fls, key=lambda f: f.get('filledAt', ''))
+            left = closes.get(key, 0)
+            basis = 0.0
+            for fl in fls_sorted:
+                take = min(fl['contracts'], left)
+                left -= take
+                if fl['contracts'] - take > 0:
+                    basis += (fl['contracts'] - take) * fl['premium'] * fl.get('multiplier', 100)
+            expected[key] = (remaining, basis)
+    expected_keys = set(expected)
+    actual_keys = {k for k in pos_map if k[0] in ('Trading', 'Agentic')}
+    actual_cids = {(p.get('account'), p.get('contractId')) for p in positions.get('positions', [])
+                   if p.get('assetType') == 'option'}
+    assert actual_cids == expected_keys, (
+        f'Open option positions mismatch: file has {sorted(actual_cids)}, ledger derives {sorted(expected_keys)}')
+    for key, (remaining, basis) in expected.items():
+        p = next(p for p in positions['positions']
+                 if p.get('assetType') == 'option' and (p.get('account'), p.get('contractId')) == key)
+        assert p.get('contracts') == remaining, f'{key}: {p.get("contracts")} contracts, ledger derives {remaining}'
+        if basis > 0:
+            assert abs(p.get('avgCost', 0) - basis / remaining) < 0.01, (
+                f'{key}: avgCost {p.get("avgCost")} vs FIFO-derived {basis / remaining:.4f}')
 
     # Closed/expired: no TSLA or CCL option positions may remain
     for key in pos_map:
@@ -214,5 +264,5 @@ if __name__ == '__main__':
             assert p['underlying'] and p['expiration'] and p['optionType'] in ('put', 'call')
     validate_futures(positions)
     validate_no_dust_deleted(positions)
-    validate_position_bases(positions)
+    validate_position_bases(positions, data)
     print('Journal option validation passed')
