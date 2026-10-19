@@ -1071,3 +1071,16 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   .home-dashboard .wire-list-wrap .wire-list { column-count:1; }
   .home-dashboard .wire-list-wrap .wire-list a { font-size:16px; line-height:1.4; }
 }
+
+/* Discuss/share bar (assets/discuss.js) */
+.discuss-share {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 8px;
+  margin: 20px 0 8px; font-size: 14px; color: var(--text-muted);
+}
+.discuss-share-btn {
+  display: inline-block; padding: 8px 14px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface, #fff);
+  color: var(--accent); font-weight: 600; font-size: 13px;
+  text-decoration: none; cursor: pointer; font-family: inherit;
+}
+.discuss-share-btn:hover { border-color: var(--accent); }
