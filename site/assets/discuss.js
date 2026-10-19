@@ -1,8 +1,7 @@
-/* MarketsOnDeck discuss/share bar.
-   Injects (1) no-sign-in share buttons (X, Facebook, Threads, copy link) and
-   (2) a Giscus comments+reactions embed (GitHub Discussions backend) into
-   <div id="discuss"> on article pages. Pure progressive enhancement: if this
-   file fails to load, the page is unchanged. */
+/* MarketsOnDeck share bar.
+   Injects no-sign-in share buttons (X, Facebook, Threads, copy link)
+   into <div id="discuss"> on article pages. Pure progressive enhancement:
+   if this file fails to load, the page is unchanged. */
 (function () {
   var host = document.getElementById('discuss');
   if (!host) return;
@@ -34,20 +33,4 @@
   bar.appendChild(copy);
   host.appendChild(bar);
 
-  /* ---- comments (Giscus: GitHub Discussions, free, no ads, reactions included) ---- */
-  var s = document.createElement('script');
-  s.src = 'https://giscus.app/client.js';
-  s.setAttribute('data-repo', 'WattaBinG/MarketsOnDeck');
-  s.setAttribute('data-repo-id', 'REPO_ID_PLACEHOLDER');
-  s.setAttribute('data-category', 'Article comments');
-  s.setAttribute('data-category-id', 'CATEGORY_ID_PLACEHOLDER');
-  s.setAttribute('data-mapping', 'pathname');
-  s.setAttribute('data-strict', '0');
-  s.setAttribute('data-reactions-enabled', '1');
-  s.setAttribute('data-emit-metadata', '0');
-  s.setAttribute('data-input-position', 'top');
-  s.setAttribute('data-theme', 'light');
-  s.setAttribute('data-lang', 'en');
-  s.crossOrigin = 'anonymous'; s.async = true;
-  host.appendChild(s);
 })();
