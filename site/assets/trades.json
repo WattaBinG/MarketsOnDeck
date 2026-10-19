@@ -5494,9 +5494,6 @@
    "realizedGainSource": "FIFO reconciliation vs broker order history; fees kept separate",
    "evidence": "Robinhood order history",
    "underlying": "HD",
-   "positionSide": "long",
-   "action": "sell",
-   "schemaVersion": 2,
    "id": "HD-close-13"
   },
   {
@@ -5513,9 +5510,6 @@
    "realizedGainSource": "FIFO reconciliation vs broker order history; fees kept separate",
    "evidence": "Robinhood order history",
    "underlying": "HD",
-   "positionSide": "long",
-   "action": "sell",
-   "schemaVersion": 2,
    "id": "HD-close-14"
   },
   {
@@ -5631,9 +5625,6 @@
    "realizedGainSource": "FIFO reconciliation vs broker order history; fees kept separate",
    "evidence": "Robinhood order history",
    "underlying": "HD",
-   "positionSide": "long",
-   "action": "sell",
-   "schemaVersion": 2,
    "id": "HD-close-15"
   },
   {
@@ -5815,9 +5806,6 @@
    "realizedGainSource": "FIFO reconciliation vs broker order history; fees kept separate",
    "evidence": "Robinhood order history",
    "underlying": "HD",
-   "positionSide": "long",
-   "action": "sell",
-   "schemaVersion": 2,
    "id": "HD-close-16"
   },
   {
@@ -5939,7 +5927,7 @@
    "positionSide": "long",
    "schemaVersion": 2,
    "id": "SPCX-close-12",
-   "action": "expired",
+   "action": "expire",
    "contracts": 2,
    "entryPremium": 2.38,
    "exitPremium": 0.0,
