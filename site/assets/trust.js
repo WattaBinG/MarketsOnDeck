@@ -49,12 +49,13 @@
     var earn=document.querySelector('.earn-box[data-earn-date]');
     if(earn) load('earnings').then(function(d){
       var day=new Date(today+'T12:00:00Z'), fri=new Date(day);
-      fri.setUTCDate(fri.getUTCDate()+(4-day.getUTCDay()+7)%7);
+      fri.setUTCDate(fri.getUTCDate()+(5-day.getUTCDay()+7)%7);
       var end=fri.toISOString().slice(0,10), rows=(d.today||[]).concat(d.weekAhead||[]);
       var nowRows=rows.filter(function(r){return r.date===today;}), later=rows.filter(function(r){return r.date>today && r.date<=end;});
       earn.dataset.earnDate=today;earn.classList.remove('data-stale');
       function link(r){return '<a class="earn-ticker" target="_blank" rel="noopener" href="'+escape(r.link)+'">'+escape(r.ticker)+'</a>';}
       earn.innerHTML='<div class="earn-box-header">Earnings Today</div><div class="earn-box-date">'+escape(day.toLocaleDateString('en-US',{timeZone:'UTC',weekday:'long',month:'long',day:'numeric'}))+'</div><ul class="earn-list">'+nowRows.map(function(r){return '<li><span class="earn-slot">'+escape(r.slot||'TBD')+'</span><span class="earn-id">'+link(r)+'<span class="earn-name">'+escape(r.company)+'</span></span><span class="earn-eps">Est: '+(r.epsEst==null?'TBD':'$'+Number(r.epsEst).toFixed(2))+'</span></li>';}).join('')+'</ul>'+(later.length?'<div class="earn-week"><div class="earn-week-header">Coming up this week</div><ul class="earn-week-list">'+later.map(function(r){return '<li><span class="earn-week-day">'+escape(r.dayLabel)+'</span>'+link(r)+'<span class="earn-slot">'+escape(r.slot||'TBD')+'</span></li>';}).join('')+'</ul></div>':'')+'<div class="legend">BMO = Before Market Open · AMC = After Market Close · EPS = earnings per share<br>Schedule snapshot: '+escape(d.date)+'</div>';
+      window.dispatchEvent(new Event('resize'));
       if(!nowRows.length&&!later.length)earn.querySelector('.earn-box-date').textContent='No upcoming entries in schedule dated '+d.date;
     }).catch(function(){earn.querySelector('.earn-box-header').textContent='Earnings Schedule Snapshot';});
     var watch=document.querySelector('.watch-box[data-watch-date]');
