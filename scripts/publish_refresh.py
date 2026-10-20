@@ -16,7 +16,7 @@ TASKS = {
             ['python3', 'scripts/fetch_watch_results.py'],
             ['python3', 'scripts/log_sentiment.py'],
         ],
-        'paths': ['site/assets/wire.json', 'site/assets/wire-archive.json',
+        'paths': ['site/assets/wire.json', 'site/feed.xml', 'site/assets/wire-archive.json',
                   'site/index.html', 'data/wire-state.json',
                   'site/assets/ticker.json', 'site/assets/ai-tools.json',
                   'site/assets/watch-today.json', 'site/assets/sentiment-history.json'],

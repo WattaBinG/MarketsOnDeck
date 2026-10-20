@@ -837,9 +837,33 @@ def main():
     (ASSETS / "wire.json").write_text(json.dumps(wire, indent=2, ensure_ascii=False) + "\n")
     (ASSETS / "wire-archive.json").write_text(json.dumps(archive, indent=2, ensure_ascii=False) + "\n")
     INDEX.write_text(doc)
+    write_feed(wire)
     decision = "lead held" if held else ("new lead" if top else "no lead")
     print(f"OK: {ok_feeds}/{len(FEEDS)} feeds, {len(rest)} items, top={top['category'] if top else '-'} ({decision})")
     print(f"COMMIT_MSG=Refresh The Wire: {label} ({decision})")
+
+
+def write_feed(wire):
+    """Write site/feed.xml (RSS 2.0) from the current wire items. Headlines link to the real sources."""
+    from email.utils import format_datetime
+    from datetime import datetime, timezone
+    from xml.sax.saxutils import escape
+    items = ([wire["topStory"]] if isinstance(wire.get("topStory"), dict) else []) + list(wire.get("items", []))
+    out = []
+    for it in items[:30]:
+        url = it.get("url") or ""
+        if not url:
+            continue
+        try:
+            dt = datetime.fromisoformat((it.get("timestamp") or it.get("firstSeen")).replace("Z", "+00:00"))
+        except Exception:
+            dt = datetime.now(timezone.utc)
+        out.append("<item><title>%s</title><link>%s</link><guid isPermaLink=\"true\">%s</guid><pubDate>%s</pubDate><source url=\"%s\">%s</source></item>" % (
+            escape(it.get("headline", "")), escape(url), escape(url), format_datetime(dt), escape(url), escape(it.get("source", ""))))
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Markets On Deck - The Wire</title>'
+           '<link>https://marketsondeck.net/</link><description>Market headlines, each linking to its real source. Refreshed every 15 minutes.</description>'
+           '<language>en-us</language><lastBuildDate>%s</lastBuildDate>%s</channel></rss>\n') % (format_datetime(datetime.now(timezone.utc)), "".join(out))
+    (ASSETS.parent / "feed.xml").write_text(xml)
 
 
 if __name__ == "__main__":
