@@ -554,7 +554,7 @@ function balanceHomeWire() {
   // Widen only the lower two-column headlines, never the hero/title grid row.
   // Use the right rail's empty space only after the list clears its bottom.
   var rightRail = document.querySelector('.home-dashboard > .top-right');
-  if (rightRail && split.getBoundingClientRect().top >= rightRail.getBoundingClientRect().bottom + 10) {
+  if (rightRail && center.querySelector('.wire-top').getBoundingClientRect().bottom >= rightRail.getBoundingClientRect().bottom + 10) {
     split.style.width = Math.floor(rightRail.getBoundingClientRect().right - split.getBoundingClientRect().left) + 'px';
   }
   var guard = 0;
