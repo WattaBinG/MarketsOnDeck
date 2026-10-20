@@ -71,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initRecordBand();
   initOverviewCurve();
   initWireEnhance();
+  balanceHomeWire();
 });
 
 // Overview page's YTD/Month/Week stat row — computed live client-side from
@@ -529,9 +530,48 @@ function initOverviewCurve() {
 // from wire.json by URL (so the static, routine-managed list markup stays
 // byte-for-byte compatible with the hourly Wire Refresh routine — this only
 // enhances it in the browser).
+// Home wire split (Keith, 2026-10-19, phonemsg-01M5BMPFYYKZ8ZZ09406MTXWW8):
+// the first headlines fill the blank center column under the hero in 2
+// columns; once the list passes the bottom of the left earnings rail the
+// rest continue in the full-width 3-column list below. Items move between
+// the two lists on load/resize/filter; the hourly Wire Refresh markup stays
+// untouched (it only ever rewrites the full-width list).
+function balanceHomeWire() {
+  var split = document.getElementById('wireSplitList');
+  var wrap = document.querySelector('.home-dashboard > .wire-list-wrap');
+  var rail = document.querySelector('.home-dashboard > .wire-left');
+  var center = document.querySelector('.home-dashboard > .wire-main');
+  if (!split || !wrap) return;
+  var mainList = wrap.querySelector('ul.wire-list');
+  if (!mainList || !rail || !center) return;
+  if (!balanceHomeWire.order) {
+    balanceHomeWire.order = Array.prototype.slice.call(mainList.querySelectorAll('li'))
+      .concat(Array.prototype.slice.call(split.querySelectorAll('li')));
+  }
+  balanceHomeWire.order.forEach(function (li) { mainList.appendChild(li); });
+  if (window.innerWidth <= 640) return; // phone: single flow, rails stack
+  var guard = 0;
+  while (mainList.firstElementChild && guard < 100) {
+    if (center.getBoundingClientRect().bottom >= rail.getBoundingClientRect().bottom - 4) break;
+    split.appendChild(mainList.firstElementChild);
+    guard++;
+  }
+}
+var balanceHomeWireT;
+window.addEventListener('resize', function () {
+  clearTimeout(balanceHomeWireT);
+  balanceHomeWireT = setTimeout(balanceHomeWire, 150);
+});
+window.addEventListener('load', balanceHomeWire);
+
 function initWireEnhance() {
   var list = document.querySelector('.wire-list');
+  var splitList = document.getElementById('wireSplitList');
   var filters = document.getElementById('wireFilters');
+  function eachWireLi(fn) {
+    if (list) list.querySelectorAll('li').forEach(fn);
+    if (splitList) splitList.querySelectorAll('li').forEach(fn);
+  }
   if (list && filters) {
     var cats = [];
     list.querySelectorAll('.wire-tag').forEach(function (tag) {
@@ -546,11 +586,12 @@ function initWireEnhance() {
       b.textContent = label;
       b.addEventListener('click', function () {
         buttons.forEach(function (x) { x.classList.toggle('active', x === b); });
-        list.querySelectorAll('li').forEach(function (li) {
+        eachWireLi(function (li) {
           var tag = li.querySelector('.wire-tag');
           li.style.display = (label === 'All' || (tag && tag.textContent.trim() === label)) ? '' : 'none';
         });
         swapTopStory(label);
+        balanceHomeWire();
       });
       filters.appendChild(b);
       buttons.push(b);
@@ -593,7 +634,7 @@ function initWireEnhance() {
       var stamp = lead.firstSeen || lead.timestamp;
       if (stamp) { topTime.textContent = timeAgoLabel(stamp); topTime.title = String(stamp).replace('T', ' ').replace('Z', ' UTC'); }
     }
-    list.querySelectorAll('li').forEach(function (li) {
+    eachWireLi(function (li) {
       var a = li.querySelector('a[href]');
       if (a && a.href === lead.url) li.style.display = 'none';
     });

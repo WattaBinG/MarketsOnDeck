@@ -147,6 +147,18 @@ def build_payload(today: date, rows_by_day: dict[str, list[dict]]) -> dict:
                 d = date.fromisoformat(day_iso)
                 e["dayLabel"] = d.strftime("%a, %b %-d")
                 week.append(e)
+    # Week scope (Keith, 2026-10-19, phonemsg-01M5BMPFYYKZ8ZZ09406MTXWW8 +
+    # phonemsg-01M5BMT10NWBJ2H7ENVNPZAW6F): "Coming up" lists this week's
+    # earnings only (Mon-Fri). From Sunday 6pm ET it rolls forward so next
+    # week's list is posted Sunday night for Monday morning.
+    now_et = datetime.now(ZoneInfo("America/New_York"))
+    if now_et.weekday() == 6 and now_et.hour >= 18:
+        week_start = today + timedelta(days=1)  # tomorrow = next Monday
+    else:
+        week_start = today - timedelta(days=today.weekday())
+    week_end = week_start + timedelta(days=4)  # Friday
+    week = [e for e in week
+            if week_start <= date.fromisoformat(e["date"]) <= week_end]
     # strip internal ranking key
     for e in today_entries + week:
         e.pop("_cap", None)
