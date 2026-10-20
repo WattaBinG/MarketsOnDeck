@@ -1111,3 +1111,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
   text-decoration: none; cursor: pointer; font-family: inherit;
 }
 .discuss-share-btn:hover { border-color: var(--accent); }
+
+/* Keith 01M5BQS3KP4JG6B4E32PZHG7QC: one tiny stamp under header underline. */
+.home-dashboard .wire-header-stamp{border-top:1px solid var(--border);margin-top:6px;padding-top:3px;text-align:right;line-height:1.2}
+.home-dashboard .wire-header-stamp .wire-updated{font-size:10px;font-weight:400;color:var(--text-muted)}
