@@ -663,6 +663,11 @@ function initMasthead() {
   if (!document.getElementById('masthead')) return;
   var forced = (new URLSearchParams(location.search).get('masthead') || '').toLowerCase();
   if (['green', 'red', 'split'].indexOf(forced) !== -1) { setMasthead(forced, 'Preview: ' + forced); return; }
+  // Per Keith 2026-10-19 (phonemsg-01M5BKD5H01BPCYG6ZM4G47F5N): the hero is the
+  // wm30-b wordmark lockup from the static HTML, full stop - the market-matched
+  // banner swap is OFF (it was overriding the new art after load). Revert this
+  // early return to bring the mood banner back; variant assets stay in place.
+  return;
   fetchJsonRetry('/assets/ticker.json').then(function (data) {
     if (!data || !data.asOf || !data.items) return;
     var asOf = new Date(data.asOf);
