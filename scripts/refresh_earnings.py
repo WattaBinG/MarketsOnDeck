@@ -131,6 +131,16 @@ def render_earnings_block(data: dict, today: str | None = None) -> str:
     data = dict(data, date=today, dateLabel=day.strftime("%A, %B %d"),
                 today=[r for r in rows if r.get("date")==today],
                 weekAhead=[r for r in rows if today < r.get("date", "") <= friday.isoformat()])
+    fallback = ""
+    if not data["today"] and not data["weekAhead"]:
+        future = sorted([r for r in rows if r.get("date", "") > today], key=lambda r: r["date"])
+        if future:
+            next_day = future[0]["date"]
+            data["weekAhead"] = [r for r in future if r["date"] == next_day]
+            fallback = "No major earnings this week. Next scheduled: " + next_day
+        else:
+            fallback = "No major earnings listed this week. Next schedule update pending."
+        data["dateLabel"] = fallback
     lines = [
         "<!-- EARNINGS_TODAY_START — rendered by scripts/refresh_earnings.py "
         "from site/assets/earnings.json; keep the markers for clean find/replace -->",
