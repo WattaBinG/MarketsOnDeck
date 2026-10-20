@@ -1121,3 +1121,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .site-header .nav > nav{margin-inline:auto}
  .site-header .nav > .theme-toggle{position:absolute;right:0}
 }
+
+.hero-light{display:block}.hero-dark{display:none}
+:root[data-theme="dark"] .hero-light{display:none}:root[data-theme="dark"] .hero-dark{display:block}
+.home-dashboard .hero-light img{background:#fff;border:1px solid var(--border)}
