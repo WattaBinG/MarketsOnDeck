@@ -124,11 +124,13 @@ def _week_row(r: dict) -> str:
 def render_earnings_block(data: dict, today: str | None = None) -> str:
     """Render the full EARNINGS_TODAY marker block from the data file."""
     today = today or datetime.now(ZoneInfo("America/New_York")).date().isoformat()
-    if data["date"] != today:
-        date = html.escape(data["date"])
-        return (MARK_START + " -->\n" + f'<div class="earn-box data-stale" data-earn-date="{date}">' +
-                '<div class="earn-box-header">Earnings</div>' +
-                f'<div class="earn-box-date">No current earnings feed. Last schedule: {date}</div></div>\n' + MARK_END)
+    from datetime import timedelta
+    day = datetime.fromisoformat(today).date()
+    friday = day + timedelta(days=(4-day.weekday()) % 7)
+    rows = data.get("today", []) + data.get("weekAhead", [])
+    data = dict(data, date=today, dateLabel=day.strftime("%A, %B %d"),
+                today=[r for r in rows if r.get("date")==today],
+                weekAhead=[r for r in rows if today < r.get("date", "") <= friday.isoformat()])
     lines = [
         "<!-- EARNINGS_TODAY_START — rendered by scripts/refresh_earnings.py "
         "from site/assets/earnings.json; keep the markers for clean find/replace -->",

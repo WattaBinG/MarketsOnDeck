@@ -47,13 +47,16 @@
   function datedModules() {
     var today=etDate();
     var earn=document.querySelector('.earn-box[data-earn-date]');
-    if(earn && earn.dataset.earnDate!==today) {
-      var old=earn.dataset.earnDate;
-      earn.querySelector('.earn-box-header').textContent='Earnings';
-      earn.querySelector('.earn-box-date').textContent='No current earnings feed. Last schedule: '+old;
-      earn.classList.add('data-stale');
-      earn.querySelectorAll('.earn-list,.earn-week,.legend').forEach(function(n){n.hidden=true;});
-    }
+    if(earn) load('earnings').then(function(d){
+      var day=new Date(today+'T12:00:00Z'), fri=new Date(day);
+      fri.setUTCDate(fri.getUTCDate()+(4-day.getUTCDay()+7)%7);
+      var end=fri.toISOString().slice(0,10), rows=(d.today||[]).concat(d.weekAhead||[]);
+      var nowRows=rows.filter(function(r){return r.date===today;}), later=rows.filter(function(r){return r.date>today && r.date<=end;});
+      earn.dataset.earnDate=today;earn.classList.remove('data-stale');
+      function link(r){return '<a class="earn-ticker" target="_blank" rel="noopener" href="'+escape(r.link)+'">'+escape(r.ticker)+'</a>';}
+      earn.innerHTML='<div class="earn-box-header">Earnings Today</div><div class="earn-box-date">'+escape(day.toLocaleDateString('en-US',{timeZone:'UTC',weekday:'long',month:'long',day:'numeric'}))+'</div><ul class="earn-list">'+nowRows.map(function(r){return '<li><span class="earn-slot">'+escape(r.slot||'TBD')+'</span><span class="earn-id">'+link(r)+'<span class="earn-name">'+escape(r.company)+'</span></span><span class="earn-eps">Est: '+(r.epsEst==null?'TBD':'$'+Number(r.epsEst).toFixed(2))+'</span></li>';}).join('')+'</ul>'+(later.length?'<div class="earn-week"><div class="earn-week-header">Coming up this week</div><ul class="earn-week-list">'+later.map(function(r){return '<li><span class="earn-week-day">'+escape(r.dayLabel)+'</span>'+link(r)+'<span class="earn-slot">'+escape(r.slot||'TBD')+'</span></li>';}).join('')+'</ul></div>':'')+'<div class="legend">BMO = Before Market Open · AMC = After Market Close · EPS = earnings per share<br>Schedule snapshot: '+escape(d.date)+'</div>';
+      if(!nowRows.length&&!later.length)earn.querySelector('.earn-box-date').textContent='No upcoming entries in schedule dated '+d.date;
+    }).catch(function(){earn.querySelector('.earn-box-header').textContent='Earnings Schedule Snapshot';});
     var watch=document.querySelector('.watch-box[data-watch-date]');
     if(watch){var day=watch.dataset.watchDate;notice(watch,'watchFreshness','Economic schedule: '+day+(day<today?' - older schedule, not today.':day>today?' - upcoming schedule.':''),day<today);if(day<today)watch.querySelector('.watch-box-header').textContent='Economic Schedule Snapshot';}
   }
@@ -69,7 +72,7 @@
         var accounts=document.getElementById('ledgerAccounts');
         if(accounts)accounts.innerHTML=Array.from(new Set(d.trades.map(function(t){return t.account;}))).sort().map(function(a){var p=period(d.trades.filter(function(t){return t.account===a;}),'0000','9999');return '<div class="card"><h3>'+escape(a)+'</h3><p>Closed-trade win rate (excluding flats): '+p.winRate+'</p><p>Net realized: '+money(p.net)+' · '+p.count+' closes</p></div>';}).join('');
         var anchor=document.getElementById('recordBandAsOf') || title;
-        notice(anchor,'ledgerFreshness','Ledger through '+(stamp||'unknown date')+'.'+(staleDate(stamp)?' Historical snapshot: later trades may be missing.':''),staleDate(stamp));
+        notice(anchor,'ledgerFreshness','Ledger through '+(stamp||'unknown date')+'.'+(olderStockClose(stamp)?' Historical snapshot: later trades may be missing.':''),olderStockClose(stamp));
         document.querySelectorAll('[data-ledger-start]').forEach(function(n){var p=period(d.trades,n.dataset.ledgerStart,n.dataset.ledgerEnd);n.textContent=n.dataset.ledgerMetric==='net'?money(p.net):String(p[n.dataset.ledgerMetric]);});
       }).catch(function(){notice(title || document.getElementById('recordBand'),'ledgerFreshness','Ledger freshness unavailable. Do not treat these figures as current.',true);});
     }
