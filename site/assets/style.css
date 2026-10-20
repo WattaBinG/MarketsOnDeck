@@ -40,23 +40,23 @@
    Not driven by prefers-color-scheme, so the site never looks "too dark"
    just because a visitor's OS happens to be in dark mode. */
 :root[data-theme="dark"] {
-  --bg: #12161F;
-  --bg-tint: #161B25;
-  --surface: #1A202C;
-  --surface-raised: #212837;
-  --border: #2C3345;
-  --border-strong: #3A4258;
-  --text: #ECEEF3;
-  --text-muted: #9AA3B7;
-  --accent: #7C8BE0;
+  --bg: #0F192E;
+  --bg-tint: #121E36;
+  --surface: #16233F;
+  --surface-raised: #1C2B4B;
+  --border: #2A3A5C;
+  --border-strong: #3A4D75;
+  --text: #EEF2F8;
+  --text-muted: #A3B1CC;
+  --accent: #8FA2F0;
   --accent-2: #F2B75C;
-  --accent-tint: #262B4A;
-  --accent-ink: #12161F;
-  --gain: #34D07A;
-  --gain-bg: #16291F;
-  --loss: #F16A6A;
-  --loss-bg: #301C1F;
-  --focus: #7C8BE0;
+  --accent-tint: #222C55;
+  --accent-ink: #0F192E;
+  --gain: #3DDC84;
+  --gain-bg: #12301F;
+  --loss: #FF7A7A;
+  --loss-bg: #3A1C24;
+  --focus: #8FA2F0;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
   --shadow-md: 0 10px 24px -12px rgba(0, 0, 0, 0.45);
   --shadow-lg: 0 24px 48px -20px rgba(0, 0, 0, 0.55);
@@ -1141,3 +1141,8 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 /* One tiny freshness stamp below the Public Record card; phone fallback below Wire. */
 .home-dashboard .top-right > .wire-header-stamp{border-top:0;margin-top:0;padding:0 2px;text-align:right;max-width:100%;min-width:0}
 .home-dashboard .wire-header-stamp .wire-updated{white-space:normal;overflow-wrap:anywhere;font-size:10px}
+
+/* Substack embed is a white cross-origin form; in dark mode show a native button instead. */
+.substack-dark-cta{display:none}
+:root[data-theme="dark"] .substack-embed,:root[data-theme="dark"] .substack-fallback{display:none!important}
+:root[data-theme="dark"] .substack-dark-cta{display:inline-block}
