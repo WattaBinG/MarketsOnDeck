@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (!tbody) return;
 
   var state = { trades: [], summary: null, sortKey: 'date', sortDir: 'desc', range: 'ytd', positions: [] };
+  function feeValue(t) { return (t.fees != null) ? t.fees : ((t.regulatoryFees != null) ? t.regulatoryFees : null); }
 
   fetch('/assets/trades.json', { cache: 'no-store' })
     .then(function (res) { return res.ok ? res.json() : null; })
@@ -15,6 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       state.trades = data.trades;
       state.summary = data.summary;
+      if (data.summary && data.summary.fees) {
+        var fz = data.summary.fees;
+        setText('feesYtdLine', 'Fees year to date: Trading ' + money(fz.tradingYtd) + ' · Agentic ' + money(fz.agenticYtd) + ' (regulatory pass-throughs only — Robinhood charges no commissions; fees are never netted out of realized P&L).');
+      }
       renderChart(data.trades);
       wireControls();
       wireRangeTabs();
@@ -231,6 +236,8 @@ document.addEventListener('DOMContentLoaded', function () {
     setText('statTotalPnl', money(totalGain), totalGain >= 0 ? 'gain' : 'loss');
     setText('statWinRate', winRate.toFixed(1) + '%');
     setText('statTotalTrades', String(scoped.length));
+    var feesSum = scoped.reduce(function (sum, t) { var f = feeValue(t); return sum + (f || 0); }, 0);
+    setText('statFees', money(feesSum));
     if (biggestWin) setText('statBiggestWin', money(biggestWin.realizedGain) + ' ' + biggestWin.symbol);
     if (biggestLoss) setText('statBiggestLoss', money(biggestLoss.realizedGain) + ' ' + biggestLoss.symbol);
     state.scopedBiggestWin = biggestWin;
@@ -344,8 +351,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     rows.sort(function (a, b) {
-      var av = state.sortKey === 'price' && a.assetType === 'option' ? a.exitPremium : a[state.sortKey];
-      var bv = state.sortKey === 'price' && b.assetType === 'option' ? b.exitPremium : b[state.sortKey];
+      var av = state.sortKey === 'price' && a.assetType === 'option' ? a.exitPremium : (state.sortKey === 'fees' ? (feeValue(a) == null ? -Infinity : feeValue(a)) : a[state.sortKey]);
+      var bv = state.sortKey === 'price' && b.assetType === 'option' ? b.exitPremium : (state.sortKey === 'fees' ? (feeValue(b) == null ? -Infinity : feeValue(b)) : b[state.sortKey]);
       if (typeof av === 'string') { av = av.toLowerCase(); bv = (bv || '').toLowerCase(); }
       if (av < bv) return state.sortDir === 'asc' ? -1 : 1;
       if (av > bv) return state.sortDir === 'asc' ? 1 : -1;
@@ -355,7 +362,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('recordCount').textContent = rows.length + ' of ' + state.trades.length + ' trades';
 
     if (!rows.length) {
-      tbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">No trades match those filters.</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="8" class="text-muted" style="text-align:center; padding:32px;">No trades match those filters.</td></tr>';
       return;
     }
 
@@ -368,6 +375,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '<td class="col-optional"><span class="badge-type">' + typeLabel(t.assetType) + '</span></td>' +
         '<td class="num col-optional">' + escapeHtml(JournalFormat.quantity(t)) + '</td>' +
         '<td class="num col-optional">' + JournalFormat.closePrices(t) + '</td>' +
+        '<td class="num col-optional">' + (feeValue(t) != null ? money(feeValue(t)) : '—') + '</td>' +
         '<td class="num ' + dir + '">' + money(t.realizedGain) + '</td>' +
         '</tr>';
     }).join('');

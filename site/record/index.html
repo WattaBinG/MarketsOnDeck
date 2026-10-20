@@ -30,8 +30,9 @@
 <body>
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/index.html" style="gap:0;">
-      <img src="/assets/brand/hdr-lockup-b.png" alt="Markets On Deck" style="height:96px; width:auto; display:block;">
+    <a class="brand" href="/index.html">
+      <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+      <span class="brand-name">MarketsOnDeck</span>
     </a>
     <nav aria-label="Primary">
       <ul class="nav-links" id="primaryNav">
@@ -66,7 +67,6 @@
     <div class="container">
       <div class="eyebrow">Every Trade, Win or Lose</div>
       <h1>The Record</h1>
-      <p class="text-muted" style="font-size:13px; border:1px solid var(--line); border-left:3px solid #f59e0b; padding:8px 12px; border-radius:6px; margin:10px 0 4px;">Note: totals on this page are under reconciliation against broker exports and are currently <strong>overstated</strong>. A verified correction is in review; this note comes down when it lands.</p>
       <p class="hero-sub">Recorded closed trades in 2026, published as dated snapshots from the real account — not a curated highlight reel. Sort it, filter it, check it yourself.</p>
       <p style="font-size:13px; font-style:italic; color:var(--text-muted); max-width:60ch;">Nothing here is investment advice or a recommendation to buy or sell any security. Past results don't predict future ones. Figures are informational, not a tax document.</p>
       <div class="share-bar" data-title="The Record — MarketsOnDeck">
@@ -91,6 +91,7 @@
       <div class="stat-card"><div class="stat-num num" id="statTotalPnl">—</div><div class="stat-label">Net Realized</div></div>
       <div class="stat-card"><div class="stat-num num" id="statWinRate">—</div><div class="stat-label">Win Rate</div></div>
       <div class="stat-card"><div class="stat-num num" id="statTotalTrades">—</div><div class="stat-label">Closed Trades</div></div>
+      <div class="stat-card"><div class="stat-num num" id="statFees">—</div><div class="stat-label">Fees (regulatory)</div></div>
       <div class="stat-card stat-card-clickable" id="statBiggestWinCard" tabindex="0" role="button"><div class="stat-num num gain" id="statBiggestWin">—</div><div class="stat-label">Biggest Win &rarr;</div></div>
       <div class="stat-card stat-card-clickable" id="statBiggestLossCard" tabindex="0" role="button"><div class="stat-num num loss" id="statBiggestLoss">—</div><div class="stat-label">Biggest Loss &rarr;</div></div>
     </div>
@@ -132,15 +133,17 @@
             <th data-sort="assetType" class="col-optional">Type <span class="sort-arrow">&#9660;</span></th>
             <th data-sort="quantity" class="col-optional">Qty <span class="sort-arrow">&#9660;</span></th>
             <th data-sort="price" class="col-optional">Entry / Exit <span class="sort-arrow">&#9660;</span></th>
+            <th data-sort="fees" class="col-optional">Fees <span class="sort-arrow">&#9660;</span></th>
             <th data-sort="realizedGain">Realized P&amp;L <span class="sort-arrow">&#9660;</span></th>
           </tr>
         </thead>
         <tbody id="recordTbody">
-          <tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">Loading trades&hellip;</td></tr>
+          <tr><td colspan="8" class="text-muted" style="text-align:center; padding:32px;">Loading trades&hellip;</td></tr>
         </tbody>
       </table>
     </div>
 
+    <p class="text-muted" style="margin-top:12px; font-size:13px;" id="feesYtdLine"></p>
     <p class="text-muted" style="margin-top:20px; font-size:13px;">Data pulled directly from the brokerage account's own realized profit &amp; loss history, published as dated snapshots. Verified options show full contract identity, entry/exit premiums per share, and dollars per contract. Older options with missing evidence are labeled unavailable; their reported P&amp;L is preserved. Trades with no resolvable symbol are shown as "(unresolved)" rather than guessed at.</p>
 
     <div class="article-header" style="max-width:none; text-align:left; margin-top:48px;">
@@ -180,7 +183,8 @@
     <div class="footer-grid">
       <div class="footer-col">
         <div class="brand row gap-xs" style="margin-bottom:14px;">
-          <img src="/assets/brand/wm30-b-full.png" alt="Markets On Deck" style="height:64px; width:auto; display:block;">
+          <img class="brand-mark" src="/assets/brand/icon-128.png" alt="" aria-hidden="true">
+          <span class="brand-name">MarketsOnDeck</span>
         </div>
         <p class="text-muted" style="font-size:14px; max-width:38ch;">Real trades from my own account, wins and losses both — no cherry-picking, no deleted losers.</p>
       </div>
