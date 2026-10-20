@@ -1131,5 +1131,6 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .home-dashboard > .wire-list-wrap{grid-column:2;grid-row:4}
  .home-dashboard > .wire-left,.home-dashboard > .top-right{grid-row:1/span 4;align-self:start}
  .home-dashboard .wire-list-wrap .wire-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;column-count:unset}
- .home-dashboard .wire-list-wrap .wire-list li{min-width:0;margin:0;align-self:stretch}
+ .home-dashboard .wire-list-wrap .wire-list li{min-width:0;margin:0;align-self:stretch;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;align-content:flex-start;gap:7px}
+ .home-dashboard .wire-list-wrap .wire-list li .wire-source{margin-top:0}
 }
