@@ -49,7 +49,7 @@
     var earn=document.querySelector('.earn-box[data-earn-date]');
     if(earn) load('earnings').then(function(d){
       var day=new Date(today+'T12:00:00Z'), fri=new Date(day);
-      fri.setUTCDate(fri.getUTCDate()+(5-day.getUTCDay()+7)%7);
+      fri.setUTCDate(fri.getUTCDate()+(5-day.getUTCDay()));
       var end=fri.toISOString().slice(0,10), rows=(d.today||[]).concat(d.weekAhead||[]);
       var nowRows=rows.filter(function(r){return r.date===today;}), later=rows.filter(function(r){return r.date>today && r.date<=end;});
       var fallback='';
@@ -90,7 +90,7 @@
     var pulse=document.getElementById('sentimentDate');
     if(pulse)load('sentiment-history').then(function(d){var rows=Array.isArray(d)?d:(d.history||d.entries||[]);var last=rows[rows.length-1];if(last)notice(pulse,'pulseFreshness','Trend score history through '+last.date+'. Not a live market sentiment measure.',olderStockClose(last.date));}).catch(function(){notice(pulse,'pulseFreshness','Trend history date unavailable.',true);});
     var wire=document.getElementById('wireUpdated');
-    if(wire)load('wire').then(function(d){var age=Date.now()-Date.parse(d.asOf);notice(wire,'wireFreshness','News feed updated: '+readableStamp(d.asOf)+(age>3600000||!isFinite(age)?' - older snapshot.':'.'),age>3600000||!isFinite(age));}).catch(function(){notice(wire,'wireFreshness','News feed freshness unavailable.',true);});
+    if(wire)load('wire').then(function(d){var age=Date.now()-Date.parse(d.asOf);var duplicate=document.getElementById('wireFreshness');if(duplicate)duplicate.remove();wire.textContent='Updated '+readableStamp(d.asOf)+(age>3600000||!isFinite(age)?' - older snapshot':'');wire.classList.toggle('data-stale',age>3600000||!isFinite(age));}).catch(function(){wire.textContent='News feed freshness unavailable';});
   }
   document.addEventListener('DOMContentLoaded',function(){refresh();setInterval(refresh,60000);});
 })(typeof window!=='undefined'?window:globalThis);

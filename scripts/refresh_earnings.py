@@ -126,7 +126,7 @@ def render_earnings_block(data: dict, today: str | None = None) -> str:
     today = today or datetime.now(ZoneInfo("America/New_York")).date().isoformat()
     from datetime import timedelta
     day = datetime.fromisoformat(today).date()
-    friday = day + timedelta(days=(4-day.weekday()) % 7)
+    friday = day + timedelta(days=(4-day.weekday()))
     rows = data.get("today", []) + data.get("weekAhead", [])
     data = dict(data, date=today, dateLabel=day.strftime("%A, %B %d"),
                 today=[r for r in rows if r.get("date")==today],
