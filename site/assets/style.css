@@ -1126,11 +1126,14 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 :root[data-theme="dark"] .hero-light{display:none}:root[data-theme="dark"] .hero-dark{display:block}
 .home-dashboard .hero-light img{background:#fff;border:1px solid var(--border)}
 
-/* Stable Wire: one center list, no rail-height handoff or full-width jump. */
+/* Whole-row handoff: center pairs alongside rails, full-width triples below. */
 @media(min-width:641px){
- .home-dashboard > .wire-list-wrap{grid-column:2;grid-row:4}
- .home-dashboard > .wire-left,.home-dashboard > .top-right{grid-row:1/span 4;align-self:start}
- .home-dashboard .wire-list-wrap .wire-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px;column-count:unset}
- .home-dashboard .wire-list-wrap .wire-list li{min-width:0;margin:0;align-self:stretch;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;align-content:flex-start;gap:7px}
- .home-dashboard .wire-list-wrap .wire-list li .wire-source{margin-top:0}
+ .home-dashboard > .wire-list-wrap{grid-column:1/-1;grid-row:4}
+ .home-dashboard > .wire-left,.home-dashboard > .top-right{grid-row:1/span 3;align-self:start}
+ .home-dashboard .wire-list-wrap .wire-list,.home-dashboard .wire-split{display:grid;gap:0 20px;column-count:unset}
+ .home-dashboard .wire-list-wrap .wire-list{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .home-dashboard .wire-split{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .home-dashboard .wire-split:empty{display:none}
+ .home-dashboard .wire-list-wrap .wire-list li,.home-dashboard .wire-split li{min-width:0;margin:0;align-self:stretch;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;align-content:flex-start;gap:7px}
+ .home-dashboard .wire-source{white-space:normal}
 }

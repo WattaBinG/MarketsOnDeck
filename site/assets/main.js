@@ -540,24 +540,24 @@ function balanceHomeWire() {
   var split = document.getElementById('wireSplitList');
   var wrap = document.querySelector('.home-dashboard > .wire-list-wrap');
   var rail = document.querySelector('.home-dashboard > .wire-left');
+  var right = document.querySelector('.home-dashboard > .top-right');
   var center = document.querySelector('.home-dashboard > .wire-main');
-  if (!split || !wrap) return;
-  var mainList = wrap.querySelector('ul.wire-list');
-  if (!mainList || !rail || !center) return;
-  if (!balanceHomeWire.order) {
-    balanceHomeWire.order = Array.prototype.slice.call(mainList.querySelectorAll('li'))
-      .concat(Array.prototype.slice.call(split.querySelectorAll('li')));
+  if (!split || !wrap || !rail || !center || balanceHomeWire.done) return;
+  var list = wrap.querySelector('ul.wire-list');
+  if (!list) return;
+  balanceHomeWire.done = true;
+  if (window.innerWidth <= 640) return;
+  var boundary = Math.max(rail.getBoundingClientRect().bottom, right ? right.getBoundingClientRect().bottom : 0);
+  // Move complete pairs only. A final single item stays in the lower grid.
+  // Measure once after load; never widen into or overlap the side rails.
+  while (list.children.length >= 2 && center.getBoundingClientRect().bottom < boundary - 1) {
+    split.appendChild(list.firstElementChild);
+    split.appendChild(list.firstElementChild);
   }
-  balanceHomeWire.order.forEach(function (li) { mainList.appendChild(li); });
-  // Stable list: never redistribute stories according to rail height.
-  return;
 }
-var balanceHomeWireT;
-window.addEventListener('resize', function () {
-  clearTimeout(balanceHomeWireT);
-  balanceHomeWireT = setTimeout(balanceHomeWire, 150);
+window.addEventListener('load', function () {
+  document.fonts.ready.then(function () { setTimeout(balanceHomeWire, 1000); });
 });
-window.addEventListener('load', balanceHomeWire);
 
 function initWireEnhance() {
   var list = document.querySelector('.wire-list');
