@@ -567,78 +567,12 @@ window.addEventListener('load', balanceHomeWire);
 function initWireEnhance() {
   var list = document.querySelector('.wire-list');
   var splitList = document.getElementById('wireSplitList');
-  var filters = document.getElementById('wireFilters');
   function eachWireLi(fn) {
     if (list) list.querySelectorAll('li').forEach(fn);
     if (splitList) splitList.querySelectorAll('li').forEach(fn);
   }
-  if (list && filters) {
-    var cats = [];
-    list.querySelectorAll('.wire-tag').forEach(function (tag) {
-      var c = tag.textContent.trim();
-      if (c && cats.indexOf(c) === -1) cats.push(c);
-    });
-    var buttons = [];
-    function makeBtn(label) {
-      var b = document.createElement('button');
-      b.type = 'button';
-      b.className = 'wire-filter-btn' + (label === 'All' ? ' active' : '');
-      b.textContent = label;
-      b.addEventListener('click', function () {
-        buttons.forEach(function (x) { x.classList.toggle('active', x === b); });
-        eachWireLi(function (li) {
-          var tag = li.querySelector('.wire-tag');
-          li.style.display = (label === 'All' || (tag && tag.textContent.trim() === label)) ? '' : 'none';
-        });
-        swapTopStory(label);
-        balanceHomeWire();
-      });
-      filters.appendChild(b);
-      buttons.push(b);
-    }
-    makeBtn('All');
-    cats.forEach(makeBtn);
-  }
-
   var wireData = null;
   var topA = document.querySelector('.wire-top[href]');
-
-  // Per Keith (2026-09-22): each filter tab is its own front page. Swapping
-  // tabs swaps the top story to that category's lead (the wire's scoring
-  // already ordered the items), not just the list below. The lead's own
-  // list entry hides so nothing shows twice.
-  function swapTopStory(label) {
-    if (!topA || !wireData) return;
-    var lead, imgCat;
-    if (label === 'All') {
-      lead = wireData.topStory;
-      imgCat = lead && lead.category;
-    } else {
-      lead = (wireData.topStory && wireData.topStory.category === label)
-        ? wireData.topStory
-        : (wireData.items || []).filter(function (it) { return it && it.category === label; })[0];
-      imgCat = label;
-    }
-    if (!lead || !lead.url) return;
-    topA.setAttribute('href', lead.url);
-    var img = topA.querySelector('.wire-top-image');
-    if (img && imgCat) img.setAttribute('src', '/assets/images/wire-' + imgCat.toLowerCase() + '.jpg');
-    var lab = topA.querySelector('.wire-top-label');
-    if (lab) lab.textContent = label === 'All' ? 'Top Story' : 'Top in ' + label;
-    var head = topA.querySelector('.wire-top-headline');
-    if (head) head.textContent = lead.headline || '';
-    var src = topA.querySelector('.wire-top-source');
-    if (src) src.textContent = lead.source || '';
-    var topTime = topA.querySelector('.wire-top-time');
-    if (topTime) {
-      var stamp = lead.firstSeen || lead.timestamp;
-      if (stamp) { topTime.textContent = timeAgoLabel(stamp); topTime.title = String(stamp).replace('T', ' ').replace('Z', ' UTC'); }
-    }
-    eachWireLi(function (li) {
-      var a = li.querySelector('a[href]');
-      if (a && a.href === lead.url) li.style.display = 'none';
-    });
-  }
 
   fetchJsonRetry('/assets/wire.json').then(function (data) {
     if (!data) return;
@@ -649,7 +583,7 @@ function initWireEnhance() {
     var byUrl = {};
     (data.items || []).forEach(function (it) { if (it && it.url) byUrl[it.url] = it; });
     if (data.topStory && data.topStory.url) byUrl[data.topStory.url] = data.topStory;
-    list.querySelectorAll('li').forEach(function (li) {
+    eachWireLi(function (li) {
       var a = li.querySelector('a[href]');
       if (!a) return;
       var it = byUrl[a.href];
