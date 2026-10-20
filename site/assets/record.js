@@ -349,7 +349,11 @@ document.addEventListener('DOMContentLoaded', function () {
       '#recordTbody tr[data-symbol="' + cssEscape(target.symbol) + '"][data-date="' + target.date + '"][data-gain="' + target.gain + '"]'
     );
     if (!row) return;
-    row.scrollIntoView({ behavior: 'auto', block: 'center' });
+    try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}
+    var jump = function () { row.scrollIntoView({ behavior: 'auto', block: 'center' }); };
+    jump();
+    setTimeout(jump, 250);
+    window.addEventListener('load', function () { setTimeout(jump, 50); });
     row.classList.add('row-flash');
     setTimeout(function () { row.classList.remove('row-flash'); }, 2200);
   }
