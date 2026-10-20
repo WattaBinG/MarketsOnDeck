@@ -15,6 +15,23 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
       state.trades = data.trades;
+      state.anchors = {};
+      return fetch('/assets/trade-anchors.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (reg) {
+      var seen = {}, used = {};
+      Object.keys(reg).forEach(function (k) { used[reg[k]] = 1; });
+      data.trades.forEach(function (t) { if (t.id) used[t.id] = 1; });
+      data.trades.forEach(function (t) {
+        var base = [t.timestamp, t.account, t.symbol, t.assetType, t.quantity].join('|');
+        var n = seen[base] || 0; seen[base] = n + 1;
+        var k = base + '|' + n;
+        var a = t.id || reg[k];
+        if (!a) { var i = 1; do { a = t.date + '-' + String(t.symbol).replace(/ /g, '').toUpperCase() + '-' + i++; } while (used[a]); used[a] = 1; }
+        t.anchor = a;
+      });
+      return data; });
+    })
+    .then(function (data) {
+      if (!data) return;
       state.summary = data.summary;
       if (data.summary && data.summary.fees) {
         var fz = data.summary.fees;
@@ -30,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var m = /^#t-(.+)$/.exec(location.hash || '');
       if (m) {
         var id = decodeURIComponent(m[1]);
-        var tr = state.trades.filter(function (x) { return x.id === id; })[0];
+        var tr = state.trades.filter(function (x) { return x.anchor === id; })[0];
         if (tr) setTimeout(function () { jumpToTrade({ id: id, symbol: tr.symbol, date: tr.date, gain: tr.realizedGain }); }, 150);
       }
     })
@@ -332,10 +349,19 @@ document.addEventListener('DOMContentLoaded', function () {
       '#recordTbody tr[data-symbol="' + cssEscape(target.symbol) + '"][data-date="' + target.date + '"][data-gain="' + target.gain + '"]'
     );
     if (!row) return;
-    row.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    row.scrollIntoView({ behavior: 'auto', block: 'center' });
     row.classList.add('row-flash');
     setTimeout(function () { row.classList.remove('row-flash'); }, 2200);
   }
+
+  tbody.addEventListener('click', function (ev) {
+    var a = ev.target.closest && ev.target.closest('a.trade-link');
+    if (!a) return;
+    var url = location.origin + '/record/' + a.getAttribute('href');
+    if (navigator.clipboard) navigator.clipboard.writeText(url).catch(function () {});
+    a.textContent = 'copied';
+    setTimeout(function () { a.innerHTML = '#'; }, 1400);
+  });
 
   function cssEscape(s) {
     return String(s).replace(/["\\]/g, '\\$&');
@@ -376,8 +402,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tbody.innerHTML = rows.map(function (t) {
       var dir = t.realizedGain > 0 ? 'gain' : (t.realizedGain < 0 ? 'loss' : '');
-      return '<tr' + (t.id ? ' id="t-' + escapeHtml(t.id) + '" data-id="' + escapeHtml(t.id) + '"' : '') + ' data-symbol="' + escapeHtml(t.symbol) + '" data-date="' + t.date + '" data-gain="' + t.realizedGain + '">' +
-        '<td class="num">' + t.date + '</td>' +
+      return '<tr' + (t.anchor ? ' id="t-' + escapeHtml(t.anchor) + '" data-id="' + escapeHtml(t.anchor) + '"' : '') + ' data-symbol="' + escapeHtml(t.symbol) + '" data-date="' + t.date + '" data-gain="' + t.realizedGain + '">' +
+        '<td class="num">' + t.date + (t.anchor ? ' <a class="trade-link" href="#t-' + escapeHtml(t.anchor) + '" title="Permanent link to this trade" aria-label="Permanent link to this trade">#</a>' : '') + '</td>' +
         '<td><strong>' + escapeHtml(JournalFormat.identity(t)) + (t.assetType === 'option' ? '<br><small>' + escapeHtml(t.action ? t.action.replace(/_/g, ' ') : 'Close action unavailable') + ' · ' + escapeHtml(JournalFormat.quantity(t)) + '</small>' : '') + '</strong></td>' +
         '<td class="col-optional">' + escapeHtml(t.account) + '</td>' +
         '<td class="col-optional"><span class="badge-type">' + typeLabel(t.assetType) + '</span></td>' +

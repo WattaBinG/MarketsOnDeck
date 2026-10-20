@@ -1146,3 +1146,6 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 .substack-dark-cta{display:none}
 :root[data-theme="dark"] .substack-embed,:root[data-theme="dark"] .substack-fallback{display:none!important}
 :root[data-theme="dark"] .substack-dark-cta{display:inline-block}
+
+.trade-link{text-decoration:none;font-size:12px;opacity:.55;margin-left:4px}
+.trade-link:hover,.trade-link:focus{opacity:1}
