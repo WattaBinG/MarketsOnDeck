@@ -1115,3 +1115,9 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 /* Keith 01M5BQS3KP4JG6B4E32PZHG7QC: one tiny stamp under header underline. */
 .home-dashboard .wire-header-stamp{border-top:1px solid var(--border);margin-top:6px;padding-top:3px;text-align:right;line-height:1.2}
 .home-dashboard .wire-header-stamp .wire-updated{font-size:10px;font-weight:400;color:var(--text-muted)}
+/* Keith 01M5BQVB9FG9CKF2ZKAECRM92V: full-page centered desktop navigation. */
+@media(min-width:781px){
+ .site-header .nav{position:relative;justify-content:center;min-height:38px}
+ .site-header .nav > nav{margin-inline:auto}
+ .site-header .nav > .theme-toggle{position:absolute;right:0}
+}
