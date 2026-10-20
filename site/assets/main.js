@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initRecordBand();
   initOverviewCurve();
   initWireEnhance();
-  balanceHomeWire();
+  // Wire split is measured after fonts and page data settle.
 });
 
 // Overview page's YTD/Month/Week stat row — computed live client-side from
@@ -542,19 +542,25 @@ function balanceHomeWire() {
   var rail = document.querySelector('.home-dashboard > .wire-left');
   var right = document.querySelector('.home-dashboard > .top-right');
   var center = document.querySelector('.home-dashboard > .wire-main');
-  if (!split || !wrap || !rail || !center || balanceHomeWire.done) return;
+  if (!split || !wrap || !rail || !center) return;
   var list = wrap.querySelector('ul.wire-list');
   if (!list) return;
-  balanceHomeWire.done = true;
+  var width = window.innerWidth;
+  if (balanceHomeWire.width === width) return;
+  balanceHomeWire.width = width;
+  if (!balanceHomeWire.order) balanceHomeWire.order = Array.from(list.children);
+  balanceHomeWire.order.forEach(function(li) { list.appendChild(li); });
   if (window.innerWidth <= 640) return;
   var boundary = Math.max(rail.getBoundingClientRect().bottom, right ? right.getBoundingClientRect().bottom : 0);
   // Move complete pairs only. A final single item stays in the lower grid.
-  // Measure once after load; never widen into or overlap the side rails.
+  // Measure once per settled width; never widen into or overlap the side rails.
   while (list.children.length >= 2 && center.getBoundingClientRect().bottom < boundary - 1) {
     split.appendChild(list.firstElementChild);
     split.appendChild(list.firstElementChild);
   }
 }
+var wireResizeTimer;
+window.addEventListener('resize', function () { clearTimeout(wireResizeTimer); wireResizeTimer=setTimeout(balanceHomeWire, 200); });
 window.addEventListener('load', function () {
   document.fonts.ready.then(function () { setTimeout(balanceHomeWire, 1000); });
 });
