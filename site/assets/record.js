@@ -26,6 +26,13 @@ document.addEventListener('DOMContentLoaded', function () {
       applyUrlFilter();
       renderSummary();
       render();
+      // Permanent per-trade link: /record/#t-<trade id> (e.g. #t-HD-close-5)
+      var m = /^#t-(.+)$/.exec(location.hash || '');
+      if (m) {
+        var id = decodeURIComponent(m[1]);
+        var tr = state.trades.filter(function (x) { return x.id === id; })[0];
+        if (tr) setTimeout(function () { jumpToTrade({ id: id, symbol: tr.symbol, date: tr.date, gain: tr.realizedGain }); }, 150);
+      }
     })
     .catch(function () {
       tbody.innerHTML = '<tr><td colspan="7" class="text-muted" style="text-align:center; padding:32px;">Trade data unavailable right now.</td></tr>';
@@ -320,7 +327,8 @@ document.addEventListener('DOMContentLoaded', function () {
     renderSummary();
     render();
 
-    var row = document.querySelector(
+    var row = target.id ? document.getElementById('t-' + target.id) : null;
+    if (!row) row = document.querySelector(
       '#recordTbody tr[data-symbol="' + cssEscape(target.symbol) + '"][data-date="' + target.date + '"][data-gain="' + target.gain + '"]'
     );
     if (!row) return;
@@ -368,7 +376,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tbody.innerHTML = rows.map(function (t) {
       var dir = t.realizedGain > 0 ? 'gain' : (t.realizedGain < 0 ? 'loss' : '');
-      return '<tr data-symbol="' + escapeHtml(t.symbol) + '" data-date="' + t.date + '" data-gain="' + t.realizedGain + '">' +
+      return '<tr' + (t.id ? ' id="t-' + escapeHtml(t.id) + '" data-id="' + escapeHtml(t.id) + '"' : '') + ' data-symbol="' + escapeHtml(t.symbol) + '" data-date="' + t.date + '" data-gain="' + t.realizedGain + '">' +
         '<td class="num">' + t.date + '</td>' +
         '<td><strong>' + escapeHtml(JournalFormat.identity(t)) + (t.assetType === 'option' ? '<br><small>' + escapeHtml(t.action ? t.action.replace(/_/g, ' ') : 'Close action unavailable') + ' · ' + escapeHtml(JournalFormat.quantity(t)) + '</small>' : '') + '</strong></td>' +
         '<td class="col-optional">' + escapeHtml(t.account) + '</td>' +
