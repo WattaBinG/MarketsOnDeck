@@ -2502,7 +2502,9 @@
    "assetType": "option",
    "quantity": 2.0,
    "price": null,
-   "realizedGain": -1492.0
+   "realizedGain": -1492.0,
+   "id": "legacy-opt-2026-08-07-01",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-08-07",
@@ -2512,7 +2514,9 @@
    "assetType": "option",
    "quantity": 2.0,
    "price": null,
-   "realizedGain": 1930.0
+   "realizedGain": 1930.0,
+   "id": "legacy-opt-2026-08-07-02",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-08-07",
@@ -2722,7 +2726,9 @@
    "assetType": "option",
    "quantity": 2.0,
    "price": null,
-   "realizedGain": -1060.0
+   "realizedGain": -1060.0,
+   "id": "legacy-opt-2026-07-31-03",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-07-31",
@@ -2732,7 +2738,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -800.0
+   "realizedGain": -800.0,
+   "id": "legacy-opt-2026-07-31-04",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-07-31",
@@ -2742,7 +2750,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -504.0
+   "realizedGain": -504.0,
+   "id": "legacy-opt-2026-07-31-05",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-07-24",
@@ -3642,7 +3652,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -265.0
+   "realizedGain": -265.0,
+   "id": "legacy-opt-2026-06-24-06",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-06-22",
@@ -3702,7 +3714,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -181.0
+   "realizedGain": -181.0,
+   "id": "legacy-opt-2026-06-12-07",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-06-12",
@@ -3712,7 +3726,9 @@
    "assetType": "option",
    "quantity": 2.0,
    "price": null,
-   "realizedGain": -1690.0
+   "realizedGain": -1690.0,
+   "id": "legacy-opt-2026-06-12-08",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-06-09",
@@ -3912,7 +3928,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -230.0
+   "realizedGain": -230.0,
+   "id": "legacy-opt-2026-06-05-09",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-06-05",
@@ -4002,7 +4020,9 @@
    "assetType": "option",
    "quantity": 5.0,
    "price": null,
-   "realizedGain": -722.0
+   "realizedGain": -722.0,
+   "id": "legacy-opt-2026-06-01-10",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-06-01",
@@ -4442,7 +4462,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -390.0
+   "realizedGain": -390.0,
+   "id": "legacy-opt-2026-03-20-11",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-03-13",
@@ -4452,7 +4474,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -435.0
+   "realizedGain": -435.0,
+   "id": "legacy-opt-2026-03-13-12",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-03-10",
@@ -4482,7 +4506,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -232.0
+   "realizedGain": -232.0,
+   "id": "legacy-opt-2026-03-09-13",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-03-05",
@@ -4502,7 +4528,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -251.0
+   "realizedGain": -251.0,
+   "id": "legacy-opt-2026-02-23-14",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-02-23",
@@ -4512,7 +4540,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -101.0
+   "realizedGain": -101.0,
+   "id": "legacy-opt-2026-02-23-15",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-01-21",
@@ -4572,7 +4602,9 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": -227.0
+   "realizedGain": -227.0,
+   "id": "legacy-opt-2026-01-09-16",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-01-09",
@@ -4582,7 +4614,9 @@
    "assetType": "option",
    "quantity": 2.0,
    "price": null,
-   "realizedGain": -304.0
+   "realizedGain": -304.0,
+   "id": "legacy-opt-2026-01-09-17",
+   "notes": "Legacy summary row: booked from earlier ledger without strike/expiry/entry-exit detail; P&L as recorded, verify against broker export when available"
   },
   {
    "date": "2026-01-07",
