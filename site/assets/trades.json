@@ -3,7 +3,7 @@
   "asOf": "2026-10-19",
   "scope": "Realized trades, January 1 - October 19, 2026 (both accounts)",
   "totalTrades": 391,
-  "totalRealizedGain": 46065.78,
+  "totalRealizedGain": 46229.86,
   "wins": 279,
   "losses": 111,
   "flat": 1,
@@ -12,12 +12,12 @@
   "biggestLoss": -1690.0,
   "perAccount": {
    "Trading": {
-    "realizedGain": 45566.67,
+    "realizedGain": 45730.67,
     "trades": 376,
     "winRate": 70.48
    },
    "Agentic": {
-    "realizedGain": 499.11,
+    "realizedGain": 499.19,
     "trades": 15,
     "winRate": 93.33
    }
@@ -5355,7 +5355,7 @@
    "assetType": "option",
    "quantity": 4.0,
    "price": null,
-   "realizedGain": 12.0,
+   "realizedGain": 176.0,
    "underlying": "HD",
    "strike": 287.5,
    "expiration": "2026-10-09",
@@ -5367,17 +5367,17 @@
    "id": "HD-close-4",
    "action": "sell_to_close",
    "contracts": 4,
-   "entryPremium": 1.61,
+   "entryPremium": 1.2,
    "exitPremium": 1.64,
    "priceUnit": "USD_per_share",
-   "entryPerContract": 161.0,
+   "entryPerContract": 120.0,
    "exitPerContract": 164.0,
-   "regulatoryFees": 0.0,
+   "regulatoryFees": 0.18,
    "entryFillIds": [
-    "HD-open-17"
+    "HD-open-9"
    ],
-   "lotAllocationBasis": "4 contracts bought 5 @ $1.61 on Oct 7 (14:11 ET) and sold 4 @ $1.64 same day (15:59 ET); 1 contract carried forward. Reconciled from broker fill prices; no FIFO assumed.",
-   "realizedGainSource": "Computed from broker fill prices (4 sold @ $1.64 vs 4 bought @ $1.61)",
+   "lotAllocationBasis": "4 contracts FIFO vs the Oct 5 $1.20 lot (HD-open-9; the earlier $1.19 lot HD-open-8 was fully consumed by the Oct 6 closes, timestamps verified). Sold 4 @ $1.64 on Oct 7. Gross +$176.00; $0.18 regulatory fee on the sale in own field.",
+   "realizedGainSource": "Recomputed FIFO from Robinhood CSV fills (2026-10-19 follow-up; was booked +$12 vs the wrong lot)",
    "evidence": "Robinhood order history"
   },
   {
@@ -6285,7 +6285,7 @@
    "assetType": "option",
    "quantity": 1.0,
    "price": null,
-   "realizedGain": 209.92,
+   "realizedGain": 210.0,
    "underlying": "SPCX",
    "strike": 152.5,
    "expiration": "2026-10-23",
@@ -6302,11 +6302,11 @@
    "priceUnit": "USD_per_share",
    "entryPerContract": 310.0,
    "exitPerContract": 520.0,
-   "regulatoryFees": 0.04,
+   "regulatoryFees": 0.08,
    "entryFillIds": [
     "SPCX-open-11"
    ],
-   "lotAllocationBasis": "Single-contract lot: bought Oct 15 @ $3.10 (order 6ad128dc; net debit $310.04 incl. $0.04 regulatory fee) and sold Oct 19 @ $5.20 (order 6ad635b9; net credit $519.96 incl. $0.04 fee). Realized $209.92 is net of both orders' fees per the broker net_amount fields; gross premium gain is $210.00.",
+   "lotAllocationBasis": "Single-contract lot: bought Oct 15 @ $3.10 (order 6ad128dc) and sold Oct 19 @ $5.20 (order 6ad635b9). Gross +$210.00; combined regulatory fees $0.08 in own field per the gross-of-fees book rule.",
    "realizedGainSource": "Broker net amounts (net credit $519.96 - net debit $310.04); fills verified in Robinhood order history",
    "evidence": "Robinhood order history"
   },
