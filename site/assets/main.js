@@ -546,6 +546,9 @@ function balanceHomeWire() {
   var list = wrap.querySelector('ul.wire-list');
   if (!list) return;
   var width = window.innerWidth;
+  var stamp = document.querySelector('.wire-header-stamp');
+  var stampTarget = width <= 640 ? document.querySelector('.home-wire-title .article-header') : right;
+  if (stamp && stampTarget && stamp.parentElement !== stampTarget) stampTarget.appendChild(stamp);
   if (balanceHomeWire.width === width) return;
   balanceHomeWire.width = width;
   if (!balanceHomeWire.order) balanceHomeWire.order = Array.from(list.children);

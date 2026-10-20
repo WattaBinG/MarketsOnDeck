@@ -1137,3 +1137,7 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
  .home-dashboard .wire-list-wrap .wire-list li,.home-dashboard .wire-split li{min-width:0;margin:0;align-self:stretch;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;align-content:flex-start;gap:7px}
  .home-dashboard .wire-source{white-space:normal}
 }
+
+/* One tiny freshness stamp below the Public Record card; phone fallback below Wire. */
+.home-dashboard .top-right > .wire-header-stamp{border-top:0;margin-top:0;padding:0 2px;text-align:right;max-width:100%;min-width:0}
+.home-dashboard .wire-header-stamp .wire-updated{white-space:normal;overflow-wrap:anywhere;font-size:10px}
