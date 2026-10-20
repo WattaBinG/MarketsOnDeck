@@ -549,7 +549,14 @@ function balanceHomeWire() {
       .concat(Array.prototype.slice.call(split.querySelectorAll('li')));
   }
   balanceHomeWire.order.forEach(function (li) { mainList.appendChild(li); });
+  split.style.width = '';
   if (window.innerWidth <= 640) return; // phone: single flow, rails stack
+  // Widen only the lower two-column headlines, never the hero/title grid row.
+  // Use the right rail's empty space only after the list clears its bottom.
+  var rightRail = document.querySelector('.home-dashboard > .top-right');
+  if (rightRail && split.getBoundingClientRect().top >= rightRail.getBoundingClientRect().bottom + 10) {
+    split.style.width = Math.floor(rightRail.getBoundingClientRect().right - split.getBoundingClientRect().left) + 'px';
+  }
   var guard = 0;
   while (mainList.firstElementChild && guard < 100) {
     if (center.getBoundingClientRect().bottom >= rail.getBoundingClientRect().bottom - 4) break;
