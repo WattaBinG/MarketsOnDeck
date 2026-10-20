@@ -549,13 +549,8 @@ function balanceHomeWire() {
       .concat(Array.prototype.slice.call(split.querySelectorAll('li')));
   }
   balanceHomeWire.order.forEach(function (li) { mainList.appendChild(li); });
-  if (window.innerWidth <= 640) return; // phone: single flow, rails stack
-  var guard = 0;
-  while (mainList.firstElementChild && guard < 100) {
-    if (center.getBoundingClientRect().bottom >= rail.getBoundingClientRect().bottom - 4) break;
-    split.appendChild(mainList.firstElementChild);
-    guard++;
-  }
+  // Stable list: never redistribute stories according to rail height.
+  return;
 }
 var balanceHomeWireT;
 window.addEventListener('resize', function () {
