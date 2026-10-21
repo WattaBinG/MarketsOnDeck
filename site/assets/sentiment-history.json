@@ -1,36 +1,5 @@
 [
   {
-    "date": "2025-10-21",
-    "score": 43,
-    "label": "Neutral",
-    "scores": {
-      "1D": {
-        "score": 43,
-        "label": "Neutral"
-      },
-      "1W": {
-        "score": 58,
-        "label": "Neutral"
-      },
-      "1M": {
-        "score": 38,
-        "label": "Fear"
-      },
-      "3M": {
-        "score": 56,
-        "label": "Neutral"
-      },
-      "6M": {
-        "score": 99,
-        "label": "Extreme Greed"
-      },
-      "1Y": {
-        "score": 73,
-        "label": "Greed"
-      }
-    }
-  },
-  {
     "date": "2025-10-22",
     "score": 55,
     "label": "Neutral",
@@ -11222,16 +11191,47 @@
     }
   },
   {
+    "date": "2026-10-18",
+    "score": 33,
+    "label": "Fear",
+    "scores": {
+      "1D": {
+        "score": 33,
+        "label": "Fear"
+      },
+      "1W": {
+        "score": 38,
+        "label": "Fear"
+      },
+      "1M": {
+        "score": 40,
+        "label": "Neutral"
+      },
+      "3M": {
+        "score": 73,
+        "label": "Greed"
+      },
+      "6M": {
+        "score": 76,
+        "label": "Greed"
+      },
+      "1Y": {
+        "score": 77,
+        "label": "Greed"
+      }
+    }
+  },
+  {
     "date": "2026-10-19",
-    "score": 58,
+    "score": 57,
     "label": "Neutral",
     "scores": {
       "1D": {
-        "score": 58,
+        "score": 57,
         "label": "Neutral"
       },
       "1W": {
-        "score": 42,
+        "score": 41,
         "label": "Neutral"
       },
       "1M": {
@@ -11239,7 +11239,7 @@
         "label": "Neutral"
       },
       "3M": {
-        "score": 72,
+        "score": 71,
         "label": "Greed"
       },
       "6M": {
@@ -11254,6 +11254,37 @@
   },
   {
     "date": "2026-10-20",
+    "score": 63,
+    "label": "Greed",
+    "scores": {
+      "1D": {
+        "score": 63,
+        "label": "Greed"
+      },
+      "1W": {
+        "score": 46,
+        "label": "Neutral"
+      },
+      "1M": {
+        "score": 41,
+        "label": "Neutral"
+      },
+      "3M": {
+        "score": 73,
+        "label": "Greed"
+      },
+      "6M": {
+        "score": 78,
+        "label": "Greed"
+      },
+      "1Y": {
+        "score": 80,
+        "label": "Extreme Greed"
+      }
+    }
+  },
+  {
+    "date": "2026-10-21",
     "score": 66,
     "label": "Greed",
     "scores": {
@@ -11262,24 +11293,24 @@
         "label": "Greed"
       },
       "1W": {
-        "score": 42,
+        "score": 46,
         "label": "Neutral"
       },
       "1M": {
-        "score": 42,
+        "score": 41,
         "label": "Neutral"
       },
       "3M": {
-        "score": 72,
+        "score": 73,
         "label": "Greed"
       },
       "6M": {
-        "score": 76,
+        "score": 78,
         "label": "Greed"
       },
       "1Y": {
-        "score": 79,
-        "label": "Greed"
+        "score": 80,
+        "label": "Extreme Greed"
       }
     }
   }
