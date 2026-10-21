@@ -1,12 +1,18 @@
 {
-  "date": "2026-10-21",
-  "dateLabel": "Wednesday, October 21",
+  "date": "2026-10-22",
+  "dateLabel": "Thursday, October 22",
   "events": [
     {
+      "time": "8:30 AM ET",
+      "event": "Initial Jobless Claims",
+      "kind": "initial_claims",
+      "prev": "199K"
+    },
+    {
       "time": "10:30 AM ET",
-      "event": "EIA Weekly Petroleum Status Report",
-      "kind": "crude_stocks",
-      "actual": "crude stocks -3.1M bbl"
+      "event": "EIA Weekly Natural Gas Storage Report",
+      "kind": "natural_gas_storage",
+      "prev": "natural gas +67 Bcf"
     }
   ],
   "note": null,
