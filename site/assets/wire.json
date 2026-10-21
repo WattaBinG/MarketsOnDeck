@@ -1,39 +1,79 @@
 {
-  "asOf": "2026-10-21T14:46:02Z",
-  "asOfLabel": "10:46 AM ET",
+  "asOf": "2026-10-21T15:01:47Z",
+  "asOfLabel": "11:01 AM ET",
   "topStory": {
-    "headline": "**U.S. CRUDE INVENTORIES PLUNGE, FAR EXCEEDING EXPECTATIONS** U.S. crude oil inventories fell 3.06 million barrels last week, versus expectations for a decline of just 324,000 barrels. 🔸 Crude stoc...",
-    "url": "https://x.com/DeItaone/status/2112915057931632996",
-    "source": "MarketsOnDeck Discord",
-    "category": "Movers",
-    "timestamp": "2026-10-21T14:33:27Z",
+    "headline": "U.S. CRUDE INVENTORIES PLUNGE, FAR EXCEEDING EXPECTATIONS U.S. crude oil inventories fell 3.06 million barrels last week, versus expectations for a decline of just 324,000 barrels. 🔸 Crude stocks:...",
+    "url": "https://t.me/WalterBloomberg/37217",
+    "source": "Walter Bloomberg (unofficial mirror)",
+    "category": "Markets",
+    "timestamp": "2026-10-21T14:46:02Z",
     "firstSeen": "2026-10-21T14:46:02Z",
-    "leadSince": "2026-10-21T14:46:02Z",
-    "image": "/assets/images/wire-movers.jpg"
+    "leadSince": "2026-10-21T15:01:47Z",
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "Intel Advances US Chip Factory Expansion After Years of Delays $INTC",
+      "url": "https://x.com/financialjuice/status/2112922141066949030",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-21T15:01:28Z",
+      "firstSeen": "2026-10-21T15:01:47Z"
+    },
+    {
+      "headline": "Simple configuration for opening flows: Single leg trade size exceeds daily OI Mid/Ask fill Trade premium of > $100,000 Trade size of > 100 <>[]=bid_side&excluded_tags[]=no_side&min_size=100&issue_...",
+      "url": "https://unusualwhales.com/live-options-flow?add_agg_trades=true&limit=50&size_greater_oi=true&min_premium=100000&is_multi_leg=false&excluded_tags",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-21T15:00:27Z",
+      "firstSeen": "2026-10-21T15:01:47Z"
+    },
+    {
+      "headline": "Conversational Gemini navigation comes to Apple CarPlay",
+      "url": "https://www.theverge.com/transportation/1015281/gemini-ai-apple-carplay-voice-google-maps",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-21T15:00:00Z",
+      "firstSeen": "2026-10-21T15:01:47Z"
+    },
+    {
+      "headline": "BREAKING: JPMorgan doubled its price target on SpaceX, $SPCX, to $500, from $240. It kept its Overweight rating.",
+      "url": "https://x.com/unusual_whales/status/2112921096349790542",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-21T14:57:27Z",
+      "firstSeen": "2026-10-21T15:01:47Z"
+    },
+    {
+      "headline": "China and Russia agree to advance high-quality trade - Xinhua.",
+      "url": "https://x.com/financialjuice/status/2112920716446200154",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-21T14:56:27Z",
+      "firstSeen": "2026-10-21T15:01:47Z"
+    },
+    {
+      "headline": "Stablecoins Move $400M An Hour, With 73% Of Volume Outside Banking Hours: Coinbase <>",
+      "url": "https://www.zerohedge.com/crypto/stablecoins-move-400m-hour-73-volume-outside-banking-hours-coinbase",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-21T14:50:27Z",
+      "firstSeen": "2026-10-21T15:01:47Z"
+    },
+    {
+      "headline": "Zelensky proposes freezing front with Russia as first step to peace talks",
+      "url": "https://www.france24.com/en/europe/20261021-zelensky-proposes-freezing-front-with-russia-first-step-peace-talks",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-21T14:46:44Z",
+      "firstSeen": "2026-10-21T15:01:47Z"
+    },
     {
       "headline": "UKRAINE DISCUSSED SITUATION IN RUSSIAN-OCCUPIED OLESHKY WITH US SIDE, KYIV'S NEGOTIATOR QUOTED BY RBC-UKRAINE",
       "url": "https://t.me/WalterBloomberg/37218",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Geopolitics",
-      "timestamp": "2026-10-21T14:45:53Z",
-      "firstSeen": "2026-10-21T14:46:02Z"
-    },
-    {
-      "headline": "WTI Flat After Another Crude Draw, Distillates Stocks At Seasonal Record Lows <>",
-      "url": "https://www.zerohedge.com/energy/wti-flat-after-another-crude-draw-distillates-stocks-seasonal-record-lows",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-21T14:41:27Z",
-      "firstSeen": "2026-10-21T14:46:02Z"
-    },
-    {
-      "headline": "BREAKING: Ed Yardeni says the AI bubble is real, but it isn’t ready to burst yet. It comes a week after Yardeni Research cut its year-end S&P 500 target to 7,900 from 8,400, warning that investor c...",
-      "url": "https://x.com/unusual_whales/status/2112916314994143710",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-21T14:38:27Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
@@ -41,7 +81,7 @@
       "url": "https://www.investing.com/news/stock-market-news/why-is-meta-platforms-stock-rallying-today-93CH-4963528",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-21T14:35:05Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
@@ -49,7 +89,7 @@
       "url": "https://www.investing.com/news/earnings/expro-earnings-investors-brace-for-margin-test-after-q2-miss-93CH-4963527",
       "source": "Investing.com",
       "category": "Movers",
-      "timestamp": "2026-10-21T14:34:57Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
@@ -57,7 +97,7 @@
       "url": "https://www.investing.com/news/earnings/pultegroup-earnings-in-focus-can-homebuilder-hold-margins-as-rates-surge-93CH-4963526",
       "source": "Investing.com",
       "category": "Movers",
-      "timestamp": "2026-10-21T14:34:02Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
@@ -65,7 +105,7 @@
       "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-stifel-financial-q3-2026-profit-tops-146-a-share-93CH-4963525",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-21T14:33:34Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
@@ -73,7 +113,7 @@
       "url": "https://www.investing.com/news/earnings/sei-investments-faces-earnings-test-on-margin-sustainability-93CH-4963524",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-21T14:33:09Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
@@ -81,7 +121,7 @@
       "url": "https://www.marketwatch.com/story/time-for-a-micron-mindset-shift-heres-how-to-navigate-the-new-ai-landscape-09395ac8?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "category": "Markets",
-      "timestamp": "2026-10-21T14:33:00Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
@@ -89,47 +129,7 @@
       "url": "https://www.investing.com/news/earnings/medical-properties-earnings-in-focus-as-turnaround-test-looms-93CH-4963520",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-21T14:32:15Z",
-      "firstSeen": "2026-10-21T14:46:02Z"
-    },
-    {
-      "headline": "Crude oil inventories fall more than expected, indicating strong demand",
-      "url": "https://www.investing.com/news/economic-indicators/crude-oil-inventories-fall-more-than-expected-indicating-strong-demand-93CH-4963519",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-21T14:32:07Z",
-      "firstSeen": "2026-10-21T14:46:02Z"
-    },
-    {
-      "headline": "EIA CRUDE CUSHING INVENTORIES ACTUAL 0.987M (FORECAST -, PREVIOUS 1.862M) $MACRO",
-      "url": "https://x.com/financialjuice/status/2112914460914425858",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-21T14:31:30Z",
-      "firstSeen": "2026-10-21T14:46:02Z"
-    },
-    {
-      "headline": "EIA CRUDE OIL INVENTORIES ACTUAL -3.06M (FORECAST -0.34M, PREVIOUS -8.557M) $MACRO",
-      "url": "https://x.com/financialjuice/status/2112914446561505551",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-21T14:31:29Z",
-      "firstSeen": "2026-10-21T14:46:02Z"
-    },
-    {
-      "headline": "EIA GASOLINE INVENTORIES ACTUAL -2.952M (FORECAST -0.31M, PREVIOUS 3.518M) $MACRO",
-      "url": "https://x.com/financialjuice/status/2112914433785929896",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-21T14:31:28Z",
-      "firstSeen": "2026-10-21T14:46:02Z"
-    },
-    {
-      "headline": "EIA DISTILLATE INVENTORIES ACTUAL 1.675M (FORECAST -1.24M, PREVIOUS -2.527M) $MACRO",
-      "url": "https://x.com/financialjuice/status/2112914419558846653",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-21T14:31:27Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
@@ -137,7 +137,7 @@
       "url": "https://t.me/WalterBloomberg/37216",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "AI",
-      "timestamp": "2026-10-21T14:31:07Z",
+      "timestamp": "2026-10-21T14:46:02Z",
       "firstSeen": "2026-10-21T14:46:02Z"
     },
     {
