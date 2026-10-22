@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-22T19:16:25Z",
-  "asOfLabel": "3:16 PM ET",
+  "asOf": "2026-10-22T19:31:42Z",
+  "asOfLabel": "3:31 PM ET",
   "topStory": {
     "headline": "Moderna shares plunge after leak of cancer vaccine data despite positive results",
     "url": "https://www.cnbc.com/2026/10/22/moderna-stock-cancer-vaccine-data-leak.html",
@@ -13,27 +13,91 @@
   },
   "items": [
     {
-      "headline": "US Treasury Investor Flows Foreign investors in latest biweekly reporting period buy $5.488B 30-year bond due 08/15/2056 vs $9.307B prior month Investment funds in latest biweekly reporting period...",
-      "url": "https://x.com/financialjuice/status/2113346414940156246",
+      "headline": "Major US Banks Are Detecting Unauthorized AI Agents Accessing Customer Accounts <>",
+      "url": "https://www.zerohedge.com/markets/major-us-banks-are-detecting-unauthorized-ai-agents-accessing-customer-accounts",
       "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-22T19:31:01Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
+    },
+    {
+      "headline": "Is getting a wedding band from Quince a bad idea? ‘It’s a third of the price.’",
+      "url": "https://www.marketwatch.com/story/is-getting-a-wedding-band-from-quince-a-bad-idea-its-a-third-of-the-price-fa89c9b2?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-22T19:25:00Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
+    },
+    {
+      "headline": "BREAKING: Iran says it will strike oil facilities, undersea cables, datacentres and AI facilities across as many as seven countries in the Gulf in the event of a fresh US-Israeli attack",
+      "url": "https://x.com/unusual_whales/status/2113349418724495456",
+      "source": "MarketsOnDeck Discord",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-22T19:20:02Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
+    },
+    {
+      "headline": "Earnings call transcript: SL Green tops Q3 2026 estimates as Manhattan office demand holds",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-sl-green-tops-q3-2026-estimates-as-manhattan-office-demand-holds-93CH-4967222",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-22T19:15:10Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
+    },
+    {
+      "headline": "Turkey’s central bank cuts key rate to 36% from 37%",
+      "url": "https://www.investing.com/news/economy-news/turkeys-central-bank-cuts-key-rate-to-36-from-37-93CH-4967221",
+      "source": "Investing.com",
       "category": "Macro",
-      "timestamp": "2026-10-22T19:08:00Z",
-      "firstSeen": "2026-10-22T19:16:25Z"
+      "timestamp": "2026-10-22T19:12:46Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
+    },
+    {
+      "headline": "US farm secretary says USDA reorganization blocked by judge is ’full bore ahead’",
+      "url": "https://www.investing.com/news/stock-market-news/us-farm-secretary-says-usda-reorganization-blocked-by-judge-is-full-bore-ahead-4967220",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-22T19:12:25Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
+    },
+    {
+      "headline": "Consumer staples rotation: PepsiCo, Coca-Cola, P&G and Altria compared",
+      "url": "https://www.investing.com/news/stock-market-news/consumer-staples-rotation-pepsico-cocacola-pg-and-altria-compared-93CH-4967219",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-22T19:11:44Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
     },
     {
       "headline": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
       "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
       "source": "TechCrunch",
       "category": "AI",
-      "timestamp": "2026-10-22T19:07:09Z",
+      "timestamp": "2026-10-22T19:16:25Z",
       "firstSeen": "2026-10-22T19:16:25Z"
+    },
+    {
+      "headline": "Why is Celestica stock tumbling today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-celestica-stock-tumbling-today-93CH-4967215",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-22T19:07:03Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
+    },
+    {
+      "headline": "Trump asked Musk to lift Starlink slowdown, WSJ reports",
+      "url": "https://www.cnbc.com/2026/10/22/trump-musk-starlink-ukraine.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-22T19:05:32Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
     },
     {
       "headline": "Better Buffett Stock: Alphabet vs. Apple",
       "url": "https://www.nasdaq.com/articles/better-buffett-stock-alphabet-vs-apple",
       "source": "Nasdaq",
       "category": "Markets",
-      "timestamp": "2026-10-22T19:05:00Z",
+      "timestamp": "2026-10-22T19:16:25Z",
       "firstSeen": "2026-10-22T19:16:25Z"
     },
     {
@@ -45,76 +109,12 @@
       "firstSeen": "2026-10-22T19:01:38Z"
     },
     {
-      "headline": "Canva releases its first image generation model",
-      "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-22T19:00:00Z",
-      "firstSeen": "2026-10-22T19:16:25Z"
-    },
-    {
-      "headline": "Rollins (ROL) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/rollins-rol-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-22T18:59:30Z",
-      "firstSeen": "2026-10-22T19:16:25Z"
-    },
-    {
-      "headline": "Banner (BANR) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/banner-banr-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-22T18:59:30Z",
-      "firstSeen": "2026-10-22T19:16:25Z"
-    },
-    {
-      "headline": "FirstService (FSV) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/firstservice-fsv-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-22T18:58:05Z",
-      "firstSeen": "2026-10-22T19:16:25Z"
-    },
-    {
-      "headline": "Union Pacific (UNP) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/union-pacific-unp-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-22T18:58:05Z",
-      "firstSeen": "2026-10-22T19:16:25Z"
-    },
-    {
-      "headline": "Vita Coco: 3 Key Takeaways for Long-Term Investors",
-      "url": "https://www.nasdaq.com/articles/vita-coco-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-22T18:55:01Z",
-      "firstSeen": "2026-10-22T19:16:25Z"
-    },
-    {
-      "headline": "Best large-cap dip buys: AT&T leads on earnings beat and rising estimates",
-      "url": "https://www.investing.com/news/stock-market-news/best-largecap-dip-buys-att-leads-on-earnings-beat-and-rising-estimates-93CH-4967207",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-22T19:01:38Z",
-      "firstSeen": "2026-10-22T19:01:38Z"
-    },
-    {
-      "headline": "Jefferies names top fashion stocks ahead of earnings season",
-      "url": "https://www.investing.com/news/stock-market-news/jefferies-names-top-fashion-stocks-ahead-of-earnings-season-4967203",
+      "headline": "AAR Corp director Ellen Lord sells $425,128 in company stock",
+      "url": "https://www.investing.com/news/insider-trading-news/aar-corp-director-ellen-lord-sells-425128-in-company-stock-93CH-4967212",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-22T19:01:38Z",
-      "firstSeen": "2026-10-22T19:01:38Z"
-    },
-    {
-      "headline": "4 Stocks You’ll Wish You Bought Before Earnings",
-      "url": "https://www.nasdaq.com/articles/4-stocks-youll-wish-you-bought-earnings",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-22T18:53:08Z",
-      "firstSeen": "2026-10-22T19:16:25Z"
+      "timestamp": "2026-10-22T19:00:59Z",
+      "firstSeen": "2026-10-22T19:31:42Z"
     },
     {
       "headline": "Pretty useful I have to admit. I actually learned something",
