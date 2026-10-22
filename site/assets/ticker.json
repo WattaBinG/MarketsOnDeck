@@ -1,1 +1,194 @@
-{"asOf": "2026-10-22T14:30:40Z", "asOfLabel": "10:30 AM ET", "pinned": ["SPY", "QQQ", "DIA"], "source": "robinhood", "items": [{"symbol": "SPCX", "price": 150.97, "change": -8.34, "changePercent": -5.24, "held": true}, {"symbol": "QUBT", "price": 6.65, "change": -0.17, "changePercent": -2.49, "held": true}, {"symbol": "SOFI", "price": 14.88, "change": -0.02, "changePercent": -0.13, "held": true}, {"symbol": "KLAC", "price": 150.84, "change": -12.59, "changePercent": -7.7, "held": true}, {"symbol": "CCL", "price": 27.38, "change": 0.08, "changePercent": 0.3, "held": true}, {"symbol": "HD", "price": 323.1, "change": 8.96, "changePercent": 2.85, "held": true}, {"symbol": "LLY", "price": 1306.47, "change": 35.72, "changePercent": 2.81, "held": true}, {"symbol": "INTC", "price": 87.43, "change": -5.53, "changePercent": -5.95}, {"symbol": "SPCH", "price": 9.71, "change": -1.12, "changePercent": -10.38}, {"symbol": "META", "price": 651.12, "change": -46.4, "changePercent": -6.65}, {"symbol": "NVDA", "price": 214.69, "change": -7.28, "changePercent": -3.28}, {"symbol": "AMZN", "price": 251.69, "change": -10.68, "changePercent": -4.07}, {"symbol": "AMD", "price": 516.8, "change": -35.92, "changePercent": -6.5}, {"symbol": "QQQ", "price": 709.02, "change": -16.18, "changePercent": -2.23}, {"symbol": "GOOGL", "price": 327.11, "change": -7.65, "changePercent": -2.29}, {"symbol": "SPY", "price": 762.89, "change": -10.2, "changePercent": -1.32}, {"symbol": "PLTR", "price": 197.93, "change": -3.79, "changePercent": -1.88}, {"symbol": "MSFT", "price": 523.1, "change": -9.85, "changePercent": -1.85}, {"symbol": "COIN", "price": 171.38, "change": -5.71, "changePercent": -3.22}, {"symbol": "IWM", "price": 274.99, "change": -1.49, "changePercent": -0.54}, {"symbol": "AAPL", "price": 343.04, "change": -0.95, "changePercent": -0.28}, {"symbol": "LULU", "price": 98.94, "change": 2.41, "changePercent": 2.5}, {"symbol": "TSLA", "price": 386.62, "change": 0.15, "changePercent": 0.04}, {"symbol": "DIA", "price": 524.93, "change": -2.77, "changePercent": -0.52}, {"symbol": "LRCX", "price": 236.75, "change": -24.06, "changePercent": -9.23}, {"symbol": "CMCSA", "price": 23.25, "change": 1.17, "changePercent": 5.28}, {"symbol": "CSX", "price": 51.4, "change": 3.0, "changePercent": 6.19}, {"symbol": "PG", "price": 165.39, "change": 8.55, "changePercent": 5.45}, {"symbol": "COHR", "price": 209.82, "change": -27.71, "changePercent": -11.66}, {"symbol": "FLEX", "price": 76.88, "change": -9.37, "changePercent": -10.86}]}
+{
+  "asOf": "2026-10-22T14:30:40Z",
+  "asOfLabel": "10:30 AM ET",
+  "pinned": [
+    "SPY",
+    "QQQ",
+    "DIA",
+    "IWM",
+    "USO"
+  ],
+  "source": "robinhood",
+  "items": [
+    {
+      "symbol": "SPY",
+      "price": 762.89,
+      "change": -10.2,
+      "changePercent": -1.32
+    },
+    {
+      "symbol": "QQQ",
+      "price": 709.02,
+      "change": -16.18,
+      "changePercent": -2.23
+    },
+    {
+      "symbol": "DIA",
+      "price": 524.93,
+      "change": -2.77,
+      "changePercent": -0.52
+    },
+    {
+      "symbol": "IWM",
+      "price": 274.99,
+      "change": -1.49,
+      "changePercent": -0.54
+    },
+    {
+      "symbol": "HD",
+      "price": 323.1,
+      "change": 8.96,
+      "changePercent": 2.85,
+      "held": true
+    },
+    {
+      "symbol": "SPCX",
+      "price": 150.97,
+      "change": -8.34,
+      "changePercent": -5.24,
+      "held": true
+    },
+    {
+      "symbol": "SOFI",
+      "price": 14.88,
+      "change": -0.02,
+      "changePercent": -0.13,
+      "held": true
+    },
+    {
+      "symbol": "QUBT",
+      "price": 6.65,
+      "change": -0.17,
+      "changePercent": -2.49,
+      "held": true
+    },
+    {
+      "symbol": "KLAC",
+      "price": 150.84,
+      "change": -12.59,
+      "changePercent": -7.7,
+      "held": true
+    },
+    {
+      "symbol": "LLY",
+      "price": 1306.47,
+      "change": 35.72,
+      "changePercent": 2.81,
+      "held": true
+    },
+    {
+      "symbol": "CCL",
+      "price": 27.38,
+      "change": 0.08,
+      "changePercent": 0.3
+    },
+    {
+      "symbol": "INTC",
+      "price": 87.43,
+      "change": -5.53,
+      "changePercent": -5.95
+    },
+    {
+      "symbol": "SPCH",
+      "price": 9.71,
+      "change": -1.12,
+      "changePercent": -10.38
+    },
+    {
+      "symbol": "META",
+      "price": 651.12,
+      "change": -46.4,
+      "changePercent": -6.65
+    },
+    {
+      "symbol": "NVDA",
+      "price": 214.69,
+      "change": -7.28,
+      "changePercent": -3.28
+    },
+    {
+      "symbol": "AMZN",
+      "price": 251.69,
+      "change": -10.68,
+      "changePercent": -4.07
+    },
+    {
+      "symbol": "AMD",
+      "price": 516.8,
+      "change": -35.92,
+      "changePercent": -6.5
+    },
+    {
+      "symbol": "GOOGL",
+      "price": 327.11,
+      "change": -7.65,
+      "changePercent": -2.29
+    },
+    {
+      "symbol": "PLTR",
+      "price": 197.93,
+      "change": -3.79,
+      "changePercent": -1.88
+    },
+    {
+      "symbol": "MSFT",
+      "price": 523.1,
+      "change": -9.85,
+      "changePercent": -1.85
+    },
+    {
+      "symbol": "COIN",
+      "price": 171.38,
+      "change": -5.71,
+      "changePercent": -3.22
+    },
+    {
+      "symbol": "AAPL",
+      "price": 343.04,
+      "change": -0.95,
+      "changePercent": -0.28
+    },
+    {
+      "symbol": "LULU",
+      "price": 98.94,
+      "change": 2.41,
+      "changePercent": 2.5
+    },
+    {
+      "symbol": "TSLA",
+      "price": 386.62,
+      "change": 0.15,
+      "changePercent": 0.04
+    },
+    {
+      "symbol": "LRCX",
+      "price": 236.75,
+      "change": -24.06,
+      "changePercent": -9.23
+    },
+    {
+      "symbol": "CMCSA",
+      "price": 23.25,
+      "change": 1.17,
+      "changePercent": 5.28
+    },
+    {
+      "symbol": "CSX",
+      "price": 51.4,
+      "change": 3.0,
+      "changePercent": 6.19
+    },
+    {
+      "symbol": "PG",
+      "price": 165.39,
+      "change": 8.55,
+      "changePercent": 5.45
+    },
+    {
+      "symbol": "COHR",
+      "price": 209.82,
+      "change": -27.71,
+      "changePercent": -11.66
+    }
+  ]
+}
