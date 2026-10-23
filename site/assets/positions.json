@@ -120,12 +120,12 @@
       "account": "Trading",
       "symbol": "USDG",
       "assetType": "crypto",
-      "quantity": 102.582488,
+      "quantity": 103.01701,
       "avgCost": 1.0,
       "currentPrice": 1.0,
       "priorClose": 1.0,
       "unrealizedGain": 0.0,
-      "note": "Cash-like, 7% APY. Quantity carried from the Oct 19 ledger (Oct 9 refresh) \u2014 an Oct 15 web holdings verification showed 102.88 total including Crypto Earn; the broker API used for this refresh does not expose crypto positions, so the carried quantity is retained pending a web re-verification."
+      "note": "Cash-like, 7% APY. Quantity as of Oct 22, 2026 ~6:10 PM ET per the Robinhood web Holdings list (includes Crypto Earn). Earlier values: 102.582488 carried from the Oct 9 refresh, 102.88 on an Oct 15 web check. A point-in-time balance, not a trade; no realized P&L."
     },
     {
       "account": "Trading",

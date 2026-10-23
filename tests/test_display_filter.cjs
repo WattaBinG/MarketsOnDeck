@@ -39,26 +39,26 @@ assert(Math.abs(totalUnrealized - (displayUnrealized + dustUgl)) < 0.001,
   'Totals must include hidden positions');
 console.log('✓ Totals include hidden dust positions');
 
-// Test 4: Futures use quoted prices for the $5 threshold
-const futures = positions.find(p => p.assetType === 'futures');
-assert(futures, 'Futures position must exist');
-assert(displaySymbols.includes('METV26'), 'METV26 should be displayed (value >> $5)');
-const futuresValue = displayValue(futures);
-assert(futuresValue >= 5, 'Futures value calculation must use quoted prices');
+// Test 4: Futures use quoted prices for the $5 threshold. Synthetic open
+// futures fixture (the real book now holds a CLOSED METV26, quantity 0).
+const openFutures = { symbol: 'FUT', assetType: 'futures', quantity: 30, currentPrice: null,
+  quotedMark: 2400, multiplier: 0.1 };
+assert(displayValue(openFutures) >= 5, 'Open futures value must use quoted prices');
+assert(getDisplayRows([openFutures]).length === 1, 'Open futures must be displayed');
+assert(Math.abs(openFutures.quantity * (openFutures.currentPrice || 0)) < 5,
+  'Fixture must only pass via the quoted mark');
+const closedFutures = positions.find(p => p.assetType === 'futures');
+assert(closedFutures && closedFutures.quantity === 0, 'Book must carry the closed METV26 row');
+assert(!displaySymbols.includes('METV26'), 'Closed METV26 (qty 0) is hidden from display');
 console.log('✓ Futures threshold uses quoted prices');
 
-// Test 5: Hidden positions = DOGE, USDC dust + the 3 Oct 9 option opens whose
-// per-contract marks are unavailable (currentPrice null -> display value $0).
-// (Was 2 at the Oct 6 scope; the 3 new option positions have no broker marks.)
+// Test 5: Hidden positions in the Oct 22 book = DOGE and USDC dust plus the
+// closed METV26 row (quantity 0). Option positions now carry marks and show.
 const hiddenRows = positions.filter(p => displayValue(p) < 5);
-const hiddenIds = hiddenRows.map(p => p.contractId || p.symbol);
-assert(hiddenIds.includes('DOGE'), 'DOGE should be hidden');
-assert(hiddenIds.includes('USDC'), 'USDC should be hidden');
-assert(hiddenIds.includes('HD:2026-10-16:call:295.0'), 'HD $295C should be hidden (no mark)');
-assert(hiddenIds.includes('HD:2026-10-30:call:300.0'), 'HD $300C should be hidden (no mark)');
-assert(hiddenIds.includes('SPCX:2026-10-16:call:162.5'), 'SPCX $162.50C should be hidden (no mark)');
+const hiddenIds = hiddenRows.map(p => p.contractId || p.symbol).sort();
+assert.deepEqual(hiddenIds, ['DOGE', 'METV26', 'USDC'], 'Hidden set: ' + hiddenIds.join(','));
 const hiddenCount = positions.length - displayRows.length;
-assert(hiddenCount === 5, `Expected 5 hidden (2 dust + 3 unmarked options), got ${hiddenCount}`);
+assert(hiddenCount === 3, `Expected 3 hidden (2 dust + closed METV26), got ${hiddenCount}`);
 console.log('✓ Hidden count correct');
 
 console.log('\nDisplay filter tests passed');

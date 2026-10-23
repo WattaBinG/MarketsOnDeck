@@ -253,10 +253,10 @@ def validate_position_bases(positions, data=None):
         assert not (key[1] in ('TSLA', 'CCL')), (
             f'Unexpected remaining option position: {key}')
 
-    # USDG: 102.582488 units, cash-like
+    # USDG: 103.01701 units, cash-like (Robinhood web Holdings read, Oct 22 2026 ~6:10 PM ET; Earn accrual from 102.582488 carried Oct 9)
     usdg = [p for p in positions['positions'] if p.get('symbol') == 'USDG']
     assert len(usdg) == 1, 'USDG position missing'
-    assert abs(usdg[0].get('quantity', 0) - 102.582488) < 0.000001
+    assert abs(usdg[0].get('quantity', 0) - 103.01701) < 0.000001
 
 
 if __name__ == '__main__':
