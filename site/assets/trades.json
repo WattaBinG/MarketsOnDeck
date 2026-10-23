@@ -900,7 +900,8 @@
    "timestamp": "2026-09-21T13:57:44.826000Z",
    "regulatoryFees": 0.04,
    "orderRef": "rh-csv-2026-10-19",
-   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time from Robinhood order history (same premium, date and fee)"
+   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time imported from the Oct 7 ledger refresh (Robinhood order history per that commit), not verified against the CSV (day precision only)",
+   "timestampPrecision": "imported-unverified"
   },
   {
    "underlying": "HD",
@@ -919,7 +920,8 @@
    "timestamp": "2026-09-21T13:54:33.167000Z",
    "regulatoryFees": 0.04,
    "orderRef": "rh-csv-2026-10-19",
-   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time from Robinhood order history (same premium, date and fee)"
+   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time imported from the Oct 7 ledger refresh (Robinhood order history per that commit), not verified against the CSV (day precision only)",
+   "timestampPrecision": "imported-unverified"
   },
   {
    "underlying": "HD",
@@ -938,7 +940,8 @@
    "timestamp": "2026-09-21T19:56:15.733000Z",
    "regulatoryFees": 0.04,
    "orderRef": "rh-csv-2026-10-19",
-   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time from Robinhood order history (same premium, date and fee)"
+   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time imported from the Oct 7 ledger refresh (Robinhood order history per that commit), not verified against the CSV (day precision only)",
+   "timestampPrecision": "imported-unverified"
   },
   {
    "underlying": "HD",
@@ -957,7 +960,8 @@
    "timestamp": "2026-09-21T17:55:05.060000Z",
    "regulatoryFees": 0.04,
    "orderRef": "rh-csv-2026-10-19",
-   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time from Robinhood order history (same premium, date and fee)"
+   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time imported from the Oct 7 ledger refresh (Robinhood order history per that commit), not verified against the CSV (day precision only)",
+   "timestampPrecision": "imported-unverified"
   },
   {
    "underlying": "HD",
@@ -976,7 +980,8 @@
    "timestamp": "2026-09-21T16:24:45.192000Z",
    "regulatoryFees": 0.04,
    "orderRef": "rh-csv-2026-10-19",
-   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time from Robinhood order history (same premium, date and fee)"
+   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time imported from the Oct 7 ledger refresh (Robinhood order history per that commit), not verified against the CSV (day precision only)",
+   "timestampPrecision": "imported-unverified"
   },
   {
    "underlying": "HD",
@@ -995,7 +1000,8 @@
    "timestamp": "2026-09-23T16:10:22.580000Z",
    "regulatoryFees": 0.04,
    "orderRef": "rh-csv-2026-10-19",
-   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time from Robinhood order history (same premium, date and fee)"
+   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time imported from the Oct 7 ledger refresh (Robinhood order history per that commit), not verified against the CSV (day precision only)",
+   "timestampPrecision": "imported-unverified"
   },
   {
    "underlying": "HD",
@@ -1014,7 +1020,8 @@
    "timestamp": "2026-09-23T16:09:19.389000Z",
    "regulatoryFees": 0.04,
    "orderRef": "rh-csv-2026-10-19",
-   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time from Robinhood order history (same premium, date and fee)"
+   "evidence": "Robinhood order history CSV export, Trading account, Jan 1 - Oct 19 2026; exact fill time imported from the Oct 7 ledger refresh (Robinhood order history per that commit), not verified against the CSV (day precision only)",
+   "timestampPrecision": "imported-unverified"
   },
   {
    "underlying": "SPCX",
