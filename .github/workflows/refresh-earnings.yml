@@ -33,7 +33,7 @@ jobs:
       - name: Fetch earnings calendar
         run: python3 scripts/fetch_earnings.py | tee /tmp/out.txt
       - name: Run earnings tests
-        run: python3 -m unittest discover -s tests -p 'test_earnings*.py'
+        run: python3 -m unittest discover -s tests -p 'test_*earnings*.py'
       - name: Commit if changed
         run: |
           if [ -z "$(git status --porcelain -- site/assets/earnings.json site/index.html)" ]; then
