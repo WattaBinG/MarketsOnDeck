@@ -586,6 +586,15 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 
 /* Earnings Today box — rendered by scripts/refresh_earnings.py. Mirrors the
    watch-box so the two "Today" blocks read as one section. */
+.earn-box-stale {
+  border: 2px dashed var(--accent-2, var(--accent));
+  background: var(--accent-tint, var(--surface));
+}
+.earn-box-stale .earn-box-date {
+  font-weight: 600;
+  color: var(--text);
+  opacity: 1;
+}
 .earn-box {
   margin-top: 10px;
   border: 1px solid var(--border);

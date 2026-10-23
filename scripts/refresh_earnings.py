@@ -152,7 +152,6 @@ def render_earnings_block(data: dict, today: str | None = None) -> str:
             f'  <div class="earn-box-date">No current earnings feed for '
             f'{html.escape(day.strftime("%A, %B %-d"))}. '
             f'Last schedule: {html.escape(feed_date)}.</div>',
-            LEGEND_HTML,
             "</div>",
             MARK_END,
         ]
