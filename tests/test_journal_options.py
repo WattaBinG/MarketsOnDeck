@@ -9,12 +9,18 @@ class JournalOptions(unittest.TestCase):
         self.data = json.loads((ROOT / 'site/assets/trades.json').read_text())
         self.positions = json.loads((ROOT / 'site/assets/positions.json').read_text())
 
+    def _v2_index(self):
+        # First schemaVersion-2 option row. trades[0] is a legacy Jan 2 row (no v2
+        # fields, which validate() deliberately skips), so it can't test v2 gates.
+        return next(i for i, t in enumerate(self.data['trades'])
+                    if t.get('assetType') == 'option' and t.get('schemaVersion') == 2)
+
     # --- Core v2 validation ---
     def test_valid(self):
         v.validate(self.data)
 
     def test_flatten_rejected(self):
-        self.data['trades'][0]['assetType'] = 'equity'
+        self.data['trades'][self._v2_index()]['assetType'] = 'equity'
         with self.assertRaises(AssertionError):
             v.validate(self.data)
 
@@ -24,7 +30,7 @@ class JournalOptions(unittest.TestCase):
             v.validate(self.data)
 
     def test_missing_contract_rejected(self):
-        del self.data['trades'][0]['expiration']
+        del self.data['trades'][self._v2_index()]['expiration']
         with self.assertRaises(AssertionError):
             v.validate(self.data)
 
@@ -117,7 +123,7 @@ class JournalOptions(unittest.TestCase):
         v.validate_no_dust_deleted(self.positions)
 
     def test_position_bases(self):
-        v.validate_position_bases(self.positions)
+        v.validate_position_bases(self.positions, self.data)
 
 if __name__ == '__main__':
     unittest.main()
