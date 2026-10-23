@@ -146,14 +146,31 @@ class RenderDatePin(unittest.TestCase):
             "weekAhead": [],
         }
 
-    def test_box_date_equals_feed_date(self):
-        # Rendering with no explicit date must pin to the feed date, not the
-        # wall clock - even days later.
+    def test_stale_feed_warns_on_real_clock(self):
+        # The observation clock is the real ET date; a feed older than that
+        # renders the whole-widget stale notice - never "Earnings Today" over
+        # an old date. The box still carries the FEED's date.
         block = render_earnings_block(self._feed())
         self.assertIn('data-earn-date="2026-10-05"', block)
+        self.assertIn("No current earnings feed", block)
+        self.assertIn("Last schedule: 2026-10-05", block)
+        self.assertNotIn("Earnings Today", block)
+        self.assertNotIn("XYZ", block)
+
+    def test_fresh_feed_renders_normally_on_real_clock(self):
+        # A feed dated today (ET) renders its rows under "Earnings Today".
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        today = datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+        feed = self._feed()
+        feed["date"] = today
+        feed["today"][0]["date"] = today
+        block = render_earnings_block(feed)
+        self.assertIn(f'data-earn-date="{today}"', block)
+        self.assertIn("Earnings Today", block)
         self.assertIn("XYZ", block)
 
-    def test_render_index_uses_feed_date(self):
+    def test_render_index_warns_on_stale_feed(self):
         import tempfile
         feed = self._feed()
         with tempfile.TemporaryDirectory() as d:
@@ -163,7 +180,8 @@ class RenderDatePin(unittest.TestCase):
             render_index(idx, feed)
             out = idx.read_text()
         self.assertIn('data-earn-date="2026-10-05"', out)
-        self.assertIn("XYZ", out)
+        self.assertIn("No current earnings feed", out)
+        self.assertNotIn("XYZ", out)
 
 
 class StateSeparation(unittest.TestCase):
@@ -190,7 +208,8 @@ class StateSeparation(unittest.TestCase):
              "today": [{"ticker": "LEG", "company": "Legacy Row Co",
                         "slot": None, "epsEst": None, "actualEps": None,
                         "link": "https://example.com"}],
-             "weekAhead": []})
+             "weekAhead": []},
+            today="2026-10-05")
         self.assertIn("LEG", block)
 
 

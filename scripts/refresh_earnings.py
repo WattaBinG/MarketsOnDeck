@@ -124,61 +124,52 @@ def _week_row(r: dict) -> str:
 def render_earnings_block(data: dict, today: str | None = None) -> str:
     """Render the full EARNINGS_TODAY marker block from the data file.
 
-    Date discipline: the block renders against the FEED's date by default, so
-    the box's data-earn-date always equals the feed date — the box can never
-    wear a fresher date than the data behind it. A row with no 'date' field
-    belongs to the feed's date (legacy/hand-seeded rows), never silently
-    dropped. If the caller renders a date LATER than the feed date and
-    nothing in the feed is current, the block shows an honest stale-feed
-    notice instead of an 'Earnings Today' header over old or empty data.
+    Date discipline (trust rules):
+    - The render date defaults to the real clock in ET, never to anything
+      derived from the feed. Pass `today` only in tests.
+    - Render date == feed date: render the stored lists as-is under an
+      "Earnings Today" header. The fetcher built the split; fresh feeds
+      already carry Keith's Mon-Fri "Coming up" scope.
+    - Render date LATER than the feed date: the feed is stale, so the whole
+      box becomes an honest stale-feed notice - no "Earnings Today" header,
+      no list, and the box carries the FEED's date, never a fresher one
+      (restores the Oct 7 trust-patch guard).
+    - A row with no 'date' field is never silently dropped: it renders as
+      part of the stored lists above (legacy/hand-seeded rows).
     """
-    from datetime import timedelta
     feed_date = data.get("date")
-    today = today or feed_date or datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+    today = today or datetime.now(ZoneInfo("America/New_York")).date().isoformat()
     day = datetime.fromisoformat(today).date()
-    friday = day + timedelta(days=(4-day.weekday()))
-    rows = data.get("today", []) + data.get("weekAhead", [])
 
-    def _eff_date(r: dict) -> str:
-        # Undated rows belong to the feed's date (fix C): they render on the
-        # feed's own day instead of vanishing silently.
-        return r.get("date") or feed_date or ""
-
-    if today == feed_date or feed_date is None:
-        # Rendering against the feed's own date (the normal case): the
-        # fetcher already built the today/weekAhead split — render the stored
-        # lists as-is, no re-filtering.
-        data = dict(data, date=today, dateLabel=day.strftime("%A, %B %d"))
-    else:
-        # Explicit render date different from the feed date (across-midnight
-        # and test scenarios): rebuild the split from row dates, keeping
-        # dated rows across midnight.
-        data = dict(data, date=today, dateLabel=day.strftime("%A, %B %d"),
-                    today=[r for r in rows if _eff_date(r)==today],
-                    weekAhead=[r for r in rows if today < _eff_date(r) <= friday.isoformat()])
-    stale = bool(feed_date) and today > feed_date
-    if stale and not data["today"] and not data["weekAhead"]:
-        # Stale-feed state (restores the Oct 7 trust-patch guard): the feed
-        # is older than the render date and has nothing current, so say so
-        # plainly — no 'Earnings Today' header, no list.
+    if feed_date and today > feed_date:
+        # Stale-feed state: the whole widget is the warning.
         lines = [
             "<!-- EARNINGS_TODAY_START — rendered by scripts/refresh_earnings.py "
             "from site/assets/earnings.json; keep the markers for clean find/replace -->",
-            f'<div class="earn-box" data-earn-date="{html.escape(feed_date)}">',
+            f'<div class="earn-box earn-box-stale" data-earn-date="{html.escape(feed_date)}" '
+            f'data-render-date="{html.escape(today)}">',
             '  <div class="earn-box-header">Earnings</div>',
-            f'  <div class="earn-box-date">No current earnings feed. '
+            f'  <div class="earn-box-date">No current earnings feed for '
+            f'{html.escape(day.strftime("%A, %B %-d"))}. '
             f'Last schedule: {html.escape(feed_date)}.</div>',
             LEGEND_HTML,
             "</div>",
             MARK_END,
         ]
         return "\n".join(lines)
+
+    data = dict(data, date=feed_date or today,
+                dateLabel=(data.get("dateLabel")
+                           or (datetime.fromisoformat(feed_date).date().strftime("%A, %B %-d")
+                               if feed_date else day.strftime("%A, %B %-d"))))
+    rows = data.get("today", []) + data.get("weekAhead", [])
     fallback = ""
-    if not data["today"] and not data["weekAhead"]:
-        future = sorted([r for r in rows if r.get("date", "") > today], key=lambda r: r["date"])
+    if not data.get("today") and not data.get("weekAhead"):
+        future = sorted([r for r in rows if (r.get("date") or feed_date or "") > (feed_date or today)],
+                        key=lambda r: r.get("date") or feed_date or "")
         if future:
-            next_day = future[0]["date"]
-            data["weekAhead"] = [r for r in future if r["date"] == next_day]
+            next_day = future[0].get("date") or feed_date
+            data["weekAhead"] = [r for r in future if (r.get("date") or feed_date) == next_day]
             fallback = "No major earnings this week. Next scheduled: " + next_day
         else:
             fallback = "No major earnings listed this week. Next schedule update pending."
@@ -186,12 +177,13 @@ def render_earnings_block(data: dict, today: str | None = None) -> str:
     lines = [
         "<!-- EARNINGS_TODAY_START — rendered by scripts/refresh_earnings.py "
         "from site/assets/earnings.json; keep the markers for clean find/replace -->",
-        f'<div class="earn-box" data-earn-date="{html.escape(data["date"])}">',
+        f'<div class="earn-box" data-earn-date="{html.escape(data["date"])}" '
+        f'data-render-date="{html.escape(today)}">',
         '  <div class="earn-box-header">Earnings Today</div>',
         f'  <div class="earn-box-date">{html.escape(data["dateLabel"])}</div>',
         '  <ul class="earn-list">',
     ]
-    for r in data["today"]:
+    for r in data.get("today", []):
         lines.append(_row(r))
     lines.append("  </ul>")
     if data.get("weekAhead"):
