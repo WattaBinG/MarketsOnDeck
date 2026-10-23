@@ -127,7 +127,10 @@ def _rank(entries: list[dict], limit: int) -> list[dict]:
     return ranked[:limit]
 
 
-def build_payload(today: date, rows_by_day: dict[str, list[dict]]) -> dict:
+def build_payload(today: date, rows_by_day: dict[str, list[dict]],
+                  now_et: datetime | None = None) -> dict:
+    """Build the feed payload. `now_et` is the run moment in ET, supplied once
+    by main(); tests inject it so week selection is a pure function of inputs."""
     fetched_at = datetime.now(timezone.utc).isoformat()
     today_iso = today.isoformat()
     today_entries: list[dict] = []
@@ -151,7 +154,8 @@ def build_payload(today: date, rows_by_day: dict[str, list[dict]]) -> dict:
     # phonemsg-01M5BMT10NWBJ2H7ENVNPZAW6F): "Coming up" lists this week's
     # earnings only (Mon-Fri). From Sunday 6pm ET it rolls forward so next
     # week's list is posted Sunday night for Monday morning.
-    now_et = datetime.now(ZoneInfo("America/New_York"))
+    if now_et is None:
+        now_et = datetime.now(ZoneInfo("America/New_York"))
     if now_et.weekday() == 6 and now_et.hour >= 18:
         week_start = today + timedelta(days=1)  # tomorrow = next Monday
     else:
@@ -251,7 +255,8 @@ def atomic_write(path: Path, payload: dict) -> None:
 
 
 def main(argv: list[str] | None = None) -> int:
-    today = datetime.now(ZoneInfo("America/New_York")).date()
+    now_et = datetime.now(ZoneInfo("America/New_York"))
+    today = now_et.date()
     errors: list[str] = []
     rows_by_day: dict[str, list[dict]] = {}
     for offset in range(WINDOW_DAYS + 1):
@@ -263,7 +268,7 @@ def main(argv: list[str] | None = None) -> int:
             # is still a broken calendar.
             print(f"ERROR: {exc}", file=sys.stderr)
             return 2
-    payload = build_payload(today, rows_by_day)
+    payload = build_payload(today, rows_by_day, now_et)
     errors = validate(payload, today)
     if errors:
         for e in errors:
