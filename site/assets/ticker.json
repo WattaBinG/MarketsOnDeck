@@ -40,13 +40,6 @@
       "changePercent": 1.72
     },
     {
-      "symbol": "HD",
-      "price": 327.69,
-      "change": 13.6,
-      "changePercent": 4.33,
-      "held": true
-    },
-    {
       "symbol": "SPCX",
       "price": 145.24,
       "change": -14.07,
@@ -85,7 +78,14 @@
       "symbol": "NVDA",
       "price": 212.27,
       "change": -9.63,
-      "changePercent": -4.34
+      "changePercent": -4.34,
+      "held": true
+    },
+    {
+      "symbol": "HD",
+      "price": 327.69,
+      "change": 13.6,
+      "changePercent": 4.33
     },
     {
       "symbol": "LULU",
