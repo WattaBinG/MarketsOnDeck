@@ -1173,7 +1173,6 @@
    "timestamp": "2026-10-22T17:13:26.035000Z",
    "timestampPrecision": "second",
    "regulatoryFees": 0.2,
-   "orderRef": "6ada4431",
    "evidence": "Robinhood order history"
   },
   {
@@ -1193,7 +1192,6 @@
    "timestamp": "2026-10-22T17:35:39.289000Z",
    "timestampPrecision": "second",
    "regulatoryFees": 0.2,
-   "orderRef": "6ada4969",
    "evidence": "Robinhood order history"
   },
   {
@@ -1213,7 +1211,6 @@
    "timestamp": "2026-10-22T19:29:02.846000Z",
    "timestampPrecision": "second",
    "regulatoryFees": 0.2,
-   "orderRef": "6ada63fe",
    "evidence": "Robinhood order history"
   },
   {
@@ -1233,7 +1230,6 @@
    "timestamp": "2026-10-22T19:29:51.766000Z",
    "timestampPrecision": "second",
    "regulatoryFees": 0.4,
-   "orderRef": "6ada642f",
    "evidence": "Robinhood order history"
   },
   {
@@ -1253,7 +1249,6 @@
    "timestamp": "2026-10-22T19:29:31.802000Z",
    "timestampPrecision": "second",
    "regulatoryFees": 0.08,
-   "orderRef": "6ada641b",
    "evidence": "Robinhood order history"
   }
  ],
@@ -8065,7 +8060,7 @@
    ],
    "lotAllocationBasis": "FIFO: closes the remaining 6 @ $2.30 (SPCX-open-15, Oct 16); basis $1,380 \u2014 matches the broker clearing basis on the position before the sale. Contract fully closed (44 opened, 44 closed).",
    "realizedGainSource": "Computed from broker fill prices (FIFO lot allocation; fees kept separate)",
-   "evidence": "Robinhood order history (order 6ad8ca4b-2b61-4ff9-af1b-912b33ac98df, execution 6ad8ca4b-217b-4286-82b5-2e16d71afd88)"
+   "evidence": "Robinhood order history"
   },
   {
    "date": "2026-10-21",
@@ -8098,7 +8093,7 @@
    ],
    "lotAllocationBasis": "FIFO: closes the remaining 3 @ $5.16 (SPCX-open-12, Oct 16); basis $1,548 \u2014 matches the broker clearing basis on the position before the sale. Contract fully closed (13 opened, 13 closed).",
    "realizedGainSource": "Computed from broker fill prices (FIFO lot allocation; fees kept separate)",
-   "evidence": "Robinhood order history (order 6ad8ca56-11b0-4a0c-b098-3feacebaa9b5, execution 6ad8ca58-b235-4cdc-8363-0433da8bc35e)"
+   "evidence": "Robinhood order history"
   },
   {
    "date": "2026-10-21",
@@ -8133,7 +8128,7 @@
    ],
    "lotAllocationBasis": "FIFO: closes 2 @ $4.75 (SPCX-open-16) + 3 @ $4.70 (SPCX-open-17) + 1 @ $4.75 (SPCX-open-18), all Oct 19; basis $2,835. The 1 retained contract is SPCX-open-19 @ $4.65 under FIFO; the broker position record carries a $471.43 average clearing basis on the retained contract ($3,300 total across all 7 Oct 19 lots).",
    "realizedGainSource": "Computed from broker fill prices (FIFO lot allocation; fees kept separate)",
-   "evidence": "Robinhood order history (order 6ad8cad5-a175-48d0-a318-bfe444d8625c, execution 6ad8cad6-4d16-4448-9640-402d731d393c)"
+   "evidence": "Robinhood order history"
   },
   {
    "date": "2026-10-22",
@@ -8147,7 +8142,7 @@
    "fees": 0.21,
    "priceUnit": "USD_per_share",
    "realizedGainSource": "Broker average-cost basis on the position before the sale ($8,817.55 = 30 @ $293.9184 average_buy_price per the broker position record); gross of fees, fees kept separate",
-   "evidence": "Robinhood order history (order 6ada3fe9-2fce-4c18-95ff-14def690ae29, execution 6ada3fea-b577-44d2-9611-0be8f19f1392)",
+   "evidence": "Robinhood order history",
    "underlying": "HD",
    "id": "HD-close-17"
   }
