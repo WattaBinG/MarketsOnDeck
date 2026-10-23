@@ -122,15 +122,57 @@ def _week_row(r: dict) -> str:
 
 
 def render_earnings_block(data: dict, today: str | None = None) -> str:
-    """Render the full EARNINGS_TODAY marker block from the data file."""
-    today = today or datetime.now(ZoneInfo("America/New_York")).date().isoformat()
+    """Render the full EARNINGS_TODAY marker block from the data file.
+
+    Date discipline: the block renders against the FEED's date by default, so
+    the box's data-earn-date always equals the feed date — the box can never
+    wear a fresher date than the data behind it. A row with no 'date' field
+    belongs to the feed's date (legacy/hand-seeded rows), never silently
+    dropped. If the caller renders a date LATER than the feed date and
+    nothing in the feed is current, the block shows an honest stale-feed
+    notice instead of an 'Earnings Today' header over old or empty data.
+    """
     from datetime import timedelta
+    feed_date = data.get("date")
+    today = today or feed_date or datetime.now(ZoneInfo("America/New_York")).date().isoformat()
     day = datetime.fromisoformat(today).date()
     friday = day + timedelta(days=(4-day.weekday()))
     rows = data.get("today", []) + data.get("weekAhead", [])
-    data = dict(data, date=today, dateLabel=day.strftime("%A, %B %d"),
-                today=[r for r in rows if r.get("date")==today],
-                weekAhead=[r for r in rows if today < r.get("date", "") <= friday.isoformat()])
+
+    def _eff_date(r: dict) -> str:
+        # Undated rows belong to the feed's date (fix C): they render on the
+        # feed's own day instead of vanishing silently.
+        return r.get("date") or feed_date or ""
+
+    if today == feed_date or feed_date is None:
+        # Rendering against the feed's own date (the normal case): the
+        # fetcher already built the today/weekAhead split — render the stored
+        # lists as-is, no re-filtering.
+        data = dict(data, date=today, dateLabel=day.strftime("%A, %B %d"))
+    else:
+        # Explicit render date different from the feed date (across-midnight
+        # and test scenarios): rebuild the split from row dates, keeping
+        # dated rows across midnight.
+        data = dict(data, date=today, dateLabel=day.strftime("%A, %B %d"),
+                    today=[r for r in rows if _eff_date(r)==today],
+                    weekAhead=[r for r in rows if today < _eff_date(r) <= friday.isoformat()])
+    stale = bool(feed_date) and today > feed_date
+    if stale and not data["today"] and not data["weekAhead"]:
+        # Stale-feed state (restores the Oct 7 trust-patch guard): the feed
+        # is older than the render date and has nothing current, so say so
+        # plainly — no 'Earnings Today' header, no list.
+        lines = [
+            "<!-- EARNINGS_TODAY_START — rendered by scripts/refresh_earnings.py "
+            "from site/assets/earnings.json; keep the markers for clean find/replace -->",
+            f'<div class="earn-box" data-earn-date="{html.escape(feed_date)}">',
+            '  <div class="earn-box-header">Earnings</div>',
+            f'  <div class="earn-box-date">No current earnings feed. '
+            f'Last schedule: {html.escape(feed_date)}.</div>',
+            LEGEND_HTML,
+            "</div>",
+            MARK_END,
+        ]
+        return "\n".join(lines)
     fallback = ""
     if not data["today"] and not data["weekAhead"]:
         future = sorted([r for r in rows if r.get("date", "") > today], key=lambda r: r["date"])
@@ -179,6 +221,8 @@ def render_index(index_path: Path, data: dict) -> bool:
             f"Expected exactly 1 EARNINGS_TODAY block in {index_path}, "
             f"found {len(matches)} — refusing to touch the file."
         )
+    # Render against the FEED's date (fix A): render_earnings_block defaults
+    # its render date to data['date'], so box date == feed date, always.
     block = render_earnings_block(data)
     text = pattern.sub(lambda _m: block, text, count=1)
     index_path.write_text(text, encoding="utf-8")

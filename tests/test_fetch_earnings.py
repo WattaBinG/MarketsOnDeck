@@ -68,15 +68,63 @@ class ParseEntry(unittest.TestCase):
 
 class BuildPayload(unittest.TestCase):
     def test_today_and_week_split(self):
+        # Keith's Mon-Fri "Coming up" contract (2026-10-19): on a Friday run
+        # the week scope is already over, so a Saturday row does NOT appear.
+        # Clock injected so the test is a pure function of its inputs.
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        et = ZoneInfo("America/New_York")
+        friday_9am = datetime(2026, 10, 9, 9, 0, tzinfo=et)
         rows = {
             "2026-10-09": [_row(symbol="AAA"), _row(symbol="BBB")],
             "2026-10-10": [_row(symbol="CCC")],
         }
-        p = build_payload(TODAY, rows)
+        p = build_payload(TODAY, rows, now_et=friday_9am)
         self.assertEqual(p["date"], "2026-10-09")
         self.assertEqual({e["ticker"] for e in p["today"]}, {"AAA", "BBB"})
-        self.assertEqual(len(p["weekAhead"]), 1)
-        self.assertEqual(p["weekAhead"][0]["dayLabel"], "Sat, Oct 10")
+        self.assertEqual(p["weekAhead"], [])
+        # Same rows on a Tuesday run: a same-week Thursday row IS coming up.
+        tuesday_9am = datetime(2026, 10, 6, 9, 0, tzinfo=et)
+        rows2 = {
+            "2026-10-06": [_row(symbol="AAA")],
+            "2026-10-08": [_row(symbol="CCC")],
+        }
+        p2 = build_payload(date(2026, 10, 6), rows2, now_et=tuesday_9am)
+        self.assertEqual([e["ticker"] for e in p2["weekAhead"]], ["CCC"])
+
+    def test_week_boundary_matrix(self):
+        # Injected clocks pin the week scope at each boundary, including
+        # Keith's Sunday 6pm ET roll-forward to next week.
+        from datetime import datetime
+        from zoneinfo import ZoneInfo
+        et = ZoneInfo("America/New_York")
+        def run(day, extra_days, clock):
+            rows = {day.isoformat(): [_row(symbol="TOD")]}
+            for d, tick in extra_days.items():
+                rows[d] = [_row(symbol=tick)]
+            p = build_payload(day, rows, now_et=clock)
+            return [e["ticker"] for e in p["weekAhead"]]
+
+        # Monday Oct 5, 9am: same-week Wednesday kept, next Monday dropped.
+        self.assertEqual(
+            run(date(2026, 10, 5), {"2026-10-07": "WED", "2026-10-12": "NXM"},
+                datetime(2026, 10, 5, 9, 0, tzinfo=et)), ["WED"])
+        # Friday Oct 9, 9am: week over, nothing ahead.
+        self.assertEqual(
+            run(date(2026, 10, 9), {"2026-10-12": "NXM"},
+                datetime(2026, 10, 9, 9, 0, tzinfo=et)), [])
+        # Saturday Oct 10, 9am: still the finished week, nothing ahead.
+        self.assertEqual(
+            run(date(2026, 10, 10), {"2026-10-12": "NXM"},
+                datetime(2026, 10, 10, 9, 0, tzinfo=et)), [])
+        # Sunday Oct 11, 17:59 ET: roll has not happened yet.
+        self.assertEqual(
+            run(date(2026, 10, 11), {"2026-10-12": "MON", "2026-10-13": "TUE"},
+                datetime(2026, 10, 11, 17, 59, tzinfo=et)), [])
+        # Sunday Oct 11, 18:00 ET: rolls forward, next week's list posts.
+        self.assertEqual(
+            run(date(2026, 10, 11), {"2026-10-12": "MON", "2026-10-13": "TUE"},
+                datetime(2026, 10, 11, 18, 0, tzinfo=et)), ["MON", "TUE"])
 
     def test_ranking_keeps_biggest_caps(self):
         rows = {

@@ -129,5 +129,70 @@ class EarningsRollover(unittest.TestCase):
         self.assertNotIn("Earnings Today", block)
         self.assertNotIn("earn-list", block)
 
+
+
+class RenderDatePin(unittest.TestCase):
+    """The box can never wear a fresher date than the feed behind it."""
+
+    def _feed(self):
+        return {
+            "date": "2026-10-05",
+            "dateLabel": "Monday, October 05",
+            "today": [
+                {"ticker": "XYZ", "company": "Xylem Test Co", "slot": "BMO",
+                 "epsEst": 1.00, "actualEps": None,
+                 "link": "https://example.com", "date": "2026-10-05"},
+            ],
+            "weekAhead": [],
+        }
+
+    def test_box_date_equals_feed_date(self):
+        # Rendering with no explicit date must pin to the feed date, not the
+        # wall clock - even days later.
+        block = render_earnings_block(self._feed())
+        self.assertIn('data-earn-date="2026-10-05"', block)
+        self.assertIn("XYZ", block)
+
+    def test_render_index_uses_feed_date(self):
+        import tempfile
+        feed = self._feed()
+        with tempfile.TemporaryDirectory() as d:
+            idx = Path(d) / "index.html"
+            idx.write_text("a <!-- EARNINGS_TODAY_START -->old<!-- EARNINGS_TODAY_END --> b")
+            from refresh_earnings import render_index
+            render_index(idx, feed)
+            out = idx.read_text()
+        self.assertIn('data-earn-date="2026-10-05"', out)
+        self.assertIn("XYZ", out)
+
+
+class StateSeparation(unittest.TestCase):
+    """A genuinely empty CURRENT week is not the same thing as a stale feed."""
+
+    def test_fresh_empty_week_is_not_stale(self):
+        block = render_earnings_block(
+            {"date": "2026-10-05", "today": [], "weekAhead": []},
+            today="2026-10-05")
+        self.assertIn("No major earnings", block)
+        self.assertNotIn("No current earnings feed", block)
+
+    def test_stale_feed_says_so(self):
+        block = render_earnings_block({"date": "2026-10-01"}, today="2026-10-07")
+        self.assertIn("No current earnings feed", block)
+        self.assertIn("Last schedule: 2026-10-01", block)
+        self.assertNotIn("Earnings Today", block)
+
+    def test_undated_rows_render_on_feed_date(self):
+        # Legacy/hand-seeded rows with no 'date' belong to the feed date and
+        # must not vanish silently.
+        block = render_earnings_block(
+            {"date": "2026-10-05",
+             "today": [{"ticker": "LEG", "company": "Legacy Row Co",
+                        "slot": None, "epsEst": None, "actualEps": None,
+                        "link": "https://example.com"}],
+             "weekAhead": []})
+        self.assertIn("LEG", block)
+
+
 if __name__ == "__main__":
     unittest.main()
