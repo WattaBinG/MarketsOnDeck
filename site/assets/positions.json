@@ -1,7 +1,7 @@
 {
-  "asOf": "2026-10-22",
-  "asOfLabel": "October 22, 2026",
-  "markNote": "Equity marks are Oct 22, 2026 Robinhood official closes; priorClose values are Oct 21, 2026 closes (Robinhood previous close). HD was sold in full on Oct 22 (HD-close-17) and no longer appears. Option marks are Robinhood adjusted marks at the Oct 22 close; priorClose is each contract\u2019s Oct 21 close mark. Crypto marks are Robinhood crypto quotes at the Oct 22 evening pull; crypto quantities/basis are from the broker crypto position record where available and otherwise carried per-row with a note, because the positions API used here does not return a full crypto position list with Earn balances. The futures row is marked CLOSED per Keith\u2019s own report on Oct 22, 2026 that he sold all futures this week; sale details are not yet captured because futures fills are invisible to the API.",
+  "asOf": "2026-10-23",
+  "asOfLabel": "October 23, 2026",
+  "markNote": "Equity marks are Oct 23, 2026 Robinhood official closes; priorClose values are Oct 22, 2026 closes (Robinhood). Option marks are Robinhood adjusted marks at the Oct 23 close; priorClose is each contract's Oct 22 close mark. Crypto marks are Robinhood crypto quotes at the Oct 23 evening pull; crypto quantities/basis are from the broker crypto position record where available and otherwise carried per-row with a note, because the positions API used here does not return a full crypto position list with Earn balances. The futures row remains CLOSED per Keith's Oct 22 report and web verification. ABBV (Agentic) was opened Oct 23; its priorClose is the Oct 23 fill price, the only same-day reference.",
   "positions": [
     {
       "account": "Trading",
@@ -9,9 +9,9 @@
       "assetType": "equity",
       "quantity": 150.0,
       "avgCost": 132.1302,
-      "currentPrice": 144.745,
-      "priorClose": 159.31,
-      "unrealizedGain": 1892.22
+      "currentPrice": 147.495,
+      "priorClose": 144.745,
+      "unrealizedGain": 2304.72
     },
     {
       "account": "Trading",
@@ -19,9 +19,9 @@
       "assetType": "equity",
       "quantity": 200.0,
       "avgCost": 17.0975,
-      "currentPrice": 14.78,
-      "priorClose": 14.9,
-      "unrealizedGain": -463.5
+      "currentPrice": 14.615,
+      "priorClose": 14.78,
+      "unrealizedGain": -496.5
     },
     {
       "account": "Trading",
@@ -29,9 +29,9 @@
       "assetType": "equity",
       "quantity": 700.0,
       "avgCost": 8.21,
-      "currentPrice": 6.595,
-      "priorClose": 6.82,
-      "unrealizedGain": -1130.5
+      "currentPrice": 6.555,
+      "priorClose": 6.595,
+      "unrealizedGain": -1158.5
     },
     {
       "account": "Agentic",
@@ -39,9 +39,9 @@
       "assetType": "equity",
       "quantity": 1.001702,
       "avgCost": 189.9283,
-      "currentPrice": 147.83,
-      "priorClose": 163.43,
-      "unrealizedGain": -42.17
+      "currentPrice": 145.56,
+      "priorClose": 147.83,
+      "unrealizedGain": -44.44
     },
     {
       "account": "Agentic",
@@ -49,9 +49,19 @@
       "assetType": "equity",
       "quantity": 0.15,
       "avgCost": 1254.2667,
-      "currentPrice": 1306.74,
-      "priorClose": 1270.75,
-      "unrealizedGain": 7.87
+      "currentPrice": 1274.22,
+      "priorClose": 1306.74,
+      "unrealizedGain": 2.99
+    },
+    {
+      "account": "Agentic",
+      "symbol": "ABBV",
+      "assetType": "equity",
+      "quantity": 0.84,
+      "avgCost": 285.3571,
+      "currentPrice": 285.6,
+      "priorClose": 285.36,
+      "unrealizedGain": 0.2
     },
     {
       "account": "Trading",
@@ -60,18 +70,18 @@
       "optionType": "call",
       "strike": 152.5,
       "expiration": "2026-10-28",
-      "quantity": 16,
-      "contracts": 16,
+      "quantity": 11,
+      "contracts": 11,
       "multiplier": 100,
       "positionSide": "long",
       "contractId": "SPCX:2026-10-28:call:152.5",
-      "avgCost": 209.0625,
+      "avgCost": 178.18,
       "priceUnit": "USD_per_contract",
-      "currentPrice": 165.0,
-      "priorClose": 883.0,
-      "unrealizedGain": -705.0,
-      "basisNote": "Clearing basis $3,345.00 total (16 contracts) per broker position record: retained SPCX-open-19 @ $4.65 (Oct 19) + SPCX-open-20 5 @ $2.30 + SPCX-open-21 10 @ $1.73 (both Oct 22) = $465 + $1,150 + $1,730.",
-      "markNote": "Mark: Robinhood adjusted mark price $1.65 at the Oct 22 close; priorClose is the Oct 21 mark $8.83 (per-contract $883) on the 1 contract then held.",
+      "currentPrice": 153.0,
+      "priorClose": 165.0,
+      "unrealizedGain": -277.0,
+      "basisNote": "Clearing (FIFO lot) basis $1,960.00 total (11 contracts): retained 1 @ $2.30 (SPCX-open-20) + 10 @ $1.73 (SPCX-open-21) after SPCX-close-24 (Oct 23) consumed SPCX-open-19 @ $4.65 and 4 of the 5 SPCX-open-20 contracts.",
+      "markNote": "Mark: Robinhood adjusted mark price $1.53 at the Oct 23 close; priorClose is the Oct 22 mark $1.65 (per-contract $165).",
       "underlying": "SPCX"
     },
     {
@@ -81,18 +91,18 @@
       "optionType": "call",
       "strike": 215.0,
       "expiration": "2026-10-28",
-      "quantity": 10,
-      "contracts": 10,
+      "quantity": 20,
+      "contracts": 20,
       "multiplier": 100,
       "positionSide": "long",
       "contractId": "NVDA:2026-10-28:call:215.0",
-      "avgCost": 334.5,
+      "avgCost": 269.0,
       "priceUnit": "USD_per_contract",
-      "currentPrice": 301.0,
-      "priorClose": 865.0,
-      "unrealizedGain": -335.0,
-      "basisNote": "Clearing basis $3,345.00 total per broker position record: NVDA-open-1 5 @ $3.55 + NVDA-open-2 5 @ $3.14, both Oct 22.",
-      "markNote": "Mark: Robinhood adjusted mark price $3.01 at the Oct 22 close; priorClose is the contract\u2019s Oct 21 close mark $8.65 (per-contract $865) \u2014 the position was opened Oct 22.",
+      "currentPrice": 189.0,
+      "priorClose": 301.0,
+      "unrealizedGain": -1600.0,
+      "basisNote": "Clearing basis $5,380.00 total per broker order history: NVDA-open-1 5 @ $3.55 + NVDA-open-2 5 @ $3.14 (Oct 22) + NVDA-open-3 5 @ $2.20 + NVDA-open-5 5 @ $1.87 (Oct 23).",
+      "markNote": "Mark: Robinhood adjusted mark price $1.89 at the Oct 23 close; priorClose is the Oct 22 mark $3.01 (per-contract $301).",
       "underlying": "NVDA"
     },
     {
@@ -109,23 +119,44 @@
       "contractId": "SPCX:2026-11-06:call:148.0",
       "avgCost": 550.0,
       "priceUnit": "USD_per_contract",
-      "currentPrice": 545.0,
-      "priorClose": 1413.0,
-      "unrealizedGain": -10.0,
+      "currentPrice": 598.0,
+      "priorClose": 545.0,
+      "unrealizedGain": 96.0,
       "basisNote": "Clearing basis $1,100.00 total per broker position record: SPCX-open-22 2 @ $5.50, Oct 22.",
-      "markNote": "Mark: Robinhood adjusted mark price $5.45 at the Oct 22 close; priorClose is the contract\u2019s Oct 21 close mark $14.13 (per-contract $1,413) \u2014 the position was opened Oct 22.",
+      "markNote": "Mark: Robinhood adjusted mark price $5.98 at the Oct 23 close; priorClose is the Oct 22 mark $5.45 (per-contract $545).",
       "underlying": "SPCX"
+    },
+    {
+      "account": "Trading",
+      "symbol": "NVDA",
+      "assetType": "option",
+      "optionType": "call",
+      "strike": 215.0,
+      "expiration": "2026-11-04",
+      "quantity": 2,
+      "contracts": 2,
+      "multiplier": 100,
+      "positionSide": "long",
+      "contractId": "NVDA:2026-11-04:call:215.0",
+      "avgCost": 440.0,
+      "priceUnit": "USD_per_contract",
+      "currentPrice": 390.0,
+      "priorClose": 483.0,
+      "unrealizedGain": -100.0,
+      "basisNote": "Clearing basis $880.00 total per broker order history: NVDA-open-4 2 @ $4.40, opened Oct 23.",
+      "markNote": "Mark: Robinhood adjusted mark price $3.90 at the Oct 23 close; priorClose is the contract's Oct 22 close mark $4.83 (per-contract $483) \u2014 the position was opened Oct 23.",
+      "underlying": "NVDA"
     },
     {
       "account": "Trading",
       "symbol": "USDG",
       "assetType": "crypto",
-      "quantity": 102.582488,
+      "quantity": 103.01701,
       "avgCost": 1.0,
       "currentPrice": 1.0,
       "priorClose": 1.0,
       "unrealizedGain": 0.0,
-      "note": "Cash-like, 7% APY. Quantity carried from the Oct 19 ledger (Oct 9 refresh) \u2014 an Oct 15 web holdings verification showed 102.88 total including Crypto Earn; the broker API used for this refresh does not expose crypto positions, so the carried quantity is retained pending a web re-verification."
+      "note": "Cash-like, 7% APY. Quantity as of Oct 22, 2026 ~6:10 PM ET per the Robinhood web Holdings list (includes Crypto Earn), carried Oct 23 \u2014 the API spot line shows only 1.0 unit and no new web check was run. A point-in-time balance, not a trade; no realized P&L."
     },
     {
       "account": "Trading",
@@ -133,10 +164,10 @@
       "assetType": "crypto",
       "quantity": 1.6,
       "avgCost": 2448.1128,
-      "currentPrice": 2381.68,
-      "priorClose": 2492.42,
-      "unrealizedGain": -106.29,
-      "note": "Quantity and clearing basis ($3,916.98) from the broker crypto position record pulled Oct 22, 2026; quantity is largely held in Crypto Earn. Mark is the Robinhood ETH-USD crypto quote at the Oct 22 evening pull; priorClose is the Oct 21 evening mark $2,492.42."
+      "currentPrice": 2397.49,
+      "priorClose": 2381.68,
+      "unrealizedGain": -81.0,
+      "note": "Quantity and clearing basis ($3,916.98) from the broker crypto position record pulled Oct 23, 2026; quantity is largely held in Crypto Earn. Mark is the Robinhood ETH-USD crypto quote at the Oct 23 evening pull; priorClose is the Oct 22 evening mark $2,381.68."
     },
     {
       "account": "Trading",
@@ -144,10 +175,10 @@
       "assetType": "crypto",
       "quantity": 1.0,
       "avgCost": 0.07,
-      "currentPrice": 0.0782378,
-      "priorClose": 0.0830525,
-      "unrealizedGain": 0.0082,
-      "note": "Dust, retained. Reward basis. Mark: Robinhood DOGE-USD crypto quote at the Oct 22 evening pull."
+      "currentPrice": 0.07912617,
+      "priorClose": 0.0782378,
+      "unrealizedGain": 0.0091,
+      "note": "Dust, retained. Reward basis. Mark: Robinhood DOGE-USD crypto quote at the Oct 23 evening pull."
     },
     {
       "account": "Trading",
