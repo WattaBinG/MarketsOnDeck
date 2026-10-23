@@ -3,7 +3,7 @@
   "asOf": "2026-10-22",
   "scope": "Realized trades, January 1 - October 22, 2026 (both accounts)",
   "totalTrades": 398,
-  "totalRealizedGain": 58240.78,
+  "totalRealizedGain": 58630.58,
   "wins": 285,
   "losses": 112,
   "flat": 1,
@@ -12,7 +12,7 @@
   "biggestLoss": -1690.0,
   "perAccount": {
    "Trading": {
-    "realizedGain": 57741.59,
+    "realizedGain": 58131.39,
     "trades": 383,
     "winRate": 70.76
    },
@@ -8138,10 +8138,10 @@
    "assetType": "equity",
    "quantity": 30.0,
    "price": 324.91,
-   "realizedGain": 929.75,
+   "realizedGain": 1319.55,
    "fees": 0.21,
    "priceUnit": "USD_per_share",
-   "realizedGainSource": "Broker average-cost basis on the position before the sale ($8,817.55 = 30 @ $293.9184 average_buy_price per the broker position record); gross of fees, fees kept separate",
+   "realizedGainSource": "FIFO reconciliation vs broker order history (exact booked amounts): 10 @ $286.0052 (Sep 30 lot) + 20 @ $278.385 (Oct 1 lot) = basis $8,427.75; sale 30 @ $324.91 = $9,747.30 gross; gain $1,319.55 gross of fees, fee $0.21 kept separate",
    "evidence": "Robinhood order history",
    "underlying": "HD",
    "id": "HD-close-17"
