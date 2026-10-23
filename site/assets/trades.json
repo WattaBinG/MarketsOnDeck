@@ -1,20 +1,20 @@
 {
  "summary": {
-  "asOf": "2026-10-22",
-  "scope": "Realized trades, January 1 - October 22, 2026 (both accounts)",
-  "totalTrades": 398,
-  "totalRealizedGain": 58630.58,
+  "asOf": "2026-10-23",
+  "scope": "Realized trades, January 1 - October 23, 2026 (both accounts)",
+  "totalTrades": 399,
+  "totalRealizedGain": 58325.58,
   "wins": 285,
-  "losses": 112,
+  "losses": 113,
   "flat": 1,
-  "winRate": 71.61,
+  "winRate": 71.43,
   "biggestWin": 5155.0,
   "biggestLoss": -1690.0,
   "perAccount": {
    "Trading": {
-    "realizedGain": 58131.39,
-    "trades": 383,
-    "winRate": 70.76
+    "realizedGain": 57826.39,
+    "trades": 384,
+    "winRate": 70.57
    },
    "Agentic": {
     "realizedGain": 499.19,
@@ -25,16 +25,16 @@
   "benchmark": {
    "spyBaselineDate": "2026-01-02",
    "spyBaselinePrice": 683.17,
-   "spyCurrentPrice": 763.97,
-   "spyYtdPercent": 11.83
+   "spyCurrentPrice": 759.85,
+   "spyYtdPercent": 11.22
   },
   "fees": {
-   "tradingYtd": 15.84,
+   "tradingYtd": 16.52,
    "agenticYtd": 0.0,
-   "totalYtd": 15.84,
+   "totalYtd": 16.52,
    "currency": "USD",
-   "asOf": "2026-10-22",
-   "source": "Robinhood activity exports (Trading Jan 1 - Oct 19 2026; Agentic Jul 7 - Oct 19 2026) plus Robinhood order history for Oct 21-22 2026 fills (Oct 22: $0.21 equity sale fee + $1.08 option open-fill regulatory fees). Robinhood charges no commissions; these are regulatory/ORF pass-throughs only.",
+   "asOf": "2026-10-23",
+   "source": "Robinhood activity exports (Trading Jan 1 - Oct 19 2026; Agentic Jul 7 - Oct 19 2026) plus Robinhood order history for Oct 21-23 2026 fills (Oct 22: $0.21 equity sale fee + $1.08 option open-fill regulatory fees; Oct 23: $0.68 option regulatory fees across 1 close and 3 open fills). Robinhood charges no commissions; these are regulatory/ORF pass-throughs only.",
    "note": "Fees are booked in their own field per row (fees / regulatoryFees), never netted into realizedGain."
   },
   "reconciliation": {
@@ -1117,6 +1117,63 @@
    "timestampPrecision": "second",
    "regulatoryFees": 0.08,
    "evidence": "Robinhood order history"
+  },
+  {
+   "underlying": "NVDA",
+   "strike": 215.0,
+   "expiration": "2026-10-28",
+   "optionType": "call",
+   "multiplier": 100,
+   "contractId": "NVDA:2026-10-28:call:215.0",
+   "positionSide": "long",
+   "id": "NVDA-open-3",
+   "account": "Trading",
+   "action": "buy_to_open",
+   "contracts": 5,
+   "premium": 2.2,
+   "priceUnit": "USD_per_share",
+   "timestamp": "2026-10-23T19:34:51.151000Z",
+   "timestampPrecision": "second",
+   "regulatoryFees": 0.2,
+   "evidence": "Robinhood order history"
+  },
+  {
+   "underlying": "NVDA",
+   "strike": 215.0,
+   "expiration": "2026-11-04",
+   "optionType": "call",
+   "multiplier": 100,
+   "contractId": "NVDA:2026-11-04:call:215.0",
+   "positionSide": "long",
+   "id": "NVDA-open-4",
+   "account": "Trading",
+   "action": "buy_to_open",
+   "contracts": 2,
+   "premium": 4.4,
+   "priceUnit": "USD_per_share",
+   "timestamp": "2026-10-23T19:35:30.296000Z",
+   "timestampPrecision": "second",
+   "regulatoryFees": 0.08,
+   "evidence": "Robinhood order history"
+  },
+  {
+   "underlying": "NVDA",
+   "strike": 215.0,
+   "expiration": "2026-10-28",
+   "optionType": "call",
+   "multiplier": 100,
+   "contractId": "NVDA:2026-10-28:call:215.0",
+   "positionSide": "long",
+   "id": "NVDA-open-5",
+   "account": "Trading",
+   "action": "buy_to_open",
+   "contracts": 5,
+   "premium": 1.87,
+   "priceUnit": "USD_per_share",
+   "timestamp": "2026-10-23T19:57:55.193000Z",
+   "timestampPrecision": "second",
+   "regulatoryFees": 0.2,
+   "evidence": "Robinhood order history"
   }
  ],
  "equityOpenFills": [
@@ -1216,6 +1273,20 @@
    "filledAt": "2026-10-16T18:35:53.060000Z",
    "timestampPrecision": "second",
    "orderRef": "6ad26e88",
+   "evidence": "Robinhood order history"
+  },
+  {
+   "symbol": "ABBV",
+   "assetType": "equity",
+   "id": "ABBV-stock-open-1",
+   "account": "Agentic",
+   "action": "buy",
+   "shares": 0.84,
+   "price": 285.36,
+   "priceUnit": "USD_per_share",
+   "filledAt": "2026-10-23T19:06:46.406000Z",
+   "timestampPrecision": "second",
+   "orderRef": "6adbb046",
    "evidence": "Robinhood order history"
   }
  ],
@@ -8012,6 +8083,40 @@
    "evidence": "Robinhood order history",
    "underlying": "HD",
    "id": "HD-close-17"
+  },
+  {
+   "date": "2026-10-23",
+   "timestamp": "2026-10-23T14:02:06.414000Z",
+   "account": "Trading",
+   "symbol": "SPCX",
+   "assetType": "option",
+   "quantity": 5.0,
+   "price": null,
+   "realizedGain": -305.0,
+   "underlying": "SPCX",
+   "strike": 152.5,
+   "expiration": "2026-10-28",
+   "optionType": "call",
+   "multiplier": 100,
+   "contractId": "SPCX:2026-10-28:call:152.5",
+   "positionSide": "long",
+   "schemaVersion": 2,
+   "id": "SPCX-close-24",
+   "action": "sell_to_close",
+   "contracts": 5,
+   "entryPremium": 2.77,
+   "exitPremium": 2.16,
+   "priceUnit": "USD_per_share",
+   "entryPerContract": 277.0,
+   "exitPerContract": 216.0,
+   "regulatoryFees": 0.2,
+   "entryFillIds": [
+    "SPCX-open-19",
+    "SPCX-open-20"
+   ],
+   "lotAllocationBasis": "FIFO: closes 1 @ $4.65 (SPCX-open-19, Oct 19, fully consumed) + 4 @ $2.30 (SPCX-open-20, Oct 22, 4 of 5 consumed); basis $465 + $920 = $1,385. Retained lots: 1 @ $2.30 (SPCX-open-20) + 10 @ $1.73 (SPCX-open-21) = $1,960 across 11 contracts.",
+   "realizedGainSource": "Computed from broker fill prices (FIFO lot allocation; fees kept separate)",
+   "evidence": "Robinhood order history"
   }
  ]
 }
