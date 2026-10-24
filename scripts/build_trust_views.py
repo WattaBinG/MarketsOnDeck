@@ -20,7 +20,7 @@ def main():
   s=p.read_text()
   pat=r'(<span data-ledger-start="([^"]+)" data-ledger-end="([^"]+)" data-ledger-metric="([^"]+)">).*?(</span>)'
   s=re.sub(pat,lambda m:m[1]+period(trades,m[2],m[3])[m[4]]+m[5],s)
-  s=re.sub(r'<p class="ledger-version">.*?</p>','',s)
+  s=re.sub(r'<p class="ledger-version[^"]*">.*?</p>\n?','',s)
   s=s.replace('<h1','<p class="ledger-version data-freshness">Historical period totals from ledger through '+asof+'. Both accounts; not account return.</p>\n<h1',1)
   p.write_text(s)
  p=ROOT/'site/overview/index.html';s=p.read_text();cards=[]
