@@ -1158,3 +1158,41 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 
 .trade-link{text-decoration:none;font-size:12px;opacity:.55;margin-left:4px}
 .trade-link:hover,.trade-link:focus{opacity:1}
+
+/* ===== Proposal A (2026-10-23, recovered verbatim) - additive only, zero edits to existing rules.
+   Page headers centered like The Wire's heading. Scoped via body.centered-hdr:
+   Brief, After Market Tape, Overview, The Record. ===== */
+body.centered-hdr .article-header { text-align: center; }
+body.centered-hdr .article-header .hero-sub { margin-left: auto; margin-right: auto; }
+body.centered-hdr .article-header .share-bar,
+body.centered-hdr .article-header .daily-jump { justify-content: center; }
+body.centered-hdr .hero { text-align: center; }
+body.centered-hdr .hero .hero-sub,
+body.centered-hdr .hero p { margin-left: auto; margin-right: auto; }
+body.centered-hdr .hero .row,
+body.centered-hdr .hero .share-bar { justify-content: center; }
+/* Header control groups (range tabs + headline stats): centered, cards share width. */
+body.centered-hdr .hero .range-tabs,
+body.centered-hdr .page-header-controls.range-tabs { justify-content: center; }
+body.centered-hdr .hero .stat-row,
+body.centered-hdr .page-header-controls.stat-row { justify-content: center; gap: 16px; }
+body.centered-hdr .hero .stat-row .stat-card,
+body.centered-hdr .page-header-controls.stat-row .stat-card { flex: 1 1 150px; max-width: 250px; text-align: center; }
+/* Jump links: same centered pill row on desktop as on phones. */
+body.centered-hdr .daily-jump { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin: -2px 0 16px; }
+body.centered-hdr .daily-jump a { display: inline-block; padding: 8px 12px; border: 1px solid var(--border-strong); border-radius: 999px; color: var(--accent); font: 600 12px/1.3 var(--font-mono); text-decoration: none; }
+/* Phone tightening. */
+@media (max-width: 640px) {
+  body.centered-hdr .hero .range-tabs,
+  body.centered-hdr .page-header-controls.range-tabs { gap: 6px; }
+  body.centered-hdr .range-tab { font-size: 12px; padding: 6px 11px; }
+  body.centered-hdr .hero .stat-row,
+  body.centered-hdr .page-header-controls.stat-row { gap: 12px; }
+  body.centered-hdr .hero .stat-row .stat-card,
+  body.centered-hdr .page-header-controls.stat-row .stat-card { padding: 12px 14px; flex-basis: 140px; }
+}
+/* Desktop: headline stat cards form an even 3-per-row grid (no orphan wrap). */
+@media (min-width: 641px) {
+  body.centered-hdr .hero .stat-row .stat-card,
+  body.centered-hdr .page-header-controls.stat-row .stat-card { flex: 1 1 calc(33.333% - 11px); max-width: 340px; }
+}
