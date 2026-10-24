@@ -1,0 +1,16 @@
+{
+  "holds": [
+    {
+      "story_key": "tape-2026-10-21",
+      "status": "active",
+      "set": "2026-10-21",
+      "note": "Story-level STOP (2026-10-21 18:49 ET) after the delayed-path publish incident. No dated page, no publication on any path, until Keith lifts this hold."
+    },
+    {
+      "story_key": "tape-2026-10-22",
+      "status": "no-dated-page",
+      "set": "2026-10-23",
+      "note": "Republish guard: published via the 2026-10-23 tape-1022 resolution and live on the hub. No dated page may be generated for it from the dated-page pipeline."
+    }
+  ]
+}
