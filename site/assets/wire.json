@@ -1,39 +1,87 @@
 {
-  "asOf": "2026-10-25T23:16:20Z",
-  "asOfLabel": "7:16 PM ET",
+  "asOf": "2026-10-25T23:31:20Z",
+  "asOfLabel": "7:31 PM ET",
   "topStory": {
-    "headline": "Musk says SpaceX raised $40 billion in debt deal, predicts neocloud shakeout",
-    "url": "https://www.investing.com/news/stock-market-news/musk-says-spacex-raised-40-billion-in-debt-for-gpus-4971248",
-    "source": "Investing.com",
-    "category": "Movers",
-    "timestamp": "2026-10-25T20:16:23Z",
-    "firstSeen": "2026-10-25T20:16:23Z",
-    "leadSince": "2026-10-25T20:16:23Z",
-    "image": "/assets/images/wire-movers.jpg"
+    "headline": "‘Ticking time bomb’: The world's pension funds face an ageing crisis",
+    "url": "https://www.cnbc.com/2026/10/26/pension-funds-ageing-crisis-risk-investment.html",
+    "source": "CNBC",
+    "category": "Markets",
+    "timestamp": "2026-10-25T23:19:12Z",
+    "firstSeen": "2026-10-25T23:31:20Z",
+    "leadSince": "2026-10-25T23:31:20Z",
+    "image": "/assets/images/wire-markets.jpg"
   },
   "items": [
+    {
+      "headline": "Oppenheimer reiterates Amgen stock rating on cancer drug data",
+      "url": "https://www.investing.com/news/analyst-ratings/oppenheimer-reiterates-amgen-stock-rating-on-cancer-drug-data-93CH-4971303",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-25T23:20:51Z",
+      "firstSeen": "2026-10-25T23:31:20Z"
+    },
+    {
+      "headline": "Stifel raises Hinge Health stock price target on app growth rebound",
+      "url": "https://www.investing.com/news/analyst-ratings/stifel-raises-hinge-health-stock-price-target-on-app-growth-rebound-93CH-4971301",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-25T23:20:49Z",
+      "firstSeen": "2026-10-25T23:31:20Z"
+    },
+    {
+      "headline": "Nokia stock rating upgraded to Reduce by IndeRes on strong Q3 results",
+      "url": "https://www.investing.com/news/analyst-ratings/nokia-stock-rating-upgraded-to-reduce-by-inderes-on-strong-q3-results-93CH-4971302",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-25T23:20:49Z",
+      "firstSeen": "2026-10-25T23:31:20Z"
+    },
+    {
+      "headline": "IndeRes upgrades Nokia stock rating on strong Q3 results",
+      "url": "https://www.investing.com/news/analyst-ratings/inderes-upgrades-nokia-stock-rating-on-strong-q3-results-93CH-4971300",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-25T23:20:47Z",
+      "firstSeen": "2026-10-25T23:31:20Z"
+    },
+    {
+      "headline": "Earnings call transcript: Beforepay Q1 2026 profit jumps as lending grows",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-beforepay-q1-2026-profit-jumps-as-lending-grows-93CH-4971299",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-25T23:20:33Z",
+      "firstSeen": "2026-10-25T23:31:20Z"
+    },
+    {
+      "headline": "Anthropic’s Claude accessed Georgia state vote count information behind paywall, Axios reports",
+      "url": "https://www.investing.com/news/stock-market-news/anthropics-claude-accessed-public-us-state-of-georgia-voter-information-axios-reports-4971291",
+      "source": "Investing.com",
+      "category": "AI",
+      "timestamp": "2026-10-25T23:16:20Z",
+      "firstSeen": "2026-10-25T23:16:20Z"
+    },
+    {
+      "headline": "RBC reiterates Intel stock rating on AI demand, foundry progress",
+      "url": "https://www.investing.com/news/analyst-ratings/rbc-reiterates-intel-stock-rating-on-ai-demand-foundry-progress-93CH-4971295",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-25T23:14:56Z",
+      "firstSeen": "2026-10-25T23:31:20Z"
+    },
+    {
+      "headline": "Earnings call transcript: Mach7 posts fourth straight cash-flow gain in Q1 2026",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-mach7-posts-fourth-straight-cashflow-gain-in-q1-2026-93CH-4971294",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-25T23:14:51Z",
+      "firstSeen": "2026-10-25T23:31:20Z"
+    },
     {
       "headline": "South Korea Shares May Hand Back Friday's Gains",
       "url": "https://www.nasdaq.com/articles/south-korea-shares-may-hand-back-fridays-gains",
       "source": "Nasdaq",
       "category": "Movers",
-      "timestamp": "2026-10-25T23:02:19Z",
-      "firstSeen": "2026-10-25T23:16:20Z"
-    },
-    {
-      "headline": "More homes are hitting the market than at any point since 2000, yet 2026 is shaping up to be the worst year for existing home sales on record, per Yahoo Finance. Home sellers now outnumber buyers b...",
-      "url": "https://x.com/unusual_whales/status/2114492450832253041",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-25T23:01:57Z",
-      "firstSeen": "2026-10-25T23:16:20Z"
-    },
-    {
-      "headline": "Anthropic’s Claude accessed public US state of Georgia voter information, Axios reports",
-      "url": "https://www.investing.com/news/stock-market-news/anthropics-claude-accessed-public-us-state-of-georgia-voter-information-axios-reports-4971291",
-      "source": "Investing.com",
-      "category": "AI",
-      "timestamp": "2026-10-25T22:54:37Z",
+      "timestamp": "2026-10-25T23:16:20Z",
       "firstSeen": "2026-10-25T23:16:20Z"
     },
     {
@@ -41,7 +89,7 @@
       "url": "https://www.nasdaq.com/articles/regret-signing-social-security-2026-heres-what-you-can-do",
       "source": "Nasdaq",
       "category": "Markets",
-      "timestamp": "2026-10-25T22:50:00Z",
+      "timestamp": "2026-10-25T23:16:20Z",
       "firstSeen": "2026-10-25T23:16:20Z"
     },
     {
@@ -57,7 +105,7 @@
       "url": "https://www.nasdaq.com/articles/down-17-meta-buy-dip",
       "source": "Nasdaq",
       "category": "Markets",
-      "timestamp": "2026-10-25T22:30:02Z",
+      "timestamp": "2026-10-25T23:16:20Z",
       "firstSeen": "2026-10-25T23:16:20Z"
     },
     {
@@ -65,56 +113,8 @@
       "url": "https://www.nasdaq.com/articles/can-bitcoin-double-value-during-next-crypto-bull-market",
       "source": "Nasdaq",
       "category": "Markets",
-      "timestamp": "2026-10-25T22:22:00Z",
+      "timestamp": "2026-10-25T23:16:20Z",
       "firstSeen": "2026-10-25T23:16:20Z"
-    },
-    {
-      "headline": "You're Beating the Average Social Security Benefit If You're Getting More Than This Per Month",
-      "url": "https://www.nasdaq.com/articles/youre-beating-average-social-security-benefit-if-youre-getting-more-month",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-25T22:20:02Z",
-      "firstSeen": "2026-10-25T23:16:20Z"
-    },
-    {
-      "headline": "Deeply divided Israel braces for pivotal election",
-      "url": "https://www.bbc.co.uk/news/articles/ckpdgy6pl7xlo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-25T22:31:17Z",
-      "firstSeen": "2026-10-25T22:31:17Z"
-    },
-    {
-      "headline": "Corning Stock Has Lost Half Its Value Since June. Is It a Buy Before Its Next Report?",
-      "url": "https://www.nasdaq.com/articles/corning-stock-has-lost-half-its-value-june-it-buy-its-next-report",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-25T22:03:02Z",
-      "firstSeen": "2026-10-25T23:16:20Z"
-    },
-    {
-      "headline": "Goldman lists 3 factors that support long commodities positions",
-      "url": "https://www.investing.com/news/commodities-news/goldman-lists-3-factors-that-support-long-commodities-positions-4971269",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-25T22:15:44Z",
-      "firstSeen": "2026-10-25T22:15:44Z"
-    },
-    {
-      "headline": "Canada, UK to develop separate defense financing institutions",
-      "url": "https://www.investing.com/news/economy-news/canada-uk-to-develop-separate-defense-financing-institutions-4971268",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-25T22:15:44Z",
-      "firstSeen": "2026-10-25T22:15:44Z"
-    },
-    {
-      "headline": "Stock-Split Watch: Is Sandisk Next?",
-      "url": "https://www.nasdaq.com/articles/stock-split-watch-sandisk-next-0",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-25T22:31:17Z",
-      "firstSeen": "2026-10-25T22:31:17Z"
     },
     {
       "headline": "$SPCX - SPACEX SECURES $40 BILLION IN DEBT TO BUY AI CHIPS Elon Musk confirms SpaceX has closed $40 billion in debt financing to purchase GPUs, with deliveries expected in Q1 and Q2 2027. The compa...",
