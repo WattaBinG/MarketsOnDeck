@@ -1,0 +1,33 @@
+name: Deploy scheduler Worker
+# Deploys the Cloudflare scheduler Worker from scheduler/ (scheduler/wrangler.jsonc),
+# which dispatches the daily refresh workflows (wire, earnings, crypto, watch-today).
+# Deploy on scheduler/ changes plus manual dispatch. Uses the existing repo secrets.
+# No site code is built or tested here.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scheduler/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: scheduler-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy scheduler Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          wranglerVersion: "4.136.1"
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          workingDirectory: scheduler
+          command: deploy
