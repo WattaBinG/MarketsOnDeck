@@ -17,7 +17,8 @@ Deployment is intentionally separate from the website's `wrangler.jsonc`:
    with Actions read/write. Store it as the `GITHUB_DISPATCH_TOKEN` secret on
    the dispatcher Worker. Never commit it or echo it in logs.
 2. Deploy from this directory with `npx wrangler deploy`, using a Cloudflare
-   API token with Workers deployment permissions. Set the secret securely with
+   API token with Workers deployment permissions. Pushes to `main` that touch
+   `scheduler/` deploy automatically via `.github/workflows/deploy-scheduler.yml`. Set the secret securely with
    `npx wrangler secret put GITHUB_DISPATCH_TOKEN` in this directory; this
    creates and deploys a new Worker version immediately.
 3. Confirm a manual scheduled-handler test and a real cron cycle dispatch

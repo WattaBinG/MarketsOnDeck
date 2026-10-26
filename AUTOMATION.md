@@ -16,6 +16,21 @@ Each of these three workflows checks `automation/pause-flags.json` first (`wire`
 Each refresh workflow serializes its commit/push with the other publishers and then runs Wrangler to deploy that exact committed snapshot. Deployment requires the repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; if either commit, push, or deploy fails, the workflow stays red and the previous production snapshot remains live. Each workflow also has a **Run workflow** button in
 GitHub → Actions for a manual kick.
 
+## Cloudflare Workers Builds (git integration) - disabled by quota, kept off
+
+The Cloudflare git integration ("Workers Builds") also builds and deploys both
+Workers on every push. Its 3,000 included monthly build minutes cannot cover
+the 15-minute refresh cadence (~5,800 commits/month across two connected
+workers plus PR previews); the quota ran out on Oct 16, 2026 and Cloudflare now
+pauses builds. A paused build is skipped in 0s, and GitHub renders that skip as
+a FAILED check-run - red X's on every commit while deploys actually succeed.
+Production deploys flow through the refresh workflows' own Wrangler steps
+above; judge deploy health by the live `asOf` fields and Actions run history,
+never by Workers Builds check-runs. The git integration stays disconnected in
+the Cloudflare dash for both Workers (marketsondeck and
+marketsondeck-refresh-dispatcher); the dispatcher deploys on scheduler/
+changes via `.github/workflows/deploy-scheduler.yml`.
+
 ## Sources and why they are OK to publish
 
 - **The Wire** aggregates the *headlines and links* from public RSS feeds
