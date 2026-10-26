@@ -10,6 +10,8 @@ headlines, or commentary.
 | Crypto ticker (`assets/crypto.json`) | `refresh-crypto.yml` | every 15 min | Coinbase Exchange public market-data API |
 | The Wire (`assets/wire.json`, `wire-archive.json`, homepage blocks) | `refresh-wire.yml` | hourly, with a sticky lead story | publishers' own public RSS feeds, the public Walter Bloomberg Telegram mirror (labeled unofficial), and Keith's own Discord news channel (via his bot) |
 | What to Watch Today (`assets/watch-today.json`) | `refresh-watch-today.yml` | 7 PM ET Sun-Thu (rolls to the next trading day) | BEA and BLS official calendars, Census economic-indicators calendar, Fed + NYSE published calendars, fixed weekly releases |
+| Ledger trust views (Overview/episode static blocks) | `trust-views.yml` | on ledger-feed push to main | regenerates from `trades.json` via `scripts/build_trust_views.py` - no data of its own |
+| Ledger freshness tripwire | `freshness.yml` | daily 9 AM ET | repo's own feeds + static labels (`scripts/check_freshness.py`) |
 
 Each of these three workflows checks `automation/pause-flags.json` first (`wire`, `crypto`, `watchToday` keys) and skips its refresh job entirely while its flag is `true` — set there to pause one on request, and flip it back to `false` to resume. `refresh-earnings.yml` has no flag and is unaffected.
 
@@ -293,3 +295,23 @@ trigger delivery. No new Cloudflare storage or binding is required.
 
 Offline tests: `python3 scripts/test_publish_refresh.py`. They use temporary
 local repositories, never production, brokerage data or external feeds.
+
+## Ledger trust views and the freshness tripwire
+
+`site/overview` and the episode pages carry *static* ledger blocks that are
+regenerated from `site/assets/trades.json` by `scripts/build_trust_views.py`.
+Before 2026-10-23 nothing ran that script automatically, so the blocks
+silently lagged the feed (Overview showed an Oct 19 snapshot against an Oct
+22 ledger). `trust-views.yml` (staged in the review PR, pending install by a token with
+workflow scope) closes that: any push to main touching
+`trades.json` or `positions.json` regenerates the blocks, commits them, and
+deploys the committed snapshot.
+
+`freshness.yml` (staged in the same PR, same pending install) is the daily tripwire: `scripts/check_freshness.py` fails the
+run (red badge) when the two feeds disagree, when any static
+'Snapshot through / Ledger through' label differs from the ledger `asOf`, or
+when the feed is more than 7 days old. Red in the morning means the pipeline
+stalled - investigate before the day's publishing, and the Tape still goes
+out market-first with portfolio figures withheld pending verification, per
+Keith's 2026-10-23 instruction that market coverage must not stop over
+unverified portfolio data.
