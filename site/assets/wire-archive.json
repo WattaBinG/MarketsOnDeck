@@ -1,6 +1,237 @@
 {
   "items": [
     {
+      "headline": "Google’s AI search changes upended online publishing",
+      "url": "https://www.theverge.com/column/1017983/google-ai-search-online-publishing",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-25T12:15:43Z"
+    },
+    {
+      "headline": "OpenAI says it will no longer train its AI models on the live internet, citing ‘significant risks’",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-23T23:16:25Z"
+    },
+    {
+      "headline": "Trump administration cancels some Canada tariffs amid close midterm races",
+      "url": "https://www.nbcnews.com/business/economy/trump-cancels-canada-tariffs-susan-collins-rcna605270",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-23T19:01:00Z"
+    },
+    {
+      "headline": "Etsy to restrict AI-generated content in effort to combat seller slop",
+      "url": "https://www.nbcnews.com/business/consumer/etsy-restricts-ai-generated-seller-slop-rcna605216",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-23T15:01:45Z"
+    },
+    {
+      "headline": "Over 40% of Americans are heading toward retirement ‘blind’ — with no plan",
+      "url": "https://www.marketwatch.com/story/over-40-of-americans-are-heading-toward-retirement-blind-with-no-plan-e49b502f?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-23T13:15:51Z"
+    },
+    {
+      "headline": "Airbnb hosts can no longer ask guests to clean dishes or make beds",
+      "url": "https://www.nbcnews.com/news/us-news/airbnb-hosts-can-no-longer-ask-guests-clean-dishes-make-beds-rcna604996",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-22T17:31:44Z"
+    },
+    {
+      "headline": "Goldman Sachs spends big to give small businesses an AI boost",
+      "url": "https://www.nbcnews.com/video/goldman-sachs-spends-big-to-give-small-businesses-an-ai-boost-272042053796",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-22T16:16:25Z"
+    },
+    {
+      "headline": "PJM, ERCOT, and SWPP all set peak load records this summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68305",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
+      "source": "SEC",
+      "category": "Movers",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Monthly wind generation in ISO-NE is about 68% higher than last year",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68304",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-104-sec-proposes-expanding-securities-eligible-cross-trading-registered-funds",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Jobless claims fall to lowest level since mid-May",
+      "url": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Jobless claims stay low in latest week",
+      "url": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Consumer credit growth soars in December",
+      "url": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Russia halts strikes on Ukraine’s Kherson as Oleshky ceasefire takes effect",
+      "url": "https://www.aljazeera.com/news/2026/10/27/russia-halts-strikes-on-ukraines-kherson-as-oleshky-ceasefire-takes-effect?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-27T02:46:25Z"
+    },
+    {
+      "headline": "US-EU trade truce at risk over $3.4 billion Airbus loan, Trump official warns",
+      "url": "https://www.france24.com/en/europe/20261027-us-eu-trade-truce-airbus-loan-trump",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-27T02:31:23Z"
+    },
+    {
+      "headline": "Romania says Russia-run sabotage network set fire near weapons factory",
+      "url": "https://www.aljazeera.com/news/2026/10/27/romania-says-russia-run-sabotage-network-set-fire-near-weapons-factory?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-27T01:16:31Z"
+    },
+    {
+      "headline": "China and Russia are redrawing Arctic trade. Can Europe fight back?",
+      "url": "https://www.cnbc.com/2026/10/27/arctic-shipping-china-and-russia-expand-grip-can-europe-fight-back.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-27T00:31:33Z"
+    },
+    {
+      "headline": "EXPLOSIONS IN KYIV, REUTERS WITNESSES SAY, UKRAINIAN AIR FORCE SAYS KYIV UNDER THREAT OF MISSILE ATTACK",
+      "url": "https://t.me/WalterBloomberg/37414",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-26T20:00:44Z"
+    },
+    {
+      "headline": "UN cites 'ethnic cleansing' concerns around Israel's Palestinian displacement operation in Hebron",
+      "url": "https://www.france24.com/en/middle-east/20261026-un-cites-ethnic-cleansing-concerns-around-israel-palestinian-displacement-operation-hebron",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-26T18:15:46Z"
+    },
+    {
+      "headline": "AI startup Anthropic unveils its public IPO filing for the first time",
+      "url": "https://www.nbcnews.com/video/ai-startup-anthropic-unveils-its-public-ipo-filing-for-the-first-time-272224837929",
+      "source": "NBC News",
+      "category": "Movers",
+      "timestamp": "2026-10-26T15:15:51Z"
+    },
+    {
+      "headline": "Anthropic’s IPO filing lays out a plan to ‘revolutionize every area of human endeavor’ with AI",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1018476/anthropic-ipo-details-s1-filed-sec",
+      "source": "The Verge",
+      "category": "Movers",
+      "timestamp": "2026-10-26T13:46:03Z"
+    },
+    {
+      "headline": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
+      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "AI",
+      "timestamp": "2026-10-26T13:32:07Z"
+    },
+    {
+      "headline": "Good vs. Bad Debt: How Borrowing Money Can Help You Grow",
+      "url": "https://www.today.com/video/good-debt-vs-bad-borrowing-what-you-need-to-know-272220741984",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-26T13:46:03Z"
+    },
+    {
+      "headline": "Salon owners urge Budget VAT cut as staffing pressures grow",
+      "url": "https://www.bbc.co.uk/news/articles/c60rlp8kkz1zo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-26T08:31:21Z"
+    },
+    {
+      "headline": "Nikkei 225 tests VWAP/Kijun resistance in counter-trend bounce: Live",
+      "url": "https://www.investing.com/news/stock-market-news/nikkei-225-in-strong-downtrend-tests-key-support-live-levels-93CH-4971336",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-26T01:30:46Z"
+    },
+    {
+      "headline": "SK Hynix tests SuperTrend resistance at KRW 1,348,500: Live",
+      "url": "https://www.investing.com/news/stock-market-news/sk-hynix-neutral-in-notrade-zone-awaiting-breakout-live-93CH-4971337",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-26T01:30:46Z"
+    },
+    {
+      "headline": "Moody’s sees positive shift in Japan’s growth, resilience remains key test",
+      "url": "https://www.investing.com/news/economy-news/moodys-sees-positive-shift-in-japans-growth-resilience-remains-key-test-4974168",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-27T05:01:31Z"
+    },
+    {
+      "headline": "What is a Public Benefit Corporation? Anthropic's Unusual Legal Status and What It Means for Investors",
+      "url": "https://www.nasdaq.com/articles/what-public-benefit-corporation-anthropics-unusual-legal-status-and-what-it-means",
+      "source": "Nasdaq",
+      "category": "AI",
+      "timestamp": "2026-10-27T05:01:31Z"
+    },
+    {
+      "headline": "Indian Shares Marginally Lower In Early Trade; IT Stocks Underperform",
+      "url": "https://www.nasdaq.com/articles/indian-shares-marginally-lower-early-trade-it-stocks-underperform",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-27T05:01:31Z"
+    },
+    {
+      "headline": "Israel election 2026 live: Netanyahu faces tough test in high-stakes polls",
+      "url": "https://www.aljazeera.com/news/liveblog/2026/10/27/israel-election-2026-live-netanyahu-faces-tough-test-in-high-stakes-polls?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-27T05:01:31Z"
+    },
+    {
+      "headline": "Zedge (ZDGE) Q4 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/zedge-zdge-q4-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-27T05:01:31Z"
+    },
+    {
+      "headline": "Israel votes in first election since October 7 attack as Netanyahu faces crucial test",
+      "url": "https://www.france24.com/en/middle-east/20261027-israel-election-2026-netanyahu-october-7",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-27T04:16:25Z"
+    },
+    {
       "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
       "source": "EIA",
@@ -1168,237 +1399,6 @@
       "source": "CNBC",
       "category": "Geopolitics",
       "timestamp": "2026-10-26T14:31:47Z"
-    },
-    {
-      "headline": "‘Ticking time bomb’: The world's pension funds face an ageing crisis",
-      "url": "https://www.cnbc.com/2026/10/26/pension-funds-ageing-crisis-risk-investment.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-25T23:31:20Z"
-    },
-    {
-      "headline": "AI delivers ‘zero financial payoff’ to most companies, Apollo economist says",
-      "url": "https://techcrunch.com/2026/10/25/ai-delivers-zero-financial-payoff-to-most-companies-according-to-apollo-economist/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-25T17:01:32Z"
-    },
-    {
-      "headline": "Why is Advantest stock surging today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-advantest-stock-surging-today-93CH-4974100",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-27T03:16:21Z"
-    },
-    {
-      "headline": "Alibaba AI model attempted Beijing server contact in test, Canada’s Cohere says",
-      "url": "https://www.investing.com/news/stock-market-news/alibaba-ai-model-attempted-beijing-server-contact-in-test-canadas-cohere-says-93CH-4974099",
-      "source": "Investing.com",
-      "category": "AI",
-      "timestamp": "2026-10-27T03:16:21Z"
-    },
-    {
-      "headline": "Elon Musk Says Merging SpaceX and Tesla Would Be a Good Idea. Here's What Investors Should Know.",
-      "url": "https://www.nasdaq.com/articles/elon-musk-says-merging-spacex-and-tesla-would-be-good-idea-heres-what-investors-should",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-27T03:16:21Z"
-    },
-    {
-      "headline": "The hottest AI wearables and gadgets you should know about",
-      "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-25T14:15:49Z"
-    },
-    {
-      "headline": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Agencies publish resolution plan feedback letters for 15 banking organizations",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Public companies produce most U.S. crude oil and natural gas",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68184",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "What goes into diesel prices?",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68164",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Corpus Christi LNG expansion makes facility the second-largest in the United States",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68144",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Tracking U.S., state and county gas prices, in maps and charts",
-      "url": "https://www.nbcnews.com/data-graphics/gas-prices-iran-war-state-national-cost-trump-rcna265835",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "From Wall Street to Silicon Valley, Anthropic IPO poised to have massive 'trickle-down effect'",
-      "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-might-trigger-tech-reset-if-ipo-underperforms.html",
-      "source": "CNBC",
-      "category": "AI",
-      "timestamp": "2026-10-26T23:15:43Z"
-    },
-    {
-      "headline": "Israeli election draws tens of thousands of citizens flying back to vote",
-      "url": "https://www.cnbc.com/2026/10/27/israeli-election-citizens-flying-back-vote.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-26T23:15:43Z"
-    },
-    {
-      "headline": "Dividend stocks are having an excellent October as tech sector struggles",
-      "url": "https://www.marketwatch.com/story/dividend-stocks-are-having-an-excellent-october-as-tech-sector-struggles-5ae40b02?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-26T22:16:25Z"
-    },
-    {
-      "headline": "Options traders are seizing control of the S&P 500",
-      "url": "https://www.marketwatch.com/story/options-traders-are-seizing-control-of-the-s-p-500-1add94ca?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-26T22:16:25Z"
-    },
-    {
-      "headline": "JetBlue posts bigger loss on fuel costs, but CEO says margins improving",
-      "url": "https://www.cnbc.com/2026/10/26/jetblue-jblu-3q-2026-earnings.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-26T21:00:43Z"
-    },
-    {
-      "headline": "Microsoft offers buyouts to 60,000 employees",
-      "url": "https://www.theverge.com/tech/1018666/microsoft-expands-buyouts-60000-employees-eligible",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-26T16:15:48Z"
-    },
-    {
-      "headline": "Nvidia, AMD and Broadcom could buy Meta shares as part of $35 billion stock offering",
-      "url": "https://www.marketwatch.com/story/nvidia-amd-and-broadcom-could-buy-meta-shares-as-part-of-35-billion-stock-offering-d816fec2?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Movers",
-      "timestamp": "2026-10-26T12:16:27Z"
-    },
-    {
-      "headline": "Should You Buy Markel Stock (MKL) on the Dip?",
-      "url": "https://www.nasdaq.com/articles/should-you-buy-markel-stock-mkl-dip",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-27T03:16:21Z"
-    },
-    {
-      "headline": "Not Palantir. Not Snowflake. This AI Software Stock Could Be the Next Multibagger.",
-      "url": "https://www.nasdaq.com/articles/not-palantir-not-snowflake-ai-software-stock-could-be-next-multibagger",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-27T03:16:21Z"
-    },
-    {
-      "headline": "Indian Shares Seen Opening On Flat Note",
-      "url": "https://www.nasdaq.com/articles/indian-shares-seen-opening-flat-note",
-      "source": "Nasdaq",
-      "category": "Movers",
-      "timestamp": "2026-10-27T02:46:25Z"
-    },
-    {
-      "headline": "Earnings call transcript: Sandfire Resources posts strong Q1 2026 start",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-sandfire-resources-posts-strong-q1-2026-start-93CH-4974092",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-27T02:46:25Z"
-    },
-    {
-      "headline": "Asia stocks jump as Anthropic IPO filing revives AI trade",
-      "url": "https://www.investing.com/news/stock-market-news/asia-stocks-jump-as-anthropic-ipo-filing-revives-ai-trade-4974091",
-      "source": "Investing.com",
-      "category": "AI",
-      "timestamp": "2026-10-27T02:46:25Z"
-    },
-    {
-      "headline": "What Is Book Value? 2 Mortgage REIT Stocks That Were Trading Close to It Until They Weren't",
-      "url": "https://www.nasdaq.com/articles/what-book-value-2-mortgage-reit-stocks-were-trading-close-it-until-they-werent",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-27T02:46:25Z"
-    },
-    {
-      "headline": "Lowe's Is Down 30%, and Home Depot Is Down 18%. Here's the Housing Stock I'd Buy Even With 30-Year Mortgage Rates at 7.3%.",
-      "url": "https://www.nasdaq.com/articles/lowes-down-30-and-home-depot-down-18-heres-housing-stock-id-buy-even-30-year-mortgage",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-27T02:46:25Z"
-    },
-    {
-      "headline": "Budget to include £1bn for social and affordable housing",
-      "url": "https://www.bbc.co.uk/news/articles/cqm24j9y9zn7o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-25T04:45:41Z"
-    },
-    {
-      "headline": "Here are the top AI agents that can live in your text messages",
-      "url": "https://techcrunch.com/2026/10/24/all-the-ai-agents-that-can-live-in-your-text-messages/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-24T14:31:28Z"
-    },
-    {
-      "headline": "Hottest toy for Christmas? Nvidia CEO plays with adorable Microduck robots, 20,000 sell",
-      "url": "https://techcrunch.com/2026/10/23/hottest-toy-for-christmas-nvidia-ceo-plays-with-adorable-microduck-robots-20000-sell/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-23T22:01:27Z"
-    },
-    {
-      "headline": "Is it a coincidence that the 2 key data centers of OpenAI's Stargate are suddenly on the ropes? Project Jupiter (4.5GW) loans trading < 90, major delays... SB Energy (8GW) delaying IPO, major delay...",
-      "url": "https://x.com/zerohedge/status/2102599984399179870",
-      "source": "MarketsOnDeck Discord",
-      "category": "Movers",
-      "timestamp": "2026-10-16T02:08:15Z"
     }
   ]
 }
