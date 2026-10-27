@@ -1,23 +1,111 @@
 {
-  "asOf": "2026-10-27T13:31:47Z",
-  "asOfLabel": "9:31 AM ET",
+  "asOf": "2026-10-27T13:45:48Z",
+  "asOfLabel": "9:45 AM ET",
   "topStory": {
-    "headline": "**S&P DOW JONES INDICES AND KALSHI PARTNER TO CREATE NEW FINANCIAL INDICES ** S&P DJI will develop indices powered by Kalshi’s prediction markets. Potential markets include politics, AI job disrupt...",
-    "url": "https://x.com/DeItaone/status/2115073428692607258",
+    "headline": "**GLOBAL INFLATION RISKS RISE DESPITE RESILIENT ECONOMIC GROWTH** A Reuters poll of more than 500 economists found that 2027 inflation forecasts were raised for 31 of 50 economies, as oil prices ab...",
+    "url": "https://x.com/DeItaone/status/2115075669587603760",
     "source": "MarketsOnDeck Discord",
-    "category": "Markets",
-    "timestamp": "2026-10-27T13:30:30Z",
-    "firstSeen": "2026-10-27T13:31:47Z",
-    "leadSince": "2026-10-27T13:31:47Z",
-    "image": "/assets/images/wire-markets.jpg"
+    "category": "Macro",
+    "timestamp": "2026-10-27T13:39:30Z",
+    "firstSeen": "2026-10-27T13:45:48Z",
+    "leadSince": "2026-10-27T13:45:48Z",
+    "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
-      "headline": "🔴 MOO IMBALANCE S&P 500: 5.3 MLN NASDAQ 100: -13.6 MLN DOW 30: 2.2 MLN MAG 7: -11.7 MLN $MACRO",
-      "url": "https://x.com/financialjuice/status/2115073792301060602",
+      "headline": "SHARES OF NEOCLOUD COMPANIES EXTEND GAINS NEBIUS UP 11.1% COREWEAVE RISES 6.7% IREN GAINS 7.7%",
+      "url": "https://t.me/WalterBloomberg/37446",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Movers",
+      "timestamp": "2026-10-27T13:42:36Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Economists raise 2027 inflation forecasts for 31 of 50 major economies from July - Poll.",
+      "url": "https://x.com/financialjuice/status/2115075014382756318",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-27T13:36:31Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Poll: Global economy to grow 3.0% in 2026 and 3.2% in 2027 (vs 2.9% and 3.1% in July poll)",
+      "url": "https://x.com/financialjuice/status/2115074960070987998",
       "source": "MarketsOnDeck Discord",
       "category": "Markets",
-      "timestamp": "2026-10-27T13:31:30Z",
+      "timestamp": "2026-10-27T13:36:30Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Earnings call transcript: Johnson Controls tops Q4 2026 estimates as stock rises",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-johnson-controls-tops-q4-2026-estimates-as-stock-rises-93CH-4975848",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-27T13:36:18Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "BigBearai earnings on deck: Can contract wins stem losses?",
+      "url": "https://www.investing.com/news/earnings/bigbearai-earnings-on-deck-can-contract-wins-stem-losses-93CH-4975846",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-27T13:35:59Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Capitol Federal earnings up next as commercial pivot continues",
+      "url": "https://www.investing.com/news/earnings/capitol-federal-earnings-up-next-as-commercial-pivot-continues-93CH-4975844",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-27T13:35:04Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Earnings call transcript: Corning beats Q3 2026 estimates, stock slips",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-corning-beats-q3-2026-estimates-stock-slips-93CH-4975843",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-27T13:34:40Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Earnings call transcript: Flexsteel beats Q1 2026 estimates but shares fall",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-flexsteel-beats-q1-2026-estimates-but-shares-fall-93CH-4975842",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-27T13:34:28Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Earnings call transcript: SoFi tops Q3 2026 estimates and shares jump 11%",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-sofi-tops-q3-2026-estimates-and-shares-jump-11-93CH-4975841",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-27T13:34:00Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Japan internet giant GMO says hackers posted stolen customer data",
+      "url": "https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-27T13:32:57Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Merlin appoints Mark Brunner as president, CEO Matthew George remains in role",
+      "url": "https://www.investing.com/news/sec-filings/merlin-appoints-mark-brunner-as-president-ceo-matthew-george-remains-in-role-93CH-4975838",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-27T13:32:42Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Ripple strikes deal with Robinhood to expand its RLUSD digital dollar",
+      "url": "https://www.cnbc.com/2026/10/27/ripple-strikes-deal-with-robinhood-to-expand-its-rlsud-digital-dollar.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-27T13:31:47Z",
       "firstSeen": "2026-10-27T13:31:47Z"
     },
     {
@@ -25,23 +113,31 @@
       "url": "https://www.marketwatch.com/story/this-surprise-election-result-could-deliver-short-lived-weakness-for-stocks-strategists-say-2278a22e?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "category": "Markets",
-      "timestamp": "2026-10-27T13:30:00Z",
+      "timestamp": "2026-10-27T13:31:47Z",
       "firstSeen": "2026-10-27T13:31:47Z"
     },
     {
-      "headline": "Ripple strikes deal with Robinhood to expand its RLSUD digital dollar",
-      "url": "https://www.cnbc.com/2026/10/27/ripple-strikes-deal-with-robinhood-to-expand-its-rlsud-digital-dollar.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-27T13:23:06Z",
-      "firstSeen": "2026-10-27T13:31:47Z"
-    },
-    {
-      "headline": "AMD to invest $1b in Meta offering.",
-      "url": "https://x.com/financialjuice/status/2115071263429554308",
-      "source": "MarketsOnDeck Discord",
+      "headline": "First Financial Corporation Announces Increase In Q3 Bottom Line",
+      "url": "https://www.nasdaq.com/articles/first-financial-corporation-announces-increase-q3-bottom-line",
+      "source": "Nasdaq",
       "category": "Markets",
-      "timestamp": "2026-10-27T13:21:32Z",
+      "timestamp": "2026-10-27T13:29:50Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "The Netherlands pulls out of Eurovision 2027 due to Israel ‘sensitivities’",
+      "url": "https://www.aljazeera.com/news/2026/10/27/the-netherlands-pulls-out-of-eurovision-2027-due-to-israel-sensitivities?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-27T13:29:47Z",
+      "firstSeen": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "S&P DOW JONES INDICES AND KALSHI PARTNER TO CREATE NEW FINANCIAL INDICES S&P DJI will develop indices powered by Kalshi’s prediction markets. Potential markets include politics, AI job disruption,...",
+      "url": "https://t.me/WalterBloomberg/37444",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-27T13:31:47Z",
       "firstSeen": "2026-10-27T13:31:47Z"
     },
     {
@@ -49,103 +145,7 @@
       "url": "https://t.me/WalterBloomberg/37443",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Markets",
-      "timestamp": "2026-10-27T13:20:55Z",
-      "firstSeen": "2026-10-27T13:31:47Z"
-    },
-    {
-      "headline": "GOLD PRICE EXPECTED TO AVERAGE $4,495/OZ IN 2026, $4,650 IN 2027 - REUTERS POLL SILVER PRICE EXPECTED TO AVERAGE $70.30/OZ IN 2026, $66.75 IN 2027 - REUTERS POLL",
-      "url": "https://t.me/WalterBloomberg/37442",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-27T13:19:27Z",
-      "firstSeen": "2026-10-27T13:31:47Z"
-    },
-    {
-      "headline": "\"Affordability Remains Challenging\": US Home Prices Rise Even As Mortgage Rates Rip <>",
-      "url": "https://www.zerohedge.com/markets/affordability-remains-challenging-us-home-prices-rise-even-mortgage-rates-rip",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-27T13:16:30Z",
-      "firstSeen": "2026-10-27T13:31:47Z"
-    },
-    {
-      "headline": "Snowflake director Benoit Dageville sells $16.95 million in shares",
-      "url": "https://www.investing.com/news/insider-trading-news/snowflake-director-benoit-dageville-sells-1695-million-in-shares-93CH-4975774",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-27T13:16:03Z",
-      "firstSeen": "2026-10-27T13:31:47Z"
-    },
-    {
-      "headline": "Terrestrial Energy stock surges on $25M buyback program",
-      "url": "https://www.investing.com/news/stock-market-news/terrestrial-energy-stock-surges-on-25m-buyback-program-4975766",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-27T13:15:46Z",
-      "firstSeen": "2026-10-27T13:31:47Z"
-    },
-    {
-      "headline": "UBS RAISES BRENT CRUDE FORECAST TO $110 A BARREL FOR YEAR END",
-      "url": "https://t.me/WalterBloomberg/37441",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-27T13:15:49Z",
-      "firstSeen": "2026-10-27T13:15:49Z"
-    },
-    {
-      "headline": "aTyr Pharma announces 1-for-40 reverse stock split effective October 28",
-      "url": "https://www.investing.com/news/sec-filings/atyr-pharma-announces-1for40-reverse-stock-split-effective-october-28-93CH-4975737",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-27T13:12:50Z",
-      "firstSeen": "2026-10-27T13:31:47Z"
-    },
-    {
-      "headline": "DEUTSCHE BANK SEES POTENTIAL FINAL STOCK MARKET DIP OF 2026 Deutsche Bank's Jim Reid says the S&P 500 may be nearing its final dip of 2026, with historical seasonality favoring a year-end rally. In...",
-      "url": "https://t.me/WalterBloomberg/37440",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-27T13:01:28Z",
-      "firstSeen": "2026-10-27T13:01:28Z"
-    },
-    {
-      "headline": "US HOME PRICE GROWTH ACCELERATES IN AUGUST US home prices across 20 major metropolitan areas rose 2.7% year-over-year, beating the 2.6% forecast and accelerating from July's 2.5%. Prices increased...",
-      "url": "https://t.me/WalterBloomberg/37439",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-27T13:01:28Z",
-      "firstSeen": "2026-10-27T13:01:28Z"
-    },
-    {
-      "headline": "Victory Capital Becomes the First ETF Issuer to Dual List on Nasdaq Texas",
-      "url": "https://www.nasdaq.com/newsroom/victory-capital-becomes-first-etf-issuer-dual-list-nasdaq-texas",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-27T13:00:00Z",
-      "firstSeen": "2026-10-27T13:31:47Z"
-    },
-    {
-      "headline": "Opera introduces a new web standard to let users deploy AI locally in their browser",
-      "url": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-27T13:01:28Z",
-      "firstSeen": "2026-10-27T13:01:28Z"
-    },
-    {
-      "headline": "General Compute raises $100 million Series A, countering the neocloud disaster narrative",
-      "url": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-27T13:01:28Z",
-      "firstSeen": "2026-10-27T13:01:28Z"
-    },
-    {
-      "headline": "Up 16% This Year, How Long Can Procter & Gamble Continue Outperforming the S&P 500?",
-      "url": "https://www.nasdaq.com/articles/16-year-how-long-can-procter-gamble-continue-outperforming-sp-500",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-27T12:59:00Z",
+      "timestamp": "2026-10-27T13:31:47Z",
       "firstSeen": "2026-10-27T13:31:47Z"
     }
   ]
