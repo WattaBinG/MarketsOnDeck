@@ -1,8 +1,19 @@
 {
-  "date": "2026-10-27",
-  "dateLabel": "Tuesday, October 27",
-  "events": [],
-  "note": "No major scheduled releases from tracked official sources (BEA, BLS, Census, Fed).",
+  "date": "2026-10-28",
+  "dateLabel": "Wednesday, October 28",
+  "events": [
+    {
+      "time": "10:30 AM ET",
+      "event": "EIA Weekly Petroleum Status Report",
+      "kind": "crude_stocks",
+      "prev": "crude stocks -3.1M bbl"
+    },
+    {
+      "time": "2:00 PM ET",
+      "event": "FOMC Rate Decision"
+    }
+  ],
+  "note": null,
   "calendarUrl": "https://www.census.gov/economic-indicators/",
   "sources": [
     "https://www.bea.gov/news/schedule/ics/online-calendar-subscription.ics",
