@@ -174,6 +174,21 @@ def main():
                 return
         except ValueError:
             pass  # unparsable asOf - treat as stale and refresh
+    # Close-snapshot guard: the Robinhood leg's official "Market Close"
+    # snapshot is final for the day. This backup must never replace it
+    # with extended-hours prints (2026-10-24 defect: after-hours prices
+    # sat under a "Market Close" label and disagreed with the tape).
+    if ticker.get("source") == "robinhood" and ticker.get("asOfLabel") == "Market Close" \
+            and isinstance(prev_asof, str):
+        try:
+            prev_et = datetime.strptime(prev_asof, "%Y-%m-%dT%H:%M:%SZ").replace(
+                tzinfo=timezone.utc).astimezone(ZoneInfo("America/New_York"))
+            if prev_et.date() == et_now().date():
+                print(f"SKIP: today's Robinhood Market Close snapshot ({prev_asof}) "
+                      "is final; leaving it untouched")
+                return
+        except ValueError:
+            pass  # unparsable asOf - fall through to the normal refresh
     positions = json.loads(POSITIONS.read_text(encoding="utf-8"))
     held_syms = []
     for pos in positions.get("positions", []):
@@ -189,7 +204,10 @@ def main():
 
     now_utc = datetime.now(timezone.utc)
     et = et_now()
-    base_label = "Market Close" if et.hour >= 16 else f"Intraday {et.strftime('%-I:%M %p')} ET"
+    # After 16:00 ET this backup's quotes are extended-hours prints, not
+    # the official close - label them honestly. Only the Robinhood leg's
+    # close snapshot may say "Market Close".
+    base_label = "After Hours" if et.hour >= 16 else f"Intraday {et.strftime('%-I:%M %p')} ET"
     label = base_label + " (delayed backup)"
 
     updated, stale, no_price = [], [], []
