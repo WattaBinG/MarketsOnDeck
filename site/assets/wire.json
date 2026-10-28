@@ -1,63 +1,111 @@
 {
-  "asOf": "2026-10-28T02:30:46Z",
-  "asOfLabel": "10:30 PM ET",
+  "asOf": "2026-10-28T02:45:48Z",
+  "asOfLabel": "10:45 PM ET",
   "topStory": {
-    "headline": "OpenAI plans to buy Google’s AI chips, The Information reports",
-    "url": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342",
-    "source": "Investing.com",
-    "category": "AI",
-    "timestamp": "2026-10-28T01:46:23Z",
-    "firstSeen": "2026-10-28T01:46:23Z",
-    "leadSince": "2026-10-28T01:46:23Z",
-    "image": "/assets/images/wire-ai.jpg"
+    "headline": "Israel election appears to have no clear winner with Netanyahu, opponent Eisenkot far short of majorities",
+    "url": "https://www.cnbc.com/2026/10/28/israel-election-netanyahu-trump-gaza-.html",
+    "source": "CNBC",
+    "category": "Geopolitics",
+    "timestamp": "2026-10-28T02:30:46Z",
+    "firstSeen": "2026-10-28T02:30:46Z",
+    "leadSince": "2026-10-28T02:45:48Z",
+    "image": "/assets/images/wire-geopolitics.jpg"
   },
   "items": [
     {
-      "headline": "RBNZ Governor Breman: partial inflation figures and labour data will be key in coming weeks",
-      "url": "https://x.com/financialjuice/status/2115269280904208688",
+      "headline": "RBNZ Governor Breman: wage expansion below levels consistent with target inflation",
+      "url": "https://x.com/financialjuice/status/2115273087562178660",
       "source": "MarketsOnDeck Discord",
       "category": "Macro",
-      "timestamp": "2026-10-28T02:28:42Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
+      "timestamp": "2026-10-28T02:43:50Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
     },
     {
-      "headline": "RBNZ Governor Breman: discussed possibility of rates rising beyond OCR path",
-      "url": "https://x.com/financialjuice/status/2115268671774036128",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:25:42Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "RBNZ Governor Breman: addressed risk of decline in AI-related market assets",
-      "url": "https://x.com/financialjuice/status/2115268143169888458",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:23:42Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "If you trade $SPX, this is probably one of the @​unusual_whales tools I would spend the most time learning. Periscope uses 100% attributed market maker positioning data straight from CBOE. That mea...",
-      "url": "https://youtu.be/Wuk9-blADcE",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:18:42Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "RBNZ Governor Breman: worried weak NZ$ may fuel inflation",
-      "url": "https://x.com/financialjuice/status/2115266595673288880",
+      "headline": "RBNZ Governor Breman: concerns that a weak New Zealand dollar may boost inflation",
+      "url": "https://x.com/financialjuice/status/2115273076820865274",
       "source": "MarketsOnDeck Discord",
       "category": "Macro",
-      "timestamp": "2026-10-28T02:17:42Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
+      "timestamp": "2026-10-28T02:43:49Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
     },
     {
-      "headline": "Israel election appears to have no clear winner with Netanyahu, opponent Eisenkot far short of majorities",
-      "url": "https://www.cnbc.com/2026/10/28/israel-election-netanyahu-trump-gaza-.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-28T02:15:55Z",
+      "headline": "RBNZ Governor Breman: partial inflation figures will be key in coming weeks, alongside labor data",
+      "url": "https://x.com/financialjuice/status/2115273064808173623",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-28T02:43:48Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "RBNZ Governor Breman: discussed risk of drop in ai-related market assets",
+      "url": "https://x.com/financialjuice/status/2115273053462507615",
+      "source": "MarketsOnDeck Discord",
+      "category": "Movers",
+      "timestamp": "2026-10-28T02:43:47Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "RBNZ Governor Breman: decision driven by economic outlook, considered market pricing",
+      "url": "https://x.com/financialjuice/status/2115273030997799336",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-28T02:43:45Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "RBNZ Governor Breman: broad spectrum of neutral rate estimates, always an uncertain judgment",
+      "url": "https://x.com/financialjuice/status/2115272996386410721",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-28T02:43:42Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "RBNZ Governor Breman: discussed if rates might rise beyond our OCR path",
+      "url": "https://x.com/financialjuice/status/2115272985263190184",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-28T02:42:44Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "RBNZ Governor Breman: conditions remain favourable to restore inflation to target",
+      "url": "https://x.com/financialjuice/status/2115272973016072659",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-28T02:42:43Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "Decision based on economic outlook: did consider market pricing",
+      "url": "https://x.com/financialjuice/status/2115270932700770712",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-28T02:34:54Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "Partial inflation data will matter in coming weeks, along with labor figures",
+      "url": "https://x.com/financialjuice/status/2115270919958515830",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-28T02:34:53Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "OpenAI plans to buy Google AI chips to expand computing capacity - The Information",
+      "url": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-google-ai-chips-to-expand-computing-capacity--the-information-4977389",
+      "source": "Investing.com",
+      "category": "AI",
+      "timestamp": "2026-10-28T02:22:09Z",
+      "firstSeen": "2026-10-28T02:45:48Z"
+    },
+    {
+      "headline": "Oil prices rise after attack on Saudi Arabian refinery reignites supply concerns",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-after-attack-on-saudi-arabian-refinery-reignites-supply-concerns-4977369",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-28T02:30:46Z",
       "firstSeen": "2026-10-28T02:30:46Z"
     },
     {
@@ -65,64 +113,16 @@
       "url": "https://www.investing.com/news/stock-market-news/nearly-90-of-businesses-are-turning-to-tokenised-money-dbs-survey-shows-4977384",
       "source": "Investing.com",
       "category": "Markets",
-      "timestamp": "2026-10-28T02:12:56Z",
+      "timestamp": "2026-10-28T02:30:46Z",
       "firstSeen": "2026-10-28T02:30:46Z"
     },
     {
-      "headline": "US closes $5.1 billion loan to Alliant Energy for new gas power generation, energy storage",
-      "url": "https://www.investing.com/news/stock-market-news/us-closes-51-billion-loan-to-alliant-energy-for-new-gas-power-generation-energy-storage-4977383",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:12:43Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "Acme United: 3 Key Takeaways for Long-Term Investors",
-      "url": "https://www.nasdaq.com/articles/acme-united-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:09:27Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "Stifel’s surprise gaming pick leads a sector bracing for a choppy earnings season",
-      "url": "https://www.investing.com/news/stock-market-news/stifels-surprise-gaming-pick-leads-a-sector-bracing-for-a-choppy-earnings-season-4977382",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:09:18Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "Manhattan: 3 Key Takeaways for Long-Term Investors",
-      "url": "https://www.nasdaq.com/articles/manhattan-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:04:19Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "Maplebear CEO Chris Rogers sells $1.48M in common stock",
-      "url": "https://www.investing.com/news/insider-trading-news/maplebear-ceo-chris-rogers-sells-148m-in-common-stock-93CH-4977379",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:01:15Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "Symbotic CSO Boyd III sells $357,026 in company stock",
-      "url": "https://www.investing.com/news/insider-trading-news/symbotic-cso-boyd-iii-sells-357026-in-company-stock-93CH-4977378",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:01:07Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
-    },
-    {
-      "headline": "Trican Well Service Ltd. Profit Advances In Q3",
-      "url": "https://www.nasdaq.com/articles/trican-well-service-ltd-profit-advances-q3",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T02:00:13Z",
-      "firstSeen": "2026-10-28T02:30:46Z"
+      "headline": "OPENAI REPORTEDLY PLANS TO BUY GOOGLE AI CHIPS OpenAI plans to purchase AI chips from Google ($GOOGL), according to The Information, citing a person familiar with the matter. Financial terms and th...",
+      "url": "https://t.me/WalterBloomberg/37481",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "AI",
+      "timestamp": "2026-10-28T00:30:45Z",
+      "firstSeen": "2026-10-28T00:30:45Z"
     },
     {
       "headline": "NETANYAHU FACES ELECTION SETBACK AS ISRAELI EXIT POLLS SHOW DEADLOCK Israeli exit polls show Prime Minister Benjamin Netanyahu’s bloc running neck and neck with opposition leader Gadi Eisenkot, wit...",
