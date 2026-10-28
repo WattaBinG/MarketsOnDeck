@@ -1,6 +1,314 @@
 {
   "items": [
     {
+      "headline": "Minimum wage set to rise but 18-20 year-olds will not get bigger increase",
+      "url": "https://www.bbc.co.uk/news/articles/c6d93gq1xdgno?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-26T22:31:22Z"
+    },
+    {
+      "headline": "Anthropic's blockbuster share listing - 5 surprising things we now know",
+      "url": "https://www.bbc.co.uk/news/articles/cwn8d7g29vd9o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "AI",
+      "timestamp": "2026-10-26T17:31:02Z"
+    },
+    {
+      "headline": "‘Just watch Judge Judy’: I’m in my 70s. Why do people keep making the same avoidable financial mistakes?",
+      "url": "https://www.marketwatch.com/story/you-need-only-watch-episodes-of-judge-judy-im-in-my-70s-why-do-people-keep-making-the-same-avoidable-financial-mistakes-bbf60fe4?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-26T16:31:27Z"
+    },
+    {
+      "headline": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
+      "url": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-25T17:16:36Z"
+    },
+    {
+      "headline": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
+      "source": "SEC",
+      "category": "Movers",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Monthly wind generation in ISO-NE is about 68% higher than last year",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68304",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-104-sec-proposes-expanding-securities-eligible-cross-trading-registered-funds",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-09T13:00:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "SEC Charges Meyer Global Management and Its CEO With Defrauding Retail Investors in Private Funds That Held Interests in SpaceX and Other Pre-IPO Securities",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-98-sec-charges-meyer-global-management-its-ceo-defrauding-retail-investors-private-funds-held-interests",
+      "source": "SEC",
+      "category": "Movers",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "SEC Charges Two Individuals With Orchestrating Fraud Scheme That Targeted Veterans",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-97-sec-charges-two-individuals-orchestrating-fraud-scheme-targeted-veterans",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "SEC Proposes Amendments to Expand Responsible Retailization of Private Markets",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-96-sec-proposes-amendments-expand-responsible-retailization-private-markets",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68224",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Agencies publish resolution plan feedback letters for 15 banking organizations",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "SEC Charges Multiple Entities in Fraud Schemes Totaling at Least $15 Million That Used WhatsApp and Other Platforms to Lure Investors",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-95-sec-charges-multiple-entities-fraud-schemes-totaling-least-15-million-used-whatsapp-other-platforms",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "China finance ministry offers 3-month bills at 1.1101% yield: traders",
+      "url": "https://x.com/financialjuice/status/2102603788955603390",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "History Says Predicting a Recession Is Risky. Here's What to Do Instead.",
+      "url": "https://www.nasdaq.com/articles/history-says-predicting-recession-risky-heres-what-do-instead",
+      "source": "Nasdaq",
+      "category": "Macro",
+      "timestamp": "2026-10-28T15:15:50Z"
+    },
+    {
+      "headline": "UK brings forward defense spending target, pledging billions to Ukraine",
+      "url": "https://www.cnbc.com/2026/10/28/uk-defense-spending-ukraine-aid.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-28T14:46:56Z"
+    },
+    {
+      "headline": "UK inflation forecast to average 3.4% in 2027, Healey says",
+      "url": "https://www.investing.com/news/economy-news/uk-inflation-forecast-to-average-34-in-2027-healey-says-4979667",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-28T14:15:49Z"
+    },
+    {
+      "headline": "America's largest budget airline reports 71% jump in airfare",
+      "url": "https://www.cnbc.com/2026/10/28/frontier-airlines-airfare-plane-tickets.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-28T14:01:44Z"
+    },
+    {
+      "headline": "FEC campaign finance system offline days before midterms after hackers reportedly target site",
+      "url": "https://www.cnbc.com/2026/10/28/fec-hack-outage-campaign-finance-filings.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T13:01:35Z"
+    },
+    {
+      "headline": "Vertiv earnings just sent an upbeat signal about AI ahead of Big Tech results",
+      "url": "https://www.marketwatch.com/story/vertiv-earnings-just-sent-an-upbeat-signal-about-ai-ahead-of-big-tech-results-5714a105?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-28T13:01:35Z"
+    },
+    {
+      "headline": "7 days until TechCrunch Founder Summit: Save up to $100 on your pass before doors open",
+      "url": "https://techcrunch.com/2026/10/28/7-days-until-techcrunch-founder-summit-save-up-to-100-before-doors-open/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-28T13:01:35Z"
+    },
+    {
+      "headline": "Mbappé's China faux pas: When the sports world collides with the complexities of geopolitics",
+      "url": "https://www.france24.com/en/tv-shows/spotlight/20261028-mbapp%C3%A9-s-china-faux-pas-when-the-sports-world-collides-with-the-complexities-of-geopolitics",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-28T12:31:29Z"
+    },
+    {
+      "headline": "Meta quietly launched an ‘AI pet journal’ app",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1020410/meta-launched-ai-pet-journal-app-waddle-world",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-28T11:45:48Z"
+    },
+    {
+      "headline": "Robinhood shares fall as crypto markets chill drives profit miss",
+      "url": "https://www.investing.com/news/economy-news/robinhood-shares-fall-as-crypto-markets-chill-drives-profit-miss-4977880",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-28T09:31:26Z"
+    },
+    {
+      "headline": "The data center boom has an upside: innovation for the US grid",
+      "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-27T23:16:25Z"
+    },
+    {
+      "headline": "Fed expected to hold interest rates steady as inflation tops midterm voters’ concerns",
+      "url": "https://www.nbcnews.com/business/economy/fed-interest-rates-inflation-midterms-trump-rcna605905",
+      "source": "NBC News",
+      "category": "Macro",
+      "timestamp": "2026-10-27T22:45:45Z"
+    },
+    {
+      "headline": "White House tempers its tough talk on Canada trade as inflation tops voter concerns",
+      "url": "https://www.nbcnews.com/business/economy/canada-trade-tariffs-trump-maine-midterms-rcna605906",
+      "source": "NBC News",
+      "category": "Macro",
+      "timestamp": "2026-10-27T18:16:44Z"
+    },
+    {
+      "headline": "Google’s next Genie AI model generates more realistic experiences",
+      "url": "https://www.theverge.com/tech/1019076/google-genie-4-ai-model",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-27T16:01:44Z"
+    },
+    {
+      "headline": "Apple is adding an AI chatbot to Pages, Keynote, and Numbers",
+      "url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-27T14:01:54Z"
+    },
+    {
+      "headline": "When to Grab the Best Deals on Everything From Food to Flights",
+      "url": "https://www.today.com/video/here-are-the-best-times-to-buy-food-flights-electronics-more-272318533660",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-27T13:45:48Z"
+    },
+    {
+      "headline": "Opera introduces a new web standard to let users deploy AI locally in their browser",
+      "url": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-27T13:01:28Z"
+    },
+    {
+      "headline": "General Compute raises $100 million Series A, countering the neocloud disaster narrative",
+      "url": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-27T13:01:28Z"
+    },
+    {
+      "headline": "Data center backlash is uniting America",
+      "url": "https://www.theverge.com/policy/1019152/data-centers-midterm-elections",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-27T10:00:47Z"
+    },
+    {
+      "headline": "Rubico To Effect 1-for-25 Reverse Stock Split",
+      "url": "https://www.nasdaq.com/articles/rubico-effect-1-25-reverse-stock-split",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-28T15:12:47Z"
+    },
+    {
+      "headline": "Here's what options traders see before Alphabet, Microsoft report after the bell",
+      "url": "https://www.cnbc.com/2026/10/28/alphabet-microsoft-report-after-the-bell-what-options-trader-see.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T15:31:58Z"
+    },
+    {
+      "headline": "The one thing the chancellor didn't mention that will affect your pay",
+      "url": "https://www.bbc.co.uk/news/articles/clydn7r5pn1o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T15:15:50Z"
+    },
+    {
+      "headline": "SK Hynix Says Memory Is Sold Out Through 2029. Micron Is a Winner, Too",
+      "url": "https://www.nasdaq.com/articles/sk-hynix-says-memory-sold-out-through-2029-micron-winner-too",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-28T15:15:50Z"
+    },
+    {
+      "headline": "These software stocks could be winners as earnings season kicks into high gear",
+      "url": "https://www.marketwatch.com/story/these-software-stocks-could-be-winners-as-earnings-season-kicks-into-high-gear-8decddf7?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-28T15:15:50Z"
+    },
+    {
       "headline": "McDonald’s new bet on chicken hits a snag as franchisees say the birds are too big",
       "url": "https://www.marketwatch.com/story/mcdonalds-new-bet-on-chicken-hits-a-snag-as-franchisees-say-the-birds-are-too-big-c3e8dd77?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -1091,314 +1399,6 @@
       "source": "Investing.com",
       "category": "Markets",
       "timestamp": "2026-10-28T14:43:56Z"
-    },
-    {
-      "headline": "AMC stock may move 11% on Nov. 4 earnings, options show",
-      "url": "https://www.investing.com/news/stock-market-news/amc-stock-may-move-11-on-nov-4-earnings-options-show-93CH-4979880",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:43:54Z"
-    },
-    {
-      "headline": "Belgium tax portal shut down after cyberattack",
-      "url": "https://www.investing.com/news/economy-news/belgium-tax-portal-shut-down-after-cyberattack-93CH-4979878",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-28T14:43:05Z"
-    },
-    {
-      "headline": "Cash Dividend On The Way From Ellington Financial (EFC)",
-      "url": "https://www.nasdaq.com/articles/cash-dividend-way-ellington-financial-efc",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:46:56Z"
-    },
-    {
-      "headline": "VOC Ex-Dividend Reminder - 10/30/26",
-      "url": "https://www.nasdaq.com/articles/voc-ex-dividend-reminder-10-30-26",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:46:56Z"
-    },
-    {
-      "headline": "Apple to replace iPhone Duos affected by screen problem",
-      "url": "https://www.bbc.co.uk/news/articles/c893zwlev2xpo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-27T01:31:21Z"
-    },
-    {
-      "headline": "Trump administration cancels some Canada tariffs amid close midterm races",
-      "url": "https://www.nbcnews.com/business/economy/trump-cancels-canada-tariffs-susan-collins-rcna605270",
-      "source": "NBC News",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-23T19:01:00Z"
-    },
-    {
-      "headline": "Etsy to restrict AI-generated content in effort to combat seller slop",
-      "url": "https://www.nbcnews.com/business/consumer/etsy-restricts-ai-generated-seller-slop-rcna605216",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-23T15:01:45Z"
-    },
-    {
-      "headline": "How much is the minimum wage?",
-      "url": "https://www.bbc.co.uk/news/articles/cy7e8mpdxpro?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "PJM, ERCOT, and SWPP all set peak load records this summer",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68305",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Mixed outlook for energy expenditures this winter",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68264",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC Seeks Final Judgment Against Former Western Asset Co-CIO Ken Leech in Cherry Picking Case",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-103-sec-seeks-final-judgment-against-former-western-asset-co-cio-ken-leech-cherry-picking-case",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC to Host Virtual National Compliance Outreach Seminar for Investment Companies and Investment Advisers",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-102-sec-host-virtual-national-compliance-outreach-seminar-investment-companies-investment-advisers",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Crude oil prices and refinery margins generally increased throughout the third quarter",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68245",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC Coordinates with Global Financial Regulators to Raise Fraud Awareness During World Investor Week",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-101-sec-coordinates-global-financial-regulators-raise-fraud-awareness-during-world-investor-week",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces approval of application by Fleur Capital Corporation",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261002a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces it will extend, until November 4, the comment period on its proposal to modernize Regulation O",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261002a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Federal Reserve Board issues enforcement action with Ontario Bancorporation, Inc.",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261002a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "U.S. natural gas production reached a record high in July 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68225",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC’s Division of Examinations Announces New Exam Handbook",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-99-secs-division-examinations-announces-new-exam-handbook",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "U.S. exports of propane reached records in the first half of 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68244",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Federal Reserve Board issues enforcement action with former employee of Sandy Spring Bank",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20260924a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces approval of application by BancFirst Corporation",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260922a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Ex-Div Reminder for Alliant Energy (LNT)",
-      "url": "https://www.nasdaq.com/articles/ex-div-reminder-alliant-energy-lnt",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:28:43Z"
-    },
-    {
-      "headline": "RBB Bancorp About To Put More Money In Your Pocket (RBB)",
-      "url": "https://www.nasdaq.com/articles/rbb-bancorp-about-put-more-money-your-pocket-rbb",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:28:39Z"
-    },
-    {
-      "headline": "Dow Movers: SHW, HONIV",
-      "url": "https://www.nasdaq.com/articles/dow-movers-shw-honiv-1",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:28:36Z"
-    },
-    {
-      "headline": "New Oriental (EDU) Q1 2027 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/new-oriental-edu-q1-2027-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:28:28Z"
-    },
-    {
-      "headline": "Equinor (EQNR) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/equinor-eqnr-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:28:28Z"
-    },
-    {
-      "headline": "Tennessee Valley Authority About To Put More Money In Your Pocket (TVE)",
-      "url": "https://www.nasdaq.com/articles/tennessee-valley-authority-about-put-more-money-your-pocket-tve",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:28:21Z"
-    },
-    {
-      "headline": "Reminder - Permianville Royalty Trust (PVL) Goes Ex-Dividend Soon",
-      "url": "https://www.nasdaq.com/articles/reminder-permianville-royalty-trust-pvl-goes-ex-dividend-soon",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:28:16Z"
-    },
-    {
-      "headline": "Israel's election result is messy - here's why",
-      "url": "https://www.bbc.co.uk/news/videos/c893zeknlvnno?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "Earnings call transcript: Advantest lifts outlook in Q2 2026 on AI test demand",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-advantest-lifts-outlook-in-q2-2026-on-ai-test-demand-93CH-4979771",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "Enerpac Tool Group earnings ahead: Margin pressure in focus",
-      "url": "https://www.investing.com/news/earnings/enerpac-tool-group-earnings-ahead-margin-pressure-in-focus-93CH-4979770",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "Circle Internet stock may move 9.4% on Nov. 4 earnings report",
-      "url": "https://www.investing.com/news/stock-market-news/circle-internet-stock-may-move-94-on-nov-4-earnings-report-93CH-4979769",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "Earnings call transcript: Americana Restaurants posts record Q3 2026 growth",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-americana-restaurants-posts-record-q3-2026-growth-93CH-4979766",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "CSW Industrials earnings up next: Can growth momentum hold?",
-      "url": "https://www.investing.com/news/earnings/csw-industrials-earnings-up-next-can-growth-momentum-hold-93CH-4979764",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "Cantor Fitzgerald reiterates SK Hynix stock rating on AI demand",
-      "url": "https://www.investing.com/news/analyst-ratings/cantor-fitzgerald-reiterates-sk-hynix-stock-rating-on-ai-demand-93CH-4979765",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "B.Riley lowers Fannie Mae stock price target to $4.50 on valuation",
-      "url": "https://www.investing.com/news/analyst-ratings/briley-lowers-fannie-mae-stock-price-target-to-450-on-valuation-93CH-4979763",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "UK’s Healey offers billions of pounds of help for households amid global economic storms",
-      "url": "https://www.investing.com/news/economy-news/uks-healey-offers-billions-of-pounds-of-help-for-households-amid-global-economic-storms-4979704",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-28T14:30:48Z"
-    },
-    {
-      "headline": "Anthropic IPO filing warns some risks may be uninsurable. AI coverage will be issue for every company",
-      "url": "https://www.cnbc.com/2026/10/28/anthropic-ipo-ai-risks-insurance.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-28T14:01:44Z"
-    },
-    {
-      "headline": "BANK OF CANADA RAISES GROWTH AND INFLATION FORECASTS The Bank of Canada raised its 2026 GDP growth forecast to 1.0% from 0.7%, while lifting its 2027 projection to 2.0% from 1.8%. Inflation forecas...",
-      "url": "https://t.me/WalterBloomberg/37497",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-10-28T14:01:44Z"
-    },
-    {
-      "headline": "UK budget unveils energy relief, housing funds; 2027 growth forecast cut",
-      "url": "https://www.investing.com/news/economy-news/healey-cuts-uk-fiscal-headroom-to-15-bln-as-iran-war-bites-shuns-broad-tax-rises-4979228",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-28T13:15:52Z"
     }
   ]
 }
