@@ -1,17 +1,28 @@
 {
-  "date": "2026-10-28",
-  "dateLabel": "Wednesday, October 28",
+  "date": "2026-10-29",
+  "dateLabel": "Thursday, October 29",
   "events": [
     {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Petroleum Status Report",
-      "kind": "crude_stocks",
-      "prev": "crude stocks -3.1M bbl",
-      "actual": "crude stocks -1.9M bbl"
+      "time": "8:30 AM ET",
+      "event": "Initial Jobless Claims",
+      "kind": "initial_claims",
+      "prev": "194K"
     },
     {
-      "time": "2:00 PM ET",
-      "event": "FOMC Rate Decision"
+      "time": "8:30 AM ET",
+      "event": "GDP (Advance Estimate), 3rd Quarter 2026",
+      "kind": "gdp"
+    },
+    {
+      "time": "8:30 AM ET",
+      "event": "Personal Income and Outlays, September 2026",
+      "kind": "pce"
+    },
+    {
+      "time": "10:30 AM ET",
+      "event": "EIA Weekly Natural Gas Storage Report",
+      "kind": "natural_gas_storage",
+      "prev": "natural gas +77 Bcf"
     }
   ],
   "note": null,
