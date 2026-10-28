@@ -1158,3 +1158,22 @@ a.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border
 
 .trade-link{text-decoration:none;font-size:12px;opacity:.55;margin-left:4px}
 .trade-link:hover,.trade-link:focus{opacity:1}
+
+/* === Centered heroes + OnDeck Book heading spacing (preview/center-content-2026-10-28, Keith 2026-10-28) ===
+   Overview + The Record: hero content center-aligned (center-top); grids/toolbars below stay full-width and left.
+   Every .daily-entry (brief/tape hubs + all dated pages, both themes): THE ONDECK BOOK heading gets real top spacing. */
+.page-overview .hero .container,
+.page-record .hero .container { text-align: center; }
+.page-overview .hero .hero-sub,
+.page-record .hero .hero-sub,
+.page-overview .hero p,
+.page-record .hero p { margin-left: auto; margin-right: auto; }
+.page-overview .hero .row,
+.page-record .hero .row { justify-content: center; }
+.page-overview .range-tabs,
+.page-record .range-tabs { justify-content: center; }
+.page-overview .stat-row,
+.page-record .stat-row { justify-content: center; }
+.page-overview .hero .share-bar,
+.page-record .hero .share-bar { justify-content: center; }
+.daily-entry h4 { margin-top: 1.75em; }
