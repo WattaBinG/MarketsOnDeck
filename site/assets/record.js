@@ -254,14 +254,18 @@ document.addEventListener('DOMContentLoaded', function () {
     var wins = scoped.filter(function (t) { return t.realizedGain > 0; }).length;
     var losses = scoped.filter(function (t) { return t.realizedGain < 0; }).length;
     var winRate = (wins + losses) ? (100 * wins / (wins + losses)) : 0;
-    var biggestWin = scoped.reduce(function (m, t) { return (!m || t.realizedGain > m.realizedGain) ? t : m; }, null);
-    var biggestLoss = scoped.reduce(function (m, t) { return (!m || t.realizedGain < m.realizedGain) ? t : m; }, null);
+    var biggestWin = scoped.reduce(function (m, t) { return (t.realizedGain > 0 && (!m || t.realizedGain > m.realizedGain)) ? t : m; }, null);
+    var biggestLoss = scoped.reduce(function (m, t) { return (t.realizedGain < 0 && (!m || t.realizedGain < m.realizedGain)) ? t : m; }, null);
 
     setText('statTotalPnl', money(totalGain), totalGain >= 0 ? 'gain' : 'loss');
     setText('statWinRate', winRate.toFixed(1) + '%');
     setText('statTotalTrades', String(scoped.length));
     var feesSum = scoped.reduce(function (sum, t) { var f = feeValue(t); return sum + (f || 0); }, 0);
-    setText('statFees', money(feesSum));
+    setText('statFees', feeMoney(feesSum));
+    var wc = document.getElementById('statBiggestWinCard');
+    var lc = document.getElementById('statBiggestLossCard');
+    if (wc) wc.hidden = !biggestWin;
+    if (lc) lc.hidden = !biggestLoss;
     if (biggestWin) setText('statBiggestWin', money(biggestWin.realizedGain) + ' ' + biggestWin.symbol);
     if (biggestLoss) setText('statBiggestLoss', money(biggestLoss.realizedGain) + ' ' + biggestLoss.symbol);
     state.scopedBiggestWin = biggestWin;
@@ -413,7 +417,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '<td class="col-optional"><span class="badge-type">' + typeLabel(t.assetType) + '</span></td>' +
         '<td class="num col-optional">' + escapeHtml(JournalFormat.quantity(t)) + '</td>' +
         '<td class="num col-optional">' + JournalFormat.closePrices(t) + '</td>' +
-        '<td class="num col-optional">' + (feeValue(t) != null ? money(feeValue(t)) : '—') + '</td>' +
+        '<td class="num col-optional">' + (feeValue(t) != null ? feeMoney(feeValue(t)) : '—') + '</td>' +
         '<td class="num ' + dir + '">' + money(t.realizedGain) + '</td>' +
         '</tr>';
     }).join('');
@@ -466,6 +470,10 @@ document.addEventListener('DOMContentLoaded', function () {
   function money(n) {
     var sign = n > 0 ? '+' : (n < 0 ? '-' : '');
     return sign + '$' + Math.abs(n).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  }
+
+  function feeMoney(n) {
+    return '$' + Math.abs(n).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   }
 
   function escapeHtml(s) {

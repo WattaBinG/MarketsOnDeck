@@ -1,12 +1,16 @@
 {
-  "date": "2026-10-21",
-  "dateLabel": "Wednesday, October 21",
+  "date": "2026-10-28",
+  "dateLabel": "Wednesday, October 28",
   "events": [
     {
       "time": "10:30 AM ET",
       "event": "EIA Weekly Petroleum Status Report",
       "kind": "crude_stocks",
-      "actual": "crude stocks -3.1M bbl"
+      "prev": "crude stocks -3.1M bbl"
+    },
+    {
+      "time": "2:00 PM ET",
+      "event": "FOMC Rate Decision"
     }
   ],
   "note": null,

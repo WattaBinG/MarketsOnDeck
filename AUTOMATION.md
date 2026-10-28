@@ -221,6 +221,34 @@ conflicts with them.
 
 Each indexable page carries a canonical link, Open Graph and Twitter tags (image: `/assets/brand/badge-1200.jpg`), and a JSON-LD block. When you write a new Morning Brief, Market Tape or Record edition by copying the previous page, keep that whole head block and update the canonical URL, `og:title`, `og:description`, `og:url`, the JSON-LD `name`/`description`/`url`, and the sitemap `lastmod`. Do not delete or reset these tags.
 
+## Dated Brief/Tape pages (added 2026-10-24)
+
+Every Brief and Tape entry also lives as its own dated canonical page
+(`/brief/<YYYY-MM-DD>/`, `/market-tape/<YYYY-MM-DD>/`) with a per-day title,
+meta description, OG tags and a NewsArticle JSON-LD block whose author is the
+MarketsOnDeck publication byline entity (never a personal name). The hubs stay
+the authoring surface: entries are committed to the hub exactly as before,
+then the packaging step runs:
+
+    python3 scripts/build_dated_pages.py
+
+It creates any missing dated pages, points the hubs' Jump To list items at the
+dated URLs, regenerates `site/news-sitemap.xml` (last 48 hours) and the
+dated-pages block of `site/sitemap.xml`, and records each page in
+`data/dated-pages.json`. It is idempotent - run it after every entry commit,
+from either lane.
+
+HOLD GATE: `data/publish-holds.json` mirrors the story-level hold registry.
+A story key with status `active` must never have a dated page - the generator
+refuses to create one and exits 3 if one exists. Status `no-dated-page` is a
+republish guard (story may live on its hub, never as a dated page). Never
+hand-create a dated page or edit the manifest to work around the gate.
+
+BACKFILL: only entries dated within 5 days get new pages automatically.
+Older entries stay hub-only unless named one by one with `--page-key`.
+After changing the generator's templates, delete the affected page files (or
+their manifest entries) and re-run to force regeneration.
+
 ## Dated trust views (review batch October 7)
 
 The ledger remains an owner-published source. No script in this batch writes

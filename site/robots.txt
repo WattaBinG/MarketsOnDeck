@@ -1,4 +1,7 @@
 # MarketsOnDeck — robots.txt
+# Canonical crawlable paths: /brief/ and /market-tape/ (plus their dated
+# pages). /tape/ is the submissions app (login/submit), not the article
+# archive - it stays disallowed on purpose so the app is never indexed.
 User-agent: *
 Allow: /
 Disallow: /tape/
@@ -62,3 +65,4 @@ Allow: /
 Disallow: /tape/
 
 Sitemap: https://marketsondeck.net/sitemap.xml
+Sitemap: https://marketsondeck.net/news-sitemap.xml

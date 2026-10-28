@@ -141,11 +141,18 @@ def validate_futures(positions):
     metv = [p for p in futures if 'METV26' in str(p.get('symbol', ''))]
     assert len(metv) == 1, 'METV26 futures position must be present'
     m = metv[0]
-    assert m.get('quantity') == 30, 'METV26 must be 30 contracts'
+    if m.get('positionSide') == 'closed':
+        # Closed Oct 22, 2026 (Keith: sold all futures, holds none). A closed row must be explicit.
+        assert m.get('quantity') == 0, 'closed METV26 must carry quantity 0'
+    else:
+        assert m.get('quantity') == 30, 'METV26 must be 30 contracts'
     # (was 10 on Sep 30; +20 added overnight Oct 6-7, avg 2,605.25 implied)
     assert m.get('quantityUnit') == 'contracts'
 
     for p in futures:
+        if p.get('positionSide') == 'closed':
+            assert p.get('quantity') == 0 and p.get('expiration')
+            continue
         assert p.get('quotedAvgCost') and p.get('quotedMark'), (
             f"Futures {p.get('symbol')} missing quoted prices"
         )
@@ -246,10 +253,10 @@ def validate_position_bases(positions, data=None):
         assert not (key[1] in ('TSLA', 'CCL')), (
             f'Unexpected remaining option position: {key}')
 
-    # USDG: 102.582488 units, cash-like
+    # USDG: 103.01701 units, cash-like (Robinhood web Holdings read, Oct 22 2026 ~6:10 PM ET; Earn accrual from 102.582488 carried Oct 9)
     usdg = [p for p in positions['positions'] if p.get('symbol') == 'USDG']
     assert len(usdg) == 1, 'USDG position missing'
-    assert abs(usdg[0].get('quantity', 0) - 102.582488) < 0.000001
+    assert abs(usdg[0].get('quantity', 0) - 103.01701) < 0.000001
 
 
 if __name__ == '__main__':
