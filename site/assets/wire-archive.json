@@ -1,6 +1,139 @@
 {
   "items": [
     {
+      "headline": "Monthly wind generation in ISO-NE is about 68% higher than last year",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68304",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Minutes of the Board's discount rate meetings on August 17, September 9, and September 16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261013a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "SEC Proposes Expanding Securities Eligible for Cross Trading by Registered Funds",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-104-sec-proposes-expanding-securities-eligible-cross-trading-registered-funds",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Federal Reserve Board releases results of the 2025 Survey of Consumer Finances, which provides the public and policymakers with detailed insights into the economic condition of American families",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/other20261009a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-09T13:00:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "UBS posts $2.7 billion profit, speeds up share buybacks",
+      "url": "https://www.investing.com/news/stock-market-news/ubs-meets-expectations-with-27-billion-q3-profit-4977500",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-28T06:01:31Z"
+    },
+    {
+      "headline": "Luxury cruise passengers stranded in Cambodia due to soaring fuel costs",
+      "url": "https://www.bbc.co.uk/news/articles/cwj342k62exyo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T03:15:51Z"
+    },
+    {
+      "headline": "Labubu-maker Pop Mart's shares extend declines as third-quarter sales plunge",
+      "url": "https://www.cnbc.com/2026/10/28/labubu-pop-mart-third-quarter-earnings.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-28T03:01:24Z"
+    },
+    {
+      "headline": "Indian investors rush to Nvidia, SpaceX, Apple as local trading apps roll out access to U.S. stocks",
+      "url": "https://www.cnbc.com/2026/10/28/india-us-stocks-retail-access.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T00:15:43Z"
+    },
+    {
+      "headline": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+      "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-27T23:46:32Z"
+    },
+    {
+      "headline": "China's families are now supporting more old people than kids",
+      "url": "https://www.bbc.co.uk/news/articles/cr20wzwyzl1qo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-28T00:15:43Z"
+    },
+    {
+      "headline": "Israeli elections a 'referendum' on Netanyahu, security and whether Israel will 'remain a democracy'",
+      "url": "https://www.france24.com/en/israeli-elections-a-referendum-on-netanyahu-security-and-whether-israel-will-remain-a-democracy",
+      "source": "France 24",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-27T18:46:43Z"
+    },
+    {
+      "headline": "VisionQuest is what happens when AI really goes rogue",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1017064/visionquest-marvel-rogue-ai",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-27T17:31:38Z"
+    },
+    {
+      "headline": "Anthropic's IPO could be 'speculative fiction' or a 'generational moment' — investors are split",
+      "url": "https://www.cnbc.com/2026/10/27/-anthropic-ipo-investors-growth-losses-s-1.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-27T17:31:38Z"
+    },
+    {
+      "headline": "How Broadcom’s stock can surge and overcome ‘the biggest dislocation in the market’",
+      "url": "https://www.marketwatch.com/story/how-broadcoms-stock-can-surge-and-overcome-the-biggest-dislocation-in-the-market-9719e2a8?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Movers",
+      "timestamp": "2026-10-27T15:16:54Z"
+    },
+    {
+      "headline": "Meta AI director Rohit Patel leaves to take on Microsoft Office and Google Workspace",
+      "url": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-27T15:01:07Z"
+    },
+    {
+      "headline": "Flavor Flav, Hillary Clinton weigh in as WNBA takes flak for weekday lunchtime finals game",
+      "url": "https://www.cnbc.com/2026/10/28/wnba-atlanta-dream-golden-state-valkyries-flavor-flav-hillary-clinton-.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T07:46:27Z"
+    },
+    {
+      "headline": "ASMPT Swings To Profit In Q3 As Revenue Up 48.7%, Shares Down",
+      "url": "https://www.nasdaq.com/articles/asmpt-swings-profit-q3-revenue-487-shares-down",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-10-28T08:00:45Z"
+    },
+    {
       "headline": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
       "source": "Federal Reserve",
@@ -1266,139 +1399,6 @@
       "source": "Investing.com",
       "category": "Macro",
       "timestamp": "2026-10-28T02:01:28Z"
-    },
-    {
-      "headline": "'An annoying buzz': The search for stealthier drones",
-      "url": "https://www.bbc.co.uk/news/articles/ck1exgejq3xvo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-28T00:15:43Z"
-    },
-    {
-      "headline": "US judge says he will rule Wednesday in lawsuit over California voter rolls",
-      "url": "https://www.investing.com/news/economy-news/us-judge-says-he-will-rule-wednesday-in-lawsuit-over-california-voter-rolls-4977254",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-28T00:00:49Z"
-    },
-    {
-      "headline": "SK Hynix shares soar over 10 % as profit beats, chipmaker to return $25 billion to investors",
-      "url": "https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-27T23:46:32Z"
-    },
-    {
-      "headline": "CoreWeave and other AI stocks rise as Anthropic restores the market’s faith in sustained spending",
-      "url": "https://www.marketwatch.com/story/coreweave-and-other-ai-stocks-rise-as-anthropic-restores-the-markets-faith-in-sustained-spending-c71d7186?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "AI",
-      "timestamp": "2026-10-27T21:45:47Z"
-    },
-    {
-      "headline": "Researchers are getting tired of OpenAI gatekeeping its breakthroughs",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1019921/openai-breakthrough-math-computer-science-physics",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-27T21:00:48Z"
-    },
-    {
-      "headline": "Test Funnel",
-      "url": "https://www.benzinga.com/money/test-funnel-up",
-      "source": "Benzinga",
-      "category": "Markets",
-      "timestamp": "2026-10-27T21:00:48Z"
-    },
-    {
-      "headline": "TRUMP LIVE https://t.co/UYJCOtsweC",
-      "url": "https://t.me/WalterBloomberg/37477",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-27T19:46:32Z"
-    },
-    {
-      "headline": "VANCE: I UNDERSTAND GASOLINE PRICES ARE HIGH",
-      "url": "https://t.me/WalterBloomberg/37476",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-27T19:46:32Z"
-    },
-    {
-      "headline": "Disruptive raises $10B fund to make big bets on at least 10 companies",
-      "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-27T19:16:41Z"
-    },
-    {
-      "headline": "Amazon's anti-tokenmaxxing memo says engineers should be pickier about using AI",
-      "url": "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-27T18:46:43Z"
-    },
-    {
-      "headline": "The big reason Boeing’s stock is falling so hard after earnings",
-      "url": "https://www.marketwatch.com/story/the-big-reason-boeings-stock-is-falling-so-hard-after-earnings-d31b400d?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-27T18:16:44Z"
-    },
-    {
-      "headline": "Firefox’s Smart Window adds AI form filling and webpage monitoring",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-27T16:46:09Z"
-    },
-    {
-      "headline": "A leading Silicon Valley cheerleader just showed all the reasons to be worried about the AI bubble",
-      "url": "https://www.marketwatch.com/story/a-leading-silicon-valley-cheerleader-just-showed-all-the-reasons-to-be-worried-about-the-ai-bubble-e3b32fe1?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-27T11:46:27Z"
-    },
-    {
-      "headline": "LG Electronics Q3 Operating Profit Rises",
-      "url": "https://www.nasdaq.com/articles/lg-electronics-q3-operating-profit-rises",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T06:32:39Z"
-    },
-    {
-      "headline": "Elon Musk Says SpaceX Is Now a \"Super Intelligence\" Company",
-      "url": "https://www.nasdaq.com/articles/elon-musk-says-spacex-now-super-intelligence-company",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T06:15:43Z"
-    },
-    {
-      "headline": "CoStar (CSGP) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/costar-csgp-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-28T06:15:43Z"
-    },
-    {
-      "headline": "AI startup Anthropic unveils its public IPO filing for the first time",
-      "url": "https://www.nbcnews.com/video/ai-startup-anthropic-unveils-its-public-ipo-filing-for-the-first-time-272224837929",
-      "source": "NBC News",
-      "category": "Movers",
-      "timestamp": "2026-10-26T15:15:51Z"
-    },
-    {
-      "headline": "Anthropic warns of 'catastrophic risk' to humankind ahead of blockbuster share listing",
-      "url": "https://www.bbc.co.uk/news/articles/cq398p1wd1evo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "AI",
-      "timestamp": "2026-10-26T13:32:07Z"
-    },
-    {
-      "headline": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
-      "source": "SEC",
-      "category": "Movers",
-      "timestamp": "2026-10-16T02:08:15Z"
     }
   ]
 }
