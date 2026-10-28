@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-27",
-  "dateLabel": "Tuesday, October 27",
+  "date": "2026-10-28",
+  "dateLabel": "Wednesday, October 28",
   "note": null,
   "thresholds": {
     "beat": 0.02,
@@ -11,151 +11,17 @@
   },
   "today": [
     {
-      "ticker": "V",
-      "company": "Visa Inc.",
-      "epsEst": 3.43,
+      "ticker": "MSFT",
+      "company": "Microsoft Corporation",
+      "epsEst": 4.71,
       "actualEps": null,
       "slot": "AMC",
-      "link": "https://www.nasdaq.com/market-activity/stocks/v",
-      "date": "2026-10-27",
+      "link": "https://www.nasdaq.com/market-activity/stocks/msft",
+      "date": "2026-10-28",
       "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
     },
-    {
-      "ticker": "KO",
-      "company": "Coca-Cola Company (The)",
-      "epsEst": 0.87,
-      "actualEps": null,
-      "slot": "BMO",
-      "link": "https://www.nasdaq.com/market-activity/stocks/ko",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "HSBC",
-      "company": "HSBC Holdings plc",
-      "epsEst": 2.13,
-      "actualEps": null,
-      "slot": null,
-      "link": "https://www.nasdaq.com/market-activity/stocks/hsbc",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "NVS",
-      "company": "Novartis AG",
-      "epsEst": 2.25,
-      "actualEps": null,
-      "slot": "BMO",
-      "link": "https://www.nasdaq.com/market-activity/stocks/nvs",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "BA",
-      "company": "Boeing Company (The)",
-      "epsEst": 0.21,
-      "actualEps": null,
-      "slot": "BMO",
-      "link": "https://www.nasdaq.com/market-activity/stocks/ba",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "STX",
-      "company": "Seagate Technology Holdings PLC",
-      "epsEst": 7.17,
-      "actualEps": null,
-      "slot": "AMC",
-      "link": "https://www.nasdaq.com/market-activity/stocks/stx",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "SPGI",
-      "company": "S&P Global Inc.",
-      "epsEst": 4.43,
-      "actualEps": null,
-      "slot": "BMO",
-      "link": "https://www.nasdaq.com/market-activity/stocks/spgi",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "GLW",
-      "company": "Corning Incorporated",
-      "epsEst": 0.89,
-      "actualEps": null,
-      "slot": "BMO",
-      "link": "https://www.nasdaq.com/market-activity/stocks/glw",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "HCA",
-      "company": "HCA Healthcare, Inc.",
-      "epsEst": 6.74,
-      "actualEps": null,
-      "slot": "BMO",
-      "link": "https://www.nasdaq.com/market-activity/stocks/hca",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "WM",
-      "company": "Waste Management, Inc.",
-      "epsEst": 2.18,
-      "actualEps": null,
-      "slot": "AMC",
-      "link": "https://www.nasdaq.com/market-activity/stocks/wm",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "FCX",
-      "company": "Freeport-McMoran, Inc.",
-      "epsEst": 0.8,
-      "actualEps": null,
-      "slot": "BMO",
-      "link": "https://www.nasdaq.com/market-activity/stocks/fcx",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    },
-    {
-      "ticker": "AMT",
-      "company": "American Tower Corporation (REIT)",
-      "epsEst": 2.78,
-      "actualEps": null,
-      "slot": "BMO",
-      "link": "https://www.nasdaq.com/market-activity/stocks/amt",
-      "date": "2026-10-27",
-      "source": "Nasdaq earnings calendar (public API)",
-      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-27",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00"
-    }
-  ],
-  "weekAhead": [
     {
       "ticker": "GOOG",
       "company": "Alphabet Inc.",
@@ -166,8 +32,7 @@
       "date": "2026-10-28",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
-      "dayLabel": "Wed, Oct 28"
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
     },
     {
       "ticker": "GOOGL",
@@ -179,22 +44,118 @@
       "date": "2026-10-28",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
-      "dayLabel": "Wed, Oct 28"
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
     },
     {
-      "ticker": "MSFT",
-      "company": "Microsoft Corporation",
-      "epsEst": 4.71,
+      "ticker": "GEV",
+      "company": "GE Vernova Inc.",
+      "epsEst": 4.03,
       "actualEps": null,
-      "slot": "AMC",
-      "link": "https://www.nasdaq.com/market-activity/stocks/msft",
+      "slot": "BMO",
+      "link": "https://www.nasdaq.com/market-activity/stocks/gev",
       "date": "2026-10-28",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
-      "dayLabel": "Wed, Oct 28"
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
     },
+    {
+      "ticker": "KLAC",
+      "company": "KLA Corporation",
+      "epsEst": 1.18,
+      "actualEps": null,
+      "slot": "AMC",
+      "link": "https://www.nasdaq.com/market-activity/stocks/klac",
+      "date": "2026-10-28",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
+    },
+    {
+      "ticker": "SAN",
+      "company": "Banco Santander, S.A.",
+      "epsEst": 0.26,
+      "actualEps": null,
+      "slot": "BMO",
+      "link": "https://www.nasdaq.com/market-activity/stocks/san",
+      "date": "2026-10-28",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
+    },
+    {
+      "ticker": "APH",
+      "company": "Amphenol Corporation",
+      "epsEst": 0.73,
+      "actualEps": null,
+      "slot": "BMO",
+      "link": "https://www.nasdaq.com/market-activity/stocks/aph",
+      "date": "2026-10-28",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
+    },
+    {
+      "ticker": "NOW",
+      "company": "ServiceNow, Inc.",
+      "epsEst": 0.56,
+      "actualEps": null,
+      "slot": "AMC",
+      "link": "https://www.nasdaq.com/market-activity/stocks/now",
+      "date": "2026-10-28",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
+    },
+    {
+      "ticker": "TMUS",
+      "company": "T-Mobile US, Inc.",
+      "epsEst": 2.86,
+      "actualEps": null,
+      "slot": "AMC",
+      "link": "https://www.nasdaq.com/market-activity/stocks/tmus",
+      "date": "2026-10-28",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
+    },
+    {
+      "ticker": "UBS",
+      "company": "UBS AG",
+      "epsEst": 0.91,
+      "actualEps": null,
+      "slot": "BMO",
+      "link": "https://www.nasdaq.com/market-activity/stocks/ubs",
+      "date": "2026-10-28",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
+    },
+    {
+      "ticker": "BBVA",
+      "company": "Banco Bilbao Vizcaya Argentaria S.A.",
+      "epsEst": 0.62,
+      "actualEps": null,
+      "slot": "AMC",
+      "link": "https://www.nasdaq.com/market-activity/stocks/bbva",
+      "date": "2026-10-28",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
+    },
+    {
+      "ticker": "FTNT",
+      "company": "Fortinet, Inc.",
+      "epsEst": 0.77,
+      "actualEps": null,
+      "slot": "AMC",
+      "link": "https://www.nasdaq.com/market-activity/stocks/ftnt",
+      "date": "2026-10-28",
+      "source": "Nasdaq earnings calendar (public API)",
+      "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-28",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00"
+    }
+  ],
+  "weekAhead": [
     {
       "ticker": "AMZN",
       "company": "Amazon.com, Inc.",
@@ -205,7 +166,7 @@
       "date": "2026-10-29",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-29",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00",
       "dayLabel": "Thu, Oct 29"
     },
     {
@@ -218,7 +179,7 @@
       "date": "2026-10-29",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-29",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00",
       "dayLabel": "Thu, Oct 29"
     },
     {
@@ -231,7 +192,7 @@
       "date": "2026-10-29",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-29",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00",
       "dayLabel": "Thu, Oct 29"
     },
     {
@@ -244,7 +205,7 @@
       "date": "2026-10-30",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-30",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00",
       "dayLabel": "Fri, Oct 30"
     },
     {
@@ -257,7 +218,7 @@
       "date": "2026-10-30",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-30",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00",
       "dayLabel": "Fri, Oct 30"
     },
     {
@@ -270,11 +231,11 @@
       "date": "2026-10-30",
       "source": "Nasdaq earnings calendar (public API)",
       "sourceUrl": "https://api.nasdaq.com/api/calendar/earnings?date=2026-10-30",
-      "fetchedAt": "2026-10-27T11:03:20.401226+00:00",
+      "fetchedAt": "2026-10-28T09:56:49.614432+00:00",
       "dayLabel": "Fri, Oct 30"
     }
   ],
-  "updatedAt": "2026-10-27T11:03:20.401226+00:00",
+  "updatedAt": "2026-10-28T09:56:49.614432+00:00",
   "provenance": {
     "source": "Nasdaq earnings calendar (public API)",
     "apiPattern": "https://api.nasdaq.com/api/calendar/earnings?date=YYYY-MM-DD",
