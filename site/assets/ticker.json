@@ -1,1 +1,195 @@
-{"asOf": "2026-10-28T16:00:31Z", "asOfLabel": "12:00 PM ET", "pinned": ["SPY", "QQQ", "DIA"], "source": "robinhood", "items": [{"symbol": "NVDA", "price": 217.28, "change": -0.66, "changePercent": -0.3, "held": true}, {"symbol": "SPCX", "price": 144.64, "change": -3.94, "changePercent": -2.65, "held": true}, {"symbol": "QUBT", "price": 6.78, "change": -0.09, "changePercent": -1.38, "held": true}, {"symbol": "SOFI", "price": 16.89, "change": 0.49, "changePercent": 2.96, "held": true}, {"symbol": "KLAC", "price": 158.55, "change": 4.89, "changePercent": 3.18, "held": true}, {"symbol": "ABBV", "price": 287.56, "change": 1.17, "changePercent": 0.41, "held": true}, {"symbol": "CCL", "price": 27.89, "change": 0.15, "changePercent": 0.54, "held": true}, {"symbol": "LLY", "price": 1291.57, "change": 9.65, "changePercent": 0.75, "held": true}, {"symbol": "SPCH", "price": 8.81, "change": -0.52, "changePercent": -5.52}, {"symbol": "TSLA", "price": 401.41, "change": -6.05, "changePercent": -1.48}, {"symbol": "PLTR", "price": 194.71, "change": -4.02, "changePercent": -2.03}, {"symbol": "GOOGL", "price": 324.12, "change": 3.54, "changePercent": 1.1}, {"symbol": "META", "price": 614.35, "change": -5.84, "changePercent": -0.94}, {"symbol": "AMD", "price": 567.05, "change": 6.79, "changePercent": 1.21}, {"symbol": "AAPL", "price": 345.26, "change": -1.84, "changePercent": -0.53}, {"symbol": "MSFT", "price": 527.49, "change": -3.84, "changePercent": -0.72}, {"symbol": "COIN", "price": 158.64, "change": -2.45, "changePercent": -1.52}, {"symbol": "AMZN", "price": 252.31, "change": -0.79, "changePercent": -0.31}, {"symbol": "SPY", "price": 771.32, "change": 1.66, "changePercent": 0.22}, {"symbol": "LULU", "price": 105.73, "change": 1.14, "changePercent": 1.09}, {"symbol": "QQQ", "price": 722.2, "change": 0.95, "changePercent": 0.13}, {"symbol": "INTC", "price": 93.72, "change": -0.02, "changePercent": -0.02}, {"symbol": "DIA", "price": 524.73, "change": 1.45, "changePercent": 0.28}, {"symbol": "IWM", "price": 280.11, "change": -0.07, "changePercent": -0.02}, {"symbol": "BSX", "price": 42.4, "change": -2.66, "changePercent": -5.9}, {"symbol": "VRT", "price": 236.28, "change": 27.72, "changePercent": 13.29}, {"symbol": "CSGP", "price": 27.95, "change": -4.06, "changePercent": -12.7}, {"symbol": "MU", "price": 971.16, "change": 42.4, "changePercent": 4.57}, {"symbol": "FLEX", "price": 91.4, "change": 8.05, "changePercent": 9.66}, {"symbol": "BKR", "price": 56.2, "change": -2.8, "changePercent": -4.75}]}
+{
+  "asOf": "2026-10-28T16:00:31Z",
+  "asOfLabel": "12:00 PM ET",
+  "pinned": [
+    "SPY",
+    "QQQ",
+    "DIA",
+    "IWM",
+    "USO"
+  ],
+  "source": "robinhood",
+  "items": [
+    {
+      "symbol": "SPY",
+      "price": 771.32,
+      "change": 1.66,
+      "changePercent": 0.22
+    },
+    {
+      "symbol": "QQQ",
+      "price": 722.2,
+      "change": 0.95,
+      "changePercent": 0.13
+    },
+    {
+      "symbol": "DIA",
+      "price": 524.73,
+      "change": 1.45,
+      "changePercent": 0.28
+    },
+    {
+      "symbol": "IWM",
+      "price": 280.11,
+      "change": -0.07,
+      "changePercent": -0.02
+    },
+    {
+      "symbol": "SPCX",
+      "price": 144.64,
+      "change": -3.94,
+      "changePercent": -2.65,
+      "held": true
+    },
+    {
+      "symbol": "SOFI",
+      "price": 16.89,
+      "change": 0.49,
+      "changePercent": 2.96,
+      "held": true
+    },
+    {
+      "symbol": "QUBT",
+      "price": 6.78,
+      "change": -0.09,
+      "changePercent": -1.38,
+      "held": true
+    },
+    {
+      "symbol": "KLAC",
+      "price": 158.55,
+      "change": 4.89,
+      "changePercent": 3.18,
+      "held": true
+    },
+    {
+      "symbol": "LLY",
+      "price": 1291.57,
+      "change": 9.65,
+      "changePercent": 0.75,
+      "held": true
+    },
+    {
+      "symbol": "ABBV",
+      "price": 287.56,
+      "change": 1.17,
+      "changePercent": 0.41,
+      "held": true
+    },
+    {
+      "symbol": "NVDA",
+      "price": 217.28,
+      "change": -0.66,
+      "changePercent": -0.3,
+      "held": true
+    },
+    {
+      "symbol": "CCL",
+      "price": 27.89,
+      "change": 0.15,
+      "changePercent": 0.54
+    },
+    {
+      "symbol": "SPCH",
+      "price": 8.81,
+      "change": -0.52,
+      "changePercent": -5.52
+    },
+    {
+      "symbol": "TSLA",
+      "price": 401.41,
+      "change": -6.05,
+      "changePercent": -1.48
+    },
+    {
+      "symbol": "PLTR",
+      "price": 194.71,
+      "change": -4.02,
+      "changePercent": -2.03
+    },
+    {
+      "symbol": "GOOGL",
+      "price": 324.12,
+      "change": 3.54,
+      "changePercent": 1.1
+    },
+    {
+      "symbol": "META",
+      "price": 614.35,
+      "change": -5.84,
+      "changePercent": -0.94
+    },
+    {
+      "symbol": "AMD",
+      "price": 567.05,
+      "change": 6.79,
+      "changePercent": 1.21
+    },
+    {
+      "symbol": "AAPL",
+      "price": 345.26,
+      "change": -1.84,
+      "changePercent": -0.53
+    },
+    {
+      "symbol": "MSFT",
+      "price": 527.49,
+      "change": -3.84,
+      "changePercent": -0.72
+    },
+    {
+      "symbol": "COIN",
+      "price": 158.64,
+      "change": -2.45,
+      "changePercent": -1.52
+    },
+    {
+      "symbol": "AMZN",
+      "price": 252.31,
+      "change": -0.79,
+      "changePercent": -0.31
+    },
+    {
+      "symbol": "LULU",
+      "price": 105.73,
+      "change": 1.14,
+      "changePercent": 1.09
+    },
+    {
+      "symbol": "INTC",
+      "price": 93.72,
+      "change": -0.02,
+      "changePercent": -0.02
+    },
+    {
+      "symbol": "BSX",
+      "price": 42.4,
+      "change": -2.66,
+      "changePercent": -5.9
+    },
+    {
+      "symbol": "VRT",
+      "price": 236.28,
+      "change": 27.72,
+      "changePercent": 13.29
+    },
+    {
+      "symbol": "CSGP",
+      "price": 27.95,
+      "change": -4.06,
+      "changePercent": -12.7
+    },
+    {
+      "symbol": "MU",
+      "price": 971.16,
+      "change": 42.4,
+      "changePercent": 4.57
+    },
+    {
+      "symbol": "FLEX",
+      "price": 91.4,
+      "change": 8.05,
+      "changePercent": 9.66
+    }
+  ]
+}
