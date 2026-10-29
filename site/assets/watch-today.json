@@ -1,32 +1,14 @@
 {
-  "date": "2026-10-29",
-  "dateLabel": "Thursday, October 29",
+  "date": "2026-10-30",
+  "dateLabel": "Friday, October 30",
   "events": [
     {
-      "time": "8:30 AM ET",
-      "event": "Initial Jobless Claims",
-      "kind": "initial_claims",
-      "prev": "194K",
-      "actual": "194K"
+      "time": "1:00 PM ET",
+      "event": "Baker Hughes Rig Count"
     },
     {
-      "time": "8:30 AM ET",
-      "event": "GDP (Advance Estimate), 3rd Quarter 2026",
-      "kind": "gdp",
-      "actual": "GDP +3.4% annualized"
-    },
-    {
-      "time": "8:30 AM ET",
-      "event": "Personal Income and Outlays, September 2026",
-      "kind": "pce",
-      "actual": "PCE price +0.5% m/m"
-    },
-    {
-      "time": "10:30 AM ET",
-      "event": "EIA Weekly Natural Gas Storage Report",
-      "kind": "natural_gas_storage",
-      "prev": "natural gas +77 Bcf",
-      "actual": "natural gas +80 Bcf"
+      "time": "3:30 PM ET",
+      "event": "CFTC Commitments of Traders"
     }
   ],
   "note": null,
