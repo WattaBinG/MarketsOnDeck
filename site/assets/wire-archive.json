@@ -1,6 +1,307 @@
 {
   "items": [
     {
+      "headline": "Trump says he’ll roll back Biden-era methane rules for oil and gas companies",
+      "url": "https://www.nbcnews.com/science/climate-change/trump-methane-rules-leaks-emissions-oil-gas-rcna605983",
+      "source": "NBC News",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-28T01:46:23Z"
+    },
+    {
+      "headline": "Fed expected to hold interest rates steady as inflation tops midterm voters’ concerns",
+      "url": "https://www.nbcnews.com/business/economy/fed-interest-rates-inflation-midterms-trump-rcna605905",
+      "source": "NBC News",
+      "category": "Macro",
+      "timestamp": "2026-10-27T22:45:45Z"
+    },
+    {
+      "headline": "This is where most people go wrong in their 30s and 40s",
+      "url": "https://www.marketwatch.com/story/the-house-the-kids-college-and-the-raise-where-people-in-their-30s-and-40s-go-wrong-69ec6c90?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-26T19:46:46Z"
+    },
+    {
+      "headline": "Anthropic reveals $80 billion loss, huge spending spree ahead of IPO",
+      "url": "https://www.nbcnews.com/business/markets/anthropic-releases-ipo-filing-ahead-highly-anticipated-stock-debut-rcna605676",
+      "source": "NBC News",
+      "category": "Movers",
+      "timestamp": "2026-10-26T13:32:07Z"
+    },
+    {
+      "headline": "SEC Charges Meyer Global Management and Its CEO With Defrauding Retail Investors in Private Funds That Held Interests in SpaceX and Other Pre-IPO Securities",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-98-sec-charges-meyer-global-management-its-ceo-defrauding-retail-investors-private-funds-held-interests",
+      "source": "SEC",
+      "category": "Movers",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "SEC Charges Two Individuals With Orchestrating Fraud Scheme That Targeted Veterans",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-97-sec-charges-two-individuals-orchestrating-fraud-scheme-targeted-veterans",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "O'Reilly Automotive (ORLY) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/oreilly-automotive-orly-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:46:19Z"
+    },
+    {
+      "headline": "Green Brick Partners (GRBK) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/green-brick-partners-grbk-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:46:19Z"
+    },
+    {
+      "headline": "Ares (ARES) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/ares-ares-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:44:50Z"
+    },
+    {
+      "headline": "Pediatrix (MD) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/pediatrix-md-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:44:50Z"
+    },
+    {
+      "headline": "NextDecade (NEXT) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/nextdecade-next-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:43:37Z"
+    },
+    {
+      "headline": "Bankwell (BWFG) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/bankwell-bwfg-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:43:37Z"
+    },
+    {
+      "headline": "Stock Market Today, Oct. 29: Marvell Falls on Lumentum Acquisition Talks",
+      "url": "https://www.nasdaq.com/articles/stock-market-today-oct-29-marvell-falls-lumentum-acquisition-talks",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:43:30Z"
+    },
+    {
+      "headline": "Why Chipotle Stock Popped Today",
+      "url": "https://www.nasdaq.com/articles/why-chipotle-stock-popped-today-0",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:41:57Z"
+    },
+    {
+      "headline": "Crypto Market Today, Oct. 29: Bitcoin Slides Below $80K as Big Tech Earnings Uncertainty and Market Volatility Intensify",
+      "url": "https://www.nasdaq.com/articles/crypto-market-today-oct-29-bitcoin-slides-below-80k-big-tech-earnings-uncertainty-and",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:40:02Z"
+    },
+    {
+      "headline": "Minerals Technologies Q3 Profit Edges Down",
+      "url": "https://www.nasdaq.com/articles/minerals-technologies-q3-profit-edges-down",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:39:31Z"
+    },
+    {
+      "headline": "Amazon Q3 Profit Falls, Stock Down 6%",
+      "url": "https://www.nasdaq.com/articles/amazon-q3-profit-falls-stock-down-6",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:36:30Z"
+    },
+    {
+      "headline": "Titan International Q3 Loss Widens",
+      "url": "https://www.nasdaq.com/articles/titan-international-q3-loss-widens",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:46:27Z"
+    },
+    {
+      "headline": "Amazon AWS posts 39% revenue growth as cloud rivals also accelerate",
+      "url": "https://www.cnbc.com/2026/10/29/aws-q3-earnings-report-2026.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-29T20:45:47Z"
+    },
+    {
+      "headline": "Sandisk sees revenue nearly quintuple — and a stock split is on the way",
+      "url": "https://www.marketwatch.com/story/sandisk-sees-revenue-nearly-quintuple-and-its-stock-is-heading-higher-b9318916?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-29T20:45:47Z"
+    },
+    {
+      "headline": "Palestinians injured, arrested in Israeli raids across West Bank",
+      "url": "https://www.aljazeera.com/news/2026/10/29/palestinians-injured-arrested-in-israeli-raids-across-west-bank?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-29T21:00:53Z"
+    },
+    {
+      "headline": "Does Russia offer African countries an equal partnership?",
+      "url": "https://www.aljazeera.com/video/inside-story/2026/10/29/does-russia-offer-african-countries-an-equal-partnership?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-29T21:00:53Z"
+    },
+    {
+      "headline": "Reddit shares sink on weak sales guidance and plans login requirement test as Google search traffic shrinks",
+      "url": "https://www.cnbc.com/2026/10/29/reddit-rddt-q3-2026.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-29T20:31:30Z"
+    },
+    {
+      "headline": "Rivian third-quarter earnings beat estimates as software revenue, R2 deliveries rise",
+      "url": "https://www.cnbc.com/2026/10/29/rivian-rivn-earnings-q3-2026.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-29T20:31:30Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces approval of application by The Bank of Nova Scotia",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261029a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-29T20:31:30Z"
+    },
+    {
+      "headline": "Israel election result shows no overall majority as vote count complete",
+      "url": "https://www.aljazeera.com/news/2026/10/29/israel-election-result-shows-no-overall-majority-as-vote-count-complete?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-29T21:00:53Z"
+    },
+    {
+      "headline": "TRUMP PROMISES $5,000 PAYMENT TO EVERY ADULT US CITIZEN IF REPUBLICANS WIN HOUSE, SENATE TRUMP ESTIMATES $5,000 DIVIDEND WOULD COST ABOUT $1 TRILLION, SAYS TARIFF REVENUE WOULD HELP FUND IT TRUMP S...",
+      "url": "https://t.me/WalterBloomberg/37612",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-29T18:31:27Z"
+    },
+    {
+      "headline": "Granola crunches up a dictation feature to compete with Wispr",
+      "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-29T18:01:28Z"
+    },
+    {
+      "headline": "US investigated Chinese spy plot aimed at Nvidia CEO",
+      "url": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-29T16:46:30Z"
+    },
+    {
+      "headline": "Bereaved families will not face tax bill over pension delays under new rules",
+      "url": "https://www.bbc.co.uk/news/articles/cr5yn9zwnp3qo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-29T15:30:48Z"
+    },
+    {
+      "headline": "Alphabet shares record their worst day ever, shedding $500 billion in value",
+      "url": "https://www.nbcnews.com/business/markets/alphabet-google-stock-ai-advertising-rcna606322",
+      "source": "NBC News",
+      "category": "Movers",
+      "timestamp": "2026-10-29T15:16:32Z"
+    },
+    {
+      "headline": "DoorDash to buy Instacart in $17bn deal it says will expand customer options",
+      "url": "https://www.bbc.co.uk/news/articles/cm79pjg2l57yo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Movers",
+      "timestamp": "2026-10-29T15:30:48Z"
+    },
+    {
+      "headline": "Steve Eisman gets more conservative with portfolio as AI trade nears 'tipping point'",
+      "url": "https://www.cnbc.com/2026/10/29/steve-eisman-gets-more-conservative-with-portfolio-as-ai-trade-nears-tipping-point.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-29T14:15:47Z"
+    },
+    {
+      "headline": "Robust consumer spending, AI-related investment power US economy in third quarter",
+      "url": "https://www.investing.com/news/economy-news/us-economic-growth-accelerates-in-third-quarter-4983581",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-29T13:15:48Z"
+    },
+    {
+      "headline": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
+      "url": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Macro",
+      "timestamp": "2026-10-29T10:31:45Z"
+    },
+    {
+      "headline": "Healey provides some breathing space but things still set to get worse for most",
+      "url": "https://www.bbc.co.uk/news/articles/cqe9l4px0yzxo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T17:46:00Z"
+    },
+    {
+      "headline": "Hasan Piker files $72.5 million defamation suit against Scott Jennings",
+      "url": "https://www.nbcnews.com/pop-culture/pop-culture-news/hasan-piker-files-725-million-defamation-suit-scott-jennings-rcna606118",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-28T17:46:00Z"
+    },
+    {
+      "headline": "Your pay, energy bills and savings: How the Budget affects you",
+      "url": "https://www.bbc.co.uk/news/articles/cr0j05vxlwjzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T14:01:44Z"
+    },
+    {
+      "headline": "Earnings call transcript: Hercules Capital posts record Q3 2026 results as stock stays flat",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-hercules-capital-posts-record-q3-2026-results-as-stock-stays-flat-93CH-4985451",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-29T22:01:10Z"
+    },
+    {
+      "headline": "Earnings call transcript: The RealReal tops Q3 2026 estimates, shares rise",
+      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-the-realreal-tops-q3-2026-estimates-shares-rise-93CH-4985446",
+      "source": "Investing.com",
+      "category": "Movers",
+      "timestamp": "2026-10-29T22:00:26Z"
+    },
+    {
+      "headline": "Centerra Gold Inc. Reveals Drop In Q3 Bottom Line",
+      "url": "https://www.nasdaq.com/articles/centerra-gold-inc-reveals-drop-q3-bottom-line",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-10-29T21:47:28Z"
+    },
+    {
+      "headline": "Google value plunges by $500bn as AI fears rattle Wall Street",
+      "url": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:46:27Z"
+    },
+    {
+      "headline": "Invitation Homes (INVH) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/invitation-homes-invh-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-29T21:46:20Z"
+    },
+    {
       "headline": "Is it curtains for COLA? Saving Social Security could mean changing the cost-of-living adjustment.",
       "url": "https://www.marketwatch.com/story/is-it-curtains-for-cola-saving-social-security-could-mean-changing-the-cost-of-living-adjustment-867c6bd8?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -1098,307 +1399,6 @@
       "source": "TechCrunch",
       "category": "AI",
       "timestamp": "2026-10-29T20:01:31Z"
-    },
-    {
-      "headline": "TRUMP WARNS DEMOCRATIC MIDTERM VICTORY WOULD TRIGGER 1929-STYLE ECONOMIC DEPRESSION",
-      "url": "https://t.me/WalterBloomberg/37613",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-29T18:31:27Z"
-    },
-    {
-      "headline": "Record number of purges as Xi emphasises 'party discipline' at China political gathering",
-      "url": "https://www.bbc.co.uk/news/articles/cq5ynw94k7kzo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-29T12:01:48Z"
-    },
-    {
-      "headline": "DoorDash to acquire Instacart for $17 billion, creating delivery giant",
-      "url": "https://www.nbcnews.com/business/corporations/doordash-acquire-instacart-17-billion-rcna605907",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-29T11:45:49Z"
-    },
-    {
-      "headline": "The politics of President Lagarde's European Central Bank early exit  — and who could replace her",
-      "url": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html",
-      "source": "CNBC",
-      "category": "Macro",
-      "timestamp": "2026-10-29T10:15:47Z"
-    },
-    {
-      "headline": "Burnham 'ready to support' Poundland staff as retailer faces collapse",
-      "url": "https://www.bbc.co.uk/news/articles/cqrky1p4dlm7o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-29T10:01:30Z"
-    },
-    {
-      "headline": "AI has come for Arizona’s water",
-      "url": "https://www.theverge.com/cs/features/1016650/arizona-water-data-center-tsmc",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-29T10:01:30Z"
-    },
-    {
-      "headline": "It's a 'socialist' bank — and North Dakota Republicans love it",
-      "url": "https://www.cnbc.com/2026/10/29/bank-north-dakota-socialism-election.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-29T10:15:47Z"
-    },
-    {
-      "headline": "Alphabet tanks nearly 13% for worst day ever, losing $500 billion in value",
-      "url": "https://www.cnbc.com/2026/10/29/alphabet-google-microsoft-msft-shares-today-earnings.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-29T09:16:25Z"
-    },
-    {
-      "headline": "Fed plans to eliminate some rate-setting meetings, chairman says",
-      "url": "https://www.nbcnews.com/business/economy/fed-reduces-interest-rate-meetings-warsh-rcna606190",
-      "source": "NBC News",
-      "category": "Macro",
-      "timestamp": "2026-10-28T19:01:40Z"
-    },
-    {
-      "headline": "Healey unveils £100 for energy bills and bank tax in first Budget",
-      "url": "https://www.bbc.co.uk/news/articles/cqpvgxz3y49go?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-28T20:16:34Z"
-    },
-    {
-      "headline": "Microsoft is ending Copilot support on smart TVs",
-      "url": "https://www.theverge.com/tech/1021143/microsoft-lg-samsung-copilot-ai-assistant-smart-tvs-ending",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-28T18:45:51Z"
-    },
-    {
-      "headline": "Federal Reserve leaves interest rates unchanged despite rising inflation",
-      "url": "https://www.nbcnews.com/business/economy/fed-rates-inflation-warsh-midterms-rcna606154",
-      "source": "NBC News",
-      "category": "Macro",
-      "timestamp": "2026-10-28T18:15:53Z"
-    },
-    {
-      "headline": "Federal Reserve issues FOMC statement",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-28T18:01:15Z"
-    },
-    {
-      "headline": "Netanyahu's bloc leading Israel election but short of majority, partial results show",
-      "url": "https://www.bbc.co.uk/news/articles/cmdx3knq1xexo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-28T17:30:57Z"
-    },
-    {
-      "headline": "TD Cowen raises Quanta Services stock price target on strong quarter",
-      "url": "https://www.investing.com/news/analyst-ratings/td-cowen-raises-quanta-services-stock-price-target-on-strong-quarter-93CH-4985253",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-29T21:00:43Z"
-    },
-    {
-      "headline": "Coinbase Global, Inc. Profit Advances In Q3",
-      "url": "https://www.nasdaq.com/articles/coinbase-global-inc-profit-advances-q3",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:59:52Z"
-    },
-    {
-      "headline": "Credit Acceptance earnings beat by $0.19, revenue fell short of estimates",
-      "url": "https://www.investing.com/news/earnings/credit-acceptance-earnings-beat-by-019-revenue-fell-short-of-estimates-4985236",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-29T20:59:48Z"
-    },
-    {
-      "headline": "Hercules Capital earnings missed by $0.01, revenue fell short of estimates",
-      "url": "https://www.investing.com/news/earnings/hercules-capital-earnings-missed-by-001-revenue-fell-short-of-estimates-4985235",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:59:40Z"
-    },
-    {
-      "headline": "FMC Corp. Q3 Earnings Summary",
-      "url": "https://www.nasdaq.com/articles/fmc-corp-q3-earnings-summary",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:59:24Z"
-    },
-    {
-      "headline": "Acadian (AAMI) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/acadian-aami-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:58:59Z"
-    },
-    {
-      "headline": "AGCO (AGCO) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/agco-agco-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:58:55Z"
-    },
-    {
-      "headline": "White House tempers its tough talk on Canada trade as inflation tops voter concerns",
-      "url": "https://www.nbcnews.com/business/economy/canada-trade-tariffs-trump-maine-midterms-rcna605906",
-      "source": "NBC News",
-      "category": "Macro",
-      "timestamp": "2026-10-27T18:16:44Z"
-    },
-    {
-      "headline": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget",
-      "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Movers",
-      "timestamp": "2026-10-27T00:15:47Z"
-    },
-    {
-      "headline": "My wife cried when I found out she had only $80,000 in her 401(k). I have $2.2 million. Am I wrong to be shocked?",
-      "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-26T10:30:43Z"
-    },
-    {
-      "headline": "Crude oil prices and refinery margins generally increased throughout the third quarter",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68245",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC Coordinates with Global Financial Regulators to Raise Fraud Awareness During World Investor Week",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-101-sec-coordinates-global-financial-regulators-raise-fraud-awareness-during-world-investor-week",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "U.S. natural gas production reached a record high in July 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68225",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC Proposal Would Address How Investment Advisers and Funds Can Custody Crypto Assets Under the Federal Securities Laws",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-100-sec-proposal-would-address-how-investment-advisers-funds-can-custody-crypto-assets-under-federal",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC’s Division of Examinations Announces New Exam Handbook",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-99-secs-division-examinations-announces-new-exam-handbook",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "U.S. exports of propane reached records in the first half of 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68244",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "South Korea picks Texas gas plant as initial project under US investment agreement - FT",
-      "url": "https://x.com/financialjuice/status/2102616635907645842",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Dutch final Q2 GDP rises 0.6% quarter-on-quarter, CBS",
-      "url": "https://x.com/financialjuice/status/2102616603166937303",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "DUTCH GDP QOQ FINAL SA ACTUAL 0.6% (FORECAST 0.4%, PREVIOUS 0.4%) $MACRO",
-      "url": "https://x.com/financialjuice/status/2102616568249086080",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Wash trades on a prediction market? Who could have predicted that? <:neort:875080101035917332>",
-      "url": "https://x.com/zerohedge/status/2102609557390348692",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "China finance ministry offers 3-month bills at 1.1101% yield: traders",
-      "url": "https://x.com/financialjuice/status/2102603788955603390",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "looking beyond price alone: positioning, leverage and flows can become part of the move itself. 6. One of the more interesting rotations underneath the market is happening in financials. As investo...",
-      "url": "https://x.com/fxevolution/status/2102600246106919294",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Is it a coincidence that the 2 key data centers of OpenAI's Stargate are suddenly on the ropes? Project Jupiter (4.5GW) loans trading < 90, major delays... SB Energy (8GW) delaying IPO, major delay...",
-      "url": "https://x.com/zerohedge/status/2102599984399179870",
-      "source": "MarketsOnDeck Discord",
-      "category": "Movers",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Arthur J. Gallagher & Co. Bottom Line Rises In Q3",
-      "url": "https://www.nasdaq.com/articles/arthur-j-gallagher-co-bottom-line-rises-q3",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:44:12Z"
-    },
-    {
-      "headline": "Kymera (KYMR) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/kymera-kymr-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:44:09Z"
-    },
-    {
-      "headline": "PWP Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/pwp-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:43:59Z"
-    },
-    {
-      "headline": "Oshkosh (OSK) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/oshkosh-osk-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:43:59Z"
-    },
-    {
-      "headline": "A. O. Smith (AOS) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/o-smith-aos-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:43:59Z"
-    },
-    {
-      "headline": "Upbound (UPBD) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/upbound-upbd-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:43:59Z"
     }
   ]
 }
