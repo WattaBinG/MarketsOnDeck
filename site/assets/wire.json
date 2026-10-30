@@ -1,23 +1,127 @@
 {
-  "asOf": "2026-10-30T12:46:25Z",
-  "asOfLabel": "8:46 AM ET",
+  "asOf": "2026-10-30T13:01:31Z",
+  "asOfLabel": "9:01 AM ET",
   "topStory": {
-    "headline": "Swiss central bank posts bumper $23bn profit as gold, foreign assets soar",
+    "headline": "Swiss central bank posts bumper $23bn profit thanks to gold, foreign assets",
     "url": "https://www.cnbc.com/2026/10/30/swiss-national-bank-q3-profit-gold-foreign-asset.html",
     "source": "CNBC",
     "category": "Macro",
-    "timestamp": "2026-10-30T12:31:40Z",
+    "timestamp": "2026-10-30T12:46:25Z",
     "firstSeen": "2026-10-30T12:46:25Z",
     "leadSince": "2026-10-30T12:46:25Z",
     "image": "/assets/images/wire-macro.jpg"
   },
   "items": [
     {
+      "headline": "The share of solar generation with co-located battery storage is increasing",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68384",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-30T14:00:00Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "The most dangerous AI trade may not be in tech. It may be in the dollar. <> <:neort:875080101035917332>",
+      "url": "https://www.zerohedge.com/the-market-ear/dollars-20-trillion-ai-problem",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-30T13:01:16Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "GERMAN CPI MOM PRELIM ACTUAL -0.2% (FORECAST 0.1%, PREVIOUS 0.60%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2116153301461028934",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-30T13:01:15Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "🔴 GERMAN CPI YOY PRELIM ACTUAL 2.8% (FORECAST 3%, PREVIOUS 3.30%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2116153287867081098",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-30T13:01:14Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "GERMAN HICP MOM PRELIM ACTUAL -0.1% (FORECAST 0.1%, PREVIOUS 0.60%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2116153275544207664",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-30T13:01:13Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "🔴 GERMAN HICP YOY PRELIM ACTUAL 2.8% (FORECAST 3.1%, PREVIOUS 3.30%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2116153261245993411",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-30T13:01:11Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "Can AI data centers be mass-produced like cars? This startup aims to find out",
+      "url": "https://techcrunch.com/2026/10/30/can-ai-data-centers-be-mass-produced-like-cars-and-online-in-48-hours-this-startup-aims-to-find-out/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-30T13:00:00Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "Palantir, $PLTR, CEO Alex Karp has said that neurodivergent workers will thrive in the AI era",
+      "url": "https://x.com/unusual_whales/status/2116152388335587658",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-30T12:57:11Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "Reddit plunges as Google AI search squeezes traffic",
+      "url": "https://www.investing.com/news/stock-market-news/reddit-pinterest-shares-tumble-on-weak-user-and-revenue-growth-4987225",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T12:54:43Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "AI Default Risk Triples Since Jan As Goldman Clients See \"A Crisis Without A Crisis\" <>",
+      "url": "https://www.zerohedge.com/markets/ai-default-risk-triples-jan-goldman-clients-see-crisis-without-crisis",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-30T12:51:10Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "Canada’s economy stagnates for second month as September contraction looms",
+      "url": "https://www.investing.com/news/economy-news/canadas-economy-stagnates-for-second-month-as-september-contraction-looms-4987628",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T12:50:09Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "Iradimed Co earnings matched, revenue topped estimates",
+      "url": "https://www.investing.com/news/earnings/iradimed-co-earnings-matched-revenue-topped-estimates-4987627",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T12:50:06Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
+      "headline": "Arbor earnings missed by $0.08, revenue fell short of estimates",
+      "url": "https://www.investing.com/news/earnings/arbor-earnings-missed-by-008-revenue-fell-short-of-estimates-4987626",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T12:49:24Z",
+      "firstSeen": "2026-10-30T13:01:31Z"
+    },
+    {
       "headline": "RUSSIA PLANS TO EXPORT 510,000 TONS OF DIESEL IN OCTOBER AND 2.15 MILLION TONS IN NOVEMBER - TASS CITES NOVAK",
       "url": "https://t.me/WalterBloomberg/37644",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Geopolitics",
-      "timestamp": "2026-10-30T12:38:02Z",
+      "timestamp": "2026-10-30T12:46:25Z",
       "firstSeen": "2026-10-30T12:46:25Z"
     },
     {
@@ -25,15 +129,7 @@
       "url": "https://t.me/WalterBloomberg/37643",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Macro",
-      "timestamp": "2026-10-30T12:37:35Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "Uganda’s inflation rises to 3-year high after currency slump",
-      "url": "https://www.investing.com/news/economy-news/ugandas-inflation-rises-to-3year-high-after-currency-slump-4987526",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-30T12:36:55Z",
+      "timestamp": "2026-10-30T12:46:25Z",
       "firstSeen": "2026-10-30T12:46:25Z"
     },
     {
@@ -41,23 +137,7 @@
       "url": "https://t.me/WalterBloomberg/37642",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Geopolitics",
-      "timestamp": "2026-10-30T12:36:38Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "Canada’s economic growth stalls again in August, September likely a decline",
-      "url": "https://www.investing.com/news/economy-news/canadas-economic-growth-stalls-again-in-august-september-likely-a-decline-4987518",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T12:36:27Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "Intel Crashes 25% As \"Surprisingly Severe PC Correction\" Shocks Wall Street <>",
-      "url": "https://www.zerohedge.com/markets/intel-crashes-25-surprisingly-severe-pc-correction-shocks-wall-street",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-30T12:36:11Z",
+      "timestamp": "2026-10-30T12:46:25Z",
       "firstSeen": "2026-10-30T12:46:25Z"
     },
     {
@@ -65,88 +145,8 @@
       "url": "https://t.me/WalterBloomberg/37641",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Geopolitics",
-      "timestamp": "2026-10-30T12:35:33Z",
+      "timestamp": "2026-10-30T12:46:25Z",
       "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "RUSSIA'S NOVAK SAYS UKRAINE ATTACKED RUSSIAN REFINERY OVERNIGHT",
-      "url": "https://t.me/WalterBloomberg/37640",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-30T12:33:02Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "Canadian GDP August Report <>",
-      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/261030/dq261030a-fra.htm?lnk=dai-quo&indid=3569-1&indgeo=0",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-30T12:32:10Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "Why is FTAI Aviation stock sliding today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-ftai-aviation-stock-sliding-today-93CH-4987493",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T12:32:00Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "CANADA AUGUST GDP -0.0% VS JULY 0.0% (REVISED FROM -0.0%); FORECAST WAS +0.2% CANADA SEPTEMBER GDP MOST LIKELY DOWN 0.1% - STATSCAN FLASH ESTIMATE",
-      "url": "https://t.me/WalterBloomberg/37639",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Macro",
-      "timestamp": "2026-10-30T12:30:56Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "Exclusive-Fluor Corp among US firms vying for Kenya critical minerals project, minister says",
-      "url": "https://www.investing.com/news/commodities-news/exclusivefluor-corp-among-us-firms-vying-for-kenya-critical-minerals-project-minister-says-4987409",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T12:30:44Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "ChoiceOne Financial Services earnings beat by $0.04, revenue topped estimates",
-      "url": "https://www.investing.com/news/earnings/choiceone-financial-services-earnings-beat-by-004-revenue-topped-estimates-4987484",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-30T12:30:40Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "Why is ExxonMobil stock rallying today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-exxonmobil-stock-rallying-today-93CH-4987483",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T12:30:37Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "U.S. Q3 EMPLOYMENT COST INDEX +0.8% (CONSENSUS +0.8%) VS Q2 +0.9% (PREV +0.9%) U.S. Q3 WAGES/SALARIES +0.7% VS Q2 +0.9% (PREV +0.9%) U.S. Q3 BENEFIT COSTS +0.9% VS Q2 +1.0% (PREV +1.0%)",
-      "url": "https://t.me/WalterBloomberg/37638",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-30T12:31:27Z",
-      "firstSeen": "2026-10-30T12:31:27Z"
-    },
-    {
-      "headline": "Why is Rocket Companies stock climbing today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-rocket-companies-stock-climbing-today-93CH-4987482",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T12:30:22Z",
-      "firstSeen": "2026-10-30T12:46:25Z"
-    },
-    {
-      "headline": "Gamble on democracy: Inside suspicious election-contracts trading on prediction markets",
-      "url": "https://www.cnbc.com/2026/10/30/gamble-on-democracy-inside-suspicious-election-contracts-trading-on-prediction-markets-.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-30T12:29:37Z",
-      "firstSeen": "2026-10-30T12:29:37Z"
     }
   ]
 }
