@@ -1,6 +1,202 @@
 {
   "items": [
     {
+      "headline": "Litecoin Falls 10% In Rout",
+      "url": "https://www.investing.com/news/cryptocurrency-news/litecoin-falls-10-in-rout-4985641",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T01:00:49Z"
+    },
+    {
+      "headline": "Cardano Falls 10% In Selloff",
+      "url": "https://www.investing.com/news/cryptocurrency-news/cardano-falls-10-in-selloff-4985640",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T00:30:48Z"
+    },
+    {
+      "headline": "Binance mounts urgent response to suspected hack as crypto platforms freeze billions",
+      "url": "https://www.nbcnews.com/business/markets/binance-hack-tether-circle-stablecoins-rcna606445",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-29T23:15:47Z"
+    },
+    {
+      "headline": "Binance 'potential security issue' sees $2.54 billion frozen by the likes of Circle, Tether",
+      "url": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-29T22:30:48Z"
+    },
+    {
+      "headline": "Rivian expands joint venture with VW to include AI assistant",
+      "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-29T20:16:24Z"
+    },
+    {
+      "headline": "You can generate and edit Google Docs files directly in Gemini chats now",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-29T19:01:00Z"
+    },
+    {
+      "headline": "US judge blocks Trump limits to Medicaid work requirement exceptions",
+      "url": "https://www.investing.com/news/economy-news/us-judge-blocks-trump-limits-to-medicaid-work-requirement-exceptions-4984779",
+      "source": "Investing.com",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-29T17:15:46Z"
+    },
+    {
+      "headline": "Amazon posts negative free cash flow of $42.4 billion, holds 2026 capex unchanged",
+      "url": "https://www.cnbc.com/2026/10/29/amazon-amzn-q3-earnings-report-2026.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-29T16:31:27Z"
+    },
+    {
+      "headline": "IRS CEO Bisignano donates to Trump Accounts in his childhood Brooklyn ZIP code",
+      "url": "https://www.cnbc.com/2026/10/29/trump-accounts-frank-bisignano-brooklyn.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-29T16:31:27Z"
+    },
+    {
+      "headline": "Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction",
+      "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-29T16:31:27Z"
+    },
+    {
+      "headline": "Faisal Islam: This Budget was micro and that was deliberate",
+      "url": "https://www.bbc.co.uk/news/articles/cwx283zynnv3o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-29T15:00:48Z"
+    },
+    {
+      "headline": "The midterms are crucial to the future of Social Security — no matter how old you are",
+      "url": "https://www.marketwatch.com/story/the-midterms-are-crucial-to-the-future-of-social-security-no-matter-how-old-you-are-0f080a9c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-29T14:46:30Z"
+    },
+    {
+      "headline": "European Central Bank keeps key interest rate on hold at 2.5%",
+      "url": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-29T13:31:34Z"
+    },
+    {
+      "headline": "Anthropic’s business plan: Build God or die trying",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1021476/anthropic-s-1-compute-recursive",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-29T13:31:34Z"
+    },
+    {
+      "headline": "LNG imports make up increasing share of Colombia's natural gas supply",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68364",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-29T13:01:37Z"
+    },
+    {
+      "headline": "Deepgram acquires Pipecat-maker Daily to bolster its voice AI infrastructure",
+      "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-29T13:31:34Z"
+    },
+    {
+      "headline": "Amazon updates Alexa to help you manage shopping lists and subscriptions and update delivery instructions",
+      "url": "https://techcrunch.com/2026/10/29/amazon-updates-alexa-to-help-you-manage-shopping-lists-and-subscriptions-and-update-delivery-instructions/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-29T16:16:38Z"
+    },
+    {
+      "headline": "Billionaire Ambani cries tears of joy as Jio Platforms becomes the second most valued Indian firm",
+      "url": "https://www.cnbc.com/2026/10/29/ambani-billionaire-jio-ipo-india.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-29T05:01:24Z"
+    },
+    {
+      "headline": "What we now know about the UK economy in four charts",
+      "url": "https://www.bbc.co.uk/news/articles/c9x28350ly07o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-28T20:16:34Z"
+    },
+    {
+      "headline": "Google launches Gemini 4 Carbon with a ‘significant leap’ in cybersecurity",
+      "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-28T20:16:34Z"
+    },
+    {
+      "headline": "Amazon Just Burned $42 Billion in Cash Chasing AI Growth. Is Wall Street Ignoring the Risk?",
+      "url": "https://www.nasdaq.com/articles/amazon-just-burned-42-billion-cash-chasing-ai-growth-wall-street-ignoring-risk",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-30T00:40:02Z"
+    },
+    {
+      "headline": "Microsoft plans to raise $25 billion in debt as it pursues AI buildout",
+      "url": "https://www.cnbc.com/2026/10/29/microsoft-25-billion-debt-offering.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-30T01:00:49Z"
+    },
+    {
+      "headline": "Continued Consolidation Called For Taiwan Stock Market",
+      "url": "https://www.nasdaq.com/articles/continued-consolidation-called-taiwan-stock-market",
+      "source": "Nasdaq",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-30T01:00:49Z"
+    },
+    {
+      "headline": "CrowdStrike CEO George Kurtz sells $5.3 million in company stock",
+      "url": "https://www.investing.com/news/insider-trading-news/crowdstrike-ceo-george-kurtz-sells-53-million-in-company-stock-93CH-4985653",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T01:00:49Z"
+    },
+    {
+      "headline": "FedEx Freight delivers a much-needed quarterly beat. Where we stand on shares now",
+      "url": "https://www.cnbc.com/investingclub/2026/10/29/fedex-freight-delivers-a-much-needed-quarterly-beat-where-we-stand-on-shares-now.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-30T00:45:47Z"
+    },
+    {
+      "headline": "Binance says $2.54bn in crypto funds frozen amid ‘potential security issue’",
+      "url": "https://www.aljazeera.com/economy/2026/10/30/binance-says-2-54bn-in-crypto-funds-frozen-amid-potential-security-issue?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-30T00:29:24Z"
+    },
+    {
+      "headline": "Why is Bitcoin dropping today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-bitcoin-dropping-today-93CH-4985643",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T01:00:49Z"
+    },
+    {
+      "headline": "Why is Binance’s BNB crashing today?",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-binances-bnb-crashing-today-93CH-4985642",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T01:00:49Z"
+    },
+    {
       "headline": "Monthly wind generation in ISO-NE is about 68% higher than last year",
       "url": "https://www.eia.gov/todayinenergy/detail.php?id=68304",
       "source": "EIA",
@@ -1203,202 +1399,6 @@
       "source": "MarketWatch",
       "category": "Markets",
       "timestamp": "2026-10-29T21:16:35Z"
-    },
-    {
-      "headline": "Palestinians face growing bans from Al-Aqsa as Israel tightens control",
-      "url": "https://www.aljazeera.com/news/2026/10/29/palestinians-face-growing-bans-from-al-aqsa-as-israel-tightens-control?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-29T21:46:27Z"
-    },
-    {
-      "headline": "Trading Day: Communication breakdown",
-      "url": "https://www.investing.com/news/economy-news/trading-day-communication-breakdown-4985269",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-29T21:31:31Z"
-    },
-    {
-      "headline": "Israel bans travel for Brad Lander after detention in occupied West Bank",
-      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/29/israel-bans-travel-for-brad-lander-after-detention-in-occupied-west-bank?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-29T21:26:15Z"
-    },
-    {
-      "headline": "Bank of Japan to hold rates, signal further hikes",
-      "url": "https://www.investing.com/news/economy-news/bank-of-japan-to-hold-rates-signal-further-hikes-4985276",
-      "source": "Investing.com",
-      "category": "Macro",
-      "timestamp": "2026-10-29T21:31:31Z"
-    },
-    {
-      "headline": "Intel stock plunges 21% as chipmaker blames PC slowdown for weak guidance",
-      "url": "https://www.cnbc.com/2026/10/29/intel-intc-q3-earnings-report-2026-.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-29T20:16:24Z"
-    },
-    {
-      "headline": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
-      "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-29T20:16:24Z"
-    },
-    {
-      "headline": "DOJ amends Alaska Senate suit to suggest Peltola campaign misled court over Sullivan candidacy",
-      "url": "https://www.cnbc.com/2026/10/29/alaska-senate-governor-investigation-sullivan-peltola-doj.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-29T17:45:49Z"
-    },
-    {
-      "headline": "Alphabet earnings miss reflects first real sign that AI is taking a bite out of search",
-      "url": "https://www.cnbc.com/2026/10/29/alphabet-google-search-ai-earnings.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-29T11:15:47Z"
-    },
-    {
-      "headline": "‘Fancy cars hold no appeal’: We have a 99% chance of outliving our life savings. Why not spend, spend, spend?",
-      "url": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-29T09:31:29Z"
-    },
-    {
-      "headline": "Microsoft just shared Azure’s actual revenue in dollars: $33.2 billion",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-28T22:00:46Z"
-    },
-    {
-      "headline": "Google expands AI Search ads globally as core ad growth slows",
-      "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-28T22:00:46Z"
-    },
-    {
-      "headline": "Microsoft recorded $10 billion in revenue from OpenAI",
-      "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-28T21:46:27Z"
-    },
-    {
-      "headline": "Akai is embracing vibe-coded mods with an open-source MPC",
-      "url": "https://www.theverge.com/gadgets/1021405/akai-open-source-mpc-sample-key",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-28T22:00:46Z"
-    },
-    {
-      "headline": "Tools and Hacks to Find the Best Prices on Groceries, Gas, More",
-      "url": "https://www.today.com/video/tools-and-hacks-to-find-the-best-prices-on-groceries-gas-more-272395845924",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-28T13:45:48Z"
-    },
-    {
-      "headline": "Walmart US CEO on Affordability, Whether It Will Use Dynamic Pricing",
-      "url": "https://www.today.com/video/walmart-us-ceo-on-affordability-whether-it-will-use-dynamic-pricing-272392773540",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-28T12:00:49Z"
-    },
-    {
-      "headline": "20 Years of S&P 500 History Show: This Simple Strategy Is Only 8.3% Less Than \"Perfect\"",
-      "url": "https://www.nasdaq.com/articles/20-years-sp-500-history-show-simple-strategy-only-83-less-perfect",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T23:20:00Z"
-    },
-    {
-      "headline": "Profit Taking Expected For Japan Stock Market",
-      "url": "https://www.nasdaq.com/articles/profit-taking-expected-japan-stock-market",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T23:19:21Z"
-    },
-    {
-      "headline": "Anthropic IPO: How to Buy Shares and What to Expect on Day 1",
-      "url": "https://www.nasdaq.com/articles/anthropic-ipo-how-buy-shares-and-what-expect-day-1",
-      "source": "Nasdaq",
-      "category": "Movers",
-      "timestamp": "2026-10-29T23:18:42Z"
-    },
-    {
-      "headline": "Earnings call transcript: MicroStrategy Q3 2026 EPS beats as stock falls",
-      "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-microstrategy-q3-2026-eps-beats-as-stock-falls-93CH-4985580",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-29T23:30:43Z"
-    },
-    {
-      "headline": "Samsara CEO Sanjit Biswas sells $11.3M in shares",
-      "url": "https://www.investing.com/news/insider-trading-news/samsara-ceo-sanjit-biswas-sells-113m-in-shares-93CH-4985579",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-29T23:30:43Z"
-    },
-    {
-      "headline": "Kestra Medical Technologies CFO Vaseem Mahboob sells $2.4M in shares",
-      "url": "https://www.investing.com/news/insider-trading-news/kestra-medical-technologies-cfo-vaseem-mahboob-sells-24m-in-shares-93CH-4985578",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-29T23:30:43Z"
-    },
-    {
-      "headline": "Samsara CTO John Bicket sells $11.3 million in class A shares",
-      "url": "https://www.investing.com/news/insider-trading-news/samsara-cto-john-bicket-sells-113-million-in-class-a-shares-93CH-4985577",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-29T23:30:43Z"
-    },
-    {
-      "headline": "Hybrid sales rise while battery electric sales remain lower after tax credit expiration",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68325",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-19T13:00:57Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T15:01:42Z"
-    },
-    {
-      "headline": "U.S. small-scale solar generation has quadrupled in the last decade",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68324",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T13:16:35Z"
-    },
-    {
-      "headline": "PJM, ERCOT, and SWPP all set peak load records this summer",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68305",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "SEC Small Business Advisory Committee to Discuss IPO Modernization and Regulation Crowdfunding",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-105-sec-small-business-advisory-committee-discuss-ipo-modernization-regulation-crowdfunding",
-      "source": "SEC",
-      "category": "Movers",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Element Solutions: 3 Key Takeaways for Long-Term Investors",
-      "url": "https://www.nasdaq.com/articles/element-solutions-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-29T22:50:02Z"
     }
   ]
 }
