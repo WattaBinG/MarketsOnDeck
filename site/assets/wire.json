@@ -1,6 +1,6 @@
 {
-  "asOf": "2026-10-30T20:15:48Z",
-  "asOfLabel": "4:15 PM ET",
+  "asOf": "2026-10-30T20:31:36Z",
+  "asOfLabel": "4:31 PM ET",
   "topStory": {
     "headline": "Reddit stock plunges 29% after weak outlook, wrapping its worst day ever",
     "url": "https://www.cnbc.com/2026/10/30/reddit-stock-q3-earnings.html",
@@ -13,67 +13,99 @@
   },
   "items": [
     {
+      "headline": "The biggest names in AI are backing a new way to opt out of scraping",
+      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-30T20:26:10Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "The selloff in tech stocks is shifting into overdrive",
+      "url": "https://www.marketwatch.com/story/the-selloff-in-tech-stocks-is-shifting-into-overdrive-afb50975?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-30T20:26:00Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "TSX outpaces S&P 500 as Nasdaq rout puts tech stocks on the back foot",
+      "url": "https://www.investing.com/news/stock-market-news/tsx-outpaces-sp-500-as-nasdaq-rout-puts-tech-stocks-on-the-back-foot-93CH-4988613",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T20:25:54Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "Mexico economy beats forecasts in third quarter, cooling rate-cut pressure",
+      "url": "https://www.investing.com/news/economic-indicators/mexicos-economy-slows-less-than-expected-in-third-quarter-4988136",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T20:24:56Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "Parabolic Technologies receives Nasdaq delisting notice, shareholders approve share increase",
+      "url": "https://www.investing.com/news/sec-filings/parabolic-technologies-receives-nasdaq-delisting-notice-shareholders-approve-share-increase-93CH-4988624",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T20:24:46Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "Evercose ISI downgrades Reddit, says monetization may not offset traffic weakness",
+      "url": "https://www.investing.com/news/stock-market-news/evercose-isi-downgrades-reddit-says-monetization-may-not-offset-traffic-weakness-4988622",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T20:23:39Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "BREAKING: The US government borrowed a record $839 billion this week via its sales of Treasury bills and notes, both to repay holders of maturing debt and to raise the additional capital needed to...",
+      "url": "https://x.com/unusual_whales/status/2116264376093315413",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-30T20:22:15Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "Baron Capital backs Vail Resorts board in proxy showdown with Oasis",
+      "url": "https://www.investing.com/news/stock-market-news/baron-capital-backs-vail-resorts-board-in-proxy-showdown-with-oasis-4988619",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T20:20:31Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "US bank deposits fell to $19.771 trln from $19.803 trln in prior week",
+      "url": "https://x.com/financialjuice/status/2116262846711414896",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-30T20:16:15Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "Rubio hosts G20 talks as Russia’s Lavrov presence sparks tensions",
+      "url": "https://www.aljazeera.com/video/newsfeed/2026/10/30/aje-onl-nf_rubio-hosts-g20-talks-as-russias-lavrov-present-301026?traffic_source=rss",
+      "source": "Al Jazeera",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-30T20:13:36Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
+      "headline": "Brazil’s Lula faces spending rows as supporters oppose tougher fiscal measures",
+      "url": "https://www.investing.com/news/economy-news/brazils-lula-faces-spending-rows-as-supporters-oppose-tougher-fiscal-measures-4988599",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-30T20:12:22Z",
+      "firstSeen": "2026-10-30T20:31:36Z"
+    },
+    {
       "headline": "*TRUMP: LOOKING AT BINANCE HACK",
       "url": "https://t.me/WalterBloomberg/37683",
       "source": "Walter Bloomberg (unofficial mirror)",
       "category": "Geopolitics",
-      "timestamp": "2026-10-30T20:11:59Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "*INTEL SHARES PLUNGE 29% FOR WORST DAY IN AT LEAST FOUR DECADES",
-      "url": "https://x.com/zerohedge/status/2116261599195341028",
-      "source": "MarketsOnDeck Discord",
-      "category": "Movers",
-      "timestamp": "2026-10-30T20:11:16Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "This is not a memecoin. Billions were lost in the market today.",
-      "url": "https://x.com/unusual_whales/status/2116261104678846888",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-30T20:09:15Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "Trump: Looking At Whether Binance Hack Is By North Korea - Bloomberg",
-      "url": "https://www.investing.com/news/cryptocurrency-news/trump-looking-at-whether-binance-hack-is-by-north-korea--bloomberg-432SI-4988575",
-      "source": "Investing.com",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-30T20:04:02Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "Raymond James raises Regeneron stock price target to $1,020 on strong quarter",
-      "url": "https://www.investing.com/news/analyst-ratings/raymond-james-raises-regeneron-stock-price-target-to-1020-on-strong-quarter-93CH-4988574",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T20:02:53Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "Red River Bancshares earnings beat by $0.07, revenue topped estimates",
-      "url": "https://www.investing.com/news/earnings/red-river-bancshares-earnings-beat-by-007-revenue-topped-estimates-4988571",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-30T20:01:10Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "Peoples Bancorp director Howard acquires $21,877 of common stock",
-      "url": "https://www.investing.com/news/insider-trading-news/peoples-bancorp-director-howard-acquires-21877-of-common-stock-93CH-4988569",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T20:00:55Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "S&P 500 November seasonality: historical trends and this year’s context",
-      "url": "https://www.investing.com/news/stock-market-news/sp-500-november-seasonality-historical-trends-and-this-years-context-93CH-4988560",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T19:59:16Z",
+      "timestamp": "2026-10-30T20:15:48Z",
       "firstSeen": "2026-10-30T20:15:48Z"
     },
     {
@@ -81,7 +113,7 @@
       "url": "https://www.nasdaq.com/articles/hamilton-insurance-hg-q3-2026-earnings-call-transcript",
       "source": "Nasdaq",
       "category": "Markets",
-      "timestamp": "2026-10-30T19:58:17Z",
+      "timestamp": "2026-10-30T20:15:48Z",
       "firstSeen": "2026-10-30T20:15:48Z"
     },
     {
@@ -89,39 +121,7 @@
       "url": "https://www.nasdaq.com/articles/fmc-fmc-q3-2026-earnings-call-transcript",
       "source": "Nasdaq",
       "category": "Markets",
-      "timestamp": "2026-10-30T19:58:17Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "Merit Acquires Solo Pace For $45 Mln; Shares Down",
-      "url": "https://www.nasdaq.com/articles/merit-acquires-solo-pace-45-mln-shares-down",
-      "source": "Nasdaq",
-      "category": "Movers",
-      "timestamp": "2026-10-30T19:51:28Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "ExxonMobil (XOM) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/exxonmobil-xom-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T19:51:26Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "LyondellBasell (LYB) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/lyondellbasell-lyb-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T19:51:26Z",
-      "firstSeen": "2026-10-30T20:15:48Z"
-    },
-    {
-      "headline": "Strategy: 3 Key Takeaways for Long-Term Investors",
-      "url": "https://www.nasdaq.com/articles/strategy-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T19:51:01Z",
+      "timestamp": "2026-10-30T20:15:48Z",
       "firstSeen": "2026-10-30T20:15:48Z"
     },
     {
