@@ -1,6 +1,328 @@
 {
   "items": [
     {
+      "headline": "U.S. small-scale solar generation has quadrupled in the last decade",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68324",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T13:16:35Z"
+    },
+    {
+      "headline": "Henry Hub natural gas prices this summer were 6% lower than last summer",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68204",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Federal Reserve Board requests public comment on two proposals related to establishing a regulatory framework for Board-supervised payment stablecoin issuers under the GENIUS Act",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "Public companies produce most U.S. crude oil and natural gas",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68184",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Jobless claims fall to lowest level since mid-May",
+      "url": "https://www.marketwatch.com/story/jobless-claims-fall-to-lowest-level-since-mid-may-bda58e3b?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Freedom Broker cuts First Solar stock price target on guidance reduction",
+      "url": "https://www.investing.com/news/analyst-ratings/freedom-broker-cuts-first-solar-stock-price-target-on-guidance-reduction-93CH-4988439",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:12:58Z"
+    },
+    {
+      "headline": "Freedom Broker cuts Alnylam stock price target on execution risks",
+      "url": "https://www.investing.com/news/analyst-ratings/freedom-broker-cuts-alnylam-stock-price-target-on-execution-risks-93CH-4988438",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:12:53Z"
+    },
+    {
+      "headline": "Freedom Broker downgrades Intel stock rating on valuation despite strong quarter",
+      "url": "https://www.investing.com/news/analyst-ratings/freedom-broker-downgrades-intel-stock-rating-on-valuation-despite-strong-quarter-93CH-4988437",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:12:49Z"
+    },
+    {
+      "headline": "Freedom Broker raises Eli Lilly stock price target on GLP-1 demand",
+      "url": "https://www.investing.com/news/analyst-ratings/freedom-broker-raises-eli-lilly-stock-price-target-on-glp1-demand-93CH-4988435",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:12:47Z"
+    },
+    {
+      "headline": "Freedom Broker cuts John B. Sanfilippo stock price target on costs",
+      "url": "https://www.investing.com/news/analyst-ratings/freedom-broker-cuts-john-b-sanfilippo-stock-price-target-on-costs-93CH-4988436",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:12:47Z"
+    },
+    {
+      "headline": "CTT Pharmaceutical Holdings appoints new PCAOB auditor",
+      "url": "https://www.investing.com/news/sec-filings/ctt-pharmaceutical-holdings-appoints-new-pcaob-auditor-93CH-4988434",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:12:37Z"
+    },
+    {
+      "headline": "SoFi Beat Across the Board and Raised Guidance. Is the Stock Still Cheap?",
+      "url": "https://www.nasdaq.com/articles/sofi-beat-across-board-and-raised-guidance-stock-still-cheap",
+      "source": "Nasdaq",
+      "category": "Movers",
+      "timestamp": "2026-10-30T17:09:56Z"
+    },
+    {
+      "headline": "U.K. stocks lower at close of trade; Investing.com United Kingdom 100 down 0.02%",
+      "url": "https://www.investing.com/news/stock-market-news/uk-stocks-lower-at-close-of-trade-investingcom-united-kingdom-100-down-002-4988432",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:09:09Z"
+    },
+    {
+      "headline": "Why Intel Is Down Today",
+      "url": "https://www.nasdaq.com/articles/why-intel-down-today",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:09:02Z"
+    },
+    {
+      "headline": "Canada to define scope of EU membership over coming months, Carney says",
+      "url": "https://www.investing.com/news/economy-news/canada-to-define-scope-of-eu-membership-over-coming-months-carney-says-93CH-4988409",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-30T17:03:32Z"
+    },
+    {
+      "headline": "Britain approves 2 gigawatt undersea power link project",
+      "url": "https://www.investing.com/news/economy-news/britain-approves-2-gigawatt-undersea-power-link-project-93CH-4988403",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-30T17:01:45Z"
+    },
+    {
+      "headline": "CD&R pursues buyout of $40 billion payments processor Global Payments, FT reports",
+      "url": "https://www.investing.com/news/stock-market-news/cdr-pursues-buyout-of-40-billion-payments-processor-global-payments-ft-reports-4988379",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:01:34Z"
+    },
+    {
+      "headline": "Google’s first data center satellite is online and writing poetry",
+      "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-30T17:00:00Z"
+    },
+    {
+      "headline": "ECB’s Lane says AI investments are supporting euro zone growth",
+      "url": "https://www.investing.com/news/economy-news/ecbs-lane-says-ai-investments-are-supporting-euro-zone-growth-93CH-4988394",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-30T16:56:03Z"
+    },
+    {
+      "headline": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
+      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-30T17:16:38Z"
+    },
+    {
+      "headline": "HOUSING AND FOOD CONSUME NEARLY HALF OF US HOUSEHOLD SPENDING — 15-YEAR HIGH Housing and food accounted for 46.9% of US household spending in 2025, the highest combined share in 15 years, according...",
+      "url": "https://t.me/WalterBloomberg/37677",
+      "source": "Walter Bloomberg (unofficial mirror)",
+      "category": "Markets",
+      "timestamp": "2026-10-30T16:45:47Z"
+    },
+    {
+      "headline": "Cheaper cars are selling considerably faster than at the beginning of the year",
+      "url": "https://www.cnbc.com/2026/10/30/cheap-cars-selling-fast.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-30T15:46:36Z"
+    },
+    {
+      "headline": "Treasury Department announces new Series I bond rate of 5.51% for the next six months",
+      "url": "https://www.cnbc.com/2026/10/30/treasury-i-bond-rate-through-april-2027.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-30T15:01:49Z"
+    },
+    {
+      "headline": "Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023188/pope-leo-disarm-ai",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-30T15:16:33Z"
+    },
+    {
+      "headline": "DoorDash said it’s only received ‘several hundred’ orders from AI agents",
+      "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+      "source": "TechCrunch",
+      "category": "AI",
+      "timestamp": "2026-10-30T14:01:34Z"
+    },
+    {
+      "headline": "Silicon Valley wants you to invest in miracles",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/1023070/anthropic-ipo-risk-factors-filing-miracles",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-30T13:15:49Z"
+    },
+    {
+      "headline": "Swiss central bank posts bumper $23 billion profit thanks to gold, foreign assets",
+      "url": "https://www.cnbc.com/2026/10/30/swiss-national-bank-q3-profit-gold-foreign-asset.html",
+      "source": "CNBC",
+      "category": "Macro",
+      "timestamp": "2026-10-30T12:46:25Z"
+    },
+    {
+      "headline": "Uganda’s inflation rises to 3-year high after currency slump",
+      "url": "https://www.investing.com/news/economy-news/ugandas-inflation-rises-to-3year-high-after-currency-slump-4987526",
+      "source": "Investing.com",
+      "category": "Macro",
+      "timestamp": "2026-10-30T12:46:25Z"
+    },
+    {
+      "headline": "The big questions remaining after Anthropic’s blockbuster IPO prospectus",
+      "url": "https://www.cnbc.com/2026/10/30/anthropic-ipo-s1-revenue-compute.html",
+      "source": "CNBC",
+      "category": "Movers",
+      "timestamp": "2026-10-30T12:46:25Z"
+    },
+    {
+      "headline": "What we know about Binance's $6.3bn hack",
+      "url": "https://www.bbc.co.uk/news/videos/cv2d62e34rw5o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-30T14:16:47Z"
+    },
+    {
+      "headline": "Intel on course for worst day ever, triggers global chip rout",
+      "url": "https://www.investing.com/news/stock-market-news/intel-warning-sparks-chip-rout-as-pc-weakness-clouds-turnaround-4987123",
+      "source": "Investing.com",
+      "category": "Markets",
+      "timestamp": "2026-10-30T11:46:27Z"
+    },
+    {
+      "headline": "Russian strikes plunge Ukrainian city into blackout as Zelenskyy warns of more missile attacks",
+      "url": "https://www.cnbc.com/2026/10/30/russia-ukraine-putin-zelenskyy-energy-strikes.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-30T11:46:27Z"
+    },
+    {
+      "headline": "Tech Stocks Plummet; Hackers Steal Over $6B in Cryptocurrency",
+      "url": "https://www.today.com/video/tech-stocks-plummet-hackers-steal-over-6b-in-cryptocurrency-272526405851",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-30T11:30:57Z"
+    },
+    {
+      "headline": "Gen Z is ditching bars for run clubs — and finding more than friends along the way",
+      "url": "https://www.cnbc.com/2026/10/30/gen-z-diplo-run-club.html",
+      "source": "CNBC",
+      "category": "Markets",
+      "timestamp": "2026-10-30T10:45:49Z"
+    },
+    {
+      "headline": "Streeting denies 'kicking can down the road' in defence spending row",
+      "url": "https://www.bbc.co.uk/news/articles/cw62yrzxjnk4o?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-30T10:30:48Z"
+    },
+    {
+      "headline": "Euro zone economy slows to 0.4% growth in Q3 as crisis-hit France contracts",
+      "url": "https://www.cnbc.com/2026/10/30/euro-zone-gdp-france.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-30T10:15:48Z"
+    },
+    {
+      "headline": "Trump rallies in Kansas and Iowa are back on after RNC said they were canceled: Source",
+      "url": "https://www.cnbc.com/2026/10/30/trump-vance-rally-midterm-elections-.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-30T09:00:49Z"
+    },
+    {
+      "headline": "Wikipedia’s operator says a bad AI copyright ruling could threaten the open web",
+      "url": "https://www.theverge.com/policy/1022880/wikipedia-openai-new-york-times-copyright",
+      "source": "The Verge",
+      "category": "AI",
+      "timestamp": "2026-10-30T09:16:30Z"
+    },
+    {
+      "headline": "Binance's $6.3 billion hack: What we know and what comes next",
+      "url": "https://www.cnbc.com/2026/10/30/billions-in-crypto-frozen-in-binance-hack-heres-what-happens-next-.html",
+      "source": "CNBC",
+      "category": "Geopolitics",
+      "timestamp": "2026-10-30T08:46:20Z"
+    },
+    {
+      "headline": "Yorkshire Water boss resigns after firm downgraded",
+      "url": "https://www.bbc.co.uk/news/articles/ckzd623pldqgo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC",
+      "category": "Markets",
+      "timestamp": "2026-10-30T08:16:22Z"
+    },
+    {
+      "headline": "Social Security’s fate — and your benefits — are in the hands of the candidates elected this year",
+      "url": "https://www.marketwatch.com/story/the-midterms-are-crucial-to-the-future-of-social-security-no-matter-how-old-you-are-0f080a9c?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-29T14:46:30Z"
+    },
+    {
+      "headline": "ACCO (ACCO) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/acco-acco-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:14:41Z"
+    },
+    {
+      "headline": "Ingersoll Rand (IR) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/ingersoll-rand-ir-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:14:41Z"
+    },
+    {
+      "headline": "Veralto (VLTO) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/veralto-vlto-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:14:41Z"
+    },
+    {
+      "headline": "Carter's (CRI) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/carters-cri-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:13:20Z"
+    },
+    {
+      "headline": "The big winners of the tech wreck are biopharma stocks",
+      "url": "https://www.marketwatch.com/story/the-big-winners-of-the-tech-wreck-are-biopharma-stocks-2ac4d175?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-30T17:16:38Z"
+    },
+    {
       "headline": "I earn £30,000. I'm angry there was no fuel duty cut in the Budget",
       "url": "https://www.bbc.co.uk/news/articles/cmx235r9wr3yo?at_medium=RSS&at_campaign=rss",
       "source": "BBC",
@@ -1077,328 +1399,6 @@
       "source": "SEC",
       "category": "Macro",
       "timestamp": "2026-10-20T13:00:57Z"
-    },
-    {
-      "headline": "SEC Announces Roundtable on Machine-Understandable Data in the Age of Super Intelligence",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-106-sec-announces-roundtable-machine-understandable-data-age-super-intelligence",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-19T18:31:39Z"
-    },
-    {
-      "headline": "Hybrid sales rise while battery electric sales remain lower after tax credit expiration",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68325",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-19T13:00:57Z"
-    },
-    {
-      "headline": "SEC Proposes Amendments to Expand Responsible Retailization of Private Markets",
-      "url": "https://www.sec.gov/newsroom/press-releases/2026-96-sec-proposes-amendments-expand-responsible-retailization-private-markets",
-      "source": "SEC",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "U.S. electricity use for electric vehicles increasing at a slower pace in 2026",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68224",
-      "source": "EIA",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Federal Reserve Board finalizes changes to enhance the transparency and public accountability of its stress test and reduce volatility in its stress test-related capital requirements",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260930a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Agencies publish resolution plan feedback letters for 15 banking organizations",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260929a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces approval of application by Peoples Bancorp Inc.",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20260925a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:31:27Z"
-    },
-    {
-      "headline": "SCOOP with @​ByKLong @​ceostroff: - The CFTC is examining unusual Kalshi trades with near-identical sizes that now total over $5B - Prop-trading firms Jump Trading (a Kalshi shareholder) and Winter...",
-      "url": "https://x.com/zerohedge/status/2102613006731362620",
-      "source": "MarketsOnDeck Discord",
-      "category": "Movers",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Japan PM Takaichi: agreed with President Trump at meeting to enhance economic security partnership",
-      "url": "https://x.com/financialjuice/status/2102611624490315922",
-      "source": "MarketsOnDeck Discord",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "China finance ministry offers 3-month bills at 1.1101% yield: traders",
-      "url": "https://x.com/financialjuice/status/2102603788955603390",
-      "source": "MarketsOnDeck Discord",
-      "category": "Macro",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "looking beyond price alone: positioning, leverage and flows can become part of the move itself. 6. One of the more interesting rotations underneath the market is happening in financials. As investo...",
-      "url": "https://x.com/fxevolution/status/2102600246106919294",
-      "source": "MarketsOnDeck Discord",
-      "category": "Markets",
-      "timestamp": "2026-10-16T02:08:15Z"
-    },
-    {
-      "headline": "Meta settles with teen during trial testing claims social media caused depression, eating disorders",
-      "url": "https://www.investing.com/news/stock-market-news/meta-settles-with-teen-during-trial-testing-claims-social-media-caused-depression-eating-disorders-4988301",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T16:01:03Z"
-    },
-    {
-      "headline": "Lear (LEA) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/lear-lea-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T15:58:27Z"
-    },
-    {
-      "headline": "nVent Electric (NVT) Q3 2026 Earnings Call Transcript",
-      "url": "https://www.nasdaq.com/articles/nvent-electric-nvt-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T15:58:27Z"
-    },
-    {
-      "headline": "Why Cerebras Stock Dropped Today",
-      "url": "https://www.nasdaq.com/articles/why-cerebras-stock-dropped-today",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T16:15:58Z"
-    },
-    {
-      "headline": "Why Micron Stock Dove Today",
-      "url": "https://www.nasdaq.com/articles/why-micron-stock-dove-today",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T16:15:58Z"
-    },
-    {
-      "headline": "Private equity in your 401(k)? Heed Warren Buffett’s warning.",
-      "url": "https://www.marketwatch.com/story/private-equity-in-your-401-k-heed-warren-buffetts-warning-6f318cd0?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-30T16:01:03Z"
-    },
-    {
-      "headline": "Chocolate makers get Halloween fright as health-conscious US shoppers cut back",
-      "url": "https://www.investing.com/news/stock-market-news/chocolate-makers-get-halloween-fright-as-healthconscious-us-shoppers-cut-back-4988098",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T14:16:47Z"
-    },
-    {
-      "headline": "Skip the small talk: Make game-changing connections at TechCrunch Founder Summit with Braindate",
-      "url": "https://techcrunch.com/2026/10/30/skip-the-small-talk-make-game-changing-connections-at-techcrunch-founder-summit-with-braindate/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-30T14:01:34Z"
-    },
-    {
-      "headline": "Intel heads for worst day on Wall Street in more than 50 years on weak guidance",
-      "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-30T08:46:20Z"
-    },
-    {
-      "headline": "BP’s third-quarter profit nearly quadruples to $8.5 billion as refining margins surge",
-      "url": "https://www.cnbc.com/2026/10/30/bp-earnings-oil-q3.html",
-      "source": "CNBC",
-      "category": "Movers",
-      "timestamp": "2026-10-30T07:15:47Z"
-    },
-    {
-      "headline": "Sanofi teases appetite for larger deals, lifts 2026 growth targets under new CEO Garijo",
-      "url": "https://www.investing.com/news/stock-market-news/sanofi-lifts-expectations-for-2026-sales-growth-looks-to-ma-4985889",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T07:15:47Z"
-    },
-    {
-      "headline": "Google stock's historically bad day raises fears of AI bubble popping",
-      "url": "https://www.nbcnews.com/video/google-stock-s-historically-bad-day-raises-fears-of-ai-bubble-popping-272514629806",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-30T02:46:25Z"
-    },
-    {
-      "headline": "Crypto giant Binance hit by $6.3bn hack suspected to be largest in history",
-      "url": "https://www.bbc.co.uk/news/articles/cwg7xp8kx4v5o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-30T00:45:47Z"
-    },
-    {
-      "headline": "Binance targeted in $6.3 billion crypto heist, the largest ever",
-      "url": "https://www.nbcnews.com/business/markets/binance-hack-tether-circle-stablecoins-rcna606445",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-29T23:15:47Z"
-    },
-    {
-      "headline": "$6.3 billion Binance hack is largest crypto theft on record",
-      "url": "https://www.cnbc.com/2026/10/29/circle-tether-freeze-funds-impacted-by-potential-binance-security-issue.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-29T22:30:48Z"
-    },
-    {
-      "headline": "As search traffic dries up, Reddit announces it’s shifting to a logged-in experience",
-      "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-29T20:16:24Z"
-    },
-    {
-      "headline": "Rivian expands joint venture with VW to include AI assistant",
-      "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-29T20:16:24Z"
-    },
-    {
-      "headline": "You can generate and edit Google Docs files directly in Gemini chats now",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-29T19:01:00Z"
-    },
-    {
-      "headline": "US interest rates held steady and economy grows - what it means for you",
-      "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-29T19:31:37Z"
-    },
-    {
-      "headline": "US investigated Chinese spy plot aimed at Nvidia CEO",
-      "url": "https://techcrunch.com/2026/10/29/u-s-investigated-chinese-spy-plot-aimed-at-nvidia-ceo/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-29T16:46:30Z"
-    },
-    {
-      "headline": "Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction",
-      "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-29T16:31:27Z"
-    },
-    {
-      "headline": "Bereaved families will not face tax bill over pension delays under new rules",
-      "url": "https://www.bbc.co.uk/news/articles/cr5yn9zwnp3qo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-29T15:30:48Z"
-    },
-    {
-      "headline": "Alphabet shares record their worst day ever, shedding $500B in value",
-      "url": "https://www.nbcnews.com/business/markets/alphabet-google-stock-ai-advertising-rcna606322",
-      "source": "NBC News",
-      "category": "Movers",
-      "timestamp": "2026-10-29T15:16:32Z"
-    },
-    {
-      "headline": "It’s the strangest job market the U.S. has ever seen. The low-hire, low-fire economy turns 3 years old.",
-      "url": "https://www.marketwatch.com/story/its-the-strangest-job-market-the-u-s-has-ever-seen-the-low-hire-low-fire-economy-turns-3-years-old-ce8d0dfe?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-29T12:01:48Z"
-    },
-    {
-      "headline": "DoorDash to acquire Instacart for $17 billion, creating delivery giant",
-      "url": "https://www.nbcnews.com/business/corporations/doordash-acquire-instacart-17-billion-rcna605907",
-      "source": "NBC News",
-      "category": "Markets",
-      "timestamp": "2026-10-29T11:45:49Z"
-    },
-    {
-      "headline": "Burnham 'ready to support' Poundland staff as retailer faces collapse",
-      "url": "https://www.bbc.co.uk/news/articles/cqrky1p4dlm7o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-29T10:01:30Z"
-    },
-    {
-      "headline": "Reliance Industries Q2 Profit Rises On Revenue Growth",
-      "url": "https://www.nasdaq.com/articles/reliance-industries-q2-profit-rises-revenue-growth",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T16:06:46Z"
-    },
-    {
-      "headline": "Why is iShares Semiconductor ETF plunging today?",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-ishares-semiconductor-etf-plunging-today-93CH-4988313",
-      "source": "Investing.com",
-      "category": "Markets",
-      "timestamp": "2026-10-30T16:05:21Z"
-    },
-    {
-      "headline": "Exxon’s Refineries Out-Earned Its Oil Wells Last Quarter For the First Time in 6 Years. Here’s What That Says About Where the Profit Is Coming From.",
-      "url": "https://www.nasdaq.com/articles/exxons-refineries-out-earned-its-oil-wells-last-quarter-first-time-6-years-heres-what-says",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T16:05:01Z"
-    },
-    {
-      "headline": "Class action lawsuit blames Trump officials for student loan forgiveness delays",
-      "url": "https://www.cnbc.com/2026/10/30/lawsuit-blames-trump-officials-for-student-loan-forgiveness-delays.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-30T16:15:58Z"
-    },
-    {
-      "headline": "Bernstein SocGen raises Eli Lilly stock price target on strong Q3 beat",
-      "url": "https://www.investing.com/news/analyst-ratings/bernstein-socgen-raises-eli-lilly-stock-price-target-on-strong-q3-beat-93CH-4988312",
-      "source": "Investing.com",
-      "category": "Movers",
-      "timestamp": "2026-10-30T16:04:53Z"
-    },
-    {
-      "headline": "Everest To Sell Chile Insurance Unit To AIG",
-      "url": "https://www.nasdaq.com/articles/everest-sell-chile-insurance-unit-aig",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-30T16:03:51Z"
-    },
-    {
-      "headline": "Theranos whistleblower Tyler Shultz warns that the AI boom is ‘a great opportunity to go deceive people’",
-      "url": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-30T16:15:58Z"
-    },
-    {
-      "headline": "My wife cried when I found out she had only $80,000 in her 401(k). I have $2.2 million. Am I wrong to be shocked?",
-      "url": "https://www.marketwatch.com/story/my-wife-has-only-80-000-saved-for-retirement-i-have-2-2-million-am-i-wrong-to-be-shocked-3e27b490?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-26T10:30:43Z"
-    },
-    {
-      "headline": "Federal Reserve Board announces termination of enforcement actions with Gardner Bancshares, Inc. and Small Business Bank",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261016a.htm",
-      "source": "Federal Reserve",
-      "category": "Macro",
-      "timestamp": "2026-10-16T15:01:42Z"
     }
   ]
 }
