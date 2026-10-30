@@ -1,24 +1,24 @@
 {
-  "asOf": "2026-10-30T10:31:33Z",
+  "asOf": "2026-10-30T10:46:54Z",
   "source": "Coinbase Exchange (public market data)",
   "items": [
     {
       "symbol": "BTC",
-      "price": 77329.68,
-      "change": -2855.92,
-      "changePercent": -3.56
+      "price": 77512.66,
+      "change": -2672.94,
+      "changePercent": -3.33
     },
     {
       "symbol": "ETH",
-      "price": 2230.8,
-      "change": -94.78,
-      "changePercent": -4.08
+      "price": 2240.0,
+      "change": -85.58,
+      "changePercent": -3.68
     },
     {
       "symbol": "SOL",
-      "price": 96.58,
-      "change": -3.93,
-      "changePercent": -3.91
+      "price": 96.75,
+      "change": -3.76,
+      "changePercent": -3.74
     }
   ]
 }
