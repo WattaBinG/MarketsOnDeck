@@ -1,6 +1,118 @@
 {
   "items": [
     {
+      "headline": "Google stock's historically bad day raises fears of AI bubble popping",
+      "url": "https://www.nbcnews.com/video/google-stock-s-historically-bad-day-raises-fears-of-ai-bubble-popping-272514629806",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-30T02:46:25Z"
+    },
+    {
+      "headline": "Binance targeted in $6.3 billion crypto heist, the largest ever",
+      "url": "https://www.nbcnews.com/business/markets/binance-hack-tether-circle-stablecoins-rcna606445",
+      "source": "NBC News",
+      "category": "Markets",
+      "timestamp": "2026-10-29T23:15:47Z"
+    },
+    {
+      "headline": "80% of workers make this 401(k)  mistake when they retire",
+      "url": "https://www.marketwatch.com/story/whats-the-first-thing-most-people-do-with-their-401-k-after-they-retire-nothing-8a606518?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-29T20:01:31Z"
+    },
+    {
+      "headline": "This is where most people go wrong in their 30s and 40s",
+      "url": "https://www.marketwatch.com/story/the-house-the-kids-college-and-the-raise-where-people-in-their-30s-and-40s-go-wrong-69ec6c90?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-26T19:46:46Z"
+    },
+    {
+      "headline": "Category 2 Hurricane Isaias nears landfall, leading to production shut-ins",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68284",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-09T13:00:00Z"
+    },
+    {
+      "headline": "Federal Reserve Board announces enforcement action against American Express Company to address, among other things, the firm’s failure to sufficiently detect and report certain suspicious activity related to money laundering",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20261008a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "Minutes of the Federal Open Market Committee, September 15-16, 2026",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261007a.htm",
+      "source": "Federal Reserve",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:31:27Z"
+    },
+    {
+      "headline": "Mixed outlook for energy expenditures this winter",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=68264",
+      "source": "EIA",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "SEC Seeks Final Judgment Against Former Western Asset Co-CIO Ken Leech in Cherry Picking Case",
+      "url": "https://www.sec.gov/newsroom/press-releases/2026-103-sec-seeks-final-judgment-against-former-western-asset-co-cio-ken-leech-cherry-picking-case",
+      "source": "SEC",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "South Korea picks Texas gas plant as initial project under US investment agreement - FT",
+      "url": "https://x.com/financialjuice/status/2102616635907645842",
+      "source": "MarketsOnDeck Discord",
+      "category": "Markets",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Dutch final Q2 GDP rises 0.6% quarter-on-quarter, CBS",
+      "url": "https://x.com/financialjuice/status/2102616603166937303",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "DUTCH GDP QOQ FINAL SA ACTUAL 0.6% (FORECAST 0.4%, PREVIOUS 0.4%) $MACRO",
+      "url": "https://x.com/financialjuice/status/2102616568249086080",
+      "source": "MarketsOnDeck Discord",
+      "category": "Macro",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Jobless claims stay low in latest week",
+      "url": "https://www.marketwatch.com/story/jobless-claims-stay-low-in-latest-week-27b4b50b?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Consumer credit growth soars in December",
+      "url": "https://www.marketwatch.com/story/consumer-credit-growth-soars-in-december-d405d18e?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "U.S. productivity slows down in fourth quarter while unit labor costs accelerate",
+      "url": "https://www.marketwatch.com/story/u-s-productivity-slows-down-in-fourth-quarter-while-unit-labor-costs-accelerate-3c2b9092?mod=mw_rss_marketpulse",
+      "source": "MarketWatch",
+      "category": "Markets",
+      "timestamp": "2026-10-16T02:08:15Z"
+    },
+    {
+      "headline": "Jinko (JKS) Q3 2026 Earnings Call Transcript",
+      "url": "https://www.nasdaq.com/articles/jinko-jks-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "category": "Markets",
+      "timestamp": "2026-10-31T17:31:25Z"
+    },
+    {
       "headline": "Federal Reserve Board announces approval of application by Isabella Bank Corporation",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases/orders20261005a.htm",
       "source": "Federal Reserve",
@@ -1287,118 +1399,6 @@
       "source": "CNBC",
       "category": "Markets",
       "timestamp": "2026-10-31T16:15:48Z"
-    },
-    {
-      "headline": "BINANCE ON HACK: WILL ABSORB THE FINANCIAL IMPACT OF THESE STOLEN FUNDS, NOT OUR USERS",
-      "url": "https://t.me/WalterBloomberg/37701",
-      "source": "Walter Bloomberg (unofficial mirror)",
-      "category": "Markets",
-      "timestamp": "2026-10-31T14:45:56Z"
-    },
-    {
-      "headline": "Iran FM says US outreach a ‘positive step’ as delegation in Qatar for talks",
-      "url": "https://www.aljazeera.com/news/2026/10/31/iran-fm-says-us-outreach-a-positive-step-as-delegation-in-qatar-for-talks?traffic_source=rss",
-      "source": "Al Jazeera",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-31T14:45:56Z"
-    },
-    {
-      "headline": "Your stock portfolio increasingly hinges on the bond market — and the midterm elections",
-      "url": "https://www.marketwatch.com/story/your-stock-portfolio-increasingly-hinges-on-the-bond-market-and-the-midterm-elections-dc1abadb?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Macro",
-      "timestamp": "2026-10-31T14:16:26Z"
-    },
-    {
-      "headline": "Qatari mediators held talks in Tehran aimed at restarting direct U.S.-Iran negotiations, source says",
-      "url": "https://www.cnbc.com/2026/10/31/qatar-iran-us-talks-mediation.html",
-      "source": "CNBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-31T12:15:45Z"
-    },
-    {
-      "headline": "Ukrainian evacuees reunite with family after years trapped in Russia-occupied city",
-      "url": "https://www.bbc.co.uk/news/articles/cqx2818elrnzo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-31T12:15:45Z"
-    },
-    {
-      "headline": "‘Pop-up’ super PACs pour $637 million into 2026 midterm races",
-      "url": "https://www.cnbc.com/2026/10/31/2026-midterm-election-super-pacs-donor-disclosure.html",
-      "source": "CNBC",
-      "category": "Markets",
-      "timestamp": "2026-10-31T12:30:46Z"
-    },
-    {
-      "headline": "Intel’s stock crashes, knocking $12B from government’s stake",
-      "url": "https://techcrunch.com/2026/10/30/intels-stock-crashes-knocking-12b-from-governments-stake/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-30T22:00:45Z"
-    },
-    {
-      "headline": "The biggest names in AI are backing a new way to opt out of scraping",
-      "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-30T20:31:36Z"
-    },
-    {
-      "headline": "Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
-      "source": "The Verge",
-      "category": "AI",
-      "timestamp": "2026-10-30T17:49:53Z"
-    },
-    {
-      "headline": "Crypto giant Binance attempting to recover $6.3bn stolen in hack linked to North Korea",
-      "url": "https://www.bbc.co.uk/news/articles/cwe8lp7zy07zo?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Geopolitics",
-      "timestamp": "2026-10-30T17:16:38Z"
-    },
-    {
-      "headline": "Google’s first data center satellite is online and writing poetry",
-      "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-30T17:31:08Z"
-    },
-    {
-      "headline": "Theranos whistleblower Tyler Shultz warns that the AI boom is ‘a great opportunity to go deceive people’",
-      "url": "https://techcrunch.com/2026/10/30/theranos-whistleblower-tyler-shultz-warns-that-the-ai-boom-is-a-great-opportunity-to-go-deceive-people/",
-      "source": "TechCrunch",
-      "category": "AI",
-      "timestamp": "2026-10-30T16:15:58Z"
-    },
-    {
-      "headline": "My father has Alzheimer’s and his caregiver is using his debit card for DoorDash. Do I intervene?",
-      "url": "https://www.marketwatch.com/story/theres-a-lot-of-hurt-between-us-my-fathers-caregiver-is-using-his-debit-card-for-doordash-orders-what-can-i-do-714de7a5?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "category": "Markets",
-      "timestamp": "2026-10-30T09:16:30Z"
-    },
-    {
-      "headline": "How Poundland grew from a market stall to a high street giant",
-      "url": "https://www.bbc.co.uk/news/articles/cw07304l5je7o?at_medium=RSS&at_campaign=rss",
-      "source": "BBC",
-      "category": "Markets",
-      "timestamp": "2026-10-30T21:01:33Z"
-    },
-    {
-      "headline": "SPS Commerce: 3 Key Takeaways for Long-Term Investors",
-      "url": "https://www.nasdaq.com/articles/sps-commerce-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-31T16:46:31Z"
-    },
-    {
-      "headline": "Eastman: 3 Key Takeaways for Long-Term Investors",
-      "url": "https://www.nasdaq.com/articles/eastman-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "category": "Markets",
-      "timestamp": "2026-10-31T16:46:31Z"
     }
   ]
 }
